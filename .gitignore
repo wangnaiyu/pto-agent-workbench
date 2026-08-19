@@ -1,0 +1,18 @@
+# fork clone（独立 git 仓库，自身含 .git）
+harness/
+
+# node / build
+node_modules/
+lib/
+dist/
+*.tsbuildinfo
+
+# env / secrets
+.env
+.env.*
+
+# os
+.DS_Store
+
+# logs
+*.log

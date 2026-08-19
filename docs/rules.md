@@ -1,0 +1,35 @@
+# 规则与约定
+
+编号 R 开头，与 AGENTS.md 摘要对应。
+
+## 1. 架构分层（最高优先级）
+
+- **R1 改造优先级**：动态插件 spike → 静态插件（packages/ 新包）→ 内核改动（需记录理由）。
+- **R2 依赖单向**：本工作区消费 PyPTOUX（只读）；PyPTOUX 不反向依赖工程区。
+- **R3 新能力先验证再固化**：任何 canvas 回路 / 工具先 experiments/ spike，验证后固化静态插件。
+
+## 2. 目录与命名
+
+- **R4** 目录名英文 kebab-case；正文默认中文；canonical 文件名：README.md / architecture.md / pitfalls.md / rules.md / sources.md / story-YYYY-MM-DD.md。
+- **R5** 结构：plugins（client）/ tools（host）/ patches（装配）/ skills / experiments / notes / prompts / references / docs。
+
+## 3. 编码 agent 协作
+
+- **R6 同一 checkout 单 writer**；交接先 commit / merge；多 checkout 各自分支。
+- **R7 分工**：Codex → host 插件 / 构建 / 装配 / rebase；Claude → client UI / 工作台视觉；官方 DSH → dogfooding 动态插件验证。
+- **R8 接手流程**：先读本工作区 AGENTS.md → docs/pitfalls.md → 按任务参考 PyPTOUX skill。
+
+## 4. 数据与事实
+
+- **R9** 数据三级策略沿用（L1 / L2 / L3），登记与披露规则同 PyPTOUX。
+- **R10** 技术事实回权威来源（pypto 本地镜像 / 官方文档）；issue 只证明反馈出现，不证明 API / 性能。
+
+## 5. 发布
+
+- **R11** 成熟 demo：compute-graph-viewer fork PR；个人页：wangnaiyu.github.io。
+- **R12** 发布前 share-safe 检查 + 数据等级披露。
+
+## 6. 记录
+
+- **R13** prompts/ 存可复现复合 prompt；notes/ 记 decision / review / story。
+- **R14** 结构性决策（内核改动、新增 slot、通信 seam）必须写 decision 记录。
