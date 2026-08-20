@@ -10,7 +10,7 @@
 
 ## 2. 多 agent 协同（暂不预设）
 
-本工程不设固定角色分工（不再沿用 PyPTOUX 双 Agent 约定）；先由实际工作流跑出经验，再复盘沉淀多 agent 协同规则（决策记录：notes/decision-2026-08-20-drop-dual-agent-division.md）。
+本工程不设固定角色分工（不再沿用 PyPTOUX 双 Agent 约定）；先由实际工作流跑出经验，再复盘沉淀多 agent 协同规则（决策记录：notes/decision-2026-08-20.md）。
 
 ## 3. 强制规则（完整版见 docs/rules.md）
 
