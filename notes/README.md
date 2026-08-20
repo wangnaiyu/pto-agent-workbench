@@ -10,7 +10,7 @@
 
 ### 2. 同步维护
 
-Agents 新建或更新正式输出时，默认同步维护 `notes/` 和 `prompts/`。
+Agents 新建或更新正式输出时，默认同步维护 `notes/`。
 
 ### 3. 命名规范
 
@@ -58,7 +58,3 @@ decision: pending
 - `decision` 可用值：`pending`、`accepted`、`rejected`、`superseded`
 - 若 `status: proposed` 或 `decision: pending`，正文必须说明待 Agents / 用户确认的问题；确认后由 Agents 更新状态或把结论合并进 `prd.md`、`ux-analysis.md`、`interaction-spec.md` 等正式文件。
 - 多个无关工作流同文件并存时（见第 5 条），各工作流的正文说明放在其 `## <workflow-or-topic>` 分区下面，不集中堆在文件开头。
-
-## 相邻目录
-
-- `prompts/`：可复现复合 prompt（与 notes/ 在正式输出变更时默认同步维护）。

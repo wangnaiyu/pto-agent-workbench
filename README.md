@@ -28,7 +28,6 @@ pto-agent-workbench/
 ├── skills/              # PTO agent 工作流指令 / skills
 ├── experiments/         # 动态插件（cordis_define / cordis_run）spike
 ├── notes/               # 决策、review、update 记录
-├── prompts/             # 可复现复合 prompt
 ├── references/          # 稳定引用（PyPTOUX.md、sources.md）
 └── docs/                # architecture / pitfalls / rules / upstream-rebase
 ```

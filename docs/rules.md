@@ -11,7 +11,7 @@
 ## 2. 目录与命名
 
 - **R4** 目录名英文 kebab-case；正文默认中文；canonical 文件名：README.md / architecture.md / pitfalls.md / rules.md / sources.md / story-YYYY-MM-DD.md。
-- **R5** 结构：plugins（client）/ tools（host）/ patches（装配）/ skills / experiments / notes / prompts / references / docs。
+- **R5** 结构：plugins（client）/ tools（host）/ patches（装配）/ skills / experiments / notes / references / docs。
 
 ## 3. 编码 agent 协作
 
@@ -32,5 +32,5 @@
 
 ## 6. 记录
 
-- **R12** prompts/ 存可复现复合 prompt；notes/ 记决策、状态、验证与待办，记录规则与命名见 notes/README.md。
+- **R12** notes/ 记决策、状态、验证与待办，记录规则与命名见 notes/README.md。
 - **R13** 结构性决策（内核改动、新增 slot、通信 seam）必须写 decision 记录。
