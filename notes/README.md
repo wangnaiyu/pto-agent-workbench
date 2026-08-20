@@ -31,9 +31,9 @@ Agents 新建或更新正式输出时，默认同步维护 `notes/` 和 `prompts
 
 正文、标题和说明默认使用中文；路径、文件名及代码标识保持英文。
 
-### 5. update 文件唯一性
+### 5. 同日唯一性（所有类型）
 
-同一天只保留一个 `update-YYYY-MM-DD.md`；同一天多次更新，追加到原文件，不另建碎片文件；多个无关工作流放在同一个文件中，以 `## <workflow-or-topic>` 分区，内部使用 `###`；不得创建 `update-YYYY-MM-DD-<topic>.md` 一类变体。
+同一天每种类型只保留一个 `<slug>-YYYY-MM-DD.md`；同一天多次更新，追加到原文件，不另建碎片文件；多个无关工作流放在同一个文件中，以 `## <workflow-or-topic>` 分区，内部使用 `###`；不得创建 `<slug>-YYYY-MM-DD-<topic>.md` 一类变体。
 
 ### 6. 琐碎变更
 
@@ -57,6 +57,7 @@ decision: pending
 - `source` 可用值：`DeepSeek`、`codex`、`claude`、`user`、`cross-review`
 - `decision` 可用值：`pending`、`accepted`、`rejected`、`superseded`
 - 若 `status: proposed` 或 `decision: pending`，正文必须说明待 Agents / 用户确认的问题；确认后由 Agents 更新状态或把结论合并进 `prd.md`、`ux-analysis.md`、`interaction-spec.md` 等正式文件。
+- 多个无关工作流同文件并存时（见第 5 条），各工作流的正文说明放在其 `## <workflow-or-topic>` 分区下面，不集中堆在文件开头。
 
 ## 相邻目录
 
