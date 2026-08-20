@@ -21,4 +21,3 @@ PyPTOUX（/Users/wny/Documents/1 项目 Projects/PyPTOUX）是内容与证据来
 - 数据规则完整沿用（L1/L2/L3、不改写上游 literal、sources 留痕）。
 - 视觉：工作台 UI 复用 pto-design-system tokens/patterns；开发期按路径引用，构建期固化快照。
 - 外发路径不变：compute-graph-viewer fork PR / wangnaiyu.github.io。
-- 双 Agent 分工沿用：Codex（规划/事实/构建/Git）、Claude（前端/视觉/交互）。

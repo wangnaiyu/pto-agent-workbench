@@ -8,13 +8,9 @@
 - 内容来源：PyPTOUX（只读，见 `references/PyPTOUX.md`）。
 - 运行底座：DSH profile + 插件优先，内核改动最小化。
 
-## 2. 角色分工（沿用 PyPTOUX 双 Agent 约定）
+## 2. 多 agent 协同（暂不预设）
 
-| 角色 | 默认职责 |
-|---|---|
-| Codex | host 插件（自定义工具）、构建链、profile 装配、Git / upstream rebase |
-| Claude | client UI 插件（泳道 / 计算图 / 内存 / 硬件面板）、工作台视觉与交互 |
-| 官方 DSH | 可作编码 agent（为 repo A 开 workspace）；dogfooding：动态插件验证回路 |
+本工程不设固定角色分工（不再沿用 PyPTOUX 双 Agent 约定）；先由实际工作流跑出经验，再复盘沉淀多 agent 协同规则（决策记录：notes/decision-2026-08-20-drop-dual-agent-division.md）。
 
 ## 3. 强制规则（完整版见 docs/rules.md）
 
