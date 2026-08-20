@@ -16,3 +16,6 @@ dist/
 
 # logs
 *.log
+
+# pnpm content-addressable store (falls to repo root without global store-dir)
+.pnpm-store/
