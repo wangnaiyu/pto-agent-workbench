@@ -27,4 +27,4 @@
 - 做 spike：`experiments/`，用 cordis_define / cordis_run 验证回路。
 - 固化插件：`plugins/`（client）或 `tools/`（host），新包放 harness 的 `packages/` 下。
 - 装配工作台：`patches/`。
-- 记录：`notes/`、`prompts/` 对齐 PyPTOUX 记录习惯。
+- 记录：`notes/`、`prompts/`（notes 记录规范见 `notes/README.md`）。

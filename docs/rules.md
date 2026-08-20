@@ -32,5 +32,5 @@
 
 ## 6. 记录
 
-- **R12** prompts/ 存可复现复合 prompt；notes/ 记 decision / review / story。
+- **R12** prompts/ 存可复现复合 prompt；notes/ 记决策、状态、验证与待办，记录规则与命名见 notes/README.md。
 - **R13** 结构性决策（内核改动、新增 slot、通信 seam）必须写 decision 记录。

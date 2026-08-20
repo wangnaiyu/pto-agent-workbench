@@ -1,6 +1,11 @@
-# decision-2026-08-20: 移除"双 Agent 协作分工"限制
+---
+owner: DeepSeek
+status: accepted
+source: user
+decision: accepted
+---
 
-状态：已采纳（2026-08-20）
+# decision-2026-08-20: 移除"双 Agent 协作分工"限制
 
 ## 背景
 
