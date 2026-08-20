@@ -15,7 +15,7 @@
 
 ## 3. 编码 agent 协作
 
-> 多 agent 协同规则暂不预设（原"双 Agent 分工"已移除，decision 见 notes/decision-2026-08-20-drop-dual-agent-division.md）；待工作流实际跑通后复盘沉淀。
+> 多 agent 协同规则暂不预设（原"双 Agent 分工"已移除，decision 见 notes/decision-2026-08-20.md）；待工作流实际跑通后复盘沉淀。
 
 - **R6 同一 checkout 单 writer**；交接先 commit / merge；多 checkout 各自分支。
 - **R7 接手流程**：先读本工作区 AGENTS.md → docs/pitfalls.md → 按任务参考 PyPTOUX skill。
