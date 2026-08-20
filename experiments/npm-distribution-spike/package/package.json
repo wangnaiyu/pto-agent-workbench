@@ -1,0 +1,20 @@
+{
+  "name": "@wangnaiyu/pto-agent-workbench",
+  "version": "0.0.0-spike.1",
+  "description": "Prebuilt PTO Agent workbench launcher distribution spike",
+  "type": "module",
+  "bin": {
+    "pto-agent-workbench": "bin/pto-agent-workbench.mjs"
+  },
+  "exports": {
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bin",
+    "runtime"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "license": "MIT"
+}

@@ -10,12 +10,12 @@ dist/
 # env / secrets
 .env
 .env.*
+.credentials.yaml
+.dsh/
+.dsh-pto-workbench/
 
 # os
 .DS_Store
 
 # logs
 *.log
-
-# pnpm content-addressable store (falls to repo root without global store-dir)
-.pnpm-store/
