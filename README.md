@@ -32,53 +32,39 @@ pto-agent-workbench/
 └── docs/                # architecture / pitfalls / rules / upstream-rebase
 ```
 
-## 环境要求
+## 安装与启动
 
-| 依赖 | 版本 | 说明 |
-|---|---|---|
-| Node.js | 22.19+ 或 24+ | 官方要求（DSH developer preview） |
-| pnpm | 11.7.0（repo pin） | 通过 corepack 提供，无需全局安装 |
-| git | 任意较新版本 | clone fork 与构建 |
-| 磁盘 | ≥ 10GB 空闲 | 依赖 + 全量构建产物 |
-
-## 在新机器上安装（bootstrap）
+面向普通用户的发行形式与官方 DSH 一致：机器上只需要 **Node.js 22.19+ 或 24+**（含 npm），然后执行一条命令：
 
 ```sh
-git clone git@github.com:wangnaiyu/pto-agent-workbench.git
-cd pto-agent-workbench
-./setup.sh        # 环境检查 → pnpm shim → clone fork → install → build（首次较慢）
-./start.sh        # 启动工作台 http://127.0.0.1:3180（可传端口参数，如 ./start.sh 4180）
+npx -y @wangnaiyu/pto-agent-workbench
 ```
 
-`setup.sh` 会：
+launcher 默认在 `http://127.0.0.1:3180` 启动 Web 工作台；也可传入 `--port 4180`。运行时与用户的当前目录、repo 实际下载路径无关，程序与会话数据统一放在 `~/.dsh-pto-workbench/`。
 
-1. 检查 git / node 版本（< 22.19 直接报错退出）；
-2. 确保 pnpm 可用：`corepack enable --install-directory ~/.local/bin`（装到用户目录，避免 `/usr/local/bin` 权限问题；已装 pnpm 则跳过）；
-3. clone fork `wangnaiyu/deepseek-harness` 到 `harness/` 并添加 `upstream` remote；
-4. `pnpm install` + `pnpm run build`（全量构建）。
+> **发行状态：** 一命令接口已在 macOS arm64 的本地 tarball 上端到端验证通过，但 npm 包尚未正式发布，所以上述命令目前是确定的发行接口，还不是可对外使用的安装命令。发布前还需补齐 macOS / Linux / Windows 构建矩阵与 npm provenance。
 
-> `harness/` 在 `.gitignore` 中，是独立 git 仓库，不会随本仓库推送。
+普通用户不再需要 Git、SSH key、pnpm、Corepack、源码 clone 或本地全量构建。这也意味着 README 不再保留一份与安装脚本重复的“手工快速开始”。
 
-## 手工快速开始（等价于 setup.sh）
+`npx` 仍需要通过 HTTPS 访问 npm registry；这是单命令方案无法消除的最后一类网络依赖。正式发布会同时提供带校验的 GitHub Release 离线包；TLS/SSL 错误应修复代理或 CA，不应通过关闭证书校验规避。
+
+### 源码开发（发布前的当前入口）
+
+如果要修改工作台，或在 npm 首版发布前从本仓库运行，请使用：
 
 ```sh
-# 1. fork deepseek-ai/deepseek-harness 后 clone 到 harness/
-cd harness
-# 2. 依赖与构建（Node 22.19+ / 24+，pnpm@11.7.0 via corepack）
-corepack enable
-pnpm install
-pnpm run build
-# 3. 启动改装后的工作台（固定端口 3180，与官方实例 3080 互不冲突）
-pnpm dsh --profile web --port 3180
+./setup.sh
+./start.sh
 ```
 
-> 官方 DSH 实例（默认 3080）可继续作为开发工具并行运行；改装实例使用独立端口 3180，两者互不干扰。
+详细的依赖、镜像与故障排查参见 [`docs/development.md`](docs/development.md)。这是开发者流程，不是面向普通用户的备用安装教程。
 
 ## 文档索引
 
 | 文档 | 内容 |
 |---|---|
 | `docs/architecture.md` | DSH 机制映射：slot 扩展面、通信通道、三层改造路径 |
+| `docs/development.md` | 源码 checkout 搭建、启动、网络与镜像配置 |
 | `docs/pitfalls.md` | 已知问题与规避（版本、端口、动态插件、通信、slot、协作） |
 | `docs/rules.md` | 规则与约定（架构分层、目录、协作、数据、发布、记录） |
 | `docs/upstream-rebase.md` | fork 维护与 upstream rebase 流程 |

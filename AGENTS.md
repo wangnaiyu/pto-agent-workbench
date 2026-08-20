@@ -14,13 +14,12 @@
 
 ## 3. 强制规则（完整版见 docs/rules.md）
 
-- R1 同一 checkout 单 writer；交接先 commit / merge（未提交工作树锁）。
-- R2 改造优先级：动态插件 spike → 静态插件 → 内核改动（需记录理由）。
-- R3 依赖单向：本工作区消费 PyPTOUX，反向不成立。
-- R4 数据三级策略沿用（L1/L2/L3）；L3 不外发；L2 外发必须披露。
-- R5 技术事实回权威来源校验（pypto 本地镜像 / 官方文档），不改写上游 literal。
-- R6 fork 维护：定期 rebase upstream（默认分支 master），内核改动越少越好。
+- R1 改造优先级：动态插件 spike → 静态插件 → 内核改动（需记录理由）。
+- R2 依赖单向：本工作区消费 PyPTOUX，反向不成立。
+- R6 同一 checkout 单 writer；交接先 commit / merge（未提交工作树锁）。
 - R7 agent 接手任务：先读本 AGENTS.md，再按需读 docs/pitfalls.md 与 PyPTOUX 对应 skill。
+- R8 数据三级策略沿用（L1/L2/L3）；L3 不外发；L2 外发必须披露。
+- R9 技术事实回权威来源校验（pypto 本地镜像 / 官方文档），不改写上游 literal。
 
 ## 4. 任务入口
 

@@ -4,7 +4,7 @@
 
 ## 1. DSH 生态与版本
 
-- **P1.1 Developer preview 破坏性变更**：官方明示 "THERE WILL BE COMPATIBILITY-BREAKING CHANGES"。→ 定期 rebase upstream；内核改动最小化（R2）。
+- **P1.1 Developer preview 破坏性变更**：官方明示 "THERE WILL BE COMPATIBILITY-BREAKING CHANGES"。→ 定期 rebase upstream；内核改动最小化（R1）。
 - **P1.2 默认分支是 `master`**（不是 main）。→ fetch/rebase 时注意。
 - **P1.3 静态 client 插件构建工具未随 npm 发布**：`tsdown.client.ts`（clientBundle preset）只在源码仓 `packages/client/`；"plugin outside this repository has to reproduce that build itself"。→ 带 UI 的插件必须基于源码仓（fork）构建；纯 host 工具（无浏览器半）可独立发布。
 

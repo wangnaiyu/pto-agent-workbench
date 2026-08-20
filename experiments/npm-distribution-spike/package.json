@@ -1,0 +1,11 @@
+{
+  "name": "pto-agent-workbench-npm-distribution-spike",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare-runtime": "node scripts/prepare-runtime.mjs",
+    "build": "node scripts/build-package.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  }
+}
