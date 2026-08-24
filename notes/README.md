@@ -39,22 +39,18 @@ Agents 新建或更新正式输出时，默认同步维护 `notes/`。
 
 纯错别字、链接修复、机械格式化可以并入当天记录；当天尚无记录时可以不新建，但交付时应说明属于 trivial change。
 
-### 7. frontmatter
+### 7. 分区元数据行
 
-review、decision、clarification 类文件必须包含：
+review、decision、clarification 类文件顶层只写 `# <slug>-YYYY-MM-DD`，不写 YAML frontmatter。每个工作流必须使用 `## <workflow-or-topic>` 分区，并在分区标题后紧接一行引用式元数据。这是本项目的 Markdown 记录约定，不是 YAML frontmatter。
 
-```yaml
----
-owner: <agent>
-status: proposed
-source: cross-review
-decision: pending
----
+```markdown
+> 本分区 `owner: <agent>`、`source: cross-review`、`status: proposed`、`decision: pending`。
 ```
 
 - `owner` 可用值：`DeepSeek`、`Codex`、`Claude`
 - `status` 可用值：`proposed`、`accepted`、`superseded`
 - `source` 可用值：`DeepSeek`、`codex`、`claude`、`user`、`cross-review`
 - `decision` 可用值：`pending`、`accepted`、`rejected`、`superseded`
-- 若 `status: proposed` 或 `decision: pending`，正文必须说明待 Agents / 用户确认的问题；确认后由 Agents 更新状态或把结论合并进 `prd.md`、`ux-analysis.md`、`interaction-spec.md` 等正式文件。
-- 多个无关工作流同文件并存时（见第 5 条），各工作流的正文说明放在其 `## <workflow-or-topic>` 分区下面，不集中堆在文件开头。
+- 引导语、字段顺序、标点和字段名必须与上述示例一致；`##` 标题、元数据行和后续正文之间各保留一个空行。
+- 分区内部使用 `###` 及更低级标题，不得把“背景”“决策”“理由”等分区内容写成新的 `##`。
+- 若 `status` 为 `proposed` 或 `decision` 为 `pending`，该分区正文必须说明待 Agents / 用户确认的问题；确认后由 Agents 更新状态或把结论合并进 `prd.md`、`ux-analysis.md`、`interaction-spec.md` 等正式文件。
