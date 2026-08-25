@@ -6,6 +6,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 HARNESS_DIR="$ROOT/harness"
 DSH_BIN="$HARNESS_DIR/apps/cli/lib/bin.js"
+PTO_PATCH="$ROOT/patches/cordis.patch.yml"
 PORT="${1:-3180}"
 # 会话隔离：工作台固定使用独立 DSH_HOME（~/.dsh-pto-workbench），与官方实例 3080 的 ~/.dsh
 # 互不共享会话/数据。注意不能用 "${DSH_HOME:-默认}" 的写法——调用方（如官方实例的 agent bash）
@@ -15,7 +16,8 @@ export DSH_HOME="$HOME/.dsh-pto-workbench"
 unset DSH_SHELL DSH_SESSION_ID DSH_SESSION_JSONL DSH_WEB_URL 2>/dev/null || true
 
 [ -f "$DSH_BIN" ] || { echo "[start] ERROR: 未找到已构建的 DSH，请先运行 ./setup.sh" >&2; exit 1; }
+[ -f "$PTO_PATCH" ] || { echo "[start] ERROR: 未找到工作台 patch: $PTO_PATCH" >&2; exit 1; }
 command -v node >/dev/null 2>&1 || { echo "[start] ERROR: 未找到 Node.js" >&2; exit 1; }
 
 echo "[start] 启动 pto-agent-workbench: http://127.0.0.1:$PORT"
-exec node "$DSH_BIN" web --port "$PORT"
+exec node "$DSH_BIN" web --patch "$PTO_PATCH" --port "$PORT"
