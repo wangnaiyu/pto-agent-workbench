@@ -6,4 +6,5 @@
 - profile manifest / `dsh plugin --profile <name>` 使用记录。
 - 装配原则：能 patch 不 fork；能插件不内核（R1）。
 
-当前状态：待起步。
+当前装配：`start.sh` 通过 `--patch patches/cordis.patch.yml` 加载工作台覆盖层；
+Host cwd 的会话保留真实 cwd，物理会话桶使用 `sessions/default/`。

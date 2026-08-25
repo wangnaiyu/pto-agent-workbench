@@ -1,0 +1,9 @@
+# PTO Agent 工作台的 profile 覆盖层。未指定 workspaceId 创建的会话使用
+# Host 进程 cwd；保留 header 中的真实 cwd，仅将其物理持久化桶命名为 default。
+
+- id: session-persistence-jsonl
+  config:
+    root: !!js dshHomePath('sessions')
+    projectDirectoryAliases:
+      - cwd: !!js process.cwd()
+        directory: default
