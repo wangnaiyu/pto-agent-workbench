@@ -7,3 +7,23 @@
     projectDirectoryAliases:
       - cwd: !!js process.cwd()
         directory: default
+
+# Official PTO business Skills are a deployment-level provider, separate from
+# preset-local project/user discovery. The explicit root keeps the workbench
+# repository as the only content owner and prevents DSH bundled Skills from
+# inheriting PTO product ownership.
+- id: skill-filesystem
+  disabled: false
+  config:
+    providerName: pto-bundled
+    includeDefaultRoots: false
+    bundledSkillDir: !!js "process.getBuiltinModule('node:url').fileURLToPath(new URL('../skills/bundled/', baseUrl))"
+
+# Product origin is trusted profile metadata, not inferred from `bundled`, the
+# provider id, or a Skill name. The Client receives only the PTO label.
+- id: composer-catalog
+  config:
+    providerOrigins:
+      - provider: pto-bundled
+        source: bundled
+        kind: pto
