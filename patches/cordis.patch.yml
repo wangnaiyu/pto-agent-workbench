@@ -17,7 +17,7 @@
   config:
     providerName: pto-bundled
     includeDefaultRoots: false
-    bundledSkillDir: !!js "process.getBuiltinModule('node:url').fileURLToPath(new URL('../skills/bundled/', baseUrl))"
+    bundledSkillDir: !!js "process.getBuiltinModule('node:path').resolve(process.env.PTO_WORKBENCH_ROOT ?? process.cwd(), 'skills/bundled')"
 
 # Product origin is trusted profile metadata, not inferred from `bundled`, the
 # provider id, or a Skill name. The Client receives only the PTO label.
