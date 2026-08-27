@@ -8,6 +8,10 @@ HARNESS_DIR="$ROOT/harness"
 DSH_BIN="$HARNESS_DIR/apps/cli/lib/bin.js"
 PTO_PATCH="$ROOT/patches/cordis.patch.yml"
 PORT="${1:-3180}"
+# Patch expressions execute in the generated DSH profile context, not beside
+# this launcher overlay. Export the source checkout explicitly so deployment-
+# owned PTO Skills resolve correctly even when start.sh is called elsewhere.
+export PTO_WORKBENCH_ROOT="$ROOT"
 # 会话隔离：工作台固定使用独立 DSH_HOME（~/.dsh-pto-workbench），与官方实例 3080 的 ~/.dsh
 # 互不共享会话/数据。注意不能用 "${DSH_HOME:-默认}" 的写法——调用方（如官方实例的 agent bash）
 # 注入的 DSH_HOME 已被设置，会顶掉默认值；因此无条件覆盖。
