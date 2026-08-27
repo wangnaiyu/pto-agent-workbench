@@ -84,6 +84,11 @@ try {
     ungrouped.skills.map(skill => [skill.name, skill.origin.label]),
   )
   assert(ungroupedOrigins['pto-evidence-intake'] === 'PTO', 'PTO Skill is not labelled PTO')
+  assert(ungroupedOrigins['pto-analyze'] === 'PTO', 'PTO analyze Skill is not labelled PTO')
+  assert(ungroupedOrigins['pto-compare'] === 'PTO', 'PTO compare Skill is not labelled PTO')
+  assert(ungroupedOrigins['pto-debug'] === 'PTO', 'PTO debug Skill is not labelled PTO')
+  assert(ungroupedOrigins['pto-optimize'] === 'PTO', 'PTO optimize Skill is not labelled PTO')
+  assert(ungroupedOrigins['pto-review'] === 'PTO', 'PTO review Skill is not labelled PTO')
   assert(ungroupedOrigins['dsh-helper'] === 'DSH', 'DSH bundled Skill was misclassified')
   assert(!('project-helper' in ungroupedOrigins), 'ungrouped catalog leaked a project Skill')
 
@@ -92,11 +97,26 @@ try {
     grouped.skills.map(skill => [skill.name, skill.origin.label]),
   )
   assert(groupedOrigins['pto-evidence-intake'] === 'PTO', 'Workspace draft lost the PTO Skill')
+  assert(groupedOrigins['pto-analyze'] === 'PTO', 'Workspace draft lost the PTO analyze Skill')
+  assert(groupedOrigins['pto-compare'] === 'PTO', 'Workspace draft lost the PTO compare Skill')
+  assert(groupedOrigins['pto-debug'] === 'PTO', 'Workspace draft lost the PTO debug Skill')
+  assert(groupedOrigins['pto-optimize'] === 'PTO', 'Workspace draft lost the PTO optimize Skill')
+  assert(groupedOrigins['pto-review'] === 'PTO', 'Workspace draft lost the PTO review Skill')
   assert(groupedOrigins['dsh-helper'] === 'DSH', 'Workspace draft misclassified DSH bundled Skill')
   assert(groupedOrigins['project-helper'] === 'Phase 3 Workspace', 'project Skill lacks Workspace origin')
 
   const definition = await ctx.skills.get('pto-evidence-intake', { cwd: workspace })
   assert(definition?.content.includes('PTO Evidence Intake'), 'PTO Skill body did not load')
+  const analyze = await ctx.skills.get('pto-analyze', { cwd: workspace })
+  assert(analyze?.content.includes('PTO Analyze'), 'PTO analyze Skill body did not load')
+  const compare = await ctx.skills.get('pto-compare', { cwd: workspace })
+  assert(compare?.content.includes('PTO Compare'), 'PTO compare Skill body did not load')
+  const debug = await ctx.skills.get('pto-debug', { cwd: workspace })
+  assert(debug?.content.includes('PTO Debug'), 'PTO debug Skill body did not load')
+  const optimize = await ctx.skills.get('pto-optimize', { cwd: workspace })
+  assert(optimize?.content.includes('PTO Optimize'), 'PTO optimize Skill body did not load')
+  const review = await ctx.skills.get('pto-review', { cwd: workspace })
+  assert(review?.content.includes('PTO Review'), 'PTO review Skill body did not load')
 
   console.log(JSON.stringify({
     ptoRoot,

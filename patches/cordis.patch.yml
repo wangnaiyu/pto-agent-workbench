@@ -27,3 +27,25 @@
       - provider: pto-bundled
         source: bundled
         kind: pto
+
+# Deterministic PTO run discovery and artifact capability inspection. This row
+# is profile-owned so the generic DSH bundle carries no PTO product behavior by
+# default; the tools remain constrained to each calling Session workspace.
+- id: tool-pto-run
+  disabled: false
+
+# Durable proposal/query registry plus one trusted Host-only execution route
+# with audit receipt, Git/PyPTO identities, atomic output reservation, and
+# recognized terminal settlement. Models retain plan/get/list only.
+- id: pto-experiments
+  disabled: false
+
+# Session-addressed Remote used by the durable experiment tab and user-triggered
+# trusted execution. It accepts no caller path; reads never create or resume an
+# Agent or Session, while execution requires the existing live Session Agent.
+- id: pto-experiment-dashboard
+  disabled: false
+
+# PTO-owned transcript and details presentation for evidence-gated comparison.
+- id: ui-pto-experiments
+  disabled: false
