@@ -1,6 +1,6 @@
 # 源码开发
 
-本文档只面向需要修改 PTO Agent 工作台的开发者。普通用户的正式入口是 README 中的单条 `npx` 命令，不需要执行本文档的 clone、install 或 build。
+本文档只面向需要修改 PTO Agent 工作台的开发者。产品入口见 [根 README](../../README.md)。预构建包仍是发行目标，不能把历史 tarball 测试当成已发布。
 
 ## 环境要求
 
@@ -14,6 +14,8 @@
 `setup.sh` 默认使用 HTTPS clone，不需要 SSH key；它不依赖 Corepack 或全局 pnpm，而是由 npm 临时提供 `pnpm@11.7.0`。
 
 ## 搭建与启动
+
+以下命令从外层仓库根目录运行。两个 Git 仓库分别检查状态、测试和提交；外层不会记录 harness 的未提交源码。升级维护见 [上游流程](upstream-rebase.md)。仅整理文档不需要执行 setup 或启动用户实例。
 
 ```sh
 ./setup.sh
@@ -36,6 +38,20 @@ node .githooks/check-secrets.mjs --working-tree
 ```
 
 检查是最后一道防误提交门禁，不能代替凭据隔离。真实模型 API key 只应通过工作台凭据界面写入仓库外的 `~/.dsh-pto-workbench/.credentials.yaml`，不要写入脚本、文档、项目 `.env` 或命令参数。
+
+## 研发资料与治理验证
+
+文档与任务的入口见 [研发导航](../README.md)，归属按 [内容路由](content-routing.md)。修改治理文件后可从外层根目录运行：
+
+```sh
+node work/scripts/check-workspace.mjs
+node --test work/scripts/*.test.mjs
+node .githooks/check-secrets.mjs --self-test
+node .githooks/check-secrets.mjs --working-tree
+git diff --check
+```
+
+结构脚本检查本地 Markdown 路径、主题索引、任务字段/归档终态和历史原文字节，不验证远端链接、标题锚点、语义正确性或 Agent 自动发现。测试使用隔离临时目录；launcher 测试运行假 CLI，不接触真实 DSH 会话。密钥检查只跳过 Git 确认删除的工作树文件，其他读取失败仍阻止检查通过。
 
 ## 网络与镜像
 

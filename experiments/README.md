@@ -9,4 +9,4 @@
 - `wait_canvas_selection` 最小回路
 - before/after 对比卡片
 
-记录要求：每个 spike 留 README 或 notes/story-YYYY-MM-DD.md，注明验证结论与是否固化。动态插件进程内存态，重启即失（P3.1）。
+记录要求：每个可复验 spike 留自己的 README，注明验证结论与是否固化；长期产品判断回写对应 work/product 主题，过程状态进入相关任务包。不重建根 notes。目录与记录规则见 [内容路由](../work/docs/content-routing.md)。动态插件是进程内存态，重启即失。

@@ -1,6 +1,6 @@
 # 草稿能力目录动态 spike
 
-本实验验证 `notes/decision-2026-08-25.md` 第一阶段：动态 Host 插件在不创建 Agent 或 Session 的情况下读取全局命令、指定 preset 的 standing-scope 命令，以及指定 Workspace 的项目 Skills。
+本实验验证 `work/archive/legacy-notes/decision-2026-08-25.md` 第一阶段：动态 Host 插件在不创建 Agent 或 Session 的情况下读取全局命令、指定 preset 的 standing-scope 命令，以及指定 Workspace 的项目 Skills。
 
 ## 运行
 

@@ -89,7 +89,14 @@ function stagedFiles() {
 }
 
 function workingTreeFiles() {
-  return nulSeparatedPaths(git(['ls-files', '--cached', '--others', '--exclude-standard', '-z']))
+  const files = nulSeparatedPaths(git(['ls-files', '--cached', '--others', '--exclude-standard', '-z']))
+  const deleted = nulSeparatedPaths(git(['ls-files', '--deleted', '-z']))
+  return withoutDeletedFiles(files, deleted)
+}
+
+function withoutDeletedFiles(files, deleted) {
+  const deletedPaths = new Set(deleted)
+  return [...new Set(files)].filter(path => !deletedPaths.has(path))
 }
 
 function stagedContent(path) {
@@ -123,6 +130,10 @@ function scan(files, contentFor) {
 }
 
 function selfTest() {
+  const remaining = withoutDeletedFiles(['kept.md', 'old.md', 'new.md', 'new.md'], ['old.md'])
+  if (JSON.stringify(remaining) !== JSON.stringify(['kept.md', 'new.md'])) {
+    throw new Error('working-tree enumeration lost existing files or retained deleted files')
+  }
   const samples = [
     `sk-${'A'.repeat(32)}`,
     `api_key=${'B'.repeat(32)}`,

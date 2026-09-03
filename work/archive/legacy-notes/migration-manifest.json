@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-03",
+  "sourceCommit": "d90b8cc8177df6e046a5c10fd3add3a65a808ca2",
+  "files": [
+    {
+      "source": "notes/README.md",
+      "archive": "work/archive/legacy-notes/original-readme.md",
+      "sha256": "95029ce095ec774351b85c5f6db46d12fb8c52170a624911667339b8add4fdb9",
+      "sections": [
+        {
+          "title": "规则",
+          "line": 5,
+          "target": "work/docs/content-routing.md",
+          "disposition": "superseded"
+        }
+      ]
+    },
+    {
+      "source": "notes/decision-2026-08-20.md",
+      "archive": "work/archive/legacy-notes/decision-2026-08-20.md",
+      "sha256": "0c90567be6b0dcdbd97e24e68c81f7043d33b6fa962cc511ed19556660f0a0e6",
+      "sections": [
+        {
+          "title": "移除“双 Agent 协作分工”限制",
+          "line": 3,
+          "target": "work/docs/rules.md",
+          "disposition": "retained"
+        },
+        {
+          "title": "PTO Agent 工作台改用预构建发行包",
+          "line": 36,
+          "target": "work/docs/distribution.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "工作台任务起始对象与信息架构",
+          "line": 56,
+          "target": "work/product/artifact-inspection/data-intake.md",
+          "disposition": "partly-superseded"
+        }
+      ]
+    },
+    {
+      "source": "notes/decision-2026-08-25.md",
+      "archive": "work/archive/legacy-notes/decision-2026-08-25.md",
+      "sha256": "a96ed763ec210fc654537c1a750d78d19c7d98d7ddcf6f2ff1f73a1152622e20",
+      "sections": [
+        {
+          "title": "新会话输入框 `+` 的草稿能力目录",
+          "line": 3,
+          "target": "work/product/conversation-composer/design.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "PTO 持久实验 Dashboard 切片",
+          "line": 491,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "PTO Dashboard 用户执行切片",
+          "line": 520,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "retained-with-limits"
+        }
+      ]
+    },
+    {
+      "source": "notes/update-2026-08-20.md",
+      "archive": "work/archive/legacy-notes/update-2026-08-20.md",
+      "sha256": "8d40e3357286bdae1f9097a594f053852a0c5b888c423ebf31b2dc54d5b7e32f",
+      "sections": [
+        {
+          "title": "notes 记录规则确立",
+          "line": 3,
+          "target": "work/docs/content-routing.md",
+          "disposition": "superseded"
+        },
+        {
+          "title": "双 Agent 分工移除",
+          "line": 41,
+          "target": "work/docs/rules.md",
+          "disposition": "retained"
+        },
+        {
+          "title": "prompts/ 移除（记录层调整）",
+          "line": 55,
+          "target": "work/docs/content-routing.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "3180 会话隔离（DSH_HOME 独立）",
+          "line": 79,
+          "target": "work/docs/development.md",
+          "disposition": "retained"
+        },
+        {
+          "title": "3180 左上角产品名改版（deepseek → PTO Agent 工作台，HARNESS → DSH）",
+          "line": 110,
+          "target": "work/docs/architecture.md",
+          "disposition": "superseded"
+        },
+        {
+          "title": "3180 浏览器标签页标题品牌化（PTO Agent 工作台）",
+          "line": 147,
+          "target": "work/docs/architecture.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "推送与 PR（2026-08-20 追加）",
+          "line": 179,
+          "target": "work/docs/upstream-rebase.md",
+          "disposition": "historical-only"
+        },
+        {
+          "title": "harness fork rebase 至上游 rc.8 + PTO 品牌迁移到 slot 机制",
+          "line": 196,
+          "target": "work/docs/upstream-rebase.md",
+          "disposition": "historical-only"
+        },
+        {
+          "title": "PTO 品牌标签布局修复",
+          "line": 231,
+          "target": "work/docs/architecture.md",
+          "disposition": "historical-only"
+        },
+        {
+          "title": "工作区标题栏新增“新会话”入口",
+          "line": 253,
+          "target": "work/product/conversation-composer/design.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "侧边栏“会话 / 运行历史”双 Tab",
+          "line": 276,
+          "target": "work/docs/architecture.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "空白对话页欢迎语与输入区布局调整",
+          "line": 301,
+          "target": "work/product/conversation-composer/design.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "初始对话区滚动条修复",
+          "line": 324,
+          "target": "work/product/conversation-composer/validation.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "安装与启动发行方案",
+          "line": 345,
+          "target": "work/docs/distribution.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "工作台任务起始对象与信息架构（六议题定稿）",
+          "line": 366,
+          "target": "work/product/artifact-inspection/data-intake.md",
+          "disposition": "partly-superseded"
+        }
+      ]
+    },
+    {
+      "source": "notes/update-2026-08-21.md",
+      "archive": "work/archive/legacy-notes/update-2026-08-21.md",
+      "sha256": "24808c35a14807b978285218a8ef38ae9fb294fa3e212e4d913bd15e95fa62a9",
+      "sections": [
+        {
+          "title": "review / decision / clarification 分区元数据格式统一",
+          "line": 3,
+          "target": "work/docs/content-routing.md",
+          "disposition": "superseded"
+        }
+      ]
+    },
+    {
+      "source": "notes/update-2026-08-24.md",
+      "archive": "work/archive/legacy-notes/update-2026-08-24.md",
+      "sha256": "a2f7bae30b581cb867327c72e02e0c2c9eb6108cac45325d9468b8ef80fd45ae",
+      "sections": [
+        {
+          "title": "侧边栏信息架构落地（decision-2026-08-20 §1）",
+          "line": 3,
+          "target": "work/product/artifact-inspection/data-intake.md",
+          "disposition": "partly-superseded"
+        },
+        {
+          "title": "会话未分组常驻与空态归组",
+          "line": 52,
+          "target": "work/product/conversation-composer/design.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "未分组会话的 default 持久化桶",
+          "line": 79,
+          "target": "work/docs/architecture.md",
+          "disposition": "retained-with-limits"
+        }
+      ]
+    },
+    {
+      "source": "notes/update-2026-08-25.md",
+      "archive": "work/archive/legacy-notes/update-2026-08-25.md",
+      "sha256": "6420c796315a3aafbd552067d1597925301196397080fa5843a9b435ab67a69a",
+      "sections": [
+        {
+          "title": "新会话输入框 `+` 的草稿能力目录：动态 spike",
+          "line": 3,
+          "target": "work/product/conversation-composer/design.md",
+          "disposition": "historical-only"
+        }
+      ]
+    },
+    {
+      "source": "notes/update-2026-08-26.md",
+      "archive": "work/archive/legacy-notes/update-2026-08-26.md",
+      "sha256": "d40672c6353aa3f760d5990124d4f6cc6eb32f79c5cec395c0431b1ad8036ad4",
+      "sections": [
+        {
+          "title": "新会话输入框 `+` 的草稿能力目录：Host 静态目录",
+          "line": 3,
+          "target": "work/product/conversation-composer/design.md",
+          "disposition": "retained"
+        },
+        {
+          "title": "新会话输入框 `+` 的草稿能力目录：PTO bundled provider 基线",
+          "line": 34,
+          "target": "work/product/official-skill-integration/integration-design.md",
+          "disposition": "partly-superseded"
+        },
+        {
+          "title": "新会话输入框 `+` 的草稿能力目录：Client 统一 source",
+          "line": 61,
+          "target": "work/product/conversation-composer/design.md",
+          "disposition": "retained"
+        },
+        {
+          "title": "新会话输入框 `+` 的草稿能力目录：显式 Skill 手势",
+          "line": 85,
+          "target": "work/product/conversation-composer/design.md",
+          "disposition": "retained"
+        },
+        {
+          "title": "新会话输入框 `+` 的草稿能力目录：首次发送再校验",
+          "line": 106,
+          "target": "work/product/conversation-composer/design.md",
+          "disposition": "retained"
+        },
+        {
+          "title": "PTO 插件与业务 Skills：运行产物准入纵向切片",
+          "line": 132,
+          "target": "work/product/artifact-inspection/data-intake.md",
+          "disposition": "partly-superseded"
+        },
+        {
+          "title": "PTO 插件与业务 Skills：失败分诊纵向切片",
+          "line": 163,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "PTO 插件与业务 Skills：候选优化实验切片",
+          "line": 191,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "PTO 插件与业务 Skills：Before/After 比较切片",
+          "line": 219,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "retained-with-limits"
+        }
+      ]
+    },
+    {
+      "source": "notes/update-2026-08-27.md",
+      "archive": "work/archive/legacy-notes/update-2026-08-27.md",
+      "sha256": "d6bd6c0bed665f4ed6677baf8c5009171d9234468d25652ecd0a96be3f8d42f6",
+      "sections": [
+        {
+          "title": "第八阶段启动：集成与回归",
+          "line": 3,
+          "target": "work/product/conversation-composer/validation.md",
+          "disposition": "historical-only"
+        },
+        {
+          "title": "PTO Dashboard 用户执行切片",
+          "line": 21,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "PTO 持久实验 Dashboard 切片",
+          "line": 41,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "PTO 插件与业务 Skills：实验复盘切片",
+          "line": 63,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "PTO 业务 Skills：联合边界复核",
+          "line": 96,
+          "target": "work/product/official-skill-integration/integration-design.md",
+          "disposition": "partly-superseded"
+        },
+        {
+          "title": "PTO experiment contract / registry 动态 spike",
+          "line": 120,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "historical-only"
+        },
+        {
+          "title": "PTO experiment proposal/query 静态固化",
+          "line": 148,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "PTO 可信实验执行准入切片",
+          "line": 174,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "PTO app-owned 指标采集与比较切片",
+          "line": 185,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "retained-with-limits"
+        },
+        {
+          "title": "PTO evidence-gated comparison UI 切片",
+          "line": 211,
+          "target": "work/docs/experiment-contract.md",
+          "disposition": "retained-with-limits"
+        }
+      ]
+    },
+    {
+      "source": "notes/update-2026-08-28.md",
+      "archive": "work/archive/legacy-notes/update-2026-08-28.md",
+      "sha256": "55bcd61fe6e842f7fe1b5c2040e2717d5e6cc71020d04599f107aaed4b3e71f3",
+      "sections": [
+        {
+          "title": "harness 上游 rebase 与 3180 兼容修复",
+          "line": 3,
+          "target": "work/docs/pitfalls.md",
+          "disposition": "historical-only"
+        }
+      ]
+    },
+    {
+      "source": "notes/update-2026-09-03.md",
+      "archive": "work/archive/legacy-notes/update-2026-09-03.md",
+      "sha256": "e4ce367b2c5d7aa24b3f736cfb151acf4d50fa4d39efe8e3fbcace3fedb99111",
+      "sections": [
+        {
+          "title": "harness 上游连续 rebase（alpha.4 → alpha.5）",
+          "line": 3,
+          "target": "work/docs/architecture.md",
+          "disposition": "retained-with-limits"
+        }
+      ]
+    }
+  ]
+}
