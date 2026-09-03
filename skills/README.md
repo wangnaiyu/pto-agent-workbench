@@ -11,7 +11,7 @@ PTO 算子设计 / 调试 / 调优 / 复盘 的 agent 工作流定义（agent in
 
 ## 发布边界
 
-- `bundled/` 是 PTO profile 唯一装配的官方业务 Skill root。
+- `bundled/` 是 PTO profile 当前装配的工作台自有业务 Skill root（不是 PyPTO 上游官方 Skill 镜像）。
 - profile 使用独立技术 provider `pto-bundled`，并在草稿能力目录的可信
   `providerOrigins` 中把 `pto-bundled + bundled` 映射为产品来源 `PTO`。
 - 根目录说明文件、未来开发素材和项目 Skills 不进入这个 root，因此不会被误发现或误标为 PTO。
@@ -26,4 +26,10 @@ PTO 算子设计 / 调试 / 调优 / 复盘 的 agent 工作流定义（agent in
 - `pto-compare`：通过显式 comparison identity 门禁比较 baseline/candidate；不可比时禁止 delta，可比时区分 collected、simulated 与 projected 结论。
 - `pto-review`：把 intake、分析/调试、候选、授权、执行与比较结果整理成 claim–evidence–decision 账本，保留缺失阶段和负向结果。
 
-组合路由按用户意图而不是按文件类型决定：`pto-analyze` 回答“产物显示了什么”，`pto-debug` 回答“失败/错误结果为何发生以及什么检查能区分原因”，`pto-optimize` 只把已有结论变成候选实验，`pto-compare` 只裁决已存在且通过 identity gate 的 baseline/candidate，`pto-review` 只整理已有链路。当前这些 Skills 不拥有获授权后的源码修改、构建、设备执行或持久 experiment identity；该执行事务属于后续插件契约。
+组合路由按用户意图而不是按文件类型决定：`pto-analyze` 回答“产物显示了什么”，`pto-debug` 回答“失败/错误结果为何发生以及什么检查能区分原因”，`pto-optimize` 只把已有结论变成候选实验，`pto-compare` 只裁决已存在且通过 identity gate 的 baseline/candidate，`pto-review` 只整理已有链路。当前这些 Skills 不拥有获授权后的源码修改、构建、设备执行或持久 experiment identity；该执行事务由已有 app-owned Host 插件契约拥有，见 [实验契约](../work/docs/experiment-contract.md)。
+
+## 开发与更新边界
+
+根 .agents/skills 是开发者/编码 Agent 的项目工作流，不进入本 runtime root。上游官方 Skills 的固定版本接入与开发端更新见 [设计主题](../work/product/official-skill-integration/overview.md)。
+
+上述基线描述的是当前六份 Skill；其中旧数据分级与 run-only 前提尚需后续任务统一对齐。当前产品已确认不做 share-safe 分级，本轮只修正文档归属与来源称谓，没有修改 bundled/SKILL.md 或其运行行为。

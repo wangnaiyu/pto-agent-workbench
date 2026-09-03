@@ -19,3 +19,7 @@ dist/
 
 # logs
 *.log
+
+# Rebuildable development scratch; task state and durable evidence stay tracked.
+/work/inbox/tasks/*/scratch/
+/work/archive/tasks/*/scratch/
