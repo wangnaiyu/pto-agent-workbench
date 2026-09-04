@@ -12,12 +12,13 @@
 
 1. 在 harness 内按批准范围 fetch 并核对目标 commit、release/package 变化。
 2. 按实际分支关系选择 rebase 或 merge，先检查冲突，再逐项处理。禁止以“采用上游”为由丢弃 PTO 的已确认行为。
-3. 对照 slot、session handle、tool result、provider 与 manifest/bundle 契约检查消费者。
-4. 执行受影响测试；依赖/装配发生变化时运行官方完整构建，并用隔离实例验证核心界面。记录命令、版本、失败及已知基线问题。
-5. 回写当前架构/踩坑及任务验证证据；区分历史已通过、本次通过和未验证。
+3. 用保存分支与重放后区间做 `range-diff`，确认每个 fork 提交都有对应项；有内容变化的项另行审计，不能只比较提交数量。
+4. 对照 slot、session handle、tool result、provider 与 manifest/bundle 契约检查消费者。
+5. 执行受影响测试；依赖/装配发生变化时运行官方完整构建，并用隔离实例验证核心界面。记录命令、版本、失败及已知基线问题。
+6. 回写当前架构/踩坑及任务验证证据；区分历史已通过、本次通过和未验证。
 
-是否提交、推送，以及需要改写远端历史时的处理，均按用户的具体授权执行；本流程不提供默认 force push。发布也不是维护任务的隐含后续动作。
+是否提交、推送，以及需要改写远端历史时的处理，均按用户的具体授权执行；本流程不提供默认 force push。已授权改写历史时，推送前重新 fetch，并只用带目标 ref 与已观察远端 OID 的精确 `--force-with-lease=<ref>:<oid>`；远端移动就停止。发布也不是维护任务的隐含后续动作。
 
 ## 已知版本记录
 
-当前治理起点为 alpha.5，精确 HEAD 见 [架构](architecture.md)。rc.8、alpha.1 到 alpha.5 的迁移过程已进入 [旧记录归档](../archive/legacy-notes/README.md)。其中的临时路径和测试数量仅对当次任务成立。
+当前治理基线为 rc.1，精确 HEAD 见 [架构](architecture.md)，本次迁移证据见 [2026-09-04 上游 rebase 任务](../archive/tasks/2026-09-04-upstream-rebase/final-report.md)。rc.8、alpha.1 到 alpha.5 的迁移过程已进入 [旧记录归档](../archive/legacy-notes/README.md)。其中的临时路径和测试数量仅对当次任务成立。

@@ -1,12 +1,15 @@
 # 已知边界与踩坑
 
-更新时间：2026-09-03。以下区分维护注意事项、已修复历史和待复验；不把旧 rc.7 的限制无条件套在 alpha.5 上。
+更新时间：2026-09-04。以下区分维护注意事项、已修复历史和待复验；不把旧版本的限制无条件套在 rc.1 上。
 
 ## 维护与构建
 
 - harness 是独立仓库，外层 git status 干净不表示它干净。交接同时记录两者 HEAD 与改动归属。
 - 只构建部分 workspace 包可能遗漏 manifest、bundle 或工具描述。2026-08-28 的 zod 打包/manifest 问题已有历史修复；涉及依赖与装配时仍应跑官方完整构建，不能宣称该故障当前仍存在。
 - 2026-09-03 rebase 记录中的测试数量、临时恢复路径及缓存不是持续保证。临时目录可能消失；恢复先看实际产物。
+- rc.1 的 package invariant 门禁不接受只为占位而存在的空 companion。包没有独立可变状态时，应同时移除 invariant export、构建入口、类型别名和依赖，并在包 README 记录不发布原因；不能保留一个永远通过的假检查。
+- 仓库约束会按 `packages/*/*` 识别包根；旧 checkout 遗留的 ignored `lib`/`node_modules` 目录也可能形成“幽灵包”。先预览再精确清理对应 ignored 目录，不要扩大到整个工作树。
+- ApprovalService 相关测试 fake 需实现当前 Session 的顺序读取契约（`seq`、`eventAt()`，事件同时含 `type` 与 `data`）；只模拟 `append()` 会在 rc.1 上误报业务失败。
 - setup 有网络、构建、Git hook 配置等副作用；不用于纯文档验收。启动脚本固定 DSH_HOME，不要为了测试连接并修改用户真实会话。
 - shell.overlay 与 conversation.view 不同 scope；不能拿 Session 内可用的插件调用推定根级 overlay 可用。大图需专门验证内存和取消路径。
 
