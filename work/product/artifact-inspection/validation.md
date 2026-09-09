@@ -1,12 +1,29 @@
 # 验证矩阵
 
-状态：待后续 P0 建立实际结果。本轮只落盘设计，以下“应当”均不是已通过报告。
+状态：2026-09-04 的 Profile/viewer/adapter 实际验证仍有效；2026-09-08 真实产品体验确认
+Viewer→分析 first-send 未在实际 Web 组合中携带结构化准入，相关“已通过”结论降为历史分层
+证据，等待新任务重新完成端到端验收。
 
 ## 真实数据选样
 
 [来源登记](../../references/sources.md) 中的真实样例和 PTO-TestData 均只读。前期盘点线索包含 20260720 Qwen L2（约 18MB）、20260723 runtime（约 39MB）、20260804 compile/IR（约 330MB，单 HTML 约 305MiB），以及 legacy program/merged/memory、markerless rank/dispatch。大小仅供选样，P0 重新核对，不把目录日期当运行身份。
 
-矩阵每行登记 sample locator/指纹、generation、文件/schema、工具 commit/命令、环境、viewer 入口、Skill commit、实际输出、耗时/资源、限制与原始数据完整性。只选代表数据，原始数据不复制进 Git。
+MVP 实测四组只读样例：20251112 three-view、20260528 A5 PMU、20260720 Qwen L2、
+20260804 IR lowering。它们覆盖 evidence-pack/run、2.0-pro/3.0/unknown、dependency、legacy
+证据、自包含 memory/IR 和约 305 MiB 大 HTML；原始数据未复制进 Git。
+
+## MVP 实际结果
+
+- 9 个聚焦测试文件 223/223；相关 lint、Host/Client 聚合构建、Web production build 与仓库
+  门禁通过。
+- Qwen L2 真实 Host→Tool 结构/数据流双模式均删除 1/1222 条边，目标均为
+  `(1,1)->(3,287)`，stderr 无循环 fallback，输入 hash 未变化。
+- 完整 Harness 浏览器中 dependency、memory、IR 均可打开；纯查看未创建 Session。
+  20260804 memory 展示 34 个 compute function/743 tiles，IR 在 45 秒验收检查点已完成渲染。
+- memory/IR 切换时旧 exact route 撤销，关闭后当前 route 撤销；静态 viewer 明确声明无
+  selection/deeplink。
+- timeline、critical path、program 与 raw pass 没有 adapter 时返回具体 unavailable reason。
+  Gzip listener warning 作为本机环境观察保留，不影响本次功能通过，也不构成性能保证。
 
 ## 场景与预期
 
@@ -33,4 +50,19 @@
 
 关键路径须有时间线与依赖的可靠关联；报告拓扑简化不等于测得性能提升。无时间数据时不得生成 measured speedup。
 
-成功标准是受支持矩阵中的各 viewer 可打开、选定官方 Skill 能完成真实读数/分析、结论可定位证据。浏览器截图、结构快照、命令日志只是不同证据，不互相替代。实际验证结果写对应任务 evidence / final-report，本文保持验收契约。
+成功标准是受支持矩阵中的各 viewer 可打开、选定官方 Skill 能完成真实读数/分析、结论可定位证据。浏览器截图、结构快照、命令日志只是不同证据，不互相替代。后续新增格式仍须逐 adapter 留存实际 evidence，不能沿用本次通过结论。
+
+### 2026-09-08 回归必测项
+
+- 点击“AI 分析”后只有一个 browser draft，不创建 Session、不调用模型；输入区显示规范
+  `/skill dependency-redundancy`、`@deps.json` 和短问题，不默认显示 Record 名称/revision。
+- `/skill` 与 `@file` 必须复用正式选择/解析语义，不是纯文本或视觉伪装；隐藏 attachment 保留
+  record、revision、provider、action、artifact 和 tool identity。
+- 首次发送在真实 Web 插件组合中只创建一个 Session；Host admission 在 prompt 前完成，持久
+  审计可关联 launch/request/session，模型第一步实际收到 receipt 和固定 Skill。
+- admission 失败不得发送无上下文 prompt；同 launch 重试复用同一 Session。模型/工具失败也在
+  同一 Session 恢复；返回 Viewer 再次有意点击则产生新 launch，发送后产生第二个 Session。
+- 双击“AI 分析”或发送只产生一次 activation；已有未发送草稿不得被静默覆盖。
+- 缺 receipt 时不能调用门禁工具，也不能通过通用 Shell 手动复算冒充正式结果。
+- 拖动 DSH 原生正文宽度后切换自定义“实验”Tab，Dashboard 不越过
+  `--dsh-chat-content-width`；四列内容按断点降为两列/单列。验证不要求修改 DSH 宽度核心。

@@ -1,6 +1,6 @@
 # 数据接入与内部 Profile
 
-状态：已确认设计，尚需按实现计划验证并迁移旧 run-only 契约。
+状态：MVP 已实现并验证 Record/Profile 与动作就绪度；本文同时保留尚未实施的长期契约。
 
 ## 用户入口和对象
 
@@ -42,6 +42,10 @@ interface RecordProfile {
 }
 ```
 
+当前 MVP 以有界 inventory 生成稳定 Record revision，已在 four-view、legacy PMU、Qwen L2
+和 IR lowering 四组真实只读样例上验证 run/evidence-pack、generation/runtime level、artifact
+与 action 解析。它没有引入笼统 health 分数，也没有把 Evidence Pack 强称为可重跑 Run。
+
 observed 只表示发现候选，available 需满足相应解析/读取契约。目录受限或超出扫描预算时，应标 unchecked/范围未覆盖，不能一律判 missing。missing 只相对于某项已知动作的要求和已检查范围成立。
 
 编译证据和运行时证据可以分组展示，但不落 compileHealth/runtimeHealth 聚合分数。真实编译失败来自日志/显式状态等证据，不从缺少 passes_dump 推断。每个事实保存来源与观察时间，未知 generation/runtime/time/kernel 不猜。
@@ -61,6 +65,10 @@ Record + Evidence facts + adapter inventory + environment
 ```
 
 每个动作至少包含 actionId、viewer/analysis 类型、required/optional evidence、adapter/skill 版本、状态与 reasons、可用输入范围。状态可为 available、needs-preparation、unavailable、unknown。不只判断文件存在：要考虑可解析性、关联、renderer/Skill 安装和工具环境。
+
+MVP 的实际支持矩阵是：`deps.json` 可打开 dependency viewer 并进行固定 Skill 分析；
+自包含 `memory_map.html` 与 `*_ir_trace.html` 可纯查看；timeline、critical path、program 及仅有
+raw pass 的 IR 因缺少可分发 adapter 而返回具体 unavailable reason。
 
 viewer 可用而 AI Skill 缺失时，照常允许看图。name_map 对某 viewer 是增强标签，对某 Skill 可能是必需输入，分别按实际契约处理。跨文件关联失败不能掩盖单文件 viewer 的可用性。依赖图、关键路径、编译计算图不是同一个能力。
 

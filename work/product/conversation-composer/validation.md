@@ -1,6 +1,8 @@
 # 输入区验收
 
-历史 08-26/27 测试是旧版本证据，不冒充本轮回归；下一次改动以实际 harness HEAD 重跑受影响测试。
+历史 08-26/27 测试仍是旧版本证据。2026-09-04 曾在分层测试中验证 Record 分析草稿和
+first-send 重试，但 2026-09-08 真实 Web 组合没有向模型首步注入结构化准入；因此不能再用
+这些分层测试宣称 Viewer 分析端到端通过。
 
 | 场景 | 验收点 |
 | --- | --- |
@@ -13,5 +15,13 @@
 | 窄屏/长目录/hero 与 dock 切换 | 菜单可滚动、焦点与输入保留，不出现多重外层滚动 |
 | viewer → 分析草稿 → 发送 | 图状态保留、上下文结构化、正文可改，纯查看不触发模型 |
 | 已有 Session 附加另一记录 | 不变更 cwd；数据、工具和 bundle 失配显式提示 |
+
+新的端到端验收必须从实际 Viewer 按钮启动，断言输入区出现 `/skill dependency-redundancy`、
+`@deps.json` 和短 Prompt，且默认不显示 Record 名称/revision；点击发送后再从 Host/Session
+证据确认唯一 Session、admission 顺序、receipt、固定 Skill 与模型首步输入。不得用 Controller
+fake、人工 admission source 或单张截图替代这条组合验证。
+
+还需分别验证：同 launch 准入失败重试不新建 Session；返回 Viewer 再次点击形成新 launch；
+双击合并；已有未发送草稿不丢；缺 receipt 时纯文本不发送且 Shell fallback 不可用。
 
 应记录 UI 行为、Host 调用次数/参数、Session 数量与请求身份；单张截图不能证明无后台 Session 创建。模型调用、工具授权和目录选择分别验证。

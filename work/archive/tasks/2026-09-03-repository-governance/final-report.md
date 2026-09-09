@@ -11,7 +11,7 @@
 - 旧 docs / references 已治理进入 work，补上当前架构、实验执行契约、发行边界和维护清单。
 - 原根 notes 共 11 份完整归档，48 个二级分区均有 [迁移映射](../../legacy-notes/migration-map.md)，原字节 SHA-256 验证通过。根 notes 已移除；未丢弃原文，可从归档取回。根 prompts 本次前已不存在，不重建。
 - Inbox 支持散材料、复杂任务包及忽略的可重建 scratch。完成本包归档，不留活动副本。
-- 后续 [MVP 任务包](../../../inbox/tasks/2026-09-03-artifact-inspection-mvp/README.md) 为 planned；不是本轮执行授权的延伸。
+- 后续 [MVP 任务包](../2026-09-03-artifact-inspection-mvp/final-report.md) 已于 2026-09-04 完成并归档；不是本轮执行授权的延伸。
 
 ## 验证与边界
 

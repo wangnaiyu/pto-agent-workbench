@@ -7,7 +7,7 @@
 | ID | 来源/定位 | 用途与可信边界 |
 | --- | --- | --- |
 | dsh-upstream | https://github.com/deepseek-ai/deepseek-harness | DSH 官方机制；核对目标版本 |
-| dsh-fork | 本仓库 harness；HEAD 489f3f65b1e0218e4f59834e40c422dec1196f9c | 当前源码基线 0.1.2-alpha.5；与外层独立 Git |
+| dsh-fork | 本仓库 harness；P0 核对 HEAD 8a0cfdf8a8ed79e5c304be287440ebb1b001a878 | 当前源码基线 0.1.2-rc.1；与外层独立 Git |
 | pyptoux | /Users/wny/Documents/1 项目 Projects/PyPTOUX | 只读产品/业务研究，非 PyPTO 官方实现权威 |
 | codex-agents | https://learn.chatgpt.com/docs/agent-configuration/agents-md | 项目指令发现与作用域参考 |
 | codex-skills | https://learn.chatgpt.com/docs/build-skills | Skill 发现与渐进加载参考；本地 harness 启动需独立检查 |
@@ -18,12 +18,12 @@
 
 | ID / 子目录 | 本地 HEAD | 用途 |
 | --- | --- | --- |
-| pypto | 23b68ae91b1cb293a625c286729920fbe7c33edf | 既有 PyPTO 镜像及 .agents/skills |
-| pypto-3.0-github | fba9f7b1e95b5501ccb3e7f68de97e767a0ff0e9 | 3.0 对应源代码 |
-| pypto-tools | cb083ebbef52ec44a59430ad857b95848f4e85b5 | 用户提供的 2.0/Pro 工具，按样例实测 |
+| pypto | 10a0fc50…（P0 实机 HEAD） | 既有 PyPTO 镜像及 .agents/skills |
+| pypto-3.0-github | b8165168ec16198fa2b26a0f88b1c08415d5668c；`runtime` 77fa0171c24a4e1c323fb29a6a86239df93edb58 | 3.0 对应源代码；P0 viewer/tool 验证基线 |
+| pypto-tools | 15e2b485…（P0 实机 HEAD） | 用户提供的 2.0/Pro 工具，按样例实测 |
 | pypto-tools-github | 955cfcfc01c7028f0e9bef01b3fdabc04e90de9e | 用户提供的 3.0 工具，按 schema/CLI 实测 |
 | pypto-skills-github | af1d7a016ce50ba109c4b4224580a6b758bde7da | PyPTO 官方 plugin/skill 结构；分析能力候选 |
-| cannbot-skills | 592f652cd702d81267b6b3616bb52e7bd595bb6f | 含不同来源组，逐项确认来源与适用范围 |
+| cannbot-skills | d5e0d44…（P0 实机 HEAD） | 含不同来源组，逐项确认来源与适用范围 |
 | PTO-TestData | 数据目录，无版本兼容性承诺 | 开发测试资料，不默认复制进仓库 |
 
 已有算子样例根：`/Users/wny/Documents/2 领域 Area/工作/EASY CANN/样例数据`。优先引用或建立精选小 fixture，不把大数据与个人本机路径装进运行时包。

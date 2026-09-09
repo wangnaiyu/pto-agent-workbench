@@ -1,0 +1,28 @@
+ M patches/cordis.patch.yml
+ M skills/README.md
+ M tools/README.md
+ M work/README.md
+ M work/archive/tasks/2026-09-03-repository-governance/final-report.md
+ M work/docs/architecture.md
+ D work/inbox/tasks/2026-09-03-artifact-inspection-mvp/README.md
+ D work/inbox/tasks/2026-09-03-artifact-inspection-mvp/plan.md
+ D work/inbox/tasks/2026-09-03-artifact-inspection-mvp/prompts/resume.md
+ D work/inbox/tasks/2026-09-03-artifact-inspection-mvp/status.md
+ M work/product/artifact-inspection/data-intake.md
+ M work/product/artifact-inspection/implementation-plan.md
+ M work/product/artifact-inspection/inspection-workflow.md
+ M work/product/artifact-inspection/overview.md
+ M work/product/artifact-inspection/validation.md
+ M work/product/conversation-composer/design.md
+ M work/product/conversation-composer/overview.md
+ M work/product/conversation-composer/validation.md
+ M work/product/official-skill-integration/integration-design.md
+ M work/product/official-skill-integration/overview.md
+ M work/product/official-skill-integration/validation.md
+ M work/references/sources.md
+?? skills/official/
+?? tools/official/
+?? work/archive/tasks/2026-09-03-artifact-inspection-mvp/
+?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/
+?? work/inbox/tasks/2026-09-09-pre-upstream-baseline/
+?? work/product/artifact-inspection/notes/decision-2026-09-08.md

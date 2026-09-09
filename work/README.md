@@ -14,9 +14,12 @@
 
 ## 任务入口
 
+- [两仓升级前基线收口](inbox/tasks/2026-09-09-pre-upstream-baseline/README.md)：保存现有成果、检查、PR 合并及有限清理；不执行 upstream rebase。
+
+- [分析启动与布局回归修复](inbox/tasks/2026-09-08-artifact-analysis-launch-repair/README.md)：修复 Viewer “AI 分析”结构化首发、明确新 launch/重试语义，并让自定义实验页恢复 DSH 宽度契约。
 - [仓库治理完成报告](archive/tasks/2026-09-03-repository-governance/final-report.md)：入口、迁移、项目 Skill 与验证记录。
 - [2026-09-04 harness 上游 rebase](archive/tasks/2026-09-04-upstream-rebase/final-report.md)：从 alpha.5 更新到 rc.1，保留 fork 历史与工作台行为的验证记录。
-- [后续产物查看与分析 MVP](inbox/tasks/2026-09-03-artifact-inspection-mvp/README.md)：待明确执行授权，从 P0 兼容性验证开始。
+- [产物查看与官方 Skill 分析 MVP](archive/tasks/2026-09-03-artifact-inspection-mvp/final-report.md)：P0–P4 实现、真实样例/浏览器验收与保留边界。
 - [Inbox](inbox/README.md)：允许待整理散文件，不要求先建任务包。
 - [归档](archive/README.md)：已结束任务及 [旧 notes 迁移映射](archive/legacy-notes/migration-map.md)。
 

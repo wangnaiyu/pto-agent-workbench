@@ -23,3 +23,6 @@ dist/
 # Rebuildable development scratch; task state and durable evidence stay tracked.
 /work/inbox/tasks/*/scratch/
 /work/archive/tasks/*/scratch/
+
+# Pinned official Skill source resource, not a build output.
+!/skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/lib/
