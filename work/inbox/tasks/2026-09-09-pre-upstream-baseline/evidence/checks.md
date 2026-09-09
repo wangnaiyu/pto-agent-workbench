@@ -11,6 +11,7 @@
 - harness `pnpm run build`：完整构建通过；后续仅补充注释、文档、生成目录及格式。
 - harness `pnpm run doc-sync`：最终 32 passed、0 failed、0 skipped（含文档站构建、doc-typecheck、生成 freshness、双语和 README 检查）。
 - harness `pnpm run hygiene`：最终 16 passed、0 failed、0 skipped（含 package invariants、NodeNext、runtime closure、Cordis 配置与依赖检查）。
+- 正常 `git push` 的 pre-push `pnpm run typecheck` 通过（Host/Client 与契约聚合检查），未绕过 hook。
 - release-lock 全部 3 个 Skill 闭包文件以及工具、LICENSE 的 SHA-256 匹配；初始两仓文件清单中所有应保留文件均存在于保存提交。
 
 ## 已修复的交付缺项
@@ -33,3 +34,7 @@ ignored `lib/dfx/capture.md` 精确纳入 Git；release-lock 证据路径随归�
 Viewer 到首次发送的完整浏览器组合仍有结构化身份/receipt 丢失回归；新 launch/同 Session 重试和实验 View 宽度留待独立 repair。本阶段未运行真实模型分析、完整 coverage、设备执行，也未新增完整 first-send recorded-session 场景。历史 MVP 浏览器记录不是本轮通过证据。
 
 普通 sandbox 下 tsx IPC 和 GitHub 网络被拒后，按规则提升权限运行原检查。完整日志在任务 scratch；本文件保存可恢复结论，PR/CI 结果另见状态和完成报告。
+
+GitHub CI 注意：fork 的 node 24 static/coverage/snapshots 等 canonical 专用 lane 配置为显式 skip/no-op 成功；不能将其绿色状态描述为真实执行完整覆盖率。其他 Node、打包、平台验证以 PR 实际运行结果为准。
+
+Cloudflare preview run 34321278742 使用上游专用 dsh-ubuntu-24-04-16core，排队时无 runner 分配；fork master 无保护规则，gh pr checks --required 无必需检查。仅取消本 PR 的该次非必需发布队列，不更改 workflow，不计作通过。
