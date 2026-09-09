@@ -19,12 +19,27 @@
     includeDefaultRoots: false
     bundledSkillDir: !!js "process.getBuiltinModule('node:path').resolve(process.env.PTO_WORKBENCH_ROOT ?? process.cwd(), 'skills/bundled')"
 
+# Fixed upstream Skill bundle. The instance id is distinct from the workbench's
+# own provider, and its provider id includes the locked release revision so a
+# qualified invocation cannot silently resolve to same-named local content.
+- id: skill-filesystem-pypto-official-af1d7a016ce5
+  name: '@deepseek-ai/dsh-skill-filesystem'
+  disabled: false
+  config:
+    providerName: pypto-official-af1d7a016ce5
+    includeDefaultRoots: false
+    watch: false
+    bundledSkillDir: !!js "process.getBuiltinModule('node:path').resolve(process.env.PTO_WORKBENCH_ROOT ?? process.cwd(), 'skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills')"
+
 # Product origin is trusted profile metadata, not inferred from `bundled`, the
 # provider id, or a Skill name. The Client receives only the PTO label.
 - id: composer-catalog
   config:
     providerOrigins:
       - provider: pto-bundled
+        source: bundled
+        kind: pto
+      - provider: pypto-official-af1d7a016ce5
         source: bundled
         kind: pto
 
@@ -45,6 +60,18 @@
 # Agent or Session, while execution requires the existing live Session Agent.
 - id: pto-experiment-dashboard
   disabled: false
+
+# User-selected PTO data-record profiling and revocable self-contained HTML
+# viewer routes. No raw artifact directory is exposed.
+- id: pto-artifact-inspection
+  disabled: false
+  config:
+    officialDependencySkillProvider: pypto-official-af1d7a016ce5
+    officialDependencySkillRevision: af1d7a016ce50ba109c4b4224580a6b758bde7da
+    dependencyAnalysisToolRevision: 77fa0171c24a4e1c323fb29a6a86239df93edb58
+    dependencyAnalysisToolPath: !!js "process.getBuiltinModule('node:path').resolve(process.env.PTO_WORKBENCH_ROOT ?? process.cwd(), 'tools/official/pypto-runtime-77fa0171c24a/simpler_setup/tools/deps_viewer.py')"
+    dependencyAnalysisOutputRoot: !!js dshHomePath('pto-analysis')
+    pythonExecutable: python3
 
 # PTO-owned transcript and details presentation for evidence-gated comparison.
 - id: ui-pto-experiments

@@ -1,0 +1,217 @@
+[
+  {
+    "path": "patches/cordis.patch.yml",
+    "bytes": 3568,
+    "sha256": "4da838ecdf2fa998bd08d07cb37994e4010b838e1b97ed305e27a463edb8ac1a"
+  },
+  {
+    "path": "skills/README.md",
+    "bytes": 3519,
+    "sha256": "ace3169b9d0f5d62642d5e23a2cbc5e3ae1667aded736bfbe5b4e8da6c373d24"
+  },
+  {
+    "path": "skills/official/registry.json",
+    "bytes": 929,
+    "sha256": "328d99ad62aabdf8c41ef7578c83010759c3fddc93852ee80ccec2df2f3ceb60"
+  },
+  {
+    "path": "skills/official/release-lock.json",
+    "bytes": 2155,
+    "sha256": "245058f8913a2b220d7cf16b0950d4464f422d929497f17182397c3d21a706c5"
+  },
+  {
+    "path": "skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/lib/dfx/capture.md",
+    "bytes": 5844,
+    "sha256": "73d49ef767cdee6d5874160766668a70f726eeee2d5711b3dbf9967285a4d8d5"
+  },
+  {
+    "path": "skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills/dependency-redundancy/SKILL.md",
+    "bytes": 8161,
+    "sha256": "86cf80e077e51d5a0f0863ad1a14cd19c4830ad5dfa4bd5cacf0efc4845c822c"
+  },
+  {
+    "path": "skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills/dependency-redundancy/agents/openai.yaml",
+    "bytes": 241,
+    "sha256": "4f90016cad66d2b80676c77ef89ae476abc1977632581a30f19604067bfc0baa"
+  },
+  {
+    "path": "tools/README.md",
+    "bytes": 600,
+    "sha256": "10d624992e5ee69e18002f9331a13f2d73ec714f5c65a8a66d687514ef182eb0"
+  },
+  {
+    "path": "tools/official/pypto-runtime-77fa0171c24a/LICENSE",
+    "bytes": 5260,
+    "sha256": "1da223da275e2e92a5866501c22289a23abebf3df588ca3e9946287969c16bb7"
+  },
+  {
+    "path": "tools/official/pypto-runtime-77fa0171c24a/simpler_setup/tools/deps_viewer.py",
+    "bytes": 78274,
+    "sha256": "24b1c5c069d08dfe198a21ad272b5cafab82237b897504ccca633109fcebc116"
+  },
+  {
+    "path": "work/README.md",
+    "bytes": 3439,
+    "sha256": "4d4c37205092f3380e96c8505acb571c05d0bb084139fbf4553fc515db8f116d"
+  },
+  {
+    "path": "work/archive/tasks/2026-09-03-artifact-inspection-mvp/README.md",
+    "bytes": 1371,
+    "sha256": "05dada0b9c88e11f4fb4130a551f6f7659d37e112ba942258948192b79689605"
+  },
+  {
+    "path": "work/archive/tasks/2026-09-03-artifact-inspection-mvp/evidence/p0-compatibility.md",
+    "bytes": 4920,
+    "sha256": "4641274c524c756e4d3ef53d2c2e03a38908c03838a73108918524b1edab4982"
+  },
+  {
+    "path": "work/archive/tasks/2026-09-03-artifact-inspection-mvp/evidence/p1-record-profile-open.md",
+    "bytes": 3536,
+    "sha256": "645e28b532974e82e7cffca733aee0eee5ba9431baa9aa94376755dde6844fa3"
+  },
+  {
+    "path": "work/archive/tasks/2026-09-03-artifact-inspection-mvp/evidence/p2-dependency-analysis-first-send.md",
+    "bytes": 3957,
+    "sha256": "69cf3f360db125d67836944dee748593d694b4fa8bfdf28be81c25456870231a"
+  },
+  {
+    "path": "work/archive/tasks/2026-09-03-artifact-inspection-mvp/evidence/p2-official-skill-closure-audit.md",
+    "bytes": 3601,
+    "sha256": "77c0de2ed57b6cdd5c896b166341c9bcd0e9db5a98927b39b54f4e3a1e682b24"
+  },
+  {
+    "path": "work/archive/tasks/2026-09-03-artifact-inspection-mvp/evidence/p3-viewer-coverage.md",
+    "bytes": 3930,
+    "sha256": "80e3eafd97f0fa084116b7b5c3cb2374301b737fa9a3af08044c4bd1bab3c7f1"
+  },
+  {
+    "path": "work/archive/tasks/2026-09-03-artifact-inspection-mvp/evidence/p4-association-and-degradation.md",
+    "bytes": 1924,
+    "sha256": "3846617f1821216d5aee87c1ec2385979acd8bc401bf9e632a3cbac37cfb6afe"
+  },
+  {
+    "path": "work/archive/tasks/2026-09-03-artifact-inspection-mvp/final-report.md",
+    "bytes": 4609,
+    "sha256": "a5beb1807dfd8a949685d4e1ef92b99ce51ac1f6876e02458d7ed522df9fb9a4"
+  },
+  {
+    "path": "work/archive/tasks/2026-09-03-artifact-inspection-mvp/plan.md",
+    "bytes": 1087,
+    "sha256": "7db528df261a0b24743f9d65a0fea6724b2a7bdc82b3d0f7d0c1d4bbef82e374"
+  },
+  {
+    "path": "work/archive/tasks/2026-09-03-artifact-inspection-mvp/prompts/resume.md",
+    "bytes": 1134,
+    "sha256": "fc87f419c3320c0dbfee72ef7b093e77a0167e3e76617043fde5ea3052ccbd40"
+  },
+  {
+    "path": "work/archive/tasks/2026-09-03-artifact-inspection-mvp/status.md",
+    "bytes": 1976,
+    "sha256": "bc3e95deaa73d2d25cac001b824860190b7f10a5be24c5ff9403b49149e5d91f"
+  },
+  {
+    "path": "work/archive/tasks/2026-09-03-repository-governance/final-report.md",
+    "bytes": 2778,
+    "sha256": "44ef258a6c3cfdcca008698778131a9cc5554c5ff315ea657e3b67dc9d164f5e"
+  },
+  {
+    "path": "work/docs/architecture.md",
+    "bytes": 3783,
+    "sha256": "8dc2bd0f3598d70de05241aaca3499efe3d6ef81e3877b1c3ac55f8ab68e360b"
+  },
+  {
+    "path": "work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/README.md",
+    "bytes": 6799,
+    "sha256": "5c2283bb934b0dbccbe4d410ffbb338708890b13271e6bb58a9218a78bc60bcc"
+  },
+  {
+    "path": "work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/README.md",
+    "bytes": 452,
+    "sha256": "fee38a7cc8c6e17ebe894c9d7af438fca523bb2bc38e753138c56262c89e1e7a"
+  },
+  {
+    "path": "work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/final-report.md",
+    "bytes": 373,
+    "sha256": "ad87db833bd330dff2a9b5bb616ffc5797408bfb728bad5808c54954b1274286"
+  },
+  {
+    "path": "work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/plan.md",
+    "bytes": 4595,
+    "sha256": "8c824f47f4b686ff0384e0e8186f489ee513513214c146011663a6e9853f7292"
+  },
+  {
+    "path": "work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/prompts/resume.md",
+    "bytes": 1469,
+    "sha256": "39854fa6899d9640e57098bd8f8aba76348ef630e354501917fa35f48fd3f32b"
+  },
+  {
+    "path": "work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/status.md",
+    "bytes": 2059,
+    "sha256": "6f6902c7f4364a428c3f1ad41cada9cc1901f36d0c05644524e6267b4e0d685f"
+  },
+  {
+    "path": "work/product/artifact-inspection/data-intake.md",
+    "bytes": 5874,
+    "sha256": "d55bea9233e02880f4002589d1bf955711742eb19d8edf7ab703af627450da01"
+  },
+  {
+    "path": "work/product/artifact-inspection/implementation-plan.md",
+    "bytes": 6673,
+    "sha256": "76c7619f945375ec4cf529da719882ffeb7c899bf48a46a2191ea2941e5031a4"
+  },
+  {
+    "path": "work/product/artifact-inspection/inspection-workflow.md",
+    "bytes": 6049,
+    "sha256": "b45e30700887748c030301760bac137a5d85973bc8cdb2f3d5f31448ebed7e91"
+  },
+  {
+    "path": "work/product/artifact-inspection/notes/decision-2026-09-08.md",
+    "bytes": 2495,
+    "sha256": "0debdb37eeb0ddd65e8e9e26502fc443372c07d8dfc95c6a9ca56cc60d24e274"
+  },
+  {
+    "path": "work/product/artifact-inspection/overview.md",
+    "bytes": 2776,
+    "sha256": "66d7196b8ce722b98ad112a88c5839abbfb3ca398caabc081ff16a928ba2c334"
+  },
+  {
+    "path": "work/product/artifact-inspection/validation.md",
+    "bytes": 5464,
+    "sha256": "fe99afe686d8ea300820fbb0e5ad9ce58c20b7bd6a8131e387027685d0f21be4"
+  },
+  {
+    "path": "work/product/conversation-composer/design.md",
+    "bytes": 5311,
+    "sha256": "0a276afd6574850916fa0e2c73a0b72c8f00ad383338235823f3fa9f3a2f490c"
+  },
+  {
+    "path": "work/product/conversation-composer/overview.md",
+    "bytes": 1332,
+    "sha256": "510030b42a35b5011b4e63a92ae3fbad1a8fe7bc169b155810e3189e8aeddbda"
+  },
+  {
+    "path": "work/product/conversation-composer/validation.md",
+    "bytes": 2094,
+    "sha256": "00d6dc126f2bdf538e3a54a3184206f872691e46c64bdfb77c0b58bd2f567b93"
+  },
+  {
+    "path": "work/product/official-skill-integration/integration-design.md",
+    "bytes": 4895,
+    "sha256": "d360b4b5001ba31305fe48160c34ae9ac0b47d37e8b3b247d66c721c90247726"
+  },
+  {
+    "path": "work/product/official-skill-integration/overview.md",
+    "bytes": 1441,
+    "sha256": "87f5f8fd64ab7d5d6db5d957a2c40bc0a6603288db96227ea2b84b7f54291fcd"
+  },
+  {
+    "path": "work/product/official-skill-integration/validation.md",
+    "bytes": 2821,
+    "sha256": "cd6eab74a303babe75486626bbde8da58b2b5c0ba7e476caaf7d0af63e7feb6f"
+  },
+  {
+    "path": "work/references/sources.md",
+    "bytes": 2770,
+    "sha256": "5a079b9315ca4f3c0b136f8344a557cad77c11373329cbf4537ce8629f660d36"
+  }
+]

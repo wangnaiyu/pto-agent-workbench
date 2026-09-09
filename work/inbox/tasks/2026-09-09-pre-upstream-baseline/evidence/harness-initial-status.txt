@@ -1,0 +1,44 @@
+ M docs/subsystems/pto-experiments.i18n.yaml
+ M docs/subsystems/pto-experiments.md
+ M docs/subsystems/pto-experiments.zh.md
+ M docs/subsystems/skills.i18n.yaml
+ M docs/subsystems/skills.md
+ M docs/subsystems/skills.zh.md
+ M packages/api/remotes/package.json
+ M packages/api/remotes/src/client/index.ts
+ M packages/api/remotes/tsconfig.client.json
+ M packages/api/remotes/tsconfig.host.json
+ M packages/bundle/web-app/cordis.patch.yml
+ M packages/bundle/web-app/package.json
+ M packages/client/ui-conversation/src/client/apply.ts
+ M packages/client/ui-conversation/src/client/input/hub.ts
+ M packages/client/ui-conversation/src/client/service.ts
+ M packages/client/ui-conversation/tests/apply-inject.client.spec.tsx
+ M packages/client/ui-layout/tests/app-frame.client.spec.tsx
+ M packages/client/ui-workspace/package.json
+ M packages/client/ui-workspace/src/client/contract/slots.ts
+ M packages/client/ui-workspace/src/client/index.ts
+ M packages/client/ui-workspace/src/client/locales.ts
+ M packages/client/ui-workspace/src/client/rows/Rows.module.css
+ M packages/client/ui-workspace/src/client/rows/Rows.tsx
+ M packages/client/ui-workspace/src/client/rows/WorkspaceBrowser.tsx
+ M packages/client/ui-workspace/tests/rows.client.spec.tsx
+ M packages/client/ui-workspace/tests/workspace-browser.client.spec.tsx
+ M packages/client/ui-workspace/tsconfig.json
+ M packages/extensions/tool-cordis/src/api-catalog.ts
+ M packages/pto/tool-pto-run/src/index.ts
+ M packages/pto/tool-pto-run/src/run-artifacts.ts
+ M packages/pto/tool-pto-run/tests/tool-pto-run.spec.ts
+ M packages/skill/skill/src/index.ts
+ M packages/skill/skill/tests/skill.spec.ts
+ M packages/skill/tool-skill/src/index.ts
+ M packages/skill/tool-skill/tests/tool-skill.spec.ts
+ M pnpm-lock.yaml
+ M scripts/gen-cordis-catalog.ts
+ M tsconfig.base.json
+ M tsconfig.host.json
+?? packages/client/ui-workspace/src/client/PtoViewerOverlay.module.css
+?? packages/client/ui-workspace/src/client/PtoViewerOverlay.tsx
+?? packages/client/ui-workspace/src/client/pto-viewer.ts
+?? packages/client/ui-workspace/tests/pto-viewer.client.spec.ts
+?? packages/host/pto-artifact-inspection/

@@ -19,6 +19,11 @@ DSH 提供 Cordis 插件、profile、Host 工具、会话与浏览器 UI。外�
 | details | 当前对象的局部属性，不应承担所有大图的唯一主画布 |
 | tool.result.detailview | 以工具名匹配的冻结实验比较结果呈现，不等同于任意工具调用或实时查询面板 |
 
+对话正文的左右对称宽度手柄与 `--dsh-chat-content-width` 属于 DSH 上游阅读宽度设计；工作台
+自行增加的是通过 `ui-pto-experiments` 注册的具体“实验”View。自定义 View 应消费上游宽度轴
+并在窄宽度响应式降列，不修改 DSH 核心去猜 View 类型。若自定义 View 无法满足该契约，应先
+从产品装配隐藏，而不是让内容越过用户设置的正文边界。
+
 Client → Host 通过 typed invoke/host.call；Host → Client 通过事件或会话投影。具体 API 以本地 harness 对应版本代码为准。分析选区回流仍需共享结构化上下文契约；不预设一定要阻塞模型等待选区，可先由用户显式“加入分析草稿”完成。
 
 ## 已有业务切片

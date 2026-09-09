@@ -12,6 +12,9 @@ PTO 算子设计 / 调试 / 调优 / 复盘 的 agent 工作流定义（agent in
 ## 发布边界
 
 - `bundled/` 是 PTO profile 当前装配的工作台自有业务 Skill root（不是 PyPTO 上游官方 Skill 镜像）。
+- `official/` 是单独登记并锁定来源 revision/content digest 的上游 Skill 发行闭包；当前
+  `pypto-skills-af1d7a016ce5` 仅包含获准纳入的 `dependency-redundancy` 及其必要资源，不扫描
+  外部镜像，也不在运行时更新。
 - profile 使用独立技术 provider `pto-bundled`，并在草稿能力目录的可信
   `providerOrigins` 中把 `pto-bundled + bundled` 映射为产品来源 `PTO`。
 - 根目录说明文件、未来开发素材和项目 Skills 不进入这个 root，因此不会被误发现或误标为 PTO。
@@ -30,6 +33,6 @@ PTO 算子设计 / 调试 / 调优 / 复盘 的 agent 工作流定义（agent in
 
 ## 开发与更新边界
 
-根 .agents/skills 是开发者/编码 Agent 的项目工作流，不进入本 runtime root。上游官方 Skills 的固定版本接入与开发端更新见 [设计主题](../work/product/official-skill-integration/overview.md)。
+根 .agents/skills 是开发者/编码 Agent 的项目工作流，不进入本 runtime root。上游官方 Skills 的固定版本接入与开发端更新见 [设计主题](../work/product/official-skill-integration/overview.md)。机器可读来源与固定发行物分别见 `official/registry.json`、`official/release-lock.json`；许可状态与用户授权依据分字段保存。
 
 上述基线描述的是当前六份 Skill；其中旧数据分级与 run-only 前提尚需后续任务统一对齐。当前产品已确认不做 share-safe 分级，本轮只修正文档归属与来源称谓，没有修改 bundled/SKILL.md 或其运行行为。

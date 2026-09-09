@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "pypto-skills-af1d7a016ce5",
+  "sourceId": "hw-native-sys/pypto-skills",
+  "sourceCommit": "af1d7a016ce50ba109c4b4224580a6b758bde7da",
+  "bundleDigest": {
+    "algorithm": "sha256-path-null-content-digest-lines-v1",
+    "value": "1563980458ee2d08c2fc1e5a5bf54e96a3f4b00bfb6f6bb6ae644ce0a863a004"
+  },
+  "provider": {
+    "name": "pypto-official-af1d7a016ce5",
+    "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+  },
+  "skills": [
+    {
+      "name": "dependency-redundancy",
+      "identity": "pypto-official-af1d7a016ce5/dependency-redundancy@af1d7a016ce50ba109c4b4224580a6b758bde7da",
+      "entry": "plugins/pypto-user/skills/dependency-redundancy/SKILL.md",
+      "contentDigest": "86cf80e077e51d5a0f0863ad1a14cd19c4830ad5dfa4bd5cacf0efc4845c822c"
+    }
+  ],
+  "resourceClosure": [
+    {
+      "path": "plugins/pypto-user/lib/dfx/capture.md",
+      "sha256": "73d49ef767cdee6d5874160766668a70f726eeee2d5711b3dbf9967285a4d8d5"
+    },
+    {
+      "path": "plugins/pypto-user/skills/dependency-redundancy/SKILL.md",
+      "sha256": "86cf80e077e51d5a0f0863ad1a14cd19c4830ad5dfa4bd5cacf0efc4845c822c"
+    },
+    {
+      "path": "plugins/pypto-user/skills/dependency-redundancy/agents/openai.yaml",
+      "sha256": "4f90016cad66d2b80676c77ef89ae476abc1977632581a30f19604067bfc0baa"
+    }
+  ],
+  "tool": {
+    "sourceId": "hw-native-sys/pypto",
+    "sourceCommit": "77fa0171c24a4e1c323fb29a6a86239df93edb58",
+    "entry": "tools/official/pypto-runtime-77fa0171c24a/simpler_setup/tools/deps_viewer.py",
+    "contentDigest": "24b1c5c069d08dfe198a21ad272b5cafab82237b897504ccca633109fcebc116",
+    "license": {
+      "id": "CANN-Open-Software-License-Agreement-2.0",
+      "path": "tools/official/pypto-runtime-77fa0171c24a/LICENSE",
+      "contentDigest": "1da223da275e2e92a5866501c22289a23abebf3df588ca3e9946287969c16bb7"
+    },
+    "status": "runtime-bundled-and-p0-input-compatible"
+  },
+  "validationEvidence": [
+    "work/archive/tasks/2026-09-03-artifact-inspection-mvp/evidence/p0-compatibility.md",
+    "work/archive/tasks/2026-09-03-artifact-inspection-mvp/evidence/p2-official-skill-closure-audit.md"
+  ]
+}

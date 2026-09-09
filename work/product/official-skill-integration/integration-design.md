@@ -1,6 +1,7 @@
 # 官方 Skills 集成设计
 
-状态：待 P0/P2 实施，下面是目标契约，不是当前 DSH 已提供的完整功能。
+状态：dependency-redundancy 的最小固定 bundle、qualified resolver 和真实调用闭环已实现；
+下面的通用 source registry、更新/回退和多 Skill 管理仍是目标契约。
 
 ## 四层分离
 
@@ -9,7 +10,10 @@
 3. Runtime provider：发现已发布 bundle、返回 Skill 正文与资源路径，固定 scope，不触发上游更新。
 4. Analysis action：将 Record/Artifact 引用、具体 Skill/tool 版本及用户问题传给真实 Session，记录调用回执。
 
-开发项目 Skill 位于根 .agents/skills；现有产品自有 Skills 位于 skills/bundled。官方 Skill bundle 是另一条明确来源的装配，不把整个开发目录/外部仓库扫进运行时。选用固定 revision，不能以用户机器随手更新的镜像目录作为发布依赖。
+开发项目 Skill 位于根 .agents/skills；现有产品自有 Skills 位于 skills/bundled。官方 Skill
+bundle 是另一条明确来源的装配，不把整个开发目录/外部仓库扫进运行时。MVP 已把
+dependency-redundancy 的固定内容放入 `skills/official`，并把配套标准库工具放入 Host runtime
+资源；运行时不依赖用户机器上的镜像或临时安装。
 
 ## 选择官方资源
 
@@ -23,7 +27,14 @@ Skill、agent preset、plugin/MCP 是不同包形态，按各自可信适配器�
 
 当前 DSH 目录和 skill 工具存在按 name + scope 解析的行为，同名 workspace/user/provider Skill 可覆盖。菜单上看到官方标签，不能保证执行时仍是同一份。需要在共享调用路径校验 requested provider、Skill 名、bundle revision/hash 与实际解析结果；不一致就失败并提示，不 silently fallback。
 
-设计上可用 qualified ID 或固定 provider mapping；最终选型用最小动态/静态 spike 验证。若现有工具无法传 expected identity，记录并实现最小内核 seam；不能用不受信任 Prompt 告诉 Agent“务必选这个”替代校验。
+MVP 采用 qualified Skill request 与 resolver seam，first-send 校验 provider、名称和 revision；
+不匹配即 fail closed，不用 prompt 文字替代身份校验。后续通用 registry 仍复用这条解析边界。
+
+Viewer 发起的分析在输入区显示规范 `/skill dependency-redundancy`，使用户理解它等价于手动
+选择 Skill；内部 attachment 仍固定 qualified provider/revision。可见 `/skill` 与 PTO admission
+表达同一个调用意图，最终只能产生一次 Skill 注入：不能只按名称绕过 qualified 校验，也不能
+让通用 `/skill` 与 PTO bridge 各注入一遍。provider/revision 默认不在输入区展开，可在引用详情
+或 Session 审计中查看。
 
 provider 缓存、instance scope 和 list/get 读取生命周期必须一起审计。watch=false 只是不监听，不保证 fresh get 读取的资源不可变。发布 bundle 本身只读不可变，已有 Session 固定 bundle revision；恢复时缺旧 bundle则明确冲突，不改为最新。
 

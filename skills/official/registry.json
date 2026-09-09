@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "sourceId": "hw-native-sys/pypto-skills",
+      "repositoryUrl": "https://github.com/hw-native-sys/pypto-skills.git",
+      "sourceCategory": "official-upstream",
+      "license": {
+        "status": "not-declared-upstream",
+        "inclusionBasis": "user-authorized",
+        "authorizationDate": "2026-09-04"
+      },
+      "skillRoots": [
+        "plugins/pypto-user/skills"
+      ],
+      "selectedSkills": [
+        "dependency-redundancy"
+      ],
+      "resourceBoundary": [
+        "plugins/pypto-user/skills/dependency-redundancy/**",
+        "plugins/pypto-user/lib/dfx/capture.md"
+      ],
+      "toolCompatibility": {
+        "sourceId": "hw-native-sys/pypto",
+        "tool": "simpler_setup.tools.deps_viewer",
+        "license": "CANN-Open-Software-License-Agreement-2.0",
+        "status": "validated-separately"
+      },
+      "optionalPatches": []
+    }
+  ]
+}

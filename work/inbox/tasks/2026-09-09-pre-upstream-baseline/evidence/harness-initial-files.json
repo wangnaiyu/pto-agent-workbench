@@ -1,0 +1,257 @@
+[
+  {
+    "path": "docs/subsystems/pto-experiments.i18n.yaml",
+    "bytes": 452,
+    "sha256": "4602b6ecd221a4fb29aa64b0cae5c9b74efc00f9df5f9e6d18845dab5e788a44"
+  },
+  {
+    "path": "docs/subsystems/pto-experiments.md",
+    "bytes": 18813,
+    "sha256": "6e258c1fc4ea0bd29abbc75044c2b42ad64e07908d7a18aca39420fb349e92a3"
+  },
+  {
+    "path": "docs/subsystems/pto-experiments.zh.md",
+    "bytes": 18336,
+    "sha256": "b0267184701191f868a8d75a16306e6c4dac7b6dbb6d5ef0219e60e09079ed37"
+  },
+  {
+    "path": "docs/subsystems/skills.i18n.yaml",
+    "bytes": 425,
+    "sha256": "4056ebb273d4fcb4a151d00da21a543cd02ecee639924465d543b9fba688a11c"
+  },
+  {
+    "path": "docs/subsystems/skills.md",
+    "bytes": 24961,
+    "sha256": "8711abeda0cc0b65990670f0ac34ae04c37381de96afda37b3dfabe763eedc84"
+  },
+  {
+    "path": "docs/subsystems/skills.zh.md",
+    "bytes": 24569,
+    "sha256": "d88449a019fe95e3263804e5139e01c94e7d7b878d87b9318ca1f28867909757"
+  },
+  {
+    "path": "packages/api/remotes/package.json",
+    "bytes": 2861,
+    "sha256": "36cf7efb8ebe900093504c0329b0ce611a88895bd3eb0e3612186636dc8bc07b"
+  },
+  {
+    "path": "packages/api/remotes/src/client/index.ts",
+    "bytes": 9056,
+    "sha256": "fa8179c5047a3ff8e5a054c801c50ef134ec160d01a2184dbdf49844582e6303"
+  },
+  {
+    "path": "packages/api/remotes/tsconfig.client.json",
+    "bytes": 1715,
+    "sha256": "6c3db438c062ce91d3cae0f9c979f0644ae2aab5a50befdb234bcc6c8a256126"
+  },
+  {
+    "path": "packages/api/remotes/tsconfig.host.json",
+    "bytes": 1361,
+    "sha256": "f2335d2eeab39afe238a3f2aceac130edbea045737b80b59d1cc740870bd171a"
+  },
+  {
+    "path": "packages/bundle/web-app/cordis.patch.yml",
+    "bytes": 18759,
+    "sha256": "e4800538ac94255bec3fa70215a037b19f13666fdb121648b4a5bd8fb43004ad"
+  },
+  {
+    "path": "packages/bundle/web-app/package.json",
+    "bytes": 6288,
+    "sha256": "d1168474c881778e41aab5a14742f348742408130ffce816e2e55994586b39c6"
+  },
+  {
+    "path": "packages/client/ui-conversation/src/client/apply.ts",
+    "bytes": 20943,
+    "sha256": "fe54261da68184a9a5a35759e069ed25ce4fc048d22322715ba37819bdbe2321"
+  },
+  {
+    "path": "packages/client/ui-conversation/src/client/input/hub.ts",
+    "bytes": 15589,
+    "sha256": "d77bd7354bd93374966c9ebf6291375dc3d890d07b8709cda4cac14e2ce3d5e6"
+  },
+  {
+    "path": "packages/client/ui-conversation/src/client/service.ts",
+    "bytes": 21505,
+    "sha256": "d4c77d73f305f55bd41ceefbdfcdfba0bd1470f828f69e5e6fc691ab6a3213b7"
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/apply-inject.client.spec.tsx",
+    "bytes": 19853,
+    "sha256": "74121a5edc82928e09d44580c9ff6ba045db60f7f2416432e52f6e369b636101"
+  },
+  {
+    "path": "packages/client/ui-layout/tests/app-frame.client.spec.tsx",
+    "bytes": 20233,
+    "sha256": "eccb16d28d78a99459b231acc875ab9e0a01e3dffe1e23d4a4f31d91e28f6d97"
+  },
+  {
+    "path": "packages/client/ui-workspace/package.json",
+    "bytes": 2767,
+    "sha256": "8bad9919f4ae2f192d135b4f8bcb855ac8c5b58001e8f8adb6a2440e76f85a43"
+  },
+  {
+    "path": "packages/client/ui-workspace/src/client/PtoViewerOverlay.module.css",
+    "bytes": 2383,
+    "sha256": "fcae7fcad747814d44bb8e0aba32d8ce27d199cfc3af4cf9a7c9a1e2c9bc6a50"
+  },
+  {
+    "path": "packages/client/ui-workspace/src/client/PtoViewerOverlay.tsx",
+    "bytes": 3680,
+    "sha256": "5d705a0df5ff554727a7ee9552b919b7610b74104907c36f625666411cb96521"
+  },
+  {
+    "path": "packages/client/ui-workspace/src/client/contract/slots.ts",
+    "bytes": 9089,
+    "sha256": "d76cbfbfb86f33c8400b8f0d15d8ce10b4559404c3d9c72059d2e019bfbf6469"
+  },
+  {
+    "path": "packages/client/ui-workspace/src/client/index.ts",
+    "bytes": 10941,
+    "sha256": "ab5eda89857ef83a83fb7e1a0fde0501f76a800d69502b2320b1e8c6be84e068"
+  },
+  {
+    "path": "packages/client/ui-workspace/src/client/locales.ts",
+    "bytes": 8075,
+    "sha256": "91441b3e07b968c2bb55b195ccd2b29fe6942591f91b014f6f4535228ab76b27"
+  },
+  {
+    "path": "packages/client/ui-workspace/src/client/pto-viewer.ts",
+    "bytes": 7748,
+    "sha256": "7143bdb2a49ca3acfb1ce0b15fd7637d6931d350b9e263b5017fb35b395cff9e"
+  },
+  {
+    "path": "packages/client/ui-workspace/src/client/rows/Rows.module.css",
+    "bytes": 7436,
+    "sha256": "ab7c644d8410f8b8ca909eafe35b7a3a559dd0fe5632cd47f9e4bd7eb44947bf"
+  },
+  {
+    "path": "packages/client/ui-workspace/src/client/rows/Rows.tsx",
+    "bytes": 25811,
+    "sha256": "d4a685fbb7df3e90a10a67d5074a5e47d065b9552e32e2fe18a4518f3a659968"
+  },
+  {
+    "path": "packages/client/ui-workspace/src/client/rows/WorkspaceBrowser.tsx",
+    "bytes": 68351,
+    "sha256": "ec3c1a5851934fdeeb1117cef31452fec3ef3cccaac5d0c87fcfc78018e0ccd2"
+  },
+  {
+    "path": "packages/client/ui-workspace/tests/pto-viewer.client.spec.ts",
+    "bytes": 6483,
+    "sha256": "50e14b8dac5d96ea9c301619738a2865522433385dbcd4494d6f41688f85d2af"
+  },
+  {
+    "path": "packages/client/ui-workspace/tests/rows.client.spec.tsx",
+    "bytes": 31388,
+    "sha256": "78d5c9df2592d9dbc69b3cf20f2247170d74147e7ab6746681087ee280b18c0f"
+  },
+  {
+    "path": "packages/client/ui-workspace/tests/workspace-browser.client.spec.tsx",
+    "bytes": 76294,
+    "sha256": "481660adecb9ddf2df24962c27704eb481f82ea0567c5f42dee6d249934c4b16"
+  },
+  {
+    "path": "packages/client/ui-workspace/tsconfig.json",
+    "bytes": 1066,
+    "sha256": "47d743c489f3feebe81cde214a302921dc5c81906e401651656d1a3e5285fa5c"
+  },
+  {
+    "path": "packages/extensions/tool-cordis/src/api-catalog.ts",
+    "bytes": 464370,
+    "sha256": "43401569c107607c39d46102e844101949da431a4316ff2d147b9d8de432c0fa"
+  },
+  {
+    "path": "packages/host/pto-artifact-inspection/README.i18n.yaml",
+    "bytes": 447,
+    "sha256": "490d5cc19e296b7be10b07691eb87fb3100e801f549e333f5d2d269c35ab2c9b"
+  },
+  {
+    "path": "packages/host/pto-artifact-inspection/README.md",
+    "bytes": 2539,
+    "sha256": "f1134aaea5efac652f657ecabaee145dc4c70e980559df774a56d359b268b6a5"
+  },
+  {
+    "path": "packages/host/pto-artifact-inspection/README.zh.md",
+    "bytes": 2291,
+    "sha256": "8cd9200bc05f66c81a2410e3b849f01c7219d599cfb472112bc3d1a762c2b219"
+  },
+  {
+    "path": "packages/host/pto-artifact-inspection/package.json",
+    "bytes": 2420,
+    "sha256": "7d42386128783eae668b761e65bda0ff8eb0ee9fa8d4d579777b298cdce3097c"
+  },
+  {
+    "path": "packages/host/pto-artifact-inspection/src/index.ts",
+    "bytes": 23661,
+    "sha256": "9d826e895699cb1604376f88e0cac3509f16a53045a0bcd3df05a13e4c96d925"
+  },
+  {
+    "path": "packages/host/pto-artifact-inspection/src/types.ts",
+    "bytes": 3078,
+    "sha256": "7bfed3b78e2d0e58a64850a498c14663f73d3d49517ffe9e333067083e283ca4"
+  },
+  {
+    "path": "packages/host/pto-artifact-inspection/tests/inspection.spec.ts",
+    "bytes": 10692,
+    "sha256": "9cf2587a115b19a1aa0efdc1efeebe43e9fdc933090d9d038071f2845afe5a98"
+  },
+  {
+    "path": "packages/host/pto-artifact-inspection/tsconfig.json",
+    "bytes": 572,
+    "sha256": "5773ac56e32130c86dc92a5e7628cc7acf25521857befd396ce1f69615331f12"
+  },
+  {
+    "path": "packages/pto/tool-pto-run/src/index.ts",
+    "bytes": 7906,
+    "sha256": "dfffdd81c9c445e508952c8c76313ef046995153852665ec7544f1b32ba1a409"
+  },
+  {
+    "path": "packages/pto/tool-pto-run/src/run-artifacts.ts",
+    "bytes": 28284,
+    "sha256": "a0c95a3e481426ae9089d447b973ab7a988554844b3c570611b6851d738ac9bf"
+  },
+  {
+    "path": "packages/pto/tool-pto-run/tests/tool-pto-run.spec.ts",
+    "bytes": 13454,
+    "sha256": "dc754031272ff3a86a26ca46684805a3757a93ef3128f1a555afcb863280438d"
+  },
+  {
+    "path": "packages/skill/skill/src/index.ts",
+    "bytes": 38954,
+    "sha256": "68969070a366294de8745dbdb98cb872111c9797608f505bc9bcd719a8fdf2a3"
+  },
+  {
+    "path": "packages/skill/skill/tests/skill.spec.ts",
+    "bytes": 49740,
+    "sha256": "55136e1481d2f9e9a0faef8385445c5b417f62f5c683c43abde608d97789e508"
+  },
+  {
+    "path": "packages/skill/tool-skill/src/index.ts",
+    "bytes": 19149,
+    "sha256": "74bf5d8990f3ddcbcb0746d3365ce142c869e892da11f52323e083fdbcc02141"
+  },
+  {
+    "path": "packages/skill/tool-skill/tests/tool-skill.spec.ts",
+    "bytes": 48715,
+    "sha256": "76a96d5c82b78946f9c09c0542d4ac4cf6951ab763b08a3b90cddbe09c73e3d3"
+  },
+  {
+    "path": "pnpm-lock.yaml",
+    "bytes": 776059,
+    "sha256": "6e3ce4d43ac08bff457f841fa5a4301262cb116aac29858382dd258a5c662a67"
+  },
+  {
+    "path": "scripts/gen-cordis-catalog.ts",
+    "bytes": 61132,
+    "sha256": "53bd804ca664948063c15210df05f6c425265b33159c53e201633aff46031b23"
+  },
+  {
+    "path": "tsconfig.base.json",
+    "bytes": 36995,
+    "sha256": "859f36f381705aed556978210dedfdc3a17957b9148e329faea0f674d45bc41e"
+  },
+  {
+    "path": "tsconfig.host.json",
+    "bytes": 16566,
+    "sha256": "86f5a616aa4d8210d2fa8d81361851ca67452ab94c1ef4bc07da2fd3117b515d"
+  }
+]

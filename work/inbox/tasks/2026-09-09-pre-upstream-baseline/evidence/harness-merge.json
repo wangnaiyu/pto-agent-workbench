@@ -1,0 +1,8 @@
+{
+  "pullRequest": "https://github.com/wangnaiyu/deepseek-harness/pull/5",
+  "state": "MERGED",
+  "master": "ef0d49b574f544c997e914b4254e38080730f45a",
+  "source": "e95e118b26761c20381f278b8d98c15ee56fc886",
+  "checksPassed": 27,
+  "preview": "cancelled: non-required upstream-only runner"
+}

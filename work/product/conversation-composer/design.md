@@ -21,13 +21,48 @@ Host 的 listDraft / listSession 应表达同类事实，实际 Session scope �
 
 菜单未曾读取时不凭空报告“上次来源变化”。刷新目录不改变已固定 Session 的 Skill bundle；版本失配见官方接入主题。
 
-## 待开发：从 Viewer 带入分析草稿
+## 从 Viewer 带入分析草稿
 
-输入上下文使用结构化 attachment：record/ref/revision、artifactRefs、actionId、requestedSkill（含 provider/revision）、selectionRef（可选）、source reference（可选）。原始数据不序列化到正文。用户看到可理解的记录名、问题、分析范围，内部 ID 可在详情查看。
+一次 Viewer “AI 分析”点击创建一个新的 launch 和 browser draft，不创建真实 Session。草稿的
+正式 attachment 包含 launchId、record/ref/revision、artifactRefs、actionId、requestedSkill
+（含 provider/revision）、selectionRef（可选）和 source reference（可选）。原始数据与完整
+上下文不序列化到正文。
 
-从纯查看点击“AI 分析”只创建可编辑草稿，图仍可查看；发送才建会话。若在现有 Session 追加分析，需检查其 scope/固定版本与新记录匹配，不暗中切换 cwd。素材追加不等于修改权限或接受数据内的指令。
+### 可见输入
 
-首次发送重检 action readiness、数据 revision 和 Skill/tool tuple，错误可分别修复。对象失效则请求刷新关联，正文不丢；Skill 更新则明确提示，不替用户静默改版本。Record / Selection 的业务语义以 [数据接入](../artifact-inspection/data-intake.md) 为准。
+点击动作应复用输入区已有的选择语义，形成与手动选择等价的简洁输入：
+
+```text
+/skill dependency-redundancy  @deps.json  分析冗余依赖，给出结论、证据、限制和建议。
+```
+
+- Skill 按规范 `/skill <name>` 解析，文件按 `@<filename>` 形成结构化 reference；程序化填入
+  必须走与目录选择相同的状态/解析契约，不能只绘制两个无语义 chip。
+- 默认不额外显示 Record/数据集名称、revision、provider、actionId、tool tuple 或绝对路径。
+  这些事实保留在 attachment 详情与审计记录中，供校验和排障，不挤占输入区。
+- Prompt 只表达用户问题，保持简洁、准确、可编辑；Skill 全文、工具说明、Record 全量上下文
+  在首发准入后通过可信入口提供给模型，不在 UI 正文赘述。
+- `/skill` 的可见选择与 attachment 中的 qualified Skill 是一项调用意图，实施时必须收敛为一次
+  Skill 注入，不能由通用 `/skill` 和 PTO bridge 重复加载。
+
+点击后退出全屏 Viewer 并进入新会话草稿页；第一版通过 `@deps.json` 提供重新打开 Viewer 的
+入口。发送才建 Session。若未来允许在已有 Session 追加分析，需另行检查其 scope/固定版本与
+新记录匹配，不暗中切换 cwd。
+
+### launch、发送与恢复
+
+每次从 Viewer 有意点击“AI 分析”创建新 launch；当前不自动复用旧分析 Session。同一 launch
+的双击应合并为一次 activation。已有未发送分析草稿时，用户须选择继续原草稿或放弃后新建，
+不能静默覆盖。
+
+首次发送以 launchId/requestId 幂等执行：materialize 唯一 Session → 重检 action readiness、
+数据 revision 和 Skill/tool tuple → 持久绑定 receipt/Skill → 发送 prompt。准入失败后，同一
+launch 在已物化 Session 中重试；可产生新的 admission attempt/requestId，但不得再建 Session。
+对象失效则请求刷新关联，正文和选择不丢；Skill 更新则明确提示，不替用户静默改版本。
+
+任何缺失 attachment 或 receipt 的情况都必须 fail closed，不能降级发送纯文本，也不能用通用
+Shell 对 Session 外数据手动复算冒充正式分析。Record / Selection 的业务语义以
+[数据接入](../artifact-inspection/data-intake.md)为准。
 
 ## 不包含
 
