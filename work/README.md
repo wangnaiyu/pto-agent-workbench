@@ -14,7 +14,7 @@
 
 ## 任务入口
 
-- [两仓升级前基线收口](inbox/tasks/2026-09-09-pre-upstream-baseline/README.md)：保存现有成果、检查、PR 合并及有限清理；不执行 upstream rebase。
+- [两仓升级前基线收口](archive/tasks/2026-09-09-pre-upstream-baseline/final-report.md)：两仓成果已合并并保存恢复点，检查与已知问题有据可查；尚未执行 upstream rebase。
 
 - [分析启动与布局回归修复](inbox/tasks/2026-09-08-artifact-analysis-launch-repair/README.md)：修复 Viewer “AI 分析”结构化首发、明确新 launch/重试语义，并让自定义实验页恢复 DSH 宽度契约。
 - [仓库治理完成报告](archive/tasks/2026-09-03-repository-governance/final-report.md)：入口、迁移、项目 Skill 与验证记录。
