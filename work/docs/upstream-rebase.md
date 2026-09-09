@@ -22,3 +22,5 @@
 ## 已知版本记录
 
 当前治理基线为 rc.1，精确 HEAD 见 [架构](architecture.md)，本次迁移证据见 [2026-09-04 上游 rebase 任务](../archive/tasks/2026-09-04-upstream-rebase/final-report.md)。rc.8、alpha.1 到 alpha.5 的迁移过程已进入 [旧记录归档](../archive/legacy-notes/README.md)。其中的临时路径和测试数量仅对当次任务成立。
+
+2026-09-09 升级前成果已收口，见[两仓基线报告](../archive/tasks/2026-09-09-pre-upstream-baseline/final-report.md)。后续维护从两仓 `pre-upstream-baseline-20260909` annotated tag 所记录的正式配对开始核对；该记录未执行上游更新，原始保存点及旧备份继续保留。

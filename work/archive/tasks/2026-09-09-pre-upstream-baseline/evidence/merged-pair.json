@@ -1,0 +1,8 @@
+{
+  "phase": "pre-upstream-feature-merge-pair",
+  "workbench": "a2b92456c2d9605946cba10ff51d0659ac3dd92a",
+  "workbenchPR": "https://github.com/wangnaiyu/pto-agent-workbench/pull/9",
+  "harness": "ef0d49b574f544c997e914b4254e38080730f45a",
+  "harnessPR": "https://github.com/wangnaiyu/deepseek-harness/pull/5",
+  "finalReport": "Documentation-only closeout PR follows; final origin/main is pinned by codex/baseline-pre-upstream-20260909."
+}
