@@ -1,0 +1,36 @@
+$ tsx scripts/run-gates.ts hygiene
+run-gates: hygiene running 16 gate(s) with 4 worker(s) from 12 available CPU(s), hygiene cap 4.
+run-gates: start vendor rescope
+run-gates: start publint
+run-gates: start constraints
+run-gates: start package dependencies
+run-gates: PASS constraints (1.27s)
+run-gates: start application entrypoints
+run-gates: PASS package dependencies (1.62s)
+run-gates: start DSH package licenses
+run-gates: PASS application entrypoints (0.81s)
+run-gates: start package invariants
+run-gates: PASS DSH package licenses (0.52s)
+run-gates: start built package invariants
+run-gates: PASS publint (2.65s)
+run-gates: start node-next types
+run-gates: PASS built package invariants (0.64s)
+run-gates: start optional dependency imports
+run-gates: PASS package invariants (1.08s)
+run-gates: start client packages
+run-gates: PASS vendor rescope (3.93s)
+run-gates: start client UI i18n
+run-gates: PASS client UI i18n (1.39s)
+run-gates: start proxy-aware dispatchers
+run-gates: PASS node-next types (2.96s)
+run-gates: start Cordis config
+run-gates: PASS proxy-aware dispatchers (1.12s)
+run-gates: start runtime closure
+run-gates: PASS runtime closure (0.58s)
+run-gates: start vendored links
+run-gates: PASS Cordis config (1.68s)
+run-gates: PASS vendored links (0.54s)
+run-gates: PASS client packages (6.29s)
+run-gates: PASS optional dependency imports (11.77s)
+
+run-gates: 16 passed, 0 failed, 0 skipped in 14.54s.

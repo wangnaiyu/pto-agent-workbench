@@ -1,0 +1,58 @@
+[
+  {
+    "path": "packages/client/ui-conversation/tests/apply-wiring.client.spec.tsx",
+    "oldLine": 17,
+    "newLine": 17,
+    "code": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "classification": "same pre-upstream diagnostic"
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx",
+    "oldLine": 63,
+    "newLine": 63,
+    "code": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "classification": "same pre-upstream diagnostic"
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx",
+    "oldLine": 85,
+    "newLine": 85,
+    "code": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "classification": "same pre-upstream diagnostic"
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx",
+    "oldLine": 112,
+    "newLine": 112,
+    "code": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "classification": "same pre-upstream diagnostic"
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx",
+    "oldLine": 177,
+    "newLine": 177,
+    "code": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "classification": "same pre-upstream diagnostic"
+  },
+  {
+    "path": "packages/client/ui-tool/tests/assembly-surfaces.client.spec.tsx",
+    "oldLine": 82,
+    "newLine": 82,
+    "code": "...runtime.workspaces,",
+    "classification": "same pre-upstream diagnostic"
+  },
+  {
+    "path": "packages/client/ui-tool/tests/toolview-slot.client.spec.tsx",
+    "oldLine": 68,
+    "newLine": 69,
+    "code": "...runtime.workspaces,",
+    "classification": "same pre-upstream diagnostic"
+  },
+  {
+    "path": "packages/client/ui-tool/tests/toolview-slot.client.spec.tsx",
+    "oldLine": 213,
+    "newLine": 216,
+    "code": "...runtime.workspaces,",
+    "classification": "same pre-upstream diagnostic"
+  }
+]

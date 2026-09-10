@@ -1,0 +1,26 @@
+523c27c3615f5b3ae0ced3fd9f4824f2180f619f feat(client): port PTO brand to the upstream brand-slot mechanism
+89bc5ef0b52c74f31ca94bd5329ec6e3785a5919 feat(client): refine PTO workbench navigation
+a3decdf0507615037ef44b4b07751c92e7956a53 feat(client): add run records sidebar information architecture
+a2a797b374dbe5864940cc3af0726047237ad7c8 ci: scope darwin parity to the upstream repository
+c3d488f678c753f55d283bf9883e79e1dfb7fcf7 feat(session): support project directory aliases
+07677563fc8cd3381b1dd37c612ad446c11a0bb7 feat(client): defer session creation until first prompt
+228a2147a92d4e16d7504f4d26b08297cf6fade9 ci: make issue checks fork-friendly
+630182940fe9f0bab46fe738cc11e5d4cf296854 ci: skip larger-runner checks in forks
+03d3b41bc24c4e03ed7d8fc9588469a9f2d4de1b feat: add draft composer capability catalog
+3a30060315b39244936fa6420d01ab7c81444738 feat(client): add draft composer capability menu
+ceb8fb9b51b118437349186367843cfc869708e6 feat(skill): add explicit cross-client invocation gesture
+f31094979f0021eaf146b00a73d7d85278a5ea74 feat(composer): validate formal session capabilities
+477d66bcabfcac80a77f1cac9d7feafa98830284 feat(pto): add trusted experiment workflow
+f3be3f2222928b112e2374d4a21b3ab0c0c89027 fix(composer): polish draft capability catalog
+9635f8feffd8c534f681502ffb7d9f2c84834508 fix: align PTO fork with rebased harness contracts
+2b0dcede4128ad90cb71c87daa8c354ea1cd5c00 fix(pto): declare Typert zod runtime dependencies
+2e56986656620e0265b6f8e9edff59b08050ce49 fix: adapt PTO workbench to upstream alpha.2
+ad0c556d73c2a2fb77d82004c49e5901fc6ff2e8 fix(client): drop stale conversation notice import
+925715abe563fdc642060565b4f9403bc2575c87 fix(web): preserve workbench behavior on alpha.3
+2ea17db6c5d3b28d638d40197269b00d50fdb11f fix(ui): preserve slash launcher across caret updates
+1ef45860f5029d4dc59cc205fffa6dfa6dd0bb4f fix(ci): align fork packages with alpha.4 policy
+37ca07262cd556447153139e0ad64957abe2f8c4 fix(pto): adapt dashboard tests to session snapshots
+69a5cc2bb34fde1376b0642c756fc6cb2de65b4c fix(ci): align fork packages with alpha.5 policy
+8a0cfdf8a8ed79e5c304be287440ebb1b001a878 fix(pto): adapt workbench to upstream rc.1
+e95e118b26761c20381f278b8d98c15ee56fc886 feat(pto): preserve artifact inspection and official skill integration baseline
+ef0d49b574f544c997e914b4254e38080730f45a Merge pull request #5 from wangnaiyu/codex/pre-upstream-baseline-20260909

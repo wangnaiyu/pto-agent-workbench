@@ -1,0 +1,10 @@
+{
+  "workbench_before": "90390059746c29a71bd5315e1dce5101bb803aec",
+  "fork_before": "ef0d49b574f544c997e914b4254e38080730f45a",
+  "upstream_target": "5dda764ed3aa172535a7967b06ff95d9cbfe536a",
+  "merge_base": "76fda729799fe9b3848dbe2c211d4b231032b81e",
+  "upstream_commit_time": "2026-09-08T23:25:45+08:00",
+  "upstream_version": "0.1.5-alpha.1",
+  "upstream_added_count": 1108,
+  "fork_nonmerge_count": 25
+}

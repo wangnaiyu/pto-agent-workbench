@@ -1,0 +1,11 @@
+{
+  "oldMaster": "ef0d49b574f544c997e914b4254e38080730f45a",
+  "newMaster": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+  "lease": "refs/heads/master:ef0d49b574f544c997e914b4254e38080730f45a",
+  "remoteVerified": true,
+  "pr": "https://github.com/wangnaiyu/deepseek-harness/pull/6",
+  "state": "MERGED",
+  "mergedAt": "2026-09-10T03:29:28Z",
+  "method": "exact-SHA force-with-lease; GitHub recognized candidate inclusion, no ordinary merge/squash",
+  "prePushTypecheck": "passed"
+}

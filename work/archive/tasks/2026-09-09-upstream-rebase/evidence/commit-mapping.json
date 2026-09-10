@@ -1,0 +1,158 @@
+[
+  {
+    "old": "523c27c3615f5b3ae0ced3fd9f4824f2180f619f",
+    "new": "408f1cc84d761b4579d1623aabc0237d6bf54985",
+    "subject": "feat(client): port PTO brand to the upstream brand-slot mechanism",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "89bc5ef0b52c74f31ca94bd5329ec6e3785a5919",
+    "new": "6a378372a0c23843ded5430554b4f19004274f92",
+    "subject": "feat(client): refine PTO workbench navigation",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "a3decdf0507615037ef44b4b07751c92e7956a53",
+    "new": "0547177a83de0beac94798f07723b693c8fac752",
+    "subject": "feat(client): add run records sidebar information architecture",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "a2a797b374dbe5864940cc3af0726047237ad7c8",
+    "new": "4dfa48f01ffd63aa762e805d63468af9d4ee3c22",
+    "subject": "ci: scope darwin parity to the upstream repository",
+    "status": "normal replay; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "c3d488f678c753f55d283bf9883e79e1dfb7fcf7",
+    "new": "a782e6722b62e66b1bf96343a4a72e309e94d7d6",
+    "subject": "feat(session): support project directory aliases",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "07677563fc8cd3381b1dd37c612ad446c11a0bb7",
+    "new": "13c873b3a70cddf140a7df3a84d846759b4b7dea",
+    "subject": "feat(client): defer session creation until first prompt",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "228a2147a92d4e16d7504f4d26b08297cf6fade9",
+    "new": "c886a003dcdde18ac38918f9f78c6c69777f1e6b",
+    "subject": "ci: make issue checks fork-friendly",
+    "status": "normal replay; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "630182940fe9f0bab46fe738cc11e5d4cf296854",
+    "new": "f822cf326d1c969d3a975d9fb0759262f0e1b649",
+    "subject": "ci: skip larger-runner checks in forks",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "03d3b41bc24c4e03ed7d8fc9588469a9f2d4de1b",
+    "new": "4b772509c0b025518cedd5e30550d077c9fb1f75",
+    "subject": "feat: add draft composer capability catalog",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "3a30060315b39244936fa6420d01ab7c81444738",
+    "new": "57b5e6c3a6bfbcbb29ea2d4709a86debae1f65ea",
+    "subject": "feat(client): add draft composer capability menu",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "ceb8fb9b51b118437349186367843cfc869708e6",
+    "new": "0ad688e22b2d0cac8993e4537b41d4b3e76bc855",
+    "subject": "feat(skill): add explicit cross-client invocation gesture",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "f31094979f0021eaf146b00a73d7d85278a5ea74",
+    "new": "81c4beefb8c54ca414c9c3dec8425cb69c202b8e",
+    "subject": "feat(composer): validate formal session capabilities",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "477d66bcabfcac80a77f1cac9d7feafa98830284",
+    "new": "67d209f060a4fbba60208f0485dc8e86cc7f9ca1",
+    "subject": "feat(pto): add trusted experiment workflow",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "f3be3f2222928b112e2374d4a21b3ab0c0c89027",
+    "new": "8f6e883372da8ee336ab38206eebed2879f70754",
+    "subject": "fix(composer): polish draft capability catalog",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "9635f8feffd8c534f681502ffb7d9f2c84834508",
+    "new": "f783220a8361ad966398d3ca1a5eca056f909352",
+    "subject": "fix: align PTO fork with rebased harness contracts",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "2b0dcede4128ad90cb71c87daa8c354ea1cd5c00",
+    "new": "112a112ce99225e224e5cfb03aeff1efd508bc93",
+    "subject": "fix(pto): declare Typert zod runtime dependencies",
+    "status": "normal replay; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "2e56986656620e0265b6f8e9edff59b08050ce49",
+    "new": "d7f443d393a18dc82592167d488609a6974c0f24",
+    "subject": "fix: adapt PTO workbench to upstream alpha.2",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "ad0c556d73c2a2fb77d82004c49e5901fc6ff2e8",
+    "new": null,
+    "subject": "fix(client): drop stale conversation notice import",
+    "status": "absorbed during 076775 conflict resolution: stale InputNotice removed with ABSENT_NOTICES; no standalone replay"
+  },
+  {
+    "old": "925715abe563fdc642060565b4f9403bc2575c87",
+    "new": "fc8ecaa079379fb3e9b92ec09116ce35faaec836",
+    "subject": "fix(web): preserve workbench behavior on alpha.3",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "2ea17db6c5d3b28d638d40197269b00d50fdb11f",
+    "new": "4d538cc02cdafc9304b1625a82f8a331f6fc520b",
+    "subject": "fix(ui): preserve slash launcher across caret updates",
+    "status": "normal replay; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "1ef45860f5029d4dc59cc205fffa6dfa6dd0bb4f",
+    "new": "6a27634c37c1e6b8ca5173fab0fad5f2bc5b6fe2",
+    "subject": "fix(ci): align fork packages with alpha.4 policy",
+    "status": "normal replay; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "37ca07262cd556447153139e0ad64957abe2f8c4",
+    "new": "ff994e599aaeb0122a3a20f571cb2278b3f4fe20",
+    "subject": "fix(pto): adapt dashboard tests to session snapshots",
+    "status": "normal replay; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "69a5cc2bb34fde1376b0642c756fc6cb2de65b4c",
+    "new": "977c37957a6eab2d5988d4d5b55b6b9136fb05d2",
+    "subject": "fix(ci): align fork packages with alpha.5 policy",
+    "status": "normal replay; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "8a0cfdf8a8ed79e5c304be287440ebb1b001a878",
+    "new": "01d945d3763a3d4ee835680872008f1ee5053eac",
+    "subject": "fix(pto): adapt workbench to upstream rc.1",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "e95e118b26761c20381f278b8d98c15ee56fc886",
+    "new": "dfee89b2e0e6ca090f911b136315f235133aec78",
+    "subject": "feat(pto): preserve artifact inspection and official skill integration baseline",
+    "status": "content adjusted in conflict resolution; validated with compatibility follow-up ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+  },
+  {
+    "old": "ef0d49b574f544c997e914b4254e38080730f45a",
+    "new": "dfee89b2e0e6ca090f911b136315f235133aec78",
+    "subject": "PR #5 merge",
+    "status": "merge topology flattened; same original tree as e95e118; content maps to last replay"
+  }
+]

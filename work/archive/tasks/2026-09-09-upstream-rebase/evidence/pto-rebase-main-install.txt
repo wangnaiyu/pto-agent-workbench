@@ -1,0 +1,23 @@
+native/system/packages/darwin-x64        | [WARN] Unsupported platform: wanted: {"cpu":["x64"],"os":["darwin"],"libc":["any"]} (current: {"os":"darwin","cpu":"arm64","libc":"unknown"})
+native/system/packages/linux-arm64       | [WARN] Unsupported platform: wanted: {"cpu":["arm64"],"os":["linux"],"libc":["any"]} (current: {"os":"darwin","cpu":"arm64","libc":"unknown"})
+native/system/packages/linux-x64         | [WARN] Unsupported platform: wanted: {"cpu":["x64"],"os":["linux"],"libc":["any"]} (current: {"os":"darwin","cpu":"arm64","libc":"unknown"})
+Scope: all 296 workspace projects
+[WARN] There are cyclic workspace dependencies: /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/api/gateway, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/client/connection, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/api/session-controller, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/client/file-upload, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/api/remotes, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/api/workspace-controller; /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/api/workspace-files, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/client/resources, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/test-support/client-runtime, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/client/ui-chat, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/client/ui-sidebar-textpreview; /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/client/ui-conversation, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/client/ui-workspace; /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/core/agent-loop, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/llm/llm-pi-ai, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/llm/llm-deepseek, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/session/session-log-deepseek, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/feedback/command-feedback, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/test-support/agent-loop-testkit; /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/e2b/e2b, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/e2b/fs-e2b; /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/sandbox/sandbox-local, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/sandbox/sandbox-windows-acl; /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/subagent/subagent-spawn-in-process, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/packages/subagent/tool-subagent; /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/vendor/cordis, /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/vendor/include
+✓ Lockfile passes supply-chain policies (verified 49m ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +240 -25
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--------
+Progress: resolved 240, reused 240, downloaded 0, added 219
+Progress: resolved 240, reused 240, downloaded 0, added 221, done
+
+devDependencies:
++ @deepseek-ai/dsh-agent 0.1.5-alpha.1 <- packages/core/agent
++ @deepseek-ai/dsh-package-manifest 0.1.5-alpha.1 <- packages/util/package-manifest
+
+packages/subprocess/subprocess-local postinstall$ node scripts/ensure-spawn-helper.mjs
+packages/subprocess/subprocess-local postinstall: Done
+. postinstall$ node scripts/install-lefthook.mjs
+. postinstall: sync hooks: ✔️(pre-merge-commit, pre-push, pre-commit)
+. postinstall: Done
+Done in 5.2s using pnpm v11.7.0

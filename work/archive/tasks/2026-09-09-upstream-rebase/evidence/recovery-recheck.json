@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-09-10",
+  "workbench": {
+    "main": "90390059746c29a71bd5315e1dce5101bb803aec",
+    "savepoint": "563ec644372442ae670ec8ee5218fecd30ae429a",
+    "baseline": "90390059746c29a71bd5315e1dce5101bb803aec",
+    "annotatedTagObject": "eec1bd7430cd8666759dad937852b0ed051d593f"
+  },
+  "harness": {
+    "master": "ef0d49b574f544c997e914b4254e38080730f45a",
+    "savepoint": "e95e118b26761c20381f278b8d98c15ee56fc886",
+    "baseline": "ef0d49b574f544c997e914b4254e38080730f45a",
+    "annotatedTagObject": "e34626291f487801938d84f367c2d0645709129d"
+  },
+  "localAndRemoteMatch": true,
+  "candidatePublished": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+}
