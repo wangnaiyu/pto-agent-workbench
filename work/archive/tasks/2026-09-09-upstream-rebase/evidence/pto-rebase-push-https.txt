@@ -1,7 +1,7 @@
 ✔ [@deepseek-ai/dsh-tmux-context] Build complete in 6884ms
 ✔ [@deepseek-ai/dsh-experimental-agent-team] Build complete in 6884ms
 ✔ [@deepseek-ai/dsh-repeat-tool-reminder] Build complete in 6885ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/dsh-desktop] Hint: consider adding deps.onlyBundle option to avoid unintended bundling of dependencies, or set deps.onlyBundle: false to disable this hint.
 See more at https://tsdown.dev/options/dependencies#deps-onlybundle
@@ -12,39 +12,39 @@ Detected dependencies in bundle:
 ℹ [@deepseek-ai/dsh-subagent] 2 files, total: 137.98 kB
 ℹ [@deepseek-ai/dsh-host-directory-picker-native] [ESM] lib/index.js  10.79 kB │ gzip: 3.97 kB
 ℹ [@deepseek-ai/dsh-host-directory-picker-native] [ESM] 1 files, total: 10.79 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-workspace] Build complete in 6886ms
 ℹ [@deepseek-ai/dsh-file-reference-local] lib/index.js  16.36 kB │ gzip: 5.22 kB
 ℹ [@deepseek-ai/dsh-file-reference-local] 1 files, total: 16.36 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-session-persistence-jsonl] Build complete in 6887ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/dsh-llm-deepseek] lib/index.js  92.09 kB │ gzip: 25.43 kB
 ℹ [@deepseek-ai/dsh-llm-deepseek] 1 files, total: 92.09 kB
 ℹ [@deepseek-ai/dsh-sandbox-local] lib/index.js  21.57 kB │ gzip: 7.28 kB
 ℹ [@deepseek-ai/dsh-sandbox-local] 1 files, total: 21.57 kB
 ✔ [@deepseek-ai/dsh] Build complete in 6888ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-session-persistence-jsonl] Build complete in 6888ms
 ✔ [@deepseek-ai/dsh-subprocess-local] Build complete in 6888ms
 ℹ [@deepseek-ai/dsh-llm-pi-ai] lib/index.js  113.79 kB │ gzip: 33.68 kB
 ℹ [@deepseek-ai/dsh-llm-pi-ai] 1 files, total: 113.79 kB
 ✔ [@deepseek-ai/dsh-host-directory-picker-native] Build complete in 6889ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-subagent] Build complete in 6889ms
 ✔ [@deepseek-ai/dsh-file-reference-local] Build complete in 6889ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-llm-deepseek] Build complete in 6889ms
 ✔ [@deepseek-ai/dsh-sandbox-local] Build complete in 6889ms
@@ -52,22 +52,22 @@ Detected dependencies in bundle:
 ℹ [@deepseek-ai/dsh-agent-presets] lib/invariant.js  82.62 kB │ gzip: 24.96 kB
 ℹ [@deepseek-ai/dsh-agent-presets] lib/index.js      82.10 kB │ gzip: 24.81 kB
 ℹ [@deepseek-ai/dsh-agent-presets] 2 files, total: 164.72 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-agent-presets] Build complete in 6890ms
 ℹ [@deepseek-ai/dsh-desktop] [ESM] lib/main.js  183.13 kB │ gzip: 49.11 kB
 ℹ [@deepseek-ai/dsh-desktop] [ESM] 1 files, total: 183.13 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-desktop] Build complete in 6893ms
 ℹ [@deepseek-ai/dsh-experimental-inspector] lib/index.js  86.38 kB │ gzip: 20.32 kB
 ℹ [@deepseek-ai/dsh-experimental-inspector] 1 files, total: 86.38 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-experimental-inspector] Build complete in 6902ms
 ℹ [@deepseek-ai/dsh-experimental-inspector] lib/worker.js  261.63 kB │ gzip: 55.24 kB
 ℹ [@deepseek-ai/dsh-experimental-inspector] 1 files, total: 261.63 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-experimental-inspector] Build complete in 6909ms
 ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] Hint: consider adding deps.onlyBundle option to avoid unintended bundling of dependencies, or set deps.onlyBundle: false to disable this hint.
@@ -88,7 +88,7 @@ Detected dependencies in bundle:
 ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] lib/worker.js      704.30 kB │ gzip: 163.53 kB
 ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] lib/worker.js.map    1.38 MB
 ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] 2 files, total: 2.09 MB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+[PLUGIN_TIMINGS] Your build spent significant time in plugins. Here is a breakdown:
   - dsh-module-proxies (81%)
   - tsdown:deps (18%)
 See https://rolldown.rs/options/checks#plugintimings for more details.
@@ -99,12 +99,12 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 > tsc -b tsconfig.client.json
 
 
-[38;2;56;56;56m  ────────────────────────────────────[m
+  ────────────────────────────────────
 summary: (done in 9.84 seconds)
 ✓ typecheck (9.84 seconds)
-remote: 
-remote: Create a pull request for 'codex/upstream-rebase-20260909' on GitHub by visiting:        
-remote:      https://github.com/wangnaiyu/deepseek-harness/pull/new/codex/upstream-rebase-20260909        
-remote: 
+remote:
+remote: Create a pull request for 'codex/upstream-rebase-20260909' on GitHub by visiting:
+remote:      https://github.com/wangnaiyu/deepseek-harness/pull/new/codex/upstream-rebase-20260909
+remote:
 To github.com:wangnaiyu/deepseek-harness.git
  * [new branch]            codex/upstream-rebase-20260909 -> codex/upstream-rebase-20260909

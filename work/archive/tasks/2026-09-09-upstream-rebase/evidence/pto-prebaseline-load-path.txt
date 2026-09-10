@@ -36,4 +36,3 @@ AssertionError: expected [ 'pto_run_discover', …(2) ] to deeply equal [ 'pto_r
       Tests  1 failed (1)
    Start at  10:55:53
    Duration  827ms (transform 584ms, setup 236ms, import 446ms, tests 15ms, environment 0ms)
-

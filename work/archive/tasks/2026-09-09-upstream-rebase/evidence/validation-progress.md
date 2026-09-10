@@ -37,3 +37,5 @@ Viewer 首发 identity/receipt、new launch/retry 与实验宽度尚待升级后
 最终apply-inject 16/16通过；正常pre-commit全部通过，兼容commit为 `ac2b72a9615cbaf23bb21951ffe1c22f3a11d807`，隔离树干净。
 
 实际harness master已同步ac2b72a并完成frozen install、完整build，工作树干净；build metadata ac2b72a/0.1.5-alpha.1无dirty。master触发的四workflow、28job成功，跳过步骤另列master-ci.json。
+
+入库TXT证据已移除终端ANSI控制符和行尾空白以便审查；原始日志内容校验值保留在validation-logs.json，本地原始日志未改。

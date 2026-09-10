@@ -1,299 +1,299 @@
 ╭────────────────────────────────────╮
-│ lefthook  v2.1.9   hook:  [1mpre-push[m │
+│ lefthook  v2.1.9   hook:  pre-push │
 ╰────────────────────────────────────╯
-┃  typecheck ❯ 
+┃  typecheck ❯
 $ npm run build:lib:host && npm run typecheck:contracts-ready
 
 > @deepseek-ai/dsh-root@0.1.5-alpha.1 build:lib:host
 > node --max-old-space-size=4096 ./node_modules/typescript/bin/tsc -b tsconfig.host.json && tsdown --env.DSH_BUILD_FACE host
 
 ℹ tsdown v0.22.2 powered by rolldown v1.1.1
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/apps/desktop/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/apps/cli/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/apps/desktop-host/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/loader/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/logger-console/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/schemastery/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/api/gateway/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/api/remotes/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/api/session-controller/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/api/workspace-controller/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/api/workspace-files/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/boot/app-boot/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/compaction/compaction/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/code-runtime/code-runtime-worker-thread/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/context/time-context/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/agent/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/agent-default-model/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/agent-loop/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/scope/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/session/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/file-upload/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/connection/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/locale/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/hmr/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/modules/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/resources/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/store/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-agent-preset/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-approval/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-brand-official/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-brand-pto/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-attachment/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-chat/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-commands/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-composer-catalog/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-conversation/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-directory-picker-browse/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-deliverables/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-directory-picker-native/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-dockkit/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-goal/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-input-trigger/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-jobs/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-layout/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-message-feedback/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-model-selection/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-open-in-app/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-permission-presets/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-plan/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-primitives/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-pto-experiments/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-reference/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-renderer/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-schedule/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-session/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-settings/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-settings-models/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-settings-general/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-settings-plugin-inventory/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-settings-plugins/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-sidebar/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-sidebar-files/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-sidebar-right/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-sidebar-textpreview/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-skill/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-slots/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-subagent/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-theme/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-tool/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-trajectory/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-user-questions/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-workflow-run/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-workspace/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/web/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/agent-team/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/client-ui-agent-team/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/code-runtime-python/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/inspector/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/webworker-packer/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/webworker-runtime/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/extensions/cordis-client-runner/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/extensions/ui-cordis/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/goal/goal/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/goal/goal-round-driver/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/directory-picker-browse/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/directory-picker-native/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/open-in-app/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/interaction/user-approval/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/llm-retry/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sandbox/sandbox-policy/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sandbox/sandbox-windows-acl/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/schedule/schedule/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/settings/settings/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session-query/session-log-export/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-format-catalog/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-format/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-format-v1-to-v2/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-format-v0-to-v1/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-format-v2-to-v3/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-persistence-jsonl/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/tool-subagent/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subprocess/subprocess-local/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/test-support/client-runtime/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/test-support/llm-mock-server/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/typert/registry/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/workflow/workflow-worker-thread/tsdown.config.ts 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/cosmokit/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/group/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/hmr/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/include/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/cordis/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/timer/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/acp/acp/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/api/settings-controller/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/attachment/attachment/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/attachment/attachment-local/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/bundle/acp-app/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/boot/cmdline/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/bundle/base/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/bundle/headless/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/bundle/sdk-app/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/bundle/sdk-minimal/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/bundle/web-app/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/compaction/compaction-basic/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/code-runtime/code-runtime/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/compaction/command-compact/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/context/agent-instructions/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/compaction/compaction-tool-result-pruner/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/context/file-reference/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/context/session-reference/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/context/file-reference-local/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/context/tmux-context/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/credentials/authorization/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/credentials/credentials/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/agent-tool-presentation/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/credentials/credentials-local/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/system-prompt/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/tools/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/e2b/e2b/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/e2b/fs-e2b/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/e2b/subprocess-e2b/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/agent-team-profile/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/tool-agent-team/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/extensions/cordis-host-runner/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/feedback/command-feedback/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/feedback/message-feedback/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/extensions/tool-cordis/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/agent-team-web-profile/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/fs/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/fs-local/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/fs-observation-policy/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/tool-fs/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/fs-sandbox/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/tool-fs-search/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/tool-str-replace-editor/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/hooks/hook-protocol/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/hooks/hooks-claude-code/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/hooks/hooks-codex/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/goal/command-goal/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/guard/repeat-tool-reminder/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/goal/tool-goal/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/guard/timeout-policy/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/composer-catalog/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/directory-picker/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/frontend-static/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/directory-picker-auto/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/pto-artifact-inspection/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/pto-experiment-dashboard/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/plugin-inventory/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/identity/anonymous-user-id/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/interaction/commands/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/interaction/permission-presets/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/interaction/tool-ask-user/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/interaction/user-questions/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/jobs/jobs/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/jobs/tool-jobs/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/webserver/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/jobs/jobs-local/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/deepseek-llm-api-extensions/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/llm/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/llm-deepseek/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/plugin-package-inventory-deepseek/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/token-meter/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/llm-pi-ai/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/lsp/lsp-stdio/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/mcp/mcp-client/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/lsp/tool-lsp/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/plan/plan-mode/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/lsp/lsp/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/preset/agent-presets/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/preset/persona/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/pto/pto-experiments/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sandbox/sandbox/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/pto/tool-pto-run/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sandbox/sandbox-local/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/runtime-diagnostics/invariants/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sdk/protocol/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sdk/client/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sdk/server/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session-query/tool-session-query/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session-query/session-query/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session-query/session-query-sqlite/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/settings/settings-file/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-checkpoint-policy/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-persistence/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-log-deepseek/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-projection-cache/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-projection/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-telemetry/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-stats/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-title/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-telemetry-otel/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-title-all-prompts-llm/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-title-first-prompt-llm/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-title-llm/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-turn-outline/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/bash-local/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/bash-sandbox/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/pwsh-sandbox/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/pwsh-local/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/shell/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/shell-env/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/tool-bash/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/tool-bash-persistent/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/tool-pwsh-persistent/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/tool-pwsh/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/spill/spill/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/spill/spill-local/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/spill/spill-policy/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/storage/storage/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/storage/storage-domain/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/storage/storage-json/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/storage/storage-sqlite/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/skill/skill/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/skill/tool-skill/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-acp/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/skill/skill-badge/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/skill/skill-filesystem/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-claude-code/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-codex/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-dsh-sdk/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-in-process-driver/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-fork-in-process/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-spawn-in-process/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subprocess/subprocess/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/tool-subagent-control/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subprocess/win32-process/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/terminal/terminal/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/terminal/terminal-bash/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/terminal/tool-terminal/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/todo/tool-todo/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/test-support/llm-replay/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/test-support/agent-loop-testkit/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/test-support/loader-smoke/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/typert/loader/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/test-support/session-snapshot/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/typert/protocol/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/atomic-write/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/brand/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/typert/generator/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/crypto/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/home-paths/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/deque/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/output-retention/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/launch-environment/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/time/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/package-manifest/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/http-proxy/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/native-command/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/timeout/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/values/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/workspace-path/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/web/tool-web/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/web/web/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/web/web-fetch-http/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/web/web-search-deepseek/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/web/web-search-exa/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/web/web-search-perplexity/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/webhook/webhook/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/webhook/webhook-github/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/workflow/tool-ralph/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/workflow/workflow/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/workflow/tool-workflow/package.json 
-ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/workspace/workspace/package.json 
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/apps/desktop/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/apps/cli/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/apps/desktop-host/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/loader/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/logger-console/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/schemastery/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/api/gateway/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/api/remotes/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/api/session-controller/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/api/workspace-controller/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/api/workspace-files/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/boot/app-boot/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/compaction/compaction/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/code-runtime/code-runtime-worker-thread/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/context/time-context/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/agent/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/agent-default-model/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/agent-loop/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/scope/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/session/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/file-upload/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/connection/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/locale/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/hmr/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/modules/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/resources/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/store/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-agent-preset/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-approval/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-brand-official/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-brand-pto/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-attachment/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-chat/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-commands/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-composer-catalog/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-conversation/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-directory-picker-browse/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-deliverables/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-directory-picker-native/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-dockkit/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-goal/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-input-trigger/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-jobs/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-layout/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-message-feedback/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-model-selection/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-open-in-app/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-permission-presets/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-plan/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-primitives/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-pto-experiments/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-reference/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-renderer/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-schedule/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-session/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-settings/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-settings-models/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-settings-general/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-settings-plugin-inventory/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-settings-plugins/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-sidebar/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-sidebar-files/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-sidebar-right/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-sidebar-textpreview/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-skill/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-slots/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-subagent/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-theme/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-tool/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-trajectory/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-user-questions/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-workflow-run/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/ui-workspace/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/client/web/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/agent-team/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/client-ui-agent-team/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/code-runtime-python/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/inspector/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/webworker-packer/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/webworker-runtime/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/extensions/cordis-client-runner/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/extensions/ui-cordis/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/goal/goal/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/goal/goal-round-driver/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/directory-picker-browse/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/directory-picker-native/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/open-in-app/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/interaction/user-approval/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/llm-retry/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sandbox/sandbox-policy/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sandbox/sandbox-windows-acl/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/schedule/schedule/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/settings/settings/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session-query/session-log-export/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-format-catalog/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-format/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-format-v1-to-v2/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-format-v0-to-v1/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-format-v2-to-v3/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-persistence-jsonl/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/tool-subagent/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subprocess/subprocess-local/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/test-support/client-runtime/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/test-support/llm-mock-server/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/typert/registry/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/workflow/workflow-worker-thread/tsdown.config.ts
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/cosmokit/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/group/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/hmr/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/include/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/cordis/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/vendor/timer/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/acp/acp/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/api/settings-controller/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/attachment/attachment/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/attachment/attachment-local/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/bundle/acp-app/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/boot/cmdline/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/bundle/base/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/bundle/headless/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/bundle/sdk-app/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/bundle/sdk-minimal/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/bundle/web-app/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/compaction/compaction-basic/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/code-runtime/code-runtime/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/compaction/command-compact/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/context/agent-instructions/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/compaction/compaction-tool-result-pruner/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/context/file-reference/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/context/session-reference/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/context/file-reference-local/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/context/tmux-context/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/credentials/authorization/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/credentials/credentials/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/agent-tool-presentation/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/credentials/credentials-local/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/system-prompt/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/core/tools/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/e2b/e2b/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/e2b/fs-e2b/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/e2b/subprocess-e2b/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/agent-team-profile/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/tool-agent-team/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/extensions/cordis-host-runner/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/feedback/command-feedback/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/feedback/message-feedback/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/extensions/tool-cordis/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/experimental/agent-team-web-profile/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/fs/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/fs-local/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/fs-observation-policy/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/tool-fs/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/fs-sandbox/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/tool-fs-search/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/fs/tool-str-replace-editor/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/hooks/hook-protocol/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/hooks/hooks-claude-code/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/hooks/hooks-codex/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/goal/command-goal/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/guard/repeat-tool-reminder/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/goal/tool-goal/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/guard/timeout-policy/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/composer-catalog/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/directory-picker/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/frontend-static/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/directory-picker-auto/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/pto-artifact-inspection/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/pto-experiment-dashboard/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/plugin-inventory/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/identity/anonymous-user-id/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/interaction/commands/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/interaction/permission-presets/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/interaction/tool-ask-user/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/interaction/user-questions/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/jobs/jobs/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/jobs/tool-jobs/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/host/webserver/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/jobs/jobs-local/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/deepseek-llm-api-extensions/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/llm/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/llm-deepseek/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/plugin-package-inventory-deepseek/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/token-meter/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/llm/llm-pi-ai/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/lsp/lsp-stdio/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/mcp/mcp-client/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/lsp/tool-lsp/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/plan/plan-mode/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/lsp/lsp/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/preset/agent-presets/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/preset/persona/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/pto/pto-experiments/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sandbox/sandbox/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/pto/tool-pto-run/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sandbox/sandbox-local/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/runtime-diagnostics/invariants/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sdk/protocol/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sdk/client/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/sdk/server/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session-query/tool-session-query/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session-query/session-query/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session-query/session-query-sqlite/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/settings/settings-file/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-checkpoint-policy/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-persistence/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-log-deepseek/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-projection-cache/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-projection/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-telemetry/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-stats/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-title/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-telemetry-otel/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-title-all-prompts-llm/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-title-first-prompt-llm/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-title-llm/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/session/session-turn-outline/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/bash-local/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/bash-sandbox/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/pwsh-sandbox/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/pwsh-local/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/shell/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/shell-env/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/tool-bash/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/tool-bash-persistent/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/tool-pwsh-persistent/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/shell/tool-pwsh/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/spill/spill/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/spill/spill-local/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/spill/spill-policy/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/storage/storage/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/storage/storage-domain/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/storage/storage-json/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/storage/storage-sqlite/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/skill/skill/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/skill/tool-skill/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-acp/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/skill/skill-badge/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/skill/skill-filesystem/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-claude-code/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-codex/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-dsh-sdk/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-in-process-driver/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-fork-in-process/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/subagent-spawn-in-process/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subprocess/subprocess/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subagent/tool-subagent-control/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/subprocess/win32-process/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/terminal/terminal/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/terminal/terminal-bash/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/terminal/tool-terminal/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/todo/tool-todo/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/test-support/llm-replay/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/test-support/agent-loop-testkit/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/test-support/loader-smoke/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/typert/loader/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/test-support/session-snapshot/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/typert/protocol/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/atomic-write/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/brand/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/typert/generator/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/crypto/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/home-paths/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/deque/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/output-retention/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/launch-environment/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/time/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/package-manifest/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/http-proxy/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/native-command/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/timeout/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/values/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/util/workspace-path/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/web/tool-web/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/web/web/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/web/web-fetch-http/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/web/web-search-deepseek/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/web/web-search-exa/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/web/web-search-perplexity/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/webhook/webhook/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/webhook/webhook-github/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/workflow/tool-ralph/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/workflow/workflow/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/workflow/tool-workflow/package.json
+ℹ config file: /private/tmp/pto-harness-upstream-20260909/packages/workspace/workspace/package.json
 ℹ [@deepseek-ai/dsh] entry: lib/types/bin.js
 ℹ [@deepseek-ai/dsh] target: es2024
 ℹ [@deepseek-ai/dsh] tsconfig: tsconfig.json
@@ -1057,7 +1057,7 @@ $ npm run build:lib:host && npm run typecheck:contracts-ready
 
 ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] lib/client.js  30.47 kB │ gzip: 9.67 kB
 ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] 1 files, total: 30.47 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `dsh-typert-generator`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `dsh-typert-generator`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/dsh-desktop] [CJS] lib/preload.cjs      1.61 kB │ gzip: 0.60 kB
 ℹ [@deepseek-ai/dsh-desktop] [CJS] lib/preload-app.cjs  0.21 kB │ gzip: 0.19 kB
@@ -1219,10 +1219,10 @@ $ npm run build:lib:host && npm run typecheck:contracts-ready
 ℹ [@deepseek-ai/dsh-tool-ralph] lib/index.js  17.33 kB │ gzip: 5.14 kB
 ℹ [@deepseek-ai/dsh-tool-ralph] 1 files, total: 17.33 kB
 ℹ [@deepseek-ai/dsh-experimental-webworker-packer] Granting execute permission to lib/bin.js
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-experimental-webworker-runtime] Build complete in 6504ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/cordis-plugin-logger-console] lib/browser.js  2.58 kB │ gzip: 1.06 kB
 ℹ [@deepseek-ai/cordis-plugin-logger-console] 1 files, total: 2.58 kB
@@ -1288,159 +1288,159 @@ $ npm run build:lib:host && npm run typecheck:contracts-ready
 ℹ [@deepseek-ai/dsh-win32-process] 1 files, total: 23.31 kB
 ℹ [@deepseek-ai/dsh-native-command] lib/index.js  7.23 kB │ gzip: 2.70 kB
 ℹ [@deepseek-ai/dsh-native-command] 1 files, total: 7.23 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/dsh-headless] lib/index.js    6.01 kB │ gzip: 2.33 kB
 ℹ [@deepseek-ai/dsh-headless] lib/startup.js  1.95 kB │ gzip: 0.95 kB
@@ -1488,25 +1488,25 @@ $ npm run build:lib:host && npm run typecheck:contracts-ready
 ℹ [@deepseek-ai/dsh-schedule] lib/index.js  56.37 kB │ gzip: 14.30 kB
 ℹ [@deepseek-ai/dsh-schedule] 1 files, total: 56.37 kB
 ✔ [@deepseek-ai/dsh-desktop] Build complete in 6521ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+[PLUGIN_TIMINGS] Your build spent significant time in plugins. Here is a breakdown:
   - tsdown:shebang (68%)
   - tsdown:deps (21%)
 See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-command-compact] Build complete in 6522ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-tool-jobs] Build complete in 6525ms
 ✔ [@deepseek-ai/dsh-skill-filesystem] Build complete in 6528ms
@@ -1529,16 +1529,16 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-cmdline] Build complete in 6531ms
 ✔ [@deepseek-ai/dsh-acp-app] Build complete in 6531ms
 ✔ [@deepseek-ai/dsh-base] Build complete in 6531ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-sdk-app] Build complete in 6531ms
 ✔ [@deepseek-ai/dsh-sdk-minimal] Build complete in 6531ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-code-runtime] Build complete in 6532ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-credentials-local] Build complete in 6532ms
 ✔ [@deepseek-ai/dsh-agent] Build complete in 6532ms
@@ -1546,21 +1546,21 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-agent-loop] Build complete in 6533ms
 ✔ [@deepseek-ai/dsh-agent-tool-presentation] Build complete in 6533ms
 ✔ [@deepseek-ai/dsh-scope] Build complete in 6533ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:report`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-fs-e2b] Build complete in 6534ms
 ✔ [@deepseek-ai/dsh-experimental-agent-team-profile] Build complete in 6534ms
 ✔ [@deepseek-ai/dsh-experimental-agent-team-web-profile] Build complete in 6534ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-experimental-tool-agent-team] Build complete in 6534ms
 ✔ [@deepseek-ai/dsh-command-feedback] Build complete in 6537ms
 ✔ [@deepseek-ai/dsh-fs-observation-policy] Build complete in 6537ms
 ✔ [@deepseek-ai/dsh-tool-str-replace-editor] Build complete in 6537ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-command-goal] Build complete in 6537ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-goal-round-driver] Build complete in 6538ms
 ✔ [@deepseek-ai/dsh-goal-round-driver] Build complete in 6538ms
@@ -1575,11 +1575,11 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-host-pto-experiment-dashboard] Build complete in 6538ms
 ✔ [@deepseek-ai/dsh-host-webserver] Build complete in 6538ms
 ✔ [@deepseek-ai/dsh-anonymous-user-id] Build complete in 6538ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-tool-ask-user] Build complete in 6538ms
 ✔ [@deepseek-ai/dsh-user-approval] Build complete in 6538ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-user-questions] Build complete in 6538ms
 ✔ [@deepseek-ai/dsh-jobs-local] Build complete in 6538ms
@@ -1588,14 +1588,14 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-llm-retry] Build complete in 6539ms
 ✔ [@deepseek-ai/dsh-plugin-package-inventory-deepseek] Build complete in 6539ms
 ✔ [@deepseek-ai/dsh-lsp] Build complete in 6539ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-persona] Build complete in 6540ms
 ✔ [@deepseek-ai/dsh-tool-pto-run] Build complete in 6540ms
 ✔ [@deepseek-ai/dsh-invariants] Build complete in 6540ms
 ✔ [@deepseek-ai/dsh-sandbox-policy] Build complete in 6540ms
 ✔ [@deepseek-ai/dsh-sandbox-policy] Build complete in 6540ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-schedule] Build complete in 6540ms
 ✔ [@deepseek-ai/dsh-sdk-protocol] Build complete in 6540ms
@@ -1604,7 +1604,7 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-settings-file] Build complete in 6540ms
 ✔ [@deepseek-ai/dsh-session-checkpoint-policy] Build complete in 6541ms
 ✔ [@deepseek-ai/dsh-session-format] Build complete in 6541ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-session-projection] Build complete in 6541ms
 ✔ [@deepseek-ai/dsh-session-stats] Build complete in 6541ms
@@ -1626,7 +1626,7 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-subprocess] Build complete in 6543ms
 ✔ [@deepseek-ai/dsh-win32-process] Build complete in 6543ms
 ✔ [@deepseek-ai/dsh-terminal] Build complete in 6543ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-agent-loop-testkit] Build complete in 6544ms
 ✔ [@deepseek-ai/dsh-llm-mock-server] Build complete in 6544ms
@@ -1638,7 +1638,7 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-util-crypto] Build complete in 6544ms
 ✔ [@deepseek-ai/dsh-deque] Build complete in 6544ms
 ✔ [@deepseek-ai/dsh-home-paths] Build complete in 6544ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-launch-environment] Build complete in 6544ms
 ✔ [@deepseek-ai/dsh-native-command] Build complete in 6544ms
@@ -1649,7 +1649,7 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-util-values] Build complete in 6544ms
 ✔ [@deepseek-ai/dsh-util-workspace-path] Build complete in 6544ms
 ✔ [@deepseek-ai/dsh-tool-ralph] Build complete in 6545ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/dsh-workflow] lib/invariant.js  5.03 kB │ gzip: 1.62 kB
 ℹ [@deepseek-ai/dsh-workflow] lib/index.js      3.55 kB │ gzip: 1.54 kB
@@ -1661,7 +1661,7 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ℹ [@deepseek-ai/dsh-typert-generator] 1 files, total: 198.73 kB
 ℹ [@deepseek-ai/dsh] Granting execute permission to lib/bin.js
 ✔ [@deepseek-ai/dsh-desktop-host] Build complete in 6546ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `dsh-typert-generator`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `dsh-typert-generator`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/cordis-plugin-logger-console] Build complete in 6546ms
 ✔ [@deepseek-ai/dsh-compaction] Build complete in 6546ms
@@ -1671,9 +1671,9 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-scope] Build complete in 6547ms
 ✔ [@deepseek-ai/dsh-e2b] Build complete in 6547ms
 ✔ [@deepseek-ai/dsh-experimental-agent-team] Build complete in 6547ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:shebang`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `dsh-typert-generator`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `dsh-typert-generator`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/cordis-plugin-logger-console] lib/index.js  2.78 kB │ gzip: 1.16 kB
 ℹ [@deepseek-ai/cordis-plugin-logger-console] 1 files, total: 2.78 kB
@@ -1785,14 +1785,14 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-goal] Build complete in 6559ms
 ✔ [@deepseek-ai/dsh-permission-presets] Build complete in 6559ms
 ✔ [@deepseek-ai/dsh-user-approval] Build complete in 6559ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-plan-mode] Build complete in 6559ms
 ✔ [@deepseek-ai/dsh-schedule] Build complete in 6560ms
 ✔ [@deepseek-ai/dsh-session-log-deepseek] Build complete in 6563ms
 ✔ [@deepseek-ai/dsh-session-title] Build complete in 6563ms
 ✔ [@deepseek-ai/dsh-tool-todo] Build complete in 6564ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-http-proxy] Build complete in 6565ms
 ✔ [@deepseek-ai/dsh-tool-workflow] Build complete in 6565ms
@@ -1817,107 +1817,107 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ℹ [@deepseek-ai/dsh-acp] lib/index.js  55.73 kB │ gzip: 14.94 kB
 ℹ [@deepseek-ai/dsh-acp] 1 files, total: 55.73 kB
 ✔ [@deepseek-ai/cordis] Build complete in 6567ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-experimental-webworker-runtime] Build complete in 6570ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-commands] Build complete in 6571ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-workflow] Build complete in 6572ms
 ℹ [@deepseek-ai/dsh-tool-web] lib/index.js  34.70 kB │ gzip: 10.60 kB
@@ -1943,29 +1943,29 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ℹ [@deepseek-ai/dsh-api-remotes] 1 files, total: 5.72 kB
 ℹ [@deepseek-ai/dsh-compaction] lib/invariant.js  12.72 kB │ gzip: 3.46 kB
 ℹ [@deepseek-ai/dsh-compaction] 1 files, total: 12.72 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-api-settings-controller] Build complete in 6577ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-api-workspace-files] Build complete in 6577ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-jobs] Build complete in 6578ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-typert-generator] Build complete in 6579ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/dsh-session-format-v0-to-v1] lib/index.js  104.66 kB │ gzip: 21.81 kB
 ℹ [@deepseek-ai/dsh-session-format-v0-to-v1] 1 files, total: 104.66 kB
@@ -1977,25 +1977,25 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/cordis-plugin-hmr] Build complete in 6580ms
 ✔ [@deepseek-ai/cordis-plugin-loader] Build complete in 6580ms
 ✔ [@deepseek-ai/cordis-plugin-logger-console] Build complete in 6580ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-attachment] Build complete in 6580ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-compaction-basic] Build complete in 6580ms
 ✔ [@deepseek-ai/dsh-compaction-tool-result-pruner] Build complete in 6580ms
 ✔ [@deepseek-ai/dsh-session-reference] Build complete in 6581ms
 ✔ [@deepseek-ai/dsh-time-context] Build complete in 6581ms
 ✔ [@deepseek-ai/dsh-agent] Build complete in 6581ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+[PLUGIN_TIMINGS] Your build spent significant time in plugins. Here is a breakdown:
   - tsdown:deps (64%)
   - dsh-typert-generator (33%)
 See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-fs-sandbox] Build complete in 6582ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-hooks-claude-code] Build complete in 6582ms
 ✔ [@deepseek-ai/dsh-hooks-codex] Build complete in 6582ms
@@ -2022,7 +2022,7 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-tool-pwsh] Build complete in 6584ms
 ✔ [@deepseek-ai/dsh-spill-local] Build complete in 6584ms
 ✔ [@deepseek-ai/dsh-spill-policy] Build complete in 6584ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-storage-sqlite] Build complete in 6584ms
 ✔ [@deepseek-ai/dsh-subagent-acp] Build complete in 6585ms
@@ -2033,15 +2033,15 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-terminal-bash] Build complete in 6585ms
 ✔ [@deepseek-ai/dsh-tool-terminal] Build complete in 6585ms
 ✔ [@deepseek-ai/dsh-loader-smoke] Build complete in 6585ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-web] Build complete in 6585ms
 ✔ [@deepseek-ai/dsh-web-search-deepseek] Build complete in 6585ms
 ✔ [@deepseek-ai/dsh-web-search-exa] Build complete in 6585ms
 ✔ [@deepseek-ai/dsh-web-search-perplexity] Build complete in 6585ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/dsh-tools] lib/index.js      151.78 kB │ gzip: 44.46 kB
 ℹ [@deepseek-ai/dsh-tools] lib/invariant.js    4.75 kB │ gzip:  1.46 kB
@@ -2059,11 +2059,11 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-session] Build complete in 6587ms
 ✔ [@deepseek-ai/dsh-cordis-host-runner] Build complete in 6588ms
 ✔ [@deepseek-ai/dsh-message-feedback] Build complete in 6588ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-tool-subagent] Build complete in 6590ms
 ✔ [@deepseek-ai/dsh-tool-subagent-control] Build complete in 6590ms
@@ -2101,15 +2101,15 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ℹ [@deepseek-ai/dsh-web-fetch-http] lib/index.js  27.35 kB │ gzip: 9.00 kB
 ℹ [@deepseek-ai/dsh-web-fetch-http] 1 files, total: 27.35 kB
 ✔ [@deepseek-ai/dsh-api-remotes] Build complete in 6591ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-compaction] Build complete in 6591ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-experimental-webworker-packer] Build complete in 6592ms
 ✔ [@deepseek-ai/dsh-fs] Build complete in 6592ms
 ✔ [@deepseek-ai/dsh-tool-fs-search] Build complete in 6592ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-storage-domain] Build complete in 6592ms
 ✔ [@deepseek-ai/dsh-tool-web] Build complete in 6592ms
@@ -2123,40 +2123,40 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ℹ [@deepseek-ai/dsh-tool-cordis] 1 files, total: 518.33 kB
 ℹ [@deepseek-ai/dsh-tool-skill] lib/index.js  14.67 kB │ gzip: 4.56 kB
 ℹ [@deepseek-ai/dsh-tool-skill] 1 files, total: 14.67 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-llm] Build complete in 6596ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-pto-experiments] Build complete in 6596ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-session-format-v0-to-v1] Build complete in 6596ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/dsh-experimental-agent-team] lib/index.js  75.00 kB │ gzip: 18.89 kB
 ℹ [@deepseek-ai/dsh-experimental-agent-team] 1 files, total: 75.00 kB
@@ -2167,31 +2167,31 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ℹ [@deepseek-ai/dsh-repeat-tool-reminder] lib/index.js  67.14 kB │ gzip: 19.10 kB
 ℹ [@deepseek-ai/dsh-repeat-tool-reminder] 1 files, total: 67.14 kB
 ✔ [@deepseek-ai/dsh-attachment-local] Build complete in 6601ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-tools] Build complete in 6601ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-sandbox-windows-acl] Build complete in 6603ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/dsh-workspace] lib/index.js      30.95 kB │ gzip: 8.46 kB
 ℹ [@deepseek-ai/dsh-workspace] lib/invariant.js   4.42 kB │ gzip: 1.77 kB
 ℹ [@deepseek-ai/dsh-workspace] 2 files, total: 35.37 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-agent-instructions] Build complete in 6604ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-session] Build complete in 6604ms
 ✔ [@deepseek-ai/dsh-subprocess-e2b] Build complete in 6604ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-fs-local] Build complete in 6605ms
 ✔ [@deepseek-ai/dsh-tool-fs] Build complete in 6605ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-token-meter] Build complete in 6605ms
 ✔ [@deepseek-ai/dsh-mcp-client] Build complete in 6605ms
@@ -2210,7 +2210,7 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-tool-cordis] Build complete in 6607ms
 ✔ [@deepseek-ai/dsh-tool-skill] Build complete in 6608ms
 ✔ [@deepseek-ai/dsh-workflow-worker-thread] Build complete in 6608ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/dsh-subprocess-local] lib/index.js                   39.33 kB │ gzip: 10.71 kB
 ℹ [@deepseek-ai/dsh-subprocess-local] lib/runner.js                  13.00 kB │ gzip:  3.80 kB
@@ -2226,7 +2226,7 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 ✔ [@deepseek-ai/dsh-tmux-context] Build complete in 6614ms
 ✔ [@deepseek-ai/dsh-experimental-agent-team] Build complete in 6614ms
 ✔ [@deepseek-ai/dsh-repeat-tool-reminder] Build complete in 6615ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/dsh-subagent] lib/index.js      134.32 kB │ gzip: 36.81 kB
 ℹ [@deepseek-ai/dsh-subagent] lib/invariant.js    3.66 kB │ gzip:  1.20 kB
@@ -2239,39 +2239,39 @@ Detected dependencies in bundle:
 ℹ [@deepseek-ai/dsh-host-directory-picker-native] [ESM] 1 files, total: 10.79 kB
 ℹ [@deepseek-ai/dsh-session-persistence-jsonl] [CJS] lib/worker.cjs  52.07 kB │ gzip: 14.03 kB
 ℹ [@deepseek-ai/dsh-session-persistence-jsonl] [CJS] 1 files, total: 52.07 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-workspace] Build complete in 6617ms
 ℹ [@deepseek-ai/dsh-file-reference-local] lib/index.js  16.36 kB │ gzip: 5.22 kB
 ℹ [@deepseek-ai/dsh-file-reference-local] 1 files, total: 16.36 kB
 ℹ [@deepseek-ai/dsh-sandbox-local] lib/index.js  21.57 kB │ gzip: 7.28 kB
 ℹ [@deepseek-ai/dsh-sandbox-local] 1 files, total: 21.57 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-session-persistence-jsonl] Build complete in 6618ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ℹ [@deepseek-ai/dsh-llm-pi-ai] lib/index.js  113.79 kB │ gzip: 33.68 kB
 ℹ [@deepseek-ai/dsh-llm-pi-ai] 1 files, total: 113.79 kB
 ✔ [@deepseek-ai/dsh] Build complete in 6618ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-subprocess-local] Build complete in 6620ms
 ℹ [@deepseek-ai/dsh-llm-deepseek] lib/index.js  92.09 kB │ gzip: 25.43 kB
 ℹ [@deepseek-ai/dsh-llm-deepseek] 1 files, total: 92.09 kB
 ✔ [@deepseek-ai/dsh-host-directory-picker-native] Build complete in 6620ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-session-persistence-jsonl] Build complete in 6620ms
 ✔ [@deepseek-ai/dsh-subagent] Build complete in 6620ms
 ✔ [@deepseek-ai/dsh-file-reference-local] Build complete in 6620ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-sandbox-local] Build complete in 6621ms
 ℹ [@deepseek-ai/dsh-agent-presets] lib/invariant.js  82.62 kB │ gzip: 24.96 kB
@@ -2279,22 +2279,22 @@ Detected dependencies in bundle:
 ℹ [@deepseek-ai/dsh-agent-presets] 2 files, total: 164.72 kB
 ✔ [@deepseek-ai/dsh-llm-pi-ai] Build complete in 6621ms
 ✔ [@deepseek-ai/dsh-llm-deepseek] Build complete in 6621ms
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-agent-presets] Build complete in 6621ms
 ℹ [@deepseek-ai/dsh-desktop] [ESM] lib/main.js  183.13 kB │ gzip: 49.11 kB
 ℹ [@deepseek-ai/dsh-desktop] [ESM] 1 files, total: 183.13 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-desktop] Build complete in 6624ms
 ℹ [@deepseek-ai/dsh-experimental-inspector] lib/index.js  86.38 kB │ gzip: 20.32 kB
 ℹ [@deepseek-ai/dsh-experimental-inspector] 1 files, total: 86.38 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-experimental-inspector] Build complete in 6633ms
 ℹ [@deepseek-ai/dsh-experimental-inspector] lib/worker.js  261.63 kB │ gzip: 55.24 kB
 ℹ [@deepseek-ai/dsh-experimental-inspector] 1 files, total: 261.63 kB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
+[PLUGIN_TIMINGS] Your build spent significant time in plugin `tsdown:deps`. See https://rolldown.rs/options/checks#plugintimings for more details.
 
 ✔ [@deepseek-ai/dsh-experimental-inspector] Build complete in 6641ms
 ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] Hint: consider adding deps.onlyBundle option to avoid unintended bundling of dependencies, or set deps.onlyBundle: false to disable this hint.
@@ -2315,7 +2315,7 @@ Detected dependencies in bundle:
 ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] lib/worker.js      704.30 kB │ gzip: 163.53 kB
 ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] lib/worker.js.map    1.38 MB
 ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] 2 files, total: 2.09 MB
-[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+[PLUGIN_TIMINGS] Your build spent significant time in plugins. Here is a breakdown:
   - dsh-module-proxies (81%)
   - tsdown:deps (18%)
 See https://rolldown.rs/options/checks#plugintimings for more details.
@@ -2326,7 +2326,7 @@ See https://rolldown.rs/options/checks#plugintimings for more details.
 > tsc -b tsconfig.client.json
 
 
-[38;2;56;56;56m  ────────────────────────────────────[m
+  ────────────────────────────────────
 summary: (done in 9.35 seconds)
 ✓ typecheck (9.35 seconds)
 To github.com:wangnaiyu/deepseek-harness.git

@@ -9,4 +9,3 @@ The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths r
       Tests  36 passed (36)
    Start at  11:18:55
    Duration  429ms (transform 267ms, setup 282ms, import 68ms, tests 194ms, environment 0ms)
-
