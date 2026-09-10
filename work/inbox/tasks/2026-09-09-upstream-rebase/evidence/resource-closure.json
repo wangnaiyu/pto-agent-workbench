@@ -1,0 +1,27 @@
+[
+  {
+    "path": "skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/lib/dfx/capture.md",
+    "sha256": "73d49ef767cdee6d5874160766668a70f726eeee2d5711b3dbf9967285a4d8d5"
+  },
+  {
+    "path": "skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills/dependency-redundancy/SKILL.md",
+    "sha256": "86cf80e077e51d5a0f0863ad1a14cd19c4830ad5dfa4bd5cacf0efc4845c822c"
+  },
+  {
+    "path": "skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills/dependency-redundancy/agents/openai.yaml",
+    "sha256": "4f90016cad66d2b80676c77ef89ae476abc1977632581a30f19604067bfc0baa"
+  },
+  {
+    "path": "tools/official/pypto-runtime-77fa0171c24a/simpler_setup/tools/deps_viewer.py",
+    "sha256": "24b1c5c069d08dfe198a21ad272b5cafab82237b897504ccca633109fcebc116"
+  },
+  {
+    "path": "tools/official/pypto-runtime-77fa0171c24a/LICENSE",
+    "sha256": "1da223da275e2e92a5866501c22289a23abebf3df588ca3e9946287969c16bb7"
+  },
+  {
+    "sample": "qwen L2 deps.json",
+    "sha256": "97ee1e49bf14d9c8dfa69ef1464c0d551bc535dfa9615609c68d5526dd383a4b",
+    "bytes": 412557
+  }
+]

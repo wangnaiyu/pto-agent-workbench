@@ -1,0 +1,1108 @@
+894f6aeb8ad455308465354ce9474e8f287a322d fix(subprocess): contain escaped descendants with native owners
+884cd6be70ac1b332d8ed42535e6094d18d006a3 Merge codex/subprocess-win32-process-primitives into codex/subprocess-native-containment
+4c164cd163a7712143b7e5a78a3616b56c7fd559 fix(subprocess): close native containment CI gaps
+d778e83b2bfa4c3add8b9deada1dafbdc820ccf1 fix(subprocess): route fallback warning through logger
+7185a62d58dbcde3c327d4c8c3f109990125dc06 fix(subprocess): harden native runner lifecycle
+700812811ea50da254ad20249b2c593a2d7d969f Merge codex/subprocess-win32-process-primitives into codex/subprocess-native-containment
+1ada79af816ad408e13306cda63989093636572e test(subprocess): cover settled scope waits
+e9c095ab4bc03c4fb3c2ccf23beccfb91a65da8c Merge codex/subprocess-win32-process-primitives into codex/subprocess-native-containment
+cd1a8552f7eed2bd60c9589264b6e57d335986b0 Merge codex/subprocess-win32-process-primitives into codex/subprocess-native-containment
+a7b64e24ee6bbee76df7f8d3080d7077a738e060 Merge PR1 into native containment
+6532fff45861698e50885b8b24fb6892400c77eb test(subagent-acp): allow provider fallback warning
+2ee78dd5762a4627481bfcf37c5ce7d6a5bceaa0 Merge commit '10ba2cf9aed8aaf7198bf4a12e1773e1c5dfa627' into codex/subprocess-native-containment
+ad44ba547a8d4ee34c94ac964bf71e7876e173fb test(subagent-acp): explain fallback warning coexistence
+a160bd55fc302ce6d181d0736eecbaca7bae627b Merge PR1 into native containment
+8b81d77d54ace076659247a8f848bb03f6fb2dc9 refactor(subprocess): use mode as fallback warning latch
+eb60d74155e8e293e06b97d0442a91855797f746 fix(subprocess): harden native range settlement
+b9c0028f95100ccade815d937505302227eba14f fix(subprocess): launch systemd scopes without pipe mode
+0f3db7990294ebf71ce1d38fa248546ea2a102a8 docs(subprocess): record native systemd evidence
+b25e790e369ca65623febe68bdb8ebb07e635b45 test(subprocess): cover runner liveness polling
+f6a56d4882888daed62ec3f6ccb95e7f51ead88c test(subprocess): align native platform fixtures
+6df3ef4f97a145adef0494118012d33097dad945 refactor(subprocess): pass runner pid to liveness probe
+436f9e96861271d464ac2d321030683477b80b2d fix(subprocess): preserve native failure semantics
+60c729250e5059e5f447058b8c012bac90ef5ead test(subprocess): preserve Windows job descendant
+21820b6816930d26fd285115b38d2336294e0bf6 test(subprocess): cover async scope failures
+1fc04feb771d99929e741ea7887a87faf2fb4d6f fix(subprocess): close native platform CI gaps
+273c2847e536e4a4710b2e7370660c48e6282eed fix(subprocess): support packaged native runner
+97e0c9607d8fdc7d4599fd9bedc9dcab078cfedd test(subprocess): cover native probe fallback
+81374783d3ee6c2a3ad95d6ed3ead8af1bf71895 fix(subprocess): close native runner lifecycle gaps
+63b038e469c7a5f680fa5927bc29c42eab76091d fix(subprocess): preserve close snapshot state
+2c0ebebdf8967ab56d3cea6e666629e0f320e76f test(subprocess): type close interleaving fixture
+7fec86d6a1080259eeb787b688f182bb67d02006 refactor(subprocess): derive runner execution plane
+e6bc1f2e1d90dc2a36ab25a5995ebde82a75de6c fix(subprocess): close managed launch gaps
+bf5a8e42a37d2f2124991826182c560aef26058f fix(subprocess): keep shared handle semantics provider-neutral
+c7d228c737a6a0485a30a0e1da605641fd451566 test(subprocess): make Windows EOF proof deterministic
+3f2f381209ab4db701a8275bec6ed66d7952fdc0 docs(subprocess): align provider-owned termination semantics
+36db13dfb3e2f08e67cb0df01a8548cc79b01352 fix(subprocess): require verified range settlement
+975afc9e474614bda566950f1162aef1aea48737 fix(subprocess): release Windows runner stdio
+889cbd45f1c4da1114366a4d793d15db2f11f324 fix(subprocess): order runner stdio shutdown
+43b093a502eddf54fb62b3a22c3df1ef3381fa9a fix(subprocess): close runner pipe handles
+f913c813d2e975e84cce519060ddddc22887b5cd fix(subprocess): harden managed-range cleanup
+e70405847c39331e72a9ebde90a55a248d10b9cd fix(subprocess): complete runner resource release
+ea7de60840107e903f4d2be2282efd6d50bea75c fix(subprocess): keep Windows Job ownership in parent
+b03e52fab08ec2c84c2d0dc2b46fe69730a0c0d4 refactor(subprocess): simplify Windows runner settlement
+5b215932f821592daee048e20788b01dc3dd8f5c fix(subprocess): hand off Windows process observation
+60999be6023c695cf9e95e0ad37040e83157068d test(shell): remove stale lint suppression
+32f369c3a01d2961836fdd751526f10b9a5703f3 test(subprocess): widen Windows stdout-end race budget to 5s
+ac69b1e0c43590eb932b32a0c690b3e93d45e2f8 fix(subprocess): decouple Windows target stdio
+ee1a933e829828a42c18cb52487f269a76e953a8 Merge remote-tracking branch 'origin/codex/subprocess-native-containment' into codex/subprocess-native-containment
+153f1579e1084ec5e896bd9c74a1f07eb44ebf9d refactor(subprocess): restore native containment baseline
+a17c5822b511f4ebea929e79a603024a17cd6327 Merge master into native containment
+f72ce2299ac08c153b8b04b83e5e605463b917d5 fix(subprocess): keep native Job ownership in runner
+e2de9667d3cfa8bdddc486a782d79fddf10b5d8a Merge master into native containment
+4997fb7706d2d1abfa84efc731aa3390624fc738 Merge master into native containment
+fa8b83816e886d6d1d5f9bd29704e7a8ec03a6c5 fix(subprocess): defer native handshake allocation
+3acb84744235512881efed577ec3eb697885365e fix(subprocess): preserve clean spawn failure settlement
+df8e3d7c373bad8afc2dcaaf62c674db657f60fd fix(subprocess): settle pre-start Windows runner failures
+b6dc88be519a6a769453d2730188c86ee9706a1a fix(subprocess): preserve forced Linux outcomes
+0c80f9e7a1229c35bd58e4beca0783973ec8fd7a test(subprocess): align native evidence with plan
+6e1b8eda773e0edf0a4b40ed363553e8c4f2f910 fix(subprocess): preserve runner result boundary
+610ed618e97141ca3534c1c99690abb6a1fac695 fix(subprocess): release Windows target cwd
+923f919b49a6cdc3923c98f62225de011eb5b451 test(subprocess): remove Windows cwd recursively
+7228c821b7a881d6cadead1033294733354ffb72 refactor(subprocess): centralize stream settlement
+bde6a9a04155c22e76cde426853a708ef4b151a0 test(subprocess): keep validation assertions explicit
+71e27e4667c97c901c6ca5d145e4a35a1d212be3 fix(subprocess): close native lifecycle gaps
+63df2b31a70e181c1fe61046c9f035c6ecb6b0e4 docs(subprocess): document runner lifecycle helpers
+b3fcca95985f450b52faa7c7671d6b2313560f66 refactor(subprocess): remove synthetic abort race
+eb17028720b98ddd4212a2c7b57600903200e0ff fix(subprocess): preserve post-start runner failures
+da042b8e1014619d3ed20e476c79f06025ce7785 test(subprocess): cover native settlement edges
+df00bb9c448e85ceb93c07e2aea266b5d0acf5ab test(subprocess): make stream EOF checks causal
+ae77bc0b2f67b5a06b74267754cda060e20e5b2b fix(subprocess): defer native wait allocation
+8e9bac4a27e70dc51153331cbb8b60d46fc3bb38 fix(subprocess): align native containment contract
+26969588b7f3960c2857306f024c586557b9bf44 fix(subprocess): address native containment review findings
+ff413cfe5e98341f05c7c2df0eadcb5cf6405d99 fix(subprocess): align async pid evidence
+678cfdfdb4a775b0ecc32ea619cd7f71eb32fc3b Merge commit '0c177e17a23692d018a79bae59ac9a2db6eba59c' into codex/subprocess-native-containment
+cf6f25d283baffe0a1fbf1cfa8a88f2d0d04e444 fix(subprocess): keep native runner private
+20f04373c808a3c45e8be8a825bcd91b8c51bf7c Merge commit 'bd88d2ee9f08b3c3aba8c06df527a91d8b76b51d' into codex/subprocess-native-containment
+215c8c813283b9bcdc75d984761c8e5847f014b2 fix(subagent): wait for real startup evidence
+6a34a0dd4b2f8d454337cc496098c8874ccc9598 fix(subprocess): isolate Linux native target group
+166004a6a8cb0e88e9b2d848d775283661b257e5 fix(subprocess): preserve Windows startup errors
+aa4d80c0a9f1909afaded57211feb70b155f4d67 Merge origin/master into codex/subprocess-native-containment
+3caa9e4f5a6816cad60cde0e1757b57161379cac fix(subprocess): retain failed cleanup ownership
+07408ff0f127baddfc2236100ec17c68d15c0e91 fix(subprocess): preserve failed teardown state
+81257defd2f014489c09f7aa5e3680a3b497fe96 fix(subprocess): preserve clean Windows runner close
+1250b41054fb7916f076e22885fcb1386c40d76d docs(subprocess): clarify Windows runner disconnect
+ef0815db7f33f9da6dddc75a249ad91c1bde5a8f chore(subprocess): document disconnect recheck
+c302bedc3a1d313add3a3127b46438fcab6ec1ce test(subprocess): defer fake runner disconnect
+ebce3a5f04045e85bd76e5133fa9ecd0befb2862 refactor(agent): make runtime identity explicit
+a95f0b368f782e20b54df4e9880b589d9bc10ae1 fix(subprocess): contain escaped descendants with native owners
+71c34ff13a6d01c9a2080fa4f9a1e5622818471f docs: refresh module graph
+b65575442d71b0b9ae073e685f00f26acef88f1f Merge origin/master into codex/subprocess-native-containment
+9aecbad9dd0770b82c4a6b8d373174a7383e9354 fix(subprocess): keep runner worker-loadable
+8ef28f76c079c381ac506b04438791f257931537 fix(subprocess): preserve Windows runner spawn semantics
+8096aba9530d17b80ae916641f0f15200dce6abc Merge remote-tracking branch 'origin/master' into codex/subprocess-native-containment
+32b2b2409915ffeffaa086e8a1343b9aa37f7433 fix(subprocess): close runner stdio handles
+aca5c0cb2b76a17978b6b05f7848a7600d373573 fix(subprocess): release Windows runner stdio owners
+a0bc2ea803c80976257df7498e62f6ce35db16c2 fix(subprocess): preserve native runner launch semantics
+635c35991ce18ac09c4237e2edcfd4396ee48c11 test(subprocess): type Linux exec mock
+40279aea1708ac3d06e7744814050cbe7971fa64 fix(subprocess): preserve native runner stdio
+a825b8d0427f8312c600ded8b78964e9ace18c0b fix(subprocess): close native containment contract gaps
+23af4410f60df2c441efa0f8e9899eeb2517a177 fix(subprocess): resolve source runner loader absolutely
+6e7b152de7e3d4c5e19b974220e8dc9b1da977f5 fix(subprocess): preserve native runner contracts
+5aab7930457c6b3a3c6256e3e7a773b996b0381c fix(subprocess): preserve clean Windows range settlement
+a416b13eb5d2be8f0791954d04e1f4f33902ff87 fix(subprocess): preserve Windows search miss errors
+1760649ba7489c6a6d22d8ef550c79784dcb63c7 refactor(subprocess): derive native owner state
+60dd357a02b1831ac2c59b1280f949d2225206b8 fix(subprocess): preserve native spawn error shape
+13f3b2c1727f0ba6506645ac992705e8be682325 fix(subprocess): match native spawn error semantics
+c0e7b9816999c64f4147a35fb143c0f7b369cbd8 test(subprocess): preserve optional spawn error keys
+aaa5117ebdd91ee946d0f6229ee276a080fedb17 fix(subprocess): preserve literal spawn error stacks
+93c11689e71e562e4950e604e93e913afb16af67 fix(subprocess): address containment review findings
+976456db8e71b76f61938a825464ef47fda70ab1 Merge master to adopt Flash E2E coverage
+3137b33ba9dd57be82d106d10993185145cecf17 ci: redirect Node compile cache to data-volume runner temp
+19444907f096d62f667c5b8456f38869c817c997 feat: electron 打包
+2ef85b1e17591fb9fadc78549726413c56f38dfa fix: windows build
+52b84e8564eea843b931d9e42de10c68594fe0e9 chore: missing content
+903a9268978623429775457480663eb581cbe9aa feat: optimize ipc perf
+aaf50dc39adcad8c34e4909b7d8d9c5dd9fcd874 refactor(agent): back Inbox with a durable projection
+633daf66240c7de7cb234d778c97d2d21311d1bf Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+df2bae963981c5dfebdbff419ae7018146512dc7 Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+bd3b651ea8909440b2eec36f5dbd7bf4e2ddb6e1 refactor(agent): remove inbox service
+90b7ac94e2005a3dc2aa71580ccaf585ec37b653 test: trim unrelated inbox changes
+9ff0212fbdf434d7ebf7f5912b636997feb8eaa2 Merge origin/master into xtr/durable-inbox-recovery
+43bc1503380a3e49d0998d9fc1c94c397072e1c7 Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+8eb0c50e743d59b4ce2c219af2495e6f67aa6576 test(session-projection): scope projection assertions
+6ea9dd565b915c82051a244ec2a520561dee45dd Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+f9227e0be6e9702216c59e69d9981992517f8dc7 docs(session-projection): keep registry contract unchanged
+87d041b2c114fe9269ccc0156d9844c6cebe5d16 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+31ba0d6ae313bec4a29e95f12dad23644096a384 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+a20c5ad0a3a920d4e76c742bf6358251a1033c18 Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+4b1683c287699c5ea5832876cea2a7b99edfe6f4 Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+e5f2fbd9a2c9babc4273c8cbefc288921cc2960f fix(agent): validate durable inbox reconstruction
+8b0ea3e46101a022c17ca204a1dd2b66b5f67cdc fix(session-controller): derive queues from projections
+37c5dc4b353db5cf9e3ec8ca90b7f5b98ad2abd9 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+882a87c4bc7032b4a0858515f1d04e58dd73910c Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+c46c3df2f250adc9117416a0f56e1ba5fc604bda test: cover projection-aware session helpers
+77d0ee38d2c2e7db4cb483ad96bbd0d622118cba docs: refresh Claude SDK notices
+f3858fc2a7ca24978cce7bb5a750c931d88cfce4 Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+ea222a1f729f15efb1cbd210b40c535a9111b7d7 fix(agent): report missing inbox projection
+1101422362d08c3646fe97744e73ee660b97055c refactor(agent): keep concrete inbox loop-internal
+b9b2a37528f7af475724325d00dd6f87477265d3 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+35371d0f59720f8b3769d1c9c2c66133fa54db2f Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+fc746f7851fb1465bdd4fc761765d6a58f78d842 refactor(agent-loop): own inbox projection in loop
+c33fe6265e0715a1f5efe989910c1d96a9b8bbd5 fix(agent-loop): restore inbox projection test wiring
+fcad57b3afb048f6a66cc5160b512f697233ffe0 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+d776df110652de11b661144842e21b8e8548a45a test(agent-loop): exclude unreachable teardown paths
+17774f7fb1557f88302a526ab4bab334738547fb Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+2aeb9920ee40323fb1e36fb699955dd409bed81f test(agent-loop): remove duplicated Inbox fixture
+700d5407fb2a93165f1365048251663f74eb2190 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+a2de3af0d2f1633134077cfb841ba02474d456bf Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+8bb19f8f7fde89c000aec038aa7af7a5a7b5239b fix(subprocess): close containment review findings
+5e3eaea742b06a2f69803c65c887396e7656bcd7 refactor(subprocess): keep runner error bindings one-shot
+fb00331cfa8e3ab72e188d423e079f10085a80c3 Merge master into subprocess native containment
+6d49ac2ef692f51715ffec4a7b7ca1cf87c382f6 fix(subprocess): align runner bindings with current types
+a41c3a300e1f1d40500743d1675d77ec033748c0 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+8e1c47f82f19941743064feccf54ee34ad1637b6 test(sdk): avoid duplicate projection registry
+39517fb22b784e4980818fa3ac02c819a33bc1b5 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+03ec1ca57c220e843f54151400a1891777e5468d fix(agent): preserve explicit identity lifecycle behavior
+fc19a0a3fa8beecd4a22348583574cea302d8bef fix(subprocess): clarify provider failures and scope polling
+2660635e6302e1b0fdef1e827a984d28c049ceaf fix(shell): preserve stderr on provider failure
+5f135ea9778ee617290fc567eae415e4a0bbee00 feat: mac code sign & notarize
+cb6685d5b8bce8748e873086708f3cb64fc6ab2e Merge remote-tracking branch 'origin/master' into feat/electron
+9699772fff95e00117c439e62135cc192e421656 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+3f0b7779e6a10e9e876d8eb1b9ab69bc8a66ea24 test(headless): derive captured session length
+194bad298a0a67ee76d8f590a40fef6ddc347b4a fix: mac build
+1eebb7c3121af1705a9e0e9a90e7c3f448297fd6 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+65d2015b093ebbd34984a5f38a9ceeece2d70bfa feat(attachment): store and project generic files
+8a0ff3aff82ab0ee5b2b9ef87b75abcd262fa776 feat(session-controller): admit files across command flows
+bafa6ae11d089941d6bf7a884089c4e3b44abda7 feat(conversation): stream files through submission lifecycle
+a1144c4950721243efc3f493e906e1df3ed9fcae feat(ui-attachment): unify mixed attachment presentation
+e9b7ed0aab1591f4fe11bb91c1e9c45c0e51becd test: cover generic file submission flows
+590a8e220abaa3cba7c20860f5640a9f4d3e3edc docs(attachment): record generic file behavior
+6aaba0c3349ab2ba7caefaa93f11497c98a3ee9f feat: windows build & sign
+13f079812e9ef2e9b105c803649ac5713b1bad61 Merge remote-tracking branch 'origin/master' into feat/electron
+f0265146107cb92de84b693b69d4a9ad1e20613c fix(desktop): align merged release lifecycle
+a96ec3dbd696b5588827461e4ff8a578992cc555 test(agent-loop): keep inbox internals private
+c91b68409c4d4e1b17483c2d32ce86d06941965d Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+f90d57f38921380c0d993d5028073e75a06c40bf fix(desktop): address lifecycle review findings
+6f9ef57a440451a1ba1f7b92bc7d3673c9173c9f Merge remote-tracking branch 'origin/master' into feat/electron
+dc160810da8b0cd5865471e006ff9a1fdbf1e2c6 test(agent-loop): use production inbox harness
+ec51b7651f08e93c7c53effa2bd121603b41e00e Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+6f4b38ea2e8ac74d20a9a8a437e0db7e77349d4a docs: refresh agent loop testkit graph
+c3447a2c15e4cf71cb0a94eb89462eda0a9f7420 test(headless): cover pre-turn inbox events
+d1521ea7838f19a78a9cca7b4a93622d301149bb feat(session)!: add released format migration
+79f27df0ddbbd93db6d648cef143a9a15d8c2ef8 fix(session): harden migration artifact ownership
+eb56627f368c6e41f6aa2d8245e52165e9d1d5fc test(snapshot): retire vanished generation roles
+30e045dfad64ae405042f443d8df190ccf017f97 feat(agent): emit live assistant stream frames
+0bb7bba015f5cc382d4997c2de93f0e22e154144 fix(session): close live assistant framing races
+f99b06eaed81d6fe4fc64d44687450e18ef68a67 feat(session)!: embed assistant streams in format v2
+7e5b72ceee067d91500df0a71aaa415826e57ccf fix(session): harden embedded assistant streams
+f30896394c34b32dd64541b6df83432ac1cc60fb test(web): restore HMR build artifacts
+0670239db2b9590572fe432e556300352924f3c4 chore(deps): classify session stream helpers
+eb7c290b2210bb43576dee0486344a3aabd0d231 fix(session): retain reachable v2 stream settlements
+f693946509e32944869dad17295465b212e982c1 test(snapshot): roll corpus forward to format v2
+343a20fb6f850a845ff12736e0fccd933c873507 refactor(snapshot): remove dead fixture path plumbing
+9424841d681188f8f2f3fdfed897dfcdaded2d92 test(snapshot): retain failed reasoning projection
+a596a02bbde95aee3e892b4e3a368a8bc7df5676 test(desktop): load pnpm fixture by file URL
+3c9410904e2cb3fe01ae710b118991971e34b5d7 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+3b9ac476fb14d1b4385f4ebdfb7a7380a2198348 Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+2217ba42d73fd3abb0908aa6e4d7fec283f1fb73 fix(ui): align attachment cards with theme constraints
+8fa72e3d6011068b654091993fe43a1eeaac0bc4 fix(chat): settle scroll sample before resize follow
+c8f76ca39976472301cd482f91f8ad582b3b94cb chore: remove unrelated changes from Inbox PR
+e4c822544c2d087af8a2e1d03475636583d006ef test(pwsh): restore product-default deadline in loader composition
+7145acfe07d722c139867cca68d34a059d13ab81 Merge master into session format migration
+02b889bff66dc09bddd7b6a412d9b1c7d14c11ca Merge remote-tracking branch 'origin/master' into xtr/explicit-agent-context
+723980ac78b47bf21b7b7fc9bf21b0dd6ade298f Merge master into session format migration
+91e5f8838ecdf188a4f131ba3fc16234e134f447 Merge master into session format migration
+2b529bc2aa5ad8d834b59b8bf457e27c8ce28729 test(session-persistence-jsonl): keep migration assertions typed
+2372f84206bfbe27cd92b68b6b9d6ce554deac40 Merge session format migration into live assistant stream
+9007b563606d54e952603d8ff3ac9ebcd186b189 Merge session format migration lint fix
+8292ea45ba367b362bf275dc07e0226c6e08aad7 fix(tool-subagent): simplify standing preset cleanup
+8d1289420ba7f840f0e10cec5832e9bd38c325fa Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+600dff4ca4155920923b4a0b7c4a04c2cd4a1dcc test(tool-subagent): cover missing session registry
+80b376f0ffbb0c3e4d06b8d53dd4448e65a81836 Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+d5363c88398faf0c7523e8127a216291490b1986 feat(desktop): enhance auto-update configuration and add upload scripts
+6bc42c47c2941e19b501e286b1740855fd4b16fe Merge remote-tracking branch 'origin/master' into feat/electron
+25098647e83774e3ffdfae4783d4043ecbc7a887 Merge live assistant stream into embedded stream migration
+a1956fa3e289e55ff9d0e32f7d45a2722bd77053 Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+cf9948b147acc9e0cc38769cb1022f576478b3ae Merge master into session format migration
+3bdc1b37e5b9eb39ecaebdcc07533692734c9528 Merge master into session format migration
+aa2616c5704b1664039c04c1f34ae5ce7ba39d68 Merge session format migration into live assistant stream
+042bd8d01af3c76ce89af932971df185bb0b3a0d Merge live assistant stream into embedded stream migration
+0b8956aab9d5caab935249d06cdfec9755c84ea6 refactor(agent): move runtime parent into options
+46d01068c6ea0ded472add30d23531071aab2b67 Merge remote-tracking branch 'origin/master' into xtr/explicit-agent-context
+22461aedb08b2e7a2af3ff093736b79eef82efeb feat(desktop): update packaging and auto-update paths for target-specific builds
+eeda3cb562d9fd0dc5a3545234ebf172a62db86a test: stabilize desktop and pwsh coverage checks
+e187001b04285e490579715ae10a0e864fb3decc Merge remote-tracking branch 'origin/master' into feat/electron
+44d7ebf12f694e6873e2aeee7b7f03a79809e77a fix(release): keep desktop version aligned with dsh
+8de41bbe99431f9313bec7173ef81264e89bfddb Merge embedded stream migration into v2 snapshot rollout
+2ca559dee31433859b51a1f68cd3f2359a8cfdaa Merge master into session format migration
+e0604df3626cc71e55ceab44afc7d52d38954a22 chore(release): align session format packages with alpha.5
+d8cc3e035e59a1aec4e2c50afe2d3eabd80504b8 Merge session format migration into live assistant stream
+e12258e2b7e11bd6f2c3173b30390e058189043b Merge live assistant stream into embedded stream migration
+df7d1b6ee2ce9f2afefcebb98bac8e48efab4363 chore(release): align v2 format package with alpha.5
+b5b4ef74a0f969af412c93e8fc4949ffa692650e Merge embedded stream migration into v2 snapshot rollout
+08502617060813b359a5834e83dca0f2a7145ceb fix(test): align current session fixture headers
+42542e9a3d375e1e6a4766cf41f55a5e8259475d Merge session format migration into live assistant stream
+23b9dc91753f49b889cc77acacbc065a0f749ec0 Merge live assistant stream into embedded stream migration
+9e371c220d44426eddcd0b26ab9440b2171a86dc Merge embedded stream migration into v2 snapshot rollout
+633b3c0f6959cd1e81d07c38557d6c2f33813c47 fix(desktop): keep package helpers platform-neutral
+94651815f2793b2f17f56f5d502b718117e49c82 fix(shell): preserve pwsh prompt readiness
+aa97372fe42eb183dce3e1092e990813f1b14562 fix(test): repair alpha fixture and Windows gates
+de3ee872d6d4fe43f6ae0c4e723f3a8e3cb74f20 Merge session format migration into live assistant stream
+bc0e57a480ba5e1b453f691cce0731c64241caec Merge live assistant stream into embedded stream migration
+af68f9e10c28f3977ab8eb7f913112562182fd6c fix(test): qualify selected replay fixture
+4a80818ddce07148d923d975367771d0598aca6c Merge embedded stream migration into v2 snapshot rollout
+68e24ddef9fd3c2e63fa2b1924e661b0d7a6b34f fix(test): keep v2 fixture parsing content-only
+17f784c9367ae89e438c2276d54f71ff1a4a0a4c test(subagent): scope SIGKILL grace proof to POSIX
+fe9d8b552ca2b3a3f7a9c2b8677cc4c44109d055 Merge remote-tracking branch 'origin/worktree/session-format-03-v0-v1-migration' into worktree/session-format-04-live-assistant-stream
+29e60f2c30af08ebbf010c1e9066cc418e28736e fix(shell): avoid duplicate pwsh bootstrap
+58f5e0b2783ac625504c3763a07dbdc79fb10178 Merge remote-tracking branch 'origin/worktree/session-format-04-live-assistant-stream' into worktree/session-format-05-v1-v2-chunk-migration
+4dbd107568351b9179d3583c2ef9f765d51f58ee Merge remote-tracking branch 'origin/worktree/session-format-05-v1-v2-chunk-migration' into worktree/session-format-06-v2-snapshot-rollout
+9f05e5a077abaa23d0bd460a38ab87f3890d9827 test(shell): assert persistent pwsh result text
+086b52f9860d0ffe8345cb4798247defe175a1f6 test(session): cover generation scan failures
+cd708659b535a468df9530812ba31e55e3006209 Merge remote-tracking branch 'origin/worktree/session-format-03-v0-v1-migration' into worktree/session-format-04-live-assistant-stream
+3ed91ab9d8b68e52b930c13c2c942d221f5b8f74 Merge remote-tracking branch 'origin/worktree/session-format-04-live-assistant-stream' into worktree/session-format-05-v1-v2-chunk-migration
+b272d985f502aa25e182cc3c8723130ac53e9efe test(shell): bound pwsh readiness fallback
+06f29df392c9010a42aa26a577e3716f0ebfe35a Merge remote-tracking branch 'origin/worktree/session-format-05-v1-v2-chunk-migration' into worktree/session-format-06-v2-snapshot-rollout
+5a9353adda0f6977c07e19857845c2a9a812fcc4 Merge remote-tracking branch 'origin/master' into worktree/session-format-03-v0-v1-migration
+f749b0dfb701633fd6f64d00972ad86034b06531 Merge remote-tracking branch 'origin/master' into HEAD
+d88c258dc71e887c2f7ac1e4af724e522d96d2bb Merge remote-tracking branch 'origin/worktree/session-format-03-v0-v1-migration' into worktree/session-format-04-live-assistant-stream
+17f49f6191548b0d37fc15ed46e07d62306cae07 fix(session): keep cold listing body-free
+fe06dccea41efb405027d2d7ba1d7ba4ceb9e29a Merge remote-tracking branch 'origin/master' into worktree/session-format-03-v0-v1-migration
+e3e9bd5909929b19e03690aae438fae381e53654 Merge remote-tracking branch 'origin/worktree/session-format-03-v0-v1-migration' into worktree/session-format-04-live-assistant-stream
+2087fd3f2c69a608acb341232d0a5fd749cd76fb Merge remote-tracking branch 'origin/worktree/session-format-04-live-assistant-stream' into worktree/session-format-05-v1-v2-chunk-migration
+c0d05349e9f4d39c5ea35a5d4a6d0b17e391476f Merge remote-tracking branch 'origin/worktree/session-format-05-v1-v2-chunk-migration' into worktree/session-format-06-v2-snapshot-rollout
+99567996bd63a09d8c4c863a6c05ea27878ea63b test(session): cover body-free listing races
+08ef483c7ab4a1636ccf1653e09b71b5fc67456a Merge remote-tracking branch 'origin/worktree/session-format-03-v0-v1-migration' into worktree/session-format-04-live-assistant-stream
+ac8b58241dbacb2dc6de7fbb78090c0701415dde Merge remote-tracking branch 'origin/worktree/session-format-04-live-assistant-stream' into worktree/session-format-05-v1-v2-chunk-migration
+c2fa93f567ae370e83479c635c75d2bc856a85a0 Merge remote-tracking branch 'origin/worktree/session-format-05-v1-v2-chunk-migration' into worktree/session-format-06-v2-snapshot-rollout
+ac1a5891c2faa100ba533cc1f7b88338ae19d583 fix(subprocess): close remaining native containment findings
+fe873955b4f155b0871616988501e345f95df6d2 Merge master@313ac567 into subprocess native containment
+35b5d7874927237bdd33203a3d6c89ea4c27757d Merge origin/master into subprocess containment
+05b67894254929a816527a34b24db47da45285bf fix(subprocess): preserve clean range after start errors
+bc681d7a542d503102939897143d508d72425edc fix(subprocess): harden cancellation settlement
+f044d3fad24b04a5cfa45048066e62408419526e fix(session): address v0 migration review
+731f1268d13ed89fccb1e8841a42f3808858134d docs(snapshot): correct child replay ordering
+a5c24f204da476fa8e486036d29129e148085016 Merge remote-tracking branch 'origin/worktree/session-format-03-v0-v1-migration' into worktree/session-format-04-live-assistant-stream
+a65edc48106eed6ce10b8c428ce60bc24ca2e823 fix(agent): terminate live assistant attempts
+a88ef734cc76cee917624fa8ff1fbbcb5e200dc2 Merge remote-tracking branch 'origin/worktree/session-format-04-live-assistant-stream' into worktree/session-format-05-v1-v2-chunk-migration
+ff6a49660fba5514f447066f687746b231e669df fix(subprocess): tighten native containment settlement
+14c16012fb9b991a8ae8030e3c4cdcc615d57a01 fix(subprocess): preserve post-commit runner errors
+67c8a588543e9ca791a0b47af12a52b5c775b5ba fix(session): address v2 migration review
+e10f671167a0dc5b959b06fc513d4866b74c9365 Merge remote-tracking branch 'origin/worktree/session-format-05-v1-v2-chunk-migration' into worktree/session-format-06-v2-snapshot-rollout
+06b93748ebe929198db126a4ed17e9d011ad6344 fix(snapshot): address v2 rollout review
+0652b7b4d7a2955838edab1ce35e3825c8f38606 fix(subprocess): close containment review gaps
+29c68b6da90af0b00d2315931741c08df668c6ce docs(subprocess): sync native containment evidence
+ed25d4e15bb28cca5c8905befaabd85518b3861e docs(subprocess): correct probe and terminal failure contracts
+c8393a2798b00ab8eca772034a9144fd6e8f60ee test(pwsh): cover background outcome status mapping
+7dcdcc2965802cf8d4fa2395c3b7c2da7417d227 feat(python): support macOS x64 runtime wheels
+454d92dc346d01f9cae65c54d14086bad434e25f docs(user): route reasoning levels and settings.yaml fields through the provider guide
+410e91289396e95aa0102f37918dfbc12cb9217a Merge remote-tracking branch 'origin/master' into worktree/lark-docs-optimization-c86275
+254c9b8b7f431d1f9ab4d454d0d5eafe3ea1f294 docs(user): guide model discovery for third-party providers
+be1777084d37394bd8ca0a6d39a4cf9a1fde820f docs(user): call catalog providers built-in providers in the provider guide
+13f467b15b504151272885df446a8c2b03756144 docs(user): gather settings.yaml fields under advanced configuration ahead of troubleshooting
+ecd75e6dd6ba50b4a100bba51e1c914e40498fae test(pwsh): clarify deadline comment and keep case budget independent
+618a7a46e83629f8dbe5e2bd2453610bf619f042 fix(session): accept released migration data
+401216477c5a8fef7553f4c606c2128aee40ef23 Merge commit 'e6b9e90886088ffd344110d45bb406880e554a8a' into worktree/session-format-04-live-assistant-stream
+d7e9115df902b8bcca2829c0c28f9c34c01eeb06 Merge commit 'a4a34b2a71f6bdb92c723840dca4d7fbd71c3148' into worktree/session-format-05-v1-v2-chunk-migration
+4fb03d0bda7092f90da4529bf1a8f062877bfbfa fix(session): preserve v2 migration compatibility
+7299d5e0936370aedb64d9bfccd4bab8620a892c Merge commit '060de4c547f020e1953c88b98b7ab749fd9ef20f' into worktree/session-format-06-v2-snapshot-rollout
+34b33c22739c64f20a3bf08cf699dcb561278b3c docs(user): simplify discovery, protocol, and OAuth wording in the provider guide
+3e526474a389327473027d987f9f3237f9e0914b Merge remote-tracking branch 'origin/master' into feat/electron
+bbb2ca7c9b3ee5e088c895351f5916e00cc8a05f refactor(client): extract background file upload service
+b8512fa5e54902db01fe3d6612eb892547f2081b Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+6cf7b1e34f4e362602fe8ab23af7a3288d2108d6 chore(client): refresh generated API catalog
+b09d3a2c0d78221e33d70336cf0dc99ddc21fc88 fix(ui-workspace): reveal opened search result
+4647dbf8ff4f0b20b7bdd9b9a2366157f3326c8b fix(ui-approval): type pending approval discriminator
+61e4829ed7299a15a3e331e011bddefee627eb6d Merge remote-tracking branch 'origin/master' into feat/python-sdk-macos-x64
+6acc828f81588db851b51066085cb47b3b95fe71 test(client): widen upload carrier fixtures
+0c84f773d99c9edb388fd798f9c6754d39ec71ea fix(desktop): align package version with release
+74c38ba9c7d0b5ebf4f7ff09ce2203fab29b0637 Merge remote-tracking branch 'origin/master' into worktree/lark-docs-optimization-c86275
+987fde95150ed3c5d5fd4f507346095ac6f76368 Merge remote-tracking branch 'origin/master' into fix/search-result-reveal-session
+7a99e70372ca620e5054e25e6b2d5e58bc827420 fix(client): satisfy upload package gates
+caa4bbb4741c316d6764dbb6ea85cbb3e8d9e246 Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+23c1052f5ad4e8a96f7a25efe1bc5b631d962335 docs(python): refresh runtime target notes
+a51474c436464ce6ea8493f39ac250f01258d541 docs(user): align provider guide wording with the effort menu, config button, and off semantics
+44855d105480775474c153aba707d5092c43d5d3 fix(release): align http proxy package version
+4ed33aa581b32537cfde24f6effabc804d35abe6 chore(client): refresh slot source locations
+b7e5d0b90ef7840e8e9f16ebb204dafb3b6d6c93 docs(client): refresh generated catalogs
+0c99ae8557bfb441c0393459c62d5341a033e099 Merge pull request #3474 from deepseek-harness/worktree/lark-docs-optimization-c86275
+9fe2112a631951b7e1f28836b6242ae485193e6d Merge pull request #3473 from deepseek-harness/feat/python-sdk-macos-x64
+ee23db68cf7991a1f6d35416795683c3e6e27e1b test(client): cover background upload seams
+1967bedd9f6de2f5d19975dd13ca86ea5130e31d Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+6ad01cbd8dec96add20b832f5482a99e20a2fbe5 fix(web): avoid repeated system prompt on resume
+e26fc35d4b1b4ea2bff597738b6a81b402b9edc2 fix(goal): keep manual pause authoritative and show activation
+ed8cdafe3f75fc1c7fc8593e9cadce63513b2bb0 test(web): update resumed conversation golden
+4f0706a335c0e092187423579a69420ad31bf1d6 fix(web): address session reveal review
+f3dab48118bf84c8414db9f0b4d7e8de4871418c Merge remote-tracking branch 'origin/master' into fix/search-result-reveal-session
+91f7e08136f4b887db481341e07309471f120790 Merge branch 'master' into fix/pwsh-loader-composition-timeout
+34f897d1ca3cabc2a137d8d552954195c299ee9f refactor(goal): share goal bar resume branch
+b5f1539733d62bb92cb0e7f9a8185ffa86e11ae2 fix(session): validate surface replacement endpoints
+9a5611865f8d5b4e8f5eaf491087c46dee534bd3 Merge commit 'c0c4aebaa9' into worktree/session-format-04-live-assistant-stream
+463f8e922112b2877c100ff2331f17186a15ba1d Merge commit '0d8fcd3a0e' into worktree/session-format-05-v1-v2-chunk-migration
+7442cedc8233355f400f8a79532f8ea64286c1e0 Merge commit '13f179cd60' into worktree/session-format-06-v2-snapshot-rollout
+c724617593945f0cd4d3412e614983cebd322b0f test(snapshot): migrate packed session fixtures
+f9870325b276271a992d8b37ba3e331398a25492 fix(session): validate compaction spans by surface order
+e7a17eb7aca3431a2be01047fa6b5aa1a1a516d9 Merge commit '7931edb2eb' into worktree/session-format-04-live-assistant-stream
+3f848e1aa0bed58c6fc539869a5a8d85028c1734 docs(client): align goal bar activation comments
+cf97e3e45552c3c57b60fbc5b70011a10b4885e2 Merge commit 'ad1b192078' into worktree/session-format-05-v1-v2-chunk-migration
+e4f46f8e4d0116ea99b4c54ab460729f7c8849f3 Merge commit '4ec9519539' into worktree/session-format-06-v2-snapshot-rollout
+1d6633ae047658ab1569c89475bc7c2cc3c95b0c test(snapshot): sync web goal prompt fixtures
+100fcb286f66c6c72cde5851073dcffcdd04c12c Merge pull request #3432 from deepseek-harness/fix/pwsh-loader-composition-timeout
+29e20b0a9f3329b6f02512ed307890258623b7a0 Merge branch 'master' into fix/search-result-reveal-session
+8fc9a11c5e473b338062702aac304891a4ed909c refactor(attachment): isolate file upload service
+97fe39920ad466b41b8112fa548fba4afca39ec5 Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+477ff9d5e3bdcde581712dab95ac57f3938f3e58 fix(agent-loop): preserve resumed series boundaries
+1762d63e6cab656ca0e29e4ab54c287eed5fb161 test(session): cover observed migration shapes
+a22f2105e059186dcaba063235ed16982ee6dbe0 fix(test): stabilize trajectory history pagination
+0364343a7efbc62f397c8efa30624468c85ca422 test: remove dsh-* temp dirs created by unit tests at teardown
+dd37061c2b4b5491d607f5a16ed6bb8540d39a11 test(client): provide file upload fixture service
+9fd72003e61093af519043d21bbb36ecd054cc07 chore(test): remove obsolete lint suppression
+1107ff5fe13110e1663ce349083162cad2687087 test: remove remaining dsh-* spill/temp dirs in shell and fs specs
+6d9776a3b0cd387d63756d100c278ef313e9d371 test: exempt process-exit spill cleanup from the per-file coverage gate
+71582276509852f112635a226acccaa409407b40 fix(file-upload): declare host runtime dependencies
+3b8245afc392f9f862ab5ecdacd6ef5d85d0007c fix(build): align file upload project faces
+33b7123e96197edee831ae49888fa6dff0030427 test(remotes): declare built smoke schema dependency
+8a84c1edff8485e9b299b1c31f9841ba01a31742 test(file-upload): cover isolated service paths
+f989df7c8e13aba59bf8f4af64824a18f6a91673 test(file-upload): cover extensible request identifiers
+cc8099dc5f0fb2b6295d5d24074bbfad32a79b2b fix(subprocess): hide Windows child windows
+29e6669e3cd16d5905d05fe6a0fef13a38ba79e8 test: narrow process-exit spill cleanup to empty dirs; drop spill-store deletion
+1bc330ce01d2f3eb778d69aea4250e913dec35b9 docs: cross-link the spill retention decision from the teardown note
+18635905aaeab3f319c1d44c54857540698d95a1 fix(fs): normalize unread mutation diagnostics
+d33fe767c18f55233250ab1fee1da5770f9708af fix(workspace): preserve Windows drive roots
+2f396feca8e866d92d280018930b4b0ce7f0b118 Merge branch 'master' into fix/fork-resume-system-prompt
+c8fc38541f13cf1283eeba49634b40b803917a82 test: own the default spill dir in subprocess specs; correct retention wording
+af63a56078d93956d9536dbab1c45a0e3118c6de test(workspace): make relative path regression portable
+13dee20db6f6d9ef4f451901ec45866f6ad6809d refactor(session): drop dead migration plumbing
+7c169a04b3771e09d05e9b27a52dc01d7302a5c6 Merge commit '1a244059c3' into worktree/session-format-04-live-assistant-stream
+51adfbf52c8a447fe0dbbe5ea1a97ff512edf3b7 chore(session): retire the v1-to-v2 benchmark script
+5fa5fea11d2bf4be6f14275697cf5d7c7213f5f8 Merge commit '1f9d5f72e9' into worktree/session-format-05-v1-v2-chunk-migration
+d89427ba6cd42701ae7941aafdff77d3e738947d Merge commit '12dabcc9d2' into worktree/session-format-06-v2-snapshot-rollout
+818c4f344e7b62146d1f8ef574cbde9edfcfcce9 Merge pull request #3520 from deepseek-harness/turtle/issue-2353-fs-error-copy
+cf4cfd9e4a7b3ef9386ea8a75974e282dc243dad docs: correct the changed-spec count in the Agent Note verification section
+b2c4483c9d327b533a421816bdb06f0c80349bbd refactor(attachment): own prompt admission on service
+3aef64797dced6eb168cd0476de93da16e74c949 Merge master into session format migration
+3c3ad02b305fff6dbb41bee0e7abd2b514faad54 chore(session): satisfy the master hygiene gates
+13074e4aa2bfcbb05b68959575c959514e816fad Merge commit '308c1c69a6' into worktree/session-format-04-live-assistant-stream
+28b16c011a54f591084ad439b4f59b847d501ffd Merge commit 'a123cb0055' into worktree/session-format-05-v1-v2-chunk-migration
+156429e86db1c20f89628cd755115a13f9f95be7 chore(session): satisfy the master gates on the v1-to-v2 branch
+91904d7c1086b4200a59d1b0b27b4324e3b49ca7 Merge commit 'fef079e5c9' into worktree/session-format-06-v2-snapshot-rollout
+778e0866c36f036b66ee0ccb63a741fa4c6ddc13 test(session): cover the migration read faults and the versioned export name
+e609fd73a3e385430467b290717c201cde7b2595 fix(workspace): harden qualified path handling
+a05b5fbe7976d7f93a866f84433b239e0247503c fix(subprocess): hide Windows cleanup helpers
+6e7c3f37c17be44ddf734f83d20622b215cd096f docs(fs): record normalized unread diagnostics
+dde27f5163ed9c3ae2560b422133d34ceb3fc939 Merge remote-tracking branch 'origin/master' into fix/test-tmp-teardown-self-clean
+d455ad99e3255771798a3f3771c2406828d67e9b test(session): record the v2 SDK expectations and cover review-fix branches
+bb771b133cc2c184b297afb91e08f074f96421e6 Merge commit '09d3a185ab' into worktree/session-format-04-live-assistant-stream
+d5044d5675f86d92e6922fb1b2c244e58334978b Merge commit 'ee4bad5cde' into worktree/session-format-05-v1-v2-chunk-migration
+874b174fd6f37d5ecf4f645fede1fdde3deebdba test(web): compare fixture inventories by Session role and pin the v2 upload
+71089f8df725d0f4b0a39e119c2f5f65a82bf86c Merge commit '8f7250f904' into worktree/session-format-06-v2-snapshot-rollout
+e5dbccce8c2122fd8ec24b1cb809847a40e557fb fix(subprocess): move SEA bootstrap to runtime packaging
+3eb9736eb6eeebfdfcbc5fda5e9e1120ee15bf88 refactor(file-upload): scope prompt binding rollback
+ea669428bed0bcdac437bfc317674b9ff9ffa4c6 refactor(attachment): unify prompt content admission
+2a826a93c393c717efb09314e5d450183f4e66a3 Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+0516edb037ba2f8b8ceb5093bc4ff19d1025577a test(file-upload): restore host composition fixtures
+423412b7bf4b31054a102b1bc8f889f2f017ea94 fix(runtime): simplify executable entry dispatch
+d18770f50a8cb096bf21a01d7b5e00417eee65d9 fix(web): address latest session reveal review
+de022388eafe4ec209936ec6484cdaf28e955c40 test(ci): stabilize attachment fixtures
+d79f5c04e8953a2ae19023d98dc778046feba107 Merge master into codex/subprocess-native-containment
+c97df989ff78cdf4509aff2630ef1d204afba703 refactor(session): share the canonical log basename and JSON snapshots
+fe9c2d7053ca92a3f55752332ff5a752a7b847b2 refactor(agent, session-controller): drop the unread startedTime frame field
+8a0c91be7fa9c9f76d55da8b84743a217ddfb8cf Merge commit 'c347bfcfa6' into worktree/session-format-04-live-assistant-stream
+d58964a010fb346124f0a96b72f712a89e206c28 Merge commit 'be5db297c7' into worktree/session-format-05-v1-v2-chunk-migration
+17fb719138b3837c9eb4ff4835fee2065c803804 Merge commit 'cf8f75faaf' into worktree/session-format-06-v2-snapshot-rollout
+6c419795f6a44222e7416f4471c0cfa42c981298 docs(session): name the frozen v0/v1 vocabulary in the v0-to-v1 README
+721ff67ca108426e33467558afde5ced80788910 Merge commit '1b6fdd0e1b' into worktree/session-format-04-live-assistant-stream
+9fb0678f0b184598d35b4f6c7ee765c8f5011243 Merge commit '22472e4092' into worktree/session-format-05-v1-v2-chunk-migration
+6c7603aacd78ab2907a0892eaf2507dd80fdc44a Merge commit '51f9d5f6c1' into worktree/session-format-06-v2-snapshot-rollout
+86241a442d36f9481d1db2c4a09d6c6307d6b5db fix(session): keep independent version fields off the format generation
+8cb1d6a7eb6b81c67f8aab95b3507f8d68104047 Merge commit '85c23a2df3' into worktree/session-format-06-v2-snapshot-rollout
+a931bcf2265086bf105744c81c6053e4cf98e883 fix(constraints): require the shared dsh version in every workspace manifest
+1d35bcfc8a2a475c407a5a75ed0f90899a116088 Merge pull request #3533 from deepseek-harness/gate/package-version-drift
+b4ea3efcf6b8c3f7d392eebdb71e19ce29ba103e Merge pull request #3400 from deepseek-harness/worktree/session-format-06-v2-snapshot-rollout
+d82fd86c5c949f23e9c278eb3d072da81ef4281b fix(subprocess): isolate native runner bootstrap
+cffb09b02cce5bbaadd801476301c3c71bae8c31 Merge commit '0d361e6eede9e8a739e776949aa7d5e3de4472da' into codex/subprocess-native-containment
+c7dc4d3833dd14322433a6a085d09983608e6ae4 test(subprocess): restore Cordis API projection
+e82e5ffd7a1717d2b9e1f565017a814251de6eb2 fix(subprocess): normalize PTY scope launcher environment
+fb743759a72ff7bcda235b292a5a6f35c3a1c2a8 Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+48656b4594a935fe3ae534fda81d8d5c0c845f97 test(session-controller): restore Session type import
+705cd220d44d3ded43487a2528c2feb3e9f7e9bf test(web): migrate file upload snapshot to v2
+9656a1742b560ee2876fd3567eebb80ed13f496a Merge pull request #3521 from deepseek-harness/turtle/issue-2349-windows-root-workspace
+3f074437026940637bf5dc2039595b364e5f1855 Merge branch 'master' into fix/test-tmp-teardown-self-clean
+df07f378274281a6e6a8d32e7c4c543b95620e8c Merge pull request #3516 from deepseek-harness/turtle/issue-2390-windows-hide-subprocess
+d8a995e00eb8ed5a63253f1a14d107df2e832c07 docs: align the changed-spec count with the merged-base diff (36)
+470ea852861dfa7ec6e3fe2b77490f0e063297da Merge origin/master into fix/search-result-reveal-session
+1f0a87eb06f18bfa930114e8f3c963032ad87c25 Merge remote-tracking branch 'origin/master' into fix/test-tmp-teardown-self-clean
+f1e7dbce5535e62dcd3c914f25067d6639074072 fix(web): keep resume prompt dedupe client-side
+8ea0cc044583f3df8617653c8a9ca79732ccac36 Merge remote-tracking branch 'origin/master' into fix/fork-resume-system-prompt
+01a4cba9427a743754d497ace1fd0d73c147d9e6 docs(web): describe client-only resume handling
+bee0c13f2813d6fdae548027359adb81a40e47aa Merge pull request #3513 from deepseek-harness/fix/test-tmp-teardown-self-clean
+b6b2ec4a9082d12df95b80ef222bac362de2da29 Merge pull request #3480 from deepseek-harness/fix/search-result-reveal-session
+891f07a2d01eef9b517b0f1a3c76cdc02e4c4b8f Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+f0e52c2731a9074e6217c800b1f05d3bd92e4eac refactor(file-upload): tighten service boundaries
+268cf0101e51b3d4268fb3e57c24c0b5ea4c2f00 Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+c58097a8267ef299e03494f26801d76c1ba73ca9 feat(session-persistence-jsonl): cross-process write-ownership lease
+fa40d90023de1a5a273ac2332ed823e0b550acde refactor: simplify issue templates and policy
+3b95586626d1cab7423a8d6f30d3d45a3db02d1e Merge branch 'master' into fix/fork-resume-system-prompt
+1553862ac1039f8d9177b724e83e8bf021580281 Merge remote-tracking branch 'origin/master' into feat/electron
+46d20f8bee8d842d77f4a3a771d1c83900546bb5 feat(web): rank skill candidates with the shared fuzzy name ranker
+645c68daf25136e3a5719cb02e92ede4aaea1d9a Merge pull request #3530 from deepseek-harness/turtle/pr-3520-review-followup
+d0da8ccf40c16c411d062a4046975ac9cdc486f7 fix(web): decorate slash tokens in bubbles from logged skill and command facts
+9d947bd9cf09a9969a5eb0578248aab377fea5dd Merge branch 'master' into worktree/skill-fuzzy-search-53e21d
+7acc038beb83030940bd4547da877b5c49dd705d Merge pull request #3362 from deepseek-harness/refactor/session-persistence-write-lease
+b4517feed5e5a92087e4c6642dd9225e3e2a1340 Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+206e79ee3dbf95b4232973988e7ae11a359956ea fix(client): order goal activation through inject hooks
+14baecfa86e2230d1ec3cf8399c4efdd79fd73d5 Merge remote-tracking branch 'upstream/master' into issue-1424-goal-resume-activation
+d976849a6be8489e78b3f0102b81cee5a17856d7 fix(web): expect the goal command bubble to share the body face
+ff146b84a3a1adc5d170ab6ea6c6e60d0ea9c0c1 Merge remote-tracking branch 'origin/master' into feat/electron
+1b470211ada8956ed8afbbc7943d1e8b29383572 fix(web): address review: index skill-name batches, bound slash tokens at whitespace, chip only the leading goal token
+56d6c25c9d4d8e935b356a057d4677162745bfcc fix(client): keep goal activation coverage in client face
+267d755bee572898096f3d9d749f2fe668a5db23 Merge pull request #3552 from deepseek-harness/worktree/skill-fuzzy-search-53e21d
+0928bb2c16c2e8785dfd4a181bb80f2e41ba8741 Merge remote-tracking branch 'upstream/master' into issue-1424-goal-resume-activation
+ed67c22496f6aa14fc4091f06711b0ec9210eb31 release(dsh): 0.1.3-alpha.1
+58ec1f08677359f2b5edb47f62b0777972de0a91 refactor(file-upload): keep storage helpers and the HTTP route package-private
+e28b58f8c0011d8358a090b536b2a5b2bd409e93 Merge remote-tracking branch 'origin/master' into worktree/2984-generic-file-upload
+8ffdee4fe5d86cd1e4695a2b3ae14183c8319cdd feat(client): unify clickable-link language with link alias and category glyphs
+75d3402b846d59a946ad1149ef0cd7a30f171dae fix(web): keep skill chips on rebuilt message nodes
+53f6590f76ad83eba08ea71a874d5af6fe2745fa Merge pull request #3109 from deepseek-harness/worktree/2984-generic-file-upload
+f9359b586322adfcd8b4415c1776709def727faa Merge branch 'master' into fix/fork-resume-system-prompt
+9c1370370871c6e2eec9c74ff3757251bea9ffc3 Merge pull request #3556 from deepseek-harness/fix/web-skill-chip-rebuilt-message
+14befe7ff7671ed7ea1062eb851eaa5356504145 Merge branch 'master' into release/dsh-0.1.3-alpha.1
+f7f4bab7462e5eb03f717df687e2d2803a9b1021 Merge origin/master into fix/ci-node-compile-cache-data-disk
+e94f938c054e9e2b6bd311659c7a96e0be2ba918 release(dsh): align file-upload version
+fe0b7f281450a4b128570c5cb1eda60d4c568c99 fix(desktop): move host out of CLI package
+cff9a004a660815881cb53471af69c5b298446f1 Merge remote-tracking branch 'origin/master' into fix/ci-node-compile-cache-data-disk
+0180c5cdea7eefc6fec5eef043529a6a856f58e3 Merge pull request #3547 from deepseek-harness/ihsiangzhang/tool-call-clickable-styles
+75c7bbb88d888b0f653ce42a17fcc9237f664cbf Merge remote-tracking branch 'origin/master' into feat/electron
+6a82a3b3e23cfd0d092ce2fb0331742a89dd18e9 Merge branch 'master' into release/dsh-0.1.3-alpha.1
+e09407e655504951c243358f0cdc1cbfc01d67ce fix(desktop): adapt host fetch handlers
+f0ab6a60546b5fd970ac94dcedbd479f92e237b3 fix(ui-chat): retain skill names on message upserts
+b55a8e477797288e6c3d85b53ad3af7cf790ca31 Merge remote-tracking branch 'upstream/master' into issue-1424-goal-resume-activation
+c42ab9e14ed2002236a7805f8b26b4dffe6b1fb9 test(web): refresh the clickable-links gallery golden for the attachment button
+493072641d983424c860b837e2cf7476ea146c2d Merge remote-tracking branch 'origin/master' into fix/fork-resume-system-prompt
+737a965e9293944f889265ba3b3d2c58778eba7d Merge remote-tracking branch 'origin/master' into feat/electron
+eb60b74f4719cfea15318ede3249878646bcd26e test(web): wait for seeded agent attachment
+588be2d3c51fe004913a20cbf524812c195498e9 test(web): refresh clickable links after upload merge
+4dfd3b5948fef28c048039a39d7b55e06f679585 fix(note): restore blank line before Alternatives heading after merge conflict resolution
+81c6f740e03dfd2133edcb6c65d7bdc84d3e6ce3 test(web): stabilize snapshot replay
+2f77acb9ab0e443517d9619b614b6f7369d2061b Merge pull request #3558 from deepseek-harness/fix/web-clickable-links-gallery-golden
+5aff05a92fe9730813890045306c0ddc4bb2f1fc Merge branch 'master' into release/dsh-0.1.3-alpha.1
+d733bb24e5ef6e4895cc9a845874872204ae89e6 Merge remote-tracking branch 'origin/master' into fix/fork-resume-system-prompt
+64ca04e8fbfe49032e6c73cf218c1f1e6c4cd83b test(compaction): allow complete live summaries
+5d9603b7638a9913c9fff952c1e54c9997cf033f feat(web): localize slash command descriptions
+a33b9081b61a58c3b6c2599c7a0644db16dcabc3 Merge remote-tracking branch 'origin/master' into fix/ci-node-compile-cache-data-disk
+d347e703908d0406b7a7ef80e3a0e594d86b2215 Merge pull request #3554 from deepseek-harness/release/dsh-0.1.3-alpha.1
+a19065017fc38e5dc0e558b279b927b76e0f1b83 chore(ci): deduplicate client static gates
+42c7317bac70ac356ca39bb9aadf2174f4ed8095 chore(cli): remove obsolete desktop host exclusion
+d8f630f4b71e8f87da607b4ffaf245cad77684e2 Merge remote-tracking branch 'origin/master' into fix/fork-resume-system-prompt
+5659d19c30bdbf4b26feb5ddd8f58dada17b5266 Merge pull request #3484 from deepseek-harness/fix/fork-resume-system-prompt
+d43addeb5c6c6598d27eeb6fa1ae5719c4b89154 Merge remote-tracking branch 'origin/master' into feat/electron
+9e5745de3b0f687273960d5b272988402aca9d8d fix(desktop): align app versions with release
+5813c14deece17dd632ccb4db6fe6c9db6a08d82 fix(client): portal composer menus over the sidebar and float toasts near the top
+a3208573a6d9aaeb1c7ff08bb0c6ac9a10522084 fix(client): polish composer and hero spacing
+a49376a2ca4082c19a1c5670e1ed1d803e196bee fix(client): reword composer placeholders around the / and @ triggers
+eac164392d1b35de75107826dd610c3eeac6da4d fix(client): name the context meter's tools row precisely and drop the header approximation
+78258bf6fd8608827a2642f7a6b080c240a366cd Merge remote-tracking branch 'origin/master' into fix/input-placeholder-stat-ui-polish
+fd1e51b097ed962b0a634cd37dc497fed9831920 test(web): refresh master-added goldens for the reworded placeholder
+1bd26370ccb21a95b6ea818fa5e83dc54dbdf927 fix(connection): recover stalled handshakes and keep retrying
+a3ccbd4d996ba00b5a816574bf4d48cd4420adb1 fix(web): show sending state for queued submissions
+8b94ed9c21fa7329edbb46016defce9205b75833 test: align hygiene gate expectation
+1e04fcff354bb69efe52bab238d49f2511fdbdd4 fix(connection): validate retry factors and clarify timeout recovery
+69161395ce4ca890ebc4dd0beaf8d083c7fb01d3 fix(web): wait for queue admission before collapsed snapshots
+0ea65903ce7853a73bc77250a17381a9049b20a6 Merge pull request #3580 from deepseek-harness/worktree/fix-client-reconnection
+4dd2c7b51bc2af63cbbb8dc138cbc9e259c137e3 Merge pull request #3582 from deepseek-harness/worktree/queue-submission-sending
+b9a4b682c486545f898a13a011fd4e148aa68aa6 Merge remote-tracking branch 'upstream/master' into issue-1424-goal-resume-activation
+9f68695f978d81d5a740f0e9ef338015adf8ffed docs(notes): normalize Chinese Agent Note header tokens
+452b2a816a58151b48d6db7c8ce9c6ec761d988f refactor(client): share the capsule tag, switch, and idle state dot
+a7a5be1703dd975c375ec1a2754d328485eaad18 docs(notes): archive low-future-value Agent Notes
+051cd4b281a478a3d98d73c817e98dfa786a5ccd docs(notes): address ds-review-bot feedback on the archive audit
+a6ef8dc97a81aa80d3a7c8e75aaf911ea3c92cc0 fix(client): animate the unloading phase dot and correct the catalog
+853de8ad0b2d54a042f8455eabce02ac72c7fbeb docs(client): finish the five-state and Pill/Tag corrections
+d86c08bc1ca76f40f8f122ab1132e316aef3f247 Merge pull request #3548 from deepseek-harness/worktree/archive-agent-notes-20260904
+c279350e03990953f2cc4df0c9802acb2e825cf8 fix(client): keep the Switch track capsule under the global corner shape
+d46f840e99287f23c3a47431072c16a01b7703bb Merge origin/master into worktree/ui-primitives-consolidation-429264
+4aa3cb781822fc8bce101acb85baba8e47b48bef Merge pull request #3590 from deepseek-harness/worktree/ui-primitives-consolidation-429264
+06cee184301609a07db91bdabee6386258a95b49 Merge remote-tracking branch 'upstream/master' into issue-1424-goal-resume-activation
+15e444e0d7c06a6540418e8eead0006c11ea7443 fix(boot): normalize absolute plugin paths in patches
+c70b30a6fb036957b13a9a4e991567f8698847d0 test(cli): exercise patch removal without rapid rewrite
+4826e0c2a37dd02a105df68538b51c03e327be62 docs(boot): clarify patch path conversion ownership
+4d56cbc3d3d75ea07c43cae49576d3c61f159d11 refactor(manifest): centralize package manifest types
+93d89dd0d57e4dcf7798142c4ddf072d76971d40 Merge pull request #3603 from deepseek-harness/fix/ci-runtime-wheel-windows
+37aac1a5556dab148640333a26b239f8b855881b docs(manifest): align invariant omission wording with validation
+eea8a83a2356f21c7e7ebeed2f00aaa68d021066 Merge origin/master into worktree/dsh-package-manifest
+62120daf94eaed1df1a1bb1b6f043284c599ee90 Merge pull request #3602 from deepseek-harness/worktree/dsh-package-manifest
+965adbb5cf23ffb176e6375cae89f850acde2ca4 feat(sdk): disable str_replace_editor by default
+20ed4aced07adccb12069e986a9e4131e0865825 docs(sdk): clarify the default editor selection
+69a0441c34019fbb416db35eec0a48470391ddd7 chore(llm): upgrade pi-ai to 0.85.1
+7bab91d247e4a7a2e84c68e1883359f5dc718e6a fix(llm): retain Anthropic resolved model during replay
+1a93474759738588e86032a28c7fd60e483d9e43 docs(llm): clarify pi-ai replay compatibility evidence
+cd872be96735f3ee2144c15261514ef8879685a4 Merge pull request #3613 from deepseek-harness/chore/pi-ai-0.85.1
+02a029e679debdc0ce74531565302f69caa4d40f Feedback is recorded in the session log and delivered through DeepSeek
+9ffe85a5129fc01ac05eaad047bec581b8056995 OTel uploads explicit feedback for all users by default
+141d72d7cf3a83559362a4c1c89bb89f03f25485 fix(directory-picker-native): decode the Win32 picker path without a fixed 32KiB view
+36a466514403cc9589dcd6d8babac76c7d821a00 feat(base): remove str_replace_editor from default tools
+eae5c6b896900f76f3884411a130582b7074703d Merge pull request #3598 from deepseek-harness/feat/feedback-otel-fallback
+ce0a1e42530682d385e8b020cdfd9a977a34785f Merge pull request #3368 from deepseek-harness/fix/directory-picker-win32-overread
+46a08db381594adba9a061f4df2b22747e11f772 fix(web): render terminal cards for PTC bash subcalls
+739b38c973f01f7453dffe2ebe853d69e42df47e docs(web): describe nested terminal details eligibility
+314cd139719cc5df2fff22b6d7c1587123dcd73b fix(web): keep spilled shell previews generic without guessing status
+b25d4faaaa5457a7e2bf5163c6f3a6c2e7c6b5aa fix(spill): share persisted notice formatting with client recognition
+cef72f2f273b60b674052d1aa5f5dfe6301963ae fix(spill): publish notice through standard pure source entry
+17d8507b87c029ee1154e9918723775fc58a0d74 Merge origin/master into feat/sdk-disable-str-replace-editor
+a6e157c0a309da22cecdd89d28d8184a2c63b860 Merge pull request #3605 from deepseek-harness/fix/ptc-bash-cards
+4acdf8e5bb7a458c6e2b2d8cef73857980cae78c Merge pull request #3611 from deepseek-harness/feat/sdk-disable-str-replace-editor
+cd4a23c5df13269fddbfd14e566b24c176c6ce87 Merge pull request #3529 from deepseek-harness/turtle/redesign-issue-pr-templates-policy
+2395f112d82c29fb12ab49f5e89d95ea38e9adf7 test(perf): gate opening large Sessions with synthetic CI benchmarks
+74e27c97d0719b7ef9220f05e2af0df48935d851 test(perf): list the bench config among proxy-setup Vitest inventories
+9048e8ee11c7e20a39aaece435778316c44ea8f2 test(perf): size the migration budget for the CI runner
+3285850ee5d61c74c5d6aee79a42ff1305591ce1 test(perf): allow the joined-text share in the fold scaling bound
+c53b0bb5ed937b22ddf8b16888d6eadf0094dc82 test(perf): double the CI cost in the migration budget
+47a6fa0f28282cc46bcbb20f6063e37709fb4507 test(perf): centralize lifecycle benchmarks
+ec954d495ed6ab7bf433b7ba1b65523014d4980e test(perf): freeze released benchmark rows
+356a332195b1a94cad22dcb222fdaa88dbdf2149 test(perf): run benchmarks against built artifacts
+422f5a19af4280827ea1d389cda23212bd7d6232 test(perf): calibrate CI benchmark budgets
+a548150f864f63d90c7e18624d79119dc36ef2b2 test(perf): isolate benchmark dependencies
+a84a8da9e19ee3a2f7530c3114c1164248d23755 refactor(session-format): introduce streaming migration stages
+46196d6f9592f40b32975ff64e739ed49039307a perf(session-format): stream released v0-to-v2 migrations
+ec2f63dbdb896f28ffa5682560b899380649809b perf(session-persistence): stream migration publication and verification
+84c11c7243fdc03d3a82e045c799f47720f93d19 perf(client): avoid replaying settled assistant streams
+98d2baf2e5a3f88b6ceb424c4f950319e7bbc259 docs(session): document streaming format migration
+a3e5edbdbf662cc0bef5f6ebf8fb6f6835f90212 perf(session-persistence): prepare historical reads before publication
+9b78f99dec43629c01b12f6cce2e1463de10dfb1 perf(session): transfer frozen persistence reads into restore
+591d12ce864778030bb6d0baae32039358a09819 docs(session): document preparation-first restoration
+53066fd6406a23e57a8015fb5c4010b19a3b1489 Merge pull request #3535 from deepseek-harness/perf/01-session-open-benchmarks
+80306f51a6f36e26c71bcf0be5621af6b8ad8e65 Merge pull request #3585 from deepseek-harness/session-migration-streaming
+450d98b39848032e70066a05b7b313f50c3d8e2f Merge pull request #3586 from deepseek-harness/session-migration-preparation
+36a3a1188d3c79e0dc7bee4ba8eaac36e66abf5c fix(session-reference): size default budget from selected model
+72ce6964ac45ae6aa9ab8e977e3406a09c3d44e8 fix(session-reference): retain fallback for adapterless routes
+52475cbf506f42429aed2c9e3a1bcfffe33cf812 fix: spill truncated session-reference captures for retrieval
+539b5cd93dcffa0f8dc8362ac9686e4e69414e64 fix: normalize JSON-escaped Windows spill locators
+e12ca5fdf04512c2c6b24b08a9f9e697a7976fb4 test(session-reference): preserve complete regression suite after rebase
+165cc31eb8f65a364253c9b1369805e52c37ba8e perf(llm,host): read embedded Assistant streams per compact record
+53c2ed99167ceec7aaf2e41cf28d9aad0204fa95 Merge pull request #3618 from deepseek-harness/fix/session-reference-spill
+07245b9e88f9aae1b3508af9933060cb956d5709 docs(llm): scope the record readers' early-exit claims; state that readers trust the static record type
+f66dd78ff74f63e6ef256f7776d824b1144ff2ca ci: route trusted release rehearsals to self-hosted Linux
+81dcacbb44fd8b5211d32019dfdb8462eb6d910c Merge pull request #3537 from deepseek-harness/perf/03-client-stream-fold
+69b1e315b476aa714865b58b59cff2832d3d318a ci: use isolated self-hosted Windows Python runtime builds
+754a65ab2d3f092bbc595a0d5264df85029fbdba fix(subagent): separate message prefix from body
+3a79abedece2e9aff2c4e795eb8937625380748c ci: use UTF-8 Python text on self-hosted Windows
+f7a622115882a93fda819ff71a5274fc223fd622 feat(session): add identity V2-to-V3 migration and writer skeleton
+705f84f9527d52f3c46b9d5b31efbfe5d5678283 docs(session): document format upgrades and advance current V3 fixtures
+4cacd5829dfec1a216cf6d288de98e5c4a7a766f docs(session): register V3 migration in generated config catalog
+d56f2d2cb41a3414fd7bed2107a999080b4dac87 test(session): use explicit void callbacks in migration assertions
+7a1cf325b8d6d758f97743cbac865328db1b0f99 docs(skills): add evidence-driven performance optimization workflow
+82ed0673546b1c2839e02b25cb3d2a3d7a7a167a fix(session): synchronize V3 graph and preview fixtures
+7c3d47d4d6aa9aca82248e3d3254f412884bf553 test(subagent): refresh message spacing snapshots
+6cc750b0067c38e8fdc0920a1f78a1858264558a docs(skills): route performance evidence through decision note
+bad4254d71448679d9f850447dfcaf8a33d5dac8 Rename durable PTC vocabulary with identity-preserving v2 migration
+ceb3136bef32982a4fb0eb729eeb4b038c70503b ci: size PR previews on measured standard hosted runners (#3628)
+a1188bbf3ff53eea7523ae7fd8816a3006e6b014 ci: contain release temporary installs and document shared routing
+ed183b1bd1a5239affe2b9ce1b99d16f14f22f83 Merge pull request #3630 from deepseek-harness/fix/agent-message-spacing
+37d3ec1681ddfea3b057cff6eedd37e07a78b919 ci: address Windows runtime routing and isolation review
+d15aaee2710af7fbd7faec26660397367d5b5804 Merge pull request #3627 from deepseek-harness/optimize/release-rehearsal-selfhosted
+eb4259e405f6d999a1b589456be27c3fad9ef886 test(session): distinguish frozen PTC tags from current inventory
+000cd7e7620f7683dfdcd06a7140a51850212a45 Merge master and reconcile platform failover documentation
+d8d86b7eb8bb2a4743ccf157bcc780cf4a3721a4 Cover PTC dispatches through explicit TypeScript SDK profile patch
+eece831b183a8638d8ed1f8a8809753b1ea0e3ff Merge pull request #3629 from deepseek-harness/optimize/python-runtime-selfhosted
+eaae3502aea4ed25f6790bb7692328431923fc55 test(session): synchronize shared migration cancellation waiters
+ce2197aa1d33d6e6e0c3305e61acf712557f44e9 docs(agent-note): propose system prompt surface and in-history updates
+f75aabcb1640f5cab926ded982eda28bb399d1e5 test(ci): run required benchmarks on standard hosted Linux
+5895f46b345dcbb0b8dc8e148d15daa95efd18c9 fix(session): preserve unsupported V3 events during tail recovery
+e53df8b64a7423bddf613e4ac2aba9b454aec2b4 fix(session): guard V3 delivery activation and smoke writer generation
+b74411d9b809499ee43fb2a9b1621e9bca8ac0aa test(bench): calibrate reopen budget for standard two-CPU CI
+368ec64489e50e5a7756aa4fe8cc554abb607a15 Merge corrected Session V3 base into PTC vocabulary
+e29b6528c330e0ca0743e6c6c5740532efdbdf7b docs(ci): list benchmarks among fixed hosted dependencies
+3bb63f9e4e6c97a23c602d33fd256779a4abfd46 Merge pull request #3632 from deepseek-harness/perf/speed-up-skill
+cd5e872bedb8e0a2690c88dcaf66c3738c94c33e Merge branch 'master' into ci/benchmark-standard-runner
+faa33c0ffa8705f82d374699f53f250a4475783d revert(ci): run Windows Python runtime CI on GitHub-hosted Windows
+6933eccdb0162c32b75b0b1e85eef865b297fa66 docs(notes): record hosted Windows runtime decision, reject proposal
+083cef0aea59230deb66bfaccbe04e01606ddb21 docs(notes): record hosted Windows runtime decision, retire the proposal
+86528bb8a4b617aae37cb2ecf01dde55f041d7e6 Merge pull request #3642 from deepseek-harness/fix/python-runtime-hosted-windows
+50b0511fe1d9cfd1738917b5ebcd9d2cd18dcaed Merge pull request #3466 from deepseek-harness/feat/system-prompt-surface-node-notes
+6f21b112da3f5d2328a06e98df50507e72044e1b fix: wait for the Python console runtime on Windows
+88e4c3c2351711508804aa9218831c5bc74462fa Merge master and preserve hosted benchmark documentation
+e28862db57c2ec6a5aad3c0dcbca354a4579e264 fix(system-prompt): place environment facts after reusable instructions
+6ac32583909aa3c1482e6ba52e78adcda518a6d3 Merge pull request #3640 from deepseek-harness/ci/benchmark-standard-runner
+6d11955852684044ea72a8b999a9ead2ff2d4d4b Merge remote-tracking branch 'origin/master' into release/session-log-v3
+320354a8e0a42ea4e349af1fcb97d1225411a453 Merge commit 'adb605ba17936187320cac20bb145d4ee1edb387' into session-v3/ptc-durable-vocabulary
+573485e8b5e64501d90cab47e7436d633d14a8a8 fix(snapshots): align V3 subagent message spacing
+3cc05093d2da3b766245fac64846694386a4db24 Merge commit 'b2b300f9d5a5df24966a313bd5f9139620c1ae7b' into session-v3/ptc-durable-vocabulary
+1dc50c492e78634a615614b32e0490fba2ae5ee0 fix(ci): harden Python runtime builds against transient failures
+40792330c0d534ef382bbf1fb44c9289323bbb27 fix(system-prompt): keep model persona prefix and place cwd in suffix
+ee956c720d23051a028828ccbedca18195f4ae53 refactor(session): represent the system prompt as surface node zero
+be53ea7dff83d68334496af053578dd95702dd90 fix(snapshot): preserve unexpected request header fields
+8bde91378438e6c4d5b0fefe74f9634edd6b2d42 refactor(compaction): replay the derived system head as a message
+1adcd8203a7a3ef1c7875835d29f7f55347733de fix(token-meter): anchor usage after admitted prompt inputs
+7b182e95e1ff8c8f4e5557bd8a763db56b4d0b5e fix(snapshot): enforce fixture storage for every selected role
+e8e0ec417631a91f0365225767bd2df7c3fb79f8 docs(snapshot): remove stale prompt scrubber conflict residue
+bba5ec5f7a5e968e193adb3d055422cb1b4b6a3e style(snapshot): restore one-event-per-line behavior fixtures
+3607b320c7cde96cb36f65c0ab247c45fef6f7c0 test(snapshot): repair recorded child system message UUID
+c29b97ad945aa3ee106c282453c159ed2608c6dc test(python): refresh system-node and packed restart expectations
+4c9f5efc07ad18dbe24987f16b4be97219889a20 fix(agent-loop): reserve the initial empty system head
+0a02da4ba68bde69cc03809c287e8dfe7ec34fcd docs: regenerate catalogs for corrected prompt ownership
+db5e57347b73b80984986a23c946cc20844683da fix(snapshots): separate historical replay inputs from current header pins
+eba45d9add924ab00d5e356f436bc9b128a267f1 fix(rebase): preserve the complete replay plugin after migration API merge
+dac85fada1743d2bec3f7b86492bd9fcad2e2e7a test(session-snapshot): close pin-turn step before replacement
+b4d8a31ae87e26cb59e810f43901d64d10059334 test(session-snapshot): regenerate current rec-pin recording
+1616c99dae156eef119d058e7276553f7eb40edc test(snapshot): expect rejection of invalid historical citations
+af07d59d101567c6ba474750ed5825592d4b1d1e test(session-reference): capture the actual pre-spill watermark
+237ed693c1426cf07065c5eade87a851608b898c test(session): adapt upstream spill fixture to system surface node
+77b6b10c2139c0f37925c41a9c545d88ed23e51c fix(ui-chat): preserve prompt cards on resumed requests
+616803de74a2611e067c6b99dd0147e450b53f37 test(session): verify the live session-query spill locator
+7901c6bc9cbd1a54382d0b1321c65205c3b860be test(replay): type decoded fixture records without unsafe any
+ae2be09813ae8c953ceaa8ab3136c5e9e3401946 test(web): refresh stale system-message session fixtures
+f92eff58e08f4bf4172291a54eee10c6ca4830ba test(web): align seeded expectations with resumed system prompts
+fe2ac749b91707c8b9f8f1e54fc292f870f00ca6 test(web): refresh plan and goal recorded session metadata
+454b80b90ea246951b863edea3f99395f73ad8cc fix(llm-pi-ai): reject leading system images before splitting
+eba829784bd43f2ebbd179e05e376d6ebadb9cf6 fix(token-meter): invalidate header-based breakdown caches
+7af8a596ceb8168e5affcb21a6654a1d734d640f test(llm-pi-ai): keep rejection assertions type-safe
+8cdc6eba0235df064b00f487c615deb868a556ee test(session): preserve released fixtures with corrected V3 successors
+19fdc374489a2b17f0a56ce8bfee9f09c9065b4c docs(session): define V3 system-head migration guarantees
+1a9bef60c239d9c728a70db81382f5b0372642cf test: separate native V3 writer expectations from historical replay
+a592e70ebc62c23af65d71bdffb64a578cae18cb test: compare packed history using its released codec expansion
+9efabace8681268c51aecffdab9c219071be352e docs(snapshot): separate historical inputs from V3 writer oracles
+e04cfc4c872dd510f9e2fc6d6289b3f8cbfbf040 feat(session-format): migrate V2 prompts into V3 system surfaces
+9fa3c8e7f6451d700fc0b25e626b9f6cea56d676 build(session): link V3 source-validation dependency
+6f5fc05ea3b2618c90a94846be93113685c9d8f2 fix(session-format): admit audited V2 corpus payloads
+e6499cd2cc8dd91fcff02e8fc2ead0c593e485da test(session-snapshot): preserve historical retired fixture roles
+d551f5a118fdad557184fa186ee24500e107bec7 test(session-snapshot): pin migrated empty system head
+3d898cb9547701d4b21e87638ba2b35c558f30af test(session): cover V2 system prompt persistence migration
+c09ca68e6f2d55309a709430e2f9ad1cb7e2a7bf test(session): pin deliberate historical corpus refusals
+ab7f19cd3dab895d35764190a5ebc2cb493ebcdb test(session): refuse frozen pre-step fixture at current open
+8f48afe851410525f0fe325c23751d7d3aeb7753 test(session): record native V3 writer oracles without rewriting history
+6579d53a979daf879f544ad9c53e6806db04cc92 test(sdk): preserve current V3 output and shared-base message spacing
+5c48f8101a52a273808179ff08da21ca23d6b363 test(session): retain positive predecessor migration lifecycle coverage
+9e5f8a1e44d6b60bd31c20cc2e5c03b0ac6b59fd test(session-format): cover V3 durable admission branches
+49e10500920c5fcc5a0754aea10b6c16f8a3b7e9 fix(session-format): narrow repair identities for native validation
+e9957a2671ae2fedf2bb3bc5089638deae803d5a test(python): record native V3 delivery provenance
+cfc10f7e1f28e4cfb9936303b26f0eee613a4ae5 test(session): keep migration assertions type-aware
+449fb9c71e8c72533678e77db42f55af6118c7d1 docs(notes): remove duplicate promoted system-prompt proposal
+ab74a93ed32a322355bda9f460629e9975241d02 test: compare current notification outputs without legacy migration shim
+b47bfa711b171d11ab7fc99be1ccb5b03596b390 test(session): pin structural v3 chain expectations
+2890cf3a189462b52bc532654f835295316869dd docs(replay): regenerate catalog after removing notification shim
+83b11feb703b757a7bf773f488fe8bf387b0e606 Merge pull request #3635 from deepseek-harness/session-v3/ptc-durable-vocabulary
+a4dcff874e34702385d660ffadd20a7c56355cd6 fix(scripts): validate historical fixture layout with source codecs
+5f2c6765818d1c012a279a03df05270a84885559 test(cli): author native v3 inheritance replay fixture
+1439887241f467842adf81b0a9b144046f858f42 fix(ci): keep PR temporary files under runner cleanup
+5c8e1b53de2b203d953330d7c379ed22f0c7484c Merge latest master into fix/ci-node-compile-cache-data-disk
+71b0d83822bfde60e7fdf0bf1cb63f1499dbc59f Merge current V3 PTC vocabulary into system-prompt representation
+4107ae75167ba360429ad408c50b734f487736e7 test(sdk): record combined V3 PTC system-message notifications
+6ad07994196935cba19cc77b6786db12f6c5fcc8 test(cli): seed diagnostic parent with native system head
+e61d9fc0c7202f870c8981386cb9f67a9c6df6b3 fix(ci): isolate npm caches and synchronize ACP snapshot completion
+350dcad963ae3d28b8a7fbf5d150a328db761fe6 fix(test): allocate sandbox snapshot outside temp grants on runner volume
+f50dce316c315aae95ddb38e8f22e5182619202a fix(ci): isolate persistent pnpm indexes on runner data volumes
+362ee7931d9e58d2673d8cc6cb967aa151450ae4 fix(test): isolate recorded spill and sandbox fixture storage
+4158a8118854a3a5baea7a189e95539c8c074a90 test(snapshot): cover cleanup when spill allocation fails
+cc69d5fcac5462d383f9215f53bcb25499e9b0d8 fix(ci): isolate Playwright cache and installation locks per runner
+beb23febfd2bc4288351bcee16b39de8647420b9 Merge branch 'master' into fix/environment-prompt-suffix
+15345af731ff19f51a76215ef1b740098c2ae081 fix(test): synchronize console enablement and verify fresh SDK file content
+f7c5621db696275beeffa66a90b6a4f70ee882ec test(snapshot): refresh current V3 PowerShell fixtures
+237b3d5edf143d1c555d0e5b4f112cee1dc4640f fix(test): synchronize pwsh completion and refresh profile snapshots
+fcbadb07dbc135ef63d29ace9bd183aacd4a85b6 fix(benchmarks): keep Session opening fixture migratable to V3
+c988a6796f838c2d0060bac648f647ab117f2ec4 feat(agent-loop): append system prompt changes on capable routes
+2ce9738564965e2e8b760158b8075e2f9e21f1ce fix(agent-loop): admit prompts under the prepared route
+425a0a55e31e5684bbeb64f336594e2e76316261 fix(agent-loop): reconcile prompts after retry compaction
+40286861367f4f193a47d890647bcb1a64915ecf fix(agent-loop): clear every retained system instruction
+6525195953d19a0f45a433ac362caa5718a95a7a fix(token-meter): classify surviving prompts in surface order
+095c51aa1c25595f539e1a64fe0177a8969b5856 fix(ui-trajectory): compare consecutive prompt updates with latest state
+8d0bf14eb69fa10948626119b93c5dc9500f9d9b docs(notes): remove superseded in-history prompt proposal
+9c8884284f3c772e38c96aea77f084a57dc2840f test(sdk): record in-history system prompt updates in both clients
+b3116b604873f4899a69a693c2558001dabd6cf4 fix(client): derive effective system prompts from surviving surface nodes
+7e253f399533cef286396fc4c64b0a37ba6977ed test(llm-deepseek): isolate in-history cache retention evidence
+1721a9c566b72162e69110c5c02143736c330716 test(compaction): expect admitted instructions on metered retry
+84e94d8394c12599db39d12393b14c95accb5ca2 test(token-meter): narrow optional projection state before checkpoint checks
+99cffb4de7e8b30cc5ad275cd753bd5cb0f02191 test(client): construct immutable multi-block system fixture
+2b363223da55f222864e296f224173c0f39acb65 fix(agent-loop): clear noncanonical retained system content
+627747d8faee6f0237e5ff88e2f49232d88b5569 docs: synchronize prompt admission contracts and repair lifecycle diagram
+326f5ef8692d7f2f833e5e90f1a158172587892a test(session): refresh admitted-input ordering across shipped profiles
+fc1bc118e9562ab2e241cb1a599ebc5b2639590d docs: align generated admission contracts and SDK evidence
+42955a346a53568fa2b39dca7f709cb620ba0a46 test(python): record final admitted-input notification order
+af87e576dacc3ad595383b4e7916fab11c0fffea test(token-meter): preserve shadow-price mismatch rejection coverage
+f7b3f237bdd5fffb3c03774f91ad7268d6b074f1 test(session): target the admitted request header in spill replay
+044777fc2b381e0e46ee58de73d9b0850e68b32e docs(prompt): remove stale representation claims after integration
+6861ac745992a970910d8ca90cc35529ce46aded refactor(client): trust narrowed surface event markers
+c562a4193c6b503d84426bb4bdc1a950257f01f7 test(web): omit throughput for zero-duration skill seed
+85421f31bc3c3171b22c55299bb955c53b8932ed fix(agent-loop): detect first resumed pre-step replacement
+4574602c071a301f6aed9bddf79b576cd51b4dd9 fix(token-meter): distinguish compact caches from parent scalar version
+cea0aff474d607136e81c4b8e5fbaf3167a792fa fix(web): display known prompts in headerless history windows
+621d03d00301fe607547828d6ba2f37e33f3e3bd test(trajectory): pass partial-window state to the assembler fixture
+179699a8c8789bb5abf5004c9308a94c02c76fc5 test(snapshot): mark in-history scenarios as native V3
+1fb187b31eee98a1ccc6275e9919b9fd16b59c57 test(session): record final V3 admission order across native profiles
+b2d1cd942ed0fef24b8b9ba377b909b70836a9e1 docs(token-meter): distinguish projection cache from Session V3
+afec36839d29f179dfabdbe6d13df8099df968bf test(snapshot): refresh upper V3 ACP and Web event ordering
+6cb0bc1e69bf9d571b1cc186cb14b0d6bcf399df test(session): record upper V3 PowerShell admission order
+691861091f4625183a5840b11e8ea35800dd6889 test(python): record upper V3 native event ordering
+8def94aa5ab3c5b9ed08a2bbb4d93e1744479c8c test(sdk): record in-history admission in composed V3 PTC scenario
+31b3f3bc4450481f492e8c1eaf44df5adb60c79f Merge remote-tracking branch 'origin/master' into feat/electron
+f5302b2b4de64e5c460e25106107e201d486991e fix(test): isolate recorded Web browser timezone
+313a8958c4c32e6b8ff2d9f125f6e23ae3f371dd fix(test): pin minimal PowerShell fixtures and wait for exact prompt readiness
+64dfd7a425745629523e890cedb1aebf2d740ebb fix(test): await Client Console subscription delivery
+ab62273984c39b07fb62c88f04d77adec75ad82c Merge remote-tracking branch 'upstream/master' into issue-1424-goal-resume-activation
+571ee55ca6e573f419aa4d8bcf40ed304fd03bd2 test(web): pin recorded Cordis browser timezone
+1ed20364cd398965b2485732982cdc2e7f9840b2 test(snapshot): refresh PowerShell fixtures
+60d3e3206964b293271901804e8c0a6d2cf3ff06 fix(test): await lazy grammar registration notifications
+24f6b30d101f58a1a96b53b827889dd8d7636ddd test(web): isolate browser timezone and settle reference fixture queries
+ed3c7efade634757ab024c890cc6ed4451aca71d test: sync pwsh snapshots and readiness
+8b250f5df56c289e3b95b979477199dc49e4e320 test: synchronize console and shell readiness and pin browser timezone
+b759ad91e8468c2145353fa55c1567f4304ac2ed Merge remote-tracking branch 'origin/master' into xtr/explicit-agent-context
+8551b04e95ea3e9b79380d15f90d571fd2fa0803 test(tool-subagent): use current session format in fixture
+541dc51e9e0377cd5a418e45e7ff34f206797a38 fix(desktop): allow fs-ext in generated projects
+35bc3a3c606821f87433fda184c3bfa5f097c799 test(web): normalize browser timezone in snapshots
+8188dc55f92c9093632e742c0462c8bff4ddc83e test(snapshot): make ACP diagnostic wait deterministic
+31090e240a3d7b23ca12e77e91342d359a474c91 Merge pull request #3643 from deepseek-harness/fix/ci-python-runtime-smoke-retry
+b648d3712f7d00f38d0c4382f5dea65114a49813 Merge remote-tracking branch 'origin/master' into release/session-log-v3
+d49cbed37982be0fbe689f7e55db91cedf89e485 Merge master and retain independent PR CI reliability fixes
+d006772ab6a524629cf858cef206e89dd7e25753 fix(goal): enforce durable pause at execution time
+fbb385c58fca949406e540f08f06989bf1381502 test(web): pin replay timezone and await UI settlement
+ab1ee996852a6e7ffe482f86ea7c9ea4ed931ded ci: defer macOS ARM runtime and Wine checks to master
+c379894af8c69a316c11f0ed408f05628844072a fix(ci): isolate routing test setup and correct scheduling docs
+fd9debed10394ab4699c250bc82dde0edf98b09a Merge branch 'master' into fix/environment-prompt-suffix
+f7a18f49ffd815060f6cb35da7bac8056ab95cb4 ci: isolate compatibility Node jobs on self-hosted Linux
+a137256f809ad15bb27a2bdbeec66a32d86027ea ci: set compatibility toolcache after runner environment export
+03ce9c2ab36e5aaa90d70be02ca4b21394342378 Merge remote-tracking branch 'upstream/master' into issue-1424-goal-resume-activation
+ac4fa3d6f5cdaaaaf6e9be92bcaac4f30bc152e4 docs: clarify compatibility runner scope and verification
+a7ea2d74de85f61a70ac050ab77aead7dfb2797f docs: remove redundant compatibility runner guide
+694d250f7ad92bfaec5536509090931ab8d9ae67 Merge master and retain upstream CI synchronization fixes
+78ee959a5bd2aef1afe98b95a7e521fff3dddf79 Merge remote-tracking branch 'origin/master' into xtr/explicit-agent-context
+403b978c6c46596222fb6a3da6120804a0945137 Merge pull request #3626 from deepseek-harness/optimize/ci-compatible-selfhosted
+3d54bd6d586ac33cb3208ca70da207eeda380ef6 Merge branch 'master' into fix/ci-node-compile-cache-data-disk
+0125f9019e6171d05842aa90beab85a7905ad66d revert: remove pwsh changes from desktop PR
+fdd6380503d4359e3e5f9ab2d00aaf5539e44601 Merge latest master V3 integration into system-prompt representation
+7340438fe7cae5d4174d22839f15262f6bedd1dc Merge latest master integration from system-prompt parent
+f68c4239e4ad21ee813de46882db8bb332bd6688 Merge remote-tracking branch 'origin/master' into release/session-log-v3
+ef11a4e00793fda1e39c4f3c7b57235887e70b83 Merge pull request #3644 from deepseek-harness/fix/environment-prompt-suffix
+76cf59223413a2fa5f08bc178836a0e3b5c8f8b8 Merge commit 'd1e5b724d71e9a6f675232caa760395710826b81' into feat/system-prompt-surface-node
+25b28a14cd11badb329de413712f887c3ad2ac94 Merge branch 'feat/system-prompt-surface-node' into feat/system-prompt-in-history
+78f03ffef9823228acd1bcf9ae93da6bcc15458e fix(session): cover V3 admission and keep compressed fixture migratable
+cbbbb30214b84febd78e0bcb15ca6d74335c1cf8 Merge remote-tracking branch 'origin/master' into release/session-log-v3
+74a6d30aba7da3caceda44ceb7d238937058f71b test(cli): seed resumed native V3 sessions with protected system heads
+4879a8a33ab8f772d9f25577794a85d3ce644fae refactor(desktop): remove unrelated changes and own host dependencies
+6d55da993d8b691812f19c57bd42ae4211c3dfd4 Merge master into feat/electron after scope cleanup
+fa6bf62a981bd10d0f9ecd234954d4f74bde9bce fix(chat): settle pinned scroll deliveries before layout growth
+6c4cd033e3b51feb65a88caad9cb2a61748cafed Merge pull request #3280 from deepseek-harness/fix/ci-node-compile-cache-data-disk
+e335d6af08d4c26c1d1d4a5223bbd1af4168f6ec Merge V3 seed and coverage fixes from system-prompt parent
+c599ef87c458b28bfc7b15ee6e9e978e1a941677 test(perf): baseline tool-heavy backend workflows
+1507f828887b55cad8b65fa81c0381b3fa476469 docs(perf): record backend CI evidence and align workload prose
+daa7f60630197efe8a7636a3b423dac9f06acda4 test(perf): calibrate catalog for standard hosted CI
+2f0088357d09df68b5577ca12b43f70b612eb892 test(perf): calibrate tool continuation for hosted CI
+84914c316dfed4722e1b861f10d7fb172b66833e test(perf): calibrate baseline requests for hosted CI
+73edce1ae7ad0cbf8813d4d65b288317a16a7f5c perf(agent-loop): reuse proven message freezes per agent
+8e270960ed99ef16800174f0cc92ef4008044d34 test(perf): calibrate request history on standard hosted CI
+e2b81cf8bfcc75fd1d20447ee4ad1aa5e61f8d29 docs(perf): distinguish hosted request and catalog budgets
+843c8723e5694a18c608d67907e4966213990a07 docs(perf): link active hosted request calibration
+6ad74db2e35a6c18e04cb2ff5dbd6cdb2e1e2e6b test(perf): gate long-session browser and active reconnect workflows
+7ac5e0824679849c06ec7118c88ce5fb5d7afe03 test(perf): measure real history streams and live input overlap
+2927034ffeb647a6f733e77de10c31a2ef0bcfdd test(perf): retain successful CI measurement output
+936958587216231974bba57087df60129602db22 test(perf): bound browser observers to active response
+82cd35467ab55a89d02f1d59f4f5d5073242b58b docs(perf): record first frontend CI calibration
+00e452aa03d7ee6e5e2351e0cfd614f50eefdca4 docs(perf): confirm repeated frontend CI calibration
+c51c16cdaca831389a90e82f550c8086435d995d test(perf): respect browser failover provisioning policy
+0ac1d4d865f7d74ddd3f3a49d2e1e11e320aad60 test(perf): align browser provisioning with hosted benchmark runner
+620c2b0b271ab317a5b91e24bbb537408778618f fix(benchmarks): calibrate hosted frontend endpoints and preserve input overlap
+1a3af89a8d0acf555559db3142cb8f7b253e0585 fix(benchmarks): calibrate hosted paging and trajectory endpoints
+cbdf32447e8986f41d7db9978bcb71ea086b2a6b fix(benchmarks): calibrate repeated hosted browser open median
+57885bd73d5fe7dc71dc6b4dbdcf7275e5d0909c Merge latest master prompt placement through V3 integration
+d3ed6d6f88934fab81f96845608cf1c2005e8ece Merge remote-tracking branch 'origin/master' into feat/system-prompt-surface-node
+a4e445236fee695c33184e6af97c158d25757aac Merge latest master prompt placement into in-history updates
+421e3b075cdd5a6776806ffa4ff29890f82f3ae9 test(subagent): preserve lane budgets and await teardown completion
+9ef426d7294eb4f788744b6e750a91892d4efff4 fix(chat): keep genuine near-floor scroll gestures pending
+d43d93d89fe839a0bfe4b0231fec4fc6810eb1b4 test(agent-loop): use current persona slots in admission harness
+21db102cea652e7e6b80210be9a60a2990f5d055 refactor(ui-goal): keep activation slot types private
+ff33f79eb1591be145cd2942e63c2e643feef312 fix(session): migrate legacy code preset references to ptc
+086b94d4f6eff05908968ff7c754faef129a3f6a Merge pull request #3655 from deepseek-harness/fix/v3-pwsh-current-fixtures
+a4f6250be9ca588ad21b08db3e244c4fa727b9ca Merge remote-tracking branch 'origin/release/session-log-v3' into feat/system-prompt-surface-node
+c1be95a0cd883fd043264b36077c6bede2d56972 Merge branch 'feat/system-prompt-surface-node' into feat/system-prompt-in-history
+73865675a41321130f5df2be696010b659ed4d8d docs(system-prompt): combine cache guarantees in model-experience field
+2eccae56316b26ac24c91cb7bed1a765877be7ad Merge branch 'release/session-log-v3' into worktree/session-v3-preset-rename
+12dd4293318bffc27a9d15840a4d835765c31915 Merge remote-tracking branch 'origin/master' into fix/spkv-root-latest-master
+dda0f059998a714316edcfb9b1011ddbb74de553 fix(web-tests): generate native system head before chat users
+4a9c180e2d24a20f739b9c8c9ef8b4974a494b79 Merge branch 'master' into feat/electron
+d1e925445451aceb5f2f67cae710a438f1f66d1f fix(web-tests): author preset and stats seeds in current format
+0ff0850678ec3ca6ab4fabcbe353424a1a52ee48 Merge branch 'feat/system-prompt-surface-node' into feat/system-prompt-in-history
+1ca0df2e24d8b34e2c53c08f9e67111c62cf96f0 test(python): synchronize advanced snapshot workflow membership
+5b2c9ba2d2d13fe7922e21cc49e39fb6bbacdba3 Merge pull request #3666 from deepseek-harness/worktree/session-v3-preset-rename
+a1d11f213fa34c044a7be65ed5ae0a52e81d2503 test(session): observe shared waiter admission before cancellation
+4023879df7772b6c83f3b4c17c7594b980804dc9 test(codex): finish captured cleanup after sibling failures
+b53c95e4586783ce19c81c9c4eeb985edcd3cb9a Merge pull request #3664 from deepseek-harness/fix/scroll-follow-pending-sample
+5608528e1427de9174edfffd87343719f9bfc8ce Merge pull request #3637 from deepseek-harness/perf/frontend-scenarios
+8d0f45febcf3beb871724b599cb00884a8a8d08d Merge remote-tracking branch 'origin/release/session-log-v3' into fix/spkv-root-latest-master
+85dcebcda4510093dd0c8fd2707f8a4361b33f98 Merge remote-tracking branch 'origin/master' into fix/spkv-root-latest-master
+95400aa52cd0e456fe691a2b8655d16e2865341e Merge V3 preset-reference migration into system-prompt representation
+19d167cec2bdb7fb567bf1ef0246053fca6d81ee Merge latest master request-freeze and frontend performance work
+70ae2354d03e74cae96f0f7a186b6b4f0e788807 Merge latest master performance work and V3 preset migration
+0d0914b81438080a733c5c23c3b3dc2cc9c2c397 fix(agent-loop): import message type for freeze provenance
+f7b1658ff244fa305416b9afd5eba732cf63af05 fix(benchmarks): reserve system heads in generated V3 histories
+275ff714cf777c23cc4e6fcd8652676f6885e8f5 Merge branch 'feat/system-prompt-surface-node' into feat/system-prompt-in-history
+9da174c3043aece0f71eb972dc2133d13e5c52a9 fix(web): display local media paths referenced in session prose
+96ead6091d59e1b4aaa6613e364e6f04426474ac feat(subagent): align human inbox controls (#3223)
+e2b3800a7ea1f2e80684d89b6b5f1c2c218ef08f fix(python): challenge fresh file state in live SDK smoke
+ce9f124e0e2b4e022ad71af83586b0eaece52fe4 Merge branch 'feat/system-prompt-surface-node' into feat/system-prompt-in-history
+2aaa88ca1a6613929d14adcafdc7f901884f4a19 chore(docs): regenerate config catalog after session-controller import shift
+fffd39b10114e2a40835471983a31dee6ed49e5f Merge latest master human inbox controls into V3 integration
+50cce9c28db3490aac30bcd4675b74e9713305d8 Merge latest master human inbox controls into system-prompt layer
+b7f66f4440f76359253050a843d381fe720a6ae1 test(sdk): record native V3 human-steering inbox transitions
+d9042f61e1ed165af6aeac313d013cce8d441fc5 test(snapshot): refresh V3 human-steering child recording
+7ebde31dde6c66c95c0477b5ff38b2ab36593e13 Merge current master human inbox controls into in-history updates
+4ac4e3d014c9691bb6f757424ee19734b8ea6d12 Merge pull request #3668 from deepseek-harness/fix/windows-subagent-teardown-ci
+0c823f4b6fea7313817933fbf480c46cfff58fd7 chore(docs): re-record config catalog translation-pair record
+7a715e7919269f590161480266144bb9b6fa2a87 refactor(api): serve /api/file media by extension allowlist only
+b2a3a0335dbfd11cb49417acc5f8c07a292f5d3e fix(typert): follow package-local forwarding modules in cross-package references
+5fd247f64c7b9e0e3cc9d1834fbfe9c0643a74d8 Merge latest master into feat/electron
+b685a9a6b09d8dd302f8fc0124564d4680f0f22f fix(api): satisfy oxlint same-type operand rule in range header
+a062772d7dc8fe2719592ad5a688f5238cad65d8 Merge latest master teardown and migration waiter fixes
+476918da0a20683a167ab94d81243e4e7e684c44 Merge latest master teardown and migration waiter fixes
+b0ba955be2fae8945061eeb9b969a405bca4ba5c Merge branch 'feat/system-prompt-surface-node' into feat/system-prompt-in-history
+48cc1cf1d618fef61dd70666122787b98030a4b2 feat(agent): announce model switches
+f81c5072bdd885b3f8a8d438337e6bb49aeaf7be fix(api): close coverage edges in media-references route
+4b009e7f942425f537ece03b112b6220cb0e1abd refactor(api): shrink media-references surface and reuse maintained libs
+930e4d67ea9940c949520f851de7d37ffc088e64 Merge pull request #3669 from deepseek-harness/fix/spkv-root-latest-master
+7ef325619f4bfec81681e72aea0dadc3a1d694af Merge branch 'master' into fix/pr-ci-reliability-20260906
+ead14339bc2908d8764300b873fe35c816a3058f refactor(ui-chat): fold local-path media mapping into AssistantMarkdown
+cb602a0df566ac1321e56784e4fbe56dd7cbfceb Merge pull request #3507 from deepseek-harness/worktree/3410-model-switch-notice
+f277ec0e0627ecb3ce8b2804f1a3ae39b9f3dec6 Merge published V3 root after master integration approval
+d718965f005ca0c7bff5d53ae8262828e35c81b6 Merge branch 'feat/system-prompt-surface-node' into feat/system-prompt-in-history
+3599ff51199240b6403ebefe3e75e05b78294ce0 Merge remote-tracking branch 'origin/master' into worktree/typert-forward-reexport
+5b91dbfba019059fbd5cd0755a22a9d3b07fc28e perf(session-query): materialize live observation events on first read
+a7661e2672b408e5194220456f2595e750813620 perf(llm): scan file content without per-array callbacks
+201987b374dea255229f0724749a33a14880b3b5 perf(llm): scan file content without per-array callbacks
+09e56a4b4a423c0f82b5833e47b6dac6aa8f73d9 Merge branch 'feat/system-prompt-surface-node' into feat/system-prompt-in-history
+9baebd8f3f3d0b20e11d25ccc250fd0963c1430f fix(benchmarks): keep composer focus during streamed input
+dbd28a8071a89d41e9055b79c06eacd4736f2e8b fix(benchmarks): keep composer focus during streamed input
+2c2092e2c6071e8f8cdbf76e870327eaca77f499 Merge branch 'feat/system-prompt-surface-node' into feat/system-prompt-in-history
+1780d0d3556ed829371baeb7a645530488d7ae87 Merge remote-tracking branch 'origin/master' into xtr/explicit-agent-context
+8b8a051c7a3846ad8e0da88718b281e833dd71a0 fix(api): address /api/file review findings
+4ee338532ad1b735d9e18315c727767a3a00a393 ci: retain shared pnpm store across runner instances
+9d93c570531df669399c4070373e940cfa02737e Merge pull request #3672 from deepseek-harness/perf/session-observation-lazy-events
+e9f1b6c53ef959763bd33945c483383672af8084 Merge remote-tracking branch 'origin/master' into codex/subprocess-native-containment
+9292dd8a2db2fdec2eb2a5ba73e4301d9a122cfd feat(workspace): open the workspace in local apps from the web UI (#3409)
+5acf3cd09ba204bb32a6cb6a71f73ed6b405924e fix(typert): try explicit forwarding edges before star edges and reuse the resolution cache
+ba4a536030fe8f84fa36018271a62432110e4cea fix(api): honor only bytes ranges and ignore malformed or multi-range headers
+0f83a2cdc08814d01c532111dfe6ffe599dddb35 Merge remote-tracking branch 'origin/master' into codex/subprocess-native-containment
+67c5136c7ea1c2a7c1088797d8db2eeeef1c05cf fix(api): refuse non-regular files before open and bound full streams
+89f4acbd744368a339effa8efc1e2171d05c8fbc Merge frozen master 777d73f into V3 benchmark repair
+07b9d2e780f6da8cad80428bf27aee1e2685b556 test(web): await admitted queue image before snapshot
+c4ad45378d2188d0059b14dc6727b180b7b30d36 test(web): await admitted queue image before snapshot
+f91f33094a6f1b8acae44060dcd1d15dceb7b374 test: bind publint subprocess lifetime to lane cancellation
+710823fd24473c264ba6d40a886588e74ca7d7ab Merge current master and benchmark repairs into V3 system messages
+d792a694efed8824f9f5f5493608b4edfcfe053c test: bind publint subprocess lifetime to lane cancellation
+153d54a2f207fb47990cc4c2500b739796c0c560 ci: retain shared persistent npm cache
+0deeec02c419a2795751fa0096bfd11c01f57967 Merge current master and CI readiness repairs into in-history updates
+f4e10a61b160e496057c5b78b29a80fa9fe39669 test: make publint assertion callbacks explicitly void
+3ae70558e7faf7843626288ce2cb11b556b31bd8 test: make publint assertion callbacks explicitly void
+b000ca44f60f03c2db86e0c36c58fd08a662dcf6 Merge branch 'feat/system-prompt-surface-node' into feat/system-prompt-in-history
+c7e29f4b68be8d77333a707757427e8b1d516935 Merge pull request #2825 from deepseek-harness/codex/subprocess-native-containment
+1dc95884a1ab0eedfa4ead94e2eeb55ff604c37e Merge frozen native containment master f6132bd into V3 repair
+90307dd7d6f64f17d84b65bd28b40dbc6607c7e3 Merge native containment master into V3 system-message layer
+89bafdb9453ba28209504239fda81193890e0645 Merge native subprocess containment into in-history updates
+f3c98e45397e0e7b393e28f09519c3dc1fdfd727 test(web): settle queue tooltip and select exact seeded session
+9a5ed6fb60ef21fab0876be330fe60931384b270 fix(web): make the running Send button follow the busy-Enter setting
+23b48b7577642eac9b92b2a9c8ca42122130de5a Merge pull request #3678 from deepseek-harness/fix/v3-benchmark-reliability
+4bcabe6da463fc74716d9f4222bb981e998e69a0 test: pair spill cleanup roots with concurrent run results
+e379fa8bddd68c52b2fad715b70a9a86f92eaf94 release(dsh): 0.1.3-alpha.2
+2f630626b89012485fdcdf36a1e2c1d62fe62a47 fix(web): name the running Send mode only for a plain message draft
+98c043ab0faa787a70d629b887e281c4b5f73d4c Merge branch 'master' into fix/pr-ci-reliability-20260906
+34832ddb2efa3a6334eba42a0ff9dd6c2c973dd7 Merge published V3 repair root into system-message branch
+053bf8aaad3dd8f1edcf785b95a4a5acfa0ab385 Merge branch 'feat/system-prompt-surface-node' into feat/system-prompt-in-history
+82a5fd61a7cf5c293cec4bdff68f455398d685e9 Merge pull request #3685 from deepseek-harness/worktree/release-dsh-0.1.3-alpha.2
+8d0d729091cac7d2cf5c818b479b48ea353cf986 Merge master native containment updates into feat/electron
+016af7c67bd6eb9ca4af214dd82e6a5b8fddcfdb Merge release 0.1.3-alpha.2 and reconcile desktop composition
+dd25e1e6b389423d2f3ae021783c0221ac80c352 feat(cli): create profiles from shipped templates
+0348599f04a55e0f2189b17829c705c82af29ec2 Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+8935c3d725b16ceb8ac28d5f75398af26e04993f fix(web): keep plain Send while a file upload is pending
+ba05b7d49de63106afdd7efcf741cca1985fae18 Merge pull request #3413 from deepseek-harness/feat/electron
+7a7b7d5a534cec26f515cb757a525e54d6d8d070 fix(cli): make profile template creation exclusive
+2555474a7d778a588aa571cab1bed444af6d33c9 refactor(cli): simplify profile option forwarding
+753effe602b5c49598843614d1caa33b6689dbf3 fix(bench): rely on testkit session projection mounting
+68643a07f966c02f495ee3ddc3309a5f9d9c9e3d docs(session-controller): unwrap zh readme paragraph
+267d2f8eb904862cc4d1a5179b5de9b3e33fe3b0 Merge remote-tracking branch 'origin/master' into turtle/from-default-profile
+2cb684c754452f4903c1d19398c921daba956658 test(web): pin the failed-upload Send label and document the bench mirror scope
+3997f36999a186e9a24944f162f3fe0882ccd8e4 feat(client): replace the stats strip with two icon pills and click-open stat dialogs
+dbb9db5f343235a818062d67b192a65bdfe94e1b docs(session-controller): refresh translation pairing record
+4a89178785e594630ea372b4c2d45b16a487df13 fix(open-in-app): hide workspace app actions over SSH
+ad38d636265ff442abe50b4922e35c6b4e75284c fix(client): ellipsize the composer placeholder — one docked line, two hero lines
+b0a7d2ce3b4c19d7452e364b2d7acbfa87e707ed Merge pull request #2672 from deepseek-harness/xtr/durable-inbox-recovery
+f7b6a13321c1a3c2b89852deb069722560822e06 feat(fs): define bounded byte-range reads
+bc2174e3aa48f76ad328538caec122fff1f398b3 feat(fs-local): implement bounded local byte windows
+4429763445d70f3015dfef0115177d39570eebae feat(fs-e2b): implement cancellable sandbox byte windows
+4a4b86d9b044b9967cf532f41f9802a9109c18d1 feat(workspace-path): define Session and absolute file resource addresses
+3a85ac6d8161b845edfdbc8ce51477da6fe2dcca feat(resources): add Client resource registry and retained subscriptions
+4ce4f0bac4ef9b1b19e7c06347c94b2711e24b61 feat(workspace-files): add dual-face file API and Host-resolved resources
+9f2b07cea85eb0c445156bdcd1f1e62fbce58c2f feat(remotes): expose workspace file operations to the Client
+9e7c570094b6c7cd90b1a8606e073242eaf00d73 feat(dockkit): add reversible docking engine and pointer interactions
+9241e10a47f6633042d5d681cddad8a1116340a3 feat(layout): add responsive right column and width concessions
+49095507824431a31638b2ed54d9f6e54878a486 feat(conversation): provide the session header corner slot
+b67e0a838cbc50fbec8b8b6b9b66cc4486766c09 feat(sidebar): add tab navigation, injected information, and fullscreen shell
+b24ebc8cce461e6df86413ac9cff8df0f0966e89 feat(sidebar-files): add lazy workspace file tree tabs
+d10af0654f191cdf309ca8f7ef2920002683267e feat(textpreview): add paged file tabs and retained reader state
+7e017046caa8a7d12c7570a079a483d2f0b9b8ff refactor(chat): open file resources in the Sidebar and remove Details
+108a7478c9b9b86b342cbc1e7a19daa2efbdb9fd refactor(tool-ui): route file navigation and remove ToolDetails
+a7c7e996522c3d226b0592455c66355ab5c9d86b feat(deliverables): open produced files through Sidebar resources
+508831624fb8270ecfe2fddf3e6eb1152f4eda29 chore(web): assemble Sidebar domains and register workspace packages
+bd4199f48c7ee483de361b7b012e167ed510342f test: cover filesystem resources and Sidebar domain behavior
+fe5aee7e718f558adfdd0ab532cf055795957e31 test(web): cover Sidebar interactions and refresh recorded UI expectations
+4fef2786a977cf58674e6c7631cac5588b6bb9a5 chore: regenerate catalogs, dependency lock, and translation hashes
+5e19460c28272f7cb20747267831a117c7ccf620 docs(notes): sync the continuable-subagent Send clause and tighten the label-state enumerations
+e939a482e90e8cfb7ebfc964a27f6f153c3afa33 Merge origin/master: reconcile placeholder rewording with steer-all and note archival
+755e3ceca730ffab9a353bbe512df0ee4becd2cf test: cover file subscription and tab lifecycle edge cases
+77690644b559a5f2f5bf15bbfc8a33db96c9594c fix(sidebar): show full file paths and refine split and fullscreen controls
+4a60189a6368cf4049033ea26f47d078a5643059 fix(layout): prepare destination widths before fullscreen retreat
+08cfbd89701a31cf5bfa9b447044499e341d39ed chore(api): remove stale session controller file dependencies
+4eebc70df29acfe1bc194c5a94c22cf8cb8def2a test(agent-loop): account for route switch notice during prompt admission
+de01754f1ebf5148440096e1e446310f285e3107 Merge pull request #3588 from deepseek-harness/worktree-sidebar
+3ef3bc17c543215b44480a8c60d91f0542bb22b6 Merge pull request #3483 from deepseek-harness/feat/system-prompt-in-history
+5b039c179687d5eb54c2998b082eab33304312fd Merge master 822041865d into Session V3 release
+ccb861d0e2b0dab932b8069146453f28251a12a8 Merge branch 'master' into fix/pr-ci-reliability-20260906
+e73906d06f1b62675fd6810d4397ae47217dd51f test(web): await seeded workspace membership before selection
+47434e8554f8d7862e9961285a5e81ccd8bcd7d7 fix(session-format): align v3 migration with merged release version
+2c45dfe71e39e2b874ba514ccc79414b6275b2bd fix(client): address review — pill accessible names, static untimed pill, exclusive stat dialogs
+eec9c3b69478feb4f8542d121dd1d8d3ee32e212 test(snapshot): avoid duplicate projection registry setup
+256afa848c9bc9a74e8434bc34301b79c6d9babb Merge remote-tracking branch 'origin/master' into fix/input-placeholder-stat-ui-polish
+c389f96bf3a9b6807cb71ed6bdad5849be0df6d8 Merge pull request #3713 from deepseek-harness/fix/workspace-browser-race
+a5a9746277c635a748258072e06f6e3910ac906e docs: explain Windows and WSL development environments
+bbd899d47824f2a94e46ec1691c2f6fa71bb0130 fix(client): count IconGaugeOutline16 in the icon-set pin; keep the hero headline text addressable
+7005d500b4c0ba4b3a2fac8b8f47ed24d258c959 Merge branch 'master' into fix/input-placeholder-stat-ui-polish
+0ffbd658431dbda5b042a708aec6bd5ea64bffb4 test(web): follow hero headline nesting and Tool definitions copy in e2e
+76235ecfb70e62ecb6a404496b482691f374b439 docs: align Chinese WSL use cases with English
+ae19d9383b55d34be7156ed7231f51036a3e12ee fix(session-controller): reject empty prompts
+08edb3cf10aef21fd997d83c8d2f949c1e3c7cb7 fix(agent-instructions): surface root marker stat errors
+99a49712e63b120d89014d3f9524b5feb2d77114 test(agent-instructions): model provider absence in resolve
+40b20be9f5dec568c8e53563e3cd6d61d8ad4294 docs(context): record root marker failure policy
+a56619d9f79fae81d13e6870eed89076bf8d8689 fix(session): reject empty queue edits
+514f92ba53d909878cd6ebe16ab1c89e22e1e54d Merge remote-tracking branch 'upstream/master' into issue-1424-goal-resume-activation
+7f47954cadeac0987dfadedc36de55208b578210 fix(open-in-app,directory-picker): share inherited SSH detection
+012475f7ae810be2d4e5b62d12a85cc016a53c66 Merge pull request #3699 from deepseek-harness/fix/input-placeholder-stat-ui-polish
+28d478a80dc7a77504fc81cd4180cc52f9cc891e Merge pull request #3681 from deepseek-harness/fix/busy-send-button-follows-setting
+c153123bdd66f73bfc9d38190bf7cce7d4bebbcb Merge pull request #3720 from deepseek-harness/docs/windows-wsl
+a8d960ecb65f2c431c58b0206a993ef66fc42224 Merge master into fix/open-in-app-ssh
+e970408acd8c6ae08a7bcd1381b545f3bb3a2edf chore: automate static review ownership
+371dce2469397d22b808159a53266e78593da85a Merge pull request #3523 from deepseek-harness/turtle/issue-2421-reject-empty-prompt
+72631936556ebf88c38146875d607b2b6b9e1855 Merge pull request #3517 from deepseek-harness/turtle/issue-2029-root-marker-stat-error
+e57e7dc57f8b4e268a988aaa8b662cccceb0e198 feat(skills): record browser GIFs with Playwright video
+614cffda8f95514c86a02b81f1386ef06723a47c docs(skills): preserve browser-control workflow preference
+b52966922a29e08ebd82312adf75b2251e1d6a11 fix(api): serve bounded files through the filesystem provider
+88ab8e91332f0a1a868bf1a899190c22ed1f0351 fix(ui): show authored text when markdown images fail
+5b8c8b781feb9a94a5a057364e5e5787bc1e57c0 test(open-in-app): scope SSH snapshot to the session header
+dfae5f0351a54cd3c15ce9627768a34f748a50f0 Merge pull request #3686 from deepseek-harness/turtle/from-default-profile
+0dc6ce26d7d38ccdc23fef6dddba47e75e492b74 Merge remote-tracking branch 'upstream/master' into issue-1424-goal-resume-activation
+40c5ef4fc3c8e4adac8e0bd8a1c442d41dcdc3d4 refactor(api): reuse attachment limits for file responses
+b08310ac1d75227ead893e50c6d53d5deba575c8 fix(web): strip bold markers from think summaries
+ea60e1c8a73b70e2abbd80d3fae496e26b7cea8c chore(web): remove command description gate
+612afd1eaa42a323d477f75702b472ac8fe1f291 Merge pull request #3726 from deepseek-harness/skills/playwright-video-gif
+66ac8cc094ee2207dd1887ac9d40a999c449a8c4 Merge pull request #3485 from deepseek-harness/issue-1424-goal-resume-activation
+0bb083d89800f4aeed5e008d79154f5106603c65 Merge pull request #3646 from deepseek-harness/fix/pr-ci-reliability-20260906
+96fa1dfac89f321fc2e2bdc223a761a77166dbc3 Merge pinned master 84bde6c7 into V3 readiness repair
+2b64ea5f1a9dba739579c1dfa34c37850a6a26c5 test(web): align V3 seeded stats with absent decode timing
+f121b09fb191bf5bfd0aed6d7c4d02e269f5f0ad Merge pull request #3680 from deepseek-harness/turtle/strip-think-summary-bold-markers
+aed565f382dbeeb60587cbfae4c90b09eaa18b1b Merge master into slash-command-i18n
+154b2a3cd694128b670c0c23a4f63cc86243f8ac test(snapshot): reconcile V3 fixtures with isolated master replay
+1c06f1d3ac9fa2dacd5f4ab4d5418a005bc07644 test(snapshot): declare spill command fixture plugin types
+06c01ce2e8860a6253ac7bee5c56f8a0c1fd39dc Merge pull request #3684 from deepseek-harness/turtle/custom-review-ownership
+c41b2895eb27afaddf86e9aa05c0c826d9c085da test: exercise request-review routing
+f1c1ff5a08409c94b992e1b95af14ae2aed0d772 docs: constrain package README summaries
+d05889919435a894ebaa4a3bcdadab40d1f7babf test(snapshot): isolate child-turn diagnostic timeout from harvesting
+0707f4af3e84e6f6e13f9c73a38d98bd0b7c323a Merge pull request #3700 from deepseek-harness/fix/open-in-app-ssh
+fe834c7f92b69a0a7bd527bd17e661a3f557781a fix: reconcile automated review requests
+3f1f7da7c355a355f4c3a57339b643822a5dc333 Merge origin/master into fix/session-prose-local-media-display
+cb3df20cf3cdcd06d32aa9f221238d48d116b2f0 docs(api): remove obsolete media path restrictions
+0b43d89d5f08e0edda163053a49f4ceacf2f0cbc fix: cap review owners per module
+6c0e258b27d89b58139ce424043a0bd17ac28596 test(web): await observed browser settlement in replay scenarios
+7d8546b4db3e4a10d48c48b8bf0a8fa3a265cd95 fix: cap reviewers per pull request
+be9d401c33fae665007fe399c8ec5bef45e59f86 test(web): await action acknowledgements before following controls
+5e7c984663d0cd2310901dfa81a263f880ba549c Merge pull request #3752 from deepseek-harness/turtle/request-review-smoke
+e19f62a553b4bb3dd6e72db05400a64d9dd9e18d merge: sync origin/master
+f37eb3de47665a55a903ff8d0ec06a4ebec6bb27 test: exercise request-review routing
+a04bffb7ed93badb090f0c7b055a80ccb0bdd509 feat: rank review owners by changed LOC
+a189104d812c416fe23c5196904bc1e43677c6cb docs: refresh session controller module dependencies
+8932b8670e0282cef4716ac3300cf0819c5a678a test(ci): make Lefthook lock replacement deterministic
+babf22b4cfc58aabc1935e542d9d6301e03f56fd Merge pull request #3557 from deepseek-harness/slash-command-i18n
+f96fbba2db4455304502cdcd1be12eabaf2c3046 fix: cap counted review requests at one
+f9ec0c28ed9804bfdf7f7651bcbc9194052dfbfe Merge pull request #3753 from deepseek-harness/turtle/package-summary-100-word-gate
+f8828b2ce1e839b6e63e02de5d286ed745817bc1 fix(ci): auto-repair invalid Issue labels
+614ff048425f7a5ad0e2ea358a0ca4a1bf7d6bf9 fix: reconcile automated review requests
+999b677e18bcf9b0f2eb745ef5e7d85a7f837c1b merge: sync origin/master
+e33834f5228a301c4551ccf61d5c529c3276e6d5 test(web): await session and responsive layout readiness
+1d6b898ef6e29e396cc7e022e88dc90dbfa5318d Merge pull request #3764 from deepseek-harness/turtle/request-review-live-smoke
+189d96920cd6c2c5d6b0508a98bebfc1d381d8bf Merge pull request #3769 from deepseek-harness/turtle/auto-repair-issue-labels
+3aee29c657c0a5e304645cdaf2c461216c217ee6 test(lsp): hold queued source reads behind a response barrier
+839a6fa995349ed8bbabc076958ffab952909434 test(web): await mutation replies before capturing settled UI
+f1f6ca1c77314fecf1ddf8241d524a89bda09267 feat(visualizer): add dormant Host capability
+b17e90f78afd3a43c61bbf4fd81c73a4140a67fb fix(visualizer): validate fragment contracts precisely
+7729e0ffee07726eb44a24bffac1548264011722 refactor(visualizer): simplify host contract
+b75b8ce49e4fa06fe04a7dcdf127d00ebaf74454 chore(visualizer): align release metadata and snapshots
+b80e22ec2dfdb9789c69ce9b30a29b18cb38d5a8 docs(visualizer): require self-contained widget sources
+e7dc1322a38f57e2af7e09a78d5e6e657224ce04 fix(visualizer): leave motion to presentation choice
+934d4b6501e990d25a43171e7d1ec5fdb727929d refactor(visualizer): trust settled widget contents
+8e468c13a05a65059af49a00e231e8b0d1d54b02 test(visualizer): remove redundant host web replay
+7cbb052661bd2553dce36cdcc86708bb960e0b99 Merge pull request #3711 from deepseek-harness/integrate/v3-latest-master-for-canonical
+657e68186a34b75fd97a68220713ba9ada4ff69a fix(session): canonicalize V3 envelopes through adjacent migration
+c28639587ad40b915e6550736f99bf73ee9c9956 test(session): keep historical fixtures outside current V3 encoding
+756b10fcfe391ea3b890d36c983f06d7a9f8b243 test(session): cover composed canonical and PTC restoration
+b7622e9f13006b848325b0707077475c44f09b69 chore(session): refresh canonical API catalog after integration
+920e91798803b38bb75619e1f6500d6da43ca3e2 fix(session): retain unknown required events for vocabulary validation
+c4d8ee5ff2db7ce2696bf8965f51533f39611d91 test(session): canonicalize headless expected system replacements
+53f42a781bb5404f72be05b563fc482de6f91164 test(session): close canonical envelope CI gaps
+3fc9027a01e5030f1e59cc6d7a20822e2161fb60 docs(session): refresh replay config source location
+ef8f166ccc4002b708b3faf913659ddde5ba9626 test(ci): preserve the lane budget for invariant verifier children
+314ccf08af50c030d29309c0dacc2fca1037d6ad Merge remote-tracking branch 'origin/master' into xtr/explicit-agent-context
+f7c9170b3bf0732dac877f9769dc990788820fb7 fix(web): dismiss tooltips when composer actions become disabled
+f7ef7103f38d06edd1fdadcf3febb3fe791fe838 test(subagent): await the image capability read before draining
+180bdede47fa83dd5aa75134cf975b566ff62cd0 fix(test): retain child turn diagnostics when log reads time out
+b4c69b0f64c7df7b6e85209697fb89d8b441b2c7 Merge pull request #3337 from deepseek-harness/feat/visualizer-host-plugin
+e7bde97aa0cfea0e55aa07f4a9362a56b58fa549 fix(tool-subagent): await agent-started preset cleanup
+19d87778a1647b209f887b4a111861299b9b67de test(web): hold workflow children through live navigation checks
+3ec2191246b59a55d560fe80a5f46aa9353d4d75 test(web): await feedback submit replies before snapshots
+7627622c7abb1b0c994c67464b39a683a19d1661 test(session): await durable cold projection cache writes
+0f9d944f98630f0623ef5a8324f811814907d8ee test(worker): account for the dockkit browser CSS entry
+c26350c30352bfe8e5422f4e36d5f03f825b3345 Merge remote-tracking branch 'origin/master' into xtr/explicit-agent-context
+7599652627cd55c78dc2301deaf9286e8069d779 merge: sync origin/master
+e186c218c0fd903965f0cd8b872b26dd9fb28322 test(web): release workflow gates after failed submissions
+92b3b0262270dc2ecc1356cbcf63c1555add6ab9 Revert "feat(visualizer): add dormant Host capability"
+eda67c4a6499029e21bc57b2ccc64b9ff566f112 Merge pull request #3778 from deepseek-harness/revert-3337-feat/visualizer-host-plugin
+c846beaf95fa9dbcbe7f99cd251c6e6c9eb72024 merge: sync reverted visualizer base from master
+a433eec5e7c3dcc946fa59142c58f9a708cc15f2 test(web): await editor credential state before snapshots
+b76a6d9963451104695d4fac721eedc16b247c61 fix(web): keep animated connection dots hidden on hover
+71e96aebae6518ad6ebe97ccfc65b93629e15ff5 test(subagent): preserve ACP readiness budgets and teardown ownership
+939e6907da3b95db17d28f85d7d953e0ec6d2499 test(shell): gate consuming PowerShell reads on parent acknowledgement
+404097f813e8f7062896f8692ca8bfd4f8d844a1 test(subagent): reap SDK startup before readiness fixture cleanup
+44008a79cae91552cbbb0830156a3c0eed01877b test(team): await mailbox acknowledgement flushes before teardown
+8fda2f620aa963363d716cf302faa714a70d4c6d Merge pull request #3671 from deepseek-harness/fix/session-prose-local-media-display
+55660e8a9e2659220be43056b5d1aad16ff9e832 test(terminal): decouple descendant identity from startup
+795a9cc22643e5ea9d8f5c42c5baf9e2b0252c0f test(web): sample queue alignment in one layout
+36bd2972935f7113715ba2b402610e498ebc2481 fix(visualizer): keep model registration independent of agent identity
+6c87f030a334652b67b5aa4eea8a5c6eb92a1ab6 fix(checks): preserve visualizer composition preset identifiers
+657482d1ddc9abba9d9317746a6e5c92f4a37451 Merge remote-tracking branch 'origin/master' into worktree/typert-forward-reexport
+3e0e419bd20e55fa681766171e76a565619917f3 Merge remote-tracking branch 'origin/master' into xtr/explicit-agent-context
+b72919827a4c38cadd7a9833b126b73aa0db8b0a fix(typert): distinguish forwarding visits by export name
+606b85cd586170177d28c73a7e2e8a073aa347f2 refactor(typert): track forwarding visits without a delimiter
+ace0c4619e34b2af7213b29a4a9dc085b86cf928 chore(subagent): upgrade Codex and Claude Code runtimes
+fde15a83940f0100b92e20bc6000410896543ae7 fix(ci): do not re-request approved reviewers
+5045631a9a27687902987397f87909d9c3b2b9f2 chore: remove unrelated sidebar test notes from agent refactor
+d5e6b4e2b2e81cb0f790996ff13a3d1042ed87dc chore: remove unrelated PTY test repair from agent refactor
+3a98d05a3dc29aec960c89fbb45913a3a1ecc271 refactor(subagent): keep preset teardown outside identity changes
+bcdaed38cc06eb3d510f6afc9cd72a1732a46555 Merge pull request #3295 from deepseek-harness/xtr/explicit-agent-context
+336ebb235e06b8fd186138bacef41e921a6f299a refactor(native): move Landlock workspace to native/system
+7264906f99fc0f0fbef6855765f8378e348f1c4d refactor(native): rename package family to node-addon-system
+d927cbff9915ff779d7ca99ed54d8cd33dd559ce feat(native): add prebuilt Node-API flock support
+3a445b802ddb0bb3797bb83567232ae8a34153bb test(ci): stabilize storage and subprocess lifecycle checks
+a2784a223e2f1d35ba746c0cf5e8d034d5d8fa88 test(web): synchronize theme writes and focus assertions
+97e7223d5f7f3d7e9190d44fc78d729aa423ca4b refactor(native): expose Landlock through its capability subpath
+03f439df9e4a619bd1f3b56bfc8d616b768c7b50 Merge pull request #3673 from deepseek-harness/worktree/typert-forward-reexport
+b4983e92dfd4316384238f179aadc5653c2f16f9 Merge pull request #3788 from deepseek-harness/turtle/fix-approved-review-rerequest
+e11b2a5558829d0a144146c96e0e9a2da262cf84 merge: refresh session-log-v3 from master 345248f470
+537102a0527002722903d8744ebec61c0cf5f075 Merge pull request #3636 from deepseek-harness/session-v3/canonical-envelopes
+0aa1ef0d1ed09df8e6ef2253162953036b366664 Merge remote-tracking branch 'origin/release/session-log-v3' into integrate/v3-master-refresh-345248
+a0656e24b37e999969270c77270238be91394d5c Merge pull request #3787 from deepseek-harness/feat/upgrade-codex-claude-runtimes
+475f5648b3d45550ba1eee71c01da6201ed86257 test(ci): wait for owned completion in master tests
+59ec2d3e94ae69d66465f296f81efb5b2e1542ac test(ci): clean up fixture workers after test timeouts
+36997d853c973544ee0184e6cab150778e521e6e test(ci): inherit runner budgets in publint and LSP fixtures
+e72c9e4b133ac7bf5cb715a979804ee0adda26f6 Merge pull request #3797 from deepseek-harness/integrate/v3-master-refresh-345248
+5924d4c1524140ebf71f95161579e7edcd6b7e1c test(session): audit V3 migration composition and centralize upgrade spec
+cadd3ac05adcf829dd11bbfb7699d196da99da73 Merge current V3 release into migration coverage audit
+ae4919634dedf7447591d399501399c62680efb1 test(web): align SSH replay with V3 release fixtures
+92d4410adaeb4ad98cdac84d24829564dd5ec75d Merge pull request #3801 from deepseek-harness/worktree/ci-reliability-release-v3-20260908
+11ec7cc52a67d30b02da0bdfe2ac64e2041a59a2 Merge pull request #3799 from deepseek-harness/session-v3/migration-coverage
+9ea82286f237060a659d6a7ab03051557092d8dc Merge pull request #3708 from deepseek-harness/worktree-fixgyp
+08f42810b9ce42e4aa45444ddb6d367b93e9d296 Merge pull request #3781 from deepseek-harness/worktree/ci-reliability-master-20260908
+9ddc35c26bc070447f3aa440069589c327fd737e release(node-addon-system): 0.1.2
+bb407e309df180274b9314c3d9cb177faf14a154 Merge master into session-log-v3 release
+93a51e4dc2b1de7af93da0ae6e4ef4802b59ef7d Merge pull request #3804 from deepseek-harness/worktree/release-nativesystem-0.1.2
+2c21c7a03e1cf333b8038f554107a6d0169879ab ci: 1
+5212603a4bcceaae6b77629039936a9e1501dd63 fix(session): audit every historical content carrier before V3 migration
+f7a4f0b95c187f1d30c32c4af129886377d97598 Merge pull request #3805 from deepseek-harness/session-v3/content-admission-fix
+6982a8f53cb646c30736cdb41bc8a139799f9cee Merge remote-tracking branch 'origin/release/session-log-v3' into integrate/v3-master-refresh-345248
+5ad38e5b9422e903cbd920ad9293cd8e55ab94b3 Merge remote-tracking branch 'origin/master' into integrate/v3-master-refresh-345248
+edcde102e99d73abadc28fb308574a9ed1de3f92 Merge pull request #3808 from deepseek-harness/integrate/v3-master-e5f3-refresh
+7b1c98933249c6618373e7a6f0529a12083f1fbe Merge pull request #3631 from deepseek-harness/release/session-log-v3
+96a66ba478270604eadd62e99c176bb47ef8432d Merge pull request #3790 from deepseek-harness/worktree-ci-0908
+2faa751be99c8fbee0524e478f4c53d93b408131 release(dsh): 0.1.5-alpha.1
+5dda764ed3aa172535a7967b06ff95d9cbfe536a Merge pull request #3809 from deepseek-harness/worktree/release/dsh-0.1.5-alpha.1

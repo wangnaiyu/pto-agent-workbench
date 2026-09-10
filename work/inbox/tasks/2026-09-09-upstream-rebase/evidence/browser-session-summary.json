@@ -1,0 +1,150 @@
+[
+  {
+    "sessionId": "session-569b04ef-b33e-4940-809f-15b341e63c61",
+    "generation": 3,
+    "eventTypes": [
+      "permission/preset",
+      "sandbox/mode",
+      "approval/policy",
+      "agent/inbox/spliced",
+      "turn/start",
+      "agent/inbox/spliced",
+      "step/start",
+      "system/message",
+      "user/message",
+      "user/message",
+      "user/message",
+      "user/message",
+      "request/header",
+      "request/context",
+      "session/title",
+      "session/title-llm-request",
+      "assistant/message",
+      "step/end",
+      "turn/end",
+      "session/title"
+    ],
+    "sources": [],
+    "assistantReceived": true,
+    "userMessageSources": [
+      {
+        "kind": "user",
+        "plugin": null,
+        "name": null
+      },
+      {
+        "kind": "agent-instructions",
+        "plugin": null,
+        "name": null
+      },
+      {
+        "kind": "plugin",
+        "plugin": "@deepseek-ai/dsh-system-prompt",
+        "name": null
+      },
+      {
+        "kind": "skill-catalog",
+        "plugin": null,
+        "name": null
+      }
+    ]
+  },
+  {
+    "sessionId": "session-bb186e36-5eaa-46bc-b073-dd9c4c484b5b",
+    "generation": 3,
+    "eventTypes": [
+      "permission/preset",
+      "sandbox/mode",
+      "approval/policy"
+    ],
+    "sources": [],
+    "assistantReceived": false,
+    "userMessageSources": []
+  },
+  {
+    "sessionId": "session-cbee89c4-2ced-4aea-b229-b3dfa966b316",
+    "generation": 3,
+    "eventTypes": [
+      "permission/preset",
+      "sandbox/mode",
+      "approval/policy",
+      "agent/inbox/spliced",
+      "turn/start",
+      "agent/inbox/spliced",
+      "step/start",
+      "system/message",
+      "user/message",
+      "user/message",
+      "user/message",
+      "user/message",
+      "user/message",
+      "user/message",
+      "request/header",
+      "request/context",
+      "session/title",
+      "session/title-llm-request",
+      "assistant/message",
+      "step/end",
+      "turn/end",
+      "session/title"
+    ],
+    "sources": [
+      {
+        "kind": "pto-artifact-analysis",
+        "form": "instructions",
+        "receipt": {
+          "requestId": "pto-analysis-51794456-8a37-438a-8f4e-df14fbb926c3",
+          "sessionId": "session-cbee89c4-2ced-4aea-b229-b3dfa966b316",
+          "recordId": "pto-record-6a2e0182-a009-4223-8619-fa1b633cc34c",
+          "recordRevision": "inventory-v1-557be9e7",
+          "actionId": "analyze.dependency-redundancy",
+          "artifactRefs": [
+            "deps.json"
+          ],
+          "skill": {
+            "name": "dependency-redundancy",
+            "provider": "pypto-official-af1d7a016ce5",
+            "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+          },
+          "tool": {
+            "name": "pto_dependency_redundancy",
+            "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+          }
+        }
+      }
+    ],
+    "assistantReceived": true,
+    "userMessageSources": [
+      {
+        "kind": "user",
+        "plugin": null,
+        "name": null
+      },
+      {
+        "kind": "agent-instructions",
+        "plugin": null,
+        "name": null
+      },
+      {
+        "kind": "plugin",
+        "plugin": "@deepseek-ai/dsh-system-prompt",
+        "name": null
+      },
+      {
+        "kind": "skill-catalog",
+        "plugin": null,
+        "name": null
+      },
+      {
+        "kind": "pto-artifact-analysis",
+        "plugin": null,
+        "name": null
+      },
+      {
+        "kind": "skill-invocation",
+        "plugin": null,
+        "name": "dependency-redundancy"
+      }
+    ]
+  }
+]
