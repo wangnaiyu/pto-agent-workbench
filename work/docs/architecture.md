@@ -1,6 +1,6 @@
 # 当前工程架构
 
-状态：2026-09-04 维护基线。外层初始 HEAD d90b8cc8177df6e046a5c10fd3add3a65a808ca2；harness HEAD 8a0cfdf8a8ed79e5c304be287440ebb1b001a878，包版本 0.1.2-rc.1。这里区分源码现状与下一阶段设计，不把历史回归结果当作本次测试。
+状态：2026-09-10 upstream rebase 维护基线。harness fork `ac2b72a9615cbaf23bb21951ffe1c22f3a11d807` 基于固定 upstream `5dda764ed3aa172535a7967b06ff95d9cbfe536a`，包版本0.1.5-alpha.1。外层产品验证基于 `90390059746c29a71bd5315e1dce5101bb803aec`，本阶段外层只更新维护记录。正式三元配对以两仓 `post-upstream-baseline-20260910` annotated tag 为准；验证与限制见[迁移报告](../archive/tasks/2026-09-09-upstream-rebase/final-report.md)。
 
 ## 实现边界
 
@@ -15,23 +15,22 @@ DSH 提供 Cordis 插件、profile、Host 工具、会话与浏览器 UI。外�
 | sidebar、header 等 slots | PTO 品牌、工作区分组、会话/运行记录入口 |
 | conversation.input.dock 等输入区扩展 | 草稿目录与输入上下文；见 [输入区主题](../product/conversation-composer/design.md) |
 | conversation.view | 已用于持久实验 Dashboard；拟承接分析视图，不再描述成“完全没有主画布扩展面” |
-| shell.overlay | 全幅、Session 无关查看的候选落点；Root scope 可用性需 P0 spike 验证 |
-| details | 当前对象的局部属性，不应承担所有大图的唯一主画布 |
-| tool.result.detailview | 以工具名匹配的冻结实验比较结果呈现，不等同于任意工具调用或实时查询面板 |
+| shell.overlay | 已承载 Session 无关的全幅产物 Viewer；分析入口仍保留 overlay，后续 repair 需重新取证 |
+| resource sidebar | upstream 新的文件/资源侧栏；旧 Details 已退役 |
+| 工具比较行内折叠 | 按工具名呈现完整冻结比较证据，保留七维身份；使用原生 details，未恢复退役的 ToolDetails slot |
 
-对话正文的左右对称宽度手柄与 `--dsh-chat-content-width` 属于 DSH 上游阅读宽度设计；工作台
-自行增加的是通过 `ui-pto-experiments` 注册的具体“实验”View。自定义 View 应消费上游宽度轴
-并在窄宽度响应式降列，不修改 DSH 核心去猜 View 类型。若自定义 View 无法满足该契约，应先
-从产品装配隐藏，而不是让内容越过用户设置的正文边界。
+`ui-pto-experiments` 仍注册“实验”View。upstream 本轮重构了资源侧栏与布局；隔离实例1280×720下空实验区域宽992px、无max-width约束。该观察不证明有内容视图和所有窗口尺寸已满足产品要求，不能沿用rc.1的宽度假设直接修复。
 
 Client → Host 通过 typed invoke/host.call；Host → Client 通过事件或会话投影。具体 API 以本地 harness 对应版本代码为准。分析选区回流仍需共享结构化上下文契约；不预设一定要阻塞模型等待选区，可先由用户显式“加入分析草稿”完成。
+
+Session持久化采用V3相邻generation迁移与跨进程文件租约；PTO目录别名为新会话选择目录，已发现目录保持不变，前代日志不覆盖。浏览器草稿通用文件在实体化后绑定上传；正式能力准入仍保留既有拒绝/重试语义。
 
 ## 已有业务切片
 
 - 工作区/未分组、运行记录注册与会话归组，不表示完整数据 Profile 和全量 viewer 已落地。
 - 草稿能力目录、统一 Commands / Skills 来源、显式 Skill 手势、首次发送再准入。
-- pto_run_discover / pto_run_inspect：有限扫描、PyPTO 3.0 marker、能力探测等旧版 run 契约。
-- skills/bundled 内六个 pto-* 是工作台自有流程，不是 PyPTO 官方 Skill 的镜像。
+- pto_run_discover / pto_run_inspect保留旧run契约；pto_record_inspect与artifact inspection支持markerless记录、Viewer和分析receipt。
+- skills/bundled 内六个pto-*是工作台自有流程。官方Skill/resources/tool已按release-lock固定，但实际patch引用不存在的provider entry，旧/新harness均跳过；文件完整不等于装配成功。临时insert测试验证qualified Skill与receipt可用，实际部署缺陷尚未修复。
 - 持久实验 proposal/query、可信 execute、L2 指标与比较、Dashboard，详见 [实验契约](experiment-contract.md)。
 
 旧 run-only 识别、聚合 evidence health、数据分级与本文所链接的已确认产品方案存在差距。迁移文档不会改变运行时；实际调整应由 [MVP 计划](../product/artifact-inspection/implementation-plan.md) 分阶段验证。

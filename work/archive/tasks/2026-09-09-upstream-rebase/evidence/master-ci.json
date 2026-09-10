@@ -1,0 +1,1686 @@
+[
+  {
+    "name": "Release (vendor)",
+    "url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34433524375",
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "Pack npm tarballs",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Configure runner-private caches",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Configure pnpm store path",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/cache/restore@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install (immutable)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify release version",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Pack release tarballs",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify packed install",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/upload-artifact@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sandbox",
+    "url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34433524502",
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "sandbox e2e (landlock, ubuntu-24.04)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install (immutable)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install bubblewrap (unrestrict userns)",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Build Landlock launcher for this architecture",
+            "conclusion": "success"
+          },
+          {
+            "name": "Unit tests (darwin parity)",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Sandbox e2e (real kernel confinement, world-verified)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build packages for the pack rehearsal",
+            "conclusion": "success"
+          },
+          {
+            "name": "Packed-distribution e2e (pack \u2192 install \u2192 confine)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "sandbox e2e (landlock, ubuntu-24.04-arm)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install (immutable)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install bubblewrap (unrestrict userns)",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Build Landlock launcher for this architecture",
+            "conclusion": "success"
+          },
+          {
+            "name": "Unit tests (darwin parity)",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Sandbox e2e (real kernel confinement, world-verified)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build packages for the pack rehearsal",
+            "conclusion": "success"
+          },
+          {
+            "name": "Packed-distribution e2e (pack \u2192 install \u2192 confine)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "sandbox e2e (bwrap, ubuntu-latest)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install (immutable)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install bubblewrap (unrestrict userns)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build Landlock launcher for this architecture",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Unit tests (darwin parity)",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Sandbox e2e (real kernel confinement, world-verified)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build packages for the pack rehearsal",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Packed-distribution e2e (pack \u2192 install \u2192 confine)",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "sandbox e2e (seatbelt, macos-latest)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install (immutable)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install bubblewrap (unrestrict userns)",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Build Landlock launcher for this architecture",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Unit tests (darwin parity)",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Sandbox e2e (real kernel confinement, world-verified)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build packages for the pack rehearsal",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Packed-distribution e2e (pack \u2192 install \u2192 confine)",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Node Addon System",
+    "url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34433524370",
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "Matrix",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run echo \"ci=$(node ./scripts/github-matrix.mjs ci)\" >> \"$GITHUB_OUTPUT\"",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "linux-arm64",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install musl toolchain",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build TypeScript",
+            "conclusion": "success"
+          },
+          {
+            "name": "Typecheck",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build native binaries (this architecture is the builder of record)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Entry tests (keyless)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Launcher tests (real kernel enforcement)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Pack rehearsal (pack \u2192 install \u2192 confine, this platform only)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify platform payload rules",
+            "conclusion": "success"
+          },
+          {
+            "name": "Flock behavior (built addon)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Upload this platform's built addon and entry",
+            "conclusion": "success"
+          },
+          {
+            "name": "Upload independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "darwin-x64",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install musl toolchain",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Build TypeScript",
+            "conclusion": "success"
+          },
+          {
+            "name": "Typecheck",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build native binaries (this architecture is the builder of record)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Entry tests (keyless)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Launcher tests (real kernel enforcement)",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Pack rehearsal (pack \u2192 install \u2192 confine, this platform only)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify platform payload rules",
+            "conclusion": "success"
+          },
+          {
+            "name": "Flock behavior (built addon)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Upload this platform's built addon and entry",
+            "conclusion": "success"
+          },
+          {
+            "name": "Upload independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "darwin-arm64",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install musl toolchain",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Build TypeScript",
+            "conclusion": "success"
+          },
+          {
+            "name": "Typecheck",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build native binaries (this architecture is the builder of record)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Entry tests (keyless)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Launcher tests (real kernel enforcement)",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Pack rehearsal (pack \u2192 install \u2192 confine, this platform only)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify platform payload rules",
+            "conclusion": "success"
+          },
+          {
+            "name": "Flock behavior (built addon)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Upload this platform's built addon and entry",
+            "conclusion": "success"
+          },
+          {
+            "name": "Upload independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "linux-x64",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install musl toolchain",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build TypeScript",
+            "conclusion": "success"
+          },
+          {
+            "name": "Typecheck",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build native binaries (this architecture is the builder of record)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Entry tests (keyless)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Launcher tests (real kernel enforcement)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Pack rehearsal (pack \u2192 install \u2192 confine, this platform only)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify platform payload rules",
+            "conclusion": "success"
+          },
+          {
+            "name": "Flock behavior (built addon)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Upload this platform's built addon and entry",
+            "conclusion": "success"
+          },
+          {
+            "name": "Upload independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "darwin-arm64 / Node 24 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "darwin-arm64 / Node 22 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "darwin-x64 / Node 24 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "linux-arm64 / Node 20 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "darwin-arm64 / Node 20 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "darwin-x64 / Node 20 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "linux-arm64 / Node 26 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "linux-arm64 / Node 22 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "darwin-x64 / Node 22 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "darwin-x64 / Node 26 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "darwin-arm64 / Node 26 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "linux-arm64 / Node 24 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "linux-x64 / Node 20 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "linux-x64 / Node 24 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "linux-x64 / Node 26 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "linux-x64 / Node 22 (same binary)",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download the original platform build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Download independent syscall test oracle",
+            "conclusion": "success"
+          },
+          {
+            "name": "Restore oracle executable permissions",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test without rebuilding or installing dependencies",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test the same musl addon without a compiler",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Release (dsh)",
+    "url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34433524369",
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "Dependency layout",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Configure runner-private caches",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Configure pnpm store path",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/cache/restore@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install (immutable)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify dependency policy",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify npm install layout",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "Pack npm tarballs",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Configure runner-private caches",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Configure pnpm store path",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/cache/restore@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install (immutable)",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify release version",
+            "conclusion": "success"
+          },
+          {
+            "name": "Build",
+            "conclusion": "success"
+          },
+          {
+            "name": "Pack release tarballs",
+            "conclusion": "success"
+          },
+          {
+            "name": "Pack the vendored framework for verification",
+            "conclusion": "success"
+          },
+          {
+            "name": "Pack the Landlock entry for verification",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify packed install",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/upload-artifact@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run pnpm/action-setup@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v6",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  }
+]

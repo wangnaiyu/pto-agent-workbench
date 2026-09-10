@@ -1,11 +1,11 @@
 {
-  "status": "candidate committed; remote adoption pending",
+  "status": "runtime and history complete; workbench archive PR and paired tag publication are final delivery",
   "candidate": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
   "worktree": "/private/tmp/pto-harness-upstream-20260909",
   "candidate_branch": "codex/upstream-rebase-20260909",
   "replay_savepoint": "codex/replay-savepoint-20260909",
   "wip_patch_sha256": null,
-  "master_updated": false,
+  "master_updated": true,
   "repair_started": false,
-  "dependencies": "frozen install passed"
+  "dependencies": "candidate and actual master frozen install/build passed"
 }

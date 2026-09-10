@@ -22,6 +22,12 @@
 - 提供 source workspace 不表示与产物已建立精确映射，也不改变已经创建的 Session cwd。
 - 官方工具可能写文件、绑定本地端口、要求特定 Python 库；适配器需显式输出目录、超时/取消、端口清理与依赖探测。
 
+## 本轮 upstream 兼容事实
+
+- Cordis patch的普通id只覆盖已有entry；缺失id会警告并跳过，新增插件须insert。实际工作台的official provider配置在升级前后均触发此问题；资源哈希正确不能证明运行时已挂载。详见[组合证据](../archive/tasks/2026-09-09-upstream-rebase/evidence/workbench-compatibility.md)。
+- 新Session日志由多个独立Zstd frame拼接；只解压第一帧会误判缺少事件，取证须按generation实现扫描全部frame。别名迁移不能移动或覆盖旧generation。
+- 普通PR合并不会采用rebase历史。本次在精确lease更新后，GitHub将候选PR识别为MERGED；更新前因历史冲突未启动PR CI，不得把零检查视作通过。
+
 ## Skills 与目录
 
 - 产品 bundled provider 的目录来源需要可信注册元数据，不能靠技能名 pto- 前缀断言官方。

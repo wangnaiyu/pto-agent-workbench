@@ -14,7 +14,7 @@
 
 ## 任务入口
 
-- [2026-09-09 harness upstream rebase](inbox/tasks/2026-09-09-upstream-rebase/README.md)：固定目标、提交迁移、兼容验证与正式配对记录。
+- [2026-09-09 harness upstream rebase](archive/tasks/2026-09-09-upstream-rebase/final-report.md)：固定目标、提交迁移、兼容验证与正式配对记录。
 
 - [两仓升级前基线收口](archive/tasks/2026-09-09-pre-upstream-baseline/final-report.md)：两仓成果已合并并保存恢复点，检查与已知问题有据可查；尚未执行 upstream rebase。
 
