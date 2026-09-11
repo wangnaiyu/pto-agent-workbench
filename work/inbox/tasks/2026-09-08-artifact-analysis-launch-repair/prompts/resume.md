@@ -1,20 +1,7 @@
-# 恢复并执行此任务
+# 恢复指令
 
-从 pto-agent-workbench 外层仓库进入。先读根 `AGENTS.md` 和项目
-`workbench-project-workflow` Skill，再依次读本包 `README.md`、`status.md`、`plan.md`。随后按
-README 的读取顺序加载当前步骤所需正式主题和 harness 内适用的 Agent 指令。
+从工作台根目录读取 AGENTS.md 与 workbench-project-workflow Skill，再读本包 README、status、plan 和 p0-report。status 是唯一当前步骤来源；执行权限以最新用户指令为准，不能根据计划编号自动连续推进。
 
-先核对外层与 harness 的实际 HEAD、dirty worktree、未完成进程/执行标识和当前授权。保留已有
-未提交改动，不把归档任务当当前指令，不从 P0 重做已经被最新 status 明确验收的阶段。
+核对外层与独立 harness 的分支、HEAD、工作树、live origin、post-upstream tag 与保留恢复点。先核实已有运行标识/日志和证据，不重复启动已完成的隔离实验。任务证据中的临时 provider/observer/model 只用于 P0，不是正式产品补丁。
 
-若用户已明确授权执行本任务包，按 `work/docs/task-workflow.md` 的逐子任务 checkpoint 协议从
-status 的 `current-step` 连续推进；每一阶段开始前写状态，完成验证和正式文档回写后再进入下一
-阶段。若仍为 `planned` 且没有执行授权，只报告具体下一步并等待授权。
-
-核心不可变约束：输入区只显示规范 `/skill dependency-redundancy`、`@deps.json` 和短 Prompt，
-Record 名称/revision 默认隐藏但结构化 identity 必须保留；每次 Viewer 点击是新 launch，同
-launch 重试复用同一 Session；缺 receipt 不降级发送或手工 Shell 复算；不修改 DSH 原生宽度
-手柄，优先在工作台自有实验 View 内修复。
-
-安装依赖、访问网络、设备运行、修改只读来源、扩大到 DSH 核心布局、commit、push 和发布均需
-按实际授权处理，不能从本恢复提示推定。
+后续 config/composition repair、launch 生命周期、可见输入和实验布局按 plan 分开验收。P0 成功对照已证明正确的 Host receipt 生成器不作为默认改写对象；精确 relaunch target 时序仍需在实现前补确定性组合反例。不得未经授权进入下一阶段、commit/push、改写远端或清理旧恢复点。

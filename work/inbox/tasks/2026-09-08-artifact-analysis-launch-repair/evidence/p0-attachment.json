@@ -1,0 +1,9 @@
+{
+  "sessionId": "session-17f4bf74-df19-4433-9cc6-8092309739e4",
+  "name": "p0-attachment.txt",
+  "bytes": 66,
+  "inputSha256": "f9b856b42d88c610f12858e8aded07f062f1534e381cab43006918e1e89e69bc",
+  "storedSha256": "f9b856b42d88c610f12858e8aded07f062f1534e381cab43006918e1e89e69bc",
+  "method": "CUA native AX click -> filechooser.setFiles -> browser draft -> first submit -> durable Session file block",
+  "limitations": "generic file attachment only; current PTO private analysisDraft is not an attachment; combined admission-rejected file retry covered by existing focused test, not browser upload case"
+}

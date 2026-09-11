@@ -1,8 +1,8 @@
 # AI 分析启动与对话布局回归修复
 
-目标：修复 dependency Viewer 的“AI 分析”首次发送只投递普通文本、未绑定 Record/Skill receipt
-的问题；把分析对象以简洁可见的 `/Skill`、`@文件` 和结构化 attachment 带入新会话草稿；明确
-新分析与失败重试的 Session 语义；同时让工作台自有“实验”View 恢复 DSH 原生正文宽度契约。
+目标：使实际工作台具备可靠的 artifact analysis 启动体验，同时让自有实验 View 遵守正文宽度契约。升级后 P0 已把根因拆为独立 provider 装配缺失、launch/admission 生命周期缺口、可见输入与 overlay 交互、实验布局；不能继续把它们统一称为“Viewer 丢 receipt”。证据与事实见 [P0 报告](p0-report.md)。
+
+本轮仅授权 P0 取证与重规划。正式产品修复、commit/push/PR 和 P1–P5 执行均不由本包或旧授权自动触发；当前状态和下一动作只看 [status](status.md)。
 
 本任务是 [2026-09-03 产物查看 MVP](../../../archive/tasks/2026-09-03-artifact-inspection-mvp/final-report.md)
 的独立回归修复，不恢复或改写已归档任务。实际进度只看 [status](status.md)，执行顺序与完成
@@ -32,21 +32,16 @@
 
 正式决定见 [2026-09-08 设计记录](../../../product/artifact-inspection/notes/decision-2026-09-08.md)。
 
-## 范围
+## 范围与后续拆分
 
-1. 在真实当前 Web 装配中复现并定位 Viewer 草稿到 first-send admission 的断点，记录可复验
-   证据，不只从 Agent 自述反推。
-2. 将分析身份从 Viewer Controller 私有内存迁入正式 browser draft/attachment 状态，包含
-   launchId、Record/artifact/action/qualified Skill identity 和必要 viewer reference。
-3. 使用输入区正式机制程序化选择 `/skill dependency-redundancy` 与 `@deps.json`，预填短 Prompt；
-   保证编辑、取消、草稿切换和未发送草稿保护。
-4. 按 launchId/requestId 实现幂等 first-send：唯一 Session materialize → Host admission →
-   receipt/Skill 绑定 → prompt。收敛 Skill 注入为一次，保留同 Session 重试。
-5. 增加真实插件组合和浏览器端到端测试，覆盖第一次成功、准入失败重试、再次从 Viewer 新建分析、
-   双击、失效 Record/Skill、缺 receipt 和禁止降级。
-6. 仅在工作台自有 `ui-pto-experiments` 内适配 `--dsh-chat-content-width` 与响应式卡片；若无法在
-   同一阶段通过视觉验收，暂时从装配隐藏“实验”Tab，保留工具结果详情。
-7. 根据实测结果更新主题状态、验证证据和最终报告；不修改旧归档中的历史事实。
+- P0：真实配置 / 仅补 provider 的隔离 A/B，完整数据流与 launch、附件、布局取证，重定计划。
+- P1：独立工作台 config/composition repair；只让固定 official provider 在真实 Loader 组合中存在。
+- P2：正式 launch 生命周期与不允许跳过 admission 的失败恢复；保留已验证正确的 Host receipt schema。
+- P3：复用正式选择/reference 语义的简洁输入、overlay 退出和引用回开。
+- P4：自有 experiment Dashboard 的正文宽度与容器响应式修复。
+- P5：正式组合验收、文档收口和归档。
+
+每阶段 owner、禁止混入、测试与退出标准见 [plan](plan.md)。P0-only instrumentation 全部位于隔离临时环境及任务证据；它们不是产品实现。
 
 ## 非目标
 
@@ -58,11 +53,9 @@
 - 改造 DSH 原生 ConversationRoot 宽度手柄或通用 Tab 模式，除非实证表明插件侧无法修复并由
   用户另行确认 rescope。
 
-## 授权与执行状态
+## 授权
 
-用户已授权创建本任务包并更新相关产品设计文档；这不等于授权开始源码实现、提交、push 或
-发布。任务初始状态为 `planned`。后续用户明确要求执行本包后，可在上述范围内按 P0–P5 连续
-推进；遇到新增依赖安装、外部网络、设备执行、只读来源修改或内核 rescope 时停下请求决定。
+2026-09-11 用户明确仅授权 P0：隔离取证、必要 instrumentation、证据保存、根因分类与后续计划调整。不能因为上阶段已授权 rebase/远端写入而扩大到本阶段修复、提交或发布。恢复时读取最新用户授权和 [status](status.md)。
 
 ## 接手与读取顺序
 
@@ -73,14 +66,13 @@
    [输入区契约](../../../product/conversation-composer/design.md)、
    [官方 Skill 集成](../../../product/official-skill-integration/integration-design.md)和
    [工程架构](../../../docs/architecture.md)。
-4. 只为理解历史证据读取旧 MVP 的
+4. 先读 [P0 报告](p0-report.md) 与 [升级后报告](../../../archive/tasks/2026-09-09-upstream-rebase/final-report.md)。只为理解历史证据读取旧 MVP 的
    [P2 evidence](../../../archive/tasks/2026-09-03-artifact-inspection-mvp/evidence/p2-dependency-analysis-first-send.md)，
    不执行归档恢复指令。
-5. 核对外层与 harness 两个工作树；进入 harness 源码前读取其中适用的 `AGENTS.md`。当前 checkout
-   有大量属于此前工作的未提交改动，必须保留，不能用 clean checkout 假设覆盖。
+5. 核对外层与 harness 两个工作树；进入 harness 源码前读取其中适用的 `AGENTS.md`。接手时重新确认两仓真实分支、HEAD、远端和未提交改动；不能机械沿用原任务创建时的脏树假设。
 
 任务创建基线：外层 HEAD `82afed7ec374805e02c5414e000b3f4e5ea7b9df`；harness HEAD
-`8a0cfdf8a8ed79e5c304be287440ebb1b001a878`。基线只用于定位，恢复时重新核对实际状态。
+`8a0cfdf8a8ed79e5c304be287440ebb1b001a878`。以上是任务创建时历史定位，不是当前实施基线。升级后正式三元基线见 [P0 报告](p0-report.md)；恢复时仍重新核对。
 
 ## 完成定义
 
@@ -90,7 +82,7 @@
 - 新分析、同 launch 重试、双击和未发送草稿行为符合已确认契约。
 - 输入区只呈现简洁 `/skill`、`@file` 和短 Prompt；默认不显示 Record 名称/revision，同时内部
   identity 未丢失。
-- “实验”View 在拖动正文宽度和窄屏下不越界，或按计划安全隐藏；DSH 原生宽度实现不被改写。
+- “实验”View 在拖动正文宽度、窄屏与资源侧栏下不越界；不默认以隐藏 Tab 代替验收，DSH 原生宽度实现不被改写。
 - 聚焦测试、类型/lint/build、真实 Web 浏览器路径和必要真实样例均记录通过/失败/未运行；不能
   只凭单测或截图宣称闭环。
 - 稳定结论回写正式主题，`final-report.md` 完成，任务按规则归档；不自动 commit/push/publish。

@@ -1,0 +1,67 @@
+- button "New session":
+  - generic: PTO Agent Workbench
+  - generic: DSH
+- button "Collapse sidebar":
+- tablist "Sidebar view":
+  - tab "Sessions"
+  - tab "Run Records" [selected]
+- generic: Run Records
+- button "Search run records":
+- textbox "Search run records..."
+- tabpanel "Run Records":
+  - tree "Run Records":
+    - treeitem "Ungrouped" [expanded]:
+      - generic: Ungrouped
+    - treeitem "dfx_outputs":
+      - generic: dfx_outputs
+- button "Settings":
+  - generic: Settings
+- banner:
+  - navigation "Session hierarchy":
+    - button "P0 local mock completed. Tool output, if present, is recorded separately." [disabled]
+  - generic "Full coding agent with file editing, shell, file and web search, skills, planning, goals, subagents, and workflows.":
+    - text: Standard mode
+  - button "Open workspace in Finder":
+  - button "Choose an app to open in":
+  - button "Session log":
+    - generic: Session log
+  - button "Open the sidebar":
+  - tablist:
+    - tab "Chat" [selected]
+    - tab "Trajectory"
+    - tab "Experiments"
+- button "System prompt":
+  - generic: System prompt
+- generic: 分析此数据记录中的冗余依赖。P0 文本编辑对照：请保留证据和限制。
+- generic: 10:52
+- button "Copy":
+- button "Context injection AGENTS.md":
+  - generic: Context injection
+  - generic: AGENTS.md
+- button "Context injection @deepseek-ai/dsh-system-prompt":
+  - generic: Context injection
+  - generic: "@deepseek-ai/dsh-system-prompt"
+- button "Context injection skill-catalog":
+  - generic: Context injection
+  - generic: skill-catalog
+- button "Context injection pto-artifact-analysis":
+  - generic: Context injection
+  - generic: pto-artifact-analysis
+- button "Context injection dependency-redundancy":
+  - generic: Context injection
+  - generic: dependency-redundancy
+- status:
+  - generic: This turn failedP0 deterministic model failure
+  - code: INVALID_REQUEST
+- textbox "Message or run a task, / commands, @ files or sessions" [active]
+- generic: Message or run a task, / commands, @ files or sessions
+- button "Commands":
+- button "Add attachment":
+- 'button "Access mode, current: Workspace Write"':
+  - generic: Workspace Write
+- button "Select model, current DeepSeek-V4-Flash, reasoning effort High":
+  - generic: DeepSeek-V4-Flash
+  - generic: High
+- button "Send message" [disabled]:
+- generic: 1 turns 1 steps
+- generic: Start

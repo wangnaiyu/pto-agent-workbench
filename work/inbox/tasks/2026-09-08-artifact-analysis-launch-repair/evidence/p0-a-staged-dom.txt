@@ -1,0 +1,60 @@
+- button "New session":
+  - generic: PTO Agent Workbench
+  - generic: DSH
+- button "Collapse sidebar":
+- tablist "Sidebar view":
+  - tab "Sessions"
+  - tab "Run Records" [selected]
+- generic: Run Records
+- button "Search run records":
+- textbox "Search run records..."
+- tabpanel "Run Records":
+  - tree "Run Records":
+    - treeitem "Ungrouped" [expanded]:
+      - generic: Ungrouped
+    - treeitem "dfx_outputs":
+      - generic: dfx_outputs
+- button "Settings":
+  - generic: Settings
+- generic: Into the Unknown
+- generic: Preview
+- button "Choose workspace":
+  - generic: default
+- button "Standard mode":
+  - generic: Standard mode
+- textbox "Describe what you want to build, / commands, @ files or sessions" [active]:
+  - paragraph: 分析此数据记录中的冗余依赖。请给出结论、证据、限制和下一步。
+- button "Commands":
+- button "Add attachment":
+- 'button "Access mode, current: Workspace Write"':
+  - generic: Workspace Write
+- button "Send message":
+- generic: deps_viewer.html
+- generic "deps_viewer.html"
+- generic: View only; no selection or deep links
+- button "Analyze with AI"
+- button "Close viewer":
+- iframe:
+  - generic: 598 nodes
+  - generic: ·
+  - generic: 1222 edges
+  - generic: drag
+  - generic: pan
+  - generic: scroll
+  - generic: pan
+  - generic: ctrl+scroll
+  - generic: zoom
+  - generic: click
+  - generic: task
+  - generic: f
+  - generic: fit
+  - generic: r
+  - generic: reset
+  - generic: esc
+  - generic: close
+  - text: AIC (cube)
+  - text: AIV (vector)
+  - text: mix
+  - text: alloc
+  - text: SPMD block num
+  - generic: ↓N ↑M = pred / succ

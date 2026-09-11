@@ -1,0 +1,161 @@
+{
+  "evidenceChecks": [
+    {
+      "name": "A first/retry same Session and exact request",
+      "passed": true
+    },
+    {
+      "name": "A qualified unavailable, no receipt ever",
+      "passed": true
+    },
+    {
+      "name": "No model request before B positive first send",
+      "passed": true
+    },
+    {
+      "name": "b receipt identical across Host / Session / real tool",
+      "passed": true
+    },
+    {
+      "name": "b exactly one Skill invocation",
+      "passed": true
+    },
+    {
+      "name": "b real tool both modes same redundant edge",
+      "passed": true
+    },
+    {
+      "name": "c receipt identical across Host / Session / real tool",
+      "passed": true
+    },
+    {
+      "name": "c exactly one Skill invocation",
+      "passed": true
+    },
+    {
+      "name": "c real tool both modes same redundant edge",
+      "passed": true
+    },
+    {
+      "name": "B relaunch created sessions without receipt",
+      "passed": true
+    },
+    {
+      "name": "Model traces distinguish no-admission relaunch/reload/retarget",
+      "passed": true
+    },
+    {
+      "name": "Model failure and retry retained exact analysis context",
+      "passed": true
+    },
+    {
+      "name": "Generic attachment stored bytes hash unchanged",
+      "passed": true
+    },
+    {
+      "name": "Generic attachment recorded in durable user event",
+      "passed": true
+    },
+    {
+      "name": "Experiment card ignores inward/outward content width",
+      "passed": true
+    },
+    {
+      "name": "700 populated layout horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Resource sidebar populated layout horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Layout records planned only",
+      "passed": true
+    },
+    {
+      "name": "Unchanged content: patches/cordis.patch.yml",
+      "passed": true
+    },
+    {
+      "name": "Unchanged content: harness/.dsh-build/client-build-environment.json",
+      "passed": true
+    },
+    {
+      "name": "Unchanged content: tools/official/pypto-runtime-77fa0171c24a/simpler_setup/tools/deps_viewer.py",
+      "passed": true
+    },
+    {
+      "name": "Unchanged content: skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills/dependency-redundancy/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "Unchanged content: /Users/wny/Documents/2 领域 Area/工作/EASY CANN/样例数据/20260720-pypto3-qwen3-14b-decode-fwd-l2/raw/_jit_decode_fwd_20260720_010517/dfx_outputs/deps.json",
+      "passed": true
+    },
+    {
+      "name": "Known tool list failure source identical: packages/pto/tool-pto-run/tests/load-path.spec.ts",
+      "passed": true
+    },
+    {
+      "name": "Known tool list failure source identical: packages/pto/tool-pto-run/src/index.ts",
+      "passed": true
+    }
+  ],
+  "evidenceChecksPassed": 25,
+  "focusedTests": {
+    "command": "pnpm exec vitest run packages/client/ui-conversation/tests/apply-inject.client.spec.tsx packages/client/ui-workspace/tests/pto-viewer.client.spec.ts packages/client/ui-workspace/tests/workspaces-service.client.spec.ts packages/client/ui-agent-preset/tests/apply.client.spec.ts",
+    "passed": 53,
+    "failed": 0
+  },
+  "runToolTests": {
+    "command": "pnpm exec vitest run packages/pto/tool-pto-run/tests/tool-pto-run.spec.ts packages/pto/tool-pto-run/tests/load-path.spec.ts",
+    "passed": 11,
+    "failed": 1,
+    "failure": "known load-path list expected two tools; third existing pto_record_inspect",
+    "sourceComparison": [
+      {
+        "path": "packages/pto/tool-pto-run/tests/load-path.spec.ts",
+        "oldSha256": "5f0d518aca19d4d9de694918669e2ade5d520825a4b591993acd2f74778a2587",
+        "currentSha256": "5f0d518aca19d4d9de694918669e2ade5d520825a4b591993acd2f74778a2587"
+      },
+      {
+        "path": "packages/pto/tool-pto-run/src/index.ts",
+        "oldSha256": "dfffdd81c9c445e508952c8c76313ef046995153852665ec7544f1b32ba1a409",
+        "currentSha256": "dfffdd81c9c445e508952c8c76313ef046995153852665ec7544f1b32ba1a409"
+      }
+    ]
+  },
+  "controllerProof": {
+    "assertions": 7,
+    "passed": true,
+    "scope": "actual controller method proof; target-change schedule is explicit, not proof of precise live relaunch timing",
+    "observations": [
+      "catalog/preset revision mismatch silently returns undefined with no Remote admission",
+      "exact match forwards record identity",
+      "close preserves same request id",
+      "new staging replaces request id",
+      "new controller without memory silently skips admission"
+    ]
+  },
+  "fullBuildTypecheckLintDocSync": "not rerun; no production source/config changes",
+  "workspaceStructure": {
+    "command": "node work/scripts/check-workspace.mjs",
+    "exitCode": 0,
+    "result": {
+      "errors": [],
+      "checkedMarkdown": 103,
+      "originals": 11,
+      "sections": 48
+    }
+  },
+  "gitDiffCheck": {
+    "command": "git diff --check",
+    "exitCode": 0
+  },
+  "taskLocalLinks": {
+    "broken": [],
+    "markdownFilesChecked": 11
+  },
+  "productionPatchSkillsToolsDiff": "empty",
+  "harnessWorkingTree": "clean"
+}

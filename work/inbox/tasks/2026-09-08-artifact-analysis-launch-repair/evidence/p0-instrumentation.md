@@ -1,0 +1,9 @@
+# P0隔离与观测
+
+外层文档分支codex/repair-p0-20260911；harness源码和正式patch不改。实际built CLI从外层根cwd启动（与从根运行start.sh一致），只将start.sh强制写入的用户home替换为独立临时home，并关闭自动打开、绑定loopback随机端口。没有调用start.sh去写真实用户Session。
+
+A/B共同增加同一upstream browse picker，替代原生目录选择以稳定驱动相同选择动作；同一observer包装Host方法，保留参数、返回值/异常，记录inspect/inspectTarget/open/close/admitAnalysis/getQualified/snapshot/runDependencyAnalysis。没有改变receipt、launch、Viewer或layout。B唯一功能变化是insert锁定official provider。
+
+本机确定性模型替身以流式OpenAI协议返回pto_dependency_redundancy工具调用，参数只从实际model request的pto_artifact_analysis上下文提取；工具执行走真实Host。模型文本明确标为mock，不证明模型能力。control支持一次确定性HTTP400用于失败重试取证。不会发真实外部模型请求。
+
+临时路径和命令见p0-baseline.json与后续运行记录；服务生命周期在status checkpoint持续更新。原始Qwen数据只读；不复制原始数据入库。

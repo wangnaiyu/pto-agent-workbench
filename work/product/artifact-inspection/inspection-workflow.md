@@ -1,8 +1,6 @@
 # 查看与分析：交互方案
 
-状态：纯查看 overlay 与同 Record viewer 切换已实现；2026-09-08 真实体验确认 dependency
-分析草稿/first-send 存在结构化准入丢失回归，正由独立任务修复。持久 Analysis View、选区与
-深链仍是后续能力。
+状态：纯查看 overlay 与同 Record viewer 切换已实现。升级后 P0 已将实际首发失败重分类为 provider 装配缺失和独立 launch/admission 生命周期缺口；下文规范 token、overlay 退出与恢复语义仍是待实现目标，不能描述为当前产品全部具备。事实见 [P0 取证](notes/p0-findings-2026-09-11.md)。持久 Analysis View、选区与深链仍是后续能力。
 
 ## 卡片回答三个问题
 

@@ -1,7 +1,6 @@
 # 官方 Skills 集成设计
 
-状态：dependency-redundancy 的最小固定 bundle、qualified resolver 和真实调用闭环已实现；
-下面的通用 source registry、更新/回退和多 Skill 管理仍是目标契约。
+状态：dependency-redundancy 的固定 bundle、qualified resolver 和工具链已实现；2026-09-11 P0 证明实际工作台 patch 未实例化 official provider。仅在隔离对照补齐 provider 后，首发 receipt/Skill/真实工具闭环成功；不能将组件能力等同实际部署已修复。详见 [P0 事实](../artifact-inspection/notes/p0-findings-2026-09-11.md)。下面的通用 source registry、更新/回退和多 Skill 管理仍是目标契约。
 
 ## 四层分离
 

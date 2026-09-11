@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-11",
+  "upstreamTarget": "5dda764ed3aa172535a7967b06ff95d9cbfe536a",
+  "repositories": [
+    {
+      "repo": ".",
+      "HEAD": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+      "mainRef": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+      "origin": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+      "statusBeforeP0": "clean",
+      "postTag": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+      "preTag": "90390059746c29a71bd5315e1dce5101bb803aec",
+      "savepoints": [
+        "refs/heads/codex/baseline-pre-upstream-20260909 90390059746c29a71bd5315e1dce5101bb803aec",
+        "refs/heads/codex/savepoint-pre-upstream-20260909 563ec644372442ae670ec8ee5218fecd30ae429a"
+      ],
+      "inProgressMarkers": []
+    },
+    {
+      "repo": "harness",
+      "HEAD": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+      "mainRef": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+      "origin": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+      "statusBeforeP0": "clean",
+      "postTag": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+      "preTag": "ef0d49b574f544c997e914b4254e38080730f45a",
+      "savepoints": [
+        "refs/heads/codex/baseline-pre-upstream-20260909 ef0d49b574f544c997e914b4254e38080730f45a",
+        "refs/heads/codex/savepoint-pre-upstream-20260909 e95e118b26761c20381f278b8d98c15ee56fc886"
+      ],
+      "inProgressMarkers": []
+    }
+  ],
+  "remoteVerified": true,
+  "differencesFromFormalBaseline": [],
+  "temporaryRoot": "/var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p0-20260911-qx3bta2t",
+  "harnessClientBuild": {
+    "DSH_CLIENT_COMMIT_HASH": "ac2b72a",
+    "DSH_CLIENT_VERSION": "0.1.5-alpha.1"
+  },
+  "patchSha256": "4da838ecdf2fa998bd08d07cb37994e4010b838e1b97ed305e27a463edb8ac1a"
+}
