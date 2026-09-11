@@ -34,3 +34,5 @@
 critical-path-analysis 需时间线、依赖与任务映射一致；任一关联不可靠时结果受限/不可用，不能用“有几个同名 JSON”判可运行。
 
 每次更新记录 Skill/tool tuple、fixture revision、实际调用日志引用和通过/失败/未运行项。低成本静态验证与真正运行测试分别列示。
+
+2026-09-11 P1 正式装配修正后，无额外 provider patch 的实际工作台首发已通过：root/draft catalog 与 Session qualified lookup 指向同一固定资源，完整 receipt 持久化，官方 Skill 正文注入一次，真实 Python 双模式结果与旧 Qwen L2 对照一致。装配正负检查 4 项、launcher 4 项、消费测试 99 项和证据断言 17 项通过。模型仅用本机确定性替身；可见 token、overlay、new launch/retry/reload 与布局不属于本轮修复/验收。详见 [P1 报告](../../inbox/tasks/2026-09-08-artifact-analysis-launch-repair/p1-report.md)。

@@ -21,3 +21,7 @@
 | [teardown](p0-teardown.json) | 本轮服务退出、浏览器关闭与保留临时数据的范围 |
 
 记录保留完整 Session/request/Record 标识；只去掉临时 Viewer 路由，未把身份差异归一化。Session 证据不复制完整系统提示或全部 Skill 正文，保留 source、必要分析文本和正文 hash。未复制原始大数据、认证 URL 或真实凭据。
+
+## P1
+
+正式 provider 装配修复及无临时 provider patch 的真实首发验收见 [P1 证据](p1/README.md)。上面的 P0 记录保留为历史对照。

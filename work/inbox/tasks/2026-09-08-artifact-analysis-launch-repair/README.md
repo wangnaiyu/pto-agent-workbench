@@ -2,7 +2,7 @@
 
 目标：使实际工作台具备可靠的 artifact analysis 启动体验，同时让自有实验 View 遵守正文宽度契约。升级后 P0 已把根因拆为独立 provider 装配缺失、launch/admission 生命周期缺口、可见输入与 overlay 交互、实验布局；不能继续把它们统一称为“Viewer 丢 receipt”。证据与事实见 [P0 报告](p0-report.md)。
 
-本轮仅授权 P0 取证与重规划。正式产品修复、commit/push/PR 和 P1–P5 执行均不由本包或旧授权自动触发；当前状态和下一动作只看 [status](status.md)。
+阶段执行与提交/发布权限以最新用户授权为准，不能由本包或旧授权自动触发；当前状态和下一动作只看 [status](status.md)。阶段结果分别见 [P0 报告](p0-report.md) 与 [P1 报告](p1-report.md)。
 
 本任务是 [2026-09-03 产物查看 MVP](../../../archive/tasks/2026-09-03-artifact-inspection-mvp/final-report.md)
 的独立回归修复，不恢复或改写已归档任务。实际进度只看 [status](status.md)，执行顺序与完成

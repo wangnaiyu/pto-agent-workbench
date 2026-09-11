@@ -1,0 +1,6 @@
+{
+  "provider": "pypto-official-af1d7a016ce5",
+  "count": 1,
+  "skillRoot": "process.getBuiltinModule('node:path').resolve(process.env.PTO_WORKBENCH_ROOT ?? process.cwd(), 'skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills')",
+  "warnings": ""
+}

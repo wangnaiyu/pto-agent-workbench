@@ -1,5 +1,3 @@
-# 最终修复报告
+# 整体结果占位
 
-整体修复尚未完成。本轮只有升级后 P0 取证与计划重定基线，结果见 [P0 报告](p0-report.md)；当前步骤和授权见 [status](status.md)。P1–P5 未正式实施，实际工作台 provider、launch 和 layout 缺陷仍存在。
-
-达到 [README 完成定义](README.md) 后，才在这里记录正式实现、关键取舍、完整产品验收、工作树状态、延期项和产物位置，并按任务规则归档。不得把临时 B 组成功写成产品已修复。
+整体修复尚未完成。[P0 报告](p0-report.md) 保存升级后取证与重规划；[P1 报告](p1-report.md) 记录正式 official provider 装配及首发链路验证。P2–P5 未实施，launch 生命周期、可见输入/overlay、实验布局仍需后续独立阶段。当前步骤与授权只看 [status](status.md)。

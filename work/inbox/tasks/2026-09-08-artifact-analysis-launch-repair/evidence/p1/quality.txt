@@ -1,0 +1,16 @@
+P1 quality checks, 2026-09-11
+node work/scripts/check-workspace.mjs
+  errors: []; checkedMarkdown: 105; originals: 11; sections: 48
+node .githooks/check-secrets.mjs --working-tree
+  OK: scanned 260 working-tree files
+git diff --check
+  exit 0
+node work/scripts/check-official-provider.mjs
+  exit 0; exactly one active pinned official provider; no warnings
+node --test work/scripts/official-provider-composition.test.mjs work/scripts/launch-contract.test.mjs
+  8 passed, 0 failed (composition-tests.json)
+pnpm exec vitest run packages/host/pto-artifact-inspection/tests/inspection.spec.ts packages/skill/skill-filesystem/tests/skill-filesystem.spec.ts packages/skill/skill/tests/skill.spec.ts packages/skill/tool-skill/tests/tool-skill.spec.ts
+  harness cwd; 4 files, 99 tests passed (consumer-tests.txt); exec exit 0
+python3 /private/tmp/pto-p1-curate.py
+  17 live-evidence assertions passed (validation.json)
+Full build/typecheck/lint/doc-sync not rerun; no harness source/build inputs changed.
