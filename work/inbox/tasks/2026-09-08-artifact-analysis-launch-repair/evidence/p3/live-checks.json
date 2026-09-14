@@ -1,0 +1,43 @@
+{
+  "evidenceKind": "Observed UI actions with loopback model request counter and decoded real Session logs; not synthetic receipt fixtures",
+  "configuration": "Actual Workbench patch plus directory picker substitute only; no provider or observer patch",
+  "checks": [
+    {
+      "action": "Enter on restored PTO reference",
+      "result": "Viewer opened with 598 nodes / 1222 edges; no Session materialized",
+      "modelRequestsBefore": 3,
+      "modelRequestsAfter": 3
+    },
+    {
+      "action": "Remove file reference and Send",
+      "result": "Reselect guidance; no Session materialized",
+      "modelRequestsBefore": 3,
+      "modelRequestsAfter": 3
+    },
+    {
+      "action": "Select deps.json and official Skill through their normal menus",
+      "result": "Canonical gesture and atomic Record reference retained"
+    },
+    {
+      "action": "HTTP 400 followed by plain-question retry",
+      "sessionId": "session-0d84063d-deff-4494-9975-91a25e3a4bad",
+      "result": "Same Session; one receipt source and one Skill source total; both real tool modes succeeded"
+    },
+    {
+      "action": "New launch; Space and pointer reference activation; Send",
+      "sessionId": "session-c7a053c0-83e2-40d6-a505-15ea901367f4",
+      "result": "Reference reopened; new Session and request; one receipt source and one Skill source; both real modes succeeded"
+    }
+  ],
+  "initialDefect": "Initial Enter bubbled into Send; fixed using reference button key capture and retested. Initial Session is excluded from final Session evidence.",
+  "cleanup": {
+    "hostExecs": [
+      99442,
+      84893
+    ],
+    "modelExec": 58273,
+    "allExitCodes": 0,
+    "tabClosed": 3,
+    "homesRetained": true
+  }
+}

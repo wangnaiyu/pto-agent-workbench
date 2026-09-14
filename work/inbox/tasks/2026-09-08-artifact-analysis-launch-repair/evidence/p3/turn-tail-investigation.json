@@ -1,0 +1,40 @@
+{
+  "baseline": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+  "candidate": "P3 WIP e80fa835192f2cc087369e06080aaf9944a6b3fa",
+  "files": [
+    {
+      "file": "apps/web/tests/turn-tail-actions.e2e.ts",
+      "sameSource": true,
+      "candidateSha256": "03d7943df199b8d3adc5cd033c67ca9b86e6fc0a7b26af697f6e27cfd87a48c8",
+      "baselineSha256": "03d7943df199b8d3adc5cd033c67ca9b86e6fc0a7b26af697f6e27cfd87a48c8"
+    },
+    {
+      "file": "apps/web/tests/scaffold.ts",
+      "sameSource": true,
+      "candidateSha256": "0a27f56616cc9360357e3b12a2e9a2e40f8395ce115cf9bb34ac564664965131",
+      "baselineSha256": "0a27f56616cc9360357e3b12a2e9a2e40f8395ce115cf9bb34ac564664965131"
+    },
+    {
+      "file": "snapshots/web/turn-tail-actions/running.expected.md",
+      "sameSource": true,
+      "candidateSha256": "b2b8398fdff56cdc22de4430907b31fdd369456d40f9d5877cb4d6064a94e676",
+      "baselineSha256": "b2b8398fdff56cdc22de4430907b31fdd369456d40f9d5877cb4d6064a94e676"
+    },
+    {
+      "file": "packages/client/ui-chat/src/client/chat/StatsPills.tsx",
+      "sameSource": true,
+      "candidateSha256": "ccdc7084681c744024c00da8d94650fdc292d682ed6e6523e7053b259409783f",
+      "baselineSha256": "ccdc7084681c744024c00da8d94650fdc292d682ed6e6523e7053b259409783f"
+    },
+    {
+      "file": "packages/client/ui-chat/src/client/contract/turn-metrics.ts",
+      "sameSource": true,
+      "candidateSha256": "da641893da91787e1931d5405df5dc61dc6715b19a0bdd72a4b895d5ad305ad9",
+      "baselineSha256": "da641893da91787e1931d5405df5dc61dc6715b19a0bdd72a4b895d5ad305ad9"
+    }
+  ],
+  "fullCandidate": "One added failure: missing throughput text in running ARIA snapshot",
+  "isolatedCandidate": "1 passed / 7 skipped",
+  "isolatedBaseline": "Initial + five repeated focused runs passed; full file 7 passed / 1 skipped",
+  "classification": "Unresolved. Timing-dependent code suggests zero decodeMs, but no matching failure reproduced in original baseline. Do not waive or enter P4."
+}

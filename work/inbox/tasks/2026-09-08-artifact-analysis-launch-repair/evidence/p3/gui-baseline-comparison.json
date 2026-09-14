@@ -1,0 +1,52 @@
+[
+  {
+    "test": "|thread-safe| packages/client/ui-commands/tests/service.client.spec.ts > candidates > localizes canonical built-in and contribution descriptions on every candidate request",
+    "diagnostic": "AssertionError: expected [ { name: 'compact', …(2) }, …(3) ] to deeply equal [ { name: 'compact', …(1) }, …(3) ]",
+    "matchesP2": true
+  },
+  {
+    "test": "|thread-safe| packages/client/ui-theme/tests/corner-shape-styles.client.spec.ts > full-round radii keep circular corners > pairs corner-shape: round with every full-round border-radius under packages/",
+    "diagnostic": "AssertionError: expected [ Array(1) ] to deeply equal []",
+    "matchesP2": true
+  },
+  {
+    "test": "|thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > declares the services it drives",
+    "diagnostic": "AssertionError: expected [ 'slots', 'sessions', …(5) ] to deeply equal [ 'slots', 'sessions', …(4) ]",
+    "matchesP2": true
+  },
+  {
+    "test": "|thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > registers browser and pickers for declarations arriving before or after apply",
+    "diagnostic": "TypeError: Cannot read properties of undefined (reading 'component')",
+    "matchesP2": true
+  },
+  {
+    "test": "|thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > routes browser actions and picker creation to the services",
+    "diagnostic": "Error: The vi.spyOn() function could not find an object to spy upon. The first argument must be defined.",
+    "matchesP2": true
+  },
+  {
+    "test": "|thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > declares the two directory-flow holes and reports their occupancy per surface",
+    "diagnostic": "AssertionError: expected undefined to match object { kind: 'single' }",
+    "matchesP2": true
+  },
+  {
+    "test": "|thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > rejects the browser search callback on a Session Controller business error",
+    "diagnostic": "TypeError: Cannot read properties of undefined (reading 'inject')",
+    "matchesP2": true
+  },
+  {
+    "test": "|thread-safe| packages/client/ui-workspace/tests/host-home-staleness.client.spec.tsx > Host home in the assembled browsing region > abbreviates the path once a home learned after first render reaches the rows",
+    "diagnostic": "Error: mount would suspend: missing service(s) remote.ptoArtifactInspection — provide() them first",
+    "matchesP2": true
+  },
+  {
+    "test": "|thread-safe| packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx > session rename through the assembled browser > renames via the row menu: binding.session.rename fires, the dialog closes, the row re-labels from the list",
+    "diagnostic": "Error: mount would suspend: missing service(s) remote.ptoArtifactInspection — provide() them first",
+    "matchesP2": true
+  },
+  {
+    "test": "|thread-safe| packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx > session rename through the assembled browser > a rejected rename keeps the dialog open with the error surfaced",
+    "diagnostic": "Error: mount would suspend: missing service(s) remote.ptoArtifactInspection — provide() them first",
+    "matchesP2": true
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "file": "p3-final-session-c7a053c0-83e2-40d6-a505-15ea901367f4.decoded.json",
+    "turns": 1,
+    "userMessages": 1,
+    "sources": [
+      {
+        "type": "user/message",
+        "seq": 12,
+        "source": {
+          "kind": "pto-artifact-analysis",
+          "form": "instructions",
+          "receipt": {
+            "requestId": "pto-analysis-984186da-9335-4ace-a8f2-98f6e1053a6e",
+            "sessionId": "session-c7a053c0-83e2-40d6-a505-15ea901367f4",
+            "recordId": "pto-record-dd7835d4-9063-4f52-a870-34134cf6c9de",
+            "recordRevision": "inventory-v1-557be9e7",
+            "actionId": "analyze.dependency-redundancy",
+            "artifactRefs": [
+              "deps.json"
+            ],
+            "skill": {
+              "name": "dependency-redundancy",
+              "provider": "pypto-official-af1d7a016ce5",
+              "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+            },
+            "tool": {
+              "name": "pto_dependency_redundancy",
+              "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+            }
+          }
+        }
+      },
+      {
+        "type": "user/message",
+        "seq": 13,
+        "source": {
+          "kind": "skill-invocation",
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "form": "instructions"
+        }
+      }
+    ]
+  },
+  {
+    "file": "p3-final-session-0d84063d-deff-4494-9975-91a25e3a4bad.decoded.json",
+    "turns": 2,
+    "userMessages": 2,
+    "sources": [
+      {
+        "type": "user/message",
+        "seq": 12,
+        "source": {
+          "kind": "pto-artifact-analysis",
+          "form": "instructions",
+          "receipt": {
+            "requestId": "pto-analysis-dd0a2f05-fde2-44b9-8a27-c08b91d27bda",
+            "sessionId": "session-0d84063d-deff-4494-9975-91a25e3a4bad",
+            "recordId": "pto-record-6393aac5-1242-447b-92a8-ba82263ae778",
+            "recordRevision": "inventory-v1-557be9e7",
+            "actionId": "analyze.dependency-redundancy",
+            "artifactRefs": [
+              "deps.json"
+            ],
+            "skill": {
+              "name": "dependency-redundancy",
+              "provider": "pypto-official-af1d7a016ce5",
+              "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+            },
+            "tool": {
+              "name": "pto_dependency_redundancy",
+              "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+            }
+          }
+        }
+      },
+      {
+        "type": "user/message",
+        "seq": 13,
+        "source": {
+          "kind": "skill-invocation",
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "form": "instructions"
+        }
+      }
+    ]
+  }
+]

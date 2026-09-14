@@ -1,0 +1,66 @@
+[
+  {
+    "path": "packages/client/ui-conversation/tests/apply-wiring.client.spec.tsx",
+    "line": 17,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "matchesBaseline": true
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx",
+    "line": 63,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "matchesBaseline": true
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx",
+    "line": 85,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "matchesBaseline": true
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx",
+    "line": 112,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "matchesBaseline": true
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx",
+    "line": 177,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "matchesBaseline": true
+  },
+  {
+    "path": "packages/client/ui-tool/tests/assembly-surfaces.client.spec.tsx",
+    "line": 82,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "...runtime.workspaces,",
+    "matchesBaseline": true
+  },
+  {
+    "path": "packages/client/ui-tool/tests/toolview-slot.client.spec.tsx",
+    "line": 69,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "...runtime.workspaces,",
+    "matchesBaseline": true
+  },
+  {
+    "path": "packages/client/ui-tool/tests/toolview-slot.client.spec.tsx",
+    "line": 216,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "...runtime.workspaces,",
+    "matchesBaseline": true
+  }
+]
