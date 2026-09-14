@@ -1,0 +1,842 @@
+[
+  {
+    "schemaVersion": 2,
+    "id": "pto-exp-e6f694f7-e57c-43db-94a4-a81d416ad00b",
+    "workspacePath": "<fixture-root>/workspace",
+    "status": "planned",
+    "revision": 0,
+    "environment": {
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "change": {
+      "summary": "P4 durable planned layout fixture 12: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_",
+      "evidenceRefs": [
+        "P4 synthetic layout fixture; no experiment execution"
+      ]
+    },
+    "controls": {
+      "stopConditions": "Presentation validation only; do not execute.",
+      "rollbackPlan": "Retain isolated fixture as evidence."
+    },
+    "execution": {
+      "command": "python3 p4_do_not_execute.py",
+      "timeoutMs": 3600000
+    },
+    "authorization": null,
+    "failure": null,
+    "events": [
+      {
+        "revision": 0,
+        "type": "planned",
+        "state": "planned",
+        "actor": "agent-proposal",
+        "at": "2026-09-14T06:21:59.145Z",
+        "details": {
+          "outputPrecondition": "absent-observed",
+          "identityStatus": "unverified"
+        }
+      }
+    ],
+    "createdAt": "2026-09-14T06:21:59.145Z",
+    "updatedAt": "2026-09-14T06:21:59.145Z",
+    "baseline": {
+      "path": "<fixture-root>/workspace/baseline-with-a-long-recognized-fixture-name",
+      "kind": "l2",
+      "marker": "kernel_config.py",
+      "identityStatus": "unverified",
+      "observedAt": "2026-09-14T06:21:59.145Z"
+    },
+    "source": {
+      "path": "<fixture-root>/workspace/source",
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "candidateOutput": {
+      "path": "<fixture-root>/workspace/source/candidate-12-with-a-long-output-directory-name",
+      "precondition": "absent-observed",
+      "observedAt": "2026-09-14T06:21:59.145Z"
+    },
+    "actualRun": null
+  },
+  {
+    "schemaVersion": 2,
+    "id": "pto-exp-e893f227-9a5c-4f61-94ca-e7ab0816ab5b",
+    "workspacePath": "<fixture-root>/workspace",
+    "status": "planned",
+    "revision": 0,
+    "environment": {
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "change": {
+      "summary": "P4 durable planned layout fixture 11: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_",
+      "evidenceRefs": [
+        "P4 synthetic layout fixture; no experiment execution"
+      ]
+    },
+    "controls": {
+      "stopConditions": "Presentation validation only; do not execute.",
+      "rollbackPlan": "Retain isolated fixture as evidence."
+    },
+    "execution": {
+      "command": "python3 p4_do_not_execute.py",
+      "timeoutMs": 3600000
+    },
+    "authorization": null,
+    "failure": null,
+    "events": [
+      {
+        "revision": 0,
+        "type": "planned",
+        "state": "planned",
+        "actor": "agent-proposal",
+        "at": "2026-09-14T06:21:59.133Z",
+        "details": {
+          "outputPrecondition": "absent-observed",
+          "identityStatus": "unverified"
+        }
+      }
+    ],
+    "createdAt": "2026-09-14T06:21:59.133Z",
+    "updatedAt": "2026-09-14T06:21:59.133Z",
+    "baseline": {
+      "path": "<fixture-root>/workspace/baseline-with-a-long-recognized-fixture-name",
+      "kind": "l2",
+      "marker": "kernel_config.py",
+      "identityStatus": "unverified",
+      "observedAt": "2026-09-14T06:21:59.133Z"
+    },
+    "source": {
+      "path": "<fixture-root>/workspace/source",
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "candidateOutput": {
+      "path": "<fixture-root>/workspace/source/candidate-11-with-a-long-output-directory-name",
+      "precondition": "absent-observed",
+      "observedAt": "2026-09-14T06:21:59.133Z"
+    },
+    "actualRun": null
+  },
+  {
+    "schemaVersion": 2,
+    "id": "pto-exp-98fbb246-cd9c-48bd-942b-a9846e95c6b5",
+    "workspacePath": "<fixture-root>/workspace",
+    "status": "planned",
+    "revision": 0,
+    "environment": {
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "change": {
+      "summary": "P4 durable planned layout fixture 10: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_",
+      "evidenceRefs": [
+        "P4 synthetic layout fixture; no experiment execution"
+      ]
+    },
+    "controls": {
+      "stopConditions": "Presentation validation only; do not execute.",
+      "rollbackPlan": "Retain isolated fixture as evidence."
+    },
+    "execution": {
+      "command": "python3 p4_do_not_execute.py",
+      "timeoutMs": 3600000
+    },
+    "authorization": null,
+    "failure": null,
+    "events": [
+      {
+        "revision": 0,
+        "type": "planned",
+        "state": "planned",
+        "actor": "agent-proposal",
+        "at": "2026-09-14T06:21:59.122Z",
+        "details": {
+          "outputPrecondition": "absent-observed",
+          "identityStatus": "unverified"
+        }
+      }
+    ],
+    "createdAt": "2026-09-14T06:21:59.122Z",
+    "updatedAt": "2026-09-14T06:21:59.122Z",
+    "baseline": {
+      "path": "<fixture-root>/workspace/baseline-with-a-long-recognized-fixture-name",
+      "kind": "l2",
+      "marker": "kernel_config.py",
+      "identityStatus": "unverified",
+      "observedAt": "2026-09-14T06:21:59.122Z"
+    },
+    "source": {
+      "path": "<fixture-root>/workspace/source",
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "candidateOutput": {
+      "path": "<fixture-root>/workspace/source/candidate-10-with-a-long-output-directory-name",
+      "precondition": "absent-observed",
+      "observedAt": "2026-09-14T06:21:59.122Z"
+    },
+    "actualRun": null
+  },
+  {
+    "schemaVersion": 2,
+    "id": "pto-exp-27d2e242-5f93-4df8-b572-4c0320a0f88a",
+    "workspacePath": "<fixture-root>/workspace",
+    "status": "planned",
+    "revision": 0,
+    "environment": {
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "change": {
+      "summary": "P4 durable planned layout fixture 9: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_",
+      "evidenceRefs": [
+        "P4 synthetic layout fixture; no experiment execution"
+      ]
+    },
+    "controls": {
+      "stopConditions": "Presentation validation only; do not execute.",
+      "rollbackPlan": "Retain isolated fixture as evidence."
+    },
+    "execution": {
+      "command": "python3 p4_do_not_execute.py",
+      "timeoutMs": 3600000
+    },
+    "authorization": null,
+    "failure": null,
+    "events": [
+      {
+        "revision": 0,
+        "type": "planned",
+        "state": "planned",
+        "actor": "agent-proposal",
+        "at": "2026-09-14T06:21:59.110Z",
+        "details": {
+          "outputPrecondition": "absent-observed",
+          "identityStatus": "unverified"
+        }
+      }
+    ],
+    "createdAt": "2026-09-14T06:21:59.110Z",
+    "updatedAt": "2026-09-14T06:21:59.110Z",
+    "baseline": {
+      "path": "<fixture-root>/workspace/baseline-with-a-long-recognized-fixture-name",
+      "kind": "l2",
+      "marker": "kernel_config.py",
+      "identityStatus": "unverified",
+      "observedAt": "2026-09-14T06:21:59.110Z"
+    },
+    "source": {
+      "path": "<fixture-root>/workspace/source",
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "candidateOutput": {
+      "path": "<fixture-root>/workspace/source/candidate-9-with-a-long-output-directory-name",
+      "precondition": "absent-observed",
+      "observedAt": "2026-09-14T06:21:59.110Z"
+    },
+    "actualRun": null
+  },
+  {
+    "schemaVersion": 2,
+    "id": "pto-exp-962deeaa-2a17-4763-b50a-d5dcfe2572f6",
+    "workspacePath": "<fixture-root>/workspace",
+    "status": "planned",
+    "revision": 0,
+    "environment": {
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "change": {
+      "summary": "P4 durable planned layout fixture 8: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_",
+      "evidenceRefs": [
+        "P4 synthetic layout fixture; no experiment execution"
+      ]
+    },
+    "controls": {
+      "stopConditions": "Presentation validation only; do not execute.",
+      "rollbackPlan": "Retain isolated fixture as evidence."
+    },
+    "execution": {
+      "command": "python3 p4_do_not_execute.py",
+      "timeoutMs": 3600000
+    },
+    "authorization": null,
+    "failure": null,
+    "events": [
+      {
+        "revision": 0,
+        "type": "planned",
+        "state": "planned",
+        "actor": "agent-proposal",
+        "at": "2026-09-14T06:21:59.100Z",
+        "details": {
+          "outputPrecondition": "absent-observed",
+          "identityStatus": "unverified"
+        }
+      }
+    ],
+    "createdAt": "2026-09-14T06:21:59.100Z",
+    "updatedAt": "2026-09-14T06:21:59.100Z",
+    "baseline": {
+      "path": "<fixture-root>/workspace/baseline-with-a-long-recognized-fixture-name",
+      "kind": "l2",
+      "marker": "kernel_config.py",
+      "identityStatus": "unverified",
+      "observedAt": "2026-09-14T06:21:59.100Z"
+    },
+    "source": {
+      "path": "<fixture-root>/workspace/source",
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "candidateOutput": {
+      "path": "<fixture-root>/workspace/source/candidate-8-with-a-long-output-directory-name",
+      "precondition": "absent-observed",
+      "observedAt": "2026-09-14T06:21:59.100Z"
+    },
+    "actualRun": null
+  },
+  {
+    "schemaVersion": 2,
+    "id": "pto-exp-da491895-e8f7-4ae7-80b7-3698681bf595",
+    "workspacePath": "<fixture-root>/workspace",
+    "status": "planned",
+    "revision": 0,
+    "environment": {
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "change": {
+      "summary": "P4 durable planned layout fixture 7: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_",
+      "evidenceRefs": [
+        "P4 synthetic layout fixture; no experiment execution"
+      ]
+    },
+    "controls": {
+      "stopConditions": "Presentation validation only; do not execute.",
+      "rollbackPlan": "Retain isolated fixture as evidence."
+    },
+    "execution": {
+      "command": "python3 p4_do_not_execute.py",
+      "timeoutMs": 3600000
+    },
+    "authorization": null,
+    "failure": null,
+    "events": [
+      {
+        "revision": 0,
+        "type": "planned",
+        "state": "planned",
+        "actor": "agent-proposal",
+        "at": "2026-09-14T06:21:59.089Z",
+        "details": {
+          "outputPrecondition": "absent-observed",
+          "identityStatus": "unverified"
+        }
+      }
+    ],
+    "createdAt": "2026-09-14T06:21:59.089Z",
+    "updatedAt": "2026-09-14T06:21:59.089Z",
+    "baseline": {
+      "path": "<fixture-root>/workspace/baseline-with-a-long-recognized-fixture-name",
+      "kind": "l2",
+      "marker": "kernel_config.py",
+      "identityStatus": "unverified",
+      "observedAt": "2026-09-14T06:21:59.089Z"
+    },
+    "source": {
+      "path": "<fixture-root>/workspace/source",
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "candidateOutput": {
+      "path": "<fixture-root>/workspace/source/candidate-7-with-a-long-output-directory-name",
+      "precondition": "absent-observed",
+      "observedAt": "2026-09-14T06:21:59.089Z"
+    },
+    "actualRun": null
+  },
+  {
+    "schemaVersion": 2,
+    "id": "pto-exp-5ee42909-bed6-49d6-9ad7-3407a5647919",
+    "workspacePath": "<fixture-root>/workspace",
+    "status": "planned",
+    "revision": 0,
+    "environment": {
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "change": {
+      "summary": "P4 durable planned layout fixture 6: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_",
+      "evidenceRefs": [
+        "P4 synthetic layout fixture; no experiment execution"
+      ]
+    },
+    "controls": {
+      "stopConditions": "Presentation validation only; do not execute.",
+      "rollbackPlan": "Retain isolated fixture as evidence."
+    },
+    "execution": {
+      "command": "python3 p4_do_not_execute.py",
+      "timeoutMs": 3600000
+    },
+    "authorization": null,
+    "failure": null,
+    "events": [
+      {
+        "revision": 0,
+        "type": "planned",
+        "state": "planned",
+        "actor": "agent-proposal",
+        "at": "2026-09-14T06:21:59.079Z",
+        "details": {
+          "outputPrecondition": "absent-observed",
+          "identityStatus": "unverified"
+        }
+      }
+    ],
+    "createdAt": "2026-09-14T06:21:59.079Z",
+    "updatedAt": "2026-09-14T06:21:59.079Z",
+    "baseline": {
+      "path": "<fixture-root>/workspace/baseline-with-a-long-recognized-fixture-name",
+      "kind": "l2",
+      "marker": "kernel_config.py",
+      "identityStatus": "unverified",
+      "observedAt": "2026-09-14T06:21:59.079Z"
+    },
+    "source": {
+      "path": "<fixture-root>/workspace/source",
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "candidateOutput": {
+      "path": "<fixture-root>/workspace/source/candidate-6-with-a-long-output-directory-name",
+      "precondition": "absent-observed",
+      "observedAt": "2026-09-14T06:21:59.079Z"
+    },
+    "actualRun": null
+  },
+  {
+    "schemaVersion": 2,
+    "id": "pto-exp-d0d35b5a-4024-44f3-99bd-0d49a360a773",
+    "workspacePath": "<fixture-root>/workspace",
+    "status": "planned",
+    "revision": 0,
+    "environment": {
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "change": {
+      "summary": "P4 durable planned layout fixture 5: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_",
+      "evidenceRefs": [
+        "P4 synthetic layout fixture; no experiment execution"
+      ]
+    },
+    "controls": {
+      "stopConditions": "Presentation validation only; do not execute.",
+      "rollbackPlan": "Retain isolated fixture as evidence."
+    },
+    "execution": {
+      "command": "python3 p4_do_not_execute.py",
+      "timeoutMs": 3600000
+    },
+    "authorization": null,
+    "failure": null,
+    "events": [
+      {
+        "revision": 0,
+        "type": "planned",
+        "state": "planned",
+        "actor": "agent-proposal",
+        "at": "2026-09-14T06:21:59.068Z",
+        "details": {
+          "outputPrecondition": "absent-observed",
+          "identityStatus": "unverified"
+        }
+      }
+    ],
+    "createdAt": "2026-09-14T06:21:59.068Z",
+    "updatedAt": "2026-09-14T06:21:59.068Z",
+    "baseline": {
+      "path": "<fixture-root>/workspace/baseline-with-a-long-recognized-fixture-name",
+      "kind": "l2",
+      "marker": "kernel_config.py",
+      "identityStatus": "unverified",
+      "observedAt": "2026-09-14T06:21:59.068Z"
+    },
+    "source": {
+      "path": "<fixture-root>/workspace/source",
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "candidateOutput": {
+      "path": "<fixture-root>/workspace/source/candidate-5-with-a-long-output-directory-name",
+      "precondition": "absent-observed",
+      "observedAt": "2026-09-14T06:21:59.068Z"
+    },
+    "actualRun": null
+  },
+  {
+    "schemaVersion": 2,
+    "id": "pto-exp-d902c669-6441-4af1-a6db-57fc4a31437b",
+    "workspacePath": "<fixture-root>/workspace",
+    "status": "planned",
+    "revision": 0,
+    "environment": {
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "change": {
+      "summary": "P4 durable planned layout fixture 4: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_",
+      "evidenceRefs": [
+        "P4 synthetic layout fixture; no experiment execution"
+      ]
+    },
+    "controls": {
+      "stopConditions": "Presentation validation only; do not execute.",
+      "rollbackPlan": "Retain isolated fixture as evidence."
+    },
+    "execution": {
+      "command": "python3 p4_do_not_execute.py",
+      "timeoutMs": 3600000
+    },
+    "authorization": null,
+    "failure": null,
+    "events": [
+      {
+        "revision": 0,
+        "type": "planned",
+        "state": "planned",
+        "actor": "agent-proposal",
+        "at": "2026-09-14T06:21:59.058Z",
+        "details": {
+          "outputPrecondition": "absent-observed",
+          "identityStatus": "unverified"
+        }
+      }
+    ],
+    "createdAt": "2026-09-14T06:21:59.058Z",
+    "updatedAt": "2026-09-14T06:21:59.058Z",
+    "baseline": {
+      "path": "<fixture-root>/workspace/baseline-with-a-long-recognized-fixture-name",
+      "kind": "l2",
+      "marker": "kernel_config.py",
+      "identityStatus": "unverified",
+      "observedAt": "2026-09-14T06:21:59.058Z"
+    },
+    "source": {
+      "path": "<fixture-root>/workspace/source",
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "candidateOutput": {
+      "path": "<fixture-root>/workspace/source/candidate-4-with-a-long-output-directory-name",
+      "precondition": "absent-observed",
+      "observedAt": "2026-09-14T06:21:59.058Z"
+    },
+    "actualRun": null
+  },
+  {
+    "schemaVersion": 2,
+    "id": "pto-exp-6a938115-877b-412d-94ff-82f894405a5e",
+    "workspacePath": "<fixture-root>/workspace",
+    "status": "planned",
+    "revision": 0,
+    "environment": {
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "change": {
+      "summary": "P4 durable planned layout fixture 3: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_",
+      "evidenceRefs": [
+        "P4 synthetic layout fixture; no experiment execution"
+      ]
+    },
+    "controls": {
+      "stopConditions": "Presentation validation only; do not execute.",
+      "rollbackPlan": "Retain isolated fixture as evidence."
+    },
+    "execution": {
+      "command": "python3 p4_do_not_execute.py",
+      "timeoutMs": 3600000
+    },
+    "authorization": null,
+    "failure": null,
+    "events": [
+      {
+        "revision": 0,
+        "type": "planned",
+        "state": "planned",
+        "actor": "agent-proposal",
+        "at": "2026-09-14T06:21:59.046Z",
+        "details": {
+          "outputPrecondition": "absent-observed",
+          "identityStatus": "unverified"
+        }
+      }
+    ],
+    "createdAt": "2026-09-14T06:21:59.046Z",
+    "updatedAt": "2026-09-14T06:21:59.046Z",
+    "baseline": {
+      "path": "<fixture-root>/workspace/baseline-with-a-long-recognized-fixture-name",
+      "kind": "l2",
+      "marker": "kernel_config.py",
+      "identityStatus": "unverified",
+      "observedAt": "2026-09-14T06:21:59.046Z"
+    },
+    "source": {
+      "path": "<fixture-root>/workspace/source",
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "candidateOutput": {
+      "path": "<fixture-root>/workspace/source/candidate-3-with-a-long-output-directory-name",
+      "precondition": "absent-observed",
+      "observedAt": "2026-09-14T06:21:59.046Z"
+    },
+    "actualRun": null
+  },
+  {
+    "schemaVersion": 2,
+    "id": "pto-exp-06a14ff4-0362-429d-8df1-1173fb2eb8b7",
+    "workspacePath": "<fixture-root>/workspace",
+    "status": "planned",
+    "revision": 0,
+    "environment": {
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "change": {
+      "summary": "P4 durable planned layout fixture 2: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_",
+      "evidenceRefs": [
+        "P4 synthetic layout fixture; no experiment execution"
+      ]
+    },
+    "controls": {
+      "stopConditions": "Presentation validation only; do not execute.",
+      "rollbackPlan": "Retain isolated fixture as evidence."
+    },
+    "execution": {
+      "command": "python3 p4_do_not_execute.py",
+      "timeoutMs": 3600000
+    },
+    "authorization": null,
+    "failure": null,
+    "events": [
+      {
+        "revision": 0,
+        "type": "planned",
+        "state": "planned",
+        "actor": "agent-proposal",
+        "at": "2026-09-14T06:21:59.034Z",
+        "details": {
+          "outputPrecondition": "absent-observed",
+          "identityStatus": "unverified"
+        }
+      }
+    ],
+    "createdAt": "2026-09-14T06:21:59.034Z",
+    "updatedAt": "2026-09-14T06:21:59.034Z",
+    "baseline": {
+      "path": "<fixture-root>/workspace/baseline-with-a-long-recognized-fixture-name",
+      "kind": "l2",
+      "marker": "kernel_config.py",
+      "identityStatus": "unverified",
+      "observedAt": "2026-09-14T06:21:59.034Z"
+    },
+    "source": {
+      "path": "<fixture-root>/workspace/source",
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "candidateOutput": {
+      "path": "<fixture-root>/workspace/source/candidate-2-with-a-long-output-directory-name",
+      "precondition": "absent-observed",
+      "observedAt": "2026-09-14T06:21:59.034Z"
+    },
+    "actualRun": null
+  },
+  {
+    "schemaVersion": 2,
+    "id": "pto-exp-4a32e23a-2577-44c5-a5ea-d1da453c59b7",
+    "workspacePath": "<fixture-root>/workspace",
+    "status": "planned",
+    "revision": 0,
+    "environment": {
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "change": {
+      "summary": "P4 durable planned layout fixture 1: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_",
+      "evidenceRefs": [
+        "P4 synthetic layout fixture; no experiment execution"
+      ]
+    },
+    "controls": {
+      "stopConditions": "Presentation validation only; do not execute.",
+      "rollbackPlan": "Retain isolated fixture as evidence."
+    },
+    "execution": {
+      "command": "python3 p4_do_not_execute.py",
+      "timeoutMs": 3600000
+    },
+    "authorization": null,
+    "failure": null,
+    "events": [
+      {
+        "revision": 0,
+        "type": "planned",
+        "state": "planned",
+        "actor": "agent-proposal",
+        "at": "2026-09-14T06:21:59.003Z",
+        "details": {
+          "outputPrecondition": "absent-observed",
+          "identityStatus": "unverified"
+        }
+      }
+    ],
+    "createdAt": "2026-09-14T06:21:59.003Z",
+    "updatedAt": "2026-09-14T06:21:59.003Z",
+    "baseline": {
+      "path": "<fixture-root>/workspace/baseline-with-a-long-recognized-fixture-name",
+      "kind": "l2",
+      "marker": "kernel_config.py",
+      "identityStatus": "unverified",
+      "observedAt": "2026-09-14T06:21:59.003Z"
+    },
+    "source": {
+      "path": "<fixture-root>/workspace/source",
+      "identity": {
+        "status": "unverified",
+        "value": null,
+        "adapter": null,
+        "evidence": [],
+        "trust": "none"
+      }
+    },
+    "candidateOutput": {
+      "path": "<fixture-root>/workspace/source/candidate-1-with-a-long-output-directory-name",
+      "precondition": "absent-observed",
+      "observedAt": "2026-09-14T06:21:59.003Z"
+    },
+    "actualRun": null
+  }
+]

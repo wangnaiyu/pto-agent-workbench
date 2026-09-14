@@ -1,0 +1,38 @@
+[
+  {
+    "label": "final-1280-sidebar-bottom",
+    "cardCount": 14,
+    "clearance": 40,
+    "lastCardBottom": 512,
+    "maxScroll": 2930,
+    "scrollTop": 2930,
+    "seatTop": 552
+  },
+  {
+    "label": "final-900-sidebar-bottom",
+    "cardCount": 14,
+    "clearance": 40,
+    "lastCardBottom": 552,
+    "maxScroll": 3250,
+    "scrollTop": 3250,
+    "seatTop": 592
+  },
+  {
+    "label": "final-700-bottom",
+    "cardCount": 14,
+    "clearance": 40,
+    "lastCardBottom": 552,
+    "maxScroll": 2815,
+    "scrollTop": 2815,
+    "seatTop": 592
+  },
+  {
+    "label": "final-1600-grown-composer-bottom",
+    "cardCount": 14,
+    "clearance": 40,
+    "lastCardBottom": 344,
+    "maxScroll": 2407,
+    "scrollTop": 2407,
+    "seatTop": 384
+  }
+]

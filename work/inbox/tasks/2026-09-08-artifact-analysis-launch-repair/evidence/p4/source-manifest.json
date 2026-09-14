@@ -1,0 +1,25 @@
+{
+  "harnessP3Base": "e80fa835192f2cc087369e06080aaf9944a6b3fa",
+  "files": [
+    {
+      "path": "packages/client/ui-pto-experiments/src/client/dashboard.module.css",
+      "sha256": "36a6fadbe5fefbb8a5f4dfb8c63f4f72d6bbd46a632f76f5aac4a05f452c5555",
+      "unchangedFromP3": false
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/skeleton/ConversationRoot.tsx",
+      "sha256": "e364a3c7c0fdd5cfc3156f3827009efa47fd03e03d18b4e01fde47550e659d2a",
+      "unchangedFromP3": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/skeleton/ConversationRoot.module.css",
+      "sha256": "8423789396933eb9f99fe134ca6fc1dea1940812eb4b0e8f76b1d50a333a1218",
+      "unchangedFromP3": true
+    },
+    {
+      "path": "packages/host/pto-experiment-dashboard/src/index.ts",
+      "sha256": "68b976b6f965ffeb15982a77307411bb0620c6c5d5df1fefa416dc66a78dc859",
+      "unchangedFromP3": true
+    }
+  ]
+}
