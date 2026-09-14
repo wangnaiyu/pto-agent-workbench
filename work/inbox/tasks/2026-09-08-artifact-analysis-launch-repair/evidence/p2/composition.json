@@ -1,0 +1,16 @@
+{
+  "stage": {
+    "kind": "draft",
+    "draftRevision": "1:1::"
+  },
+  "submit": {
+    "kind": "draft",
+    "draftRevision": "1:2::standard",
+    "agentPreset": "standard"
+  },
+  "driftAdmissionCalls": 0,
+  "exactStageAdmissionCalls": 1,
+  "ordinaryTextGuardCalls": 0,
+  "slashTextGuardCalls": 1,
+  "boundary": "actual four Client applies and trigger admission; Host is a rejecting double; no browser/Host integration or P2 acceptance claim"
+}

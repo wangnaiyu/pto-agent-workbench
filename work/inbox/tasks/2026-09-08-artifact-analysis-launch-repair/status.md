@@ -1,13 +1,13 @@
 # 当前状态
 
-- task-status: paused
-- current-step: P1 完成；停在 P2 授权边界
-- updated: 2026-09-11
-- authorization: 用户明确要求先提交已有改动，并授权严格实施重写 plan 的 P1；仅 official provider 正式装配及对应验证，不进入 P2–P5、不改 receipt schema。P0 已保存为 642632176df9f1131e9c41cbffc33c3b414184ff；本阶段独立配置提交，不执行 push/PR。
-- checkpoint: 正式 patch 已用 insert 注册唯一锁定 official provider；无临时 provider patch 的首次 analysis 成功。详见 [P1 报告](p1-report.md) 和 [P1 证据](evidence/p1/README.md)。
-- next-action: 停止，等待用户单独授权下一阶段。不得自动进入 P2–P5。
-- blockers: P1 无阻塞。P2 的 launch/retarget/reload/retry 门禁缺口、P3 可见 token/overlay、P4 实验布局均保留。
-- verification: P1：真实 profile 正向+3 负向组合及 launcher 共 8/8；harness 消费测试 99/99；真实首发链路 17 条断言通过。结构/秘密扫描/whitespace 见 P1 quality。未重跑全量 build/typecheck/lint/doc-sync；P0 历史失败见 P1 报告。
+- task-status: blocked
+- current-step: P2 实施前诊断完成；停在提交/恢复契约确认节点
+- updated: 2026-09-14
+- authorization: 用户授权按既定计划连续实施 P2–P5；P2/P3/P4 分别验收和独立提交，前序通过才能继续。契约/架构变更、scope 扩大、无法归因新回归或验收无法满足时立即停止。P5 完成前不 push/PR/merge；保留 P0/P1、分支、savepoint 和证据，不改写历史。
+- checkpoint: 真实四插件 barrier 反例确认 stage 1:1:: → submit 1:2::standard 时 admission 被跳过；matchEnter 普通文本 0 次、slash 对照 1 次。新增门禁/恢复 seam 需要契约确认，产品实现未改。见 [P2 停止报告](p2-blocker.md)。
+- next-action: 等待用户确认 P2 最小提交前校验与 launch 绑定恢复契约后继续；不进入 P3–P5。
+- blockers: 现有 prefix-only matchEnter 与内存 pending admission 不能覆盖 P2 刷新后的普通分析文本；需要补充跨插件提交/恢复契约，触发本轮用户明确停止条件。未降低验收标准。
+- verification: P2 1 项真实四插件诊断通过（包含 drift、精确 target、普通/slash guard 对照），仅证明现状；未执行完整 P2 矩阵或后续阶段验收。P1 8/8、99/99、17 项仍为上一阶段证据。
 - baselines: 工作台 main/origin/main bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9；harness master/origin/master ac2b72a9615cbaf23bb21951ffe1c22f3a11d807；upstream ancestor 5dda764ed3aa172535a7967b06ff95d9cbfe536a。live origin 与两仓 pre/post annotated tag、savepoint 再核对一致，无进行中 Git 操作。详见 [final state](evidence/p0-final-state.json)。
-- working-tree: 外层独立 P1 分支，P0 已提交，P1 按 plan 独立提交；两仓主分支 ref 未改。harness master clean；所有旧分支/savepoint/tag 保留。最终提交 SHA 由 git log 与交付回复定位。
-- temporary-environment: P1 Web PID 99616 / mock PID 99611 经命令行核实后 SIGTERM，exec 73789/47976 均退出 0；tab 5 关闭，未改 viewport。临时根及派生数据保留，见 P1 validation/teardown；P0 旧环境状态仍见原 P0 teardown。
+- working-tree: 两仓均在 codex/repair-p2-launch-20260914。harness 产品/测试 working tree clean，HEAD ac2b72a9615cbaf23bb21951ffe1c22f3a11d807；外层只保存本次诊断/checkpoint/停止报告。无 P2 功能完成提交，P0/P1 保存点不变。
+- temporary-environment: 本次 Vitest exec 69329/26638 均退出 0，诊断 runtime 已 dispose，无网络服务或浏览器 tab。临时 harness 诊断副本已移入外层 evidence/p2；P0/P1 旧证据和环境记录保留。

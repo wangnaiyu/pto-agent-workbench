@@ -25,3 +25,7 @@
 ## P1
 
 正式 provider 装配修复及无临时 provider patch 的真实首发验收见 [P1 证据](p1/README.md)。上面的 P0 记录保留为历史对照。
+
+## P2 实施前诊断
+
+四插件 target 漂移与 prefix-only guard 反例见 [P2 证据](p2/README.md)。当前未完成 P2 验收，契约确认节点见 [停止报告](../p2-blocker.md)。
