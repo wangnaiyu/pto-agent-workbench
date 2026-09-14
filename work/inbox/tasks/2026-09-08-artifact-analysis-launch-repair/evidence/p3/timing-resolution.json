@@ -1,0 +1,69 @@
+{
+  "baselineHarnessSha": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+  "candidateHarnessSha": "e80fa835192f2cc087369e06080aaf9944a6b3fa",
+  "diagnosticSourceSha256": "e5eba7a71cbb05b47e49291c6e16c6ef6ed4be4f60b3ee924d7b2479a4c385f4",
+  "baselineResults": {
+    "instances": 40,
+    "passed": 31,
+    "failed": 9,
+    "otherTestsSkipped": 7,
+    "zeroDecodeIterations": [
+      5,
+      7,
+      13,
+      28,
+      30,
+      31,
+      34,
+      37,
+      39
+    ]
+  },
+  "allVisibilityMatchesPositiveDecodeMs": true,
+  "candidateBaselineGoldenDiffExactlyEqual": true,
+  "files": [
+    {
+      "path": "apps/web/tests/turn-tail-actions.e2e.ts",
+      "sameSource": true,
+      "sha256": "03d7943df199b8d3adc5cd033c67ca9b86e6fc0a7b26af697f6e27cfd87a48c8"
+    },
+    {
+      "path": "apps/web/tests/scaffold.ts",
+      "sameSource": true,
+      "sha256": "0a27f56616cc9360357e3b12a2e9a2e40f8395ce115cf9bb34ac564664965131"
+    },
+    {
+      "path": "snapshots/web/turn-tail-actions/running.expected.md",
+      "sameSource": true,
+      "sha256": "b2b8398fdff56cdc22de4430907b31fdd369456d40f9d5877cb4d6064a94e676"
+    },
+    {
+      "path": "packages/core/agent-loop/src/assistant-stream.ts",
+      "sameSource": true,
+      "sha256": "120d2bec5efeec2aa54bf0e4261a45282936272d610dbbab21eee36b902629de"
+    },
+    {
+      "path": "packages/test-support/llm-replay/src/index.ts",
+      "sameSource": true,
+      "sha256": "d347cff952ab63ed951e6193d29cf003173ffb09e843cf86a74c82cc1888c298"
+    },
+    {
+      "path": "packages/session/session-stats/src/projection.ts",
+      "sameSource": true,
+      "sha256": "8e38b0c0c5a0e98c4184a82763363086133efc13b64d0a8b2a6c515e43f7d99c"
+    },
+    {
+      "path": "packages/client/ui-chat/src/client/chat/StatsPills.tsx",
+      "sameSource": true,
+      "sha256": "ccdc7084681c744024c00da8d94650fdc292d682ed6e6523e7053b259409783f"
+    },
+    {
+      "path": "packages/client/ui-chat/src/client/contract/turn-metrics.ts",
+      "sameSource": true,
+      "sha256": "da641893da91787e1931d5405df5dc61dc6715b19a0bdd72a4b895d5ad305ad9"
+    }
+  ],
+  "classification": "Reproduced pre-existing replay timing/golden instability: default unpaced burst and millisecond timestamps permit zero decodeMs; product correctly omits throughput at zero, but golden requires it. No product, fixture, clock, pacing, normalizer or golden changed.",
+  "limit": "Original full-candidate run did not record timing. Matching original failure is attributed by exact golden diff and unchanged producer/projection/presenter sources, not by claiming original timing was captured.",
+  "cleanup": "Isolated diagnostic copy preserved here, then removed from baseline test discovery; all diagnostic process exits awaited."
+}

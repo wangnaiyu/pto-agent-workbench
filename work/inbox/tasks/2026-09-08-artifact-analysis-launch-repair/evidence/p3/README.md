@@ -42,3 +42,7 @@ live 使用真实工作台 patch，只有目录 picker 替身和回环模型；�
 [新增失败块](turn-tail-new-failure.txt)、[候选单独复核](candidate-turn-tail.txt)、[基线单独复核](baseline-turn-tail.txt)、[基线完整文件](baseline-turn-tail-full.txt)、[源码/结果汇总](turn-tail-investigation.json)；五次追加基线单测为 baseline-turn-tail-repeat-1.txt 至 baseline-turn-tail-repeat-5.txt。所有重跑通过，故未将新增差异认定为已证明 baseline 问题。P3 按 [停止条件](../../p3-validation-blocker.md) 保存未验收 checkpoint，不进入 P4。
 
 [真实交互与清理记录](live-checks.json) 区分初次 Enter 缺陷与修复后验证。
+
+## 专项归因完成
+
+[最终诊断源码](timing-diagnostic.e2e.ts.txt)、[原断言日志](timing-baseline.txt)、[40 次 timing/ARIA](timing-observations.json)、[结论/源码 hash](timing-resolution.json)。原基线 9/40 次自然出现零毫秒解码；九次失败与原候选完整 diff 相同。无 clock/pacing/产品/golden 修改。初始未归因记录保留；[更新后的 49 项全套对照](web-baseline-comparison-resolved.json) 与 [报告结论](../../p3-validation-blocker.md#专项调查结论) 补充新的基线证据。

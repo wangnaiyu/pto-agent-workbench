@@ -1,0 +1,63 @@
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+
+ RUN  v4.1.8 /private/tmp/pto-p2-baseline-check
+
+ ❯ apps/web/tests/p3-throughput-diagnostic.e2e.ts (47 tests | 9 failed | 7 skipped) 45734ms
+     × P3 timing observation 5 1067ms
+     × P3 timing observation 7 1082ms
+     × P3 timing observation 13 1033ms
+     × P3 timing observation 28 1081ms
+     × P3 timing observation 30 1126ms
+     × P3 timing observation 31 1076ms
+     × P3 timing observation 34 1063ms
+     × P3 timing observation 37 1082ms
+     × P3 timing observation 39 1123ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 9 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  apps/web/tests/p3-throughput-diagnostic.e2e.ts > web e2e: assistant IconActions wait for the turn to end > P3 timing observation 5
+ FAIL  apps/web/tests/p3-throughput-diagnostic.e2e.ts > web e2e: assistant IconActions wait for the turn to end > P3 timing observation 7
+ FAIL  apps/web/tests/p3-throughput-diagnostic.e2e.ts > web e2e: assistant IconActions wait for the turn to end > P3 timing observation 13
+ FAIL  apps/web/tests/p3-throughput-diagnostic.e2e.ts > web e2e: assistant IconActions wait for the turn to end > P3 timing observation 28
+ FAIL  apps/web/tests/p3-throughput-diagnostic.e2e.ts > web e2e: assistant IconActions wait for the turn to end > P3 timing observation 30
+ FAIL  apps/web/tests/p3-throughput-diagnostic.e2e.ts > web e2e: assistant IconActions wait for the turn to end > P3 timing observation 31
+ FAIL  apps/web/tests/p3-throughput-diagnostic.e2e.ts > web e2e: assistant IconActions wait for the turn to end > P3 timing observation 34
+ FAIL  apps/web/tests/p3-throughput-diagnostic.e2e.ts > web e2e: assistant IconActions wait for the turn to end > P3 timing observation 37
+ FAIL  apps/web/tests/p3-throughput-diagnostic.e2e.ts > web e2e: assistant IconActions wait for the turn to end > P3 timing observation 39
+AssertionError: expected '- banner:\n  - navigation "Session hi…' to be '- banner:\n  - navigation "Session hi…' // Object.is equality
+
+- Expected
++ Received
+
+@@ -43,12 +43,12 @@
+  - button "Select model, current DeepSeek-V4-Flash":
+    - text: DeepSeek-V4-Flash
+    - img
+  - button "6% of context used"
+  - button "Stop generating"
+- - button "1 turns 1 steps · {{throughput}} tok/s":
++ - button "1 turns 1 steps":
+    - img
+-   - text: 1 turns 1 steps{{throughput}} tok/s
++   - text: 1 turns 1 steps
+  - button "7.9K tok · Cache hit 0%":
+    - img
+    - text: 7.9K tokCache hit 0%
+
+
+ ❯ compareOrRefreshGolden apps/web/tests/scaffold.ts:1526:19
+    1524|     throw new Error(`missing golden ${goldenPath} — run DSH_SNAPSHOT=r…
+    1525|   }
+    1526|   expect(payload).toBe(await readFile(goldenPath, 'utf8'))
+       |                   ^
+    1527| }
+    1528|
+ ❯ apps/web/tests/p3-throughput-diagnostic.e2e.ts:161:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/9]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  9 failed | 31 passed | 7 skipped (47)
+   Start at  14:10:08
+   Duration  46.45s (transform 403ms, setup 0ms, import 654ms, tests 45.73s, environment 0ms)

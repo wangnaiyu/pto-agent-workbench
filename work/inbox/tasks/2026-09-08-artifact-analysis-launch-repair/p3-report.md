@@ -37,10 +37,12 @@ PTO Host 通过现有 Cordis prepend waterfall 在 tool-skill 之后处理结果
 - 完整 build、typecheck、定向 lint、export JSDoc 通过；doc-sync 34/34，hygiene 16/16，工作台结构检查通过。
 - 全量 lint 保留 8 条既有 no-misused-spread，按文件/行/源码逐项匹配，见 [比较](evidence/p3/lint-baseline-comparison.json)。未降低规则。
 - tool-pto-run 的 load-path 旧测试仍预期两个工具、实际三个；在原升级后基线独立复现，测试和入口源码 hash 完全一致，见 [比较](evidence/p3/load-path-baseline-comparison.json)。本阶段不修复。
-- 完整 browser replay：283 passed / 41 failed / 37 skipped。49 个失败条目中 48 个匹配 P2；新增 turn-tail 吞吐量文本差异未在原基线复现，单独重跑通过不作为豁免。按用户要求停止 P3 验收，详见 [验收停止报告](p3-validation-blocker.md)。
+- 完整 browser replay：283 passed / 41 failed / 37 skipped。初步 48 项匹配 P2，turn-tail 新差异曾触发暂停。用户允许专项取证后，在原基线 40 次观察中九次复现同一完整 diff，均为真实 decodeMs = 0；全部 49 项现已有基线归因。详见 [调查结论](p3-validation-blocker.md#专项调查结论)。未修改快照、pacing、clock 或规则；此检查仍报告红项。
 
 ## 遗留
 
 Host 重启/Record 失效仍明确要求重新关联，站点存储清除不保证草稿恢复。P4 实验布局尚未修改；P5 整体回归尚未开始。P0/P1/P2 提交、分支和 savepoint 保留，本阶段无 push/PR/merge 或历史改写。
 
 P3 WIP harness 保存提交：`e80fa835192f2cc087369e06080aaf9944a6b3fa`，正常 pre-commit hooks 通过。两仓完整保存 SHA 见 annotated tag `repair-p3-validation-checkpoint-20260914`，另保留 `codex/savepoint-p3-validation-20260914`。这是一组未验收恢复点，不是正式升级/产品主分支基线。
+
+用户授权专项调查后的归因已完成，P3 原实现范围验收通过；后续验收记录不改写 WIP 保存提交及 tag。harness 实现仍为 `e80fa835192f2cc087369e06080aaf9944a6b3fa`，正式验收配对见两仓 `repair-p3-accepted-20260914` annotated tag。P4/P5 需按原 plan 和独立阶段 checkpoint 继续。
