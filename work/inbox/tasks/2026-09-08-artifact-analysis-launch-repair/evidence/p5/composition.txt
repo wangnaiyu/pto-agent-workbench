@@ -1,0 +1,16 @@
+✔ launcher resolves its own root and port default (31.882709ms)
+✔ launcher resolves its own root and port 4180 (30.300458ms)
+✔ launcher refuses missing patch before fake CLI execution (6.622334ms)
+✔ runtime profile stays rooted in product bundled skills (0.162375ms)
+✔ actual composed web profile has one locked official provider and matching inspector tuple (56.870334ms)
+✔ rejects missing provider through actual profile composition (53.5175ms)
+✔ rejects nonexistent entry override (P0 regression) through actual profile composition (52.656125ms)
+✔ rejects duplicate provider under a different entry id through actual profile composition (51.818416ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 259.706708

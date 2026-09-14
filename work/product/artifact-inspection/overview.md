@@ -21,11 +21,11 @@
 
 ## 状态
 
-2026-09-04 MVP 的 Host Record/Profile、artifact inventory、动作就绪度和静态 Viewer 能力继续有效。升级后 P0 在正式三元基线上重新核验：实际工作台 patch 未实例化锁定 official provider，导致首次 admission 拒绝、receipt 未生成；隔离环境仅补 provider 后，receipt/Skill/真实工具链完整。
+2026-09-04 MVP 的 Host Record/Profile、artifact inventory、动作就绪度和静态 Viewer 能力继续有效。升级后 P0 将回归分为 provider 装配、launch/admission、可见输入和实验布局四项，原始证据见 [P0 取证](notes/p0-findings-2026-09-11.md)。不能统一归因为“Viewer 丢 receipt”：Viewer 接收完整 Record+handle，并不消费分析 receipt。
 
-独立剩余问题是 relaunch/目标变化/刷新可能跳过 admission、未发送草稿保护、普通预填与 overlay 未退出，以及有内容实验页不跟正文宽度、窄容器溢出。不能再统一归因为“Viewer 丢 receipt”。纯 Viewer 已接收完整 record+handle，它在 admission 前打开，并不消费分析 receipt。
+后续独立修复已形成可恢复的本地提交并通过各阶段验收：实际 patch 正式插入唯一锁定 provider；分析 launch 保留首发及失败重试绑定；规范 Skill 手势与结构化文件引用支持草稿恢复、Viewer 退出与回开、单次 Skill 注入；实验 Dashboard 消费正文宽度并按容器适配。Host receipt schema、Session V3 与 ConversationRoot 宽度实现均保持原契约。对应证据见任务的 [P1](../../inbox/tasks/2026-09-08-artifact-analysis-launch-repair/p1-report.md)、[P2](../../inbox/tasks/2026-09-08-artifact-analysis-launch-repair/p2-report.md)、[P3](../../inbox/tasks/2026-09-08-artifact-analysis-launch-repair/p3-report.md)、[P4](../../inbox/tasks/2026-09-08-artifact-analysis-launch-repair/p4-report.md) 报告。
 
-事实与限制见 [2026-09-11 P0 取证](notes/p0-findings-2026-09-11.md)，当前任务见 [分析启动与布局回归修复](../../inbox/tasks/2026-09-08-artifact-analysis-launch-repair/README.md)。P0 只取证和重排计划，产品尚未修复；新 launch、同 launch retry、规范输入和宽度的已确认产品意图不变。
+上述结论是分阶段修复与验证，不代表主分支已发布或全套门禁绿色。既有 lint、GUI/browser 失败及重启后 Dashboard 仅查询已载入 Session 的限制仍保留；最终组合回归与收口以 [当前任务状态](../../inbox/tasks/2026-09-08-artifact-analysis-launch-repair/status.md) 为准。
 
 历史实施证据与边界见[已归档 MVP 报告](../../archive/tasks/2026-09-03-artifact-inspection-mvp/final-report.md)。
 后续 selection/deeplink、持久 Analysis View 和更多 adapter 另立任务。
