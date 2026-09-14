@@ -1,0 +1,211 @@
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+
+ RUN  v4.1.8 /private/tmp/pto-p2-baseline-check
+
+ ❯ |thread-safe| packages/client/ui-theme/tests/corner-shape-styles.client.spec.ts (4 tests | 1 failed) 50ms
+     × pairs corner-shape: round with every full-round border-radius under packages/ 47ms
+ ❯ |thread-safe| packages/client/ui-commands/tests/service.client.spec.ts (52 tests | 1 failed) 147ms
+     × localizes canonical built-in and contribution descriptions on every candidate request 5ms
+ ❯ |thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts (7 tests | 5 failed) 16ms
+     × declares the services it drives 4ms
+     × registers browser and pickers for declarations arriving before or after apply 4ms
+     × routes browser actions and picker creation to the services 1ms
+     × declares the two directory-flow holes and reports their occupancy per surface 2ms
+     × rejects the browser search callback on a Session Controller business error 1ms
+ ❯ |thread-safe| packages/client/ui-workspace/tests/host-home-staleness.client.spec.tsx (1 test | 1 failed) 8ms
+     × abbreviates the path once a home learned after first render reaches the rows 7ms
+ ❯ |thread-safe| packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx (2 tests | 2 failed) 11ms
+     × renames via the row menu: binding.session.rename fires, the dialog closes, the row re-labels from the list 9ms
+     × a rejected rename keeps the dialog open with the error surfaced 2ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 10 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |thread-safe| packages/client/ui-commands/tests/service.client.spec.ts > candidates > localizes canonical built-in and contribution descriptions on every candidate request
+AssertionError: expected [ { name: 'compact', …(2) }, …(3) ] to deeply equal [ { name: 'compact', …(1) }, …(3) ]
+
+- Expected
++ Received
+
+  [
+    {
+      "description": "zh:command:description.compact",
+      "name": "compact",
++     "origin": "DSH",
+    },
+    {
+      "description": "scoped goal override",
+      "name": "goal",
++     "origin": "DSH",
+    },
+    {
+      "description": "plugin-authored copy",
+      "name": "custom",
++     "origin": "DSH",
+    },
+    {
+      "description": "zh:theme",
+      "name": "theme",
++     "origin": "DSH",
+    },
+  ]
+
+ ❯ packages/client/ui-commands/tests/service.client.spec.ts:293:56
+    291|     command.register(themeContribution({ description: () => `${locale}…
+    292|
+    293|     await expect(source.candidates(proj('s1'), req(''))).resolves.toEq…
+       |                                                        ^
+    294|       { name: 'compact', description: 'zh:command:description.compact'…
+    295|       { name: 'goal', description: 'scoped goal override' },
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/10]⎯
+
+ FAIL  |thread-safe| packages/client/ui-theme/tests/corner-shape-styles.client.spec.ts > full-round radii keep circular corners > pairs corner-shape: round with every full-round border-radius under packages/
+AssertionError: expected [ Array(1) ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   "/private/tmp/pto-p2-baseline-check/packages/client/ui-workspace/src/client/PtoViewerOverlay.module.css .capability",
++ ]
+
+ ❯ packages/client/ui-theme/tests/corner-shape-styles.client.spec.ts:89:22
+     87|     const unpaired = packageStylesheets().flatMap(file =>
+     88|       unpairedFullRound(readFileSync(file, 'utf8')).map(selectors => `…
+     89|     expect(unpaired).toEqual([])
+       |                      ^
+     90|   })
+     91| })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/10]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > declares the services it drives
+AssertionError: expected [ 'slots', 'sessions', …(5) ] to deeply equal [ 'slots', 'sessions', …(4) ]
+
+- Expected
++ Received
+
+@@ -3,6 +3,7 @@
+    "sessions",
+    "workspaces",
+    "locale",
+    "remote",
+    "remote.directoryPicker",
++   "remote.ptoArtifactInspection",
+  ]
+
+ ❯ packages/client/ui-workspace/tests/apply.client.spec.ts:92:20
+     90|
+     91|   it('declares the services it drives', () => {
+     92|     expect(inject).toEqual([
+       |                    ^
+     93|       'slots', 'sessions', 'workspaces', 'locale', 'remote', 'remote.d…
+     94|     ])
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/10]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > registers browser and pickers for declarations arriving before or after apply
+TypeError: Cannot read properties of undefined (reading 'component')
+ ❯ packages/client/ui-workspace/tests/apply.client.spec.ts:101:55
+     99|     declare(before.slots, 'sidebar.workspaces')
+    100|     await before.ctx.plugin({ inject: [...inject], apply }).await()
+    101|     expect(before.slots.entries('sidebar.workspaces')[0]!.component).t…
+       |                                                       ^
+    102|     // Copy rides the standard locale seat: the entry declares the nam…
+    103|     // and apply registered both dictionaries.
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/10]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > routes browser actions and picker creation to the services
+Error: The vi.spyOn() function could not find an object to spy upon. The first argument must be defined.
+ ❯ packages/client/ui-workspace/tests/apply.client.spec.ts:119:29
+    117|     declare(b.slots, 'sidebar.workspaces', 'conversation.hero.workspac…
+    118|     await b.ctx.plugin({ inject: [...inject], apply }).await()
+    119|     const startSession = vi.spyOn(b.ctx.uiWorkspace, 'startSession').m…
+       |                             ^
+    120|     const startUnassignedSession = vi.spyOn(b.ctx.uiWorkspace, 'startU…
+    121|       .mockImplementation(() => undefined)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/10]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > declares the two directory-flow holes and reports their occupancy per surface
+AssertionError: expected undefined to match object { kind: 'single' }
+
+- Expected:
+{
+  "kind": "single",
+}
+
++ Received:
+undefined
+
+ ❯ packages/client/ui-workspace/tests/apply.client.spec.ts:165:62
+    163|     await b.ctx.plugin({ inject: [...inject], apply }).await()
+    164|     // Registration declared the child holes (declaration = render aut…
+    165|     expect(b.slots.spec('sidebar.workspaces.directoryFlow')).toMatchOb…
+       |                                                              ^
+    166|     expect(b.slots.spec('conversation.hero.workspace.directoryFlow')).…
+    167|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/10]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > rejects the browser search callback on a Session Controller business error
+TypeError: Cannot read properties of undefined (reading 'inject')
+ ❯ packages/client/ui-workspace/tests/apply.client.spec.ts:194:60
+    192|     declare(b.slots, 'sidebar.workspaces')
+    193|     await b.ctx.plugin({ inject: [...inject], apply }).await()
+    194|     const browser = (b.slots.entries('sidebar.workspaces')[0]!.inject …
+       |                                                            ^
+    195|     await expect(browser.searchSessions('needle', new AbortController(…
+    196|       .rejects.toThrow('index unavailable')
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/10]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/host-home-staleness.client.spec.tsx > Host home in the assembled browsing region > abbreviates the path once a home learned after first render reaches the rows
+Error: mount would suspend: missing service(s) remote.ptoArtifactInspection — provide() them first
+ ❯ SlotTestRuntime.mount packages/test-support/client-runtime/src/index.ts:288:13
+    286|     const missing = required.filter(name => this.ctx.get(name) === und…
+    287|     if (missing.length > 0) {
+    288|       throw new Error(`mount would suspend: missing service(s) ${missi…
+       |             ^
+    289|     }
+    290|     const fiber = this.ctx.plugin(plugin)
+ ❯ bench packages/client/ui-workspace/tests/host-home-staleness.client.spec.tsx:49:17
+ ❯ packages/client/ui-workspace/tests/host-home-staleness.client.spec.tsx:71:33
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/10]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx > session rename through the assembled browser > renames via the row menu: binding.session.rename fires, the dialog closes, the row re-labels from the list
+Error: mount would suspend: missing service(s) remote.ptoArtifactInspection — provide() them first
+ ❯ SlotTestRuntime.mount packages/test-support/client-runtime/src/index.ts:288:13
+    286|     const missing = required.filter(name => this.ctx.get(name) === und…
+    287|     if (missing.length > 0) {
+    288|       throw new Error(`mount would suspend: missing service(s) ${missi…
+       |             ^
+    289|     }
+    290|     const fiber = this.ctx.plugin(plugin)
+ ❯ packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx:75:19
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/10]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx > session rename through the assembled browser > a rejected rename keeps the dialog open with the error surfaced
+Error: mount would suspend: missing service(s) remote.ptoArtifactInspection — provide() them first
+ ❯ SlotTestRuntime.mount packages/test-support/client-runtime/src/index.ts:288:13
+    286|     const missing = required.filter(name => this.ctx.get(name) === und…
+    287|     if (missing.length > 0) {
+    288|       throw new Error(`mount would suspend: missing service(s) ${missi…
+       |             ^
+    289|     }
+    290|     const fiber = this.ctx.plugin(plugin)
+ ❯ packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx:122:19
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/10]⎯
+
+
+ Test Files  5 failed (5)
+      Tests  10 failed | 56 passed (66)
+   Start at  10:55:27
+   Duration  2.06s (transform 4.48s, setup 844ms, import 5.91s, tests 232ms, environment 680ms)

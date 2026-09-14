@@ -1,0 +1,7 @@
+{
+  "packages/client/ui-conversation/src/client/input/hub.ts": "b674a8ebdc60fba3025d4c17e55ff8d8cbc779242363ee6a896a3dbb9223b8b5",
+  "packages/client/ui-conversation/src/client/submission-bindings.ts": "3195459e45608589c6cad5158d4cc89fd24ec80f55d1ed95919c5d9684f519b5",
+  "packages/client/ui-conversation/src/client/service.ts": "ae67703c039c47e268f4aff051431332dd9f42b023770dfaf04859106ce87e4d",
+  "packages/client/ui-workspace/src/client/pto-viewer.ts": "3c7f5facd41b9ff4df41d74ea367b3208beb18c58ca6157a6ec56f48b04b1fae",
+  "packages/client/ui-workspace/src/client/index.ts": "8fea805367edac2c8cc72b539bac94971a2a401e3a3d74a293a26f58484fbefe"
+}

@@ -1,0 +1,8 @@
+packages/client/ui-conversation/tests/apply-wiring.client.spec.tsx:17:40: error typescript(no-misused-spread): Using the spread operator on class instances will lose their class prototype.
+packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx:63:40: error typescript(no-misused-spread): Using the spread operator on class instances will lose their class prototype.
+packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx:85:42: error typescript(no-misused-spread): Using the spread operator on class instances will lose their class prototype.
+packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx:112:42: error typescript(no-misused-spread): Using the spread operator on class instances will lose their class prototype.
+packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx:177:42: error typescript(no-misused-spread): Using the spread operator on class instances will lose their class prototype.
+packages/client/ui-tool/tests/assembly-surfaces.client.spec.tsx:82:5: error typescript(no-misused-spread): Using the spread operator on class instances will lose their class prototype.
+packages/client/ui-tool/tests/toolview-slot.client.spec.tsx:69:5: error typescript(no-misused-spread): Using the spread operator on class instances will lose their class prototype.
+packages/client/ui-tool/tests/toolview-slot.client.spec.tsx:216:7: error typescript(no-misused-spread): Using the spread operator on class instances will lose their class prototype.

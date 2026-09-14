@@ -1,0 +1,32 @@
+[
+  {
+    "file": "p2/pto-analysis/dependency-redundancy-ZmDz6Z/reduced.txt",
+    "bytes": 113947,
+    "sha256": "4c70df8c2e67b88f3de7c4b23630159843ac21691fa89aa28ac25193b4aa4746"
+  },
+  {
+    "file": "p2/pto-analysis/dependency-redundancy-ZmDz6Z/reduced_dataflow.txt",
+    "bytes": 113947,
+    "sha256": "4c70df8c2e67b88f3de7c4b23630159843ac21691fa89aa28ac25193b4aa4746"
+  },
+  {
+    "file": "p2/pto-analysis/dependency-redundancy-gvbK1R/reduced.txt",
+    "bytes": 113947,
+    "sha256": "4c70df8c2e67b88f3de7c4b23630159843ac21691fa89aa28ac25193b4aa4746"
+  },
+  {
+    "file": "p2/pto-analysis/dependency-redundancy-gvbK1R/reduced_dataflow.txt",
+    "bytes": 113947,
+    "sha256": "4c70df8c2e67b88f3de7c4b23630159843ac21691fa89aa28ac25193b4aa4746"
+  },
+  {
+    "file": "p2-final/pto-analysis/dependency-redundancy-P0UegH/reduced.txt",
+    "bytes": 113947,
+    "sha256": "4c70df8c2e67b88f3de7c4b23630159843ac21691fa89aa28ac25193b4aa4746"
+  },
+  {
+    "file": "p2-final/pto-analysis/dependency-redundancy-P0UegH/reduced_dataflow.txt",
+    "bytes": 113947,
+    "sha256": "4c70df8c2e67b88f3de7c4b23630159843ac21691fa89aa28ac25193b4aa4746"
+  }
+]

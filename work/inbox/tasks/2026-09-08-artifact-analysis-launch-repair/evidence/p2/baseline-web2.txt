@@ -1,0 +1,51 @@
+Extracted failure names and first error lines; random ids are preserved. Full raw logs remain in the isolated test environment.
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly
+AssertionError: Web replay fixture /private/tmp/pto-p2-baseline-check/snapshots/web/file-upload-round/session.v3.jsonl must match one live root session: expected [] to have a length of 1 but got +0
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly
+Error: llm-replay: fixture not fully consumed — 1 recorded script(s) never bound to a live session; the scenario drove fewer model calls than recorded
+
+apps/web/tests/question-composer.e2e.ts > web e2e: resident question composer round trip
+AssertionError: /private/tmp/pto-p2-baseline-check/snapshots/web/question-composer/session.v3.jsonl: persisted replay: expected '{"type":"session","id":"{{session:1}}…' to be '{"type":"session","id":"{{session:1}}…' // Object.is equality
+
+apps/web/tests/question-composer.e2e.ts > web e2e: resident question composer round trip
+Error: llm-replay: fixture not fully consumed — session session-e0e0db49-4fd0-49a9-942a-4aa055ef7b20 consumed 1/2 recorded call(s); the scenario drove fewer model calls than recorded
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > uploads on pick, gates send on the staged receipt, and settles the turn (all modes)
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > persists the file block and reads the stored copy with the real read tool
+Error: the replayed turn recorded no user message
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > renders the durable file card beside the settled answer
+AssertionError: expected 0 to be greater than or equal to 1
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > keeps a mixed durable message in one ordered wrapping attachment flow
+AssertionError: expected +0 to be 1 // Object.is equality
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > marks the durable file in Trajectory without copying the Chat card
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/hmr-live.e2e.ts > hot-reloads a real client-plugin source edit without refreshing the page
+Error: pnpm run dev:web not ready:
+
+apps/web/tests/lifecycle-chrome.e2e.ts > web e2e: lifecycle & chrome (workspace flow / reload / dark mode) > localizes slash-command descriptions from the browser language
+AssertionError: expected '- listbox "触发候选建议":\n  - option "expo…' to be '- listbox "触发候选建议":\n  - text: 指令\n  …' // Object.is equality
+
+apps/web/tests/question-composer.e2e.ts > web e2e: resident question composer round trip > asks through the composer, answers, and completes with the answer logged
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+
+apps/web/tests/question-composer.e2e.ts > web e2e: resident question composer round trip > grows the optionless answer to the same cap
+AssertionError: expected undefined to be defined
+
+apps/web/tests/submission-echo.e2e.ts > paints the submission echo on the send keystroke and swaps it for the durable node
+Error: submission echo missing on the send keystroke
+
+apps/web/tests/trajectory-image-display.expected.e2e.ts > renders durable record images in the Trajectory details panel from the shared cache
+TestingLibraryElementError: Found multiple elements with the role "tabpanel"
+
+Test Files  6 failed (6)
+Tests  11 failed | 11 passed (22)
+Start at  11:10:06
+Duration  182.89s (transform 975ms, setup 0ms, import 2.76s, tests 179.07s, environment 619ms)
