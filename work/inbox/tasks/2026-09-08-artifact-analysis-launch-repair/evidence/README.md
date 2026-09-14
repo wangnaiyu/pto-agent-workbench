@@ -26,6 +26,10 @@
 
 正式 provider 装配修复及无临时 provider patch 的真实首发验收见 [P1 证据](p1/README.md)。上面的 P0 记录保留为历史对照。
 
-## P2 实施前诊断
+## P2
 
-四插件 target 漂移与 prefix-only guard 反例见 [P2 证据](p2/README.md)。当前未完成 P2 验收，契约确认节点见 [停止报告](../p2-blocker.md)。
+四插件 target 漂移与 prefix-only guard 反例、实际实施验证见 [P2 证据](p2/README.md) 和 [P2 报告](../p2-report.md)。[原停止报告](../p2-blocker.md) 保留为契约确认前的历史诊断。
+
+## P3 实施前审计
+
+正式 Skill 双重注入的真实插件组合反例、对照和源码 hash 见 [P3 证据](p3/README.md)，待确认的契约与 owner 范围见 [停止报告](../p3-blocker.md)。
