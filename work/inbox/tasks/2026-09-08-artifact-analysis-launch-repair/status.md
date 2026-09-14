@@ -9,6 +9,6 @@
 - blockers: P2 已批准契约只恢复文本，现有 reference 没有激活回开 seam；真实双插件 pre-step 加正式 /skill 后注入两次。需新增引用契约并将 Host 注入协作纳入 P3 owner，触发用户明确的停止条件。没有产品修改或无法归因的新回归。
 - verification: P2 聚焦 59/59；最终影响包 866 通过、8 项基线失败；完整 GUI 及 browser replay 的已知失败均逐项归因，见报告。最终 build/typecheck、定向 lint、doc-sync 34/34、hygiene 16/16、外层结构检查通过。全量 lint 的 8 个既有诊断与前阶段文件/源码逐项一致。没有宣称全功能或全套件绿色。
 - baselines: 工作台 main/origin/main bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9；harness master/origin/master ac2b72a9615cbaf23bb21951ffe1c22f3a11d807；upstream ancestor 5dda764ed3aa172535a7967b06ff95d9cbfe536a。live origin 与两仓 pre/post annotated tag、savepoint 再核对一致，无进行中 Git 操作。详见 [final state](evidence/p0-final-state.json)。
-- working-tree: 两仓均在 codex/repair-p3-composer-20260914。harness HEAD 仍为 P2 e92a21adc477133a0771a6194962be901284a2ed 且 clean；外层本次停止报告、status、证据索引和 evidence/p3 将形成独立诊断文档提交，提交号通过分支 HEAD / git log 查询，提交后须核对 clean。P0/P1/P2 保存点和两仓主分支不变，无 push/PR/merge。
+- working-tree: 两仓均在 codex/repair-p3-composer-20260914。harness HEAD 仍为 P2 e92a21adc477133a0771a6194962be901284a2ed 且 clean；外层停止报告与证据已提交为 0e8e4bd；本次最后收尾只去除 3 份日志的 EOF 空行并更新此记录。最终工作分支 HEAD 可通过 git log 查询；两仓 clean 已在交接前核对。P0/P1/P2 保存点和两仓主分支不变，无 push/PR/merge。
 - p3-verification: 普通问题 + 真实 PTO/tool-skill 组合 1/1 通过；相同 admission 加正式 /skill 的验收断言失败（预期 1 次注入，实际 2 次）。这是待实施 P3 触发的既有集成缺口，两个 Host 源文件与升级后原始基线相同。证据见 [P3 诊断](evidence/p3/README.md)；产品未修改，未重复完整 GUI/build。
 - temporary-environment: P2 隔离根及原始运行数据保留；两个 Host 和本地模型替身已核实 PID 后退出，exec 21980/13131/2361 均返回 0，两个临时标签页关闭。原基线构建/测试副本 /private/tmp/pto-p2-baseline-check 保留。精选证据在 evidence/p2，不依赖临时日志恢复结论。
