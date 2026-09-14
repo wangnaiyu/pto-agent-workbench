@@ -27,3 +27,7 @@ planned 的执行命令明确为不可执行的测试占位；测试只查看、
 ## 完整 browser replay 停止
 
 [日志摘录](web.txt)、[逐块对照](web-baseline-comparison.json)、[比较脚本](compare-web.py)、[新失败完整块](web-new-failure.txt)、[源码/假设](web-investigation.json)。51 块中 50 块匹配 P3，另 1 块未归因；遵守阶段边界停止，见 [停止报告](../../p4-validation-blocker.md)。脚本读取保留在本机的 P3/P4 完整原始日志；重新运行需先准备对应日志，不把 curated 摘录冒充完整日志。
+
+## 专项归因完成
+
+[原版基线](round-trip-baseline.txt)、[诊断输出](round-trip-observed.txt)、[原断言前与 barrier 后事件](round-trip-observations.json)、[诊断源码](round-trip-diagnostic.e2e.ts.txt)、[结论/hash](round-trip-resolution.json)、[51 块更新对照](web-baseline-comparison-resolved.json)。原停止记录保留；没有改正式测试以通过检查。

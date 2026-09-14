@@ -1,0 +1,56 @@
+[
+  {
+    "point": "original assertion",
+    "turnEndCount": 0,
+    "driveAwaitReached": false,
+    "eventTypes": [
+      "permission/preset",
+      "sandbox/mode",
+      "approval/policy",
+      "agent/inbox/spliced",
+      "turn/start",
+      "agent/inbox/spliced",
+      "step/start",
+      "system/message",
+      "user/message",
+      "user/message",
+      "request/header",
+      "request/context",
+      "session/title",
+      "assistant/message",
+      "tool/call",
+      "tool/result",
+      "step/end",
+      "step/start"
+    ]
+  },
+  {
+    "point": "after original armed settled barrier",
+    "sessionId": "session-64e9bd4d-238e-45ee-81ae-c2e010eb8190",
+    "turnEndCount": 1,
+    "driveAwaitReached": false,
+    "eventTypes": [
+      "permission/preset",
+      "sandbox/mode",
+      "approval/policy",
+      "agent/inbox/spliced",
+      "turn/start",
+      "agent/inbox/spliced",
+      "step/start",
+      "system/message",
+      "user/message",
+      "user/message",
+      "request/header",
+      "request/context",
+      "session/title",
+      "assistant/message",
+      "tool/call",
+      "tool/result",
+      "step/end",
+      "step/start",
+      "assistant/message",
+      "step/end",
+      "turn/end"
+    ]
+  }
+]

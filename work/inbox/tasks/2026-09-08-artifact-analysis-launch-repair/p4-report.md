@@ -34,7 +34,7 @@ ConversationRoot TSX/CSS、Host、Viewer、provider、receipt/Session、实验�
 - 原局部测试 10/10；完整 GUI 4825 passed / 10 failed / 1 skipped。10 项名称和诊断逐条与 P3 相同，见 [对照](evidence/p4/gui-baseline-comparison.json)。
 - 最终完整 build 通过，包含类型与产物生成；doc-sync 34/34，hygiene 16/16。没有降低 lint/test/CI 规则。
 - `pnpm run test:docs` 全部通过。构建后直接运行全量 lint 阶段 `node --import tsx/esm scripts/run-oxlint.ts .`，退出 1；8 条 no-misused-spread 的文件/行/规则/消息及源码逐项匹配 P3，见 [lint 对照](evidence/p4/lint-baseline-comparison.json)。没有在 browser replay 期间重新生成构建产物。
-- 完整 browser replay：283 passed / 41 failed / 37 skipped，退出 1。51 个失败块中 50 个匹配 P3，1 个 turn/end 数量差异尚未归因；[停止报告](p4-validation-blocker.md)。P4 尚未验收，不进入 P5。
+- 完整 browser replay：283 passed / 41 failed / 37 skipped，退出 1。51 个失败块中 50 个匹配 P3，1 个 turn/end 数量差异在后续授权诊断中由原版基线自然复现并归因。全部 51 个失败块现有基线证据；[专项结论](p4-validation-blocker.md#专项调查结论)。P4 阶段验收通过，但完整套件未变绿。
 - 重启后旧 Session 仅在元数据列表可见时，Dashboard 查询曾返回 session 不存在；同 Session 普通消息恢复后查询成功，持久 planned 记录仍在。该 Host 查询只读取 sessions.get，不自动恢复 Session；[对应源码](evidence/p4/source-manifest.json) 与 P3 一致，本阶段没有改它或将它掩盖成 CSS 修复。
 - planned 记录的 Execute 按钮未点击；completed/failed 仅呈现 fixture。Host/model 进程均已确认退出 0，tab 4 关闭，viewport override 重置；隔离 home 和原始记录保留。
 
@@ -43,3 +43,7 @@ ConversationRoot TSX/CSS、Host、Viewer、provider、receipt/Session、实验�
 ## 未验收保存点
 
 harness WIP commit：`368c446657932f170a6d29fd2d275bea1c76073e`，正常 pre-commit 通过；工作台证据与本报告独立提交。两仓完整配对由 `repair-p4-validation-checkpoint-20260914` annotated tag 记录，并保留 `codex/savepoint-p4-validation-20260914`。这些恢复点不代表 P4 已验收，P0–P3 历史和恢复点均保留。
+
+## 接受记录
+
+本次专项诊断仅补证据，不修改 harness 产品/正式测试。原版基线 4 passed/4 failed，其中相同 turn/end 断言自然失败；诊断观察到原 barrier 完成前零条、完成后一条。P4 接受配对由 `repair-p4-accepted-20260914` annotated tag 记录；原 WIP 提交和未验收 tag 保留。

@@ -1,0 +1,58 @@
+{
+  "status": "resolved baseline failure; no product or canonical test fix",
+  "classification": "Failed prerequisite bypasses settled barrier; downstream observation races turn completion.",
+  "baseline": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+  "candidate": "368c446657932f170a6d29fd2d275bea1c76073e",
+  "unmodifiedBaselineRun": {
+    "session": 23259,
+    "exit": 1,
+    "passed": 4,
+    "failed": 4,
+    "durationSeconds": 4.74,
+    "signature": "replay-round-trip.e2e.ts:166 expected 1 turn/end, actual 0"
+  },
+  "diagnosticBaselineRun": {
+    "session": 27944,
+    "exit": 1,
+    "passed": 4,
+    "failed": 4,
+    "durationSeconds": 4.68,
+    "beforeOriginalAssertion": 0,
+    "afterOriginalArmedSettledBarrier": 1,
+    "driveAwaitReached": false
+  },
+  "limitations": "Original P4 full run has no event timeline; exact baseline failure and diagnostic baseline causality establish attribution, not a claimed direct timing capture of that original run.",
+  "files": [
+    {
+      "path": "apps/web/tests/replay-round-trip.e2e.ts",
+      "sha256": "c935274ff15604def08eaaf0db884154ca75c27fbc8c02915e3bd22462ea3a55",
+      "sameCommittedOriginalBaselineAndCandidate": true
+    },
+    {
+      "path": "apps/web/tests/scaffold.ts",
+      "sha256": "0a27f56616cc9360357e3b12a2e9a2e40f8395ce115cf9bb34ac564664965131",
+      "sameCommittedOriginalBaselineAndCandidate": true
+    },
+    {
+      "path": "apps/web/tests/support.ts",
+      "sha256": "e45f013fa52e0876a8bcdd5d8fe2d3e3b6453aecfc828bd3e54d0282ae226f4a",
+      "sameCommittedOriginalBaselineAndCandidate": true
+    },
+    {
+      "path": "vitest.web.config.ts",
+      "sha256": "333321f730c3c309088d031b7f7f3d33dd3af65b33defefc0785b2530a37f9d6",
+      "sameCommittedOriginalBaselineAndCandidate": true
+    },
+    {
+      "path": "snapshots/web/fresh-round-trip/session.v3.jsonl",
+      "sha256": "7bc115da340d63d9e2b5e0591acef0520012f7d12a1a0a5d9d2ad16c9b4eed0c",
+      "sameCommittedOriginalBaselineAndCandidate": true
+    },
+    {
+      "path": "snapshots/web/fresh-round-trip/submission-echo.expected.md",
+      "sha256": "10629e3147730122261d7d64e46e549a4e9fbe564a454d2645c1543e7859661a",
+      "sameCommittedOriginalBaselineAndCandidate": true
+    }
+  ],
+  "cleanup": "Only own diagnostic test copy removed after saving; isolated baseline and data retained."
+}
