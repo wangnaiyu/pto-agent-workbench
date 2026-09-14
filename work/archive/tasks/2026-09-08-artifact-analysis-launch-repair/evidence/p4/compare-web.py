@@ -1,6 +1,6 @@
 from pathlib import Path
 import re,json,collections
-p=Path('work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence')
+p=Path(__file__).resolve().parents[1]
 def norm(s):
  return re.sub(r'session-[0-9a-f]{8}-[0-9a-f-]{27,}', 'session-<uuid>', s)
 def parse(path):

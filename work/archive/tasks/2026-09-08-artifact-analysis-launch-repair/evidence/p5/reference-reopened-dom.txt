@@ -1,0 +1,48 @@
+- button "New session":
+  - generic: PTO Agent Workbench
+  - generic: DSH
+- button "Collapse sidebar":
+- tablist "Sidebar view":
+  - tab "Sessions" [selected]
+  - tab "Run Records"
+- generic: Workspaces
+- button "New Session":
+- button "Search sessions":
+- textbox "Search sessions..."
+- button "View options":
+- button "Add workspace":
+- tabpanel "Sessions":
+  - tree "Sessions":
+    - treeitem "workspace" [expanded]:
+      - generic: workspace
+    - treeitem "P0 local mock completed. Tool output, if present, is recorded separately. 5min":
+      - generic: P0 local mock completed. Tool output, if present, is recorded separately.
+      - generic: 5min
+    - treeitem "Ungrouped":
+      - generic: Ungrouped
+- button "Settings":
+  - generic: Settings
+- generic: Into the Unknown
+- generic: Preview
+- button "Choose workspace":
+  - generic: default
+- button "Standard mode":
+  - generic: Standard mode
+- textbox "Describe what you want to build, / commands, @ files or sessions":
+  - paragraph:
+    - text: /skill dependency-redundancy
+    - button "deps.json" [active]:
+      - generic: deps.json
+    - text: Analyze redundant dependencies with conclusions, evidence, limitations, and recommendations.
+- button "Commands":
+- button "Add attachment":
+- 'button "Access mode, current: Workspace Write"':
+  - generic: Workspace Write
+- button "Send message":
+- generic: deps_viewer.html
+- generic "deps_viewer.html"
+- generic: View only; no selection or deep links
+- button "Analyze with AI"
+- button "Close viewer":
+
+Viewer: 598 nodes, 1222 edges

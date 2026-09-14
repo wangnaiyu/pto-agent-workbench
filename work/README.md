@@ -18,7 +18,7 @@
 
 - [两仓升级前基线收口](archive/tasks/2026-09-09-pre-upstream-baseline/final-report.md)：两仓成果已合并并保存恢复点，检查与已知问题有据可查；尚未执行 upstream rebase。
 
-- [分析启动与布局回归修复](inbox/tasks/2026-09-08-artifact-analysis-launch-repair/README.md)：修复 Viewer “AI 分析”结构化首发、明确新 launch/重试语义，并让自定义实验页恢复 DSH 宽度契约。
+- [分析启动与布局回归修复完成报告](archive/tasks/2026-09-08-artifact-analysis-launch-repair/final-report.md)：P1–P5 本地验收与提交完成，保留已归因的既有检查失败；尚未推送或合并。
 - [仓库治理完成报告](archive/tasks/2026-09-03-repository-governance/final-report.md)：入口、迁移、项目 Skill 与验证记录。
 - [2026-09-04 harness 上游 rebase](archive/tasks/2026-09-04-upstream-rebase/final-report.md)：从 alpha.5 更新到 rc.1，保留 fork 历史与工作台行为的验证记录。
 - [产物查看与官方 Skill 分析 MVP](archive/tasks/2026-09-03-artifact-inspection-mvp/final-report.md)：P0–P4 实现、真实样例/浏览器验收与保留边界。

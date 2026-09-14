@@ -1,5 +1,7 @@
 # AI 分析启动与对话布局回归修复
 
+本包已完成并归档；结论、阶段提交、证据与遗留问题见 [最终报告](final-report.md)。历史授权与阶段说明不自动启动新的工作。
+
 目标：使实际工作台具备可靠的 artifact analysis 启动体验，同时让自有实验 View 遵守正文宽度契约。升级后 P0 已把根因拆为独立 provider 装配缺失、launch/admission 生命周期缺口、可见输入与 overlay 交互、实验布局；不能继续把它们统一称为“Viewer 丢 receipt”。证据与事实见 [P0 报告](p0-report.md)。
 
 阶段执行与提交/发布权限以最新用户授权为准，不能由本包或旧授权自动触发；当前状态和下一动作只看 [status](status.md)。阶段结果分别见 [P0 报告](p0-report.md) 与 [P1 报告](p1-report.md)。

@@ -25,3 +25,7 @@ fake、人工 admission source 或单张截图替代这条组合验证。
 双击合并；已有未发送草稿不丢；缺 receipt 时纯文本不发送且 Shell fallback 不可用。
 
 应记录 UI 行为、Host 调用次数/参数、Session 数量与请求身份；单张截图不能证明无后台 Session 创建。模型调用、工具授权和目录选择分别验证。
+
+## 2026-09-14 修复组合验收
+
+P1–P4 独立阶段与 P5 正式组合已完成本地验收；实际首发、同 Session 模型重试、新 launch、规范引用、附件持久化与只读双模式工具证据见 [最终报告](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/final-report.md)。实验布局使用真实持久 planned 与明确标注的终态呈现 fixture。保留已归因 lint/GUI/browser 红项；不宣称全套 CI 绿色、外部模型智能效果或性能收益，不自动推送发布。

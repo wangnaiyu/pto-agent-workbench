@@ -6,8 +6,8 @@
 自动进入范围。
 
 2026-09-08 真实体验推翻了“Viewer 分析 first-send 已完成端到端闭环”这一当前状态判断：实际
-Web 组合只投递普通文本，没有给模型首步注入已准入 Record/Skill。修复按
-[2026-09-08 任务包](../../inbox/tasks/2026-09-08-artifact-analysis-launch-repair/README.md)推进，
+Web 组合只投递普通文本，没有给模型首步注入已准入 Record/Skill。后续独立修复已完成，见
+[2026-09-08 任务完成报告](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/final-report.md)，
 不重开整个 P0–P4，也不否定已验收的纯查看、Profile 和 adapter 能力。
 
 ## 组件责任

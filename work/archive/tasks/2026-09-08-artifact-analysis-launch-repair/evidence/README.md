@@ -33,3 +33,7 @@
 ## P3 实施前审计
 
 正式 Skill 双重注入的真实插件组合反例、对照和源码 hash 见 [P3 证据](p3/README.md)，待确认的契约与 owner 范围见 [停止报告](../p3-blocker.md)。
+
+## 最终阶段证据
+
+[P3 实施与专项归因](p3/README.md)、[P4 布局与专项归因](p4/README.md)、[P5 正式组合](p5/README.md)。前面的停止/实施前记录保留其历史语境；完成状态与限制见 [最终报告](../final-report.md)。

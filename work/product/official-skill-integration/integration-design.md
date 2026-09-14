@@ -1,6 +1,6 @@
 # 官方 Skills 集成设计
 
-状态：2026-09-11 P1 已将正式工作台 patch 的 official provider 改为真实 Loader insert；固定 bundle、qualified resolver 和工具链在无临时 provider patch 的首发验收中闭环。root/draft 与 Session 使用同一锁定资源，receipt schema 未变。P0 缺 provider 的历史原因见 [P0 事实](../artifact-inspection/notes/p0-findings-2026-09-11.md)，修正与边界见 [P1 报告](../../inbox/tasks/2026-09-08-artifact-analysis-launch-repair/p1-report.md)。launch 生命周期、可见 token/overlay 与布局未修复；下面的通用 source registry、更新/回退和多 Skill 管理仍是目标契约。
+状态：2026-09-11 P1 已将正式工作台 patch 的 official provider 改为真实 Loader insert；固定 bundle、qualified resolver 和工具链在无临时 provider patch 的首发验收中闭环。root/draft 与 Session 使用同一锁定资源，receipt schema 未变。P0 缺 provider 的历史原因见 [P0 事实](../artifact-inspection/notes/p0-findings-2026-09-11.md)，修正与边界见 [P1 报告](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/p1-report.md)。launch 生命周期、可见引用/overlay 与布局已在后续独立阶段验收，见 [组合完成报告](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/final-report.md)；下面的通用 source registry、更新/回退和多 Skill 管理仍是目标契约。
 
 ## 四层分离
 

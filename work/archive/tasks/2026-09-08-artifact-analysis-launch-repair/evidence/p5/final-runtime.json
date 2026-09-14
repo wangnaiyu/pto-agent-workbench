@@ -1,0 +1,23 @@
+{
+  "root": "/var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p5-resume-1kas9kn9",
+  "modelExec": 63361,
+  "hostExec": 4316,
+  "modelPID": 43739,
+  "hostPID": 43743,
+  "exitCodes": [
+    0,
+    0
+  ],
+  "browserTab": 8,
+  "tabClosed": true,
+  "viewportOverrideUsed": false,
+  "officialProviderOverride": false,
+  "observerPlugin": false,
+  "layoutSeed": false,
+  "directoryPickerOverrideOnly": true,
+  "originalInputSHA256": "97ee1e49bf14d9c8dfa69ef1464c0d551bc535dfa9615609c68d5526dd383a4b",
+  "beforeFirstAnalysisSendModelRequests": 2,
+  "beforeSecondAnalysisSendModelRequests": 6,
+  "finalModelRequests": 9,
+  "homesAndDataRetained": true
+}
