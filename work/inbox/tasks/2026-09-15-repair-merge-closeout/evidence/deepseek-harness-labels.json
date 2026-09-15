@@ -1,0 +1,156 @@
+[
+  {
+    "id": 11885911588,
+    "node_id": "LA_kwDOT9cFd88AAAACxHSeJA",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/accessibility",
+    "name": "accessibility",
+    "color": "f143ab",
+    "default": true,
+    "description": "Barrier affecting people with disabilities",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 12126967694,
+    "node_id": "LA_kwDOT9cFd88AAAAC0tLXjg",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/area/artifact",
+    "name": "area/artifact",
+    "color": "C2E0C6",
+    "default": false,
+    "description": "Artifacts, attachments, and multimodal delivery",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 12126967775,
+    "node_id": "LA_kwDOT9cFd88AAAAC0tLX3w",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/area/infra",
+    "name": "area/infra",
+    "color": "C2E0C6",
+    "default": false,
+    "description": "Build, CI, dependencies, generators and developer tooling",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 12126967589,
+    "node_id": "LA_kwDOT9cFd88AAAAC0tLXJQ",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/area/web",
+    "name": "area/web",
+    "color": "C2E0C6",
+    "default": false,
+    "description": "Browser and Electron graphical interfaces",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 11885911571,
+    "node_id": "LA_kwDOT9cFd88AAAACxHSeEw",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/bug",
+    "name": "bug",
+    "color": "d73a4a",
+    "default": true,
+    "description": "Something isn't working",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 11885911601,
+    "node_id": "LA_kwDOT9cFd88AAAACxHSeMQ",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/documentation",
+    "name": "documentation",
+    "color": "0075ca",
+    "default": true,
+    "description": "Improvements or additions to documentation",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 11885911615,
+    "node_id": "LA_kwDOT9cFd88AAAACxHSePw",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/duplicate",
+    "name": "duplicate",
+    "color": "cfd3d7",
+    "default": true,
+    "description": "This issue or pull request already exists",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 11885911631,
+    "node_id": "LA_kwDOT9cFd88AAAACxHSeTw",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/enhancement",
+    "name": "enhancement",
+    "color": "a2eeef",
+    "default": true,
+    "description": "New feature or request",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 11885911660,
+    "node_id": "LA_kwDOT9cFd88AAAACxHSebA",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/good%20first%20issue",
+    "name": "good first issue",
+    "color": "7057ff",
+    "default": true,
+    "description": "Good for newcomers",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 11885911642,
+    "node_id": "LA_kwDOT9cFd88AAAACxHSeWg",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/help%20wanted",
+    "name": "help wanted",
+    "color": "008672",
+    "default": true,
+    "description": "Extra attention is needed",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 11885911672,
+    "node_id": "LA_kwDOT9cFd88AAAACxHSeeA",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/invalid",
+    "name": "invalid",
+    "color": "e4e669",
+    "default": true,
+    "description": "This doesn't seem right",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 12126967511,
+    "node_id": "LA_kwDOT9cFd88AAAAC0tLW1w",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/kind/cleanup",
+    "name": "kind/cleanup",
+    "color": "BFD4F2",
+    "default": false,
+    "description": "Preserves behavior while maintaining implementation or repository process",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 11885911684,
+    "node_id": "LA_kwDOT9cFd88AAAACxHSehA",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/question",
+    "name": "question",
+    "color": "d876e3",
+    "default": true,
+    "description": "Further information is requested",
+    "archived_at": null,
+    "archived_by": null
+  },
+  {
+    "id": 11885911696,
+    "node_id": "LA_kwDOT9cFd88AAAACxHSekA",
+    "url": "https://api.github.com/repos/wangnaiyu/deepseek-harness/labels/wontfix",
+    "name": "wontfix",
+    "color": "ffffff",
+    "default": true,
+    "description": "This will not be worked on",
+    "archived_at": null,
+    "archived_by": null
+  }
+]
