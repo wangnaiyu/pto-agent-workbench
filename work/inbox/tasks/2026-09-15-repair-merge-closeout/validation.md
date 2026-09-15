@@ -10,7 +10,7 @@ P0–P5 原检查、真实组合证据和 known issues 见 [修复报告](../../
 
 两仓 rules 返回空列表，branch protection 返回 Branch not protected；没有必需审批配置。不使用 admin bypass。无配置的门禁不意味着所有实际 CI 自动通过；新产品失败仍须诊断并阻塞合并。
 
-harness CI 中 static、coverage、snapshots/artifacts、多项 Windows 与部分 Node/Python lane 通过 fork skip 输出成功；必须查看具体执行步骤，不能计作真实验证。其余实际 benchmarks、Node 22、native、packaging 和 runtime job 等待结果。
+harness CI 中 static、coverage、snapshots/artifacts、多项 Windows 与部分 Node/Python lane 通过 fork skip 输出成功；必须查看具体执行步骤，不能计作真实验证。最终 51 checks：49 success、2 failure，无 pending；两项失败均为下述非必需配置限制。实际 benchmarks、Node 22、native、packaging、Linux/Windows runtime 通过，real-API steps 因无凭据跳过，不宣称真实外部 API 验证。canonicalSkipJobs 清单见 evidence/ci-classification.json。
 
 request-review workflow 从目标 master 执行原有 ownership map，要求 @imccyu 审查，但该账号并非 fork collaborator，GitHub API 返回 422。日志见 [失败证据](evidence/request-review-failure.txt)。这是原有 fork reviewer 配置不适用，无产品检查运行；不邀请上游人员、不改 ownership/workflow、不重跑求绿，保留失败记录。
 

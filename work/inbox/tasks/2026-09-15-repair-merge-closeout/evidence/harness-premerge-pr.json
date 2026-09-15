@@ -1,0 +1,520 @@
+{
+  "baseRefOid": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+  "headRefOid": "368c446657932f170a6d29fd2d275bea1c76073e",
+  "mergeStateStatus": "UNSTABLE",
+  "mergeable": "MERGEABLE",
+  "reviewDecision": "",
+  "state": "OPEN",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:09:01Z",
+      "conclusion": "FAILURE",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430644/job/104272189934",
+      "name": "cloudflare pages preview",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "Build PR preview"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:06:01Z",
+      "conclusion": "FAILURE",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430545/job/104272189669",
+      "name": "request-review",
+      "startedAt": "2026-09-15T06:05:50Z",
+      "status": "COMPLETED",
+      "workflowName": "request-review"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:49Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190493",
+      "name": "node 24 / static",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:47Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430633/job/104272189836",
+      "name": "Issue lifecycle",
+      "startedAt": "2026-09-15T06:05:44Z",
+      "status": "COMPLETED",
+      "workflowName": "Issue lifecycle"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:53Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935431119/job/104272209199",
+      "name": "Issue lifecycle",
+      "startedAt": "2026-09-15T06:05:50Z",
+      "status": "COMPLETED",
+      "workflowName": "Issue lifecycle"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:12:34Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935886655/job/104273559746",
+      "name": "Issue lifecycle",
+      "startedAt": "2026-09-15T06:12:29Z",
+      "status": "COMPLETED",
+      "workflowName": "Issue lifecycle"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:55Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430449/job/104272190380",
+      "name": "Issue policy",
+      "startedAt": "2026-09-15T06:05:50Z",
+      "status": "COMPLETED",
+      "workflowName": "Issue policy"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:48Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430600/job/104272189584",
+      "name": "Issue policy",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "Issue policy"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:54Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430604/job/104272189735",
+      "name": "Issue policy",
+      "startedAt": "2026-09-15T06:05:49Z",
+      "status": "COMPLETED",
+      "workflowName": "Issue policy"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:55Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935431062/job/104272190853",
+      "name": "Issue policy",
+      "startedAt": "2026-09-15T06:05:50Z",
+      "status": "COMPLETED",
+      "workflowName": "Issue policy"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:12:05Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935886890/job/104273560076",
+      "name": "Issue policy",
+      "startedAt": "2026-09-15T06:12:03Z",
+      "status": "COMPLETED",
+      "workflowName": "Issue policy"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:53Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272190033",
+      "name": "Matrix",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:07:51Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430539/job/104272189740",
+      "name": "Dependency layout",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "Release (dsh)"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:07:55Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430557/job/104272189968",
+      "name": "Pack npm tarballs",
+      "startedAt": "2026-09-15T06:05:44Z",
+      "status": "COMPLETED",
+      "workflowName": "Release (vendor)"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:48Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190391",
+      "name": "node 24 / coverage",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:06:44Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272229212",
+      "name": "darwin-arm64",
+      "startedAt": "2026-09-15T06:06:00Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:11:04Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430539/job/104272189490",
+      "name": "Pack npm tarballs",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "Release (dsh)"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:07:33Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272229232",
+      "name": "darwin-x64",
+      "startedAt": "2026-09-15T06:05:56Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:06:44Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272229244",
+      "name": "linux-arm64",
+      "startedAt": "2026-09-15T06:05:57Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:06:41Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272229241",
+      "name": "linux-x64",
+      "startedAt": "2026-09-15T06:05:55Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:10:54Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190233",
+      "name": "node 24 / benchmarks",
+      "startedAt": "2026-09-15T06:05:44Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:08:18Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597009",
+      "name": "darwin-arm64 / Node 20 (same binary)",
+      "startedAt": "2026-09-15T06:07:57Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:07:52Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272596976",
+      "name": "darwin-arm64 / Node 22 (same binary)",
+      "startedAt": "2026-09-15T06:07:40Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:07:50Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597021",
+      "name": "darwin-arm64 / Node 24 (same binary)",
+      "startedAt": "2026-09-15T06:07:38Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:08:01Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272596982",
+      "name": "darwin-arm64 / Node 26 (same binary)",
+      "startedAt": "2026-09-15T06:07:39Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:08:39Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272596996",
+      "name": "darwin-x64 / Node 20 (same binary)",
+      "startedAt": "2026-09-15T06:07:55Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:08:54Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597043",
+      "name": "darwin-x64 / Node 22 (same binary)",
+      "startedAt": "2026-09-15T06:07:40Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:08:26Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597013",
+      "name": "darwin-x64 / Node 24 (same binary)",
+      "startedAt": "2026-09-15T06:07:39Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:08:41Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597041",
+      "name": "darwin-x64 / Node 26 (same binary)",
+      "startedAt": "2026-09-15T06:08:03Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:07:55Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597030",
+      "name": "linux-arm64 / Node 20 (same binary)",
+      "startedAt": "2026-09-15T06:07:38Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:08:08Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597063",
+      "name": "linux-arm64 / Node 22 (same binary)",
+      "startedAt": "2026-09-15T06:07:54Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:07:50Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597076",
+      "name": "linux-arm64 / Node 24 (same binary)",
+      "startedAt": "2026-09-15T06:07:38Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:07:55Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597012",
+      "name": "linux-arm64 / Node 26 (same binary)",
+      "startedAt": "2026-09-15T06:07:37Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:07:59Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597053",
+      "name": "linux-x64 / Node 20 (same binary)",
+      "startedAt": "2026-09-15T06:07:36Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:07:56Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597062",
+      "name": "linux-x64 / Node 22 (same binary)",
+      "startedAt": "2026-09-15T06:07:35Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:07:53Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597033",
+      "name": "linux-x64 / Node 24 (same binary)",
+      "startedAt": "2026-09-15T06:07:35Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:08:04Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597085",
+      "name": "linux-x64 / Node 26 (same binary)",
+      "startedAt": "2026-09-15T06:07:36Z",
+      "status": "COMPLETED",
+      "workflowName": "Node Addon System"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:49Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190407",
+      "name": "node 24 / snapshots and artifacts",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:09:56Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190315",
+      "name": "node 22.19",
+      "startedAt": "2026-09-15T06:05:44Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:06:28Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190439",
+      "name": "node 24.9",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:06:25Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190335",
+      "name": "node 26",
+      "startedAt": "2026-09-15T06:05:44Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:06:02Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190470",
+      "name": "python 3.10 / keyless SDK",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:52Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190424",
+      "name": "python runtime / release-shaped matrix / plan targets",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:06:07Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272224563",
+      "name": "python runtime / release-shaped matrix / deepseek_harness_sdk-0.1.5a1-py3-none-any.whl",
+      "startedAt": "2026-09-15T06:05:54Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:11:59Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272283070",
+      "name": "python runtime / release-shaped matrix / node24-linux-x64",
+      "startedAt": "2026-09-15T06:06:10Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:15:01Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272283098",
+      "name": "python runtime / release-shaped matrix / node24-win-x64",
+      "startedAt": "2026-09-15T06:06:10Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:49Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190403",
+      "name": "windows node 24 / build",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:50Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190393",
+      "name": "windows node 24 / coverage",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:50Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190438",
+      "name": "windows node 24 / native tests",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:05:47Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104272190359",
+      "name": "windows node 24 / observational",
+      "startedAt": "2026-09-15T06:05:45Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-15T06:15:06Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430733/job/104274226042",
+      "name": "all checks passed",
+      "startedAt": "2026-09-15T06:15:03Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    }
+  ]
+}

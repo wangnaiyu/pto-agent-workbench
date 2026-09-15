@@ -1,0 +1,2279 @@
+[
+  {
+    "id": 104272190033,
+    "name": "Matrix",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272190033",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:05:46Z",
+        "completed_at": "2026-09-15T06:05:46Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:05:46Z",
+        "completed_at": "2026-09-15T06:05:50Z"
+      },
+      {
+        "name": "Run echo \"ci=$(node ./scripts/github-matrix.mjs ci)\" >> \"$GITHUB_OUTPUT\"",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:05:50Z",
+        "completed_at": "2026-09-15T06:05:50Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:05:50Z",
+        "completed_at": "2026-09-15T06:05:50Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:05:50Z",
+        "completed_at": "2026-09-15T06:05:50Z"
+      }
+    ]
+  },
+  {
+    "id": 104272229212,
+    "name": "darwin-arm64",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272229212",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:06:01Z",
+        "completed_at": "2026-09-15T06:06:02Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:06:02Z",
+        "completed_at": "2026-09-15T06:06:07Z"
+      },
+      {
+        "name": "Run pnpm/action-setup@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:06:07Z",
+        "completed_at": "2026-09-15T06:06:08Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:06:08Z",
+        "completed_at": "2026-09-15T06:06:10Z"
+      },
+      {
+        "name": "Install dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:06:10Z",
+        "completed_at": "2026-09-15T06:06:21Z"
+      },
+      {
+        "name": "Install musl toolchain",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 6,
+        "started_at": "2026-09-15T06:06:21Z",
+        "completed_at": "2026-09-15T06:06:21Z"
+      },
+      {
+        "name": "Build TypeScript",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:06:21Z",
+        "completed_at": "2026-09-15T06:06:22Z"
+      },
+      {
+        "name": "Typecheck",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:06:22Z",
+        "completed_at": "2026-09-15T06:06:23Z"
+      },
+      {
+        "name": "Build native binaries (this architecture is the builder of record)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9,
+        "started_at": "2026-09-15T06:06:23Z",
+        "completed_at": "2026-09-15T06:06:26Z"
+      },
+      {
+        "name": "Entry tests (keyless)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-09-15T06:06:26Z",
+        "completed_at": "2026-09-15T06:06:26Z"
+      },
+      {
+        "name": "Launcher tests (real kernel enforcement)",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 11,
+        "started_at": "2026-09-15T06:06:26Z",
+        "completed_at": "2026-09-15T06:06:26Z"
+      },
+      {
+        "name": "Pack rehearsal (pack \u2192 install \u2192 confine, this platform only)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 12,
+        "started_at": "2026-09-15T06:06:26Z",
+        "completed_at": "2026-09-15T06:06:28Z"
+      },
+      {
+        "name": "Verify platform payload rules",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 13,
+        "started_at": "2026-09-15T06:06:28Z",
+        "completed_at": "2026-09-15T06:06:29Z"
+      },
+      {
+        "name": "Flock behavior (built addon)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 14,
+        "started_at": "2026-09-15T06:06:29Z",
+        "completed_at": "2026-09-15T06:06:30Z"
+      },
+      {
+        "name": "Upload this platform's built addon and entry",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:06:30Z",
+        "completed_at": "2026-09-15T06:06:31Z"
+      },
+      {
+        "name": "Upload independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:06:31Z",
+        "completed_at": "2026-09-15T06:06:33Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 30,
+        "started_at": "2026-09-15T06:06:33Z",
+        "completed_at": "2026-09-15T06:06:41Z"
+      },
+      {
+        "name": "Post Run pnpm/action-setup@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 31,
+        "started_at": "2026-09-15T06:06:41Z",
+        "completed_at": "2026-09-15T06:06:41Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 32,
+        "started_at": "2026-09-15T06:06:41Z",
+        "completed_at": "2026-09-15T06:06:42Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 33,
+        "started_at": "2026-09-15T06:06:42Z",
+        "completed_at": "2026-09-15T06:06:42Z"
+      }
+    ]
+  },
+  {
+    "id": 104272229232,
+    "name": "darwin-x64",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272229232",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:05:56Z",
+        "completed_at": "2026-09-15T06:05:58Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:05:58Z",
+        "completed_at": "2026-09-15T06:06:07Z"
+      },
+      {
+        "name": "Run pnpm/action-setup@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:06:07Z",
+        "completed_at": "2026-09-15T06:06:10Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:06:10Z",
+        "completed_at": "2026-09-15T06:06:13Z"
+      },
+      {
+        "name": "Install dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:06:13Z",
+        "completed_at": "2026-09-15T06:06:52Z"
+      },
+      {
+        "name": "Install musl toolchain",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 6,
+        "started_at": "2026-09-15T06:06:52Z",
+        "completed_at": "2026-09-15T06:06:52Z"
+      },
+      {
+        "name": "Build TypeScript",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:06:52Z",
+        "completed_at": "2026-09-15T06:06:55Z"
+      },
+      {
+        "name": "Typecheck",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:06:55Z",
+        "completed_at": "2026-09-15T06:06:58Z"
+      },
+      {
+        "name": "Build native binaries (this architecture is the builder of record)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9,
+        "started_at": "2026-09-15T06:06:58Z",
+        "completed_at": "2026-09-15T06:07:05Z"
+      },
+      {
+        "name": "Entry tests (keyless)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-09-15T06:07:05Z",
+        "completed_at": "2026-09-15T06:07:05Z"
+      },
+      {
+        "name": "Launcher tests (real kernel enforcement)",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 11,
+        "started_at": "2026-09-15T06:07:05Z",
+        "completed_at": "2026-09-15T06:07:05Z"
+      },
+      {
+        "name": "Pack rehearsal (pack \u2192 install \u2192 confine, this platform only)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 12,
+        "started_at": "2026-09-15T06:07:05Z",
+        "completed_at": "2026-09-15T06:07:10Z"
+      },
+      {
+        "name": "Verify platform payload rules",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 13,
+        "started_at": "2026-09-15T06:07:10Z",
+        "completed_at": "2026-09-15T06:07:12Z"
+      },
+      {
+        "name": "Flock behavior (built addon)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 14,
+        "started_at": "2026-09-15T06:07:12Z",
+        "completed_at": "2026-09-15T06:07:16Z"
+      },
+      {
+        "name": "Upload this platform's built addon and entry",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:07:16Z",
+        "completed_at": "2026-09-15T06:07:17Z"
+      },
+      {
+        "name": "Upload independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:07:17Z",
+        "completed_at": "2026-09-15T06:07:18Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 30,
+        "started_at": "2026-09-15T06:07:18Z",
+        "completed_at": "2026-09-15T06:07:29Z"
+      },
+      {
+        "name": "Post Run pnpm/action-setup@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 31,
+        "started_at": "2026-09-15T06:07:29Z",
+        "completed_at": "2026-09-15T06:07:29Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 32,
+        "started_at": "2026-09-15T06:07:29Z",
+        "completed_at": "2026-09-15T06:07:30Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 33,
+        "started_at": "2026-09-15T06:07:30Z",
+        "completed_at": "2026-09-15T06:07:31Z"
+      }
+    ]
+  },
+  {
+    "id": 104272229241,
+    "name": "linux-x64",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272229241",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:05:56Z",
+        "completed_at": "2026-09-15T06:05:58Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:05:58Z",
+        "completed_at": "2026-09-15T06:06:02Z"
+      },
+      {
+        "name": "Run pnpm/action-setup@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:06:02Z",
+        "completed_at": "2026-09-15T06:06:03Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:06:03Z",
+        "completed_at": "2026-09-15T06:06:05Z"
+      },
+      {
+        "name": "Install dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:06:05Z",
+        "completed_at": "2026-09-15T06:06:12Z"
+      },
+      {
+        "name": "Install musl toolchain",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:06:12Z",
+        "completed_at": "2026-09-15T06:06:22Z"
+      },
+      {
+        "name": "Build TypeScript",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:06:22Z",
+        "completed_at": "2026-09-15T06:06:23Z"
+      },
+      {
+        "name": "Typecheck",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:06:23Z",
+        "completed_at": "2026-09-15T06:06:25Z"
+      },
+      {
+        "name": "Build native binaries (this architecture is the builder of record)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9,
+        "started_at": "2026-09-15T06:06:25Z",
+        "completed_at": "2026-09-15T06:06:26Z"
+      },
+      {
+        "name": "Entry tests (keyless)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-09-15T06:06:26Z",
+        "completed_at": "2026-09-15T06:06:26Z"
+      },
+      {
+        "name": "Launcher tests (real kernel enforcement)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 11,
+        "started_at": "2026-09-15T06:06:26Z",
+        "completed_at": "2026-09-15T06:06:26Z"
+      },
+      {
+        "name": "Pack rehearsal (pack \u2192 install \u2192 confine, this platform only)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 12,
+        "started_at": "2026-09-15T06:06:26Z",
+        "completed_at": "2026-09-15T06:06:28Z"
+      },
+      {
+        "name": "Verify platform payload rules",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 13,
+        "started_at": "2026-09-15T06:06:28Z",
+        "completed_at": "2026-09-15T06:06:29Z"
+      },
+      {
+        "name": "Flock behavior (built addon)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 14,
+        "started_at": "2026-09-15T06:06:29Z",
+        "completed_at": "2026-09-15T06:06:31Z"
+      },
+      {
+        "name": "Upload this platform's built addon and entry",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:06:31Z",
+        "completed_at": "2026-09-15T06:06:32Z"
+      },
+      {
+        "name": "Upload independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:06:32Z",
+        "completed_at": "2026-09-15T06:06:33Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 30,
+        "started_at": "2026-09-15T06:06:33Z",
+        "completed_at": "2026-09-15T06:06:38Z"
+      },
+      {
+        "name": "Post Run pnpm/action-setup@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 31,
+        "started_at": "2026-09-15T06:06:38Z",
+        "completed_at": "2026-09-15T06:06:38Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 32,
+        "started_at": "2026-09-15T06:06:38Z",
+        "completed_at": "2026-09-15T06:06:38Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 33,
+        "started_at": "2026-09-15T06:06:38Z",
+        "completed_at": "2026-09-15T06:06:38Z"
+      }
+    ]
+  },
+  {
+    "id": 104272229244,
+    "name": "linux-arm64",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272229244",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:05:58Z",
+        "completed_at": "2026-09-15T06:05:59Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:05:59Z",
+        "completed_at": "2026-09-15T06:06:01Z"
+      },
+      {
+        "name": "Run pnpm/action-setup@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:06:01Z",
+        "completed_at": "2026-09-15T06:06:02Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:06:02Z",
+        "completed_at": "2026-09-15T06:06:05Z"
+      },
+      {
+        "name": "Install dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:06:05Z",
+        "completed_at": "2026-09-15T06:06:12Z"
+      },
+      {
+        "name": "Install musl toolchain",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:06:12Z",
+        "completed_at": "2026-09-15T06:06:29Z"
+      },
+      {
+        "name": "Build TypeScript",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:06:29Z",
+        "completed_at": "2026-09-15T06:06:30Z"
+      },
+      {
+        "name": "Typecheck",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:06:30Z",
+        "completed_at": "2026-09-15T06:06:32Z"
+      },
+      {
+        "name": "Build native binaries (this architecture is the builder of record)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9,
+        "started_at": "2026-09-15T06:06:32Z",
+        "completed_at": "2026-09-15T06:06:33Z"
+      },
+      {
+        "name": "Entry tests (keyless)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-09-15T06:06:33Z",
+        "completed_at": "2026-09-15T06:06:33Z"
+      },
+      {
+        "name": "Launcher tests (real kernel enforcement)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 11,
+        "started_at": "2026-09-15T06:06:33Z",
+        "completed_at": "2026-09-15T06:06:33Z"
+      },
+      {
+        "name": "Pack rehearsal (pack \u2192 install \u2192 confine, this platform only)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 12,
+        "started_at": "2026-09-15T06:06:33Z",
+        "completed_at": "2026-09-15T06:06:35Z"
+      },
+      {
+        "name": "Verify platform payload rules",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 13,
+        "started_at": "2026-09-15T06:06:35Z",
+        "completed_at": "2026-09-15T06:06:36Z"
+      },
+      {
+        "name": "Flock behavior (built addon)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 14,
+        "started_at": "2026-09-15T06:06:36Z",
+        "completed_at": "2026-09-15T06:06:38Z"
+      },
+      {
+        "name": "Upload this platform's built addon and entry",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:06:38Z",
+        "completed_at": "2026-09-15T06:06:38Z"
+      },
+      {
+        "name": "Upload independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:06:38Z",
+        "completed_at": "2026-09-15T06:06:39Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 30,
+        "started_at": "2026-09-15T06:06:39Z",
+        "completed_at": "2026-09-15T06:06:42Z"
+      },
+      {
+        "name": "Post Run pnpm/action-setup@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 31,
+        "started_at": "2026-09-15T06:06:42Z",
+        "completed_at": "2026-09-15T06:06:42Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 32,
+        "started_at": "2026-09-15T06:06:42Z",
+        "completed_at": "2026-09-15T06:06:42Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 33,
+        "started_at": "2026-09-15T06:06:42Z",
+        "completed_at": "2026-09-15T06:06:42Z"
+      }
+    ]
+  },
+  {
+    "id": 104272596976,
+    "name": "darwin-arm64 / Node 22 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272596976",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:40Z",
+        "completed_at": "2026-09-15T06:07:41Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:41Z",
+        "completed_at": "2026-09-15T06:07:45Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:07:45Z",
+        "completed_at": "2026-09-15T06:07:46Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:07:46Z",
+        "completed_at": "2026-09-15T06:07:47Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:07:47Z",
+        "completed_at": "2026-09-15T06:07:47Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:07:47Z",
+        "completed_at": "2026-09-15T06:07:47Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:07:47Z",
+        "completed_at": "2026-09-15T06:07:48Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-09-15T06:07:48Z",
+        "completed_at": "2026-09-15T06:07:48Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:07:48Z",
+        "completed_at": "2026-09-15T06:07:48Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:07:48Z",
+        "completed_at": "2026-09-15T06:07:49Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:07:49Z",
+        "completed_at": "2026-09-15T06:07:49Z"
+      }
+    ]
+  },
+  {
+    "id": 104272596982,
+    "name": "darwin-arm64 / Node 26 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272596982",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:39Z",
+        "completed_at": "2026-09-15T06:07:40Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:40Z",
+        "completed_at": "2026-09-15T06:07:46Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:07:46Z",
+        "completed_at": "2026-09-15T06:07:54Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:07:54Z",
+        "completed_at": "2026-09-15T06:07:55Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:07:55Z",
+        "completed_at": "2026-09-15T06:07:56Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:07:56Z",
+        "completed_at": "2026-09-15T06:07:56Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:07:56Z",
+        "completed_at": "2026-09-15T06:07:57Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-09-15T06:07:57Z",
+        "completed_at": "2026-09-15T06:07:57Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:07:57Z",
+        "completed_at": "2026-09-15T06:07:57Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:07:57Z",
+        "completed_at": "2026-09-15T06:07:58Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:07:58Z",
+        "completed_at": "2026-09-15T06:07:59Z"
+      }
+    ]
+  },
+  {
+    "id": 104272596996,
+    "name": "darwin-x64 / Node 20 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272596996",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:56Z",
+        "completed_at": "2026-09-15T06:07:59Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:59Z",
+        "completed_at": "2026-09-15T06:08:16Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:08:16Z",
+        "completed_at": "2026-09-15T06:08:30Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:08:30Z",
+        "completed_at": "2026-09-15T06:08:30Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:08:30Z",
+        "completed_at": "2026-09-15T06:08:31Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:08:31Z",
+        "completed_at": "2026-09-15T06:08:31Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:08:31Z",
+        "completed_at": "2026-09-15T06:08:35Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-09-15T06:08:35Z",
+        "completed_at": "2026-09-15T06:08:35Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:08:35Z",
+        "completed_at": "2026-09-15T06:08:35Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:08:35Z",
+        "completed_at": "2026-09-15T06:08:36Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:08:36Z",
+        "completed_at": "2026-09-15T06:08:37Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597009,
+    "name": "darwin-arm64 / Node 20 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597009",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:57Z",
+        "completed_at": "2026-09-15T06:07:59Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:59Z",
+        "completed_at": "2026-09-15T06:08:04Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:08:04Z",
+        "completed_at": "2026-09-15T06:08:10Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:08:10Z",
+        "completed_at": "2026-09-15T06:08:11Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:08:11Z",
+        "completed_at": "2026-09-15T06:08:12Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:08:12Z",
+        "completed_at": "2026-09-15T06:08:12Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:08:12Z",
+        "completed_at": "2026-09-15T06:08:13Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-09-15T06:08:13Z",
+        "completed_at": "2026-09-15T06:08:13Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:08:13Z",
+        "completed_at": "2026-09-15T06:08:13Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:08:13Z",
+        "completed_at": "2026-09-15T06:08:14Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:08:14Z",
+        "completed_at": "2026-09-15T06:08:14Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597012,
+    "name": "linux-arm64 / Node 26 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597012",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:38Z",
+        "completed_at": "2026-09-15T06:07:39Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:39Z",
+        "completed_at": "2026-09-15T06:07:41Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:07:41Z",
+        "completed_at": "2026-09-15T06:07:45Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:07:45Z",
+        "completed_at": "2026-09-15T06:07:45Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:07:45Z",
+        "completed_at": "2026-09-15T06:07:46Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:07:46Z",
+        "completed_at": "2026-09-15T06:07:46Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:07:46Z",
+        "completed_at": "2026-09-15T06:07:46Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:07:46Z",
+        "completed_at": "2026-09-15T06:07:53Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:07:53Z",
+        "completed_at": "2026-09-15T06:07:53Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:07:53Z",
+        "completed_at": "2026-09-15T06:07:53Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:07:53Z",
+        "completed_at": "2026-09-15T06:07:53Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597013,
+    "name": "darwin-x64 / Node 24 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597013",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:42Z",
+        "completed_at": "2026-09-15T06:07:46Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:46Z",
+        "completed_at": "2026-09-15T06:08:13Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:08:13Z",
+        "completed_at": "2026-09-15T06:08:16Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:08:16Z",
+        "completed_at": "2026-09-15T06:08:17Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:08:17Z",
+        "completed_at": "2026-09-15T06:08:18Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:08:18Z",
+        "completed_at": "2026-09-15T06:08:19Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:08:19Z",
+        "completed_at": "2026-09-15T06:08:21Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-09-15T06:08:21Z",
+        "completed_at": "2026-09-15T06:08:21Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:08:21Z",
+        "completed_at": "2026-09-15T06:08:21Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:08:21Z",
+        "completed_at": "2026-09-15T06:08:22Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:08:22Z",
+        "completed_at": "2026-09-15T06:08:23Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597021,
+    "name": "darwin-arm64 / Node 24 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597021",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:38Z",
+        "completed_at": "2026-09-15T06:07:40Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:40Z",
+        "completed_at": "2026-09-15T06:07:45Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:07:45Z",
+        "completed_at": "2026-09-15T06:07:46Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:07:46Z",
+        "completed_at": "2026-09-15T06:07:46Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:07:46Z",
+        "completed_at": "2026-09-15T06:07:46Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:07:46Z",
+        "completed_at": "2026-09-15T06:07:47Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:07:47Z",
+        "completed_at": "2026-09-15T06:07:47Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-09-15T06:07:47Z",
+        "completed_at": "2026-09-15T06:07:47Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:07:47Z",
+        "completed_at": "2026-09-15T06:07:47Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:07:47Z",
+        "completed_at": "2026-09-15T06:07:48Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:07:48Z",
+        "completed_at": "2026-09-15T06:07:48Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597030,
+    "name": "linux-arm64 / Node 20 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597030",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:38Z",
+        "completed_at": "2026-09-15T06:07:39Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:39Z",
+        "completed_at": "2026-09-15T06:07:42Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:07:42Z",
+        "completed_at": "2026-09-15T06:07:46Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:07:46Z",
+        "completed_at": "2026-09-15T06:07:46Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:07:46Z",
+        "completed_at": "2026-09-15T06:07:47Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:07:47Z",
+        "completed_at": "2026-09-15T06:07:47Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:07:47Z",
+        "completed_at": "2026-09-15T06:07:47Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:07:47Z",
+        "completed_at": "2026-09-15T06:07:53Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:07:53Z",
+        "completed_at": "2026-09-15T06:07:53Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:07:53Z",
+        "completed_at": "2026-09-15T06:07:53Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:07:53Z",
+        "completed_at": "2026-09-15T06:07:54Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597033,
+    "name": "linux-x64 / Node 24 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597033",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:36Z",
+        "completed_at": "2026-09-15T06:07:37Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:37Z",
+        "completed_at": "2026-09-15T06:07:39Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:07:39Z",
+        "completed_at": "2026-09-15T06:07:39Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:07:39Z",
+        "completed_at": "2026-09-15T06:07:40Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:07:40Z",
+        "completed_at": "2026-09-15T06:07:40Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:07:40Z",
+        "completed_at": "2026-09-15T06:07:40Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:07:40Z",
+        "completed_at": "2026-09-15T06:07:41Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:07:41Z",
+        "completed_at": "2026-09-15T06:07:52Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:07:52Z",
+        "completed_at": "2026-09-15T06:07:52Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:07:52Z",
+        "completed_at": "2026-09-15T06:07:52Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:07:52Z",
+        "completed_at": "2026-09-15T06:07:52Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597041,
+    "name": "darwin-x64 / Node 26 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597041",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:08:05Z",
+        "completed_at": "2026-09-15T06:08:07Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:08:07Z",
+        "completed_at": "2026-09-15T06:08:16Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:08:16Z",
+        "completed_at": "2026-09-15T06:08:33Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:08:33Z",
+        "completed_at": "2026-09-15T06:08:34Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:08:34Z",
+        "completed_at": "2026-09-15T06:08:35Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:08:35Z",
+        "completed_at": "2026-09-15T06:08:35Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:08:35Z",
+        "completed_at": "2026-09-15T06:08:37Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-09-15T06:08:37Z",
+        "completed_at": "2026-09-15T06:08:37Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:08:37Z",
+        "completed_at": "2026-09-15T06:08:37Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:08:37Z",
+        "completed_at": "2026-09-15T06:08:39Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:08:39Z",
+        "completed_at": "2026-09-15T06:08:40Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597043,
+    "name": "darwin-x64 / Node 22 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597043",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:07Z",
+        "completed_at": "2026-09-15T06:07:20Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:20Z",
+        "completed_at": "2026-09-15T06:08:02Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:08:02Z",
+        "completed_at": "2026-09-15T06:08:06Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:08:06Z",
+        "completed_at": "2026-09-15T06:08:07Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:08:07Z",
+        "completed_at": "2026-09-15T06:08:08Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:08:08Z",
+        "completed_at": "2026-09-15T06:08:08Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:08:08Z",
+        "completed_at": "2026-09-15T06:08:11Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 8,
+        "started_at": "2026-09-15T06:08:11Z",
+        "completed_at": "2026-09-15T06:08:11Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:08:11Z",
+        "completed_at": "2026-09-15T06:08:11Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:08:11Z",
+        "completed_at": "2026-09-15T06:08:13Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:08:13Z",
+        "completed_at": "2026-09-15T06:08:14Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597053,
+    "name": "linux-x64 / Node 20 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597053",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:37Z",
+        "completed_at": "2026-09-15T06:07:38Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:38Z",
+        "completed_at": "2026-09-15T06:07:42Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:07:42Z",
+        "completed_at": "2026-09-15T06:07:46Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:07:46Z",
+        "completed_at": "2026-09-15T06:07:47Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:07:47Z",
+        "completed_at": "2026-09-15T06:07:48Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:07:48Z",
+        "completed_at": "2026-09-15T06:07:48Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:07:48Z",
+        "completed_at": "2026-09-15T06:07:49Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:07:49Z",
+        "completed_at": "2026-09-15T06:07:56Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:07:56Z",
+        "completed_at": "2026-09-15T06:07:56Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:07:56Z",
+        "completed_at": "2026-09-15T06:07:56Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:07:56Z",
+        "completed_at": "2026-09-15T06:07:56Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597062,
+    "name": "linux-x64 / Node 22 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597062",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:36Z",
+        "completed_at": "2026-09-15T06:07:37Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:37Z",
+        "completed_at": "2026-09-15T06:07:41Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:07:41Z",
+        "completed_at": "2026-09-15T06:07:42Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:07:42Z",
+        "completed_at": "2026-09-15T06:07:42Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:07:42Z",
+        "completed_at": "2026-09-15T06:07:43Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:07:43Z",
+        "completed_at": "2026-09-15T06:07:43Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:07:43Z",
+        "completed_at": "2026-09-15T06:07:43Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:07:43Z",
+        "completed_at": "2026-09-15T06:07:54Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:07:54Z",
+        "completed_at": "2026-09-15T06:07:54Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:07:54Z",
+        "completed_at": "2026-09-15T06:07:55Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:07:55Z",
+        "completed_at": "2026-09-15T06:07:55Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597063,
+    "name": "linux-arm64 / Node 22 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597063",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:55Z",
+        "completed_at": "2026-09-15T06:07:56Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:56Z",
+        "completed_at": "2026-09-15T06:08:00Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:08:00Z",
+        "completed_at": "2026-09-15T06:08:00Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:08:00Z",
+        "completed_at": "2026-09-15T06:08:01Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:08:01Z",
+        "completed_at": "2026-09-15T06:08:01Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:08:01Z",
+        "completed_at": "2026-09-15T06:08:01Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:08:01Z",
+        "completed_at": "2026-09-15T06:08:02Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:08:02Z",
+        "completed_at": "2026-09-15T06:08:07Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:08:07Z",
+        "completed_at": "2026-09-15T06:08:07Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:08:07Z",
+        "completed_at": "2026-09-15T06:08:07Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:08:07Z",
+        "completed_at": "2026-09-15T06:08:07Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597076,
+    "name": "linux-arm64 / Node 24 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597076",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:39Z",
+        "completed_at": "2026-09-15T06:07:39Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:39Z",
+        "completed_at": "2026-09-15T06:07:41Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:07:41Z",
+        "completed_at": "2026-09-15T06:07:41Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:07:41Z",
+        "completed_at": "2026-09-15T06:07:42Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:07:42Z",
+        "completed_at": "2026-09-15T06:07:42Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:07:42Z",
+        "completed_at": "2026-09-15T06:07:42Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:07:42Z",
+        "completed_at": "2026-09-15T06:07:43Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:07:43Z",
+        "completed_at": "2026-09-15T06:07:48Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:07:48Z",
+        "completed_at": "2026-09-15T06:07:49Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:07:49Z",
+        "completed_at": "2026-09-15T06:07:49Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:07:49Z",
+        "completed_at": "2026-09-15T06:07:49Z"
+      }
+    ]
+  },
+  {
+    "id": 104272597085,
+    "name": "linux-x64 / Node 26 (same binary)",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430554/job/104272597085",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:07:37Z",
+        "completed_at": "2026-09-15T06:07:38Z"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:07:38Z",
+        "completed_at": "2026-09-15T06:07:42Z"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:07:42Z",
+        "completed_at": "2026-09-15T06:07:49Z"
+      },
+      {
+        "name": "Download the original platform build",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:07:49Z",
+        "completed_at": "2026-09-15T06:07:49Z"
+      },
+      {
+        "name": "Download independent syscall test oracle",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:07:49Z",
+        "completed_at": "2026-09-15T06:07:50Z"
+      },
+      {
+        "name": "Restore oracle executable permissions",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:07:50Z",
+        "completed_at": "2026-09-15T06:07:50Z"
+      },
+      {
+        "name": "Test without rebuilding or installing dependencies",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:07:50Z",
+        "completed_at": "2026-09-15T06:07:51Z"
+      },
+      {
+        "name": "Test the same musl addon without a compiler",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:07:51Z",
+        "completed_at": "2026-09-15T06:08:01Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15,
+        "started_at": "2026-09-15T06:08:01Z",
+        "completed_at": "2026-09-15T06:08:02Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16,
+        "started_at": "2026-09-15T06:08:02Z",
+        "completed_at": "2026-09-15T06:08:02Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17,
+        "started_at": "2026-09-15T06:08:02Z",
+        "completed_at": "2026-09-15T06:08:02Z"
+      }
+    ]
+  }
+]
