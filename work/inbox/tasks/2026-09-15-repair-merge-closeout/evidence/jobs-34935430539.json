@@ -1,0 +1,280 @@
+[
+  {
+    "id": 104272189490,
+    "name": "Pack npm tarballs",
+    "status": "in_progress",
+    "conclusion": null,
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430539/job/104272189490",
+    "started_at": "2026-09-15T06:05:45Z",
+    "completed_at": null,
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:05:46Z",
+        "completed_at": "2026-09-15T06:05:48Z"
+      },
+      {
+        "name": "Run actions/checkout@v6",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:05:48Z",
+        "completed_at": "2026-09-15T06:06:03Z"
+      },
+      {
+        "name": "Configure runner-private caches",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:06:03Z",
+        "completed_at": "2026-09-15T06:06:03Z"
+      },
+      {
+        "name": "Run pnpm/action-setup@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:06:03Z",
+        "completed_at": "2026-09-15T06:06:04Z"
+      },
+      {
+        "name": "Run actions/setup-node@v6",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:06:04Z",
+        "completed_at": "2026-09-15T06:06:07Z"
+      },
+      {
+        "name": "Configure pnpm store path",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:06:07Z",
+        "completed_at": "2026-09-15T06:06:08Z"
+      },
+      {
+        "name": "Run actions/cache/restore@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:06:08Z",
+        "completed_at": "2026-09-15T06:06:09Z"
+      },
+      {
+        "name": "Install (immutable)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:06:09Z",
+        "completed_at": "2026-09-15T06:06:25Z"
+      },
+      {
+        "name": "Verify release version",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9,
+        "started_at": "2026-09-15T06:06:25Z",
+        "completed_at": "2026-09-15T06:06:26Z"
+      },
+      {
+        "name": "Build",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 10,
+        "started_at": "2026-09-15T06:06:26Z",
+        "completed_at": null
+      },
+      {
+        "name": "Pack release tarballs",
+        "status": "pending",
+        "conclusion": null,
+        "number": 11,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Pack the vendored framework for verification",
+        "status": "pending",
+        "conclusion": null,
+        "number": 12,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Pack the Landlock entry for verification",
+        "status": "pending",
+        "conclusion": null,
+        "number": 13,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Verify packed install",
+        "status": "pending",
+        "conclusion": null,
+        "number": 14,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Run actions/upload-artifact@v4",
+        "status": "pending",
+        "conclusion": null,
+        "number": 15,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Post Run actions/setup-node@v6",
+        "status": "pending",
+        "conclusion": null,
+        "number": 28,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Post Run pnpm/action-setup@v4",
+        "status": "pending",
+        "conclusion": null,
+        "number": 29,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Post Run actions/checkout@v6",
+        "status": "pending",
+        "conclusion": null,
+        "number": 30,
+        "started_at": null,
+        "completed_at": null
+      }
+    ]
+  },
+  {
+    "id": 104272189740,
+    "name": "Dependency layout",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430539/job/104272189740",
+    "started_at": "2026-09-15T06:05:45Z",
+    "completed_at": "2026-09-15T06:07:51Z",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:05:46Z",
+        "completed_at": "2026-09-15T06:05:48Z"
+      },
+      {
+        "name": "Run actions/checkout@v6",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:05:48Z",
+        "completed_at": "2026-09-15T06:05:52Z"
+      },
+      {
+        "name": "Configure runner-private caches",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:05:52Z",
+        "completed_at": "2026-09-15T06:05:52Z"
+      },
+      {
+        "name": "Run pnpm/action-setup@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:05:52Z",
+        "completed_at": "2026-09-15T06:05:53Z"
+      },
+      {
+        "name": "Run actions/setup-node@v6",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:05:53Z",
+        "completed_at": "2026-09-15T06:05:54Z"
+      },
+      {
+        "name": "Configure pnpm store path",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:05:54Z",
+        "completed_at": "2026-09-15T06:05:55Z"
+      },
+      {
+        "name": "Run actions/cache/restore@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:05:55Z",
+        "completed_at": "2026-09-15T06:05:55Z"
+      },
+      {
+        "name": "Install (immutable)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:05:55Z",
+        "completed_at": "2026-09-15T06:06:11Z"
+      },
+      {
+        "name": "Verify dependency policy",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9,
+        "started_at": "2026-09-15T06:06:11Z",
+        "completed_at": "2026-09-15T06:06:14Z"
+      },
+      {
+        "name": "Verify npm install layout",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-09-15T06:06:14Z",
+        "completed_at": "2026-09-15T06:07:47Z"
+      },
+      {
+        "name": "Post Run actions/setup-node@v6",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 18,
+        "started_at": "2026-09-15T06:07:47Z",
+        "completed_at": "2026-09-15T06:07:48Z"
+      },
+      {
+        "name": "Post Run pnpm/action-setup@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 19,
+        "started_at": "2026-09-15T06:07:48Z",
+        "completed_at": "2026-09-15T06:07:48Z"
+      },
+      {
+        "name": "Post Run actions/checkout@v6",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 20,
+        "started_at": "2026-09-15T06:07:48Z",
+        "completed_at": "2026-09-15T06:07:48Z"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 21,
+        "started_at": "2026-09-15T06:07:48Z",
+        "completed_at": "2026-09-15T06:07:48Z"
+      }
+    ]
+  }
+]

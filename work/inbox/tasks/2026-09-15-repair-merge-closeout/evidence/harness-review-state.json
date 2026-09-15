@@ -1,0 +1,25 @@
+{
+  "data": {
+    "repository": {
+      "pullRequest": {
+        "headRefOid": "368c446657932f170a6d29fd2d275bea1c76073e",
+        "baseRefOid": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+        "mergeable": "MERGEABLE",
+        "mergeStateStatus": "UNSTABLE",
+        "reviewDecision": null,
+        "reviewRequests": {
+          "totalCount": 0
+        },
+        "reviews": {
+          "nodes": []
+        },
+        "reviewThreads": {
+          "nodes": [],
+          "pageInfo": {
+            "hasNextPage": false
+          }
+        }
+      }
+    }
+  }
+}

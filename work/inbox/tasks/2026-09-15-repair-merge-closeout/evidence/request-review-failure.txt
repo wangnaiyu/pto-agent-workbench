@@ -1,0 +1,111 @@
+request-review	Request reviewers	﻿2026-09-15T06:05:56.7636405Z ##[group]Run node .github/review-ownership/request-review.mjs
+request-review	Request reviewers	2026-09-15T06:05:56.7637021Z node .github/review-ownership/request-review.mjs
+request-review	Request reviewers	2026-09-15T06:05:56.7677837Z shell: /usr/bin/bash -e {0}
+request-review	Request reviewers	2026-09-15T06:05:56.7678159Z env:
+request-review	Request reviewers	2026-09-15T06:05:56.7681160Z   GITHUB_TOKEN: ***
+request-review	Request reviewers	2026-09-15T06:05:56.7681400Z ##[endgroup]
+request-review	Request reviewers	2026-09-15T06:05:56.9559772Z This is by automated Angry Turtle Cyborg, not a human
+request-review	Request reviewers	2026-09-15T06:05:57.7699147Z Changed code files:
+request-review	Request reviewers	2026-09-15T06:05:57.7699684Z - "packages/client/ui-conversation/src/client/apply.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7700580Z - "packages/client/ui-conversation/src/client/contract/guarded-drafts.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7701443Z - "packages/client/ui-conversation/src/client/contract/input.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7702522Z - "packages/client/ui-conversation/src/client/index.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7703426Z - "packages/client/ui-conversation/src/client/input/editor/ReferenceChip.module.css"
+request-review	Request reviewers	2026-09-15T06:05:57.7704510Z - "packages/client/ui-conversation/src/client/input/editor/ReferenceChip.tsx"
+request-review	Request reviewers	2026-09-15T06:05:57.7705610Z - "packages/client/ui-conversation/src/client/input/editor/chip-node.tsx"
+request-review	Request reviewers	2026-09-15T06:05:57.7706578Z - "packages/client/ui-conversation/src/client/input/editor/projection.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7707485Z - "packages/client/ui-conversation/src/client/input/facade.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7708239Z - "packages/client/ui-conversation/src/client/input/hub.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7708990Z - "packages/client/ui-conversation/src/client/locales.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7709685Z - "packages/client/ui-conversation/src/client/service.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7710471Z - "packages/client/ui-conversation/src/client/submission-bindings.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7711299Z - "packages/client/ui-input-trigger/src/client/controller.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7712245Z - "packages/client/ui-input-trigger/src/types.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7713002Z - "packages/client/ui-pto-experiments/src/client/dashboard.module.css"
+request-review	Request reviewers	2026-09-15T06:05:57.7713760Z - "packages/client/ui-workspace/package.json"
+request-review	Request reviewers	2026-09-15T06:05:57.7714477Z - "packages/client/ui-workspace/src/client/PtoViewerOverlay.tsx"
+request-review	Request reviewers	2026-09-15T06:05:57.7715212Z - "packages/client/ui-workspace/src/client/index.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7715858Z - "packages/client/ui-workspace/src/client/locales.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7716425Z - "packages/client/ui-workspace/src/client/navigation.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7716889Z - "packages/client/ui-workspace/src/client/pto-viewer.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7717311Z - "packages/client/ui-workspace/tsconfig.json"
+request-review	Request reviewers	2026-09-15T06:05:57.7717690Z - "packages/host/pto-artifact-inspection/package.json"
+request-review	Request reviewers	2026-09-15T06:05:57.7718036Z - "packages/host/pto-artifact-inspection/src/index.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7718339Z Excluded test files:
+request-review	Request reviewers	2026-09-15T06:05:57.7718660Z - "packages/client/ui-conversation/tests/input-bar.client.spec.tsx"
+request-review	Request reviewers	2026-09-15T06:05:57.7719166Z - "packages/client/ui-conversation/tests/input-matrix.client.spec.tsx"
+request-review	Request reviewers	2026-09-15T06:05:57.7719701Z - "packages/client/ui-conversation/tests/input-reference-submit.client.spec.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7720239Z - "packages/client/ui-conversation/tests/input-scenarios.client.spec.tsx"
+request-review	Request reviewers	2026-09-15T06:05:57.7720712Z - "packages/client/ui-conversation/tests/skeleton.client.spec.tsx"
+request-review	Request reviewers	2026-09-15T06:05:57.7721187Z - "packages/client/ui-conversation/tests/submission-bindings.client.spec.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7722306Z - "packages/client/ui-workspace/tests/pto-launch-assembly.client.spec.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7791046Z - "packages/client/ui-workspace/tests/pto-viewer.client.spec.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7791619Z - "packages/host/pto-artifact-inspection/tests/skill-composition.spec.ts"
+request-review	Request reviewers	2026-09-15T06:05:57.7792337Z Excluded documentation files:
+request-review	Request reviewers	2026-09-15T06:05:57.7792778Z - ".agents/notes/implemented/bug-fix/2026-09-14-guarded-analysis-launches.i18n.yaml"
+request-review	Request reviewers	2026-09-15T06:05:57.7793415Z - ".agents/notes/implemented/bug-fix/2026-09-14-guarded-analysis-launches.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7794004Z - ".agents/notes/implemented/bug-fix/2026-09-14-guarded-analysis-launches.zh.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7795012Z - ".agents/notes/implemented/bug-fix/2026-09-14-pto-analysis-references.i18n.yaml"
+request-review	Request reviewers	2026-09-15T06:05:57.7795556Z - ".agents/notes/implemented/bug-fix/2026-09-14-pto-analysis-references.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7796066Z - ".agents/notes/implemented/bug-fix/2026-09-14-pto-analysis-references.zh.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7796591Z - ".agents/notes/implemented/bug-fix/2026-09-14-pto-experiment-layout.i18n.yaml"
+request-review	Request reviewers	2026-09-15T06:05:57.7797087Z - ".agents/notes/implemented/bug-fix/2026-09-14-pto-experiment-layout.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7797587Z - ".agents/notes/implemented/bug-fix/2026-09-14-pto-experiment-layout.zh.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7798023Z - "packages/client/ui-conversation/README.i18n.yaml"
+request-review	Request reviewers	2026-09-15T06:05:57.7798364Z - "packages/client/ui-conversation/README.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7798683Z - "packages/client/ui-conversation/README.zh.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7799026Z - "packages/client/ui-input-trigger/README.i18n.yaml"
+request-review	Request reviewers	2026-09-15T06:05:57.7799358Z - "packages/client/ui-input-trigger/README.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7799682Z - "packages/client/ui-input-trigger/README.zh.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7800027Z - "packages/client/ui-pto-experiments/README.i18n.yaml"
+request-review	Request reviewers	2026-09-15T06:05:57.7800366Z - "packages/client/ui-pto-experiments/README.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7800700Z - "packages/client/ui-pto-experiments/README.zh.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7801032Z - "packages/client/ui-workspace/README.i18n.yaml"
+request-review	Request reviewers	2026-09-15T06:05:57.7801341Z - "packages/client/ui-workspace/README.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7801642Z - "packages/client/ui-workspace/README.zh.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7802389Z - "packages/host/pto-artifact-inspection/README.i18n.yaml"
+request-review	Request reviewers	2026-09-15T06:05:57.7802769Z - "packages/host/pto-artifact-inspection/README.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7803114Z - "packages/host/pto-artifact-inspection/README.zh.md"
+request-review	Request reviewers	2026-09-15T06:05:57.7803434Z - "pnpm-lock.yaml"
+request-review	Request reviewers	2026-09-15T06:05:57.7803659Z Excluded comment-only files:
+request-review	Request reviewers	2026-09-15T06:05:57.7803893Z - (none)
+request-review	Request reviewers	2026-09-15T06:05:57.7804081Z Owners by changed file:
+request-review	Request reviewers	2026-09-15T06:05:57.7804454Z - "packages/client/ui-conversation/src/client/apply.ts" (2 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7805055Z - "packages/client/ui-conversation/src/client/contract/guarded-drafts.ts" (38 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7805681Z - "packages/client/ui-conversation/src/client/contract/input.ts" (6 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7806204Z - "packages/client/ui-conversation/src/client/index.ts" (2 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7806730Z - "packages/client/ui-conversation/src/client/input/editor/chip-node.tsx" (25 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7807325Z - "packages/client/ui-conversation/src/client/input/editor/projection.ts" (1 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7807957Z - "packages/client/ui-conversation/src/client/input/editor/ReferenceChip.module.css" (6 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7808609Z - "packages/client/ui-conversation/src/client/input/editor/ReferenceChip.tsx" (19 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7809177Z - "packages/client/ui-conversation/src/client/input/facade.ts" (104 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7809696Z - "packages/client/ui-conversation/src/client/input/hub.ts" (82 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7810190Z - "packages/client/ui-conversation/src/client/locales.ts" (12 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7810671Z - "packages/client/ui-conversation/src/client/service.ts" (27 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7811436Z - "packages/client/ui-conversation/src/client/submission-bindings.ts" (124 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7812286Z - "packages/client/ui-input-trigger/src/client/controller.ts" (11 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7812778Z - "packages/client/ui-input-trigger/src/types.ts" (2 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7813285Z - "packages/client/ui-pto-experiments/src/client/dashboard.module.css" (24 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7813789Z - "packages/client/ui-workspace/package.json" (5 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7814226Z - "packages/client/ui-workspace/src/client/index.ts" (80 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7814682Z - "packages/client/ui-workspace/src/client/locales.ts" (10 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7815329Z - "packages/client/ui-workspace/src/client/navigation.ts" (2 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7815809Z - "packages/client/ui-workspace/src/client/pto-viewer.ts" (159 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7816331Z - "packages/client/ui-workspace/src/client/PtoViewerOverlay.tsx" (3 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7816822Z - "packages/client/ui-workspace/tsconfig.json" (3 LOC): @imccyu
+request-review	Request reviewers	2026-09-15T06:05:57.7817290Z - "packages/host/pto-artifact-inspection/package.json" (35 LOC): @turtle1999
+request-review	Request reviewers	2026-09-15T06:05:57.7817792Z - "packages/host/pto-artifact-inspection/src/index.ts" (21 LOC): @turtle1999
+request-review	Request reviewers	2026-09-15T06:05:57.7818187Z Owner relevance by changed LOC:
+request-review	Request reviewers	2026-09-15T06:05:57.7818426Z - @imccyu: 747
+request-review	Request reviewers	2026-09-15T06:05:57.7818621Z - @turtle1999: 56
+request-review	Request reviewers	2026-09-15T06:05:58.0233277Z Approved owners omitted from review requests:
+request-review	Request reviewers	2026-09-15T06:05:58.0233714Z - (none)
+request-review	Request reviewers	2026-09-15T06:05:58.2241336Z Current individual review requests:
+request-review	Request reviewers	2026-09-15T06:05:58.2241730Z - (none)
+request-review	Request reviewers	2026-09-15T06:05:58.2242308Z Available counted review request slots: 1.
+request-review	Request reviewers	2026-09-15T06:05:58.2242663Z Review requests to cancel:
+request-review	Request reviewers	2026-09-15T06:05:58.2242931Z - (none)
+request-review	Request reviewers	2026-09-15T06:05:58.2243153Z Reviewers to request:
+request-review	Request reviewers	2026-09-15T06:05:58.2243400Z - @imccyu
+request-review	Request reviewers	2026-09-15T06:05:58.4246794Z request-review failed: GitHub API POST /repos/wangnaiyu/deepseek-harness/pulls/7/requested_reviewers returned 422: "{\"message\":\"Reviews may only be requested from collaborators. One or more of the users or teams you specified is not a collaborator of the wangnaiyu/deepseek-harness repository.\",\"documentation_url\":\"https://docs.github.com/rest/pulls/review-requests#request-reviewers-for-a-pull-request\",\"status\":\"422\"}"
+request-review	Request reviewers	2026-09-15T06:05:58.4338770Z ##[error]Process completed with exit code 1.

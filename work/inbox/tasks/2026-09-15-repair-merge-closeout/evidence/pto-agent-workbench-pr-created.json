@@ -1,0 +1,14 @@
+{
+  "baseRefName": "main",
+  "baseRefOid": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+  "headRefName": "codex/repair-merge-closeout-20260915",
+  "headRefOid": "f04a8523fb48bb3b50ae0a7f4d1ab19973370d49",
+  "mergeStateStatus": "CLEAN",
+  "mergeable": "MERGEABLE",
+  "number": 12,
+  "reviewDecision": "",
+  "reviews": [],
+  "state": "OPEN",
+  "statusCheckRollup": [],
+  "url": "https://github.com/wangnaiyu/pto-agent-workbench/pull/12"
+}

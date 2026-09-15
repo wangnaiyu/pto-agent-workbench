@@ -1,0 +1,139 @@
+{
+  "harness": "368c446657932f170a6d29fd2d275bea1c76073e",
+  "exactP5HarnessCommit": true,
+  "implementationHashChecks": [
+    {
+      "path": "packages/client/ui-conversation/README.i18n.yaml",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/contract/guarded-drafts.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/contract/input.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/index.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/input/editor/ReferenceChip.module.css",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/input/editor/ReferenceChip.tsx",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/input/editor/chip-node.tsx",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/input/editor/projection.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/input/facade.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/input/hub.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/service.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/submission-bindings.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/tests/input-bar.client.spec.tsx",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/tests/input-matrix.client.spec.tsx",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/tests/input-reference-submit.client.spec.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/tests/input-scenarios.client.spec.tsx",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-conversation/tests/skeleton.client.spec.tsx",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-input-trigger/README.i18n.yaml",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-input-trigger/src/client/controller.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-input-trigger/src/types.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-workspace/README.i18n.yaml",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-workspace/package.json",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-workspace/src/client/index.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-workspace/src/client/locales.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-workspace/src/client/pto-viewer.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-workspace/tests/pto-launch-assembly.client.spec.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-workspace/tests/pto-viewer.client.spec.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/client/ui-workspace/tsconfig.json",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/host/pto-artifact-inspection/README.i18n.yaml",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/host/pto-artifact-inspection/package.json",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/host/pto-artifact-inspection/src/index.ts",
+      "matchesRecorded": true
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "matchesRecorded": true
+    },
+    {
+      "path": "packages/host/pto-artifact-inspection/tests/skill-composition.spec.ts",
+      "matchesRecorded": true
+    }
+  ],
+  "policy": "Same verified source: reuse P2-P5 evidence. Current normal push hook typecheck passed. No exhaustive CI claim; known red tests remain."
+}

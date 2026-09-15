@@ -1,0 +1,24 @@
+cloudflare pages preview	Upload to Cloudflare Pages	﻿2026-09-15T06:08:47.2247851Z ##[group]Run npx --yes wrangler@4 pages deploy apps/web/dist \
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2248317Z npx --yes wrangler@4 pages deploy apps/web/dist \
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2248673Z   --project-name "$CF_PROJECT" \
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2248981Z   --branch "pr-7" \
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2249228Z   --commit-dirty=true
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2282252Z shell: /usr/bin/bash -e {0}
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2282510Z env:
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2282715Z   PRIMARY_NODE_VERSION: 24
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2282969Z   CF_PROJECT: dsh-build-preview
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2283234Z   DSH_TELEMETRY_DISABLED: 1
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2283556Z   PNPM_HOME: /home/runner/work/_temp/setup-pnpm/node_modules/.bin
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2283984Z   PNPM_CONFIG_STORE_DIR: /home/runner/.local/share/pnpm/store
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2284331Z   CLOUDFLARE_API_TOKEN:
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2284565Z   CLOUDFLARE_ACCOUNT_ID:
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:47.2284786Z ##[endgroup]
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:57.9558654Z
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:57.9559604Z  ⛅️ wrangler 4.131.2
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:57.9560262Z ────────────────────
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:57.9800610Z
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:58.0292154Z ✘ [ERROR] In a non-interactive environment, it's necessary to set a CLOUDFLARE_API_TOKEN environment variable for wrangler to work. Please go to https://developers.cloudflare.com/fundamentals/api/get-started/create-token/ for instructions on how to create an api token, and assign its value to CLOUDFLARE_API_TOKEN.
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:58.0294469Z
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:58.0294491Z
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:58.0790853Z 🪵  Logs were written to "/home/runner/.config/.wrangler/logs/wrangler-2026-09-15_06-08-57_607.log"
+cloudflare pages preview	Upload to Cloudflare Pages	2026-09-15T06:08:58.2054348Z ##[error]Process completed with exit code 1.
