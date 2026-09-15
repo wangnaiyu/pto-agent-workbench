@@ -1,0 +1,221 @@
+{
+  ".": [
+    {
+      "ref": "refs/heads/codex/baseline-pre-upstream-20260909",
+      "sha": "90390059746c29a71bd5315e1dce5101bb803aec",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/repair-p0-20260911",
+      "sha": "642632176df9f1131e9c41cbffc33c3b414184ff",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/repair-p1-official-provider-20260911",
+      "sha": "efffec604dbbd24b7b13bcad359a8c2023c85915",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/savepoint-p3-validation-20260914",
+      "sha": "5e7843262a8c0de3d26f725f81c5275f4929616a",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/savepoint-p4-validation-20260914",
+      "sha": "22ec9ff00a77f3802ef177ffea6c1e0414352d62",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/savepoint-pre-upstream-20260909",
+      "sha": "563ec644372442ae670ec8ee5218fecd30ae429a",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/upstream-rebase-20260909",
+      "sha": "91dbe1a242bf9b7a7db3b0e6f04791069d02414d",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/post-upstream-baseline-20260910",
+      "sha": "3e55a451870a992603be9997fc5a1fdd74166d19",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/pre-upstream-baseline-20260909",
+      "sha": "eec1bd7430cd8666759dad937852b0ed051d593f",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/repair-p3-accepted-20260914",
+      "sha": "3302a150e510973bccd8686b5ff3fb390b99ae1d",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/repair-p3-validation-checkpoint-20260914",
+      "sha": "55061f793737e33b50e99c273125234eef9c4905",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/repair-p4-accepted-20260914",
+      "sha": "eb69cdd76e0d82ab4e663e68901855ad575cab72",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/repair-p4-validation-checkpoint-20260914",
+      "sha": "7438baeec4a671f3d142107e7dc883a94ca450fc",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/repair-p5-accepted-20260914",
+      "sha": "4b69346e79ad1c593782367636ef8399d109c166",
+      "unchanged": true
+    }
+  ],
+  "harness": [
+    {
+      "ref": "refs/heads/backup/pre-upstream-rebase-20260828",
+      "sha": "d905b7c52048b374f2645f52b8f9f5cbdc4a2028",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/backup/pre-upstream-rebase-20260831",
+      "sha": "acd3755c8e4c2b29bb720c73d2bfc0bcf5e3f546",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/backup/pre-upstream-rebase-20260901",
+      "sha": "fe1de6cde811f3d52c66eca3611671fb3be995fd",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/baseline-pre-upstream-20260909",
+      "sha": "ef0d49b574f544c997e914b4254e38080730f45a",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/pre-rebase-master-20260902",
+      "sha": "205df79b30a1e8df68300d8891ad9f7a21124a0f",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/pre-rebase-master-20260903",
+      "sha": "8b1387d1d1e83bd72efe595aa292f94eae1c3617",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/pre-rebase-master-20260904",
+      "sha": "489f3f65b1e0218e4f59834e40c422dec1196f9c",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/replay-savepoint-20260909",
+      "sha": "dfee89b2e0e6ca090f911b136315f235133aec78",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/savepoint-p3-validation-20260914",
+      "sha": "e80fa835192f2cc087369e06080aaf9944a6b3fa",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/savepoint-p4-validation-20260914",
+      "sha": "368c446657932f170a6d29fd2d275bea1c76073e",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/savepoint-pre-upstream-20260909",
+      "sha": "e95e118b26761c20381f278b8d98c15ee56fc886",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/heads/codex/upstream-rebase-20260909",
+      "sha": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/dsh-v0.1.0-rc.7",
+      "sha": "99f6f02fecdb7dff40c3fbc9470f5907c29f74ca",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/dsh-v0.1.0-rc.8",
+      "sha": "141eb6fef83422698aef7a981029e843e8161534",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/dsh-v0.1.1-rc.1",
+      "sha": "528c682e061696f5a160f363f236ecbf53cbd006",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/dsh-v0.1.1-rc.2",
+      "sha": "b150a551b8d465e31e418e1b2eaf5e79bbb7d28e",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/dsh-v0.1.2-alpha.1",
+      "sha": "cd5ef8148158c3a752a658978873241fdf8e2bbc",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/dsh-v0.1.2-alpha.2",
+      "sha": "0a53fb55bea101816fa226bb964ae2bed71c343b",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/dsh-v0.1.2-alpha.3",
+      "sha": "dd6322d604e00eec1ba5e0c8541159906a21094a",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/dsh-v0.1.2-alpha.4",
+      "sha": "4e84901e6471b79ec0338099867ebb4606d12bb5",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/dsh-v0.1.2-alpha.5",
+      "sha": "db6bdc3576c2d4e7c965e8e3ed0c2a731eed87f5",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/dsh-v0.1.2-rc.1",
+      "sha": "a66e4702047846cdaa10c66c9d3df3951f5ea70d",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/post-upstream-baseline-20260910",
+      "sha": "9cb268380f8bafa8c302b4c1cdafead363d2809d",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/pre-upstream-baseline-20260909",
+      "sha": "e34626291f487801938d84f367c2d0645709129d",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/repair-p3-accepted-20260914",
+      "sha": "5a9772362b407fc05869144e282229694124956e",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/repair-p3-validation-checkpoint-20260914",
+      "sha": "3bdfff8eeadd6a1a99263c487a5699fc64d3cb16",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/repair-p4-accepted-20260914",
+      "sha": "e71db76028cd8d087e5c81f5c89c1d9c83336cb9",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/repair-p4-validation-checkpoint-20260914",
+      "sha": "1f86c803cc2d963f5f50d0c0a372e1e53335c389",
+      "unchanged": true
+    },
+    {
+      "ref": "refs/tags/repair-p5-accepted-20260914",
+      "sha": "6984bb0a569aabdf85be7fd5e45d4bdd6b1cf380",
+      "unchanged": true
+    }
+  ]
+}

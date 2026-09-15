@@ -1,0 +1,83 @@
+[
+  {
+    "repo": "harness",
+    "branch": "codex/repair-p2-launch-20260914",
+    "sha": "e92a21adc477133a0771a6194962be901284a2ed",
+    "ancestorOf": "163e8ddd21f6b3e5ad82de0fb3c0cfcede3fcf7b",
+    "localDeleted": true,
+    "remoteDeleted": false,
+    "remoteDeletionGuard": null
+  },
+  {
+    "repo": "harness",
+    "branch": "codex/repair-p3-composer-20260914",
+    "sha": "e80fa835192f2cc087369e06080aaf9944a6b3fa",
+    "ancestorOf": "163e8ddd21f6b3e5ad82de0fb3c0cfcede3fcf7b",
+    "localDeleted": true,
+    "remoteDeleted": false,
+    "remoteDeletionGuard": null
+  },
+  {
+    "repo": "harness",
+    "branch": "codex/repair-p4-layout-20260914",
+    "sha": "368c446657932f170a6d29fd2d275bea1c76073e",
+    "ancestorOf": "163e8ddd21f6b3e5ad82de0fb3c0cfcede3fcf7b",
+    "localDeleted": true,
+    "remoteDeleted": false,
+    "remoteDeletionGuard": null
+  },
+  {
+    "repo": "harness",
+    "branch": "codex/repair-p5-validation-20260914",
+    "sha": "368c446657932f170a6d29fd2d275bea1c76073e",
+    "ancestorOf": "163e8ddd21f6b3e5ad82de0fb3c0cfcede3fcf7b",
+    "localDeleted": true,
+    "remoteDeleted": true,
+    "remoteDeletionGuard": "exact observed SHA lease; delete only, no history rewrite"
+  },
+  {
+    "repo": ".",
+    "branch": "codex/repair-p2-launch-20260914",
+    "sha": "a68dea5bc06793df98b2f8f0c2f53db7f62080fc",
+    "ancestorOf": "003535d76634114a2858652da24e7526e556fa9c",
+    "localDeleted": true,
+    "remoteDeleted": false,
+    "remoteDeletionGuard": null
+  },
+  {
+    "repo": ".",
+    "branch": "codex/repair-p3-composer-20260914",
+    "sha": "6d3c42b7f4c2d43078bf00129a6c6300a5604de0",
+    "ancestorOf": "003535d76634114a2858652da24e7526e556fa9c",
+    "localDeleted": true,
+    "remoteDeleted": false,
+    "remoteDeletionGuard": null
+  },
+  {
+    "repo": ".",
+    "branch": "codex/repair-p4-layout-20260914",
+    "sha": "ae37530e92d6df320f6321a3b1c303a3f5d41d82",
+    "ancestorOf": "003535d76634114a2858652da24e7526e556fa9c",
+    "localDeleted": true,
+    "remoteDeleted": false,
+    "remoteDeletionGuard": null
+  },
+  {
+    "repo": ".",
+    "branch": "codex/repair-p5-validation-20260914",
+    "sha": "452e631c880082d832eb36f386fc6439df233be3",
+    "ancestorOf": "003535d76634114a2858652da24e7526e556fa9c",
+    "localDeleted": true,
+    "remoteDeleted": true,
+    "remoteDeletionGuard": "exact observed SHA lease; delete only, no history rewrite"
+  },
+  {
+    "repo": ".",
+    "branch": "codex/repair-merge-closeout-20260915",
+    "sha": "411660104d2ac0926421c7e9fb3eab892ad19db8",
+    "ancestorOf": "003535d76634114a2858652da24e7526e556fa9c",
+    "localDeleted": true,
+    "remoteDeleted": true,
+    "remoteDeletionGuard": "exact observed SHA lease; delete only, no history rewrite"
+  }
+]

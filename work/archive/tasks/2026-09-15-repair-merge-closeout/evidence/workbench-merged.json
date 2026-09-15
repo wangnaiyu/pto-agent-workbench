@@ -1,0 +1,12 @@
+{
+  "baseRefOid": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+  "headRefOid": "411660104d2ac0926421c7e9fb3eab892ad19db8",
+  "mergeCommit": {
+    "oid": "003535d76634114a2858652da24e7526e556fa9c"
+  },
+  "mergedAt": "2026-09-15T06:18:44Z",
+  "number": 12,
+  "state": "MERGED",
+  "url": "https://github.com/wangnaiyu/pto-agent-workbench/pull/12",
+  "mergeTreeMatchesPRHead": true
+}

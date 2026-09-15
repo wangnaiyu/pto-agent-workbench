@@ -25,7 +25,7 @@
 
 后续独立修复已形成可恢复的本地提交并通过各阶段验收：实际 patch 正式插入唯一锁定 provider；分析 launch 保留首发及失败重试绑定；规范 Skill 手势与结构化文件引用支持草稿恢复、Viewer 退出与回开、单次 Skill 注入；实验 Dashboard 消费正文宽度并按容器适配。Host receipt schema、Session V3 与 ConversationRoot 宽度实现均保持原契约。对应证据见任务的 [P1](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/p1-report.md)、[P2](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/p2-report.md)、[P3](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/p3-report.md)、[P4](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/p4-report.md) 报告。
 
-上述结论是分阶段修复与验证，不代表主分支已发布或全套门禁绿色。既有 lint、GUI/browser 失败及重启后 Dashboard 仅查询已载入 Session 的限制仍保留；最终组合回归与收口已完成，真实日志 42 项断言通过；详见 [完成报告](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/final-report.md)。确定性模型替身不作为外部模型能力验收，修复已推送，harness 已合并；两仓正式主分支配对与合并状态见 [收口记录](../../inbox/tasks/2026-09-15-repair-merge-closeout/paired-baseline.md)。
+上述结论是分阶段修复与验证，不代表主分支已发布或全套门禁绿色。既有 lint、GUI/browser 失败及重启后 Dashboard 仅查询已载入 Session 的限制仍保留；最终组合回归与收口已完成，真实日志 42 项断言通过；详见 [完成报告](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/final-report.md)。确定性模型替身不作为外部模型能力验收，修复已推送并经 harness #7、工作台 #12 顺序合入主分支；完整配对与门禁/清理记录见 [收口记录](../../archive/tasks/2026-09-15-repair-merge-closeout/paired-baseline.md)。
 
 历史实施证据与边界见[已归档 MVP 报告](../../archive/tasks/2026-09-03-artifact-inspection-mvp/final-report.md)。
 后续 selection/deeplink、持久 Analysis View 和更多 adapter 另立任务。
