@@ -1,0 +1,59 @@
+{
+  "receipt": {
+    "requestId": "pto-analysis-21e0dc76-3022-4d1e-92ea-ceb698fb7d76",
+    "sessionId": "session-bab1cb9e-dbce-45af-9fb8-1a7268a242dc",
+    "recordId": "pto-record-6911d1dc-83f3-4694-adcc-282c1d0b95ed",
+    "recordRevision": "inventory-v1-557be9e7",
+    "actionId": "analyze.dependency-redundancy",
+    "artifactRefs": [
+      "deps.json"
+    ],
+    "skill": {
+      "name": "dependency-redundancy",
+      "provider": "pypto-official-af1d7a016ce5",
+      "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+    },
+    "tool": {
+      "name": "pto_dependency_redundancy",
+      "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+    }
+  },
+  "input": {
+    "artifactRef": "deps.json",
+    "version": "16777234:23793144:412557:1784536010000000000:1784791641560721445"
+  },
+  "modes": [
+    {
+      "mode": "reduced",
+      "headline": "Transitive reduction: removed 1 redundant edge(s) of 1222 (1221 kept)",
+      "redundantEdges": [
+        "(1, 1) -> (3, 287)"
+      ],
+      "cycleWarning": false,
+      "stderr": ""
+    },
+    {
+      "mode": "reduced_dataflow",
+      "headline": "Dataflow-verified transitive reduction: removed 1 redundant edge(s) of 1222 (1221 kept)",
+      "redundantEdges": [
+        "(1, 1) -> (3, 287)"
+      ],
+      "cycleWarning": false,
+      "stderr": ""
+    }
+  ],
+  "limitations": [
+    "one captured graph and one topology",
+    "dependency removal does not by itself prove a timing improvement"
+  ],
+  "validation": {
+    "transport": "local deterministic Chat Completions substitute; actual official tool execution",
+    "ui": "draft selection, reference reopen, first-send materialization, completed tool row verified",
+    "inputSha256BeforeAndAfter": "97ee1e49bf14d9c8dfa69ef1464c0d551bc535dfa9615609c68d5526dd383a4b",
+    "limitations": [
+      "No real remote model evaluation",
+      "Messages default requires a matching mock protocol; initial mismatched attempt failed before tool execution",
+      "Run record root must be dfx_outputs for this existing analysis action"
+    ]
+  }
+}

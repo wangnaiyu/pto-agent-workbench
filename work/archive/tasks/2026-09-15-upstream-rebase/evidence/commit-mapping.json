@@ -1,0 +1,170 @@
+[
+  {
+    "old": "408f1cc84d761b4579d1623aabc0237d6bf54985",
+    "new": "85aca65ded83e84d3b99190720115d8a7ecd82e4",
+    "subject": "feat(client): port PTO brand to the upstream brand-slot mechanism",
+    "sameSubject": true
+  },
+  {
+    "old": "6a378372a0c23843ded5430554b4f19004274f92",
+    "new": "3b9e0585643fcfc97f75cdb5b47c5880074fc7e2",
+    "subject": "feat(client): refine PTO workbench navigation",
+    "sameSubject": true
+  },
+  {
+    "old": "0547177a83de0beac94798f07723b693c8fac752",
+    "new": "55d17721b11a147be90557547c656ee6e3af5a6c",
+    "subject": "feat(client): add run records sidebar information architecture",
+    "sameSubject": true
+  },
+  {
+    "old": "4dfa48f01ffd63aa762e805d63468af9d4ee3c22",
+    "new": "685cf7568e0fb6dd6eda4e271c447ed6904b080b",
+    "subject": "ci: scope darwin parity to the upstream repository",
+    "sameSubject": true
+  },
+  {
+    "old": "a782e6722b62e66b1bf96343a4a72e309e94d7d6",
+    "new": "da9d0dccace39d7557fa230a5b89aa9ba8ad97a9",
+    "subject": "feat(session): support project directory aliases",
+    "sameSubject": true
+  },
+  {
+    "old": "13c873b3a70cddf140a7df3a84d846759b4b7dea",
+    "new": "539a1d4f8012766d7f7753bd8141f238c0d4f131",
+    "subject": "feat(client): defer session creation until first prompt",
+    "sameSubject": true
+  },
+  {
+    "old": "c886a003dcdde18ac38918f9f78c6c69777f1e6b",
+    "new": "d557de066ab12fff7284f1131c662a60c14e76cb",
+    "subject": "ci: make issue checks fork-friendly",
+    "sameSubject": true
+  },
+  {
+    "old": "f822cf326d1c969d3a975d9fb0759262f0e1b649",
+    "new": "e395c1ae00b01202e2396831844764b9091f7503",
+    "subject": "ci: skip larger-runner checks in forks",
+    "sameSubject": true
+  },
+  {
+    "old": "4b772509c0b025518cedd5e30550d077c9fb1f75",
+    "new": "e819394e714602eca9da778811908853ec75c2e4",
+    "subject": "feat: add draft composer capability catalog",
+    "sameSubject": true
+  },
+  {
+    "old": "57b5e6c3a6bfbcbb29ea2d4709a86debae1f65ea",
+    "new": "700abb278bbc883ba8420a13c99014548547bc46",
+    "subject": "feat(client): add draft composer capability menu",
+    "sameSubject": true
+  },
+  {
+    "old": "0ad688e22b2d0cac8993e4537b41d4b3e76bc855",
+    "new": "21b583c893b09274b10416d8c4e13351ec665ba0",
+    "subject": "feat(skill): add explicit cross-client invocation gesture",
+    "sameSubject": true
+  },
+  {
+    "old": "81c4beefb8c54ca414c9c3dec8425cb69c202b8e",
+    "new": "b7480f2409dccdd85dd038827c3bdf37ea6f8440",
+    "subject": "feat(composer): validate formal session capabilities",
+    "sameSubject": true
+  },
+  {
+    "old": "67d209f060a4fbba60208f0485dc8e86cc7f9ca1",
+    "new": "0463d5e240f631413c163793da23b9824f8b71f7",
+    "subject": "feat(pto): add trusted experiment workflow",
+    "sameSubject": true
+  },
+  {
+    "old": "8f6e883372da8ee336ab38206eebed2879f70754",
+    "new": "7a36c1fdee30e336e492318ab9a4884f00a10900",
+    "subject": "fix(composer): polish draft capability catalog",
+    "sameSubject": true
+  },
+  {
+    "old": "f783220a8361ad966398d3ca1a5eca056f909352",
+    "new": "4af2907558dd20e755f8ad84cf3de073d0cfad0e",
+    "subject": "fix: align PTO fork with rebased harness contracts",
+    "sameSubject": true
+  },
+  {
+    "old": "112a112ce99225e224e5cfb03aeff1efd508bc93",
+    "new": "48c5c6494c8fc03f825df31adb3fda5869709c5e",
+    "subject": "fix(pto): declare Typert zod runtime dependencies",
+    "sameSubject": true
+  },
+  {
+    "old": "d7f443d393a18dc82592167d488609a6974c0f24",
+    "new": "4a23e065a38e447764ccf8b59f088b59149b2cdd",
+    "subject": "fix: adapt PTO workbench to upstream alpha.2",
+    "sameSubject": true
+  },
+  {
+    "old": "fc8ecaa079379fb3e9b92ec09116ce35faaec836",
+    "new": "69667c7eaa905f59c1b3c9f5f2f7a22dee7eafea",
+    "subject": "fix(web): preserve workbench behavior on alpha.3",
+    "sameSubject": true
+  },
+  {
+    "old": "4d538cc02cdafc9304b1625a82f8a331f6fc520b",
+    "new": "2b3a96344b9376b7f28f3be944b75b211051113e",
+    "subject": "fix(ui): preserve slash launcher across caret updates",
+    "sameSubject": true
+  },
+  {
+    "old": "6a27634c37c1e6b8ca5173fab0fad5f2bc5b6fe2",
+    "new": "de8851583413a38debce41b61d0cb304b10fb2d7",
+    "subject": "fix(ci): align fork packages with alpha.4 policy",
+    "sameSubject": true
+  },
+  {
+    "old": "ff994e599aaeb0122a3a20f571cb2278b3f4fe20",
+    "new": "55d75aa6862da2f6c61786f705f894d2c8b3e24f",
+    "subject": "fix(pto): adapt dashboard tests to session snapshots",
+    "sameSubject": true
+  },
+  {
+    "old": "977c37957a6eab2d5988d4d5b55b6b9136fb05d2",
+    "new": "d24a88027cc794f20f2950e50a1d73024a8f0510",
+    "subject": "fix(ci): align fork packages with alpha.5 policy",
+    "sameSubject": true
+  },
+  {
+    "old": "01d945d3763a3d4ee835680872008f1ee5053eac",
+    "new": "57acdde7de33d29b5173718a5d8639e88f993991",
+    "subject": "fix(pto): adapt workbench to upstream rc.1",
+    "sameSubject": true
+  },
+  {
+    "old": "dfee89b2e0e6ca090f911b136315f235133aec78",
+    "new": "7c7cf3510265817a25537e36c99e23e3a8f55c98",
+    "subject": "feat(pto): preserve artifact inspection and official skill integration baseline",
+    "sameSubject": true
+  },
+  {
+    "old": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+    "new": "daa0311063263a00ec2f15d2bb1e74a8a1cf6390",
+    "subject": "fix(pto): adapt fork integrations to upstream 0.1.5-alpha.1",
+    "sameSubject": true
+  },
+  {
+    "old": "e92a21adc477133a0771a6194962be901284a2ed",
+    "new": "04802cec016f1ac461398c01b436eb6d74f34061",
+    "subject": "fix(pto): preserve analysis launch bindings through admission and retry",
+    "sameSubject": true
+  },
+  {
+    "old": "e80fa835192f2cc087369e06080aaf9944a6b3fa",
+    "new": "68d95108be01d43c3eb5788ed3e2d3875d905e53",
+    "subject": "wip(pto): save P3 composer references pending browser validation",
+    "sameSubject": true
+  },
+  {
+    "old": "368c446657932f170a6d29fd2d275bea1c76073e",
+    "new": "c79ee974429519acfd911d75e1e31c0a6902d835",
+    "subject": "wip(pto): save P4 layout pending replay validation",
+    "sameSubject": true
+  }
+]

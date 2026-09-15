@@ -1,0 +1,35 @@
+import { globSync, readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
+import { createRequire } from 'node:module';
+import { pathToFileURL } from 'node:url';
+import { dirname, resolve, join } from 'node:path';
+import assert from 'node:assert/strict';
+const root='/private/tmp/pto-harness-upstream-20260915';
+const require=createRequire(root+'/package.json');
+const {load}=require('js-yaml');
+const {prepareSessionSnapshotFixtureForComparison: upgrade}=await import(pathToFileURL(root+'/packages/test-support/llm-replay/lib/index.js'));
+const rows=[];
+for(const manifestPath of globSync('snapshots/*/*/snapshot.yml',{cwd:root})) {
+ const path=resolve(root,manifestPath), manifest=load(readFileSync(path,'utf8')), dir=dirname(path);
+ if(manifest.sessionFormat||manifest.session)continue;
+ const roles=new Map();
+ for(const name of readdirSync(dir)){const m=/^session(?:\.(\d+))?(?:\.v(\d+))?\.jsonl$/.exec(name);if(!m)continue;
+ const role=m[1]??'',version=Number(m[2]??0);if((roles.get(role)?.version??-1)<version)roles.set(role,{name,version});}
+ for(const [role,{name,version}] of roles){if(version===4)continue;assert.equal(version,3);
+ const source=readFileSync(join(dir,name),'utf8'),out=upgrade(source);
+ const parsed=out.trim().split('\n').map(JSON.parse);assert.equal(parsed[0].version,4);
+ const projected=parsed.map((row,i)=>{if(i===0)return row;const {seq,time,...event}=row;return event;});
+ const target='session'+(role?'.'+role:'')+'.v4.jsonl';assert(!existsSync(join(dir,target)));
+ const text=projected.map(JSON.stringify).join('\n')+'\n';
+ assert.deepEqual(upgrade(text).trim().split('\n').map(JSON.parse),parsed);
+ // Both sides pass the same strict catalog; compare decoded events rather than physical envelope spelling.
+ assert.deepEqual(upgrade(source).trim().split('\n').slice(1).map(JSON.parse),upgrade(text).trim().split('\n').slice(1).map(JSON.parse));
+ writeFileSync(join(dir,target),text,{flag:'wx'});assert.equal(readFileSync(join(dir,name),'utf8'),source);
+ rows.push({owner:manifestPath,source:name,target});
+ }
+}
+for(const path of globSync('snapshots/*/*/snapshot.yml',{cwd:root})){
+ const abs=resolve(root,path),source=readFileSync(abs,'utf8'),manifest=load(source);if(!manifest.session)continue;
+ const next=manifest.session.source.replace(/session\.v3\.jsonl$/,'session.v4.jsonl');
+ if(next!==manifest.session.source&&existsSync(resolve(dirname(abs),next)))writeFileSync(abs,source.replace(manifest.session.source,next));
+}
+console.log(JSON.stringify(rows,null,2));

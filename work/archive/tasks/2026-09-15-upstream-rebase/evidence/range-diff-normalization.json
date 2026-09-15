@@ -1,0 +1,5 @@
+{
+  "normalization": "Remove display-only trailing whitespace from git range-diff text; original commit objects remain authoritative.",
+  "rawSha256": "10569278bc6313eb365017ad9283c2de235199c862aa43cce9055bc99a5cd703",
+  "normalizedSha256": "7c486a91842637bbfd1395215dc0def5604197a50e6221a2bac9f05ec5a118ed"
+}

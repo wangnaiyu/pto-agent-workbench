@@ -1,0 +1,157 @@
+[
+  {
+    "owner": "snapshots/web/web-search-round/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/turn-tail-actions/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/steering/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/seeded-history/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/schedule-catalog/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/question-composer/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/pwsh-terminal/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/ptc-round/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/ptc-escalation-approved/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/present-svg/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/present/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/plan-review/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/plan-narrow-viewport/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/permission-policy-context/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/navigation-panes/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/minimal-preset/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/message-feedback-protocol/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/live-interactions/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/goal-multi-turn-actions/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/fresh-round-trip/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/file-upload-round/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/feedback-command/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/diff-bounded/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/deepseek-messages-chat/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/cordis-tool-round/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/auto-review-denial/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/approval-composer/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/pwsh-tool-turn/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/persistent-pwsh-tool-turn/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/acp/reject-extra-dirs/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/acp/handshake/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  }
+]

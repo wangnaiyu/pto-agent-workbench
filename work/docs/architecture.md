@@ -1,6 +1,6 @@
 # 当前工程架构
 
-状态：2026-09-10 upstream rebase 维护基线。harness fork `ac2b72a9615cbaf23bb21951ffe1c22f3a11d807` 基于固定 upstream `5dda764ed3aa172535a7967b06ff95d9cbfe536a`，包版本0.1.5-alpha.1。外层产品验证基于 `90390059746c29a71bd5315e1dce5101bb803aec`，本阶段外层只更新维护记录。正式三元配对以两仓 `post-upstream-baseline-20260910` annotated tag 为准；验证与限制见[迁移报告](../archive/tasks/2026-09-09-upstream-rebase/final-report.md)。
+状态：2026-09-15 upstream rebase。harness fork `70e5ab14c8fc0081be6d2b1c8aff6b46682d4ecb` 基于 upstream `0d1f50007f9bca3f52b06e1c3074fa14d5fb0720`，版本 0.1.6-alpha.1。外层起点为 `8f8ff6131c3887caba07db728d3f9a3a504fc3a6`。正式三元配对以两仓 `post-upstream-baseline-20260915` annotated tag 为准；验证与限制见[升级报告](../archive/tasks/2026-09-15-upstream-rebase/final-report.md)。
 
 ## 实现边界
 
@@ -23,14 +23,14 @@ DSH 提供 Cordis 插件、profile、Host 工具、会话与浏览器 UI。外�
 
 Client → Host 通过 typed invoke/host.call；Host → Client 通过事件或会话投影。具体 API 以本地 harness 对应版本代码为准。分析选区回流仍需共享结构化上下文契约；不预设一定要阻塞模型等待选区，可先由用户显式“加入分析草稿”完成。
 
-Session持久化采用V3相邻generation迁移与跨进程文件租约；PTO目录别名为新会话选择目录，已发现目录保持不变，前代日志不覆盖。浏览器草稿通用文件在实体化后绑定上传；正式能力准入仍保留既有拒绝/重试语义。
+Session 持久化采用 V4 相邻 generation 迁移（V3 到 V4 保留正文，冻结旧代）与跨进程文件租约；PTO目录别名为新会话选择目录，已发现目录保持不变，前代日志不覆盖。浏览器草稿通用文件在实体化后绑定上传；正式能力准入仍保留既有拒绝/重试语义。
 
 ## 已有业务切片
 
 - 工作区/未分组、运行记录注册与会话归组，不表示完整数据 Profile 和全量 viewer 已落地。
 - 草稿能力目录、统一 Commands / Skills 来源、显式 Skill 手势、首次发送再准入。
 - pto_run_discover / pto_run_inspect保留旧run契约；pto_record_inspect与artifact inspection支持markerless记录、Viewer和分析receipt。
-- skills/bundled 内六个pto-*是工作台自有流程。官方Skill/resources/tool已按release-lock固定，但实际patch引用不存在的provider entry，旧/新harness均跳过；文件完整不等于装配成功。临时insert测试验证qualified Skill与receipt可用，实际部署缺陷尚未修复。
+- skills/bundled 内六个pto-*是工作台自有流程。官方 Skill/resources/tool 已按 release-lock 固定；实际 patch 的 provider insert 已在先前修复基线落地，本次核验唯一有效 provider。真实工具与官方两模式分析成功，确定性本地模型替身驱动的验证不等同真实模型评估。
 - 持久实验 proposal/query、可信 execute、L2 指标与比较、Dashboard，详见 [实验契约](experiment-contract.md)。
 
 旧 run-only 识别、聚合 evidence health、数据分级与本文所链接的已确认产品方案存在差距。迁移文档不会改变运行时；实际调整应由 [MVP 计划](../product/artifact-inspection/implementation-plan.md) 分阶段验证。

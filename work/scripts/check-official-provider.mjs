@@ -14,10 +14,10 @@ const skillRoot = "process.getBuiltinModule('node:path').resolve(process.env.PTO
 
 // Exercise the built CLI's real web profile and Loader patch layers. A textual
 // patch assertion would miss the difference between a skipped override and insert.
-export function checkOfficialProvider(patch = join(root, 'patches/cordis.patch.yml')) {
+export function checkOfficialProvider(patch = join(root, 'patches/cordis.patch.yml'), harnessRoot = join(root, 'harness')) {
   const home = mkdtempSync(join(tmpdir(), 'pto-provider-composition-'));
   try {
-    const run = spawnSync(process.execPath, [join(root, 'harness/apps/cli/lib/bin.js'),
+    const run = spawnSync(process.execPath, [join(resolve(harnessRoot), 'apps/cli/lib/bin.js'),
       'web', '--patch', resolve(patch), '--dump-config'], {
       cwd: root, encoding: 'utf8', timeout: 30000,
       env: { ...process.env, DSH_HOME: home, PTO_WORKBENCH_ROOT: root },
@@ -51,5 +51,5 @@ export function checkOfficialProvider(patch = join(root, 'patches/cordis.patch.y
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  console.log(JSON.stringify(checkOfficialProvider(process.argv[2]), null, 2));
+  console.log(JSON.stringify(checkOfficialProvider(process.argv[2], process.argv[3]), null, 2));
 }

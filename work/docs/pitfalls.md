@@ -38,3 +38,13 @@
 - 归档原文有旧路径、旧规则、旧 resume 提示，只作证据；不要执行或批量“修正”原文。
 
 历史对应关系见 [迁移映射](../archive/legacy-notes/migration-map.md)。尚未解决或需要现场复核的事项单列在 [维护清单](maintenance-backlog.md)。
+
+
+## 0.1.6 上游适配
+
+- `ConversationRoot` 已是薄路由出口，工作台草稿/欢迎区应接到 `ConversationContent`；目录选择仍保持 PTO 的“首发才创建 Session”，浏览器 fixture 不可依赖空 Session 行。
+- 上游 `llm-deepseek` 默认使用 Messages 协议。已有 Chat Completions mock/兼容端点应显式配置 `protocol: chat-completions`，不能拿旧响应协议测试新版默认配置。
+- 正式 Skill 目录需保留可选源路径供预览；草稿目录省略路径。规范 `/skill name` 的发送后装饰必须从日志注入确认 Skill 身份，预览指向 name。
+- 不给生成 `/remote` 包导出添加指向 `.d.ts` 的运行时路径别名。正式 build 可能通过，`dev:web` 的源码解析仍会报 missing export；用真实 HMR 验证。
+- 本 fork 当前 Session V4 承接 PTO analysis source 扩展，V3→V4 正文恒等迁移且冻结旧代文件。下次 upstream 也使用整数 V4 时，先比对格式含义和 schema，再设计迁移；不得仅凭相同版本号接收数据。
+- 运行记录以 `dfx_outputs` 为根的 `deps.json` 引用已验证；以其父目录为根、提交 `dfx_outputs/deps.json` 的分析 action 在旧 fork 也受限制。本次不扩大记录根解析范围。

@@ -1,0 +1,373 @@
+[
+  {
+    "scope": "final build",
+    "log": "/tmp/pto-build-acceptance3-20260915.log",
+    "sha256": "8f6b841e55d6280ba07c925e82dad1405b2d5edee44a5e159d5b8282d2632dd9",
+    "summary": [
+      "build: recorded 246 client artifact(s) with 3 public value(s)"
+    ],
+    "tail": [
+      "(!) Some chunks are larger than 500 kB after minification. Consider:",
+      "- Using dynamic import() to code-split the application",
+      "- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks",
+      "- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.",
+      "✓ built in 1.56s",
+      "build: recorded 246 client artifact(s) with 3 public value(s)"
+    ]
+  },
+  {
+    "scope": "full lint after formatting corrections",
+    "log": "/tmp/pto-lint-acceptance3-20260915.log",
+    "sha256": "5ab93e893da8c5f0748aa794bd2eb7d7a9f0b0cd29d66dcb19d907219df202f5",
+    "summary": [],
+    "tail": [
+      "$ tsx scripts/run-oxlint.ts ."
+    ]
+  },
+  {
+    "scope": "doc-sync (40 passed, wrap corrected separately)",
+    "log": "/tmp/pto-doc-acceptance-20260915.log",
+    "sha256": "400b96abbf287d1768a8ef2b55c9de2af0df5d7ce2e248fc06571d3a7335734e",
+    "summary": [
+      "run-gates: 40 passed, 1 failed, 0 skipped in 54.39s."
+    ],
+    "tail": [
+      "",
+      "run-gates: 40 passed, 1 failed, 0 skipped in 54.39s.",
+      "run-gates: unsuccessful gates:",
+      "  - FAILED markdown wrap (7.05s, exit 1)",
+      "    pnpm run verify-md-wrap",
+      "[ELIFECYCLE] Command failed with exit code 1."
+    ]
+  },
+  {
+    "scope": "markdown wrap correction",
+    "log": "/tmp/pto-wrap-acceptance-20260915.log",
+    "sha256": "343d87c4ea860cf1e178c0b3591c716bbed41f1d5a75594ede996c29777e5062",
+    "summary": [
+      "verify-md-wrap: 1907 file(s) checked, no hard-wrapped prose paragraphs."
+    ],
+    "tail": [
+      "$ tsx scripts/verify-md-wrap.ts",
+      "verify-md-wrap: 1907 file(s) checked, no hard-wrapped prose paragraphs."
+    ]
+  },
+  {
+    "scope": "hygiene (15 passed, i18n corrected separately)",
+    "log": "/tmp/pto-hygiene-acceptance-20260915.log",
+    "sha256": "46b09f04ca9b36fd25b2ed91c5f0c1209aaf96dd7d5fbe564b037a6ef4a3da9e",
+    "summary": [
+      "run-gates: 15 passed, 1 failed, 0 skipped in 13.60s."
+    ],
+    "tail": [
+      "",
+      "run-gates: 15 passed, 1 failed, 0 skipped in 13.60s.",
+      "run-gates: unsuccessful gates:",
+      "  - FAILED client UI i18n (1.33s, exit 1)",
+      "    pnpm run verify-client-ui-i18n",
+      "[ELIFECYCLE] Command failed with exit code 1."
+    ]
+  },
+  {
+    "scope": "client UI i18n correction",
+    "log": "/tmp/pto-i18n-acceptance-20260915.log",
+    "sha256": "1df85b0c1c31ccf08b08cf3cb9eda4383714b486ebdbdbdb2e396b5386bfa134",
+    "summary": [
+      "verify-client-ui-i18n: 652 Client UI source file(s) use locale-owned copy."
+    ],
+    "tail": [
+      "$ tsx scripts/verify-client-ui-i18n.ts",
+      "verify-client-ui-i18n: 652 Client UI source file(s) use locale-owned copy."
+    ]
+  },
+  {
+    "scope": "GUI full",
+    "log": "/tmp/pto-gui-final-v4-20260915.log",
+    "sha256": "63159ace37b9d8c20223e65d9524b38e27511f8fe290cc16028c8ffbb71c876f",
+    "summary": [
+      " Test Files  409 passed (409)",
+      "      Tests  5700 passed | 1 skipped (5701)"
+    ],
+    "tail": [
+      "",
+      " Test Files  409 passed (409)",
+      "      Tests  5700 passed | 1 skipped (5701)",
+      "   Start at  16:12:29",
+      "   Duration  45.65s (transform 33.50s, setup 19.82s, import 225.95s, tests 96.44s, environment 108.68s)",
+      ""
+    ]
+  },
+  {
+    "scope": "SDK ACP headless replay",
+    "log": "/tmp/pto-snapshot-final-v4-20260915.log",
+    "sha256": "6806322db761a780f6eacb318ece555c67121f32467979842e4ad2ff96eb0070",
+    "summary": [
+      " Test Files  3 passed (3)",
+      "      Tests  149 passed | 2 skipped (151)"
+    ],
+    "tail": [
+      "",
+      " Test Files  3 passed (3)",
+      "      Tests  149 passed | 2 skipped (151)",
+      "   Start at  16:18:22",
+      "   Duration  54.18s (transform 1.95s, setup 576ms, import 2.39s, tests 91.37s, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "scope": "format catalog JSONL",
+    "log": "/tmp/pto-v4-integration4-20260915.log",
+    "sha256": "0c6013fb5ec68a856c92cd735a3b4aede56ca956d3a1fba86550b40335d7d857",
+    "summary": [
+      " Test Files  17 passed (17)",
+      "      Tests  503 passed (503)"
+    ],
+    "tail": [
+      "",
+      " Test Files  17 passed (17)",
+      "      Tests  503 passed (503)",
+      "   Start at  15:27:28",
+      "   Duration  7.23s (transform 7.94s, setup 2.62s, import 8.06s, tests 25.84s, environment 1ms)",
+      ""
+    ]
+  },
+  {
+    "scope": "immutable corpus policies",
+    "log": "/tmp/pto-corpus-final-v4-20260915.log",
+    "sha256": "81930207f568ddd0a496e67508dd26e0dbf2faf489bd4ddb7619a28769df6c87",
+    "summary": [
+      " Test Files  1 passed (1)",
+      "      Tests  3 passed (3)"
+    ],
+    "tail": [
+      "",
+      " Test Files  1 passed (1)",
+      "      Tests  3 passed (3)",
+      "   Start at  16:10:19",
+      "   Duration  1.21s (transform 565ms, setup 178ms, import 588ms, tests 339ms, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "scope": "formal/draft catalog and Skill consumers",
+    "log": "/tmp/pto-skill-catalog-unit-20260915.log",
+    "sha256": "e949bf9659a7a0306ce922180e4549e6d3ef71296f908cbfddfbed013d96e091",
+    "summary": [
+      " Test Files  3 passed (3)",
+      "      Tests  47 passed (47)"
+    ],
+    "tail": [
+      "",
+      " Test Files  3 passed (3)",
+      "      Tests  47 passed (47)",
+      "   Start at  21:02:48",
+      "   Duration  1.33s (transform 1.60s, setup 295ms, import 2.18s, tests 231ms, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "scope": "canonical reference preview V4 fixtures assembled mock",
+    "log": "/tmp/pto-skill-unit-final-20260915.log",
+    "sha256": "e12cb1cc8fee05343a09bc9e079594fa9823cb5d7108d4b21c030c86cb0060a0",
+    "summary": [
+      " Test Files  3 passed (3)",
+      "      Tests  20 passed (20)"
+    ],
+    "tail": [
+      "",
+      " Test Files  3 passed (3)",
+      "      Tests  20 passed (20)",
+      "   Start at  20:56:31",
+      "   Duration  796ms (transform 744ms, setup 313ms, import 678ms, tests 96ms, environment 438ms)",
+      ""
+    ]
+  },
+  {
+    "scope": "HMR restoration",
+    "log": "/tmp/pto-hmr-final2-20260915.log",
+    "sha256": "56b40c49a4fc198876b4aae195db87798aab64dac27045652b1d454dcf6db6e1",
+    "summary": [
+      " Test Files  1 passed (1)",
+      "      Tests  1 passed (1)"
+    ],
+    "tail": [
+      "",
+      " Test Files  1 passed (1)",
+      "      Tests  1 passed (1)",
+      "   Start at  21:07:46",
+      "   Duration  10.64s (transform 133ms, setup 0ms, import 295ms, tests 10.28s, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "scope": "outer script tests",
+    "log": "/tmp/pto-outer-acceptance-20260915.log",
+    "sha256": "4b7e0d5ccae3e0a142b692069150fd3d410026bb98ace350966268f3761a0f5e",
+    "summary": [
+      "ℹ pass 17",
+      "ℹ fail 0"
+    ],
+    "tail": [
+      "ℹ pass 17",
+      "ℹ fail 0",
+      "ℹ cancelled 0",
+      "ℹ skipped 0",
+      "ℹ todo 0",
+      "ℹ duration_ms 299.281791"
+    ]
+  },
+  {
+    "scope": "final build after Escape fix",
+    "log": "/tmp/pto-build-escape-20260915.log",
+    "sha256": "cbc869ab965a03d69bb1dd12d4912adb9b9b65434f66041962d10d97237942d3",
+    "summary": [
+      "build: recorded 246 client artifact(s) with 3 public value(s)"
+    ],
+    "tail": [
+      "dist/assets/index-W3nwvHLZ.js                               566.36 kB │ gzip: 196.47 kB │ map: 1,519.54 kB",
+      "dist/assets/langs/cpp-DIPi6g--.js                           637.59 kB │ gzip:  47.26 kB │ map:   831.50 kB",
+      "dist/assets/vendor-CCJJTK99.js                              740.58 kB │ gzip: 179.52 kB │ map: 2,509.98 kB",
+      "",
+      "(!) Some chunks are larger than 500 kB after minification. Consider:",
+      "- Using dynamic import() to code-split the application",
+      "- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks",
+      "- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.",
+      "✓ built in 1.59s",
+      "build: recorded 246 client artifact(s) with 3 public value(s)"
+    ]
+  },
+  {
+    "scope": "final lint after Escape fix",
+    "log": "/tmp/pto-lint-escape-acceptance-20260915.log",
+    "sha256": "5ab93e893da8c5f0748aa794bd2eb7d7a9f0b0cd29d66dcb19d907219df202f5",
+    "summary": [],
+    "tail": [
+      "$ tsx scripts/run-oxlint.ts ."
+    ]
+  },
+  {
+    "scope": "strict replay of 33 formerly failing browser files, one Escape failure then fixed",
+    "log": "/tmp/pto-browser-acceptance-20260915.log",
+    "sha256": "145b05fe7198c2660886a5d355a4e2fc3724c5b8583929d751e9c829482ec29c",
+    "summary": [
+      " Test Files  1 failed | 32 passed (33)",
+      "      Tests  1 failed | 114 passed (115)"
+    ],
+    "tail": [
+      "",
+      "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯",
+      "",
+      "",
+      " Test Files  1 failed | 32 passed (33)",
+      "      Tests  1 failed | 114 passed (115)",
+      "   Start at  21:13:54",
+      "   Duration  156.62s (transform 1.24s, setup 0ms, import 10.34s, tests 141.88s, environment 2.29s)",
+      "",
+      "[ELIFECYCLE] Command failed with exit code 1."
+    ]
+  },
+  {
+    "scope": "final Escape and adjacent browser consumers",
+    "log": "/tmp/pto-browser-escape-acceptance-20260915.log",
+    "sha256": "d86563b7ced709d574bc0a0335eb6400f1a9ef6ec02b88a00d7e9261a552bc12",
+    "summary": [
+      " Test Files  3 passed (3)",
+      "      Tests  23 passed (23)"
+    ],
+    "tail": [
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "",
+      " RUN  v4.1.8 /private/tmp/pto-harness-upstream-20260915",
+      "",
+      "",
+      " Test Files  3 passed (3)",
+      "      Tests  23 passed (23)",
+      "   Start at  21:20:52",
+      "   Duration  19.16s (transform 513ms, setup 0ms, import 1.36s, tests 17.60s, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "scope": "Escape controller",
+    "log": "/tmp/pto-escape-unit-20260915.log",
+    "sha256": "6f4bad19397d2b1d2261060d45f836aaa7abc484d313b1b101858a2e64e3881c",
+    "summary": [
+      " Test Files  1 passed (1)",
+      "      Tests  69 passed (69)"
+    ],
+    "tail": [
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "",
+      " RUN  v4.1.8 /private/tmp/pto-harness-upstream-20260915",
+      "",
+      "",
+      " Test Files  1 passed (1)",
+      "      Tests  69 passed (69)",
+      "   Start at  21:18:42",
+      "   Duration  746ms (transform 379ms, setup 96ms, import 537ms, tests 49ms, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "scope": "final official provider composition",
+    "log": "/tmp/pto-official-provider-acceptance-20260915.log",
+    "sha256": "928153c57df274df3a9409357ea77dce9e0c6d037acb4637fa1d921dc27ac7c2",
+    "summary": [],
+    "tail": [
+      "{",
+      "  \"provider\": \"pypto-official-af1d7a016ce5\",",
+      "  \"count\": 1,",
+      "  \"skillRoot\": \"process.getBuiltinModule('node:path').resolve(process.env.PTO_WORKBENCH_ROOT ?? process.cwd(), 'skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills')\",",
+      "  \"warnings\": \"\"",
+      "}"
+    ]
+  },
+  {
+    "scope": "final full doc-sync",
+    "log": "/tmp/pto-doc-escape-acceptance-20260915.log",
+    "sha256": "c0e225c38c1d72e00807ea01bfcfdc767fd4d463b5632b1f3976fdddd8865cc1",
+    "summary": [
+      "run-gates: 41 passed, 0 failed, 0 skipped in 53.70s."
+    ]
+  },
+  {
+    "scope": "original checkout frozen install",
+    "sha256": "cd9c7b74274730f032a2d928497546786bad128a1267db844f8be6dd724a5c92",
+    "tail": [
+      "+ @deepseek-ai/dsh-llm-replay 0.1.6-alpha.1 <- packages/test-support/llm-replay",
+      "",
+      "packages/subprocess/subprocess-local postinstall$ node scripts/ensure-spawn-helper.mjs",
+      "packages/subprocess/subprocess-local postinstall: Done",
+      ". postinstall$ node scripts/install-lefthook.mjs",
+      ". postinstall: sync hooks: ✔️(pre-commit, pre-merge-commit, pre-push)",
+      ". postinstall: Done",
+      "Done in 3.2s using pnpm v11.7.0"
+    ]
+  },
+  {
+    "scope": "original checkout build",
+    "sha256": "126489a015d23bb69acebd0670a636840c88c5df4baa34b61af76fd64e9efb5e",
+    "tail": [
+      "dist/assets/vendor-CCJJTK99.js                              740.58 kB │ gzip: 179.52 kB │ map: 2,509.98 kB",
+      "",
+      "(!) Some chunks are larger than 500 kB after minification. Consider:",
+      "- Using dynamic import() to code-split the application",
+      "- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks",
+      "- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.",
+      "✓ built in 1.70s",
+      "build: recorded 248 client artifact(s) with 2 public value(s)"
+    ]
+  },
+  {
+    "scope": "original checkout official provider",
+    "sha256": "928153c57df274df3a9409357ea77dce9e0c6d037acb4637fa1d921dc27ac7c2",
+    "tail": [
+      "{",
+      "  \"provider\": \"pypto-official-af1d7a016ce5\",",
+      "  \"count\": 1,",
+      "  \"skillRoot\": \"process.getBuiltinModule('node:path').resolve(process.env.PTO_WORKBENCH_ROOT ?? process.cwd(), 'skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills')\",",
+      "  \"warnings\": \"\"",
+      "}"
+    ]
+  }
+]

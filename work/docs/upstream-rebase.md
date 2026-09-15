@@ -21,6 +21,8 @@
 
 ## 已知版本记录
 
-当前维护基线为0.1.5-alpha.1，固定upstream与fork完整SHA见[架构](architecture.md)，迁移和验证见[2026-09-09 rebase报告](../archive/tasks/2026-09-09-upstream-rebase/final-report.md)。旧rc.1维护过程见[2026-09-04任务](../archive/tasks/2026-09-04-upstream-rebase/final-report.md)，更早迁移见[旧记录](../archive/legacy-notes/README.md)。旧测试数量仅对当次任务成立。
+当前维护基线为 0.1.6-alpha.1，固定 upstream 与 fork 完整 SHA 见[架构](architecture.md)，28 项重放、V4 迁移和验证见[2026-09-15 升级报告](../archive/tasks/2026-09-15-upstream-rebase/final-report.md)。正式配对为两仓 `post-upstream-baseline-20260915` annotated tag。旧 master `163e8ddd21f6b3e5ad82de0fb3c0cfcede3fcf7b` 保存于 fork 远端 `codex/pre-upstream-master-20260915`，候选分支与此前所有基线 tags 继续保留。
 
-2026-09-09升级前成果见[两仓基线报告](../archive/tasks/2026-09-09-pre-upstream-baseline/final-report.md)。两仓 `pre-upstream-baseline-20260909` annotated tag、savepoint和baseline分支继续保留。新版正式三元配对记录在两仓 `post-upstream-baseline-20260910` annotated tag，提交映射随本次任务归档。
+本 fork 的 Session V4 承载 PTO analysis source 扩展。下次上游使用同一整数版本时必须对照实际 schema，不能仅按版本号合并。旧日志不覆盖，当前版本 successor 由所属 fixture 工具生成。
+
+前次 0.1.5 维护见[2026-09-09 报告](../archive/tasks/2026-09-09-upstream-rebase/final-report.md)，rc.1 过程见[2026-09-04 任务](../archive/tasks/2026-09-04-upstream-rebase/final-report.md)，更早迁移见[旧记录](../archive/legacy-notes/README.md)。旧测试数量只对当次任务成立。两仓 `pre-upstream-baseline-20260909`、`post-upstream-baseline-20260910`、`repair-merged-baseline-20260915` 等恢复记录不删除。

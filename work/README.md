@@ -14,6 +14,8 @@
 
 ## 任务入口
 
+- [2026-09-15 harness 0.1.6 升级](archive/tasks/2026-09-15-upstream-rebase/final-report.md)：28 项重放、V4 迁移、兼容验证、master 安全更新和两仓配对。
+
 - [分析修复两仓合并收口](archive/tasks/2026-09-15-repair-merge-closeout/final-report.md)：两仓修复已合并，CI 分类、正式配对与有限清理记录。
 
 - [2026-09-09 harness upstream rebase](archive/tasks/2026-09-09-upstream-rebase/final-report.md)：固定目标、提交迁移、兼容验证与正式配对记录。
