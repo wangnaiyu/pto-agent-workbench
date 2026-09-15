@@ -1,0 +1,21 @@
+{
+  "harnessHead": "e92a21adc477133a0771a6194962be901284a2ed",
+  "sources": {
+    "packages/client/ui-conversation/src/client/contract/guarded-drafts.ts": "3e0d5006c110cf1ea28127a53c1491394e93a7bd1becea66447ab118177256cd",
+    "packages/client/ui-conversation/src/client/submission-bindings.ts": "3195459e45608589c6cad5158d4cc89fd24ec80f55d1ed95919c5d9684f519b5",
+    "packages/client/ui-conversation/src/client/input/hub.ts": "b674a8ebdc60fba3025d4c17e55ff8d8cbc779242363ee6a896a3dbb9223b8b5",
+    "packages/client/ui-conversation/src/client/input/editor/ReferenceChip.tsx": "23ae4dd959d60c590fc2e40d02475568cd03dc6e9c6d0d49cb64bdf10bfe1ef5",
+    "packages/client/ui-conversation/src/client/input/editor/chip-node.tsx": "3d5b0a01d6caccb5e20b2008901ba1b0bac34b3955a2ae0f0a106ffe3148a410",
+    "packages/client/ui-input-trigger/src/types.ts": "d151f9b04b9d4a620680d13e9b548cedfd22ad667ebe40bf8ec6312921b605bc",
+    "packages/client/ui-composer-catalog/src/client/index.ts": "d90731f13a6ed889501ff6679873204f6a11411567f4ab85a2ce4c81aa641172",
+    "packages/client/ui-reference/src/client/index.ts": "a3785f587d0a37740c354edbe224c39d8db07dc206ef728c09a5331bdc48fa1e",
+    "packages/context/file-reference/src/index.ts": "11de162071826b3fecfbbb4147b4dab995c6b49b3b50a5d5c67c1e67843922b0",
+    "packages/host/pto-artifact-inspection/src/index.ts": "4f2203643a40475b9091bda3fad6a206b7dd1786e6fa5befe5a96e972b38236e",
+    "packages/skill/tool-skill/src/index.ts": "74bf5d8990f3ddcbcb0746d3365ce142c869e892da11f52323e083fdbcc02141"
+  },
+  "diagnosticSha256": "2376ea2dd47375dc48bff613117490ade5bb86fb657ff8b79733923a5b49536d",
+  "productionSourceChanged": false,
+  "control": "1 passed / 4 unselected",
+  "canonicalSkillGesture": "1 failed: expected one skill-invocation, received two / 4 unselected",
+  "receiptSchemaChanged": false
+}

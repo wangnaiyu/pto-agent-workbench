@@ -1,0 +1,14 @@
+{
+  "command": "node --test work/scripts/official-provider-composition.test.mjs work/scripts/launch-contract.test.mjs",
+  "tests": 8,
+  "passed": 8,
+  "failed": 0,
+  "compositionCases": [
+    "one active locked provider with unchanged tool tuple",
+    "missing provider rejected",
+    "nonexistent entry override rejected",
+    "duplicate provider rejected"
+  ],
+  "redBeforeFix": "composition-before.txt",
+  "notes": "First setup attempt could not resolve yaml at harness root; checker now uses app-boot declared js-yaml. Negative control before product change then failed for the intended reason: effective provider count 0."
+}

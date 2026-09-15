@@ -1,0 +1,12 @@
+{
+  "assertions": 7,
+  "passed": true,
+  "scope": "actual controller method proof; target-change schedule is explicit, not proof of precise live relaunch timing",
+  "observations": [
+    "catalog/preset revision mismatch silently returns undefined with no Remote admission",
+    "exact match forwards record identity",
+    "close preserves same request id",
+    "new staging replaces request id",
+    "new controller without memory silently skips admission"
+  ]
+}

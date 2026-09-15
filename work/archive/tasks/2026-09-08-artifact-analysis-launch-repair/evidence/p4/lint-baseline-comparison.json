@@ -1,0 +1,74 @@
+[
+  {
+    "path": "packages/client/ui-conversation/tests/apply-wiring.client.spec.tsx",
+    "line": 17,
+    "column": 40,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "matchesP3": true
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx",
+    "line": 63,
+    "column": 40,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "matchesP3": true
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx",
+    "line": 85,
+    "column": 42,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "matchesP3": true
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx",
+    "line": 112,
+    "column": 42,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "matchesP3": true
+  },
+  {
+    "path": "packages/client/ui-conversation/tests/assembly-surfaces.client.spec.tsx",
+    "line": 177,
+    "column": 42,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "runtime.ctx.provide('uiWorkspace', { ...runtime.workspaces, connectWorkspace: vi.fn(async () => SID) } as never)",
+    "matchesP3": true
+  },
+  {
+    "path": "packages/client/ui-tool/tests/assembly-surfaces.client.spec.tsx",
+    "line": 82,
+    "column": 5,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "...runtime.workspaces,",
+    "matchesP3": true
+  },
+  {
+    "path": "packages/client/ui-tool/tests/toolview-slot.client.spec.tsx",
+    "line": 69,
+    "column": 5,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "...runtime.workspaces,",
+    "matchesP3": true
+  },
+  {
+    "path": "packages/client/ui-tool/tests/toolview-slot.client.spec.tsx",
+    "line": 216,
+    "column": 7,
+    "rule": "typescript(no-misused-spread)",
+    "message": "Using the spread operator on class instances will lose their class prototype.",
+    "source": "...runtime.workspaces,",
+    "matchesP3": true
+  }
+]

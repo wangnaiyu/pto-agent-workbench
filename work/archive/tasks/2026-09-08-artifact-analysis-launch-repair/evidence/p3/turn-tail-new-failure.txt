@@ -1,0 +1,32 @@
+ FAIL  apps/web/tests/turn-tail-actions.e2e.ts > web e2e: assistant IconActions wait for the turn to end > withholds the footer while the turn runs and grants it at turn/end
+AssertionError: expected '- banner:\n  - navigation "Session hi…' to be '- banner:\n  - navigation "Session hi…' // Object.is equality
+
+- Expected
++ Received
+
+@@ -43,12 +43,12 @@
+  - button "Select model, current DeepSeek-V4-Flash":
+    - text: DeepSeek-V4-Flash
+    - img
+  - button "6% of context used"
+  - button "Stop generating"
+- - button "1 turns 1 steps · {{throughput}} tok/s":
++ - button "1 turns 1 steps":
+    - img
+-   - text: 1 turns 1 steps{{throughput}} tok/s
++   - text: 1 turns 1 steps
+  - button "7.9K tok · Cache hit 0%":
+    - img
+    - text: 7.9K tokCache hit 0%
+
+
+ ❯ compareOrRefreshGolden apps/web/tests/scaffold.ts:1526:19
+    1524|     throw new Error(`missing golden ${goldenPath} — run DSH_SNAPSHOT=r…
+    1525|   }
+    1526|   expect(payload).toBe(await readFile(goldenPath, 'utf8'))
+       |                   ^
+    1527| }
+    1528|
+ ❯ apps/web/tests/turn-tail-actions.e2e.ts:152:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[40/51]⎯

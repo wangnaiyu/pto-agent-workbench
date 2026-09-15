@@ -1,0 +1,74 @@
+- button "New session":
+  - generic: PTO Agent Workbench
+  - generic: DSH
+- button "Collapse sidebar":
+- tablist "Sidebar view":
+  - tab "Sessions"
+  - tab "Run Records" [selected]
+- generic: Run Records
+- button "Search run records":
+- textbox "Search run records..."
+- tabpanel "Run Records":
+  - tree "Run Records":
+    - treeitem "Ungrouped" [expanded]:
+      - generic: Ungrouped
+    - treeitem "dfx_outputs":
+      - generic: dfx_outputs
+- button "Settings":
+  - generic: Settings
+- generic: Into the Unknown
+- generic: Preview
+- button "Choose workspace":
+  - generic: default
+- button "Standard mode":
+  - generic: Standard mode
+- listbox "Trigger suggestions":
+  - option "export, Download this Session log as a ZIP archive, DSH" [selected]:
+    - generic: export
+    - generic "Download this Session log as a ZIP archive"
+    - generic "DSH"
+  - option "feedback, record feedback about this session, DSH":
+    - generic: feedback
+    - generic "record feedback about this session"
+    - generic "DSH"
+  - option "permission, Switch the permission preset (sandbox mode + approval policy), DSH":
+    - generic: permission
+    - generic "Switch the permission preset (sandbox mode + approval policy)"
+    - generic "DSH"
+  - text: Skills
+  - option "dependency-redundancy, Use when auditing a task dependency graph for edges that are already implied by a longer path — deciding whether explicit dependencies in an orchestration can be dropped, reading the transitive-reduction and dataflow-verified modes of the dependency viewer, or explaining why a reduction reports nothing removable., PTO":
+    - generic: dependency-redundancy
+    - generic "Use when auditing a task dependency graph for edges that are already implied by a longer path — deciding whether explicit dependencies in an orchestration can be dropped, reading the transitive-reduction and dataflow-verified modes of the dependency viewer, or explaining why a reduction reports nothing removable.": Use when auditing a task dependency graph for edges that are already implied ...
+    - generic "PTO"
+  - option "pto-analyze, Characterize performance, numerical-accuracy evidence, or compiler transformations in one or more PyPTO 3.0 runs. Use to explain what a run's artifacts show; use pto-debug instead when the primary task is localizing a failure or wrong-result symptom, and do not use for changing or rerunning an operator., PTO":
+    - generic: pto-analyze
+    - generic "Characterize performance, numerical-accuracy evidence, or compiler transformations in one or more PyPTO 3.0 runs. Use to explain what a run's artifacts show; use pto-debug instead when the primary task is localizing a failure or wrong-result symptom, and do not use for changing or rerunning an operator.": Characterize performance, numerical-accuracy evidence, or compiler transforma...
+    - generic "PTO"
+  - option "pto-compare, Compare a PyPTO 3.0 baseline and candidate run under an explicit compatibility gate, then report evidence-backed metric deltas and regressions. Use for collected or clearly labelled simulated before/after evidence; do not use for a single run, projections, or runs with unresolved comparison identity., PTO":
+    - generic: pto-compare
+    - generic "Compare a PyPTO 3.0 baseline and candidate run under an explicit compatibility gate, then report evidence-backed metric deltas and regressions. Use for collected or clearly labelled simulated before/after evidence; do not use for a single run, projections, or runs with unresolved comparison identity.": Compare a PyPTO 3.0 baseline and candidate run under an explicit compatibilit...
+    - generic "PTO"
+  - option "pto-debug, Localize a PyPTO 3.0 compile, runtime, or wrong-result failure from one or more runs and propose a discriminating next check. Use when the primary task is explaining a failed, stopped, erroneous, or contract-violating run; use pto-analyze instead to characterize an otherwise valid run, and do not use for changing or rerunning an operator., PTO":
+    - generic: pto-debug
+    - generic "Localize a PyPTO 3.0 compile, runtime, or wrong-result failure from one or more runs and propose a discriminating next check. Use when the primary task is explaining a failed, stopped, erroneous, or contract-violating run; use pto-analyze instead to characterize an otherwise valid run, and do not use for changing or rerunning an operator.": Localize a PyPTO 3.0 compile, runtime, or wrong-result failure from one or mo...
+    - generic "PTO"
+  - option "pto-evidence-intake, Prepare a PTO operator analysis by classifying input artifacts, data sensitivity, evidence authority, and claim status before diagnosis, optimization, or review. Use for PTO traces, compiler outputs, reports, screenshots, and performance observations; do not use for generic coding tasks., PTO":
+    - generic: pto-evidence-intake
+    - generic "Prepare a PTO operator analysis by classifying input artifacts, data sensitivity, evidence authority, and claim status before diagnosis, optimization, or review. Use for PTO traces, compiler outputs, reports, screenshots, and performance observations; do not use for generic coding tasks.": Prepare a PTO operator analysis by classifying input artifacts, data sensitiv...
+    - generic "PTO"
+  - option "pto-optimize, Design an evidence-backed, bounded optimization candidate and verification experiment for a PyPTO 3.0 operator. Use after analysis or debugging identifies a bottleneck and a source or configuration anchor; do not use for generic refactoring, unverified root-cause claims, or declaring an operator optimal., PTO":
+    - generic: pto-optimize
+    - generic "Design an evidence-backed, bounded optimization candidate and verification experiment for a PyPTO 3.0 operator. Use after analysis or debugging identifies a bottleneck and a source or configuration anchor; do not use for generic refactoring, unverified root-cause claims, or declaring an operator optimal.": Design an evidence-backed, bounded optimization candidate and verification ex...
+    - generic "PTO"
+  - option "pto-review, Synthesize a completed or halted PyPTO 3.0 investigation or optimization experiment into an auditable claim-evidence-decision record. Use for PTO experiment review, handoff, or retrospective; do not use for generic code/PR review, fresh diagnosis, or inventing missing analysis and comparison steps., PTO":
+    - generic: pto-review
+    - generic "Synthesize a completed or halted PyPTO 3.0 investigation or optimization experiment into an auditable claim-evidence-decision record. Use for PTO experiment review, handoff, or retrospective; do not use for generic code/PR review, fresh diagnosis, or inventing missing analysis and comparison steps.": Synthesize a completed or halted PyPTO 3.0 investigation or optimization expe...
+    - generic "PTO"
+- textbox "Describe what you want to build, / commands, @ files or sessions" [active]:
+  - paragraph: 分析此数据记录中的冗余依赖。请给出结论、证据、限制和下一步。/
+- button "Commands" [expanded]:
+- tooltip "Commands"
+- button "Add attachment":
+- 'button "Access mode, current: Workspace Write"':
+  - generic: Workspace Write
+- button "Send message":

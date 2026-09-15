@@ -1,0 +1,18 @@
+{
+  "baselineHarnessSha": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+  "files": [
+    {
+      "file": "packages/pto/tool-pto-run/tests/load-path.spec.ts",
+      "sameSource": true,
+      "candidateSha256": "5f0d518aca19d4d9de694918669e2ade5d520825a4b591993acd2f74778a2587",
+      "baselineSha256": "5f0d518aca19d4d9de694918669e2ade5d520825a4b591993acd2f74778a2587"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/src/index.ts",
+      "sameSource": true,
+      "candidateSha256": "dfffdd81c9c445e508952c8c76313ef046995153852665ec7544f1b32ba1a409",
+      "baselineSha256": "dfffdd81c9c445e508952c8c76313ef046995153852665ec7544f1b32ba1a409"
+    }
+  ],
+  "diagnostic": "Expected discover+inspect; actual also pto_record_inspect, reproduced unchanged in isolated baseline."
+}

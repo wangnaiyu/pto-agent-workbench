@@ -21,15 +21,11 @@
 
 ## 状态
 
-2026-09-04 MVP 已完成 Host Record/Profile、artifact inventory、动作就绪度、精确静态路由和
-dependency/memory/IR 查看验证；这些查看能力仍有效。2026-09-08 的真实产品体验发现，Viewer
-发起的 dependency 分析在实际 Web 组合中只发送了普通文本，未把 Record/Skill 准入绑定到
-首次模型步骤。此前“结构化分析草稿和首发分析已闭环”的结论因此只代表分层测试与当时证据，
-不再代表当前端到端产品状态。
+2026-09-04 MVP 的 Host Record/Profile、artifact inventory、动作就绪度和静态 Viewer 能力继续有效。升级后 P0 将回归分为 provider 装配、launch/admission、可见输入和实验布局四项，原始证据见 [P0 取证](notes/p0-findings-2026-09-11.md)。不能统一归因为“Viewer 丢 receipt”：Viewer 接收完整 Record+handle，并不消费分析 receipt。
 
-当前修复任务见 [分析启动与布局回归修复](../../inbox/tasks/2026-09-08-artifact-analysis-launch-repair/README.md)。
-修复完成前，dependency Viewer 可正常查看，但从“AI 分析”启动的正式 Host 门禁分析应记为
-已知回归；不得以通用 Shell 手动复算替代正式成功。
+后续独立修复已形成可恢复的本地提交并通过各阶段验收：实际 patch 正式插入唯一锁定 provider；分析 launch 保留首发及失败重试绑定；规范 Skill 手势与结构化文件引用支持草稿恢复、Viewer 退出与回开、单次 Skill 注入；实验 Dashboard 消费正文宽度并按容器适配。Host receipt schema、Session V3 与 ConversationRoot 宽度实现均保持原契约。对应证据见任务的 [P1](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/p1-report.md)、[P2](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/p2-report.md)、[P3](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/p3-report.md)、[P4](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/p4-report.md) 报告。
+
+上述结论是分阶段修复与验证，不代表主分支已发布或全套门禁绿色。既有 lint、GUI/browser 失败及重启后 Dashboard 仅查询已载入 Session 的限制仍保留；最终组合回归与收口已完成，真实日志 42 项断言通过；详见 [完成报告](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/final-report.md)。确定性模型替身不作为外部模型能力验收，修复已推送，harness 已合并；两仓正式主分支配对与合并状态见 [收口记录](../../inbox/tasks/2026-09-15-repair-merge-closeout/paired-baseline.md)。
 
 历史实施证据与边界见[已归档 MVP 报告](../../archive/tasks/2026-09-03-artifact-inspection-mvp/final-report.md)。
 后续 selection/deeplink、持久 Analysis View 和更多 adapter 另立任务。

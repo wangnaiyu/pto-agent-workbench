@@ -1,0 +1,62 @@
+[
+  {
+    "failure": "|thread-safe| packages/client/ui-commands/tests/service.client.spec.ts > candidates > localizes canonical built-in and contribution descriptions on every candidate request",
+    "candidate": "AssertionError: expected [ { name: 'compact', \u2026(2) }, \u2026(3) ] to deeply equal [ { name: 'compact', \u2026(1) }, \u2026(3) ]",
+    "baseline": "AssertionError: expected [ { name: 'compact', \u2026(2) }, \u2026(3) ] to deeply equal [ { name: 'compact', \u2026(1) }, \u2026(3) ]",
+    "sameError": true
+  },
+  {
+    "failure": "|thread-safe| packages/client/ui-theme/tests/corner-shape-styles.client.spec.ts > full-round radii keep circular corners > pairs corner-shape: round with every full-round border-radius under packages/",
+    "candidate": "AssertionError: expected [ Array(1) ] to deeply equal []",
+    "baseline": "AssertionError: expected [ Array(1) ] to deeply equal []",
+    "sameError": true
+  },
+  {
+    "failure": "|thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > declares the services it drives",
+    "candidate": "AssertionError: expected [ 'slots', 'sessions', \u2026(5) ] to deeply equal [ 'slots', 'sessions', \u2026(4) ]",
+    "baseline": "AssertionError: expected [ 'slots', 'sessions', \u2026(5) ] to deeply equal [ 'slots', 'sessions', \u2026(4) ]",
+    "sameError": true
+  },
+  {
+    "failure": "|thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > registers browser and pickers for declarations arriving before or after apply",
+    "candidate": "TypeError: Cannot read properties of undefined (reading 'component')",
+    "baseline": "TypeError: Cannot read properties of undefined (reading 'component')",
+    "sameError": true
+  },
+  {
+    "failure": "|thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > routes browser actions and picker creation to the services",
+    "candidate": "Error: The vi.spyOn() function could not find an object to spy upon. The first argument must be defined.",
+    "baseline": "Error: The vi.spyOn() function could not find an object to spy upon. The first argument must be defined.",
+    "sameError": true
+  },
+  {
+    "failure": "|thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > declares the two directory-flow holes and reports their occupancy per surface",
+    "candidate": "AssertionError: expected undefined to match object { kind: 'single' }",
+    "baseline": "AssertionError: expected undefined to match object { kind: 'single' }",
+    "sameError": true
+  },
+  {
+    "failure": "|thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > rejects the browser search callback on a Session Controller business error",
+    "candidate": "TypeError: Cannot read properties of undefined (reading 'inject')",
+    "baseline": "TypeError: Cannot read properties of undefined (reading 'inject')",
+    "sameError": true
+  },
+  {
+    "failure": "|thread-safe| packages/client/ui-workspace/tests/host-home-staleness.client.spec.tsx > Host home in the assembled browsing region > abbreviates the path once a home learned after first render reaches the rows",
+    "candidate": "Error: mount would suspend: missing service(s) remote.ptoArtifactInspection \u2014 provide() them first",
+    "baseline": "Error: mount would suspend: missing service(s) remote.ptoArtifactInspection \u2014 provide() them first",
+    "sameError": true
+  },
+  {
+    "failure": "|thread-safe| packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx > session rename through the assembled browser > renames via the row menu: binding.session.rename fires, the dialog closes, the row re-labels from the list",
+    "candidate": "Error: mount would suspend: missing service(s) remote.ptoArtifactInspection \u2014 provide() them first",
+    "baseline": "Error: mount would suspend: missing service(s) remote.ptoArtifactInspection \u2014 provide() them first",
+    "sameError": true
+  },
+  {
+    "failure": "|thread-safe| packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx > session rename through the assembled browser > a rejected rename keeps the dialog open with the error surfaced",
+    "candidate": "Error: mount would suspend: missing service(s) remote.ptoArtifactInspection \u2014 provide() them first",
+    "baseline": "Error: mount would suspend: missing service(s) remote.ptoArtifactInspection \u2014 provide() them first",
+    "sameError": true
+  }
+]

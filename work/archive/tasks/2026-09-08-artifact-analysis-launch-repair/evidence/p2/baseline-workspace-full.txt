@@ -1,0 +1,39 @@
+Extracted failure names and first error lines; random ids are preserved. Full raw logs remain in the isolated test environment.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > adds two workspaces through the dialog, each on a folder it created
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > renames a workspace over the wire with a duplicate-name pre-check
+AssertionError: expected +0 to be 1 // Object.is equality
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > deletes only the Workspace registration and keeps its current Session, folder, and log
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > reuses a deleted title for a different new directory without any transient error surface
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > switches to the flat "In one list" view and persists the preference
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > matches the directory-browser dialog aria golden at a staged directory
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > walks the panes with the typed path: deeper past a separator, back up on erase, whole on a miss
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > shows the session hover card after a dwell on the row
+Error: Test timed out in 60000ms.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > keeps an open row menu up while the pointer moves between trigger and list
+Error: Test timed out in 60000ms.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > archives the seeded session from its row menu, hiding it durably across reload
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > opens folders with identical basenames as distinct workspaces
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+Test Files  1 failed (1)
+Tests  11 failed | 1 passed (12)
+Start at  11:20:35
+Duration  379.06s (transform 498ms, setup 0ms, import 791ms, tests 378.19s, environment 0ms)

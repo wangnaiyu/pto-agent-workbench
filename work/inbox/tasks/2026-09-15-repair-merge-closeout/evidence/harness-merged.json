@@ -1,0 +1,15 @@
+{
+  "baseRefOid": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+  "headRefOid": "368c446657932f170a6d29fd2d275bea1c76073e",
+  "mergeCommit": {
+    "oid": "163e8ddd21f6b3e5ad82de0fb3c0cfcede3fcf7b"
+  },
+  "mergedAt": "2026-09-15T06:16:45Z",
+  "number": 7,
+  "state": "MERGED",
+  "url": "https://github.com/wangnaiyu/deepseek-harness/pull/7",
+  "treeMatchesAcceptedCandidate": true,
+  "tree": "098a5a6c8015f59dc4fff2f2eb3d9e61f9e89415",
+  "originalPhaseCommitsAreAncestors": true,
+  "upstreamTargetStillAncestor": "5dda764ed3aa172535a7967b06ff95d9cbfe536a"
+}

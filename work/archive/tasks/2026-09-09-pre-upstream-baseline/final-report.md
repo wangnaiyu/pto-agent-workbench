@@ -25,7 +25,7 @@
 
 全量 lint 保留 4 个未改动测试文件的 8 个 no-misused-spread 诊断，在原始 origin/master 独立 worktree 复现。本阶段未降低规则或绕过 hooks。新增交付的 README、JSDoc、服务分类、生成目录和格式缺项已补齐。
 
-Viewer 首发结构化 identity/receipt 丢失、新 launch/同 Session 重试与实验 View 宽度仍由 [repair 任务](../../../inbox/tasks/2026-09-08-artifact-analysis-launch-repair/README.md)处理，任务保持 planned。本阶段未执行真实模型分析、设备操作或完整 first-send recorded-session/browser 验收。
+Viewer 首发结构化 identity/receipt 丢失、新 launch/同 Session 重试与实验 View 宽度仍由 [repair 任务](../../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/README.md)处理，任务保持 planned。本阶段未执行真实模型分析、设备操作或完整 first-send recorded-session/browser 验收。
 
 Cloudflare preview 指定上游专用 runner，排队时没有 runner 分配，且不是必需检查。本次只取消该 PR 的未启动预览发布，不修改 workflow 或仓库配置，不算通过。
 

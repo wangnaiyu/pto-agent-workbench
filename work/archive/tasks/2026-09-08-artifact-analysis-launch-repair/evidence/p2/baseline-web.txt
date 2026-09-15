@@ -1,0 +1,54 @@
+Extracted failure names and first error lines; random ids are preserved. Full raw logs remain in the isolated test environment.
+
+apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock
+Error: llm-replay: fixture not fully consumed — 1 recorded script(s) never bound to a live session; the scenario drove fewer model calls than recorded
+
+apps/web/tests/steering.e2e.ts > web e2e: empty-draft Cmd+Enter steers the whole queue
+Error: llm-replay: fixture not fully consumed — session session-ca6d3b9a-12a8-45d3-817c-6e43a96b08ad consumed 1/2 recorded call(s); the scenario drove fewer model calls than recorded
+
+apps/web/tests/command-image-envelope.expected.e2e.ts > refuses an image-carrying submit to a non-declaring command and keeps draft and images
+Error: composer refusal banner missing
+
+apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > drives the recorded prompt to a settled turn (all modes)
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > records feedback locally and acknowledges its session and anonymous user ids
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+
+apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > does not release command tails, provider changes, or browser reloads
+SessionPersistenceNotFoundError: session "undefined" not found
+
+apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > persists text, ratings, notes, and retractions in the canonical session
+AssertionError: expected +0 to be 2 // Object.is equality
+
+apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > releases headerless feedback without capturing another session’s provider-change tail
+AssertionError: expected [ [ …(3) ], [ …(3) ], [ …(3) ], …(2) ] to have a length of +0 but got 5
+
+apps/web/tests/github-ready-review.e2e.ts > web e2e: GitHub ready-for-review > isolates ingress and creates a browsable Workspace Session
+AssertionError: expected '- tree "Sessions":\n  - treeitem "{{w…' to be '- tree "Sessions":\n  - treeitem "{{w…' // Object.is equality
+
+apps/web/tests/goal-bar.e2e.ts > web e2e: goal bar clear convergence > renders one active goal and clears it without exposing a stale error
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+
+apps/web/tests/image-display.expected.e2e.ts > accepts a whole-page drop under the limits-labeled overlay and refuses an over-limit batch at intake
+TestingLibraryElementError: Found multiple elements with the role "status"
+
+apps/web/tests/preview-boot.e2e.ts > boots the packed worker deployment to an interactive page
+AssertionError: expected +0 to be 1 // Object.is equality
+
+apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > drives the recorded prompt to a settled turn (all modes)
+AssertionError: expected 'echo: (missing)\ncomposer: ""\nconten…' to be 'echo: Use the bash tool to run exactl…' // Object.is equality
+
+apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > ends the system prompt with the source checkout, Web surface, and session cwd
+Error: the drive turn did not publish a session id
+
+apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > exposes the assembled Web URL to the real bash tool
+Error: the drive turn did not publish a session id
+
+apps/web/tests/steering.e2e.ts > web e2e: empty-draft Cmd+Enter steers the whole queue > queues two messages, then flushes both with an empty-draft Cmd+Enter
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+
+Test Files  8 failed (8)
+Tests  14 failed | 23 passed (37)
+Start at  11:05:07
+Duration  138.57s (transform 1.12s, setup 0ms, import 3.66s, tests 133.73s, environment 563ms)

@@ -1,0 +1,68 @@
+{
+  "checksPassed": 17,
+  "checks": [
+    "admitAnalysis.result exactly once",
+    "runDependencyAnalysis.result exactly once",
+    "getQualified.result exactly once",
+    "qualified provider and locked resource",
+    "root/draft and Session snapshots complete, unique and same locked resource",
+    "both root and Session scopes observed",
+    "draft catalog exposes official Skill",
+    "one persisted receipt equals Host receipt",
+    "one persisted official Skill invocation",
+    "official literal instructions in injected Skill",
+    "tool receipt equals admission",
+    "real dual modes, expected edge and no stderr/fallback",
+    "real output file reduced",
+    "real output file reduced_dataflow",
+    "model receives receipt context before actual tool result",
+    "readonly sample hash unchanged",
+    "no extra provider patch in launcher"
+  ],
+  "temporaryRoot": "/var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p1-20260911-cdbt7w0g",
+  "workbenchP0Commit": "642632176df9f1131e9c41cbffc33c3b414184ff",
+  "harness": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+  "receipt": {
+    "requestId": "pto-analysis-3bcb3539-47de-493d-8fc2-623df6883743",
+    "sessionId": "session-032b6391-4053-4f53-ae96-459adf56d869",
+    "recordId": "pto-record-5a96a689-c511-4c2d-8690-dcb5ea81496b",
+    "recordRevision": "inventory-v1-557be9e7",
+    "actionId": "analyze.dependency-redundancy",
+    "artifactRefs": [
+      "deps.json"
+    ],
+    "skill": {
+      "name": "dependency-redundancy",
+      "provider": "pypto-official-af1d7a016ce5",
+      "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+    },
+    "tool": {
+      "name": "pto_dependency_redundancy",
+      "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+    }
+  },
+  "hashes": {
+    "patches/cordis.patch.yml": "a3ca9d42f227858d2d2cd466df49d8832b22bbfce243279a910f28fbc3fee956",
+    "skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills/dependency-redundancy/SKILL.md": "86cf80e077e51d5a0f0863ad1a14cd19c4830ad5dfa4bd5cacf0efc4845c822c",
+    "tools/official/pypto-runtime-77fa0171c24a/simpler_setup/tools/deps_viewer.py": "24b1c5c069d08dfe198a21ad272b5cafab82237b897504ccca633109fcebc116",
+    "harness/.dsh-build/client-build-environment.json": "3445a89b4fe03f259f535f1b166d2b92879cb3a23266676d2098489b6a787b8d"
+  },
+  "sampleSha256": "97ee1e49bf14d9c8dfa69ef1464c0d551bc535dfa9615609c68d5526dd383a4b",
+  "outputs": [
+    {
+      "mode": "reduced",
+      "path": "/var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p1-20260911-cdbt7w0g/p1/pto-analysis/dependency-redundancy-M1vNp9/reduced.txt",
+      "bytes": 113947,
+      "sha256": "4c70df8c2e67b88f3de7c4b23630159843ac21691fa89aa28ac25193b4aa4746",
+      "summary": "SUMMARY\n  source_deps_json: /Users/wny/Documents/2 领域 Area/工作/EASY CANN/样例数据/20260720-pypto3-qwen3-14b-decode-fwd-l2/raw/_jit_decode_fwd_20260720_010517/dfx_outputs/deps.json\n  tasks: 598\n  unique_task_edges: 1221\n  annotated_edges: 1221\n  tensors: 62\n  perf_sidecar: yes\n  func_name_map: yes"
+    },
+    {
+      "mode": "reduced_dataflow",
+      "path": "/var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p1-20260911-cdbt7w0g/p1/pto-analysis/dependency-redundancy-M1vNp9/reduced_dataflow.txt",
+      "bytes": 113947,
+      "sha256": "4c70df8c2e67b88f3de7c4b23630159843ac21691fa89aa28ac25193b4aa4746",
+      "summary": "SUMMARY\n  source_deps_json: /Users/wny/Documents/2 领域 Area/工作/EASY CANN/样例数据/20260720-pypto3-qwen3-14b-decode-fwd-l2/raw/_jit_decode_fwd_20260720_010517/dfx_outputs/deps.json\n  tasks: 598\n  unique_task_edges: 1221\n  annotated_edges: 1221\n  tensors: 62\n  perf_sidecar: yes\n  func_name_map: yes"
+    }
+  ],
+  "model": "local deterministic substitute; real Host, Skill and Python tool; no external model quality claim"
+}

@@ -1,0 +1,21 @@
+{
+  "checkConclusions": {
+    "FAILURE": 2,
+    "SUCCESS": 49
+  },
+  "canonicalSkipJobs": [
+    "windows node 24 / observational",
+    "node 24 / coverage",
+    "windows node 24 / coverage",
+    "windows node 24 / build",
+    "node 24 / snapshots and artifacts",
+    "windows node 24 / native tests",
+    "node 24 / static"
+  ],
+  "failedNonRequiredConfiguration": [
+    "request-review: upstream owner not fork collaborator (422)",
+    "cloudflare pages preview: missing deploy token; build succeeded"
+  ],
+  "mainCIRun": 34935430733,
+  "mainCIWatchExit": 0
+}

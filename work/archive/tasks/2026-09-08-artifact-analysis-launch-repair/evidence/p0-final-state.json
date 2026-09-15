@@ -1,0 +1,167 @@
+{
+  "at": "2026-09-11T03:14:41.367423+00:00",
+  "upstreamTarget": "5dda764ed3aa172535a7967b06ff95d9cbfe536a",
+  "repositories": [
+    {
+      "repo": ".",
+      "branch": "codex/repair-p0-20260911",
+      "HEAD": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+      "mainRef": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+      "originTracking": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+      "liveOriginRefs": {
+        "refs/heads/codex/baseline-pre-upstream-20260909": "90390059746c29a71bd5315e1dce5101bb803aec",
+        "refs/heads/codex/savepoint-pre-upstream-20260909": "563ec644372442ae670ec8ee5218fecd30ae429a",
+        "refs/heads/main": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+        "refs/tags/post-upstream-baseline-20260910": "3e55a451870a992603be9997fc5a1fdd74166d19",
+        "refs/tags/post-upstream-baseline-20260910^{}": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+        "refs/tags/pre-upstream-baseline-20260909": "eec1bd7430cd8666759dad937852b0ed051d593f",
+        "refs/tags/pre-upstream-baseline-20260909^{}": "90390059746c29a71bd5315e1dce5101bb803aec"
+      },
+      "tags": {
+        "pre-upstream-baseline-20260909": {
+          "object": "eec1bd7430cd8666759dad937852b0ed051d593f",
+          "type": "tag",
+          "commit": "90390059746c29a71bd5315e1dce5101bb803aec"
+        },
+        "post-upstream-baseline-20260910": {
+          "object": "3e55a451870a992603be9997fc5a1fdd74166d19",
+          "type": "tag",
+          "commit": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9"
+        }
+      },
+      "savepoints": {
+        "codex/savepoint-pre-upstream-20260909": "563ec644372442ae670ec8ee5218fecd30ae429a",
+        "codex/baseline-pre-upstream-20260909": "90390059746c29a71bd5315e1dce5101bb803aec"
+      },
+      "statusPorcelain": [
+        "M work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/README.md",
+        " M work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/README.md",
+        " M work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/final-report.md",
+        " M work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/plan.md",
+        " M work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/prompts/resume.md",
+        " M work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/status.md",
+        " M work/product/artifact-inspection/inspection-workflow.md",
+        " M work/product/artifact-inspection/overview.md",
+        " M work/product/official-skill-integration/integration-design.md",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-a-after-reload-send-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-a-first-send-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-a-host-trace.jsonl",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-a-retry-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-a-staged-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-attachment-after-send-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-attachment-after-send.png",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-attachment-before-send-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-attachment.json",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-b-first-send-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-b-host-trace.jsonl",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-b-relaunch-doubleclick-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-b-relaunch-doubleclick-result-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-b-relaunch-single-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-b-staged-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-baseline.json",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-c-draft-reload-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-c-host-trace.jsonl",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-c-model-failure-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-c-retry-result-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-c-unsent-after-relaunch-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-c-unsent-before-relaunch-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-c-workspace-retarget-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-c-workspace-retarget-result-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-closure-hashes.json",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-controller-proof.json",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-final-state.json",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-focused-tests.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-instrumentation.md",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-instrumentation/README.md",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-instrumentation/common.patch.yml",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-instrumentation/decode-sessions.mts",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-instrumentation/launch-layout.py",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-instrumentation/launch.py",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-instrumentation/layout-observer.mjs",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-instrumentation/layout.patch.yml",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-instrumentation/mock.mjs",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-instrumentation/observer.mjs",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-instrumentation/proof-controller.mts",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-instrumentation/provider.patch.yml",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-layout-1600.png",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-layout-700.png",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-layout-900.png",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-layout-default.png",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-layout-host-trace.jsonl",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-layout-metrics.json",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-layout-populated-dom.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-layout-sidebar.png",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-model-trace.jsonl",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-prior-assumptions.md",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-run-tools-tests.txt",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-session-events.json",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-teardown.json",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/evidence/p0-validation.json",
+        "?? work/inbox/tasks/2026-09-08-artifact-analysis-launch-repair/p0-report.md",
+        "?? work/product/artifact-inspection/notes/p0-findings-2026-09-11.md"
+      ],
+      "inProgressMarkers": [],
+      "worktrees": "worktree /Users/wny/Documents/1 项目 Projects/pto-agent-workbench\nHEAD bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9\nbranch refs/heads/codex/repair-p0-20260911",
+      "retainedBranches": [
+        "codex/baseline-pre-upstream-20260909 90390059746c29a71bd5315e1dce5101bb803aec",
+        "codex/repair-p0-20260911 bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+        "codex/savepoint-pre-upstream-20260909 563ec644372442ae670ec8ee5218fecd30ae429a",
+        "codex/upstream-rebase-20260909 91dbe1a242bf9b7a7db3b0e6f04791069d02414d",
+        "main bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9"
+      ]
+    },
+    {
+      "repo": "harness",
+      "branch": "master",
+      "HEAD": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+      "mainRef": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+      "originTracking": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+      "liveOriginRefs": {
+        "refs/heads/codex/baseline-pre-upstream-20260909": "ef0d49b574f544c997e914b4254e38080730f45a",
+        "refs/heads/codex/savepoint-pre-upstream-20260909": "e95e118b26761c20381f278b8d98c15ee56fc886",
+        "refs/heads/master": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+        "refs/tags/post-upstream-baseline-20260910": "9cb268380f8bafa8c302b4c1cdafead363d2809d",
+        "refs/tags/post-upstream-baseline-20260910^{}": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+        "refs/tags/pre-upstream-baseline-20260909": "e34626291f487801938d84f367c2d0645709129d",
+        "refs/tags/pre-upstream-baseline-20260909^{}": "ef0d49b574f544c997e914b4254e38080730f45a"
+      },
+      "tags": {
+        "pre-upstream-baseline-20260909": {
+          "object": "e34626291f487801938d84f367c2d0645709129d",
+          "type": "tag",
+          "commit": "ef0d49b574f544c997e914b4254e38080730f45a"
+        },
+        "post-upstream-baseline-20260910": {
+          "object": "9cb268380f8bafa8c302b4c1cdafead363d2809d",
+          "type": "tag",
+          "commit": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+        }
+      },
+      "savepoints": {
+        "codex/savepoint-pre-upstream-20260909": "e95e118b26761c20381f278b8d98c15ee56fc886",
+        "codex/baseline-pre-upstream-20260909": "ef0d49b574f544c997e914b4254e38080730f45a"
+      },
+      "statusPorcelain": [],
+      "inProgressMarkers": [],
+      "worktrees": "worktree /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness\nHEAD ac2b72a9615cbaf23bb21951ffe1c22f3a11d807\nbranch refs/heads/master\n\nworktree /private/tmp/pto-harness-upstream-20260909\nHEAD ac2b72a9615cbaf23bb21951ffe1c22f3a11d807\nbranch refs/heads/codex/upstream-rebase-20260909",
+      "retainedBranches": [
+        "backup/pre-upstream-rebase-20260828 d905b7c52048b374f2645f52b8f9f5cbdc4a2028",
+        "backup/pre-upstream-rebase-20260831 acd3755c8e4c2b29bb720c73d2bfc0bcf5e3f546",
+        "backup/pre-upstream-rebase-20260901 fe1de6cde811f3d52c66eca3611671fb3be995fd",
+        "codex/baseline-pre-upstream-20260909 ef0d49b574f544c997e914b4254e38080730f45a",
+        "codex/pre-rebase-master-20260902 205df79b30a1e8df68300d8891ad9f7a21124a0f",
+        "codex/pre-rebase-master-20260903 8b1387d1d1e83bd72efe595aa292f94eae1c3617",
+        "codex/pre-rebase-master-20260904 489f3f65b1e0218e4f59834e40c422dec1196f9c",
+        "codex/replay-savepoint-20260909 dfee89b2e0e6ca090f911b136315f235133aec78",
+        "codex/savepoint-pre-upstream-20260909 e95e118b26761c20381f278b8d98c15ee56fc886",
+        "codex/upstream-rebase-20260909 ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+        "master ac2b72a9615cbaf23bb21951ffe1c22f3a11d807"
+      ],
+      "fixedUpstreamAncestor": true
+    }
+  ],
+  "remoteWritePerformed": false,
+  "commitsCreated": false,
+  "branchesDeleted": [],
+  "productionPatchChanged": false
+}

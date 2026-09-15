@@ -1,0 +1,38 @@
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+
+ RUN  v4.1.8 /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness
+
+stdout | packages/host/pto-artifact-inspection/tests/p3-diagnostic.spec.ts > PtoArtifactInspectionGateway > admits one exact official Skill tuple idempotently and rejects request-id reuse
+P3 composed pre-step sources: [{"kind":"user"},{"kind":"skill-invocation","name":"dependency-redundancy","provider":"pypto-official-af1d7a016ce5","form":"instructions"},{"kind":"pto-artifact-analysis","form":"instructions","receipt":{"requestId":"request-1","sessionId":"session-analysis","recordId":"pto-record-c76580c1-d7b6-4964-b436-526651ab5c87","recordRevision":"inventory-v1-25351e34","actionId":"analyze.dependency-redundancy","artifactRefs":["deps.json"],"skill":{"name":"dependency-redundancy","provider":"pypto-official-af1d7a016ce5","revision":"af1d7a016ce50ba109c4b4224580a6b758bde7da"},"tool":{"name":"pto_dependency_redundancy","revision":"77fa0171c24a"}}},{"kind":"skill-invocation","name":"dependency-redundancy","provider":"pypto-official-af1d7a016ce5","form":"instructions"}]
+
+ ❯ |thread-safe| packages/host/pto-artifact-inspection/tests/p3-diagnostic.spec.ts (5 tests | 1 failed | 4 skipped) 16ms
+     × admits one exact official Skill tuple idempotently and rejects request-id reuse 16ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |thread-safe| packages/host/pto-artifact-inspection/tests/p3-diagnostic.spec.ts > PtoArtifactInspectionGateway > admits one exact official Skill tuple idempotently and rejects request-id reuse
+AssertionError: expected [ …(2) ] to have a length of 1 but got 2
+
+- Expected
++ Received
+
+- 1
++ 2
+
+ ❯ packages/host/pto-artifact-inspection/tests/p3-diagnostic.spec.ts:225:74
+    223|     const sources = decision.messages.map(message => message.source)
+    224|     console.log('P3 composed pre-step sources:', JSON.stringify(source…
+    225|     expect(sources.filter(source => source.kind === 'skill-invocation'…
+       |                                                                          ^
+    226|
+    227|   })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 4 skipped (5)
+   Start at  11:40:39
+   Duration  460ms (transform 323ms, setup 103ms, import 272ms, tests 16ms, environment 0ms)

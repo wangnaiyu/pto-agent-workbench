@@ -64,6 +64,12 @@ launch 在已物化 Session 中重试；可产生新的 admission attempt/reques
 Shell 对 Session 外数据手动复算冒充正式分析。Record / Selection 的业务语义以
 [数据接入](../artifact-inspection/data-intake.md)为准。
 
+## 当前实现与恢复边界
+
+2026-09-14 的独立 launch/引用修复已验收。通用 composer 保存 owner/id/payload 的提交绑定，PTO owner 解释 Record/Skill intent；浏览器草稿及物化后的 Session 接收方协调保存 pending/admitted 状态，不增加 Session V3 或重写 Host receipt schema。PTO 引用保存真实 Record/revision/artifact identity，显示 deps.json，激活时重新取得完整 Record+handle；Skill 的可见手势与可信注入收敛为一次。
+
+Host 重启失去 Record 时要求从 Viewer 重新关联，不能降级成普通分析 prompt；清除站点数据或跨设备恢复不在保证范围。实际验证、最小契约授权和遗留门禁失败见 [修复完成报告](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/final-report.md)。
+
 ## 不包含
 
 消息管理、全局 Dashboard、完整上下文压缩、运行数据 schema 与上游 bundle 更新不归本主题。为了支持新分析流所需的通用 first-send 或输入状态修改归这里；viewer 特有布局仍归产物查看主题。

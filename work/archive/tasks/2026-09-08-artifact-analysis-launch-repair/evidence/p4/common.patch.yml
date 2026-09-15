@@ -1,0 +1,9 @@
+- id: directory-picker
+  disabled: true
+- insert:
+    - id: directory-picker-browse
+      name: "@deepseek-ai/dsh-host-directory-picker-browse"
+    - id: ui-directory-picker-browse
+      name: "@deepseek-ai/dsh-client-ui-directory-picker-browse"
+    - id: p4-layout-fixture
+      name: "/var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p4-ebhqy3_k/seed.mjs"

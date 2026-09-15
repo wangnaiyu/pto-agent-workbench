@@ -1,0 +1,37 @@
+- button "New session":
+  - generic: PTO Agent Workbench
+  - generic: DSH
+- button "Collapse sidebar":
+- tablist "Sidebar view":
+  - tab "Sessions"
+  - tab "Run Records" [selected]
+- generic: Run Records
+- button "Search run records":
+- textbox "Search run records..."
+- tabpanel "Run Records":
+  - tree "Run Records":
+    - treeitem "Ungrouped" [expanded]:
+      - generic: Ungrouped
+    - treeitem "dfx_outputs":
+      - generic: dfx_outputs
+- button "Settings":
+  - generic: Settings
+- generic: Into the Unknown
+- generic: Preview
+- button "Choose workspace":
+  - generic: default
+- button "Standard mode":
+  - generic: Standard mode
+- textbox "Describe what you want to build, / commands, @ files or sessions" [active]:
+  - paragraph: 分析此数据记录中的冗余依赖。请给出结论、证据、限制和下一步。
+- button "Commands":
+- button "Add attachment":
+- 'button "Access mode, current: Workspace Write"':
+  - generic: Workspace Write
+- button "Select model, current DeepSeek-V4-Flash, reasoning effort High":
+  - generic: DeepSeek-V4-Flash
+  - generic: High
+- button "Send message":
+- generic: Start
+- alert:
+  - generic: "ptoArtifactInspection.admitAnalysis failed: gateway/internal: The requested official Skill is unavailable for user invocation in this Session"

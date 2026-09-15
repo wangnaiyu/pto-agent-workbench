@@ -1,0 +1,949 @@
+FAIL  apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > drives the recorded prompt to a settled turn (all modes)
+AssertionError: expected 'echo: (missing)\ncomposer: ""\nconten…' to be 'echo: Use the bash tool to run exactl…' // Object.is equality
+
+- Expected
++ Received
+
+- echo: Use the bash tool to run exactly: echo WEB_E2E_OK. Then reply with the single word DONE and stop.
++ echo: (missing)
+  composer: ""
+  contenteditable: true
+
+
+ ❯ compareOrRefreshGolden apps/web/tests/scaffold.ts:1526:19
+    1524|     throw new Error(`missing golden ${goldenPath} — run DSH_SNAPSHOT=r…
+    1525|   }
+    1526|   expect(payload).toBe(await readFile(goldenPath, 'utf8'))
+       |                   ^
+    1527| }
+    1528|
+ ❯ apps/web/tests/replay-round-trip.e2e.ts:102:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[30/51]⎯
+
+ FAIL  apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > ends the system prompt with the source checkout, Web surface, and session cwd
+Error: the drive turn did not publish a session id
+ ❯ apps/web/tests/replay-round-trip.e2e.ts:111:47
+    109|
+    110|   it('ends the system prompt with the source checkout, Web surface, an…
+    111|     if (settledSessionId === undefined) throw new Error('the drive tur…
+       |                                               ^
+    112|     const agent = scaffold.ctx.agents.get(settledSessionId)
+    113|     if (agent === undefined) throw new Error(`the settled Web agent ${…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[31/51]⎯
+
+ FAIL  apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > exposes the assembled Web URL to the real bash tool
+Error: the drive turn did not publish a session id
+ ❯ apps/web/tests/replay-round-trip.e2e.ts:129:47
+    127|
+    128|   it('exposes the assembled Web URL to the real bash tool', async () =…
+    129|     if (settledSessionId === undefined) throw new Error('the drive tur…
+       |                                               ^
+    130|     const agent = scaffold.ctx.agents.get(settledSessionId)
+    131|     if (agent === undefined) throw new Error(`the settled Web agent ${…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[32/51]⎯
+
+ FAIL  apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > rendered the settled turn: markdown, tool row, composer restore
+AssertionError: expected +0 to be 1 // Object.is equality
+
+- Expected
++ Received
+
+- 1
++ 0
+
+ ❯ apps/web/tests/replay-round-trip.e2e.ts:166:29
+    164|       .toBe('WEB_E2E_OK\n')
+    165|     const turnEnds = sessionEvents.filter(e => e.type === 'turn/end')
+    166|     expect(turnEnds.length).toBe(1)
+       |                             ^
+    167|     expect((turnEnds[0] as SessionEvent & { data: { reason: { kind: st…
+    168|     // Embedded stream members are the authoritative incrementality pr…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[33/51]⎯
+
+ FAIL  apps/web/tests/skill-invocation-policy.e2e.ts > web e2e: skill invocation policy through the real host > renders every user-invocable skill and marks the user-only entry
+AssertionError: expected +0 to be 1 // Object.is equality
+
+- Expected
++ Received
+
+- 1
++ 0
+
+ ❯ apps/web/tests/skill-invocation-policy.e2e.ts:121:84
+    119|     // ranks that skill alone, through the ranker the command group us…
+    120|     await writeComposerDraft(page, input, '/plcyusr')
+    121|     await expect.poll(() => menu.getByRole('option').count(), { timeou…
+       |                                                                                    ^
+    122|     expect(await menu.getByRole('option', { name: /policy-user-only/ }…
+    123|     const fuzzySnapshot = await captureStableAria(page, '[role="listbo…
+
+Caused by: Error: Matcher did not succeed in time.
+ ❯ apps/web/tests/skill-invocation-policy.e2e.ts:121:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[34/51]⎯
+
+ FAIL  apps/web/tests/skill-user-invoke.e2e.ts > web e2e: user-explicit skill invocation through the composer > rejects a vanished first-send Skill, then runs the corrected canonical gesture
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-ref-chip="skill"]').first() to be visible[22m
+
+ ❯ apps/web/tests/skill-user-invoke.e2e.ts:128:18
+    126|     // introducer plus ordinary name/arguments), ahead of the injected…
+    127|     const bubble = page.locator('[data-ref-chip="skill"]').first()
+    128|     await bubble.waitFor({ timeout: 15_000 })
+       |                  ^
+    129|     expect(await bubble.textContent()).toBe('/skill')
+    130|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[35/51]⎯
+
+ FAIL  apps/web/tests/startup-auto-selection.e2e.ts > web e2e: startup auto-selection > keeps the resident Hero and composer nodes when the first Workspace session appears
+AssertionError: expected +0 to be 1 // Object.is equality
+
+- Expected
++ Received
+
+- 1
++ 0
+
+ ❯ apps/web/tests/startup-auto-selection.e2e.ts:46:71
+     44|     const headline = page.getByText('Into the Unknown', { exact: true …
+     45|     expect(await headline.isVisible()).toBe(true)
+     46|     expect(await headline.locator('xpath=..').locator('svg').count()).…
+       |                                                                       ^
+     47|     await page.evaluate(() => {
+     48|       const refs = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[36/51]⎯
+
+ FAIL  apps/web/tests/startup-auto-selection.e2e.ts > web e2e: startup auto-selection > restores the recent Workspace as a browser draft without opening a blank Session
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-composer-input][contenteditable="true"]') to be visible[22m
+
+ ❯ apps/web/tests/startup-auto-selection.e2e.ts:108:8
+    106|     expect(await page.locator('[data-composer-input]').first().isVisib…
+    107|     await page.locator('[data-composer-input][contenteditable="true"]')
+    108|       .waitFor({ timeout: 15_000 })
+       |        ^
+    109|     expect(await page.locator('[role="treeitem"][aria-selected="true"]…
+    110|     acknowledgeReloadConnectionLoss(tripwire, warningsBefore)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[37/51]⎯
+
+ FAIL  apps/web/tests/steering.e2e.ts > web e2e: empty-draft Cmd+Enter steers the whole queue > queues two messages, then flushes both with an empty-draft Cmd+Enter
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-queue-dock]').getByText('2 queued messages') to be visible[22m
+
+ ❯ apps/web/tests/steering.e2e.ts:366:47
+    364|     // and Playwright text matching skips the hidden rows — expand the…
+    365|     // then assert each row's content.
+    366|     await dock.getByText('2 queued messages').waitFor({ timeout: 10_00…
+       |                                               ^
+    367|     await dock.getByRole('button').click()
+    368|     await dock.getByText(STEER_ONE, { exact: true }).waitFor({ timeout…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[38/51]⎯
+
+ FAIL  apps/web/tests/submission-echo.e2e.ts > paints the submission echo on the send keystroke and swaps it for the durable node
+Error: submission echo missing on the send keystroke
+ ❯ apps/web/tests/submission-echo.e2e.ts:51:28
+     49|   // already cleared, editable, and free of the rail.
+     50|   const echo = document.querySelector<HTMLElement>('[data-submission-e…
+     51|   if (echo === null) throw new Error('submission echo missing on the s…
+       |                            ^
+     52|   expect(echo.textContent).toContain('回显这条消息')
+     53|   expect(echo.querySelector('img')?.getAttribute('src')?.split(':')[0]…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39/51]⎯
+
+ FAIL  apps/web/tests/trajectory-image-display.expected.e2e.ts > renders durable record images in the Trajectory details panel from the shared cache
+TestingLibraryElementError: Found multiple elements with the role "tabpanel"
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<div[39m
+  [33maria-labelledby[39m=[32m":r0:-tab-sessions"[39m
+  [33mclass[39m=[32m"OcUpmq_listArea"[39m
+  [33mid[39m=[32m":r0:-panel-sessions"[39m
+  [33mrole[39m=[32m"tabpanel"[39m
+[36m>[39m
+  [36m<div[39m
+    [33mclass[39m=[32m"OcUpmq_treeBody OcUpmq_wide"[39m
+  [36m>[39m
+    [36m<div[39m
+      [33maria-label[39m=[32m"Sessions"[39m
+      [33mclass[39m=[32m"OcUpmq_list"[39m
+      [33mrole[39m=[32m"tree"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"OcUpmq_groupSection"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"_root_27042b"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33maria-expanded[39m=[32m"true"[39m
+            [33mclass[39m=[32m"uptmfa_projectRow"[39m
+            [33mdraggable[39m=[32m"true"[39m
+            [33mrole[39m=[32m"treeitem"[39m
+          [36m>[39m
+            [36m<span[39m
+              [33mclass[39m=[32m"uptmfa_slot uptmfa_folder uptmfa_folderActive"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"16"[39m
+                [33mviewBox[39m=[32m"0 0 16 16"[39m
+                [33mwidth[39m=[32m"16"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M5.19629 1.57104C5.81144 1.5711 6.38623 1.8786 6.72754 2.39038L7.19922 3.09839C7.28454 3.22635 7.42824 3.30344 7.58203 3.30347H12.1699C13.5039 3.30348 14.5859 4.38548 14.5859 5.71948V6.62671C15.2694 7.02689 15.6605 7.85012 15.4385 8.68726L14.3848 12.658C14.1037 13.7164 13.1449 14.4527 12.0498 14.4529H2.91699C1.51651 14.4529 0.451662 13.2814 0.501954 11.9519V3.98706C0.501954 2.65305 1.58396 1.57104 2.91797 1.57104H5.19629ZM3.7793 7.75562C3.30994 7.75562 2.89883 8.07153 2.77832 8.52515L1.91602 11.7722C1.74167 12.4291 2.23734 13.073 2.91699 13.073H12.0498C12.5191 13.0728 12.9304 12.757 13.0508 12.3035L14.1045 8.33374C14.1819 8.04202 13.9619 7.756 13.6602 7.75562H3.7793ZM2.91797 2.9519C2.34625 2.9519 1.88281 3.41534 1.88281 3.98706V7.2937C2.33068 6.7269 3.02249 6.37476 3.7793 6.37476H13.2051V5.71948C13.2051 5.14777 12.7416 4.68434 12.1699 4.68433H7.58203C6.96675 4.6843 6.39209 4.37595 6.05078 3.86401L5.5791 3.15601C5.49379 3.02821 5.34995 2.95196 5.19629 2.9519H2.91797Z"[39m
+                  [33mfill[39m=[32m"currentColor"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M13.6602 7.75525C13.9618 7.7556 14.1815 8.04179 14.1045 8.33337L13.0508 12.3031C12.9304 12.7567 12.5191 13.0725 12.0498 13.0726H2.91701C2.23744 13.0725 1.7417 12.4287 1.91603 11.7719L2.77834 8.52478C2.89898 8.07146 3.31018 7.75532 3.77931 7.75525H13.6602ZM5.1963 2.95154C5.34985 2.95159 5.49377 3.02803 5.57912 3.15564L6.0508 3.86365C6.39205 4.37553 6.96685 4.68385 7.58205 4.68396H12.1699C12.7416 4.68396 13.2049 5.14754 13.2051 5.71912V6.37439H3.77931C3.02267 6.37444 2.33067 6.72671 1.88283 7.29333V3.98669C1.88299 3.4152 2.34649 2.95168 2.91798 2.95154H5.1963Z"[39m
+                  [33mfill[39m=[32m"currentColor"[39m
+                  [33mopacity[39m=[32m"0.2"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+            [36m</span>[39m
+            [36m<span[39m
+              [33mclass[39m=[32m"uptmfa_slot uptmfa_chevron"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33mclass[39m=[32m"uptmfa_arrow uptmfa_arrowOpen"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"14"[39m
+                [33mviewBox[39m=[32m"0 0 14 14"[39m
+                [33mwidth[39m=[32m"14"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M4.25 2.82782L4.25 11.1722C4.25 11.6622 4.84243 11.9076 5.18891 11.5611L9.36109 7.38891C9.57588 7.17412 9.57588 6.82588 9.36109 6.61109L5.18891 2.43891C4.84243 2.09243 4.25 2.33782 4.25 2.82782Z"[39m
+                  [33mfill[39m=[32m"currentColor"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+            [36m</span>[39m
+            [36m<span[39m
+              [33mclass[39m=[32m"uptmfa_projectText"[39m
+            [36m>[39m
+              [36m<span[39m
+                [33mclass[39m=[32m"uptmfa_title"[39m
+              [36m>[39m
+                [0mfixture[0m
+              [36m</span>[39m
+            [36m</span>[39m
+            [36m<span[39m
+              [33mclass[39m=[32m"uptmfa_rowActions"[39m
+            [36m>[39m
+              [36m<span[39m
+                [33mclass[39m=[32m"_root_dd774c"[39m
+              [36m>[39m
+                [36m<button[39m
+                  [33maria-label[39m=[32m"Workspace actions for fixture"[39m
+                  [33mclass[39m=[32m"uptmfa_iconButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33mfill[39m=[32m"none"[39m
+                    [33mheight[39m=[32m"16"[39m
+                    [33mviewBox[39m=[32m"0 0 16 16"[39m
+                    [33mwidth[39m=[32m"16"[39m
+                    [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+                  [36m>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M4.55146 8.00001C4.55146 8.63513 4.03659 9.15001 3.40146 9.15001C2.76634 9.15001 2.25146 8.63513 2.25146 8.00001C2.25146 7.36488 2.76634 6.85001 3.40146 6.85001C4.03659 6.85001 4.55146 7.36488 4.55146 8.00001Z"[39m
+                      [33mfill[39m=[32m"currentColor"[39m
+                    [36m/>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M9.1476 8.00001C9.1476 8.63513 8.63273 9.15001 7.9976 9.15001C7.36248 9.15001 6.8476 8.63513 6.8476 8.00001C6.8476 7.36488 7.36248 6.85001 7.9976 6.85001C8.63273 6.85001 9.1476 7.36488 9.1476 8.00001Z"[39m
+                      [33mfill[39m=[32m"currentColor"[39m
+                    [36m/>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M13.7486 8.00001C13.7486 8.63513 13.2338 9.15001 12.5986 9.15001C11.9635 9.15001 11.4486 8.63513 11.4486 8.00001C11.4486 7.36488 11.9635 6.85001 12.5986 6.85001C13.2338 6.85001 13.7486 7.36488 13.7486 8.00001Z"[39m
+                      [33mfill[39m=[32m"currentColor"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                [36m</button>[39m
+              [36m</span>[39m
+              [36m<button[39m
+                [33maria-label[39m=[32m"New session in fixture"[39m
+                [33mclass[39m=[32m"uptmfa_iconButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mheight[39m...
+
+Ignored nodes: comments, script, style
+[36m<div[39m
+  [33maria-labelledby[39m=[32m"trajectory-detail-overview"[39m
+  [33mclass[39m=[32m"BifSzG_detailBody BifSzG_detailBodySummary"[39m
+  [33mid[39m=[32m"trajectory-detail-panel"[39m
+  [33mrole[39m=[32m"tabpanel"[39m
+[36m>[39m
+  [36m<dl[39m
+    [33mclass[39m=[32m"BifSzG_overview BifSzG_summaryScrollRegion"[39m
+    [33mdata-summary-scroll-region[39m=[32m""[39m
+  [36m>[39m
+    [36m<div>[39m
+      [36m<dt>[39m
+        [0mSource[0m
+      [36m</dt>[39m
+      [36m<dd[39m
+        [33mclass[39m=[32m"BifSzG_overviewParentLinks"[39m
+      [36m>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"BifSzG_overviewHierarchyNavLink"[39m
+          [33mtype[39m=[32m"button"[39m
+        [36m>[39m
+          [36m<span>[39m
+            [0mUser[0m
+          [36m</span>[39m
+          [36m<svg[39m
+            [33mclass[39m=[32m"BifSzG_overviewHierarchyJumpIconTight"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"11"[39m
+            [33mviewBox[39m=[32m"0 0 14 14"[39m
+            [33mwidth[39m=[32m"11"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M5.5 2.15137L5.92383 2.57617L8.65137 5.30273C8.90706 5.55843 9.13382 5.78438 9.29785 5.98828C9.46883 6.20088 9.61756 6.44405 9.66602 6.75C9.69222 6.91565 9.69222 7.08435 9.66602 7.25C9.61756 7.55595 9.46883 7.79912 9.29785 8.01172C9.13382 8.21561 8.90706 8.44157 8.65137 8.69727L5.92383 11.4238L5.5 11.8486L4.65137 11L5.07617 10.5762L7.80273 7.84863C8.07732 7.57405 8.24849 7.40124 8.3623 7.25977C8.46904 7.12709 8.47813 7.07728 8.48047 7.0625C8.48703 7.02105 8.48703 6.97895 8.48047 6.9375C8.47813 6.92272 8.46904 6.87291 8.3623 6.74023C8.24848 6.59876 8.07732 6.42595 7.80273 6.15137L5.07617 3.42383L4.65137 3L5.5 2.15137Z"[39m
+              [33mfill[39m=[32m"currentColor"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+        [36m</button>[39m
+      [36m</dd>[39m
+    [36m</div>[39m
+    [36m<div>[39m
+      [36m<dt>[39m
+        [0mStatus[0m
+      [36m</dt>[39m
+      [36m<dd>[39m
+        [0mCompleted[0m
+      [36m</dd>[39m
+    [36m</div>[39m
+    [36m<div>[39m
+      [36m<dt>[39m
+        [0mDuration[0m
+      [36m</dt>[39m
+      [36m<dd>[39m
+        [0m0 ms[0m
+      [36m</dd>[39m
+    [36m</div>[39m
+  [36m</dl>[39m
+  [36m<div[39m
+    [33mclass[39m=[32m"BifSzG_overviewSections"[39m
+  [36m>[39m
+    [36m<section[39m
+      [33mclass[39m=[32m"BifSzG_overviewSection"[39m
+    [36m>[39m
+      [36m<h3[39m
+        [33mclass[39m=[32m"BifSzG_overviewHeading"[39m
+      [36m>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"BifSzG_overviewTitle"[39m
+          [33mtype[39m=[32m"button"[39m
+        [36m>[39m
+          [36m<span>[39m
+            [0mPreview[0m
+          [36m</span>[39m
+          [36m<svg[39m
+            [33mclass[39m=[32m"BifSzG_overviewTitleIcon"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"12"[39m
+            [33mviewBox[39m=[32m"0 0 14 14"[39m
+            [33mwidth[39m=[32m"12"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M5.5 2.15137L5.92383 2.57617L8.65137 5.30273C8.90706 5.55843 9.13382 5.78438 9.29785 5.98828C9.46883 6.20088 9.61756 6.44405 9.66602 6.75C9.69222 6.91565 9.69222 7.08435 9.66602 7.25C9.61756 7.55595 9.46883 7.79912 9.29785 8.01172C9.13382 8.21561 8.90706 8.44157 8.65137 8.69727L5.92383 11.4238L5.5 11.8486L4.65137 11L5.07617 10.5762L7.80273 7.84863C8.07732 7.57405 8.24849 7.40124 8.3623 7.25977C8.46904 7.12709 8.47813 7.07728 8.48047 7.0625C8.48703 7.02105 8.48703 6.97895 8.48047 6.9375C8.47813 6.92272 8.46904 6.87291 8.3623 6.74023C8.24848 6.59876 8.07732 6.42595 7.80273 6.15137L5.07617 3.42383L4.65137 3L5.5 2.15137Z"[39m
+              [33mfill[39m=[32m"currentColor"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+        [36m</button>[39m
+      [36m</h3>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"BifSzG_overviewPreview BifSzG_summaryScrollRegion"[39m
+        [33mdata-summary-scroll-region[39m=[32m""[39m
+      [36m>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"BifSzG_markdownPreview"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"_markdown_404681"[39m
+            [36m>[39m
+              [36m<p>[39m
+                [0m历史用户图片[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"BifSzG_messageImages BifSzG_messageImagesPreview"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mdata-slot[39m=[32m"conversation.trajectory.images"[39m
+              [33mstyle[39m=[32m"display: contents;"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"JNYPlW_gallery"[39m
+                [33mdata-align[39m=[32m"start"[39m
+              [36m>[39m
+                [36m<button[39m
+                  [33maria-label[39m=[32m"fixture-image.png, click to view original"[39m
+                  [33mclass[39m=[32m"JNYPlW_frame"[39m
+                  [33mdata-variant[39m=[32m"single"[39m
+                  [33mstyle[39m=[32m"width: 160px; height: 90px;"[39m
+                  [33mtitle[39m=[32m"View original"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [36m<img[39m
+                    [33malt[39m=[32m"fixture-image.png"[39m
+                    [33msrc[39m=[32m"blob:nodedata:1723f6e5-717c-4545-8a88-cf4b62cb5439"[39m
+                    [33mstyle[39m=[32m"object-position: center;"[39m
+                  [36m/>[39m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</section>[39m
+  [36m</div>[39m
+[36m</div>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body[39m
+  [33mstyle[39m=[32m"--dsh-content-font-size: 14px;"[39m
+[36m>[39m
+  [36m<div[39m
+    [33mid[39m=[32m"root"[39m
+  [36m>[39m
+    [36m<div[39m
+      [33mdata-slot[39m=[32m"root"[39m
+      [33mstyle[39m=[32m"display: contents;"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"mLEW9W_frame"[39m
+        [33mdata-rightbar-collapsed[39m=[32m"true"[39m
+        [33mstyle[39m=[32m"grid-template-columns: 280px minmax(0, 1fr) 0px;"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"mLEW9W_sidebarCol"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mdata-slot[39m=[32m"sidebar"[39m
+            [33mstyle[39m=[32m"display: contents;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"_7BVuDG_root _7BVuDG_quietBars"[39m
+              [33mstyle[39m=[32m"width: 280px;"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"_7BVuDG_logoRow"[39m
+              [36m>[39m
+                [36m<button[39m
+                  [33maria-label[39m=[32m"New session"[39m
+                  [33mclass[39m=[32m"_7BVuDG_brand _7BVuDG_wide"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"_7BVuDG_brandIdentity"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"_7BVuDG_brandMark"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mdata-slot[39m=[32m"sidebar.brand.mark"[39m
+                        [33mstyle[39m=[32m"display: contents;"[39m
+                      [36m>[39m
+                        [36m<svg[39m
+                          [33maria-hidden[39m=[32m"true"[39m
+                          [33mfill[39m=[32m"none"[39m
+                          [33mheight[39m=[32m"17.6580310880829"[39m
+                          [33mviewBox[39m=[32m"0 0 23.16 17.04"[39m
+                          [33mwidth[39m=[32m"24"[39m
+                        [36m>[39m
+                          [36m<path[39m
+                            [33md[39m=[32m"M22.9168 1.43018C22.6713 1.31018 22.5658 1.53918 22.4223 1.65519C22.3733 1.69269 22.3318 1.74169 22.2903 1.78669C21.9317 2.1697 21.5127 2.42121 20.9657 2.39121C20.1657 2.34621 19.4827 2.59771 18.8787 3.20973C18.7502 2.45521 18.3236 2.0047 17.6746 1.71569C17.3351 1.56568 16.9916 1.41518 16.7536 1.08867C16.5876 0.856163 16.5421 0.597155 16.4591 0.341647C16.4061 0.187643 16.3536 0.0301382 16.1761 0.00363739C15.9836 -0.0263635 15.9081 0.135141 15.8326 0.270145C15.5306 0.822162 15.4136 1.43018 15.4251 2.0462C15.4516 3.43174 16.0366 4.53527 17.1991 5.3203C17.3311 5.4103 17.3651 5.5003 17.3236 5.63181C17.2441 5.90231 17.1501 6.16482 17.0671 6.43533C17.0141 6.60784 16.9351 6.64584 16.7501 6.57033C16.1121 6.30383 15.5611 5.90931 15.074 5.4328C14.2475 4.63328 13.5 3.75075 12.568 3.05973C12.349 2.89822 12.13 2.74822 11.9034 2.60522C10.9524 1.68169 12.028 0.923165 12.277 0.833162C12.5375 0.739159 12.3675 0.41615 11.5259 0.42015C10.6844 0.42365 9.91439 0.705658 8.93286 1.08117C8.78935 1.13767 8.63835 1.17867 8.48384 1.21267C7.59332 1.04367 6.66829 1.00617 5.70226 1.11517C3.88321 1.31768 2.43016 2.1777 1.36213 3.64575C0.0790928 5.4103 -0.222916 7.41536 0.146595 9.50642C0.535106 11.7105 1.66014 13.535 3.38869 14.9616C5.18125 16.4406 7.24581 17.1657 9.60138 17.0266C11.0319 16.9441 12.6245 16.7526 14.421 15.2321C14.874 15.4576 15.3496 15.5476 16.1381 15.6151C16.7456 15.6716 17.3306 15.5851 17.7836 15.4911C18.4931 15.3411 18.4441 14.6841 18.1876 14.5636C16.1081 13.595 16.5646 13.9891 16.1496 13.67C17.2061 12.42 18.8202 10.1979 19.3182 7.17235C19.3672 6.83834 19.4297 6.36783 19.4222 6.09732C19.4182 5.93231 19.4562 5.86831 19.6447 5.84931C20.1657 5.78931 20.6712 5.64681 21.1357 5.3913C22.4833 4.65528 23.0268 3.44624 23.1548 1.9972C23.1738 1.77569 23.1508 1.54668 22.9168 1.43018ZM11.1749 14.4736C9.15936 12.889 8.18184 12.3675 7.77832 12.39C7.40081 12.4125 7.46881 12.8445 7.55182 13.126C7.63882 13.404 7.75182 13.5955 7.91033 13.8396C8.01983 14.0011 8.09533 14.2411 7.80083 14.4216C7.15181 14.8231 6.02327 14.2866 5.97027 14.2601C4.65673 13.4865 3.5587 12.4655 2.78467 11.069C2.03715 9.72493 1.60314 8.28289 1.53164 6.74384C1.51264 6.37233 1.62214 6.24082 1.99215 6.17332C2.47916 6.08332 2.98118 6.06432 3.46769 6.13582C5.52476 6.43633 7.27581 7.35586 8.74385 8.8129C9.58188 9.64243 10.2159 10.634 10.8689 11.6025C11.5634 12.631 12.3105 13.611 13.262 14.4146C13.598 14.6961 13.866 14.9101 14.1225 15.0681C13.349 15.1546 12.058 15.1731 11.1749 14.4746L11.1749 14.4736ZM12.141 8.25988C12.141 8.09488 12.273 7.96338 12.439 7.96338C12.4765 7.96338 12.5105 7.97088 12.541 7.98188C12.5825 7.99688 12.6205 8.01938 12.6505 8.05338C12.7035 8.10588 12.7335 8.18088 12.7335 8.25988C12.7335 8.42489 12.6015 8.55639 12.4355 8.55639C12.2695 8.55639 12.141 8.42489 12.141 8.25988ZM15.1415 9.79893C14.949 9.87793 14.7565 9.94544 14.5715 9.95294C14.2845 9.96794 13.9715 9.85143 13.8015 9.70893C13.5375 9.48742 13.3485 9.36342 13.2695 8.97691C13.2355 8.8119 13.2545 8.55639 13.2845 8.40989C13.3525 8.09438 13.277 7.89187 13.0545 7.70787C12.8735 7.55786 12.643 7.51636 12.39 7.51636C12.2955 7.51636 12.209 7.47486 12.1445 7.44136C12.039 7.38886 11.9519 7.25735 12.035 7.09585C12.0615 7.04335 12.19 6.91584 12.22 6.89334C12.5635 6.69784 12.9595 6.76184 13.326 6.90834C13.6655 7.04735 13.9225 7.30236 14.292 7.66287C14.6695 8.09838 14.7375 8.21838 14.9525 8.54539C15.1225 8.8009 15.277 9.06341 15.3831 9.36392C15.4471 9.55142 15.3641 9.70493 15.1415 9.79893Z"[39m
+                            [33mfill[39m=[32m"currentColor"[39m
+                          [36m/>[39m
+                        [36m</svg>[39m
+                      [36m</div>[39m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"_7BVuDG_brandName"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mdata-slot[39m=[32m"sidebar.brand.name"[39m
+                        [33mstyle[39m=[32m"display: contents;"[39m
+                      [36m>[39m
+                        [36m<span[39m
+                          [33maria-hidden[39m=[32m"true"[39m
+                          [33mclass[39m=[32m"i9jZja_root"[39m
+                        [36m>[39m
+                          [36m<span[39m
+                            [33mclass[39m=[32m"i9jZja_wordmark"[39m
+                          [36m>[39m
+                            [0mPTO Agent Workbench[0m
+                          [36m</span>[39m
+                          [36m<span[39m
+                            [33mclass[39m=[32m"i9jZja_badgePlate"[39m
+                          [36m>[39m
+  ...
+
+Ignored nodes: comments, script, style
+[36m<body[39m
+  [33mstyle[39m=[32m"--dsh-content-font-size: 14px;"[39m
+[36m>[39m
+  [36m<div[39m
+    [33mid[39m=[32m"root"[39m
+  [36m>[39m
+    [36m<div[39m
+      [33mdata-slot[39m=[32m"root"[39m
+      [33mstyle[39m=[32m"display: contents;"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"mLEW9W_frame"[39m
+        [33mdata-rightbar-collapsed[39m=[32m"true"[39m
+        [33mstyle[39m=[32m"grid-template-columns: 280px minmax(0, 1fr) 0px;"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"mLEW9W_sidebarCol"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mdata-slot[39m=[32m"sidebar"[39m
+            [33mstyle[39m=[32m"display: contents;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"_7BVuDG_root _7BVuDG_quietBars"[39m
+              [33mstyle[39m=[32m"width: 280px;"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"_7BVuDG_logoRow"[39m
+              [36m>[39m
+                [36m<button[39m
+                  [33maria-label[39m=[32m"New session"[39m
+                  [33mclass[39m=[32m"_7BVuDG_brand _7BVuDG_wide"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"_7BVuDG_brandIdentity"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"_7BVuDG_brandMark"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mdata-slot[39m=[32m"sidebar.brand.mark"[39m
+                        [33mstyle[39m=[32m"display: contents;"[39m
+                      [36m>[39m
+                        [36m<svg[39m
+                          [33maria-hidden[39m=[32m"true"[39m
+                          [33mfill[39m=[32m"none"[39m
+                          [33mheight[39m=[32m"17.6580310880829"[39m
+                          [33mviewBox[39m=[32m"0 0 23.16 17.04"[39m
+                          [33mwidth[39m=[32m"24"[39m
+                        [36m>[39m
+                          [36m<path[39m
+                            [33md[39m=[32m"M22.9168 1.43018C22.6713 1.31018 22.5658 1.53918 22.4223 1.65519C22.3733 1.69269 22.3318 1.74169 22.2903 1.78669C21.9317 2.1697 21.5127 2.42121 20.9657 2.39121C20.1657 2.34621 19.4827 2.59771 18.8787 3.20973C18.7502 2.45521 18.3236 2.0047 17.6746 1.71569C17.3351 1.56568 16.9916 1.41518 16.7536 1.08867C16.5876 0.856163 16.5421 0.597155 16.4591 0.341647C16.4061 0.187643 16.3536 0.0301382 16.1761 0.00363739C15.9836 -0.0263635 15.9081 0.135141 15.8326 0.270145C15.5306 0.822162 15.4136 1.43018 15.4251 2.0462C15.4516 3.43174 16.0366 4.53527 17.1991 5.3203C17.3311 5.4103 17.3651 5.5003 17.3236 5.63181C17.2441 5.90231 17.1501 6.16482 17.0671 6.43533C17.0141 6.60784 16.9351 6.64584 16.7501 6.57033C16.1121 6.30383 15.5611 5.90931 15.074 5.4328C14.2475 4.63328 13.5 3.75075 12.568 3.05973C12.349 2.89822 12.13 2.74822 11.9034 2.60522C10.9524 1.68169 12.028 0.923165 12.277 0.833162C12.5375 0.739159 12.3675 0.41615 11.5259 0.42015C10.6844 0.42365 9.91439 0.705658 8.93286 1.08117C8.78935 1.13767 8.63835 1.17867 8.48384 1.21267C7.59332 1.04367 6.66829 1.00617 5.70226 1.11517C3.88321 1.31768 2.43016 2.1777 1.36213 3.64575C0.0790928 5.4103 -0.222916 7.41536 0.146595 9.50642C0.535106 11.7105 1.66014 13.535 3.38869 14.9616C5.18125 16.4406 7.24581 17.1657 9.60138 17.0266C11.0319 16.9441 12.6245 16.7526 14.421 15.2321C14.874 15.4576 15.3496 15.5476 16.1381 15.6151C16.7456 15.6716 17.3306 15.5851 17.7836 15.4911C18.4931 15.3411 18.4441 14.6841 18.1876 14.5636C16.1081 13.595 16.5646 13.9891 16.1496 13.67C17.2061 12.42 18.8202 10.1979 19.3182 7.17235C19.3672 6.83834 19.4297 6.36783 19.4222 6.09732C19.4182 5.93231 19.4562 5.86831 19.6447 5.84931C20.1657 5.78931 20.6712 5.64681 21.1357 5.3913C22.4833 4.65528 23.0268 3.44624 23.1548 1.9972C23.1738 1.77569 23.1508 1.54668 22.9168 1.43018ZM11.1749 14.4736C9.15936 12.889 8.18184 12.3675 7.77832 12.39C7.40081 12.4125 7.46881 12.8445 7.55182 13.126C7.63882 13.404 7.75182 13.5955 7.91033 13.8396C8.01983 14.0011 8.09533 14.2411 7.80083 14.4216C7.15181 14.8231 6.02327 14.2866 5.97027 14.2601C4.65673 13.4865 3.5587 12.4655 2.78467 11.069C2.03715 9.72493 1.60314 8.28289 1.53164 6.74384C1.51264 6.37233 1.62214 6.24082 1.99215 6.17332C2.47916 6.08332 2.98118 6.06432 3.46769 6.13582C5.52476 6.43633 7.27581 7.35586 8.74385 8.8129C9.58188 9.64243 10.2159 10.634 10.8689 11.6025C11.5634 12.631 12.3105 13.611 13.262 14.4146C13.598 14.6961 13.866 14.9101 14.1225 15.0681C13.349 15.1546 12.058 15.1731 11.1749 14.4746L11.1749 14.4736ZM12.141 8.25988C12.141 8.09488 12.273 7.96338 12.439 7.96338C12.4765 7.96338 12.5105 7.97088 12.541 7.98188C12.5825 7.99688 12.6205 8.01938 12.6505 8.05338C12.7035 8.10588 12.7335 8.18088 12.7335 8.25988C12.7335 8.42489 12.6015 8.55639 12.4355 8.55639C12.2695 8.55639 12.141 8.42489 12.141 8.25988ZM15.1415 9.79893C14.949 9.87793 14.7565 9.94544 14.5715 9.95294C14.2845 9.96794 13.9715 9.85143 13.8015 9.70893C13.5375 9.48742 13.3485 9.36342 13.2695 8.97691C13.2355 8.8119 13.2545 8.55639 13.2845 8.40989C13.3525 8.09438 13.277 7.89187 13.0545 7.70787C12.8735 7.55786 12.643 7.51636 12.39 7.51636C12.2955 7.51636 12.209 7.47486 12.1445 7.44136C12.039 7.38886 11.9519 7.25735 12.035 7.09585C12.0615 7.04335 12.19 6.91584 12.22 6.89334C12.5635 6.69784 12.9595 6.76184 13.326 6.90834C13.6655 7.04735 13.9225 7.30236 14.292 7.66287C14.6695 8.09838 14.7375 8.21838 14.9525 8.54539C15.1225 8.8009 15.277 9.06341 15.3831 9.36392C15.4471 9.55142 15.3641 9.70493 15.1415 9.79893Z"[39m
+                            [33mfill[39m=[32m"currentColor"[39m
+                          [36m/>[39m
+                        [36m</svg>[39m
+                      [36m</div>[39m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"_7BVuDG_brandName"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mdata-slot[39m=[32m"sidebar.brand.name"[39m
+                        [33mstyle[39m=[32m"display: contents;"[39m
+                      [36m>[39m
+                        [36m<span[39m
+                          [33maria-hidden[39m=[32m"true"[39m
+                          [33mclass[39m=[32m"i9jZja_root"[39m
+                        [36m>[39m
+                          [36m<span[39m
+                            [33mclass[39m=[32m"i9jZja_wordmark"[39m
+                          [36m>[39m
+                            [0mPTO Agent Workbench[0m
+                          [36m</span>[39m
+                          [36m<span[39m
+                            [33mclass[39m=[32m"i9jZja_badgePlate"[39m
+                          [36m>[39m
+  ...
+ ❯ waitForWrapper node_modules/.pnpm/@testing-library+dom@10.4.1/node_modules/@testing-library/dom/dist/wait-for.js:163:27
+ ❯ node_modules/.pnpm/@testing-library+dom@10.4.1/node_modules/@testing-library/dom/dist/query-helpers.js:86:33
+ ❯ apps/web/tests/trajectory-image-display.expected.e2e.ts:96:30
+     94|   // resolves the durable reference through the SAME per-session cache…
+     95|   // used, so the object URL is identical — no second attachment read.
+     96|   const panel = await screen.findByRole('tabpanel')
+       |                              ^
+     97|   await waitFor(() => {
+     98|     expect(within(panel).getAllByRole('img').length).toBeGreaterThan(0)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[40/51]⎯
+
+ FAIL  apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > adds two workspaces through the dialog, each on a folder it created
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('treeitem').filter({ hasText: 'alpha-ws' }).first().locator('xpath=ancestor::*[contains(@class, "groupSection")][1]').locator('[role="treeitem"][aria-selected="true"]') to be visible[22m
+
+ ❯ addNewFolderWorkspace apps/web/tests/workspace-management.e2e.ts:87:70
+     85|     const row = page.getByRole('treeitem').filter({ hasText: name }).f…
+     86|     const section = row.locator('xpath=ancestor::*[contains(@class, "g…
+     87|     await section.locator('[role="treeitem"][aria-selected="true"]').w…
+       |                                                                      ^
+     88|   }
+     89|
+ ❯ add apps/web/tests/workspace-management.e2e.ts:158:7
+ ❯ apps/web/tests/workspace-management.e2e.ts:162:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[41/51]⎯
+
+ FAIL  apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > renames a workspace over the wire with a duplicate-name pre-check
+AssertionError: expected +0 to be 1 // Object.is equality
+
+- Expected
++ Received
+
+- 1
++ 0
+
+ ❯ apps/web/tests/workspace-management.e2e.ts:182:84
+    180|     // the inline alert and blocks the primary button before any wire …
+    181|     await input.fill('beta-ws')
+    182|     await expect.poll(() => dialog.getByRole('alert').count(), { timeo…
+       |                                                                                    ^
+    183|     expect(await dialog.getByRole('button', { name: 'Rename' }).isDisa…
+    184|     // A fresh name goes through workspace.rename to the durable regis…
+
+Caused by: Error: Matcher did not succeed in time.
+ ❯ apps/web/tests/workspace-management.e2e.ts:182:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[42/51]⎯
+
+ FAIL  apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > deletes only the Workspace registration and keeps its current Session, folder, and log
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Add workspace' })[22m
+[2m    - locator resolved to <button type="button" class="OcUpmq_iconButton" aria-label="Add workspace">…</button>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    58 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is visible, enabled and stable[22m
+[2m       - scrolling into view if needed[22m
+[2m       - done scrolling[22m
+[2m       - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+ ❯ browseTo apps/web/tests/workspace-management.e2e.ts:54:63
+     52|    */
+     53|   async function browseTo(path: string): Promise<Locator> {
+     54|     await page.getByRole('button', { name: 'Add workspace' }).click()
+       |                                                               ^
+     55|     const dialog = page.getByRole('dialog', { name: 'Select Workspace …
+     56|     await dialog.waitFor({ timeout: 10_000 })
+ ❯ adoptDirectory apps/web/tests/workspace-management.e2e.ts:96:26
+ ❯ apps/web/tests/workspace-management.e2e.ts:229:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[43/51]⎯
+
+ FAIL  apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > reuses a deleted title for a different new directory without any transient error surface
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Add workspace' })[22m
+[2m    - locator resolved to <button type="button" class="OcUpmq_iconButton" aria-label="Add workspace">…</button>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    58 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is visible, enabled and stable[22m
+[2m       - scrolling into view if needed[22m
+[2m       - done scrolling[22m
+[2m       - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+ ❯ browseTo apps/web/tests/workspace-management.e2e.ts:54:63
+     52|    */
+     53|   async function browseTo(path: string): Promise<Locator> {
+     54|     await page.getByRole('button', { name: 'Add workspace' }).click()
+       |                                                               ^
+     55|     const dialog = page.getByRole('dialog', { name: 'Select Workspace …
+     56|     await dialog.waitFor({ timeout: 10_000 })
+ ❯ adoptDirectory apps/web/tests/workspace-management.e2e.ts:96:26
+ ❯ apps/web/tests/workspace-management.e2e.ts:367:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[44/51]⎯
+
+ FAIL  apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > switches to the flat "In one list" view and persists the preference
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'View options' })[22m
+[2m    - locator resolved to <button type="button" aria-label="View options" class="OcUpmq_iconButton OcUpmq_wide">…</button>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    58 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is visible, enabled and stable[22m
+[2m       - scrolling into view if needed[22m
+[2m       - done scrolling[22m
+[2m       - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+ ❯ apps/web/tests/workspace-management.e2e.ts:398:62
+    396|     await expect.poll(() => page.getByText('Workspaces', { exact: true…
+    397|     // Grouping and ordering moved into the View options menu.
+    398|     await page.getByRole('button', { name: 'View options' }).click()
+       |                                                              ^
+    399|     await page.getByRole('menuitem', { name: 'In one list' }).click()
+    400|     // Flat mode: the section label flips and the seeded session is a
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[45/51]⎯
+
+ FAIL  apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > matches the directory-browser dialog aria golden at a staged directory
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Add workspace' })[22m
+[2m    - locator resolved to <button type="button" class="OcUpmq_iconButton" aria-label="Add workspace">…</button>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    58 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is visible, enabled and stable[22m
+[2m       - scrolling into view if needed[22m
+[2m       - done scrolling[22m
+[2m       - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+ ❯ browseTo apps/web/tests/workspace-management.e2e.ts:54:63
+     52|    */
+     53|   async function browseTo(path: string): Promise<Locator> {
+     54|     await page.getByRole('button', { name: 'Add workspace' }).click()
+       |                                                               ^
+     55|     const dialog = page.getByRole('dialog', { name: 'Select Workspace …
+     56|     await dialog.waitFor({ timeout: 10_000 })
+ ❯ apps/web/tests/workspace-management.e2e.ts:433:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[46/51]⎯
+
+ FAIL  apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > walks the panes with the typed path: deeper past a separator, back up on erase, whole on a miss
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Add workspace' })[22m
+[2m    - locator resolved to <button type="button" class="OcUpmq_iconButton" aria-label="Add workspace">…</button>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    58 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is visible, enabled and stable[22m
+[2m       - scrolling into view if needed[22m
+[2m       - done scrolling[22m
+[2m       - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+ ❯ browseTo apps/web/tests/workspace-management.e2e.ts:54:63
+     52|    */
+     53|   async function browseTo(path: string): Promise<Locator> {
+     54|     await page.getByRole('button', { name: 'Add workspace' }).click()
+       |                                                               ^
+     55|     const dialog = page.getByRole('dialog', { name: 'Select Workspace …
+     56|     await dialog.waitFor({ timeout: 10_000 })
+ ❯ apps/web/tests/workspace-management.e2e.ts:456:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[47/51]⎯
+
+ FAIL  apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > shows the session hover card after a dwell on the row
+Error: Test timed out in 60000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ apps/web/tests/workspace-management.e2e.ts:509:3
+    507|   }
+    508|
+    509|   it('shows the session hover card after a dwell on the row', async ()…
+       |   ^
+    510|     onTestFailed(() => saveFailureShot(page, 'web-e2e-ws-hover'))
+    511|     // Dwell on the seeded row; the card opens after a 500ms hover del…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[48/51]⎯
+
+ FAIL  apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > keeps an open row menu up while the pointer moves between trigger and list
+Error: Test timed out in 60000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ apps/web/tests/workspace-management.e2e.ts:544:3
+    542|   }, 60_000)
+    543|
+    544|   it('keeps an open row menu up while the pointer moves between trigge…
+       |   ^
+    545|     onTestFailed(() => saveFailureShot(page, 'web-e2e-ws-row-menu'))
+    546|     const sessionRow = await seededSessionRow()
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[49/51]⎯
+
+ FAIL  apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > archives the seeded session from its row menu, hiding it durably across reload
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByText('Ungrouped', { exact: true })[22m
+[2m    - locator resolved to <span class="uptmfa_title">Ungrouped</span>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    58 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is visible, enabled and stable[22m
+[2m       - scrolling into view if needed[22m
+[2m       - done scrolling[22m
+[2m       - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+ ❯ seededSessionRow apps/web/tests/workspace-management.e2e.ts:501:28
+    499|       }
+    500|       return await ungroupedRow.getAttribute('aria-expanded')
+    501|     }, { timeout: 5_000 }).toBe('true')
+       |                            ^
+    502|     // CSS includes the actions button while it is hidden until row ho…
+    503|     const rows = ungroupedSection.locator('[role="treeitem"]')
+ ❯ apps/web/tests/workspace-management.e2e.ts:576:30
+
+Caused by: Error: Matcher did not succeed in time.
+ ❯ seededSessionRow apps/web/tests/workspace-management.e2e.ts:495:5
+ ❯ apps/web/tests/workspace-management.e2e.ts:576:24
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[50/51]⎯
+
+ FAIL  apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > opens folders with identical basenames as distinct workspaces
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Add workspace' })[22m
+[2m    - locator resolved to <button type="button" class="OcUpmq_iconButton" aria-label="Add workspace">…</button>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    58 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is visible, enabled and stable[22m
+[2m       - scrolling into view if needed[22m
+[2m       - done scrolling[22m
+[2m       - <div aria-hidden="true" class="_mask_w1urq_14"></div> from <div role="presentation" class="_root_w1urq_2">…</div> subtree intercepts pointer events[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+ ❯ browseTo apps/web/tests/workspace-management.e2e.ts:54:63
+     52|    */
+     53|   async function browseTo(path: string): Promise<Locator> {
+     54|     await page.getByRole('button', { name: 'Add workspace' }).click()
+       |                                                               ^
+     55|     const dialog = page.getByRole('dialog', { name: 'Select Workspace …
+     56|     await dialog.waitFor({ timeout: 10_000 })
+ ❯ adoptDirectory apps/web/tests/workspace-management.e2e.ts:96:26
+ ❯ apps/web/tests/workspace-management.e2e.ts:616:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[51/51]⎯
+
+
+ Test Files  22 failed | 75 passed | 1 skipped (98)
+      Tests  41 failed | 283 passed | 37 skipped (361)
+   Start at  14:41:57
+   Duration  1138.23s (transform 1.92s, setup 0ms, import 27.74s, tests 1101.17s, environment 2.55s)
+
+[ELIFECYCLE] Command failed with exit code 1.

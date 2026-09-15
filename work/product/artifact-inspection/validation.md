@@ -66,3 +66,7 @@ MVP 实测四组只读样例：20251112 three-view、20260528 A5 PMU、20260720 
 - 缺 receipt 时不能调用门禁工具，也不能通过通用 Shell 手动复算冒充正式结果。
 - 拖动 DSH 原生正文宽度后切换自定义“实验”Tab，Dashboard 不越过
   `--dsh-chat-content-width`；四列内容按断点降为两列/单列。验证不要求修改 DSH 宽度核心。
+
+## 2026-09-14 修复组合验收
+
+P1–P4 独立阶段与 P5 正式组合已完成本地验收；实际首发、同 Session 模型重试、新 launch、规范引用、附件持久化与只读双模式工具证据见 [最终报告](../../archive/tasks/2026-09-08-artifact-analysis-launch-repair/final-report.md)。实验布局使用真实持久 planned 与明确标注的终态呈现 fixture。保留已归因 lint/GUI/browser 红项；不宣称全套 CI 绿色、外部模型智能效果或性能收益，不自动推送发布。

@@ -1,0 +1,147 @@
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+
+ RUN  v4.1.8 /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness
+
+ ❯ |thread-safe| packages/client/ui-workspace/tests/host-home-staleness.client.spec.tsx (1 test | 1 failed) 9ms
+     × abbreviates the path once a home learned after first render reaches the rows 8ms
+ ❯ |thread-safe| packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx (2 tests | 2 failed) 12ms
+     × renames via the row menu: binding.session.rename fires, the dialog closes, the row re-labels from the list 9ms
+     × a rejected rename keeps the dialog open with the error surfaced 2ms
+ ❯ |thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts (7 tests | 5 failed) 29ms
+     × declares the services it drives 4ms
+     × registers browser and pickers for declarations arriving before or after apply 10ms
+     × routes browser actions and picker creation to the services 4ms
+     × declares the two directory-flow holes and reports their occupancy per surface 2ms
+     × rejects the browser search callback on a Session Controller business error 3ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 8 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > declares the services it drives
+AssertionError: expected [ 'slots', 'sessions', …(5) ] to deeply equal [ 'slots', 'sessions', …(4) ]
+
+- Expected
++ Received
+
+@@ -3,6 +3,7 @@
+    "sessions",
+    "workspaces",
+    "locale",
+    "remote",
+    "remote.directoryPicker",
++   "remote.ptoArtifactInspection",
+  ]
+
+ ❯ packages/client/ui-workspace/tests/apply.client.spec.ts:92:20
+     90|
+     91|   it('declares the services it drives', () => {
+     92|     expect(inject).toEqual([
+       |                    ^
+     93|       'slots', 'sessions', 'workspaces', 'locale', 'remote', 'remote.d…
+     94|     ])
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/8]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > registers browser and pickers for declarations arriving before or after apply
+TypeError: Cannot read properties of undefined (reading 'component')
+ ❯ packages/client/ui-workspace/tests/apply.client.spec.ts:101:55
+     99|     declare(before.slots, 'sidebar.workspaces')
+    100|     await before.ctx.plugin({ inject: [...inject], apply }).await()
+    101|     expect(before.slots.entries('sidebar.workspaces')[0]!.component).t…
+       |                                                       ^
+    102|     // Copy rides the standard locale seat: the entry declares the nam…
+    103|     // and apply registered both dictionaries.
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/8]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > routes browser actions and picker creation to the services
+Error: The vi.spyOn() function could not find an object to spy upon. The first argument must be defined.
+ ❯ packages/client/ui-workspace/tests/apply.client.spec.ts:119:29
+    117|     declare(b.slots, 'sidebar.workspaces', 'conversation.hero.workspac…
+    118|     await b.ctx.plugin({ inject: [...inject], apply }).await()
+    119|     const startSession = vi.spyOn(b.ctx.uiWorkspace, 'startSession').m…
+       |                             ^
+    120|     const startUnassignedSession = vi.spyOn(b.ctx.uiWorkspace, 'startU…
+    121|       .mockImplementation(() => undefined)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/8]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > declares the two directory-flow holes and reports their occupancy per surface
+AssertionError: expected undefined to match object { kind: 'single' }
+
+- Expected:
+{
+  "kind": "single",
+}
+
++ Received:
+undefined
+
+ ❯ packages/client/ui-workspace/tests/apply.client.spec.ts:165:62
+    163|     await b.ctx.plugin({ inject: [...inject], apply }).await()
+    164|     // Registration declared the child holes (declaration = render aut…
+    165|     expect(b.slots.spec('sidebar.workspaces.directoryFlow')).toMatchOb…
+       |                                                              ^
+    166|     expect(b.slots.spec('conversation.hero.workspace.directoryFlow')).…
+    167|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/8]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/apply.client.spec.ts > ui-workspace apply > rejects the browser search callback on a Session Controller business error
+TypeError: Cannot read properties of undefined (reading 'inject')
+ ❯ packages/client/ui-workspace/tests/apply.client.spec.ts:194:60
+    192|     declare(b.slots, 'sidebar.workspaces')
+    193|     await b.ctx.plugin({ inject: [...inject], apply }).await()
+    194|     const browser = (b.slots.entries('sidebar.workspaces')[0]!.inject …
+       |                                                            ^
+    195|     await expect(browser.searchSessions('needle', new AbortController(…
+    196|       .rejects.toThrow('index unavailable')
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/8]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/host-home-staleness.client.spec.tsx > Host home in the assembled browsing region > abbreviates the path once a home learned after first render reaches the rows
+Error: mount would suspend: missing service(s) remote.ptoArtifactInspection — provide() them first
+ ❯ SlotTestRuntime.mount packages/test-support/client-runtime/src/index.ts:288:13
+    286|     const missing = required.filter(name => this.ctx.get(name) === und…
+    287|     if (missing.length > 0) {
+    288|       throw new Error(`mount would suspend: missing service(s) ${missi…
+       |             ^
+    289|     }
+    290|     const fiber = this.ctx.plugin(plugin)
+ ❯ bench packages/client/ui-workspace/tests/host-home-staleness.client.spec.tsx:49:17
+ ❯ packages/client/ui-workspace/tests/host-home-staleness.client.spec.tsx:71:33
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/8]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx > session rename through the assembled browser > renames via the row menu: binding.session.rename fires, the dialog closes, the row re-labels from the list
+Error: mount would suspend: missing service(s) remote.ptoArtifactInspection — provide() them first
+ ❯ SlotTestRuntime.mount packages/test-support/client-runtime/src/index.ts:288:13
+    286|     const missing = required.filter(name => this.ctx.get(name) === und…
+    287|     if (missing.length > 0) {
+    288|       throw new Error(`mount would suspend: missing service(s) ${missi…
+       |             ^
+    289|     }
+    290|     const fiber = this.ctx.plugin(plugin)
+ ❯ packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx:75:19
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/8]⎯
+
+ FAIL  |thread-safe| packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx > session rename through the assembled browser > a rejected rename keeps the dialog open with the error surfaced
+Error: mount would suspend: missing service(s) remote.ptoArtifactInspection — provide() them first
+ ❯ SlotTestRuntime.mount packages/test-support/client-runtime/src/index.ts:288:13
+    286|     const missing = required.filter(name => this.ctx.get(name) === und…
+    287|     if (missing.length > 0) {
+    288|       throw new Error(`mount would suspend: missing service(s) ${missi…
+       |             ^
+    289|     }
+    290|     const fiber = this.ctx.plugin(plugin)
+ ❯ packages/client/ui-workspace/tests/rename-assembly.client.spec.tsx:122:19
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/8]⎯
+
+
+ Test Files  3 failed | 53 passed (56)
+      Tests  8 failed | 866 passed (874)
+   Start at  11:18:03
+   Duration  7.66s (transform 14.39s, setup 4.13s, import 41.23s, tests 11.63s, environment 14.87s)

@@ -1,0 +1,27 @@
+[
+  {
+    "path": "patches/cordis.patch.yml",
+    "bytes": 3568,
+    "sha256": "4da838ecdf2fa998bd08d07cb37994e4010b838e1b97ed305e27a463edb8ac1a"
+  },
+  {
+    "path": "harness/.dsh-build/client-build-environment.json",
+    "bytes": 257,
+    "sha256": "3445a89b4fe03f259f535f1b166d2b92879cb3a23266676d2098489b6a787b8d"
+  },
+  {
+    "path": "tools/official/pypto-runtime-77fa0171c24a/simpler_setup/tools/deps_viewer.py",
+    "bytes": 78274,
+    "sha256": "24b1c5c069d08dfe198a21ad272b5cafab82237b897504ccca633109fcebc116"
+  },
+  {
+    "path": "skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills/dependency-redundancy/SKILL.md",
+    "bytes": 8161,
+    "sha256": "86cf80e077e51d5a0f0863ad1a14cd19c4830ad5dfa4bd5cacf0efc4845c822c"
+  },
+  {
+    "path": "/Users/wny/Documents/2 领域 Area/工作/EASY CANN/样例数据/20260720-pypto3-qwen3-14b-decode-fwd-l2/raw/_jit_decode_fwd_20260720_010517/dfx_outputs/deps.json",
+    "bytes": 412557,
+    "sha256": "97ee1e49bf14d9c8dfa69ef1464c0d551bc535dfa9615609c68d5526dd383a4b"
+  }
+]

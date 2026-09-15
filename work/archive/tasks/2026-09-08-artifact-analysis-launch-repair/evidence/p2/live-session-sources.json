@@ -1,0 +1,169 @@
+[
+  {
+    "file": "p2-final-session-5077434e-a71c-456b-819d-334c41ae0cd0.decoded.json",
+    "turns": 1,
+    "sources": [
+      {
+        "seq": 12,
+        "type": "user/message",
+        "source": {
+          "kind": "pto-artifact-analysis",
+          "form": "instructions",
+          "receipt": {
+            "requestId": "pto-analysis-58a574ef-9cad-489d-b496-77d6a1dc6af4",
+            "sessionId": "session-5077434e-a71c-456b-819d-334c41ae0cd0",
+            "recordId": "pto-record-e29712ac-c94f-4459-9b34-b1797a3d7557",
+            "recordRevision": "inventory-v1-557be9e7",
+            "actionId": "analyze.dependency-redundancy",
+            "artifactRefs": [
+              "deps.json"
+            ],
+            "skill": {
+              "name": "dependency-redundancy",
+              "provider": "pypto-official-af1d7a016ce5",
+              "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+            },
+            "tool": {
+              "name": "pto_dependency_redundancy",
+              "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+            }
+          }
+        }
+      },
+      {
+        "seq": 13,
+        "type": "user/message",
+        "source": {
+          "kind": "skill-invocation",
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "form": "instructions"
+        }
+      }
+    ],
+    "userMessages": [
+      {
+        "seq": 8,
+        "source": {
+          "kind": "user",
+          "rpcId": "636628b5-434a-441d-9610-cd58112e3c73",
+          "clientTimeZone": "Asia/Shanghai"
+        }
+      }
+    ]
+  },
+  {
+    "file": "p2-session-fbf538e3-b6e0-4c0f-a2aa-34fa3965a743.decoded.json",
+    "turns": 2,
+    "sources": [
+      {
+        "seq": 12,
+        "type": "user/message",
+        "source": {
+          "kind": "pto-artifact-analysis",
+          "form": "instructions",
+          "receipt": {
+            "requestId": "pto-analysis-6040d5e8-7490-4ee9-83d9-ae2934f3a8d2",
+            "sessionId": "session-fbf538e3-b6e0-4c0f-a2aa-34fa3965a743",
+            "recordId": "pto-record-a75a04bf-40da-4e35-a974-b529166d81dc",
+            "recordRevision": "inventory-v1-557be9e7",
+            "actionId": "analyze.dependency-redundancy",
+            "artifactRefs": [
+              "deps.json"
+            ],
+            "skill": {
+              "name": "dependency-redundancy",
+              "provider": "pypto-official-af1d7a016ce5",
+              "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+            },
+            "tool": {
+              "name": "pto_dependency_redundancy",
+              "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+            }
+          }
+        }
+      },
+      {
+        "seq": 13,
+        "type": "user/message",
+        "source": {
+          "kind": "skill-invocation",
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "form": "instructions"
+        }
+      }
+    ],
+    "userMessages": [
+      {
+        "seq": 8,
+        "source": {
+          "kind": "user",
+          "rpcId": "a720d62b-4118-45fa-8b13-e9061c02ddf3",
+          "clientTimeZone": "Asia/Shanghai"
+        }
+      },
+      {
+        "seq": 26,
+        "source": {
+          "kind": "user",
+          "rpcId": "483708ab-1641-4d62-a3a1-726452bc2e7c",
+          "clientTimeZone": "Asia/Shanghai"
+        }
+      }
+    ]
+  },
+  {
+    "file": "p2-session-b9055d3e-be7c-4900-9a23-7930e78d9e50.decoded.json",
+    "turns": 1,
+    "sources": [
+      {
+        "seq": 12,
+        "type": "user/message",
+        "source": {
+          "kind": "pto-artifact-analysis",
+          "form": "instructions",
+          "receipt": {
+            "requestId": "pto-analysis-6a5efd36-d09c-4608-ad16-9b0bdd845906",
+            "sessionId": "session-b9055d3e-be7c-4900-9a23-7930e78d9e50",
+            "recordId": "pto-record-745f6570-398e-4a10-8c23-a31d5b272033",
+            "recordRevision": "inventory-v1-557be9e7",
+            "actionId": "analyze.dependency-redundancy",
+            "artifactRefs": [
+              "deps.json"
+            ],
+            "skill": {
+              "name": "dependency-redundancy",
+              "provider": "pypto-official-af1d7a016ce5",
+              "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+            },
+            "tool": {
+              "name": "pto_dependency_redundancy",
+              "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+            }
+          }
+        }
+      },
+      {
+        "seq": 13,
+        "type": "user/message",
+        "source": {
+          "kind": "skill-invocation",
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "form": "instructions"
+        }
+      }
+    ],
+    "userMessages": [
+      {
+        "seq": 8,
+        "source": {
+          "kind": "user",
+          "rpcId": "31611a9e-9c8c-4e0b-b39f-e83b68f55900",
+          "clientTimeZone": "Asia/Shanghai"
+        }
+      }
+    ]
+  }
+]

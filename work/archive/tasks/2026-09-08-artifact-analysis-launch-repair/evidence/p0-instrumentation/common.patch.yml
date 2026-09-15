@@ -1,0 +1,10 @@
+# P0 test-only: same observer and upstream browse picker in A and B.
+- id: directory-picker
+  disabled: true
+- insert:
+    - id: directory-picker-browse
+      name: '@deepseek-ai/dsh-host-directory-picker-browse'
+    - id: ui-directory-picker-browse
+      name: '@deepseek-ai/dsh-client-ui-directory-picker-browse'
+    - id: p0-observer
+      name: '/var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p0-20260911-qx3bta2t/observer.mjs'

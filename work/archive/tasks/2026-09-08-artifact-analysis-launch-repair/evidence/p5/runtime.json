@@ -1,0 +1,10 @@
+{
+  "root": "/var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p5-7qt02tja",
+  "hostExec": 93013,
+  "modelExec": 90242,
+  "hostPid": 42696,
+  "modelPid": 42601,
+  "cleanup": "Identity-guarded TERM sent after exact unique fixture-path match; completion verified through exec handles.",
+  "browser": "Two open attempts timed out in automatic approval; no usable tab handle or live verification.",
+  "dataRetained": true
+}

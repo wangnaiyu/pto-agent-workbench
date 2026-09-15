@@ -1,0 +1,141 @@
+[
+  {
+    "id": 104272189934,
+    "name": "cloudflare pages preview",
+    "status": "in_progress",
+    "conclusion": null,
+    "html_url": "https://github.com/wangnaiyu/deepseek-harness/actions/runs/34935430644/job/104272189934",
+    "started_at": "2026-09-15T06:05:45Z",
+    "completed_at": null,
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1,
+        "started_at": "2026-09-15T06:05:46Z",
+        "completed_at": "2026-09-15T06:05:47Z"
+      },
+      {
+        "name": "Run actions/checkout@v6",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2,
+        "started_at": "2026-09-15T06:05:47Z",
+        "completed_at": "2026-09-15T06:05:50Z"
+      },
+      {
+        "name": "Run pnpm/action-setup@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3,
+        "started_at": "2026-09-15T06:05:50Z",
+        "completed_at": "2026-09-15T06:05:51Z"
+      },
+      {
+        "name": "Run actions/setup-node@v6",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4,
+        "started_at": "2026-09-15T06:05:51Z",
+        "completed_at": "2026-09-15T06:05:51Z"
+      },
+      {
+        "name": "Configure pnpm store path",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5,
+        "started_at": "2026-09-15T06:05:51Z",
+        "completed_at": "2026-09-15T06:05:52Z"
+      },
+      {
+        "name": "Run actions/cache/restore@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6,
+        "started_at": "2026-09-15T06:05:52Z",
+        "completed_at": "2026-09-15T06:05:52Z"
+      },
+      {
+        "name": "Install (immutable)",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7,
+        "started_at": "2026-09-15T06:05:52Z",
+        "completed_at": "2026-09-15T06:06:08Z"
+      },
+      {
+        "name": "Build workspace",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8,
+        "started_at": "2026-09-15T06:06:08Z",
+        "completed_at": "2026-09-15T06:08:36Z"
+      },
+      {
+        "name": "Build the preview page and pack the VFS image",
+        "status": "in_progress",
+        "conclusion": null,
+        "number": 9,
+        "started_at": "2026-09-15T06:08:36Z",
+        "completed_at": null
+      },
+      {
+        "name": "Shape the upload",
+        "status": "pending",
+        "conclusion": null,
+        "number": 10,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Upload to Cloudflare Pages",
+        "status": "pending",
+        "conclusion": null,
+        "number": 11,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Verify the protected deployment serves the image",
+        "status": "pending",
+        "conclusion": null,
+        "number": 12,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Comment the preview URL",
+        "status": "pending",
+        "conclusion": null,
+        "number": 13,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Post Run actions/setup-node@v6",
+        "status": "pending",
+        "conclusion": null,
+        "number": 24,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Post Run pnpm/action-setup@v4",
+        "status": "pending",
+        "conclusion": null,
+        "number": 25,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "name": "Post Run actions/checkout@v6",
+        "status": "pending",
+        "conclusion": null,
+        "number": 26,
+        "started_at": null,
+        "completed_at": null
+      }
+    ]
+  }
+]

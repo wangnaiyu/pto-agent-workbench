@@ -1,0 +1,9 @@
+# B only: the sole functional A/B delta. Never installed in the product patch.
+- insert:
+    - id: skill-filesystem-pypto-official-af1d7a016ce5
+      name: '@deepseek-ai/dsh-skill-filesystem'
+      config:
+        providerName: pypto-official-af1d7a016ce5
+        includeDefaultRoots: false
+        watch: false
+        bundledSkillDir: '/Users/wny/Documents/1 项目 Projects/pto-agent-workbench/skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills'

@@ -1,0 +1,190 @@
+{
+  "harness": "368c446657932f170a6d29fd2d275bea1c76073e",
+  "P3Implementation": [
+    {
+      "path": "packages/client/ui-conversation/README.i18n.yaml",
+      "sha256": "b3d6c36dda585ce01be1615b99e26f77062c4f5117fef4d044139aeedf34a7bf",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/contract/guarded-drafts.ts",
+      "sha256": "1cedd6304d7ca533c07efe8e77459f9061d29e7e5d027566891ce9e71007629f",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/contract/input.ts",
+      "sha256": "f6df74955723609433f5a9b55ec1c98e8afb7acaaafc9d8a1a52b4117549ab0b",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/index.ts",
+      "sha256": "1188892d108e3958a99fc8e762e0107a81247e8718b5df771185049142938031",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/input/editor/ReferenceChip.module.css",
+      "sha256": "bbe1f33764190ffcbee36c270d8f1d11f28b1cd0b5060a457436c1440b8d6e42",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/input/editor/ReferenceChip.tsx",
+      "sha256": "1a01906d6440489e2c2698ca101da70fef4389cb1ee4ddbddbf11e8c0f056754",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/input/editor/chip-node.tsx",
+      "sha256": "1a49b469eebae15923e0a5ff6730cf2809a886b716bb1eb5b25a2a9bddf825f1",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/input/editor/projection.ts",
+      "sha256": "8eed342c61f8771dcdff7b930aaba4e5bf4c26ecf86339ba7cb3dca5ec12f85b",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/input/facade.ts",
+      "sha256": "9a6d48920322fa4512cb9803c67b617a9501bfbd79b15798ef1e351e980c27ba",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/input/hub.ts",
+      "sha256": "d17aacda8a29799f65b53e2f5abb294bfc5f4cbba89f9a7cd5af7c8ab30f518a",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/service.ts",
+      "sha256": "ffff605e9c33f678548c520033aa364598634c8c318697d67520d2001b054ce6",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/src/client/submission-bindings.ts",
+      "sha256": "1db81136abcde92ae72e7b2307a5e7c9be1d67e2d08d89a33809b72627f3d5f6",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/tests/input-bar.client.spec.tsx",
+      "sha256": "b993b79061e1ced04465a9d00d8398399642bad9f70ddddb2f981bfae1c4a751",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/tests/input-matrix.client.spec.tsx",
+      "sha256": "d7b2ca736bb21df561bb8d09c4fd7f7afe06ca07bd457ee99c08caf7e8c00554",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/tests/input-reference-submit.client.spec.ts",
+      "sha256": "9f4ed92c6880b45d14c5298f2fa23c7d04f52bd02a658acb6b16597b1a598080",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/tests/input-scenarios.client.spec.tsx",
+      "sha256": "4bed4a035af28e3b96944f515533ce59111ed11b9871557220fb086b2b020887",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-conversation/tests/skeleton.client.spec.tsx",
+      "sha256": "137356f166923a6fbebb84f962b0ee00b080d6fbf0a8ac616fbc30663f12f7cf",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-input-trigger/README.i18n.yaml",
+      "sha256": "0060284a5b634e84c1b38d9f81f2e933762e3df405a3e8272346e7d8b5596732",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-input-trigger/src/client/controller.ts",
+      "sha256": "5b016f55b3958c9ab07ec5d055863177f941d0c39faa770f1f186f18725c7249",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-input-trigger/src/types.ts",
+      "sha256": "28ee9f0ff4dcb53453ae7a0fd8fe19b5d363d3f69189deab694a01d8f6dfdd00",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-workspace/README.i18n.yaml",
+      "sha256": "ca92958f5b569082c4efe73137368d91d50234aff1964903ee2fd5c84f6af4d1",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-workspace/package.json",
+      "sha256": "28360616ed9ef4f73be2f84500c26fdfdc763fe0049bfe59c5e02b543d86327e",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-workspace/src/client/index.ts",
+      "sha256": "e056225876a4f4d4eaf9862ec9f526fe8fcfaf4682e7585c9ffb2535257721ca",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-workspace/src/client/locales.ts",
+      "sha256": "7dfbf3d83d1ddb4551292440ce7126c64cf3f02d70172afdaef4fb305bd720c2",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-workspace/src/client/pto-viewer.ts",
+      "sha256": "1bace5f8d5bb3f8dc76c3f58e21689a727e4c6a0c48c43e673c2e7db8d4277ae",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-workspace/tests/pto-launch-assembly.client.spec.ts",
+      "sha256": "699b95f450efa95270b917e530fba12a5a6c91b034e725b8e265eadc4de35505",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-workspace/tests/pto-viewer.client.spec.ts",
+      "sha256": "ef65a8a30408ef6f2e44e28f379f9862e0fe2382ad896d53e719db55685b9f01",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/client/ui-workspace/tsconfig.json",
+      "sha256": "1f3a62998c18a56343b941216f811f12082c30c8018d5b00e0ac817315b599e2",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/host/pto-artifact-inspection/README.i18n.yaml",
+      "sha256": "cc9ec3046ca7d7b615b0d8915ad19740f301fbb426456f3a2ed7cb71478488ee",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/host/pto-artifact-inspection/package.json",
+      "sha256": "edee79f396da9cfc3cf909c19e9ede8266370c148dd8cf99bc3d6ee8f7de688b",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/host/pto-artifact-inspection/src/index.ts",
+      "sha256": "9c3ab92fdc2d0634fa9bd4316da978b4e7a8dc6c2dc88e2d40e1eab287a84db7",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "b4eb2d2bacd348464193bf528a0d5b35c85e3d8f0092d19010910d1bc14319b7",
+      "matchesP3Evidence": true
+    },
+    {
+      "path": "packages/host/pto-artifact-inspection/tests/skill-composition.spec.ts",
+      "sha256": "0844e378cf51412637828ad1437cf4de237858a14b4d11d95a293c326cac2975",
+      "matchesP3Evidence": true
+    }
+  ],
+  "P4CurrentHeadEqualsValidatedCandidate": true,
+  "reuse": "P3 launch/reference/manual UI and P4 full GUI/browser/layout evidence retained at their actual layer; no claim of a fresh P5 live browser pass.",
+  "knownToolInventoryFailure": {
+    "baselineHarnessSha": "ac2b72a9615cbaf23bb21951ffe1c22f3a11d807",
+    "files": [
+      {
+        "file": "packages/pto/tool-pto-run/tests/load-path.spec.ts",
+        "sameSource": true,
+        "candidateSha256": "5f0d518aca19d4d9de694918669e2ade5d520825a4b591993acd2f74778a2587",
+        "baselineSha256": "5f0d518aca19d4d9de694918669e2ade5d520825a4b591993acd2f74778a2587"
+      },
+      {
+        "file": "packages/pto/tool-pto-run/src/index.ts",
+        "sameSource": true,
+        "candidateSha256": "dfffdd81c9c445e508952c8c76313ef046995153852665ec7544f1b32ba1a409",
+        "baselineSha256": "dfffdd81c9c445e508952c8c76313ef046995153852665ec7544f1b32ba1a409"
+      }
+    ],
+    "diagnostic": "Expected discover+inspect; actual also pto_record_inspect, reproduced unchanged in isolated baseline."
+  }
+}

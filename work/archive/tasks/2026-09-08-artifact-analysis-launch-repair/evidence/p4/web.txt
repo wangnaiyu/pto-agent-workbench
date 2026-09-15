@@ -1,0 +1,159 @@
+Extracted every failure block and first diagnostic; duplicate names retained. Full raw log retained at /private/tmp/pto-p4-web.txt.
+
+apps/web/tests/agent-team-panel.e2e.ts > web e2e: Agent Teams panel
+Error: connected Team workspace did not create an Agent
+
+apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock
+Error: llm-replay: fixture not fully consumed — 1 recorded script(s) never bound to a live session; the scenario drove fewer model calls than recorded
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly
+AssertionError: Web replay fixture /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/snapshots/web/file-upload-round/session.v3.jsonl must match one live root session: expected [] to have a length of 1 but got +0
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly
+Error: llm-replay: fixture not fully consumed — 1 recorded script(s) never bound to a live session; the scenario drove fewer model calls than recorded
+
+apps/web/tests/question-composer.e2e.ts > web e2e: resident question composer round trip
+AssertionError: /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/snapshots/web/question-composer/session.v3.jsonl: persisted replay: expected '{"type":"session","id":"{{session:1}}…' to be '{"type":"session","id":"{{session:1}}…' // Object.is equality
+
+apps/web/tests/question-composer.e2e.ts > web e2e: resident question composer round trip
+Error: llm-replay: fixture not fully consumed — session session-53377faf-79d5-4969-83cf-7cb55a795dff consumed 1/2 recorded call(s); the scenario drove fewer model calls than recorded
+
+apps/web/tests/reference-composer.e2e.ts > web e2e: file and session references through the real host
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/sidebar-right.e2e.ts > web e2e: shipped right Sidebar > with a settled session
+Error: connected workspace did not create an Agent
+
+apps/web/tests/steering.e2e.ts > web e2e: empty-draft Cmd+Enter steers the whole queue
+Error: llm-replay: fixture not fully consumed — session session-8b67b34b-470c-4c7d-a8f1-9ac7f6a315dc consumed 1/2 recorded call(s); the scenario drove fewer model calls than recorded
+
+apps/web/tests/workspace-new-session-folding.e2e.ts > web e2e: blank New Session folding quota
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+
+apps/web/tests/command-image-envelope.expected.e2e.ts > refuses an image-carrying submit to a non-declaring command and keeps draft and images
+Error: composer refusal banner missing
+
+apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > drives the recorded prompt to a settled turn (all modes)
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > records feedback locally and acknowledges its session and anonymous user ids
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+
+apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > does not release command tails, provider changes, or browser reloads
+SessionPersistenceNotFoundError: session "undefined" not found
+
+apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > persists text, ratings, notes, and retractions in the canonical session
+AssertionError: expected +0 to be 2 // Object.is equality
+
+apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > releases headerless feedback without capturing another session’s provider-change tail
+AssertionError: expected [ [ …(3) ], [ …(3) ], [ …(3) ], …(2) ] to have a length of +0 but got 5
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > uploads on pick, gates send on the staged receipt, and settles the turn (all modes)
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > persists the file block and reads the stored copy with the real read tool
+Error: the replayed turn recorded no user message
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > renders the durable file card beside the settled answer
+AssertionError: expected 0 to be greater than or equal to 1
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > keeps a mixed durable message in one ordered wrapping attachment flow
+AssertionError: expected +0 to be 1 // Object.is equality
+
+apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > marks the durable file in Trajectory without copying the Chat card
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/github-ready-review.e2e.ts > web e2e: GitHub ready-for-review > isolates ingress and creates a browsable Workspace Session
+AssertionError: expected '- tree "Sessions":\n  - treeitem "{{w…' to be '- tree "Sessions":\n  - treeitem "{{w…' // Object.is equality
+
+apps/web/tests/goal-bar.e2e.ts > web e2e: goal bar clear convergence > renders one active goal and clears it without exposing a stale error
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+
+apps/web/tests/hmr-live.e2e.ts > hot-reloads a real client-plugin source edit without refreshing the page
+Error: pnpm run dev:web not ready:
+
+apps/web/tests/image-display.expected.e2e.ts > accepts a whole-page drop under the limits-labeled overlay and refuses an over-limit batch at intake
+TestingLibraryElementError: Found multiple elements with the role "status"
+
+apps/web/tests/lifecycle-chrome.e2e.ts > web e2e: lifecycle & chrome (workspace flow / reload / dark mode) > localizes slash-command descriptions from the browser language
+AssertionError: expected '- listbox "触发候选建议":\n  - option "expo…' to be '- listbox "触发候选建议":\n  - text: 指令\n  …' // Object.is equality
+
+apps/web/tests/preview-boot.e2e.ts > boots the packed worker deployment to an interactive page
+AssertionError: expected +0 to be 1 // Object.is equality
+
+apps/web/tests/question-composer.e2e.ts > web e2e: resident question composer round trip > asks through the composer, answers, and completes with the answer logged
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+
+apps/web/tests/question-composer.e2e.ts > web e2e: resident question composer round trip > grows the optionless answer to the same cap
+AssertionError: expected undefined to be defined
+
+apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > drives the recorded prompt to a settled turn (all modes)
+AssertionError: expected 'echo: (missing)\ncomposer: ""\nconten…' to be 'echo: Use the bash tool to run exactl…' // Object.is equality
+
+apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > ends the system prompt with the source checkout, Web surface, and session cwd
+Error: the drive turn did not publish a session id
+
+apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > exposes the assembled Web URL to the real bash tool
+Error: the drive turn did not publish a session id
+
+apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > rendered the settled turn: markdown, tool row, composer restore
+AssertionError: expected +0 to be 1 // Object.is equality
+
+apps/web/tests/skill-invocation-policy.e2e.ts > web e2e: skill invocation policy through the real host > renders every user-invocable skill and marks the user-only entry
+AssertionError: expected +0 to be 1 // Object.is equality
+
+apps/web/tests/skill-user-invoke.e2e.ts > web e2e: user-explicit skill invocation through the composer > rejects a vanished first-send Skill, then runs the corrected canonical gesture
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+
+apps/web/tests/startup-auto-selection.e2e.ts > web e2e: startup auto-selection > keeps the resident Hero and composer nodes when the first Workspace session appears
+AssertionError: expected +0 to be 1 // Object.is equality
+
+apps/web/tests/startup-auto-selection.e2e.ts > web e2e: startup auto-selection > restores the recent Workspace as a browser draft without opening a blank Session
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+
+apps/web/tests/steering.e2e.ts > web e2e: empty-draft Cmd+Enter steers the whole queue > queues two messages, then flushes both with an empty-draft Cmd+Enter
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+
+apps/web/tests/submission-echo.e2e.ts > paints the submission echo on the send keystroke and swaps it for the durable node
+Error: submission echo missing on the send keystroke
+
+apps/web/tests/trajectory-image-display.expected.e2e.ts > renders durable record images in the Trajectory details panel from the shared cache
+TestingLibraryElementError: Found multiple elements with the role "tabpanel"
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > adds two workspaces through the dialog, each on a folder it created
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > renames a workspace over the wire with a duplicate-name pre-check
+AssertionError: expected +0 to be 1 // Object.is equality
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > deletes only the Workspace registration and keeps its current Session, folder, and log
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > reuses a deleted title for a different new directory without any transient error surface
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > switches to the flat "In one list" view and persists the preference
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > matches the directory-browser dialog aria golden at a staged directory
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > walks the panes with the typed path: deeper past a separator, back up on erase, whole on a miss
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > shows the session hover card after a dwell on the row
+Error: Test timed out in 60000ms.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > keeps an open row menu up while the pointer moves between trigger and list
+Error: Test timed out in 60000ms.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > archives the seeded session from its row menu, hiding it durably across reload
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > opens folders with identical basenames as distinct workspaces
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+Test Files  22 failed | 75 passed | 1 skipped (98)
+Tests  41 failed | 283 passed | 37 skipped (361)
+Start at  14:41:57
+Duration  1138.23s (transform 1.92s, setup 0ms, import 27.74s, tests 1101.17s, environment 2.55s)

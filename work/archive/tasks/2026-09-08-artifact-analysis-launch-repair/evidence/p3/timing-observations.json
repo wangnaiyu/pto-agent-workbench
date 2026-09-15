@@ -1,0 +1,682 @@
+[
+  {
+    "iteration": 0,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366210868,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366210867,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 1,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366212027,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366212026,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366213176,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366213175,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366214336,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366214335,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 4,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366215492,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366215491,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 5,
+    "aria": [
+      "- button \"1 turns 1 steps\":",
+      "  - text: 1 turns 1 steps"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366216576,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366216576,
+        "decodeMs": 0
+      }
+    ]
+  },
+  {
+    "iteration": 6,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366217687,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366217686,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 7,
+    "aria": [
+      "- button \"1 turns 1 steps\":",
+      "  - text: 1 turns 1 steps"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366218806,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366218806,
+        "decodeMs": 0
+      }
+    ]
+  },
+  {
+    "iteration": 8,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366219902,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366219901,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 9,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366221035,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366221034,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 10,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366222146,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366222145,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 11,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366223244,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366223243,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 12,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366224378,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366224377,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 13,
+    "aria": [
+      "- button \"1 turns 1 steps\":",
+      "  - text: 1 turns 1 steps"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366225448,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366225448,
+        "decodeMs": 0
+      }
+    ]
+  },
+  {
+    "iteration": 14,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366226538,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366226537,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 15,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366227622,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366227621,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 16,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366228753,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366228752,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 17,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366229882,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366229881,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 18,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366231033,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366231032,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 19,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366232181,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366232180,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 20,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366233310,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366233309,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 21,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366234401,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366234400,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 22,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366235536,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366235535,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 23,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366236617,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366236616,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 24,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366237735,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366237734,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 25,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366238887,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366238886,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 26,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366240003,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366240002,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 27,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366241153,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366241152,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 28,
+    "aria": [
+      "- button \"1 turns 1 steps\":",
+      "  - text: 1 turns 1 steps"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366242269,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366242269,
+        "decodeMs": 0
+      }
+    ]
+  },
+  {
+    "iteration": 29,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366243367,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366243366,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 30,
+    "aria": [
+      "- button \"1 turns 1 steps\":",
+      "  - text: 1 turns 1 steps"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366244513,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366244513,
+        "decodeMs": 0
+      }
+    ]
+  },
+  {
+    "iteration": 31,
+    "aria": [
+      "- button \"1 turns 1 steps\":",
+      "  - text: 1 turns 1 steps"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366245611,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366245611,
+        "decodeMs": 0
+      }
+    ]
+  },
+  {
+    "iteration": 32,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366246682,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366246681,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 33,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366247791,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366247790,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 34,
+    "aria": [
+      "- button \"1 turns 1 steps\":",
+      "  - text: 1 turns 1 steps"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366248897,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366248897,
+        "decodeMs": 0
+      }
+    ]
+  },
+  {
+    "iteration": 35,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366250010,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366250009,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 36,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366251131,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366251130,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 37,
+    "aria": [
+      "- button \"1 turns 1 steps\":",
+      "  - text: 1 turns 1 steps"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366252252,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366252252,
+        "decodeMs": 0
+      }
+    ]
+  },
+  {
+    "iteration": 38,
+    "aria": [
+      "- button \"1 turns 1 steps \u00b7 {{throughput}} tok/s\":",
+      "  - text: 1 turns 1 steps{{throughput}} tok/s"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366253385,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366253384,
+        "decodeMs": 1
+      }
+    ]
+  },
+  {
+    "iteration": 39,
+    "aria": [
+      "- button \"1 turns 1 steps\":",
+      "  - text: 1 turns 1 steps"
+    ],
+    "messages": [
+      {
+        "seq": 13,
+        "time": 1789366254552,
+        "turn": 1,
+        "step": 1,
+        "firstTokenTime": 1789366254552,
+        "decodeMs": 0
+      }
+    ]
+  }
+]

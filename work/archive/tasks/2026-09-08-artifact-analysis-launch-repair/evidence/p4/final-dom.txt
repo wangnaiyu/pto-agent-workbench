@@ -1,0 +1,241 @@
+- button "New session":
+  - generic: PTO Agent Workbench
+  - generic: DSH
+- button "Collapse sidebar":
+- tablist "Sidebar view":
+  - tab "Sessions" [selected]
+  - tab "Run Records"
+- generic: Workspaces
+- button "New Session":
+- button "Search sessions":
+- textbox "Search sessions..."
+- button "View options":
+- button "Add workspace":
+- tabpanel "Sessions":
+  - tree "Sessions":
+    - treeitem "workspace" [expanded]:
+      - generic: workspace
+    - treeitem "P0 local mock completed. Tool output, if present, is recorded separately. 3min" [selected]:
+      - generic: P0 local mock completed. Tool output, if present, is recorded separately.
+      - generic: 3min
+    - treeitem "Ungrouped":
+      - generic: Ungrouped
+- button "Settings":
+  - generic: Settings
+- banner:
+  - navigation "Session hierarchy":
+    - button "P0 local mock completed. Tool output, if present, is recorded separately." [disabled]
+  - generic "Full coding agent with file editing, shell, file and web search, skills, planning, goals, subagents, and workflows.":
+    - text: Standard mode
+  - button "Open workspace in Finder":
+  - button "Choose an app to open in":
+  - button "Session log":
+    - generic: Session log
+  - button "Open the sidebar":
+  - tablist:
+    - tab "Chat"
+    - tab "Trajectory"
+    - tab "Experiments" [selected]
+- region "PTO experiments":
+  - heading "PTO experiments" [level=2]
+  - paragraph: Durable experiment records in this Session Workspace.
+  - button "Refresh"
+  - generic: Showing 14 of 14
+  - list:
+    - code: pto-exp-e6f694f7-e57c-43db-94a4-a81d416ad00b
+    - generic: Planned
+    - paragraph: "P4 durable planned layout fixture 12: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_"
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-12-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.145Z
+    - button "Execute"
+    - code: pto-exp-e893f227-9a5c-4f61-94ca-e7ab0816ab5b
+    - generic: Planned
+    - paragraph: "P4 durable planned layout fixture 11: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_"
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-11-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.133Z
+    - button "Execute"
+    - code: pto-exp-98fbb246-cd9c-48bd-942b-a9846e95c6b5
+    - generic: Planned
+    - paragraph: "P4 durable planned layout fixture 10: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_"
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-10-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.122Z
+    - button "Execute"
+    - code: pto-exp-27d2e242-5f93-4df8-b572-4c0320a0f88a
+    - generic: Planned
+    - paragraph: "P4 durable planned layout fixture 9: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_"
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-9-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.110Z
+    - button "Execute"
+    - code: pto-exp-962deeaa-2a17-4763-b50a-d5dcfe2572f6
+    - generic: Planned
+    - paragraph: "P4 durable planned layout fixture 8: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_"
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-8-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.100Z
+    - button "Execute"
+    - code: pto-exp-da491895-e8f7-4ae7-80b7-3698681bf595
+    - generic: Planned
+    - paragraph: "P4 durable planned layout fixture 7: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_"
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-7-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.089Z
+    - button "Execute"
+    - code: pto-exp-5ee42909-bed6-49d6-9ad7-3407a5647919
+    - generic: Planned
+    - paragraph: "P4 durable planned layout fixture 6: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_"
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-6-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.079Z
+    - button "Execute"
+    - code: pto-exp-d0d35b5a-4024-44f3-99bd-0d49a360a773
+    - generic: Planned
+    - paragraph: "P4 durable planned layout fixture 5: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_"
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-5-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.068Z
+    - button "Execute"
+    - code: pto-exp-d902c669-6441-4af1-a6db-57fc4a31437b
+    - generic: Planned
+    - paragraph: "P4 durable planned layout fixture 4: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_"
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-4-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.058Z
+    - button "Execute"
+    - code: pto-exp-6a938115-877b-412d-94ff-82f894405a5e
+    - generic: Planned
+    - paragraph: "P4 durable planned layout fixture 3: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_"
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-3-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.046Z
+    - button "Execute"
+    - code: pto-exp-06a14ff4-0362-429d-8df1-1173fb2eb8b7
+    - generic: Planned
+    - paragraph: "P4 durable planned layout fixture 2: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_"
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-2-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.034Z
+    - button "Execute"
+    - code: pto-exp-4a32e23a-2577-44c5-a5ea-d1da453c59b7
+    - generic: Planned
+    - paragraph: "P4 durable planned layout fixture 1: bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_bounded_change_without_execution_"
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-1-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.003Z
+    - button "Execute"
+    - code: P4-completed-PRESENTATION-FIXTURE-long_id_long_id_long_id_long_id_long_id_long_id_long_id_long_id_long_id_long_id_
+    - generic: Completed
+    - paragraph: P4 completed PRESENTATION FIXTURE; no experiment executed. long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-12-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - time: Updated 2026-09-14T06:21:59.145Z
+    - code: P4-failed-PRESENTATION-FIXTURE-long_id_long_id_long_id_long_id_long_id_long_id_long_id_long_id_long_id_long_id_
+    - generic: Failed
+    - paragraph: P4 failed PRESENTATION FIXTURE; no experiment executed. long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_long_change_
+    - term: Baseline
+    - definition: baseline-with-a-long-recognized-fixture-name
+    - term: Candidate
+    - definition: candidate-12-with-a-long-output-directory-name
+    - term: Metric
+    - definition: No metric yet
+    - term: Revision
+    - definition: "0"
+    - paragraph: "P4 synthetic error display: long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_long_failure_detail_"
+    - time: Updated 2026-09-14T06:21:59.145Z
+- textbox "Message or run a task, / commands, @ files or sessions" [active]:
+  - paragraph: P4 unsent layout draft. P4 unsent layout draft. P4 unsent layout draft. P4 unsent layout draft. P4 unsent layout draft. P4 unsent layout draft. P4 unsent layout draft. P4 unsent layout draft. P4 unsent layout draft. P4 unsent layout draft.
+- button "Commands":
+- button "Add attachment":
+- 'button "Access mode, current: Workspace Write"':
+  - generic: Workspace Write
+- button "Select model, current DeepSeek-V4-Flash, reasoning effort High":
+  - generic: DeepSeek-V4-Flash
+  - generic: High
+- button "0% of context used":
+- button "Send message":
+- button "2 turns 2 steps · 667 tok/s":
+  - generic: 2 turns 2 steps·667 tok/s
+- button "4 tok · Cache hit 0%":
+  - generic: 4 tok·Cache hit 0%
+- generic: Start

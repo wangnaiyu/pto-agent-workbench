@@ -1,0 +1,297 @@
+[
+  {
+    "failure": "apps/web/tests/agent-team-panel.e2e.ts > web e2e: Agent Teams panel",
+    "candidate": "Error: connected Team workspace did not create an Agent",
+    "baseline": "Error: connected Team workspace did not create an Agent",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock",
+    "candidate": "Error: llm-replay: fixture not fully consumed \u2014 1 recorded script(s) never bound to a live session; the scenario drove fewer model calls than recorded",
+    "baseline": "Error: llm-replay: fixture not fully consumed \u2014 1 recorded script(s) never bound to a live session; the scenario drove fewer model calls than recorded",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly",
+    "candidate": "Error: llm-replay: fixture not fully consumed \u2014 1 recorded script(s) never bound to a live session; the scenario drove fewer model calls than recorded",
+    "baseline": "Error: llm-replay: fixture not fully consumed \u2014 1 recorded script(s) never bound to a live session; the scenario drove fewer model calls than recorded",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/question-composer.e2e.ts > web e2e: resident question composer round trip",
+    "candidate": "Error: llm-replay: fixture not fully consumed \u2014 session session-d08aec83-ab4a-4594-9285-e3a56e30d216 consumed 1/2 recorded call(s); the scenario drove fewer model calls than recorded",
+    "baseline": "Error: llm-replay: fixture not fully consumed \u2014 session session-e0e0db49-4fd0-49a9-942a-4aa055ef7b20 consumed 1/2 recorded call(s); the scenario drove fewer model calls than recorded",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/reference-composer.e2e.ts > web e2e: file and session references through the real host",
+    "candidate": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "baseline": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/sidebar-right.e2e.ts > web e2e: shipped right Sidebar > with a settled session",
+    "candidate": "Error: connected workspace did not create an Agent",
+    "baseline": "Error: connected workspace did not create an Agent",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/steering.e2e.ts > web e2e: empty-draft Cmd+Enter steers the whole queue",
+    "candidate": "Error: llm-replay: fixture not fully consumed \u2014 session session-5036f99d-bfcf-4d56-9169-0556f36b2a5a consumed 1/2 recorded call(s); the scenario drove fewer model calls than recorded",
+    "baseline": "Error: llm-replay: fixture not fully consumed \u2014 session session-ca6d3b9a-12a8-45d3-817c-6e43a96b08ad consumed 1/2 recorded call(s); the scenario drove fewer model calls than recorded",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/workspace-new-session-folding.e2e.ts > web e2e: blank New Session folding quota",
+    "candidate": "TimeoutError: locator.waitFor: Timeout 15000ms exceeded.",
+    "baseline": "TimeoutError: locator.waitFor: Timeout 15000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/command-image-envelope.expected.e2e.ts > refuses an image-carrying submit to a non-declaring command and keeps draft and images",
+    "candidate": "Error: composer refusal banner missing",
+    "baseline": "Error: composer refusal banner missing",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > drives the recorded prompt to a settled turn (all modes)",
+    "candidate": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "baseline": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > records feedback locally and acknowledges its session and anonymous user ids",
+    "candidate": "TimeoutError: locator.waitFor: Timeout 15000ms exceeded.",
+    "baseline": "TimeoutError: locator.waitFor: Timeout 15000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > does not release command tails, provider changes, or browser reloads",
+    "candidate": "SessionPersistenceNotFoundError: session \"undefined\" not found",
+    "baseline": "SessionPersistenceNotFoundError: session \"undefined\" not found",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > persists text, ratings, notes, and retractions in the canonical session",
+    "candidate": "AssertionError: expected +0 to be 2 // Object.is equality",
+    "baseline": "AssertionError: expected +0 to be 2 // Object.is equality",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/feedback-release.e2e.ts > web e2e: feedback release for feedback-mock > releases headerless feedback without capturing another session\u2019s provider-change tail",
+    "candidate": "AssertionError: expected [ [ \u2026(3) ], [ \u2026(3) ], [ \u2026(3) ], \u2026(2) ] to have a length of +0 but got 5",
+    "baseline": "AssertionError: expected [ [ \u2026(3) ], [ \u2026(3) ], [ \u2026(3) ], \u2026(2) ] to have a length of +0 but got 5",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > uploads on pick, gates send on the staged receipt, and settles the turn (all modes)",
+    "candidate": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "baseline": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > persists the file block and reads the stored copy with the real read tool",
+    "candidate": "Error: the replayed turn recorded no user message",
+    "baseline": "Error: the replayed turn recorded no user message",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > renders the durable file card beside the settled answer",
+    "candidate": "AssertionError: expected 0 to be greater than or equal to 1",
+    "baseline": "AssertionError: expected 0 to be greater than or equal to 1",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > keeps a mixed durable message in one ordered wrapping attachment flow",
+    "candidate": "AssertionError: expected +0 to be 1 // Object.is equality",
+    "baseline": "AssertionError: expected +0 to be 1 // Object.is equality",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/file-upload-round.e2e.ts > web e2e: generic file upload through the real assembly > marks the durable file in Trajectory without copying the Chat card",
+    "candidate": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "baseline": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/github-ready-review.e2e.ts > web e2e: GitHub ready-for-review > isolates ingress and creates a browsable Workspace Session",
+    "candidate": "AssertionError: expected '- tree \"Sessions\":\\n  - treeitem \"{{w\u2026' to be '- tree \"Sessions\":\\n  - treeitem \"{{w\u2026' // Object.is equality",
+    "baseline": "AssertionError: expected '- tree \"Sessions\":\\n  - treeitem \"{{w\u2026' to be '- tree \"Sessions\":\\n  - treeitem \"{{w\u2026' // Object.is equality",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/goal-bar.e2e.ts > web e2e: goal bar clear convergence > renders one active goal and clears it without exposing a stale error",
+    "candidate": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.",
+    "baseline": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/hmr-live.e2e.ts > hot-reloads a real client-plugin source edit without refreshing the page",
+    "candidate": "Error: pnpm run dev:web not ready:",
+    "baseline": "Error: pnpm run dev:web not ready:",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/image-display.expected.e2e.ts > accepts a whole-page drop under the limits-labeled overlay and refuses an over-limit batch at intake",
+    "candidate": "TestingLibraryElementError: Found multiple elements with the role \"status\"",
+    "baseline": "TestingLibraryElementError: Found multiple elements with the role \"status\"",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/lifecycle-chrome.e2e.ts > web e2e: lifecycle & chrome (workspace flow / reload / dark mode) > localizes slash-command descriptions from the browser language",
+    "candidate": "AssertionError: expected '- listbox \"\u89e6\u53d1\u5019\u9009\u5efa\u8bae\":\\n  - option \"expo\u2026' to be '- listbox \"\u89e6\u53d1\u5019\u9009\u5efa\u8bae\":\\n  - text: \u6307\u4ee4\\n  \u2026' // Object.is equality",
+    "baseline": "AssertionError: expected '- listbox \"\u89e6\u53d1\u5019\u9009\u5efa\u8bae\":\\n  - option \"expo\u2026' to be '- listbox \"\u89e6\u53d1\u5019\u9009\u5efa\u8bae\":\\n  - text: \u6307\u4ee4\\n  \u2026' // Object.is equality",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/preview-boot.e2e.ts > boots the packed worker deployment to an interactive page",
+    "candidate": "AssertionError: expected +0 to be 1 // Object.is equality",
+    "baseline": "AssertionError: expected +0 to be 1 // Object.is equality",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/question-composer.e2e.ts > web e2e: resident question composer round trip > asks through the composer, answers, and completes with the answer logged",
+    "candidate": "TimeoutError: locator.waitFor: Timeout 15000ms exceeded.",
+    "baseline": "TimeoutError: locator.waitFor: Timeout 15000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/question-composer.e2e.ts > web e2e: resident question composer round trip > grows the optionless answer to the same cap",
+    "candidate": "AssertionError: expected undefined to be defined",
+    "baseline": "AssertionError: expected undefined to be defined",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > drives the recorded prompt to a settled turn (all modes)",
+    "candidate": "AssertionError: expected 'echo: (missing)\\ncomposer: \"\"\\nconten\u2026' to be 'echo: Use the bash tool to run exactl\u2026' // Object.is equality",
+    "baseline": "AssertionError: expected 'echo: (missing)\\ncomposer: \"\"\\nconten\u2026' to be 'echo: Use the bash tool to run exactl\u2026' // Object.is equality",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > ends the system prompt with the source checkout, Web surface, and session cwd",
+    "candidate": "Error: the drive turn did not publish a session id",
+    "baseline": "Error: the drive turn did not publish a session id",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > exposes the assembled Web URL to the real bash tool",
+    "candidate": "Error: the drive turn did not publish a session id",
+    "baseline": "Error: the drive turn did not publish a session id",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/skill-invocation-policy.e2e.ts > web e2e: skill invocation policy through the real host > renders every user-invocable skill and marks the user-only entry",
+    "candidate": "AssertionError: expected +0 to be 1 // Object.is equality",
+    "baseline": "AssertionError: expected +0 to be 1 // Object.is equality",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/skill-user-invoke.e2e.ts > web e2e: user-explicit skill invocation through the composer > rejects a vanished first-send Skill, then runs the corrected canonical gesture",
+    "candidate": "TimeoutError: locator.waitFor: Timeout 15000ms exceeded.",
+    "baseline": "TimeoutError: locator.waitFor: Timeout 15000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/startup-auto-selection.e2e.ts > web e2e: startup auto-selection > keeps the resident Hero and composer nodes when the first Workspace session appears",
+    "candidate": "AssertionError: expected +0 to be 1 // Object.is equality",
+    "baseline": "AssertionError: expected +0 to be 1 // Object.is equality",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/startup-auto-selection.e2e.ts > web e2e: startup auto-selection > restores the recent Workspace as a browser draft without opening a blank Session",
+    "candidate": "TimeoutError: locator.waitFor: Timeout 15000ms exceeded.",
+    "baseline": "TimeoutError: locator.waitFor: Timeout 15000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/steering.e2e.ts > web e2e: empty-draft Cmd+Enter steers the whole queue > queues two messages, then flushes both with an empty-draft Cmd+Enter",
+    "candidate": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.",
+    "baseline": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/submission-echo.e2e.ts > paints the submission echo on the send keystroke and swaps it for the durable node",
+    "candidate": "Error: submission echo missing on the send keystroke",
+    "baseline": "Error: submission echo missing on the send keystroke",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/trajectory-image-display.expected.e2e.ts > renders durable record images in the Trajectory details panel from the shared cache",
+    "candidate": "TestingLibraryElementError: Found multiple elements with the role \"tabpanel\"",
+    "baseline": "TestingLibraryElementError: Found multiple elements with the role \"tabpanel\"",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/turn-tail-actions.e2e.ts > web e2e: assistant IconActions wait for the turn to end > withholds the footer while the turn runs and grants it at turn/end",
+    "candidate": "AssertionError: expected '- banner:\\n  - navigation \"Session hi\u2026' to be '- banner:\\n  - navigation \"Session hi\u2026' // Object.is equality",
+    "baseline": "AssertionError: expected '- banner:\\n  - navigation \"Session hi\u2026' to be '- banner:\\n  - navigation \"Session hi\u2026' // Object.is equality",
+    "sameError": true,
+    "evidence": "timing-resolution.json; 9 baseline failures with exactly identical golden diff"
+  },
+  {
+    "failure": "apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > adds two workspaces through the dialog, each on a folder it created",
+    "candidate": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.",
+    "baseline": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > renames a workspace over the wire with a duplicate-name pre-check",
+    "candidate": "AssertionError: expected +0 to be 1 // Object.is equality",
+    "baseline": "AssertionError: expected +0 to be 1 // Object.is equality",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > deletes only the Workspace registration and keeps its current Session, folder, and log",
+    "candidate": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "baseline": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > reuses a deleted title for a different new directory without any transient error surface",
+    "candidate": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "baseline": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > switches to the flat \"In one list\" view and persists the preference",
+    "candidate": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "baseline": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > matches the directory-browser dialog aria golden at a staged directory",
+    "candidate": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "baseline": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > walks the panes with the typed path: deeper past a separator, back up on erase, whole on a miss",
+    "candidate": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "baseline": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > shows the session hover card after a dwell on the row",
+    "candidate": "Error: Test timed out in 60000ms.",
+    "baseline": "Error: Test timed out in 60000ms.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > keeps an open row menu up while the pointer moves between trigger and list",
+    "candidate": "Error: Test timed out in 60000ms.",
+    "baseline": "Error: Test timed out in 60000ms.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > archives the seeded session from its row menu, hiding it durably across reload",
+    "candidate": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "baseline": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "sameError": true
+  },
+  {
+    "failure": "apps/web/tests/workspace-management.e2e.ts > web e2e: workspace management (create / rename / flat view / hover affordances) > opens folders with identical basenames as distinct workspaces",
+    "candidate": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "baseline": "TimeoutError: locator.click: Timeout 30000ms exceeded.",
+    "sameError": true
+  }
+]

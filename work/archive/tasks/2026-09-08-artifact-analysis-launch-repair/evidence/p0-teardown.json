@@ -1,0 +1,47 @@
+{
+  "at": "2026-09-11T03:05:29.166420+00:00",
+  "signals": [
+    {
+      "pid": 91989,
+      "signal": "SIGINT",
+      "ownedCommand": "node /var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p0-20260911-qx3bta2t/mock.mjs"
+    },
+    {
+      "pid": 91999,
+      "signal": "SIGINT",
+      "ownedCommand": "node /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/apps/cli/lib/bin.js web --patch /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/patches/cordis.patch.yml --patch /var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p0-20260911-qx3bta2t/common.patch.yml --no-open --host 127.0.0.1 --port 0"
+    },
+    {
+      "pid": 92126,
+      "signal": "SIGINT",
+      "ownedCommand": "node /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/apps/cli/lib/bin.js web --patch /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/patches/cordis.patch.yml --patch /var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p0-20260911-qx3bta2t/common.patch.yml --patch /var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p0-20260911-qx3bta2t/provider.patch.yml --no-open --host 127.0.0.1 --port 0"
+    },
+    {
+      "pid": 92211,
+      "signal": "SIGINT",
+      "ownedCommand": "node /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/apps/cli/lib/bin.js web --patch /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/patches/cordis.patch.yml --patch /var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p0-20260911-qx3bta2t/common.patch.yml --patch /var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p0-20260911-qx3bta2t/provider.patch.yml --no-open --host 127.0.0.1 --port 0"
+    },
+    {
+      "pid": 92351,
+      "signal": "SIGINT",
+      "ownedCommand": "node /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/harness/apps/cli/lib/bin.js web --patch /Users/wny/Documents/1 项目 Projects/pto-agent-workbench/patches/cordis.patch.yml --patch /var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p0-20260911-qx3bta2t/layout.patch.yml --patch /var/folders/rc/hcr1gqj114lcnkc2tgj4z8n80000gn/T/pto-repair-p0-20260911-qx3bta2t/provider.patch.yml --no-open --host 127.0.0.1 --port 0"
+    }
+  ],
+  "exitVerified": true,
+  "exitCodes": {
+    "mock": 0,
+    "a": 130,
+    "b": 130,
+    "c": 130,
+    "layout": 130
+  },
+  "reason": "Intentional SIGINT after completed observations; exec sessions awaited, not a timed-out test.",
+  "browserTabsClosed": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "viewportReset": true,
+  "tempRootRetained": true
+}

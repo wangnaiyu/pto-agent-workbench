@@ -1,0 +1,393 @@
+[
+  {
+    "seq": 48,
+    "at": "2026-09-14T02:45:51.185Z",
+    "event": "admitAnalysis.request",
+    "call": 47,
+    "args": [
+      {
+        "requestId": "pto-analysis-6a5efd36-d09c-4608-ad16-9b0bdd845906",
+        "sessionId": "session-b9055d3e-be7c-4900-9a23-7930e78d9e50",
+        "recordId": "pto-record-745f6570-398e-4a10-8c23-a31d5b272033",
+        "revision": "inventory-v1-557be9e7",
+        "actionId": "analyze.dependency-redundancy",
+        "requestedSkill": {
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+        }
+      }
+    ],
+    "case": "p2"
+  },
+  {
+    "seq": 55,
+    "at": "2026-09-14T02:45:51.192Z",
+    "event": "admitAnalysis.result",
+    "call": 47,
+    "value": {
+      "requestId": "pto-analysis-6a5efd36-d09c-4608-ad16-9b0bdd845906",
+      "sessionId": "session-b9055d3e-be7c-4900-9a23-7930e78d9e50",
+      "recordId": "pto-record-745f6570-398e-4a10-8c23-a31d5b272033",
+      "recordRevision": "inventory-v1-557be9e7",
+      "actionId": "analyze.dependency-redundancy",
+      "artifactRefs": [
+        "deps.json"
+      ],
+      "skill": {
+        "name": "dependency-redundancy",
+        "provider": "pypto-official-af1d7a016ce5",
+        "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+      },
+      "tool": {
+        "name": "pto_dependency_redundancy",
+        "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+      }
+    },
+    "case": "p2"
+  },
+  {
+    "seq": 64,
+    "at": "2026-09-14T02:45:51.509Z",
+    "event": "runDependencyAnalysis.result",
+    "call": 59,
+    "value": {
+      "receipt": {
+        "requestId": "pto-analysis-6a5efd36-d09c-4608-ad16-9b0bdd845906",
+        "sessionId": "session-b9055d3e-be7c-4900-9a23-7930e78d9e50",
+        "recordId": "pto-record-745f6570-398e-4a10-8c23-a31d5b272033",
+        "recordRevision": "inventory-v1-557be9e7",
+        "actionId": "analyze.dependency-redundancy",
+        "artifactRefs": [
+          "deps.json"
+        ],
+        "skill": {
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+        },
+        "tool": {
+          "name": "pto_dependency_redundancy",
+          "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+        }
+      },
+      "input": {
+        "artifactRef": "deps.json",
+        "version": "16777234:23793144:412557:1784536010000000000:1784791641560721445"
+      },
+      "modes": [
+        {
+          "mode": "reduced",
+          "headline": "Transitive reduction: removed 1 redundant edge(s) of 1222 (1221 kept)",
+          "redundantEdges": [
+            "(1, 1) -> (3, 287)"
+          ],
+          "cycleWarning": false,
+          "stderr": "",
+          "outputRef": "<isolated-home>/p2/pto-analysis/dependency-redundancy-gvbK1R/reduced.txt"
+        },
+        {
+          "mode": "reduced_dataflow",
+          "headline": "Dataflow-verified transitive reduction: removed 1 redundant edge(s) of 1222 (1221 kept)",
+          "redundantEdges": [
+            "(1, 1) -> (3, 287)"
+          ],
+          "cycleWarning": false,
+          "stderr": "",
+          "outputRef": "<isolated-home>/p2/pto-analysis/dependency-redundancy-gvbK1R/reduced_dataflow.txt"
+        }
+      ],
+      "limitations": [
+        "one captured graph and one topology",
+        "dependency removal does not by itself prove a timing improvement"
+      ]
+    },
+    "case": "p2"
+  },
+  {
+    "seq": 102,
+    "at": "2026-09-14T02:46:45.661Z",
+    "event": "admitAnalysis.request",
+    "call": 101,
+    "args": [
+      {
+        "requestId": "pto-analysis-6040d5e8-7490-4ee9-83d9-ae2934f3a8d2",
+        "sessionId": "session-fbf538e3-b6e0-4c0f-a2aa-34fa3965a743",
+        "recordId": "pto-record-a75a04bf-40da-4e35-a974-b529166d81dc",
+        "revision": "inventory-v1-557be9e7",
+        "actionId": "analyze.dependency-redundancy",
+        "requestedSkill": {
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+        }
+      }
+    ],
+    "case": "p2"
+  },
+  {
+    "seq": 109,
+    "at": "2026-09-14T02:46:45.670Z",
+    "event": "admitAnalysis.result",
+    "call": 101,
+    "value": {
+      "requestId": "pto-analysis-6040d5e8-7490-4ee9-83d9-ae2934f3a8d2",
+      "sessionId": "session-fbf538e3-b6e0-4c0f-a2aa-34fa3965a743",
+      "recordId": "pto-record-a75a04bf-40da-4e35-a974-b529166d81dc",
+      "recordRevision": "inventory-v1-557be9e7",
+      "actionId": "analyze.dependency-redundancy",
+      "artifactRefs": [
+        "deps.json"
+      ],
+      "skill": {
+        "name": "dependency-redundancy",
+        "provider": "pypto-official-af1d7a016ce5",
+        "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+      },
+      "tool": {
+        "name": "pto_dependency_redundancy",
+        "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+      }
+    },
+    "case": "p2"
+  },
+  {
+    "seq": 114,
+    "at": "2026-09-14T02:46:52.914Z",
+    "event": "admitAnalysis.request",
+    "call": 113,
+    "args": [
+      {
+        "requestId": "pto-analysis-6040d5e8-7490-4ee9-83d9-ae2934f3a8d2",
+        "sessionId": "session-fbf538e3-b6e0-4c0f-a2aa-34fa3965a743",
+        "recordId": "pto-record-a75a04bf-40da-4e35-a974-b529166d81dc",
+        "revision": "inventory-v1-557be9e7",
+        "actionId": "analyze.dependency-redundancy",
+        "requestedSkill": {
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+        }
+      }
+    ],
+    "case": "p2"
+  },
+  {
+    "seq": 115,
+    "at": "2026-09-14T02:46:52.915Z",
+    "event": "admitAnalysis.result",
+    "call": 113,
+    "value": {
+      "requestId": "pto-analysis-6040d5e8-7490-4ee9-83d9-ae2934f3a8d2",
+      "sessionId": "session-fbf538e3-b6e0-4c0f-a2aa-34fa3965a743",
+      "recordId": "pto-record-a75a04bf-40da-4e35-a974-b529166d81dc",
+      "recordRevision": "inventory-v1-557be9e7",
+      "actionId": "analyze.dependency-redundancy",
+      "artifactRefs": [
+        "deps.json"
+      ],
+      "skill": {
+        "name": "dependency-redundancy",
+        "provider": "pypto-official-af1d7a016ce5",
+        "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+      },
+      "tool": {
+        "name": "pto_dependency_redundancy",
+        "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+      }
+    },
+    "case": "p2"
+  },
+  {
+    "seq": 124,
+    "at": "2026-09-14T02:46:53.119Z",
+    "event": "runDependencyAnalysis.result",
+    "call": 119,
+    "value": {
+      "receipt": {
+        "requestId": "pto-analysis-6040d5e8-7490-4ee9-83d9-ae2934f3a8d2",
+        "sessionId": "session-fbf538e3-b6e0-4c0f-a2aa-34fa3965a743",
+        "recordId": "pto-record-a75a04bf-40da-4e35-a974-b529166d81dc",
+        "recordRevision": "inventory-v1-557be9e7",
+        "actionId": "analyze.dependency-redundancy",
+        "artifactRefs": [
+          "deps.json"
+        ],
+        "skill": {
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+        },
+        "tool": {
+          "name": "pto_dependency_redundancy",
+          "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+        }
+      },
+      "input": {
+        "artifactRef": "deps.json",
+        "version": "16777234:23793144:412557:1784536010000000000:1784791641560721445"
+      },
+      "modes": [
+        {
+          "mode": "reduced",
+          "headline": "Transitive reduction: removed 1 redundant edge(s) of 1222 (1221 kept)",
+          "redundantEdges": [
+            "(1, 1) -> (3, 287)"
+          ],
+          "cycleWarning": false,
+          "stderr": "",
+          "outputRef": "<isolated-home>/p2/pto-analysis/dependency-redundancy-ZmDz6Z/reduced.txt"
+        },
+        {
+          "mode": "reduced_dataflow",
+          "headline": "Dataflow-verified transitive reduction: removed 1 redundant edge(s) of 1222 (1221 kept)",
+          "redundantEdges": [
+            "(1, 1) -> (3, 287)"
+          ],
+          "cycleWarning": false,
+          "stderr": "",
+          "outputRef": "<isolated-home>/p2/pto-analysis/dependency-redundancy-ZmDz6Z/reduced_dataflow.txt"
+        }
+      ],
+      "limitations": [
+        "one captured graph and one topology",
+        "dependency removal does not by itself prove a timing improvement"
+      ]
+    },
+    "case": "p2"
+  },
+  {
+    "seq": 42,
+    "at": "2026-09-14T02:48:49.157Z",
+    "event": "admitAnalysis.request",
+    "call": 41,
+    "args": [
+      {
+        "requestId": "pto-analysis-6040d5e8-7490-4ee9-83d9-ae2934f3a8d2",
+        "sessionId": "session-fbf538e3-b6e0-4c0f-a2aa-34fa3965a743",
+        "recordId": "pto-record-a75a04bf-40da-4e35-a974-b529166d81dc",
+        "revision": "inventory-v1-557be9e7",
+        "actionId": "analyze.dependency-redundancy",
+        "requestedSkill": {
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+        }
+      }
+    ],
+    "case": "p2"
+  },
+  {
+    "seq": 43,
+    "at": "2026-09-14T02:48:49.158Z",
+    "event": "admitAnalysis.error",
+    "call": 41,
+    "message": "PTO data record 'pto-record-a75a04bf-40da-4e35-a974-b529166d81dc' is not registered on this Host",
+    "case": "p2"
+  },
+  {
+    "seq": 48,
+    "at": "2026-09-14T03:22:50.704Z",
+    "event": "admitAnalysis.request",
+    "call": 47,
+    "args": [
+      {
+        "requestId": "pto-analysis-58a574ef-9cad-489d-b496-77d6a1dc6af4",
+        "sessionId": "session-5077434e-a71c-456b-819d-334c41ae0cd0",
+        "recordId": "pto-record-e29712ac-c94f-4459-9b34-b1797a3d7557",
+        "revision": "inventory-v1-557be9e7",
+        "actionId": "analyze.dependency-redundancy",
+        "requestedSkill": {
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+        }
+      }
+    ],
+    "case": "p2-final"
+  },
+  {
+    "seq": 55,
+    "at": "2026-09-14T03:22:50.713Z",
+    "event": "admitAnalysis.result",
+    "call": 47,
+    "value": {
+      "requestId": "pto-analysis-58a574ef-9cad-489d-b496-77d6a1dc6af4",
+      "sessionId": "session-5077434e-a71c-456b-819d-334c41ae0cd0",
+      "recordId": "pto-record-e29712ac-c94f-4459-9b34-b1797a3d7557",
+      "recordRevision": "inventory-v1-557be9e7",
+      "actionId": "analyze.dependency-redundancy",
+      "artifactRefs": [
+        "deps.json"
+      ],
+      "skill": {
+        "name": "dependency-redundancy",
+        "provider": "pypto-official-af1d7a016ce5",
+        "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+      },
+      "tool": {
+        "name": "pto_dependency_redundancy",
+        "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+      }
+    },
+    "case": "p2-final"
+  },
+  {
+    "seq": 64,
+    "at": "2026-09-14T03:22:50.989Z",
+    "event": "runDependencyAnalysis.result",
+    "call": 59,
+    "value": {
+      "receipt": {
+        "requestId": "pto-analysis-58a574ef-9cad-489d-b496-77d6a1dc6af4",
+        "sessionId": "session-5077434e-a71c-456b-819d-334c41ae0cd0",
+        "recordId": "pto-record-e29712ac-c94f-4459-9b34-b1797a3d7557",
+        "recordRevision": "inventory-v1-557be9e7",
+        "actionId": "analyze.dependency-redundancy",
+        "artifactRefs": [
+          "deps.json"
+        ],
+        "skill": {
+          "name": "dependency-redundancy",
+          "provider": "pypto-official-af1d7a016ce5",
+          "revision": "af1d7a016ce50ba109c4b4224580a6b758bde7da"
+        },
+        "tool": {
+          "name": "pto_dependency_redundancy",
+          "revision": "77fa0171c24a4e1c323fb29a6a86239df93edb58"
+        }
+      },
+      "input": {
+        "artifactRef": "deps.json",
+        "version": "16777234:23793144:412557:1784536010000000000:1784791641560721445"
+      },
+      "modes": [
+        {
+          "mode": "reduced",
+          "headline": "Transitive reduction: removed 1 redundant edge(s) of 1222 (1221 kept)",
+          "redundantEdges": [
+            "(1, 1) -> (3, 287)"
+          ],
+          "cycleWarning": false,
+          "stderr": "",
+          "outputRef": "<isolated-home>/p2-final/pto-analysis/dependency-redundancy-P0UegH/reduced.txt"
+        },
+        {
+          "mode": "reduced_dataflow",
+          "headline": "Dataflow-verified transitive reduction: removed 1 redundant edge(s) of 1222 (1221 kept)",
+          "redundantEdges": [
+            "(1, 1) -> (3, 287)"
+          ],
+          "cycleWarning": false,
+          "stderr": "",
+          "outputRef": "<isolated-home>/p2-final/pto-analysis/dependency-redundancy-P0UegH/reduced_dataflow.txt"
+        }
+      ],
+      "limitations": [
+        "one captured graph and one topology",
+        "dependency removal does not by itself prove a timing improvement"
+      ]
+    },
+    "case": "p2-final"
+  }
+]

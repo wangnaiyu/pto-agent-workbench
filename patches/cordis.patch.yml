@@ -22,14 +22,15 @@
 # Fixed upstream Skill bundle. The instance id is distinct from the workbench's
 # own provider, and its provider id includes the locked release revision so a
 # qualified invocation cannot silently resolve to same-named local content.
-- id: skill-filesystem-pypto-official-af1d7a016ce5
-  name: '@deepseek-ai/dsh-skill-filesystem'
-  disabled: false
-  config:
-    providerName: pypto-official-af1d7a016ce5
-    includeDefaultRoots: false
-    watch: false
-    bundledSkillDir: !!js "process.getBuiltinModule('node:path').resolve(process.env.PTO_WORKBENCH_ROOT ?? process.cwd(), 'skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills')"
+- insert:
+    - id: skill-filesystem-pypto-official-af1d7a016ce5
+      name: '@deepseek-ai/dsh-skill-filesystem'
+      disabled: false
+      config:
+        providerName: pypto-official-af1d7a016ce5
+        includeDefaultRoots: false
+        watch: false
+        bundledSkillDir: !!js "process.getBuiltinModule('node:path').resolve(process.env.PTO_WORKBENCH_ROOT ?? process.cwd(), 'skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills')"
 
 # Product origin is trusted profile metadata, not inferred from `bundled`, the
 # provider id, or a Skill name. The Client receives only the PTO label.

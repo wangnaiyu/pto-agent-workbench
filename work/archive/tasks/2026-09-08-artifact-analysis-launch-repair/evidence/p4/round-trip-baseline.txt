@@ -1,0 +1,97 @@
+native/system/packages/darwin-x64        | [WARN] Unsupported platform: wanted: {"cpu":["x64"],"os":["darwin"],"libc":["any"]} (current: {"os":"darwin","cpu":"arm64","libc":"unknown"})
+native/system/packages/linux-arm64       | [WARN] Unsupported platform: wanted: {"cpu":["arm64"],"os":["linux"],"libc":["any"]} (current: {"os":"darwin","cpu":"arm64","libc":"unknown"})
+native/system/packages/linux-x64         | [WARN] Unsupported platform: wanted: {"cpu":["x64"],"os":["linux"],"libc":["any"]} (current: {"os":"darwin","cpu":"arm64","libc":"unknown"})
+Scope: all 296 workspace projects
+[WARN] There are cyclic workspace dependencies: /private/tmp/pto-p2-baseline-check/packages/api/gateway, /private/tmp/pto-p2-baseline-check/packages/client/connection, /private/tmp/pto-p2-baseline-check/packages/api/session-controller, /private/tmp/pto-p2-baseline-check/packages/client/file-upload, /private/tmp/pto-p2-baseline-check/packages/api/remotes, /private/tmp/pto-p2-baseline-check/packages/api/workspace-controller; /private/tmp/pto-p2-baseline-check/packages/api/workspace-files, /private/tmp/pto-p2-baseline-check/packages/client/resources, /private/tmp/pto-p2-baseline-check/packages/test-support/client-runtime, /private/tmp/pto-p2-baseline-check/packages/client/ui-chat, /private/tmp/pto-p2-baseline-check/packages/client/ui-sidebar-textpreview; /private/tmp/pto-p2-baseline-check/packages/client/ui-conversation, /private/tmp/pto-p2-baseline-check/packages/client/ui-workspace; /private/tmp/pto-p2-baseline-check/packages/core/agent-loop, /private/tmp/pto-p2-baseline-check/packages/llm/llm-pi-ai, /private/tmp/pto-p2-baseline-check/packages/llm/llm-deepseek, /private/tmp/pto-p2-baseline-check/packages/session/session-log-deepseek, /private/tmp/pto-p2-baseline-check/packages/feedback/command-feedback, /private/tmp/pto-p2-baseline-check/packages/test-support/agent-loop-testkit; /private/tmp/pto-p2-baseline-check/packages/e2b/e2b, /private/tmp/pto-p2-baseline-check/packages/e2b/fs-e2b; /private/tmp/pto-p2-baseline-check/packages/sandbox/sandbox-local, /private/tmp/pto-p2-baseline-check/packages/sandbox/sandbox-windows-acl; /private/tmp/pto-p2-baseline-check/packages/subagent/subagent-spawn-in-process, /private/tmp/pto-p2-baseline-check/packages/subagent/tool-subagent; /private/tmp/pto-p2-baseline-check/vendor/cordis, /private/tmp/pto-p2-baseline-check/vendor/include
+✓ Lockfile passes supply-chain policies (verified 4d ago)
+Lockfile is up to date, resolution step is skipped
+Already up to date
+
+packages/subprocess/subprocess-local postinstall$ node scripts/ensure-spawn-helper.mjs
+packages/subprocess/subprocess-local postinstall: Done
+. postinstall$ node scripts/install-lefthook.mjs
+. postinstall: Done
+Done in 1.7s using pnpm v11.7.0
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+
+ RUN  v4.1.8 /private/tmp/pto-p2-baseline-check
+
+ ❯ apps/web/tests/replay-round-trip.e2e.ts (8 tests | 4 failed) 3917ms
+     × drives the recorded prompt to a settled turn (all modes) 134ms
+     × ends the system prompt with the source checkout, Web surface, and session cwd 0ms
+     × exposes the assembled Web URL to the real bash tool 0ms
+     × rendered the settled turn: markdown, tool row, composer restore 1412ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > drives the recorded prompt to a settled turn (all modes)
+AssertionError: expected 'echo: (missing)\ncomposer: ""\nconten…' to be 'echo: Use the bash tool to run exactl…' // Object.is equality
+
+- Expected
++ Received
+
+- echo: Use the bash tool to run exactly: echo WEB_E2E_OK. Then reply with the single word DONE and stop.
++ echo: (missing)
+  composer: ""
+  contenteditable: true
+
+
+ ❯ compareOrRefreshGolden apps/web/tests/scaffold.ts:1526:19
+    1524|     throw new Error(`missing golden ${goldenPath} — run DSH_SNAPSHOT=r…
+    1525|   }
+    1526|   expect(payload).toBe(await readFile(goldenPath, 'utf8'))
+       |                   ^
+    1527| }
+    1528|
+ ❯ apps/web/tests/replay-round-trip.e2e.ts:102:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > ends the system prompt with the source checkout, Web surface, and session cwd
+Error: the drive turn did not publish a session id
+ ❯ apps/web/tests/replay-round-trip.e2e.ts:111:47
+    109|
+    110|   it('ends the system prompt with the source checkout, Web surface, an…
+    111|     if (settledSessionId === undefined) throw new Error('the drive tur…
+       |                                               ^
+    112|     const agent = scaffold.ctx.agents.get(settledSessionId)
+    113|     if (agent === undefined) throw new Error(`the settled Web agent ${…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > exposes the assembled Web URL to the real bash tool
+Error: the drive turn did not publish a session id
+ ❯ apps/web/tests/replay-round-trip.e2e.ts:129:47
+    127|
+    128|   it('exposes the assembled Web URL to the real bash tool', async () =…
+    129|     if (settledSessionId === undefined) throw new Error('the drive tur…
+       |                                               ^
+    130|     const agent = scaffold.ctx.agents.get(settledSessionId)
+    131|     if (agent === undefined) throw new Error(`the settled Web agent ${…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  apps/web/tests/replay-round-trip.e2e.ts > web e2e: fresh round trip through the real assembly > rendered the settled turn: markdown, tool row, composer restore
+AssertionError: expected +0 to be 1 // Object.is equality
+
+- Expected
++ Received
+
+- 1
++ 0
+
+ ❯ apps/web/tests/replay-round-trip.e2e.ts:166:29
+    164|       .toBe('WEB_E2E_OK\n')
+    165|     const turnEnds = sessionEvents.filter(e => e.type === 'turn/end')
+    166|     expect(turnEnds.length).toBe(1)
+       |                             ^
+    167|     expect((turnEnds[0] as SessionEvent & { data: { reason: { kind: st…
+    168|     // Embedded stream members are the authoritative incrementality pr…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed | 4 passed (8)
+   Start at  15:10:14
+   Duration  4.74s (transform 478ms, setup 0ms, import 757ms, tests 3.92s, environment 0ms)

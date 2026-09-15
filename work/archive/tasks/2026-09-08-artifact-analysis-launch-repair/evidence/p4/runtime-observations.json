@@ -1,0 +1,36 @@
+{
+  "plannedRecords": 12,
+  "plannedCreatedAtRange": [
+    "2026-09-14T06:21:59.003Z",
+    "2026-09-14T06:21:59.145Z"
+  ],
+  "presentationFixtures": [
+    "completed",
+    "failed"
+  ],
+  "fixtureLimit": "Terminal rows are explicitly labeled DTO presentation fixtures, metric null, no actual experiment execution. Only the 12 planned records are real durable records.",
+  "restart": "After Host restart the stored Session appeared in the sidebar but Dashboard listSession refused it until a normal prompt loaded it. Same Session resumed, then all persisted planned records were visible.",
+  "sessionId": "session-8d4ae413-e761-4605-826d-76195332cbda",
+  "restartCause": "Dashboard sessionTarget uses sessions.get; listSession does not create or resume a Session. Gateway source unchanged from P3. Not changed by this CSS work.",
+  "cleanup": {
+    "oldHost": {
+      "exec": 9047,
+      "pid": 35777,
+      "exit": 0
+    },
+    "finalHost": {
+      "exec": 16190,
+      "pid": 36637,
+      "exit": 0
+    },
+    "model": {
+      "exec": 92192,
+      "pid": 35712,
+      "exit": 0
+    },
+    "tab": 4,
+    "tabClosed": true,
+    "viewportReset": true,
+    "fixtureDataRetained": true
+  }
+}

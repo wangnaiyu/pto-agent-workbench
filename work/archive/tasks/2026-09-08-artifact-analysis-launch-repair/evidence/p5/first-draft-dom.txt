@@ -1,0 +1,37 @@
+- button "New session":
+  - generic: PTO Agent Workbench
+  - generic: DSH
+- button "Collapse sidebar":
+- tablist "Sidebar view":
+  - tab "Sessions"
+  - tab "Run Records" [selected]
+- generic: Run Records
+- button "Search run records":
+- textbox "Search run records..."
+- tabpanel "Run Records":
+  - tree "Run Records":
+    - treeitem "workspace" [expanded]:
+      - generic: workspace
+    - treeitem "Ungrouped" [expanded]:
+      - generic: Ungrouped
+    - treeitem "dfx_outputs":
+      - generic: dfx_outputs
+- button "Settings":
+  - generic: Settings
+- generic: Into the Unknown
+- generic: Preview
+- button "Choose workspace":
+  - generic: default
+- button "Standard mode":
+  - generic: Standard mode
+- textbox "Describe what you want to build, / commands, @ files or sessions" [active]:
+  - paragraph:
+    - text: /skill dependency-redundancy
+    - button "deps.json":
+      - generic: deps.json
+    - text: Analyze redundant dependencies with conclusions, evidence, limitations, and recommendations.
+- button "Commands":
+- button "Add attachment":
+- 'button "Access mode, current: Workspace Write"':
+  - generic: Workspace Write
+- button "Send message":

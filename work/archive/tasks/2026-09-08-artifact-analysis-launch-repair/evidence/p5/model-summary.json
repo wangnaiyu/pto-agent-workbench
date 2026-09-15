@@ -1,0 +1,65 @@
+[
+  {
+    "request": 1,
+    "at": "2026-09-14T08:06:56.551Z",
+    "mode": "text",
+    "hasAnalysisContext": false,
+    "hasRealToolResult": false
+  },
+  {
+    "request": 2,
+    "at": "2026-09-14T08:06:56.554Z",
+    "mode": "text",
+    "hasAnalysisContext": false,
+    "hasRealToolResult": false
+  },
+  {
+    "request": 3,
+    "at": "2026-09-14T08:11:14.186Z",
+    "mode": "fail",
+    "hasAnalysisContext": true,
+    "hasRealToolResult": false
+  },
+  {
+    "request": 4,
+    "at": "2026-09-14T08:11:14.186Z",
+    "mode": "text",
+    "hasAnalysisContext": false,
+    "hasRealToolResult": false
+  },
+  {
+    "request": 5,
+    "at": "2026-09-14T08:11:31.293Z",
+    "mode": "tool",
+    "hasAnalysisContext": true,
+    "hasRealToolResult": false
+  },
+  {
+    "request": 6,
+    "at": "2026-09-14T08:11:31.492Z",
+    "mode": "text",
+    "hasAnalysisContext": true,
+    "hasRealToolResult": true
+  },
+  {
+    "request": 7,
+    "at": "2026-09-14T08:13:10.121Z",
+    "mode": "tool",
+    "hasAnalysisContext": true,
+    "hasRealToolResult": false
+  },
+  {
+    "request": 8,
+    "at": "2026-09-14T08:13:10.121Z",
+    "mode": "text",
+    "hasAnalysisContext": false,
+    "hasRealToolResult": false
+  },
+  {
+    "request": 9,
+    "at": "2026-09-14T08:13:10.302Z",
+    "mode": "text",
+    "hasAnalysisContext": true,
+    "hasRealToolResult": true
+  }
+]

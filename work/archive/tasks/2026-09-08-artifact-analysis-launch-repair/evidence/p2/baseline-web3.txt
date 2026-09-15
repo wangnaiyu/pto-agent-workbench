@@ -1,0 +1,30 @@
+Extracted failure names and first error lines; random ids are preserved. Full raw logs remain in the isolated test environment.
+
+apps/web/tests/agent-team-panel.e2e.ts > web e2e: Agent Teams panel
+Error: connected Team workspace did not create an Agent
+
+apps/web/tests/reference-composer.e2e.ts > web e2e: file and session references through the real host
+TimeoutError: locator.click: Timeout 30000ms exceeded.
+
+apps/web/tests/sidebar-right.e2e.ts > web e2e: shipped right Sidebar > with a settled session
+Error: connected workspace did not create an Agent
+
+apps/web/tests/workspace-new-session-folding.e2e.ts > web e2e: blank New Session folding quota
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+
+apps/web/tests/skill-invocation-policy.e2e.ts > web e2e: skill invocation policy through the real host > renders every user-invocable skill and marks the user-only entry
+AssertionError: expected +0 to be 1 // Object.is equality
+
+apps/web/tests/skill-user-invoke.e2e.ts > web e2e: user-explicit skill invocation through the composer > rejects a vanished first-send Skill, then runs the corrected canonical gesture
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+
+apps/web/tests/startup-auto-selection.e2e.ts > web e2e: startup auto-selection > keeps the resident Hero and composer nodes when the first Workspace session appears
+AssertionError: expected +0 to be 1 // Object.is equality
+
+apps/web/tests/startup-auto-selection.e2e.ts > web e2e: startup auto-selection > restores the recent Workspace as a browser draft without opening a blank Session
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+
+Test Files  7 failed (7)
+Tests  4 failed | 3 passed | 22 skipped (29)
+Start at  11:18:02
+Duration  103.79s (transform 505ms, setup 0ms, import 2.56s, tests 100.70s, environment 0ms)

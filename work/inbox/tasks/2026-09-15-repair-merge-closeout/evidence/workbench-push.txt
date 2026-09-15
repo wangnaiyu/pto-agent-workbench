@@ -1,0 +1,12 @@
+To github.com:wangnaiyu/pto-agent-workbench.git
+ * [new branch]      codex/repair-merge-closeout-20260915 -> codex/repair-merge-closeout-20260915
+ * [new branch]      codex/repair-p0-20260911 -> codex/repair-p0-20260911
+ * [new branch]      codex/repair-p1-official-provider-20260911 -> codex/repair-p1-official-provider-20260911
+ * [new branch]      codex/repair-p5-validation-20260914 -> codex/repair-p5-validation-20260914
+ * [new branch]      codex/savepoint-p3-validation-20260914 -> codex/savepoint-p3-validation-20260914
+ * [new branch]      codex/savepoint-p4-validation-20260914 -> codex/savepoint-p4-validation-20260914
+ * [new tag]         repair-p3-accepted-20260914 -> repair-p3-accepted-20260914
+ * [new tag]         repair-p3-validation-checkpoint-20260914 -> repair-p3-validation-checkpoint-20260914
+ * [new tag]         repair-p4-accepted-20260914 -> repair-p4-accepted-20260914
+ * [new tag]         repair-p4-validation-checkpoint-20260914 -> repair-p4-validation-checkpoint-20260914
+ * [new tag]         repair-p5-accepted-20260914 -> repair-p5-accepted-20260914

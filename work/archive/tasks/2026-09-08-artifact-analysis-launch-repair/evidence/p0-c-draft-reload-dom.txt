@@ -1,0 +1,34 @@
+- button "New session":
+  - generic: PTO Agent Workbench
+  - generic: DSH
+- button "Collapse sidebar":
+- tablist "Sidebar view":
+  - tab "Sessions" [selected]
+  - tab "Run Records"
+- generic: Workspaces
+- button "New Session":
+- button "Search sessions":
+- textbox "Search sessions..."
+- button "View options":
+- button "Add workspace":
+- tabpanel "Sessions":
+  - tree "Sessions":
+    - treeitem "layout-workspace":
+      - generic: layout-workspace
+    - treeitem "Ungrouped":
+      - generic: Ungrouped
+- button "Settings":
+  - generic: Settings
+- generic: Into the Unknown
+- generic: Preview
+- button "Choose workspace":
+  - generic: layout-workspace
+- button "Standard mode":
+  - generic: Standard mode
+- textbox "Describe what you want to build, / commands, @ files or sessions" [active]
+- generic: Describe what you want to build, / commands, @ files or sessions
+- button "Commands":
+- button "Add attachment":
+- 'button "Access mode, current: Workspace Write"':
+  - generic: Workspace Write
+- button "Send message" [disabled]:

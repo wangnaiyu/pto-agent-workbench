@@ -1,0 +1,794 @@
+[
+  {
+    "label": "1280 default",
+    "card": {
+      "bottom": 377,
+      "clientHeight": 169,
+      "clientWidth": 894,
+      "height": 171,
+      "left": 328,
+      "right": 1224,
+      "scrollHeight": 169,
+      "scrollWidth": 894,
+      "top": 206,
+      "width": 896,
+      "x": 328,
+      "y": 206
+    },
+    "chatWidth": "clamp(680px, calc(1000px * .64), 920px)",
+    "composer": {
+      "bottom": 636,
+      "clientHeight": 36,
+      "clientWidth": 708,
+      "height": 36,
+      "left": 420,
+      "right": 1128,
+      "scrollHeight": 36,
+      "scrollWidth": 708,
+      "top": 600,
+      "width": 708,
+      "x": 420,
+      "y": 600
+    },
+    "factsColumns": "206.5px 206.5px 206.5px 206.5px",
+    "handles": [
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 40,
+          "height": 644,
+          "left": 376,
+          "right": 416,
+          "scrollHeight": 644,
+          "scrollWidth": 40,
+          "top": 76,
+          "width": 40,
+          "x": 376,
+          "y": 76
+        },
+        "side": "left"
+      },
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 40,
+          "height": 644,
+          "left": 1144,
+          "right": 1184,
+          "scrollHeight": 644,
+          "scrollWidth": 40,
+          "top": 76,
+          "width": 40,
+          "x": 1144,
+          "y": 76
+        },
+        "side": "right"
+      }
+    ],
+    "list": null,
+    "region": {
+      "bottom": 855,
+      "clientHeight": 779,
+      "clientWidth": 992,
+      "height": 779,
+      "left": 280,
+      "right": 1272,
+      "scrollHeight": 779,
+      "scrollWidth": 992,
+      "top": 76,
+      "width": 992,
+      "x": 280,
+      "y": 76
+    },
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "1280 dragged inward",
+    "card": {
+      "bottom": 377,
+      "clientHeight": 169,
+      "clientWidth": 894,
+      "height": 171,
+      "left": 328,
+      "right": 1224,
+      "scrollHeight": 169,
+      "scrollWidth": 894,
+      "top": 206,
+      "width": 896,
+      "x": 328,
+      "y": 206
+    },
+    "chatWidth": "640px",
+    "composer": {
+      "bottom": 636,
+      "clientHeight": 36,
+      "clientWidth": 668,
+      "height": 36,
+      "left": 440,
+      "right": 1108,
+      "scrollHeight": 36,
+      "scrollWidth": 668,
+      "top": 600,
+      "width": 668,
+      "x": 440,
+      "y": 600
+    },
+    "factsColumns": "206.5px 206.5px 206.5px 206.5px",
+    "handles": [
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 40,
+          "height": 644,
+          "left": 396,
+          "right": 436,
+          "scrollHeight": 644,
+          "scrollWidth": 40,
+          "top": 76,
+          "width": 40,
+          "x": 396,
+          "y": 76
+        },
+        "side": "left"
+      },
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 40,
+          "height": 644,
+          "left": 1124,
+          "right": 1164,
+          "scrollHeight": 644,
+          "scrollWidth": 40,
+          "top": 76,
+          "width": 40,
+          "x": 1124,
+          "y": 76
+        },
+        "side": "right"
+      }
+    ],
+    "list": null,
+    "region": {
+      "bottom": 855,
+      "clientHeight": 779,
+      "clientWidth": 992,
+      "height": 779,
+      "left": 280,
+      "right": 1272,
+      "scrollHeight": 779,
+      "scrollWidth": 992,
+      "top": 76,
+      "width": 992,
+      "x": 280,
+      "y": 76
+    },
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "1280 dragged outward",
+    "card": {
+      "bottom": 377,
+      "clientHeight": 169,
+      "clientWidth": 894,
+      "height": 171,
+      "left": 328,
+      "right": 1224,
+      "scrollHeight": 169,
+      "scrollWidth": 894,
+      "top": 206,
+      "width": 896,
+      "x": 328,
+      "y": 206
+    },
+    "chatWidth": "780px",
+    "composer": {
+      "bottom": 636,
+      "clientHeight": 36,
+      "clientWidth": 808,
+      "height": 36,
+      "left": 370,
+      "right": 1178,
+      "scrollHeight": 36,
+      "scrollWidth": 808,
+      "top": 600,
+      "width": 808,
+      "x": 370,
+      "y": 600
+    },
+    "factsColumns": "206.5px 206.5px 206.5px 206.5px",
+    "handles": [
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 40,
+          "height": 644,
+          "left": 326,
+          "right": 366,
+          "scrollHeight": 644,
+          "scrollWidth": 40,
+          "top": 76,
+          "width": 40,
+          "x": 326,
+          "y": 76
+        },
+        "side": "left"
+      },
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 40,
+          "height": 644,
+          "left": 1194,
+          "right": 1234,
+          "scrollHeight": 644,
+          "scrollWidth": 40,
+          "top": 76,
+          "width": 40,
+          "x": 1194,
+          "y": 76
+        },
+        "side": "right"
+      }
+    ],
+    "list": null,
+    "region": {
+      "bottom": 855,
+      "clientHeight": 779,
+      "clientWidth": 992,
+      "height": 779,
+      "left": 280,
+      "right": 1272,
+      "scrollHeight": 779,
+      "scrollWidth": 992,
+      "top": 76,
+      "width": 992,
+      "x": 280,
+      "y": 76
+    },
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "1600 with width preference",
+    "card": {
+      "bottom": 377,
+      "clientHeight": 169,
+      "clientWidth": 958,
+      "height": 171,
+      "left": 456,
+      "right": 1416,
+      "scrollHeight": 169,
+      "scrollWidth": 958,
+      "top": 206,
+      "width": 960,
+      "x": 456,
+      "y": 206
+    },
+    "chatWidth": "780px",
+    "composer": {
+      "bottom": 816,
+      "clientHeight": 36,
+      "clientWidth": 808,
+      "height": 36,
+      "left": 530,
+      "right": 1338,
+      "scrollHeight": 36,
+      "scrollWidth": 808,
+      "top": 780,
+      "width": 808,
+      "x": 530,
+      "y": 780
+    },
+    "factsColumns": "222.5px 222.5px 222.5px 222.5px",
+    "handles": [
+      {
+        "rect": {
+          "bottom": 900,
+          "clientHeight": 824,
+          "clientWidth": 40,
+          "height": 824,
+          "left": 486,
+          "right": 526,
+          "scrollHeight": 824,
+          "scrollWidth": 40,
+          "top": 76,
+          "width": 40,
+          "x": 486,
+          "y": 76
+        },
+        "side": "left"
+      },
+      {
+        "rect": {
+          "bottom": 900,
+          "clientHeight": 824,
+          "clientWidth": 40,
+          "height": 824,
+          "left": 1354,
+          "right": 1394,
+          "scrollHeight": 824,
+          "scrollWidth": 40,
+          "top": 76,
+          "width": 40,
+          "x": 1354,
+          "y": 76
+        },
+        "side": "right"
+      }
+    ],
+    "list": null,
+    "region": {
+      "bottom": 855,
+      "clientHeight": 779,
+      "clientWidth": 1312,
+      "height": 779,
+      "left": 280,
+      "right": 1592,
+      "scrollHeight": 779,
+      "scrollWidth": 1312,
+      "top": 76,
+      "width": 1312,
+      "x": 280,
+      "y": 76
+    },
+    "viewport": {
+      "height": 900,
+      "width": 1600
+    }
+  },
+  {
+    "label": "900 compact",
+    "card": {
+      "bottom": 377,
+      "clientHeight": 169,
+      "clientWidth": 793,
+      "height": 171,
+      "left": 117.8515625,
+      "right": 912.8671875,
+      "scrollHeight": 169,
+      "scrollWidth": 793,
+      "top": 206,
+      "width": 795.015625,
+      "x": 117.8515625,
+      "y": 206
+    },
+    "chatWidth": "642px",
+    "composer": {
+      "bottom": 636,
+      "clientHeight": 36,
+      "clientWidth": 670,
+      "height": 36,
+      "left": 149.921875,
+      "right": 819.921875,
+      "scrollHeight": 36,
+      "scrollWidth": 670,
+      "top": 600,
+      "width": 670,
+      "x": 149.921875,
+      "y": 600
+    },
+    "factsColumns": "181.25px 181.258px 181.25px 181.258px",
+    "handles": [
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 40,
+          "height": 644,
+          "left": 105.9296875,
+          "right": 145.9296875,
+          "scrollHeight": 644,
+          "scrollWidth": 40,
+          "top": 76,
+          "width": 40,
+          "x": 105.9296875,
+          "y": 76
+        },
+        "side": "left"
+      },
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 40,
+          "height": 644,
+          "left": 835.921875,
+          "right": 875.921875,
+          "scrollHeight": 644,
+          "scrollWidth": 40,
+          "top": 76,
+          "width": 40,
+          "x": 835.921875,
+          "y": 76
+        },
+        "side": "right"
+      }
+    ],
+    "list": null,
+    "region": {
+      "bottom": 863,
+      "clientHeight": 779,
+      "clientWidth": 810,
+      "height": 787,
+      "left": 81.8515625,
+      "right": 892,
+      "scrollHeight": 779,
+      "scrollWidth": 831,
+      "top": 76,
+      "width": 810.1484375,
+      "x": 81.8515625,
+      "y": 76
+    },
+    "viewport": {
+      "height": 720,
+      "width": 900
+    }
+  },
+  {
+    "label": "700 responsive",
+    "card": {
+      "bottom": 415,
+      "clientHeight": 213,
+      "clientWidth": 793,
+      "height": 215,
+      "left": 72,
+      "right": 867.015625,
+      "scrollHeight": 213,
+      "scrollWidth": 793,
+      "top": 200,
+      "width": 795.015625,
+      "x": 72,
+      "y": 200
+    },
+    "chatWidth": "640px",
+    "composer": {
+      "bottom": 636,
+      "clientHeight": 36,
+      "clientWidth": 600,
+      "height": 36,
+      "left": 72,
+      "right": 672,
+      "scrollHeight": 36,
+      "scrollWidth": 600,
+      "top": 600,
+      "width": 600,
+      "x": 72,
+      "y": 600
+    },
+    "factsColumns": "374.508px 374.508px",
+    "handles": [
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 0,
+          "height": 644,
+          "left": 34,
+          "right": 34,
+          "scrollHeight": 644,
+          "scrollWidth": 0,
+          "top": 76,
+          "width": 0,
+          "x": 34,
+          "y": 76
+        },
+        "side": "left"
+      },
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 0,
+          "height": 644,
+          "left": 722,
+          "right": 722,
+          "scrollHeight": 644,
+          "scrollWidth": 19,
+          "top": 76,
+          "width": 0,
+          "x": 722,
+          "y": 76
+        },
+        "side": "right"
+      }
+    ],
+    "list": null,
+    "region": {
+      "bottom": 981,
+      "clientHeight": 897,
+      "clientWidth": 636,
+      "height": 905,
+      "left": 56,
+      "right": 692,
+      "scrollHeight": 897,
+      "scrollWidth": 811,
+      "top": 76,
+      "width": 636,
+      "x": 56,
+      "y": 76
+    },
+    "viewport": {
+      "height": 720,
+      "width": 700
+    }
+  },
+  {
+    "label": "700 settled",
+    "card": {
+      "bottom": 415,
+      "clientHeight": 213,
+      "clientWidth": 793,
+      "height": 215,
+      "left": 72,
+      "right": 867.015625,
+      "scrollHeight": 213,
+      "scrollWidth": 793,
+      "top": 200,
+      "width": 795.015625,
+      "x": 72,
+      "y": 200
+    },
+    "chatWidth": "640px",
+    "composer": {
+      "bottom": 636,
+      "clientHeight": 36,
+      "clientWidth": 600,
+      "height": 36,
+      "left": 72,
+      "right": 672,
+      "scrollHeight": 36,
+      "scrollWidth": 600,
+      "top": 600,
+      "width": 600,
+      "x": 72,
+      "y": 600
+    },
+    "factsColumns": "374.508px 374.508px",
+    "handles": [
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 0,
+          "height": 644,
+          "left": 34,
+          "right": 34,
+          "scrollHeight": 644,
+          "scrollWidth": 0,
+          "top": 76,
+          "width": 0,
+          "x": 34,
+          "y": 76
+        },
+        "side": "left"
+      },
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 0,
+          "height": 644,
+          "left": 722,
+          "right": 722,
+          "scrollHeight": 644,
+          "scrollWidth": 19,
+          "top": 76,
+          "width": 0,
+          "x": 722,
+          "y": 76
+        },
+        "side": "right"
+      }
+    ],
+    "list": null,
+    "region": {
+      "bottom": 981,
+      "clientHeight": 897,
+      "clientWidth": 636,
+      "height": 905,
+      "left": 56,
+      "right": 692,
+      "scrollHeight": 897,
+      "scrollWidth": 811,
+      "top": 76,
+      "width": 636,
+      "x": 56,
+      "y": 76
+    },
+    "viewport": {
+      "height": 720,
+      "width": 700
+    }
+  },
+  {
+    "label": "900 settled",
+    "card": {
+      "bottom": 377,
+      "clientHeight": 169,
+      "clientWidth": 793,
+      "height": 171,
+      "left": 92,
+      "right": 887.015625,
+      "scrollHeight": 169,
+      "scrollWidth": 793,
+      "top": 206,
+      "width": 795.015625,
+      "x": 92,
+      "y": 206
+    },
+    "chatWidth": "668px",
+    "composer": {
+      "bottom": 636,
+      "clientHeight": 36,
+      "clientWidth": 696,
+      "height": 36,
+      "left": 124,
+      "right": 820,
+      "scrollHeight": 36,
+      "scrollWidth": 696,
+      "top": 600,
+      "width": 696,
+      "x": 124,
+      "y": 600
+    },
+    "factsColumns": "181.25px 181.258px 181.25px 181.258px",
+    "handles": [
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 40,
+          "height": 644,
+          "left": 80,
+          "right": 120,
+          "scrollHeight": 644,
+          "scrollWidth": 40,
+          "top": 76,
+          "width": 40,
+          "x": 80,
+          "y": 76
+        },
+        "side": "left"
+      },
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 40,
+          "height": 644,
+          "left": 836,
+          "right": 876,
+          "scrollHeight": 644,
+          "scrollWidth": 40,
+          "top": 76,
+          "width": 40,
+          "x": 836,
+          "y": 76
+        },
+        "side": "right"
+      }
+    ],
+    "list": null,
+    "region": {
+      "bottom": 855,
+      "clientHeight": 779,
+      "clientWidth": 836,
+      "height": 779,
+      "left": 56,
+      "right": 892,
+      "scrollHeight": 779,
+      "scrollWidth": 836,
+      "top": 76,
+      "width": 836,
+      "x": 56,
+      "y": 76
+    },
+    "viewport": {
+      "height": 720,
+      "width": 900
+    }
+  },
+  {
+    "label": "1280 resource sidebar open settled",
+    "card": {
+      "bottom": 396,
+      "clientHeight": 169,
+      "clientWidth": 793,
+      "height": 171,
+      "left": 328,
+      "right": 1123.015625,
+      "scrollHeight": 169,
+      "scrollWidth": 793,
+      "top": 225,
+      "width": 795.015625,
+      "x": 328,
+      "y": 225
+    },
+    "chatWidth": "640px",
+    "composer": {
+      "bottom": 596,
+      "clientHeight": 36,
+      "clientWidth": 380,
+      "height": 36,
+      "left": 296,
+      "right": 676,
+      "scrollHeight": 36,
+      "scrollWidth": 380,
+      "top": 560,
+      "width": 380,
+      "x": 296,
+      "y": 560
+    },
+    "factsColumns": "181.25px 181.258px 181.25px 181.258px",
+    "handles": [
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 0,
+          "height": 644,
+          "left": 148,
+          "right": 148,
+          "scrollHeight": 644,
+          "scrollWidth": 0,
+          "top": 76,
+          "width": 0,
+          "x": 148,
+          "y": 76
+        },
+        "side": "left"
+      },
+      {
+        "rect": {
+          "bottom": 720,
+          "clientHeight": 644,
+          "clientWidth": 0,
+          "height": 644,
+          "left": 836,
+          "right": 836,
+          "scrollHeight": 644,
+          "scrollWidth": 19,
+          "top": 76,
+          "width": 0,
+          "x": 836,
+          "y": 76
+        },
+        "side": "right"
+      }
+    ],
+    "list": null,
+    "region": {
+      "bottom": 882,
+      "clientHeight": 798,
+      "clientWidth": 416,
+      "height": 806,
+      "left": 280,
+      "right": 696,
+      "scrollHeight": 798,
+      "scrollWidth": 843,
+      "top": 76,
+      "width": 416,
+      "x": 280,
+      "y": 76
+    },
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  }
+]

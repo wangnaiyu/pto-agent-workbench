@@ -1,0 +1,22 @@
+{
+  "status": "unresolved; no additional replay or product/test changes",
+  "p3Base": "e80fa835192f2cc087369e06080aaf9944a6b3fa",
+  "files": [
+    {
+      "path": "apps/web/tests/replay-round-trip.e2e.ts",
+      "sha256": "c935274ff15604def08eaaf0db884154ca75c27fbc8c02915e3bd22462ea3a55",
+      "unchangedFromP3": true
+    },
+    {
+      "path": "apps/web/tests/scaffold.ts",
+      "sha256": "0a27f56616cc9360357e3b12a2e9a2e40f8395ce115cf9bb34ac564664965131",
+      "unchangedFromP3": true
+    },
+    {
+      "path": "packages/client/ui-pto-experiments/src/client/dashboard.module.css",
+      "sha256": "36a6fadbe5fefbb8a5f4dfb8c63f4f72d6bbd46a632f76f5aac4a05f452c5555",
+      "unchangedFromP3": false
+    }
+  ],
+  "observation": "The known drive golden fails before awaiting whenTurnSettled. The later test waits for DONE and then immediately inspects turn/end. P4 observed zero turn/end; P3 full suite did not. Timing-cascade hypothesis is not yet proven on the baseline."
+}

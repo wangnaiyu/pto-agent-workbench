@@ -1,0 +1,54 @@
+{
+  ".": [
+    {
+      "ref": "refs/heads/codex/repair-p2-launch-20260914",
+      "sha": "a68dea5bc06793df98b2f8f0c2f53db7f62080fc",
+      "containedInCandidate": true,
+      "deleteOnlyAfterMainContains": true
+    },
+    {
+      "ref": "refs/heads/codex/repair-p3-composer-20260914",
+      "sha": "6d3c42b7f4c2d43078bf00129a6c6300a5604de0",
+      "containedInCandidate": true,
+      "deleteOnlyAfterMainContains": true
+    },
+    {
+      "ref": "refs/heads/codex/repair-p4-layout-20260914",
+      "sha": "ae37530e92d6df320f6321a3b1c303a3f5d41d82",
+      "containedInCandidate": true,
+      "deleteOnlyAfterMainContains": true
+    },
+    {
+      "ref": "refs/heads/codex/repair-p5-validation-20260914",
+      "sha": "452e631c880082d832eb36f386fc6439df233be3",
+      "containedInCandidate": true,
+      "deleteOnlyAfterMainContains": true
+    }
+  ],
+  "harness": [
+    {
+      "ref": "refs/heads/codex/repair-p2-launch-20260914",
+      "sha": "e92a21adc477133a0771a6194962be901284a2ed",
+      "containedInCandidate": true,
+      "deleteOnlyAfterMainContains": true
+    },
+    {
+      "ref": "refs/heads/codex/repair-p3-composer-20260914",
+      "sha": "e80fa835192f2cc087369e06080aaf9944a6b3fa",
+      "containedInCandidate": true,
+      "deleteOnlyAfterMainContains": true
+    },
+    {
+      "ref": "refs/heads/codex/repair-p4-layout-20260914",
+      "sha": "368c446657932f170a6d29fd2d275bea1c76073e",
+      "containedInCandidate": true,
+      "deleteOnlyAfterMainContains": true
+    },
+    {
+      "ref": "refs/heads/codex/repair-p5-validation-20260914",
+      "sha": "368c446657932f170a6d29fd2d275bea1c76073e",
+      "containedInCandidate": true,
+      "deleteOnlyAfterMainContains": true
+    }
+  ]
+}

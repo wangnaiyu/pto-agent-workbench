@@ -1,0 +1,14 @@
+┃  typecheck ❯
+$ npm run build:lib:host && npm run typecheck:contracts-ready
+> @deepseek-ai/dsh-root@0.1.5-alpha.1 typecheck:contracts-ready
+summary: (done in 17.35 seconds)
+✓ typecheck (17.35 seconds)
+To github.com:wangnaiyu/deepseek-harness.git
+ * [new branch]            codex/repair-p5-validation-20260914 -> codex/repair-p5-validation-20260914
+ * [new branch]            codex/savepoint-p3-validation-20260914 -> codex/savepoint-p3-validation-20260914
+ * [new branch]            codex/savepoint-p4-validation-20260914 -> codex/savepoint-p4-validation-20260914
+ * [new tag]               repair-p3-accepted-20260914 -> repair-p3-accepted-20260914
+ * [new tag]               repair-p3-validation-checkpoint-20260914 -> repair-p3-validation-checkpoint-20260914
+ * [new tag]               repair-p4-accepted-20260914 -> repair-p4-accepted-20260914
+ * [new tag]               repair-p4-validation-checkpoint-20260914 -> repair-p4-validation-checkpoint-20260914
+ * [new tag]               repair-p5-accepted-20260914 -> repair-p5-accepted-20260914
