@@ -1,0 +1,12 @@
+{
+  "baseRefOid": "bc3eecff7f3d770527ef7c1dfa4ccbf16d7c09d9",
+  "headRefOid": "411660104d2ac0926421c7e9fb3eab892ad19db8",
+  "mergeStateStatus": "CLEAN",
+  "mergeable": "MERGEABLE",
+  "number": 12,
+  "reviewDecision": "",
+  "reviews": [],
+  "state": "OPEN",
+  "statusCheckRollup": [],
+  "url": "https://github.com/wangnaiyu/pto-agent-workbench/pull/12"
+}
