@@ -1,0 +1,25 @@
+- readable-stream
+- abort-controller
+- events
+- process
+- safe-buffer
+- string_decoder
+- @yarnpkg/parsers
+- picomatch
+ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] lib/worker.js      706.83 kB │ gzip: 164.11 kB
+ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] lib/worker.js.map    1.39 MB
+ℹ [@deepseek-ai/dsh-experimental-webworker-runtime] 2 files, total: 2.09 MB
+[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `dsh-module-proxies`. See https://rolldown.rs/options/checks#plugintimings for more details.
+
+✔ [@deepseek-ai/dsh-experimental-webworker-runtime] Build complete in 7857ms
+
+> @deepseek-ai/dsh-root@0.1.6-alpha.2 typecheck:contracts-ready
+> tsc -b tsconfig.client.json
+
+
+[38;2;56;56;56m  ────────────────────────────────────[m
+summary: (done in 16.21 seconds)
+✓ typecheck (16.21 seconds)
+To github.com:wangnaiyu/deepseek-harness.git
+ * [new branch]            codex/pre-upstream-master-20260921 -> codex/pre-upstream-master-20260921
+ * [new branch]            codex/upstream-rebase-20260921 -> codex/upstream-rebase-20260921

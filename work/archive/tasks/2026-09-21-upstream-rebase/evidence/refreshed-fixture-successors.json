@@ -1,0 +1,117 @@
+[
+  {
+    "owner": "snapshots/web/present-svg/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/permission-policy-context/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/markdown-file-links/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/web/changed-files-turn/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/workspace-dependencies/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/skill-load/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/session-sandbox-root/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/plugin-manager-mcp/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/plugin-manager/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/office-skills-no-renderer/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/office-skills/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/fs-write-overwrite-bounded/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/fs-write-overwrite/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/fs-write/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/fs-delete-recreate/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/deepseek-messages-invalid-tool-history/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/cordis-inspect-jsdoc/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/advanced-toolchain-runtime/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/session/advanced-toolchain/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/sdk/subagent-activation-limit/snapshot.yml",
+    "source": "session.1.v3.jsonl",
+    "target": "session.1.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/sdk/subagent-activation-limit/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/acp/fs-same-mode/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  },
+  {
+    "owner": "snapshots/acp/fs-escalation-approved/snapshot.yml",
+    "source": "session.v3.jsonl",
+    "target": "session.v4.jsonl"
+  }
+]

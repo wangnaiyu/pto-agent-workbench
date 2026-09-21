@@ -1,12 +1,12 @@
 # 当前工程架构
 
-状态：2026-09-15 upstream rebase。harness fork `70e5ab14c8fc0081be6d2b1c8aff6b46682d4ecb` 基于 upstream `0d1f50007f9bca3f52b06e1c3074fa14d5fb0720`，版本 0.1.6-alpha.1。外层起点为 `8f8ff6131c3887caba07db728d3f9a3a504fc3a6`。正式三元配对以两仓 `post-upstream-baseline-20260915` annotated tag 为准；验证与限制见[升级报告](../archive/tasks/2026-09-15-upstream-rebase/final-report.md)。
+状态：2026-09-21 upstream rebase。harness fork `a11460d434e652fde77d35e7558056a59cb3256f` 基于 upstream `ddefc45fbc7f8e46dd73185e68295696d1297887`，版本 0.1.6-alpha.2。外层起点为 `6f015cfdce43b992da24a02ac39e7f4efd34cb7b`。正式三元配对以两仓 `post-upstream-baseline-20260921` annotated tag 为准；验证与限制见[升级报告](../archive/tasks/2026-09-21-upstream-rebase/final-report.md)。
 
 ## 实现边界
 
 DSH 提供 Cordis 插件、profile、Host 工具、会话与浏览器 UI。外层仓库保存启动/装配脚本、运行时 Skills、可复验 spike；harness 是独立 Git 仓库，正式 PTO Host/Client 包在其 packages 中。
 
-扩展顺序为动态 cordis_define / cordis_run 验证、静态插件固化、必要的最小内核 seam。动态插件需要运行准入，进程内状态不能当作持久业务存储。root profile 使用 patches/cordis.patch.yml 装配；不能只修改源码而遗漏 manifest/bundle 的正式构建。
+扩展顺序仍为动态插件验证、静态插件固化、必要的最小内核 seam。alpha.2 已退役 cordis_define / cordis_run；Creator 保留 cordis_inspect_list / cordis_inspect_query 只读检查，持久插件按 bundle 编写并经 plugin_manager 安装。动态验证须使用当前插件装配机制，进程内状态不能当作持久业务存储。root profile 使用 patches/cordis.patch.yml 装配；不能只修改源码而遗漏 manifest/bundle 的正式构建。
 
 ## UI 承载与通信
 
@@ -19,7 +19,9 @@ DSH 提供 Cordis 插件、profile、Host 工具、会话与浏览器 UI。外�
 | resource sidebar | upstream 新的文件/资源侧栏；旧 Details 已退役 |
 | 工具比较行内折叠 | 按工具名呈现完整冻结比较证据，保留七维身份；使用原生 details，未恢复退役的 ToolDetails slot |
 
-`ui-pto-experiments` 仍注册“实验”View。upstream 本轮重构了资源侧栏与布局；隔离实例1280×720下空实验区域宽992px、无max-width约束。该观察不证明有内容视图和所有窗口尺寸已满足产品要求，不能沿用rc.1的宽度假设直接修复。
+`ui-pto-experiments` 仍注册“实验”View。2026-09-15 隔离实例1280×720下空实验区域宽992px、无max-width约束；该历史测量不是alpha.2全尺寸验收。本次完整浏览器矩阵覆盖Sidebar与布局交互，未扩大有内容实验视图的产品结论。
+
+Client 以 SessionReference 的 retain/release 管理所有权，SessionBinding 承载组件作用域状态；主界面由 uiWorkspace 保持 mainView 引用。PTO 浏览器草稿不持有 Session，首次发送等待引用就绪并按序准备 preset、目录与附件；异步完成只清理对应 revision。ConversationMainPanel 使用上游 conversation.content factory。
 
 Client → Host 通过 typed invoke/host.call；Host → Client 通过事件或会话投影。具体 API 以本地 harness 对应版本代码为准。分析选区回流仍需共享结构化上下文契约；不预设一定要阻塞模型等待选区，可先由用户显式“加入分析草稿”完成。
 

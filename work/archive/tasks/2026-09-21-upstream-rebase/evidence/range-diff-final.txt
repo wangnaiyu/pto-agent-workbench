@@ -1,0 +1,34 @@
+Commit correspondence extracted from git range-diff (full diff is reproducible from the recorded refs).
+Full-output SHA256: 7f137cc1a9748cd31d9ff7c72c6f91b4241bbda6b5d8f45ec627ac968e6a9f47
+
+ 1:  85aca65ded !  1:  207ff9aa9b feat(client): port PTO brand to the upstream brand-slot mechanism
+ 2:  3b9e058564 !  2:  ce155f5866 feat(client): refine PTO workbench navigation
+ 3:  55d17721b1 !  3:  72d55d08ec feat(client): add run records sidebar information architecture
+ 4:  685cf7568e =  4:  869534642f ci: scope darwin parity to the upstream repository
+ 5:  da9d0dccac !  5:  e3fcb4579f feat(session): support project directory aliases
+ 6:  539a1d4f80 !  6:  5de5f8c5ed feat(client): defer session creation until first prompt
+ 7:  d557de066a =  7:  6a42ef7f03 ci: make issue checks fork-friendly
+ 8:  e395c1ae00 !  8:  f74b5feb26 ci: skip larger-runner checks in forks
+ 9:  e819394e71 !  9:  6c95508bb9 feat: add draft composer capability catalog
+10:  700abb278b ! 10:  f3e6247611 feat(client): add draft composer capability menu
+11:  21b583c893 ! 11:  039e63c036 feat(skill): add explicit cross-client invocation gesture
+12:  b7480f2409 ! 12:  e2d44e8ef8 feat(composer): validate formal session capabilities
+13:  0463d5e240 ! 13:  c4e673b22f feat(pto): add trusted experiment workflow
+14:  7a36c1fdee ! 14:  f14b4a471b fix(composer): polish draft capability catalog
+15:  4af2907558 ! 15:  83916fadbf fix: align PTO fork with rebased harness contracts
+16:  48c5c6494c = 16:  bb89bb0907 fix(pto): declare Typert zod runtime dependencies
+17:  4a23e065a3 ! 17:  608bbee4ad fix: adapt PTO workbench to upstream alpha.2
+18:  69667c7eaa ! 18:  7a95adde4e fix(web): preserve workbench behavior on alpha.3
+19:  2b3a96344b = 19:  54a48c2059 fix(ui): preserve slash launcher across caret updates
+20:  de88515834 = 20:  01e60bfc55 fix(ci): align fork packages with alpha.4 policy
+21:  55d75aa686 = 21:  fbcb0ef817 fix(pto): adapt dashboard tests to session snapshots
+22:  d24a88027c = 22:  1082728e0f fix(ci): align fork packages with alpha.5 policy
+23:  57acdde7de ! 23:  de110c9aa9 fix(pto): adapt workbench to upstream rc.1
+24:  7c7cf35102 ! 24:  d94c556e3a feat(pto): preserve artifact inspection and official skill integration baseline
+25:  daa0311063 ! 25:  74f48a2fa4 fix(pto): adapt fork integrations to upstream 0.1.5-alpha.1
+26:  04802cec01 ! 26:  8762d9d080 fix(pto): preserve analysis launch bindings through admission and retry
+27:  68d95108be ! 27:  07deb18844 wip(pto): save P3 composer references pending browser validation
+28:  c79ee97442 = 28:  7695eab3a9 wip(pto): save P4 layout pending replay validation
+29:  198b703def ! 29:  7534bc7186 fix: adapt PTO fork to upstream 0.1.6 contracts
+30:  70e5ab14c8 ! 30:  7965e590f1 fix: complete PTO format v4 and web compatibility upgrade
+ -:  ---------- > 31:  a11460d434 fix: reconcile PTO fork with alpha.2 session and fixture contracts

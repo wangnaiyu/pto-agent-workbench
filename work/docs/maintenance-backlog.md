@@ -4,6 +4,7 @@
 
 | 事项 | 归属与处理条件 | 原始依据 |
 | --- | --- | --- |
+| alpha.2 src/tsx 工具回放出现 prepare 未定义 | 固定 upstream ddefc45 独立复现；lib 完整回放和浏览器 HMR 通过。下次维护复核源码加载身份问题，不能扩大为运行时故障或伪称已修复 | [09-21 验证](../archive/tasks/2026-09-21-upstream-rebase/evidence/validation.md) |
 | 添加运行数据仍出现通用 Workspace 目录选择文案 | artifact-inspection；实现对应动作时区分添加工作区、添加数据、关联源码 | [08-24 更新](../archive/legacy-notes/update-2026-08-24.md) |
 | 目录大小写、别名、重复注册、扫描边界及输出覆写 | 数据接入方案覆盖预期；P0/P1 用实际路径与多代样例验证，不能假定已修复 | [08-20 决策](../archive/legacy-notes/decision-2026-08-20.md) |
 | 精确 source join 的正负 fixture、运行记录到 Session 的反向索引 | 前者按具体分析需要补；后者非本次最小闭环前置 | [08-20 决策](../archive/legacy-notes/decision-2026-08-20.md) |

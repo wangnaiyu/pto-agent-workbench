@@ -1,0 +1,25 @@
+✔ links: local, angle, encoded, reference; not external or code (1.792042ms)
+✔ links: correct relative target passes; missing and escaping fail (2.211916ms)
+✔ archive: detects byte changes and unmapped headings (2.955375ms)
+✔ archive: a surviving old source and missing destination fail (2.812667ms)
+✔ task: planned is valid but cannot be archived as completed (3.00375ms)
+✔ task: incomplete handoff is detected (0.834292ms)
+✔ launcher resolves its own root and port default (54.483875ms)
+✔ launcher resolves its own root and port 4180 (51.111416ms)
+✔ launcher refuses missing patch before fake CLI execution (9.9795ms)
+✔ runtime profile stays rooted in product bundled skills (0.354375ms)
+✔ actual composed web profile has one locked official provider and matching inspector tuple (93.930666ms)
+✔ rejects missing provider through actual profile composition (86.742417ms)
+✔ rejects nonexistent entry override (P0 regression) through actual profile composition (84.435375ms)
+✔ rejects duplicate provider under a different entry id through actual profile composition (85.365292ms)
+✔ secret checker accepts migrated tracked files and still scans new destinations (149.743584ms)
+✔ secret checker blocks synthetic token in an untracked migration destination without disclosing it (139.758041ms)
+✔ secret checker still fails closed on unreadable non-deleted entries (114.298959ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 465.021708

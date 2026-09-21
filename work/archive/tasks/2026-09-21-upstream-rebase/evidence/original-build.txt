@@ -1,0 +1,25 @@
+dist/assets/langs/sql-CRqJ_cUM.js                            23.47 kB │ gzip:   7.46 kB │ map:    27.96 kB
+dist/assets/langs/scss-D5BDwBP9.js                           27.25 kB │ gzip:   4.24 kB │ map:    38.35 kB
+dist/assets/langs/java-CylS5w8V.js                           27.26 kB │ gzip:   4.30 kB │ map:    38.66 kB
+dist/assets/langs/go-C27-OAKa.js                             46.86 kB │ gzip:   5.22 kB │ map:    66.63 kB
+dist/assets/langs/css-CLj8gQPS.js                            49.08 kB │ gzip:  11.90 kB │ map:    60.67 kB
+dist/assets/langs/markdown-Cvjx9yec.js                       59.38 kB │ gzip:   5.68 kB │ map:    82.36 kB
+dist/assets/langs/python-B6aJPvgy.js                         70.00 kB │ gzip:   9.17 kB │ map:    95.27 kB
+dist/assets/langs/c-BIGW1oBm.js                              72.15 kB │ gzip:  10.54 kB │ map:    95.41 kB
+dist/assets/langs/swift-D82vCrfD.js                          86.73 kB │ gzip:  14.77 kB │ map:   114.54 kB
+dist/assets/langs/csharp-DSvCPggb.js                         90.23 kB │ gzip:  10.79 kB │ map:   126.38 kB
+dist/assets/langs/less-B1dDrJ26.js                           97.68 kB │ gzip:  14.74 kB │ map:   131.88 kB
+dist/assets/langs/php-DJl5gRdb.js                           113.11 kB │ gzip:  28.78 kB │ map:   142.07 kB
+dist/assets/langs/mdx-Cmh6b_Ma.js                           136.16 kB │ gzip:  23.39 kB │ map:   176.75 kB
+dist/assets/langs/html-CfGypltT.js                          232.16 kB │ gzip:  28.35 kB │ map:   308.96 kB
+dist/assets/langs/ruby-5eNB0pDK.js                          425.79 kB │ gzip:  41.34 kB │ map:   579.27 kB
+dist/assets/index-CVK3DUJt.js                               616.29 kB │ gzip: 216.91 kB │ map: 6,855.07 kB
+dist/assets/langs/cpp-DIPi6g--.js                           637.59 kB │ gzip:  47.26 kB │ map:   831.50 kB
+dist/assets/vendor-CCJJTK99.js                              740.58 kB │ gzip: 179.52 kB │ map: 2,509.98 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.50s
+build: recorded 254 client artifact(s) with 2 public value(s)

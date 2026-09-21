@@ -1,0 +1,882 @@
+ddefc45fbc Merge pull request #4469 from deepseek-harness/worktree/release-dsh-0.1.6-alpha.2
+6b1808f432 release(dsh): 0.1.6-alpha.2
+8dfc6fe1ec Merge pull request #4471 from deepseek-harness/worktree-resolutionmode
+e68f5d5aba fix: test
+d9a55c7c0d fix: revert desktop
+1bfe2c4559 fix: test
+896f0b7ec5 fix: budget doc
+0ea890044f test(cli): cover runtime profile defaults and sync docs
+9ddef327a4 feat: resolution mode link to runtime
+9e3a30f85a Merge pull request #4417 from deepseek-harness/feat/subagent-sidebar-chat
+d05b42980b refactor(client): move sidebar chat to subagent
+49b9ccbfcd fix(client): preserve round sidebar action
+34a43129a6 fix(session-reference): preserve title fallback
+871f332971 fix(client): keep sidebar integration optional
+c6c3ad935d test(client): cover sidebar chat edge paths
+4f38c60797 fix(client): satisfy sidebar chat gates
+3e136c2f30 docs: refresh module graph
+da7dc34f7d fix(client): align subagent sidebar references
+e62587c163 feat(client): open subagent chats in sidebar
+04bab1cbd2 Merge pull request #4408 from deepseek-harness/fix/trajectory-attachments
+3958f801e3 Merge pull request #4414 from deepseek-harness/worktree/plan-sidebar-cards
+3fb29e0803 fix(web): identify plan preview tabs with a plan icon
+4f3f737996 merge(web): sync master for trajectory attachments
+5b1a2d8613 Merge pull request #4250 from deepseek-harness/feat/docs-platform-command-tabs
+38bfc29876 fix(web): restore the plain plan review status dot
+65648082a3 feat(web): reveal a clipped sidebar session title on hover (#4423)
+9d93fbd7ad Merge remote-tracking branch 'origin/master' into worktree/plan-sidebar-cards
+f28c654799 Merge pull request #4255 from deepseek-harness/issue-3997-markdown-file-links
+4ab1fc3bfe Merge master into feat/docs-platform-command-tabs
+4bdacc5f2a Merge branch 'master' into issue-3997-markdown-file-links
+953bdc9854 Merge master after code block preview rollback
+2d36ac3369 Merge pull request #4380 from deepseek-harness/turtle/master-ci-git-config
+70ba425ba2 docs(web): remove raw disclosure reset guarantees
+ad9a4c37a2 Merge pull request #4436 from deepseek-harness/turtle/agent-note-creation-threshold
+03f93dc2a5 revert(web): remove raw disclosure reset on record selection
+7d383f1fb9 Merge pull request #4426 from deepseek-harness/turtle/remove-enabled-dot-5feeef8fab26
+eae08a9745 Merge origin/master into worktree/plan-sidebar-cards
+46b4f94802 fix(web): preview unlogged plans and preserve subagent history addresses
+a4452b2ed2 Merge pull request #4442 from deepseek-harness/revert-3906-perf/code-block-preview-renders
+4c546124b9 refactor(web): route Markdown file navigation through delegate provider
+e0427f38e9 Restore sealed diagram preview note
+93e8139e23 Merge pull request #4439 from deepseek-harness/turtle/trim-delegate-ci-message
+81e05abaab Revert "feat(client): optimize code block previews and source highlighting"
+45b5b53c23 Merge pull request #4033 from deepseek-harness/feat/desktop-update
+5bb7d45e66 Merge master and preserve Markdown file links with previews
+adce1b4b5c docs: preserve mechanical and local edit exemptions
+3cbb9442fa Fix Desktop async window-state lint
+926534c44b docs: keep agent note criteria edits minimal
+f2c5c2a6a2 chore(ci): trim delegate review dismissal message
+730bcc7c85 docs: require lasting rationale before creating agent notes
+064d8f8670 Merge origin/master into feat/desktop-update
+5530e1b821 merge(web): sync master for trajectory attachments
+5d173b170d test(web): strengthen plan dismissal checks and clarify review contracts
+954184934a Remove obsolete Desktop lint suppressions
+721e2e13c7 Merge origin/master into feat/desktop-update
+8c3ec757df Merge remote-tracking branch 'origin/master' into worktree/plan-sidebar-cards
+9ec34c00fe Merge pull request #3906 from deepseek-harness/perf/code-block-preview-renders
+67a04b4768 Merge pull request #4425 from deepseek-harness/feat/remove-desktop-plugin-debug
+e03f58c6e9 fix(desktop): close update review copy and documentation gaps
+9836c4daaf docs(web): describe trajectory thumbnail status feedback
+70b4237c00 fix(web): keep trajectory thumbnail status readable
+2394816cc1 test(web): snapshot the plan review summary and two actions
+f91d5e310d refactor(web): drop the plugin-list dot for an active fiber
+72f5fcc905 Merge remote-tracking branch 'origin/master' into feat/desktop-update
+7de3757bad feat(web): show a concise plan summary in the review card
+34bc53eff8 perf(client): defer offscreen diagram previews
+bd1904da0e test(web): refresh Thinking code block controls snapshot
+aaa62b09dc fix(web): reject Mermaid image nodes before layout
+63b5403a43 fix(web): keep preview failures readable and trim unrelated scope
+078e11389a test(web): update shared code action accessibility snapshots
+9b9a60f439 fix(client): size chat previews from diagrams and defer source rendering
+21887adc00 Merge origin/master into feat/desktop-update
+5100350d9b Merge pull request #4379 from deepseek-harness/worktree-sidebrowser
+8c81181bce fix(desktop): align plugin cleanup notes and cover profile locks
+11637ac48e test(web): place plan cards after the completed reply
+30b951f929 Merge remote-tracking branch 'origin/master' into worktree/plan-sidebar-cards
+3caff6dba4 Merge master and preserve desktop plugin manager removal
+577e4a036d fix(web): collect submitted plans in the final turn artifacts
+25b6f868ca fix(desktop): classify update failures and refresh recovered Host
+80f90e61d3 fix(client): handle Sidebar Browser navigation fallbacks
+9637a4d051 test(web): open inline-code links in Sidebar Browser
+3dff3813d8 fix(client): align Sidebar Browser security docs
+45958f12df docs(client): update Sidebar Browser behavior
+ef1218ac24 feat(client): refine Sidebar Browser controls
+8968fedec2 feat(client): open message links in Sidebar Browser
+66edeb85af docs(client): document Sidebar Browser
+1e42aec10e feat(web): ship Sidebar Browser
+9fed351d3d feat(client): add Sidebar Browser
+c0489984ff Merge pull request #4407 from deepseek-harness/07akioni/windows-desktop-titlebar
+0c374357dd Merge pull request #4419 from deepseek-harness/worktree/web-context-meter-footer
+cf06315851 Merge pull request #4317 from deepseek-harness/feat/subagent-limit-settings
+f14efb220d Merge remote-tracking branch 'origin/master' into feat/remove-desktop-plugin-debug
+4b6474133a refactor(desktop): remove standalone plugin manager
+646aadc52c fix(client): clarify Subagent capacity help text
+d34628703a Merge remote-tracking branch 'origin/master' into worktree/web-context-meter-footer
+0e5ec6defa Merge pull request #4041 from deepseek-harness/office-sidebar-preview
+1d6ef883db Merge pull request #4359 from deepseek-harness/worktree-slotfactory
+ae4fc751eb fix(web): keep composer context details within the viewport
+0d5ef60789 Merge pull request #4420 from deepseek-harness/worktree/hide-builtin-profile-bundles
+afe85c1cfd fix(preview): preserve PDF text layer rotation
+05e675863b fix(web): hide built-in profile bundles from plugin cards
+bd49c6e58b Merge branch 'master' into feat/desktop-update
+a096637d01 test(web): cover automatic plan previews on narrow screens
+0dbe49a893 test(web): settle complete folder queries before drilling
+e68bc539b8 test(web): snapshot artifact-style plans and automatic previews
+1e1dd43fee feat(web): open submitted plans automatically with artifact cards
+e8a3bc701a fix(desktop): verify installed update ASAR runtime layout
+5c507b12c6 test(web): refresh Subagent summary in plugin manager snapshots
+fae11e6dc1 Merge master into PR 4317 and adapt Subagent configuration page
+10dc97ca04 test(preview): cover retries while resource is unavailable
+472ddfa7ae fix(web): align plan card borders and cover review identity
+3f41c6c02f fix(desktop): defer caption menus until the application mounts
+7852631012 fix(client): regenerate slot catalog
+c094b663fb feat(client): add reusable component factories
+d1585abdd9 fix(desktop): release mandatory modal on install quit and bind DPAPI upload target
+b6726fe79d feat(web): move context usage into composer stats
+e36bdaa914 fix(desktop): preserve caption editing and navigation across overlays
+7e392f7616 Merge pull request #4400 from deepseek-harness/turtle/web-picker-agent-instructions
+913fca0187 Merge remote-tracking branch 'origin/master' into worktree/plan-sidebar-cards
+4de7612f39 refactor(preview): keep renderer loading format independent
+ab834ac667 test(web): cover plan resource cancellation and sidebar bindings
+12c9c86547 Merge branch 'master' into feat/desktop-update
+f6428a164e feat(web): keep submitted plans in chat and open them in sidebar
+6dad87b417 Merge master and preserve file links with compact Markdown
+7c55730a97 chore: move file-reference evaluation to personal repository
+c2190c4588 Merge pull request #4372 from deepseek-harness/feat/subagent-settings-ui
+e62a0e3e5d fix(desktop): explain listener conflicts with exit and restart recovery
+641253e730 merge(web): sync latest trajectory markdown changes
+bbd5fa2cf4 refactor(preview): align Office content discriminant
+f27e9bf37b merge(web): sync master for trajectory attachments
+a6d7195e53 Merge pull request #4390 from deepseek-harness/worktree/fix-4187-thinking-markdown
+ab0f04cbac refactor(preview): name Office loading mode explicitly
+eb10557199 test(desktop): pin supported platform in startup tests
+2e779cafca refactor(preview): let Office own document loading
+502c67d3bf Merge remote-tracking branch 'origin/master' into 07akioni/windows-desktop-titlebar
+f176327afc docs(web): record implemented trajectory attachment presentation
+9119f14522 fix(web): reset raw attachment disclosures on record selection
+38d375070f test(desktop): use native file URL for login placeholder
+fed28b6245 test(desktop): keep publisher test source-plane only
+5c2cc19efd feat(desktop): integrate Windows caption navigation and localized menus
+1c9f2e3a1f Merge master into office-sidebar-preview
+ddc1e28e17 test(desktop): cover update indicator fallback states
+c885d9f862 docs: pin browse picker for agent web automation
+880c186146 refactor(document): consolidate Office preview remotes
+6f79f40892 Merge remote-tracking branch 'origin/master' into feat/desktop-update
+593db4e0b7 test(desktop): stub update listeners in host disconnect fixture
+212f5f9ccc test(web): cover trajectory attachment presentation
+6affc44992 fix(web): update Subagent parallelism copy
+6130eac6b7 Merge pull request #4282 from deepseek-harness/office/render-cache
+371054b072 chore(release): restore merge-target prerelease version
+a5528b02a3 Merge remote-tracking branch 'origin/master' into feat/desktop-update
+12302ac6c3 refactor(workspace-files): keep bounded reads within readAll
+b911efef39 refactor(workspace-files): reuse bounded reads and return raw Host bytes
+e30a391326 docs(office-to-pdf): link the bounded conversion decision
+773d743bce docs(office-to-pdf): clarify conversion and engine package ownership
+11669006e6 refactor(document): consolidate Office conversion into office-to-pdf
+43839d1209 docs(document): refresh shared conversion module graph
+a69639a200 fix(document): select Office engines from declared native targets
+a193b51c96 refactor(document): name Office PDF conversion explicitly
+9d2a3bf2b7 feat(document): decouple shared Office conversion from preview
+e7a4621aa9 Merge pull request #4362 from deepseek-harness/turtle/startup-diagnostics
+a11b0a218c Merge branch 'codex/desktop-test-package-20260916' into feat/desktop-update
+1da97f30f8 fix(web): unify trajectory attachment presentation
+a9b7491cf8 fix(boot): keep startup metadata out of ordinary error output
+b4a60c8471 Merge pull request #4375 from deepseek-harness/turtle/orchestrator-3576650b674f
+c06d2719d0 merge: sync latest master into desktop updates
+51e9e1599d fix(web): address file-reference review feedback
+453348fcef Merge remote-tracking branch 'origin/master' into codex/issue-3997-citations
+039415d5a4 fix(web): preserve compact math and inspector typography
+7d9166ea40 fix(web): keep Thinking tables below the collapse header
+e5038fcf9e fix(web): render Thinking with compact Markdown
+f9aa94a161 refactor(preview): pass raw Office bytes and share source checks
+e39a6a48ea Merge branch 'codex/office-decouple-conversion' into codex/office-decouple-preview
+fdd8197674 refactor(workspace-files): reuse bounded reads and return raw Host bytes
+f0aebe0d8b Merge pull request #4368 from deepseek-harness/refactor/client-session-references
+2438bdd4d6 docs(client): document explicit Session ownership
+6d3b5d4526 test(client): migrate Session reference coverage
+b9b14dc05e refactor(client): bind Session UI through providers
+1bf048eb71 refactor(gateway): retain Session contexts through dispatch
+6830e1460d refactor(session-controller): own Client Session generations
+c52ef9fada feat(client): add ownership lifecycle primitives
+98ebcccf9e Merge pull request #4304 from deepseek-harness/feat/continuable-activation-limit
+04a3c30a04 fix(subagent): default delegation depth to one
+9fcf9f7b11 merge: sync master into continuable activation limits
+4233590de6 fix(workspace-changes): ignore scrubbed ambient Git config
+78f4c5ae32 style(web): remove Subagent section divider
+a8de4c334e style(web): soften Subagent help icons
+ce113eb86a Merge pull request #4376 from deepseek-harness/feat/plugin-page-config-items
+403c9b74f4 docs(desktop): trim the macOS menu prose
+57a705fa7e feat(web): let the install dialog's close control stop a running install
+a63dd809a2 refactor(web): share the card head and page top on the Plugins page
+62c66dad02 feat(web): open a row's configuration from its name and label the guide examples
+59e446b757 Merge origin/master into startup diagnostics
+965de16f56 Merge remote-tracking branch 'origin/master' into turtle/orchestrator-3576650b674f
+b9fde8d063 fix(desktop): complete the macOS menu defaults
+053cad9442 fix(cli): complete startup diagnostics before exiting
+22c96420fe Merge pull request #4367 from deepseek-harness/turtle/orchestrator-2d656b6cb16e
+024a7f8107 Merge pull request #4355 from deepseek-harness/turtle/sanitize-profile
+380994942d fix(desktop): declare the standard macOS window menus
+5e942d39eb test(bench): set trajectory navigation budget to 650 ms
+90af3110b7 feat(web): host plugin configuration on the Plugins page
+ea2651b86b feat(web): unify Subagent settings UI
+7eede143bd docs(client): state the known-site suffix count correctly
+004526ab0a Merge pull request #4339 from deepseek-harness/fix/session-used-toast
+b3795cb99f fix(desktop): make Windows mandatory update window movable
+ac2f890291 fix(cordis): dispose only the registered logger exporter
+214ab45932 feat(client): cover mainstream sites in known-site link marks
+b307cbffab docs(preview): follow renamed conversion decision
+3766f4af95 merge: resolve event catalog conflicts with master
+7bc0db4470 Merge remote-tracking branch 'origin/office/render-cache' into codex/office-decouple-preview
+2f98700396 Merge remote-tracking branch 'origin/master' into codex/office-decouple-conversion
+18260e3b0c fix(cli): save full startup diagnostics under DSH_HOME logs
+f018fe8f10 refactor(client): take known-site link marks from simple-icons
+bab800bf74 docs(office-to-pdf): link the bounded conversion decision
+8225e18d70 Merge pull request #4279 from deepseek-harness/worktree/changes-diff-preview
+17dd9f0e29 docs(web): propose consistent trajectory attachment presentation
+6d05e76b89 feat(desktop): open Feishu login DevTools with F12
+c624c2eff0 fix(desktop): present installer welcome and package 0.1.6-alpha.1.20260916.2
+c1f9d19658 test(web): refresh the present-svg golden for the review-opening card
+974d0271c0 fix(deliverables): satisfy the static gates and Windows tests
+b784e586ef Merge pull request #3986 from deepseek-harness/worktree/code-diff-card
+2875e28a0e Merge remote-tracking branch 'origin/worktree/code-diff-card' into worktree/changes-diff-preview
+8960d2cf11 Merge pull request #4361 from deepseek-harness/07akioni/fix-windows-shell-console
+59456dbb5b feat(client): lead known-site links with the site's own mark
+5991ea36ae Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+c63da07322 Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+e9f2ad41a1 Merge pull request #4353 from deepseek-harness/worktree/blank-session-sidebar
+bbbd93ad32 Merge remote-tracking branch 'origin/master' into fix/session-used-toast
+38fb1a11f9 fix(cli): group startup failures and pending services
+f8b1309fe5 fix(subprocess): hide Windows shell console windows at creation
+8ed7d7fde5 Merge remote-tracking branch 'origin/office/render-cache' into codex/office-decouple-preview
+07e398cc15 Merge remote-tracking branch 'origin/master' into codex/office-decouple-conversion
+5c0ca8e420 Merge master into turtle/sanitize-profile
+24828084ca Merge remote-tracking branch 'origin/office/render-cache' into codex/office-decouple-preview
+04794bd90e fix(desktop): clarify profile recovery scope and diagnostics
+682011adfa docs(office-to-pdf): clarify conversion and engine package ownership
+a609246a35 docs(desktop): confirm release version before packaging
+69bf9f9054 release(dsh): 0.1.6-alpha.1.20260916.1
+d1e93e5482 test(web): match the terminal close response without unsafe JSON access
+f756097108 Merge pull request #4324 from deepseek-harness/turtle/creator-plugin-manager
+51a9382b61 test(web): await terminal close acknowledgement before cleanup assertions
+b0542ec0e2 test(web): update blank session header snapshots
+3cd6782114 refactor(boot): name the profile pnpm invocation explicitly
+2fc6e38d2b test(web): refresh Creator skill instructions card
+60058f118b fix(boot): timestamp profile patch backups
+8c5ae870c2 fix(creator): address plugin workflow review findings
+8d5c7e4e2a fix(desktop): back up profile patches during recovery
+7f2d7b1791 fix(web): allow opening the sidebar before the first message
+54d268c409 feat(preview): consume shared Office conversion independently
+c13cc074fd merge: preserve Desktop test release base versions
+a2215799b8 fix(desktop): preserve the dsh base in dated test versions
+d86da2e31c test(plugin-manager): keep approval assertions type-safe
+1be847f736 feat(desktop): add native About menu and panel
+26e2196a86 fix(deliverables): scroll the split review columns sideways together
+9a83772560 fix(plugin-manager): request approval for single-call full access
+73c2300ce4 merge: align session toast fix with latest master
+d3ed04defa refactor(document): consolidate Office conversion into office-to-pdf
+142ca8b956 Merge remote-tracking branch 'origin/worktree/code-diff-card' into worktree/changes-diff-preview
+91d9346aa1 fix(deliverables): open the review from the card header and scroll unwrapped split columns separately
+9a74f173d3 Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+470d4aae11 fix(plugin-manager): require full access for agent tool calls
+257df553b6 Merge pull request #4334 from deepseek-harness/worktree/model-input-checkboxes
+040be00cb4 test(creator): align Web fixtures with persistent plugin management
+68183a5de3 docs(document): refresh shared conversion module graph
+cb731e26e9 Merge master into worktree/model-input-checkboxes
+15b5ba0d44 Merge pull request #4273 from deepseek-harness/turtle/sidebar-parent-folders
+14f375168d Merge master with released Office skills into shared conversion
+bd241e28fa Merge pull request #4337 from deepseek-harness/turtle/author-approval-credit-1-1
+5ec3368285 fix(web): address Workspace tree review feedback
+5d51ba5a9c refactor(web): clarify model input docs and strengthen tests
+e297b75a5d merge: align session toast fix with latest master
+74e5694e6b test(creator): refresh Python restart tool inventory
+92da029f6d test(creator): replace retired Cordis tool scenarios
+7342687170 fix(creator): bound visual verification and refresh module graph
+ed32f57f88 feat(creator): use Plugin Manager for persistent plugins
+5c369a0a1f fix: carry session writer failures by typed remote code
+c81dec55de Merge pull request #4286 from deepseek-harness/office/bundled-skills
+f5683559a5 fix(web): isolate model settings tests and update input guide
+2a5c227199 test(web): cover model draft and provider input defaults
+82ab876331 fix(office): validate strict and corrupt OOXML
+fa518ecd89 feat(desktop): enable standalone Office skills
+eb57fdb9c6 fix: load optional persistence errors only with its service
+941cf78b5d Merge pull request #4336 from deepseek-harness/worktree/messages-tool-history-json
+08b75ade40 fix(desktop): show a local document while the policy login page loads
+a3d2cb400b fix(desktop): tighten the update entry label and downloaded detail
+b432223364 feat(web): make Workspace tree an explicit grouping option
+daf185fd24 fix(client): yield the enclosing tooltip to a nested one
+fc10bc18e0 feat(deliverables): review one turn's changed files in a single tab
+99402378b7 Merge pull request #4333 from deepseek-harness/worktree/user-terminal-permissions
+fcf9f4cfa2 fix(document): select Office engines from declared native targets
+e0f170b8d0 fix: explain session writer contention in toasts
+a1ac8371de test(acp): refresh the fs-same-mode fixture for the write operation metadata
+f25f3527ef test(ui-deliverables): preserve file-reference prompt evaluations
+60c39996b9 Merge remote-tracking branch 'origin/feat/desktop-update' into feat/desktop-update
+7b93d1bd83 Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+e879c7456a Merge pull request #4321 from deepseek-harness/turtle/builtin-plugin-i18n
+bc49038b82 Merge pull request #4323 from deepseek-harness/fix/desktop-mac
+c7e7e8bc18 Raise author approval credit to 1.1 at 100 merged PRs
+e6c507d65f fix(desktop): upload releases with Tencent COS SDK
+1f030b3c1c fix(llm): tolerate malformed historical Messages tool input
+46bac5f7db Merge master and retain desktop execution PATH isolation
+44c65b70ad Merge pull request #4257 from deepseek-harness/fix/desktop-directory-picker
+3e6d93171d Keep desktop package launchers out of the Host execution PATH
+285da0fa64 style(desktop): wrap dialog mock after rebase
+fd3cdf539b refactor(document): name Office PDF conversion explicitly
+ab695ef4cf feat(web): give user terminals system-user permissions
+21c7828678 docs(desktop,client): align native directory picker summaries
+48dd4b3bea test(desktop,client): keep picker composition coverage with its feature
+ea5f1dce4a fix(desktop,client): preserve folder creation and verify picker wiring
+73dcae2915 fix(desktop,client): attach workspace folder dialogs to the application window
+8e5f4caec2 Merge pull request #4326 from deepseek-harness/turtle/sandbox-same-mode
+cc394230bf feat(web): unify model input controls and catalog inheritance
+ed0ae7786d test(web): align shipped file-reference guidance expectation
+96e68ded13 feat(document): decouple shared Office conversion from preview
+fac80a84fb Merge remote-tracking branch 'origin/worktree/code-diff-card' into worktree/changes-diff-preview
+2440937459 fix(workspace-changes): list oversized pairs, bound capture reads, and resolve paths through symlinked ancestors
+fbc6abcfd4 feat(web): guide file references with concise colon labels
+aea150a17e test(pwsh): align repeated sandbox mode expectations
+8040a599ac Merge origin/master into issue-3997-markdown-file-links
+61c548e200 fix(sandbox): accept repeated effective permission modes
+43e1e241ee Merge pull request #4254 from deepseek-harness/feat/docs-page-markdown-actions
+c19983150c Merge pull request #4276 from deepseek-harness/office/python-runtime
+0eed02d447 fix(subagent): map capacity refusal and clarify one-shot scope
+a66d81e33f fix(ptc): limit Electron selector to startup and budget native tests
+869a3f6d27 feat(desktop): ship standalone Python Office runtime
+25650d3d35 Merge backend delegation settings from #4304
+a139e6e9e1 fix(ptc): preserve Electron Node mode when launching programs
+ab8bc05695 Merge remote-tracking branch 'origin/master' into feat/continuable-activation-limit
+a69bcf3636 feat(subagent): own editable delegation limits in the backend
+664190c6f9 Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+c4f1cae6c6 Merge pull request #4313 from deepseek-harness/fix/llm-remove-v4-flash-models
+bfe6beb517 fix(desktop): preflight Windows signing before builds
+6b63916d9c docs(subagent): regenerate settings dependency graph
+6bc7938a15 fix(web): localize built-in plugin names and descriptions
+845115d0f8 feat(subagent): edit delegation limits in plugin settings
+011dbc9fb8 Merge remote-tracking branch 'origin/feat/desktop-update' into feat/desktop-update
+d7f9d3a773 fix(subagent): default to eight live continuable children
+c781e85e92 fix(desktop): isolate Windows signature inspection modules
+ac0acf55a6 Merge pull request #4231 from deepseek-harness/feat/composer-selection-keyboard
+6bdbe4dff2 Merge remote-tracking branch 'origin/master' into feat/continuable-activation-limit
+9fefcd7c06 fix(desktop): prepare unattended macOS signing from required p12
+b06ea72226 fix(desktop): preserve verified runtime signatures during packaging
+a55b08233f test(llm): point the keyless onboarding case at a listed model
+b37687c141 fix(desktop): sign bundled Windows runtime before validation
+f2beb99c3b feat(llm): remove the V4 Flash and V4 Flash Vision Exp defaults
+63dd8fb80d feat(desktop): add ordinary and mandatory update flows
+2bc7697265 Merge pull request #3596 from deepseek-harness/feat/plugin-mgmt-4-web
+2d24d80d5f docs: synchronize translated subagent event references
+a9fe93fc0b refactor(plugins): name bundles by their package name only
+16620a3a70 feat(subagent): cap live continuable activations per root at 16
+9ec915433e Merge pull request #4294 from deepseek-harness/turtle/weighted-approval-delegate
+b017b2861c fix(experimental): declare react as a build input of the agent team client
+e22c63185a test(web): resolve the built app-boot when a scaffold launches
+15eb952733 test(client): count the plugin page's two glyphs in the icon set
+430f88d1c5 refactor(web): keep the plugin manager's store state types package-private
+79729c3422 refactor(plugins): read a bundle's one-liner from the package description only
+fa320209ab refactor(plugins): name the optional bundles in the launcher, not the installation manifest
+f04c265725 refactor(plugins): stop announcing patch generations applied outside the manager
+3e9b6ad94e fix: authenticate and reconcile approval delegations
+60d26ac4ab fix: dismiss prior reviews when delegating approval
+5e5f0a2393 fix(web): start the approval retry with a fresh log and keep the install dialog in view
+c3c7a4f412 refactor(app-boot): drop the root Include lookup by id
+c13d21fb95 feat(web): approve blocked install scripts from the install dialog
+075aab54a7 Merge remote-tracking branch 'origin/master' into feat/plugin-mgmt-4-web
+6f893f270a Merge pull request #4263 from deepseek-harness/desktop/native-fatal-recovery
+faf8da83f0 Merge pull request #4277 from deepseek-harness/turtle/plugin-build-approval
+8059d76ea3 feat(plugins): ship Auto review as an optional bundle
+8c28d87de8 Merge remote-tracking branch 'origin/master' into desktop/native-fatal-recovery
+8129f8f6bd Merge pull request #4238 from deepseek-harness/worktree-bootfast3
+e2ae9411cb feat: support weighted approval delegation
+bc0ecae21f feat(plugins): ship optional bundles switched off and guide the install dialog
+7fb4cb4c8e fix(client): version lazy chunks by build generation
+45c74c5483 fix(client): satisfy chunk loader test lint
+b98d5c8003 test(client): cover lazy chunk loader branches
+72aaad53fd docs(config): refresh generated catalog pairing
+b1471fd73c perf(client): load split bundles on demand
+7f5385bf01 revert(client): remove eager chunk scanning
+d28807e05c fix(client): preserve lazy chunk runtime semantics
+7c74636892 perf(api-gateway): avoid duplicate client input parsing
+75a56be10c perf(llm): avoid aggregate pi-ai runtime import
+ee9f43bc5d fix(client): align lazy chunk metadata
+a5c224f9b1 feat(client): lazy-load PDF and terminal runtimes
+ef4985792d docs: refresh plugin manager dependency graph
+49c341a449 Merge pull request #4292 from deepseek-harness/revert-4285-fix/composer-draft-scroll-jump
+f0367432d4 Revert "fix(web): insert pasted composer text as line-break nodes"
+89a89408c6 refactor(desktop): remove unused recovery IPC paths
+a5dea502a6 fix(plugin-manager): address approval review and remove agent notices
+6db9466c4e test(web): synchronize composer selection before deletion
+7b36291967 Merge remote-tracking branch 'origin/master' into desktop/native-fatal-recovery
+09be5f750a fix(desktop): clean profile core packages before production startup
+0810a4403a Merge pull request #4285 from deepseek-harness/fix/composer-draft-scroll-jump
+791f731c08 fix(desktop): bound fatal diagnostics and restore failed package operations
+f4b7a5948c fix(desktop): support Node 26 runtime archive extraction
+cccfdb6040 Merge origin/master into feat/composer-selection-keyboard
+7aca916679 fix(docs): keep platform commands readable in MPA builds
+96da25c8f5 fix(web): insert pasted composer text as line-break nodes
+96136c0282 Merge remote-tracking branch 'origin/master' into feat/plugin-mgmt-4-web
+d50f062c64 fix(web): reword the plugin install dialog and name failed actions
+5c8b4e5834 fix(web): show the full package name on a bundle's page
+a79b97ecca feat(deliverables): compare each changed file from the card
+f9756edac0 test(plugin-manager): canonicalize pnpm fixture workspace paths
+db2e03b89d refactor(web): derive workspace hierarchy automatically from paths
+8848e1e94f test(plugin-manager): install packed addon for build approval coverage
+c6b81a75fd fix(web): polish the plugin page, detail page, and rail per design
+ffffac3cba fix(plugin-manager): approve blocked dependency builds before retrying
+e706da7424 refactor(web): unify workspace grouping controls and row highlights
+d492b2cd36 feat(web): group sidebar workspaces by parent folder
+0d4b32f077 fix(web): keep plugin cards in title order across switches
+31209ea9d7 Merge pull request #2746 from deepseek-harness/xtr/durable-inbox-web-recovery
+9f219e48a9 Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+775d5f5369 Merge pull request #4262 from deepseek-harness/turtle/author-approval-weight
+423e86ff7d fix(docs): preserve menu activation across pointer focus changes
+c8bc10440b fix(workspace-changes): review round on the served summaries
+dc9256536b Merge remote-tracking branch 'origin/master' into feat/plugin-mgmt-4-web
+4d306deb0a Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-web-recovery
+38b2bf2f6c fix(docs): address Markdown actions review feedback
+f3c0ae620b test(web): disambiguate workspace rows during reconnect
+011bbf8eec Merge pull request #4230 from deepseek-harness/feature/model-image-input-setting
+b5a6905832 feat(ci): add author approval credit from merged PRs
+47c94a1d5e Merge pull request #4252 from deepseek-harness/turtle/profile-command-shorthand
+57af1f0013 docs(desktop): remove stale runtime and reload descriptions
+eb59250ce9 feat(docs): present Markdown actions in a split-button menu
+992a932a16 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-web-recovery
+bd421cce7b fix(llm): resolve Messages endpoint suffix (#4241)
+d50d3cb745 Merge remote-tracking branch 'origin/master' into desktop/native-fatal-recovery
+7d4188b450 fix(cli): address profile shorthand review feedback
+1d6534a810 feat(cli): support profile command shorthand
+dfb07a038c feat(desktop): replace failure pages with native recovery dialog
+511216983e Merge pull request #4182 from deepseek-harness/turtle/plugin-manager
+cc872a39b9 test(subprocess): verify owned exit listeners on disposal
+4d1adb8541 feat(web): manage plugins over the #4182 manager from the sidebar page
+b3e964c340 Merge PR #4182 (turtle/plugin-manager) into feat/plugin-mgmt-4-web
+da6e3f9edf fix(workspace-changes): count an appended line as one addition
+cc190b07d5 Merge pull request #4002 from deepseek-harness/turtle/blame-weighted-approval
+25525dc495 test(web): register file-link scenario in host compilation
+9e611c90a3 test(web): finish sidebar transitions before preview capture
+7bc0154bfc test(web): verify keyboard file navigation and capture preview
+311156b1c2 Merge master and preserve profile-managed HMR
+1ec62afbdb feat(web): open Markdown file links in sidebar previews
+cb464f1894 fix(docs): preserve UTF-8 in raw Markdown navigation
+794b658401 fix(ci): address production blame approval review
+08021a16d8 fix(plugin-manager): keep package operations outside HMR
+8f0cdc9a98 Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+b03d5c68ea Merge pull request #4189 from deepseek-harness/worktree/client-modules-live
+23135e62dc feat(docs): add page Markdown copy and view actions
+bcb49ade82 feat(docs): add independent platform command tabs
+b51eb87125 Merge pull request #4209 from deepseek-harness/fix/issue-3479-linear-cache
+c48f4203d9 feat(workspace-changes): summarize file-tool edits outside a git repository
+3e24e501cd Merge remote-tracking branch 'origin/master' into worktree/client-modules-live
+05fb7b90e8 Merge pull request #3981 from deepseek-harness/07akioni/thin-electron-webui
+c28fcc6cdb Merge remote-tracking branch 'origin/master' into worktree/client-modules-live
+61665c3454 fix(plugin-manager): clean failed installs and address critical review findings
+2a77c59a49 test(web): refresh the changed-files golden for master's edit-card counts and desktop copy
+41e591b3e4 fix(web): address model image settings review
+1ea80b7b69 Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+830c82687b revert: restore original CLI profile boot exports
+9441552679 Merge pull request #4163 from deepseek-harness/ihsiang/fix-conversation-width-handle-layering
+1bec11e366 fix(ui): keep transcript resize handles unobtrusive
+21a785902b fix(client): keep a launcher-opened menu open through its own focus track
+9ce6d98e11 fix(ci): validate Web injection payload and cover macOS sidebar controls
+07c6a65f4f Merge pull request #4232 from deepseek-harness/turtle/orchestrator-0d396914f8c0
+6d05c9557f fix(web): forward client graphs without Host lifecycle waits
+afbe3a4b1d refactor(client): compute the menu's keyboard region once per key
+b263581e92 fix(client): answer the review bot's findings on the keyboard hand-offs
+255374afa1 fix(cli): expose only the shared profile runner API
+5c3081eeaa fix(client): tighten the keyboard hand-offs, and drop the dialog Escape layering
+59fb655d66 Merge remote-tracking branch 'origin/master' into turtle/plugin-manager
+2c9375e509 fix(web): reconcile pending plugin revisions and preserve bootstrap
+b77c19c376 fix(hmr): retain consecutive profile configuration changes
+9cee793b90 Merge branch 'master' into turtle/blame-weighted-approval
+3065f9cc27 docs(client): drop a reverted implementation from the note's evidence list
+b43e85129c Merge macOS hidden titlebar while preserving local Web startup
+4fc515cb68 fix(client): keep the ring on the triggers and off the menu rows
+449a4610d7 fix(client): keep the browser ring on the focused menu row
+4feb87da34 feat(desktop): load bundled Web UI before backend readiness
+0976569d16 fix(web): clarify external app availability for delivered files
+b5bbf210d1 Merge pull request #4198 from deepseek-harness/turtle/master-ci-packed-inventory
+4b8a47a198 docs(client): record the SessionInput focus addition in the note
+f46b025fd5 feat(client): give the shared menu family its keyboard model
+c47a469aec feat(client): accept and leave with Enter, Tab, and Escape in the composer
+1fec9adb61 docs(web): clarify client plugin reload failures
+3df6f92d03 feat(web): configure model image input in settings
+358384f045 Merge pull request #4206 from deepseek-harness/worktree/sidebar-session-recovery
+86497c479c Merge remote-tracking branch 'origin/master' into turtle/plugin-manager
+149ed69912 test(subprocess-local): cover configured ZDOTDIR without zsh
+abd765a600 refactor(hmr): own profile reload lifecycle through YAML
+ac2bed35e2 feat(web): guide plugin installation with a pre-install check and classified failures
+ad8a00c291 Merge remote-tracking branch 'origin/master' into worktree/sidebar-session-recovery
+281723bed8 fix(web): isolate terminal bindings and validate saved layouts
+53046b21b4 fix(session-controller): reconcile list cache in linear time
+aa083ebfa4 Merge latest master into thin Electron Web UI
+a2112c07e4 test(subprocess): refresh terminal activity API snapshot
+ccd6121c99 Merge remote-tracking branch 'origin/master' into worktree/sidebar-session-recovery
+b25c5ad82e feat(web): restore sidebar layouts and reclaim unattended terminals
+f2db686404 feat(desktop): macOS hidden titlebar with vibrancy sidebar
+dcf1d274d9 test(ci): repair packed inventory context fixture
+bafe2b7d55 Merge master into thin Electron Web UI and reconcile runtime resolution
+ca4db9c755 fix(hmr): match Node module paths and contain startup reload failures
+4d13d8ad9d Merge remote-tracking branch 'origin/master' into turtle/plugin-manager
+5a9c159c27 fix: preserve manager failures and support worker preview imports
+8e327513ba fix: remove inactive bundles after incomplete installation
+438c862fea refactor: keep profile launch context data-only and HMR backend-scoped
+d06e6b5519 feat: coordinate profile management through dsh-hmr
+98b92b683c feat: add current-profile plugin manager service and Web controls
+e350e76496 Merge commit '8448a6a48511508f6f6e19273c13ab994897dcb0' into worktree/pr3596-global-only
+70f6f30817 fix(plugins): join package removal when the manager is disposed
+bdc496cc06 feat(web): cancel plugin installation with Host confirmation
+27ec094db3 Merge commit 'd4993fc780f98c06304c47a09c018b2f48f70926' into worktree/pr3596-global-only
+cf992b52f9 fix(plugins): preserve observed exit codes on cancellation
+9c80145109 Merge commit '0f88503eb30b0c9e06d297f4863e5b42746e291c' into worktree/pr3596-global-only
+f511455e14 test(plugins): verify CLI interruption and document recovery
+eca54e94a7 fix(plugins): publish shared subprocess installation chunks
+b49f57ca12 fix(web): share pending loads across matching graph notifications
+9d58c54f49 Merge commit '1438b3ade6248047b74cc05f461845e9eb8bdedf' into worktree/pr3596-global-only
+3302b38df1 Merge remote-tracking branch 'origin/master' into worktree/client-modules-live
+ff1f3f72a1 feat(plugins): cancel installations after process and file cleanup
+fb0fb48033 feat(web): apply client plugin changes without reloading
+6d835dfe47 docs: align historical timer reference with master
+5141675053 docs: mark removed workflow timer reference as historical
+9413105c31 fix(desktop): prepare and sign usable bundled runtimes
+ab6bb7b86f refactor(web): keep Gateway argument handling unchanged
+850d2882f6 Merge commit '03af7e39c641a58fd77f5b3f7b3eb089f200e519' into worktree/pr3596-global-only
+fd2c0df8cb Merge commit '6eab1e46616edf64daf1350a88526277ce915a10' into worktree/pr3594-manifest-mergeup
+bf749078fb docs(architecture): condense launch overview after integration
+9dc51c4666 Merge commit '7d96a1bcda353371db935725ef3a8d228312f42e' into worktree/pr3594-manifest-mergeup
+534d05a924 Merge remote-tracking branch 'origin/master' into worktree/pr3593-manifest-3899
+5105c77706 test(desktop): fix runtime CI fixtures across platforms
+e936a5245f Merge commit '2b1fbef125279026d8df67db7143b54e87279f9a' into worktree/pr3596-global-only
+f7170bd899 Merge commit 'beeaa1d083570c93fcb1500749454a5b9ea4b698' into worktree/pr3594-manifest-mergeup
+379fc28126 docs(cli): describe preserved bundle activation choices
+d6be592b8f Merge bundle activation selection into plugin manager
+90dddfbf08 refactor(boot): derive bundle enablement from selected layers
+620c52ca66 test(web): give the clickable-links gallery its own native-open overlay
+dde4dccbd2 feat(workspace-changes): keep change summaries on the Host for the Session's lifetime
+0c88492646 feat(desktop): bundle release-bound workspace runtimes
+e5ac976e4b Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+64df6d25cc Merge updated thin Electron Web UI into installer design
+361c20cb41 Merge master into thin Electron Web UI
+2d660bf078 fix(web): list only installed packages on the sidebar Plugins page
+cbf9fbc29e refactor(agent-loop): remove duplicate Inbox projection registration
+d5155007e0 refactor(web): manage bundles without module composition actions
+95e2da7416 refactor(plugins): retain bundle management and existing row toggles
+d31c59b3b2 refactor(boot): limit package metadata to bundle management
+cf4ba60b47 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-web-recovery
+15e9861e8a docs: trim repeated Inbox recovery rationale
+c89e0cbdbd fix(web): remove preset UI injection from global plugin manager
+9ca343b316 docs: revert unrelated timer-note path repair
+f6e145c1ea chore: remove duplicate cold-session test include
+0122acf731 Merge global plugin manager scope into Web management
+6a6796f48d refactor(web): separate preset management from global plugins
+722008aeeb docs(deliverables): add the subsystem page the package-group gate requires
+07f9daa55a refactor(plugins): limit manager operations to the global profile
+dce58eaf4e Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+49f601e902 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-web-recovery
+6711bb9e24 fix(desktop): hide context menu shortcut labels
+fa8938d202 refactor(deliverables): simplify path helpers, hunk classification, and card status
+3ceb5af4d7 fix(desktop): add native text context menus
+743df72db2 Merge PR #3595 API simplification
+27896dd532 Merge PR #3594 API simplification
+ef71137220 Merge PR #3593 API simplification
+8fc785de3a refactor(boot): keep bundle analysis internal
+f800ea46e5 refactor(deliverables): group tool-present and workspace-changes under packages/deliverables
+88d40e28ab docs(config): refresh the workspace-changes catalog entry after the source moved
+c47a2c16b4 feat(desktop): load platform packaging settings from local dotenv files
+904e589573 test(web): keep the sentence the right-Sidebar scenario waits for
+86a1bf1e80 fix(workspace-changes): resolve canonical paths lazily and make the tests portable
+9187c3662e Merge master and fix desktop editing and Windows lock contention
+7f5f4e778a fix(web): keep line counts visible after a changed-files row opens
+8ea92ce9b5 fix(workspace-changes): count argument-derived hunks, isolate per-turn state, and harden git handling
+8a52d27a93 Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+3010cb3dba fix(workspace-changes): resolve the types subpath to source and complete exported JSDoc
+c257c79872 Merge branch 'worktree/pr3595-sep14-sync' into feat/plugin-mgmt-4-web
+4373a42552 docs(settings): refresh the generated module graph
+4ca7c816d4 Merge branch 'worktree/pr3594-manifest-mergeup' into worktree/pr3595-sep14-sync
+b0a2aa7ec0 test(plugins): cover portable read failures and refresh the module graph
+0d2fcf22dc docs(persistence): refresh format facts after acknowledging the workspace/changes event
+673fce91e2 Merge branch 'worktree/pr3595-sep14-sync' into feat/plugin-mgmt-4-web
+a27cfb9bd3 Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+64451b0e04 Merge latest thin Electron Web UI base into installer design
+cdfd8ab5b0 test(web): refresh the changed-files golden for the decorative header glyph
+0f14d6703b Merge branch 'worktree/pr3594-manifest-mergeup' into worktree/pr3595-sep14-sync
+d6634272d5 feat(workspace-changes): keep snapshot objects in a private store under the Harness home
+83747b255f refactor(preset): name overlay row fields explicitly
+8dc899641a Merge branch 'worktree/pr3593-manifest-3899' into worktree/pr3594-manifest-mergeup
+94419d809b Merge remote-tracking branch 'origin/master' into worktree/pr3593-manifest-3899
+17ce0910c4 fix(web): use installation records for plugin management
+23324b2b94 merge: align plugin event reference pairs
+eda5fabfbf merge: align plugin event documentation
+0443cd8ad3 docs(plugins): align event references after metadata cleanup
+e812aa66b1 merge: restore startup requirements across plugin management UI
+dac1950ac8 merge: propagate consumer-owned startup requirements
+2b40a9d819 merge: restore startup requirements from plugin stack base
+f747ada426 fix(boot): restore consumer-owned startup requirements
+ecf8bfcccb test(web): cover live bundle toggles through the plugin Remote
+fc0e19c88d Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+a840641d78 Merge branch 'worktree/pr3594-manifest-mergeup' into feat/plugin-mgmt-3-settings
+52c215ee55 fix(plugins): resolve root state from plugin callers and report live failures
+a9403470f8 Merge branch 'worktree/pr3593-manifest-3899' into worktree/pr3594-manifest-mergeup
+fa240e7372 fix(boot): inject loader for plugin-scoped recomposition
+3f9c25eb1d merge: propagate plugin diagnostics cleanup to web
+89d1bc27c1 Merge branch 'worktree/pr3594-manifest-mergeup' into feat/plugin-mgmt-3-settings
+074b1cb15e Merge branch 'worktree/pr3593-manifest-3899' into worktree/pr3594-manifest-mergeup
+eaecfd59bf fix(plugins): notify only changed diagnostics and remove stale probe cleanup
+63f1f6eca4 chore(workspace-changes): align the package version with the root after the master merge
+b916f455af fix(ci): use HTTPS Ubuntu sources for browser dependencies
+26706559b2 refactor(boot): remove unpublished probe remnants and notes
+51de5bbc4d fix(web): draw the changed-files header tile with the design's angle-bracket mark
+0f8457a017 feat(workspace-changes): record only git repositories and add the recorded card scenario
+8d843f603c Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+43b10b9ee6 Merge branch 'worktree/pr3594-manifest-mergeup' into feat/plugin-mgmt-3-settings
+fa03c7dd15 Merge branch 'worktree/pr3593-manifest-3899' into worktree/pr3594-manifest-mergeup
+8279761268 fix(plugin-inventory): require the runtime diagnostics dependency
+587c21d06b refactor(desktop): inherit shared Web profile defaults
+4264b1d9f2 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+dc513272bf Merge branch 'worktree/pr3594-manifest-mergeup' into feat/plugin-mgmt-3-settings
+aa1c40965c Merge branch 'worktree/pr3593-manifest-3899' into worktree/pr3594-manifest-mergeup
+96ba84e15d test(boot): exercise startup policy through installed bundle provenance
+8c3ddf0971 merge: adapt plugin management UI to native entry outcomes
+3c632ebf66 Merge remote-tracking branch 'origin/master' into worktree/code-diff-card
+f937f4e23b feat(web): record turn file changes with git snapshots and render the changed-files card
+4fa238bb5f fix(desktop): track extraction in directory installer
+188f72cd58 fix(desktop): track installer work and complete progress smoothly
+e12fbbcbb3 feat(desktop): apply designer icons to apps and Windows setup
+6cc34319e5 fix(desktop): align installer progress with worker stages
+00ca76dd21 fix(desktop): keep installer progress and completion responsive
+9255b08ed3 fix(desktop): preserve installer dependencies and validate keyboard navigation
+52bc79284f feat(desktop): integrate native Windows installer design
+3829cca80b Merge native plugin loading and update scoped settings consumers
+3ace0d0cf7 Merge profile settlement and await it before runtime notifications
+8c33df5d8e fix(boot): expose profile recomposition settlement to observers
+b351ca0578 refactor(plugins): manage static declarations and native row outcomes
+695720ea8d Merge latest master into thin Electron Web UI branch
+96be622603 Merge native entry loading into plugin manager
+1144cf1e8e refactor(boot): use native entry diagnostics and static plugin declarations
+bebf88de4f Use Electron Node runtime and replace Windows installations by directory
+acb448e0c7 docs: normalize plugin decision note headers
+f7519bab0a Merge master settings checkpoint into plugin management UI
+6bb4ce0e37 Merge master manager checkpoint into scoped settings
+90aa315f40 Merge master boot checkpoint into plugin manager
+7c34e7a328 Merge master before native plugin loading migration
+6e60940ded feat(ci): cap blame approval weight at quarter ownership
+4563910ff4 fix(ci): retain pending status during blame evaluation
+cef92ed40b feat(ci): weight approvals by production blame ownership
+253873f340 Merge origin/master into thin Electron Web UI branch
+6b05ed53e9 test(desktop): remove obsolete fs-ext payload smoke
+7fe6acdf8b test(desktop): canonicalize pnpm fixture paths on Windows
+ae84dd3381 fix(desktop): address shared runtime review and CI regressions
+d995331772 feat(web): start the turn-level code diff card for #3501
+8c2fa73ceb refactor(desktop): share profile initialization and plugin management
+8345ac129e fix(desktop): separate default port and replace plugin update prompt
+b373c45648 merge: incorporate latest master into thin Electron branch
+e84a4e857e refactor(desktop): run shared Web UI in a thin Electron shell
+218e7f815e Merge boot documentation correction into plugin management UI
+0746724e64 Merge boot documentation correction into scoped settings
+98338c8aa9 Merge boot documentation correction into plugin manager
+8bdd47366f docs: refresh module graph after manifest merge
+650d5f1478 Merge manifest-compatible scoped settings into plugin management UI
+be8550c4c7 Merge manifest-compatible plugin manager into scoped settings
+b12febec56 Merge manifest-compatible boot layer into plugin manager
+fcb3882e28 fix(boot): adapt plugin manifests to public package metadata
+0ed47fe860 fix(agent-loop): preserve standalone inbox registration
+28548ba1c7 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-web-recovery
+813ad965f9 fix(web): preserve newer projections across control baselines
+9cd0c703df fix(web): invalidate projections before opening control snapshots
+24710859e5 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-web-recovery
+f3332af2a4 fix(web): discard projection state across host generations
+e101c448e5 fix(web): declare the conversation agent project reference
+1514635118 Merge master to unblock durable inbox recovery CI
+72f2e71070 fix(web): reconcile durable inbox recovery with master
+cb999713d1 Merge latest master into xtr/durable-inbox-web-recovery
+8249d54e47 style(web): open a package's page from its whole card and move its actions into the head
+08974835d7 refactor(web): rename ui-settings-plugin-manager to ui-plugin-manager
+c6e6023dee Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+a98eacd664 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+41d21f841c Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+34a279743d style(web): open a package's page from its title and clamp card descriptions
+c96854eec8 Merge remote-tracking branch 'origin/master' into feat/plugin-mgmt-1-boot
+541dee461b style(web): centre the plugin management column
+0aeebb017e feat(web): move plugin management to the sidebar's Plugins panel
+5d90477cb1 test(web): refresh the preset-detail golden for master's tool-present row
+dd3e690ef8 chore(client): regenerate the slot catalog after the master merge
+00a5aafdc3 Merge remote-tracking branch 'origin/master' into feat/plugin-mgmt-4-web
+6d1a20b3cc Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+16cff3321c Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+e755084dfb docs: mirror the regenerated event matrix rows in the zh copy
+e070e1e074 docs: regenerate the event producer-consumer matrix after the master merge
+8d8a69f423 chore(plugin-manager): align the package versions with release 0.1.5-alpha.1
+a75db2e521 Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+5528446814 docs(architecture): point the external-bundle paragraph at the app-boot README
+a8c97e33e5 Merge remote-tracking branch 'origin/master' into feat/plugin-mgmt-1-boot
+e1c3ec00e2 fix(web): count the scoped mutate branch and draw the breadcrumb separator as a hairline
+654ec0d8c1 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+bb91e042d2 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+770f239fc6 Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+ea624def34 refactor(web): share the enable switch, the notice line and the form observer plumbing
+a8f2e84946 fix(app-boot): keep the probe's stderr tail across reads of any size
+2b01edcd5e Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+e5196d85ed refactor(settings): keep each event's literal dispatch at its call site, share only the delivery loop
+5aaf978b19 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+ff94876574 refactor(settings): share the contained event fan-out between commit and document updates
+7a6b69ee25 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+c7385c588a Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+aee2d84cc5 docs(plugin-manager): name the disabled-bundle record the installer keeps
+464264aede Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+07878ae1d3 fix(app-boot): record user-disabled bundles in the profile manifest
+9d9b39a41b chore(client): regenerate the slot catalog after the master merge
+f3f1c7a87d Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+6d67daf7df Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+7868fdcf3b chore(plugin-manager): follow the root version bump
+ca291b0100 docs(plugin-manager): keep the package summaries within the summary budget
+bb408abe28 Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+5a9e1760fd Merge remote-tracking branch 'origin/master' into feat/plugin-mgmt-1-boot
+afa57ae093 refactor(boot): keep containment and composition internals off the package root
+af2ebda892 test(web): compose the scaffold's stack with its user-disabled rows
+2f181a75ef fix(web): name the package-group title field as a key
+4c423bbb68 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+ec0504dc58 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+22f92a8297 test(inventory): give the runtime its install anchor
+3787829d75 fix(web): name the confirmation copy map's fields as keys
+dcbac5ebf2 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+16464f5147 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+5694e50548 fix(plugin-manager): ask the runtime which rows the user disabled
+731804affc Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+c73d88e4e5 fix(boot): answer user-disabled entries from the profile runtime
+d6f5160591 test(boot): type the id-less group row in the ownership spec
+792a68468f fix(boot): judge a package's cordis copy by package directory
+20102bcd52 fix(boot): commit user-disabled rows with the composition and name a user row's trust
+6bc5e978ae fix(boot): harden the package probe's child
+5f0ad7c4b1 fix(boot): keep disabled bundles disabled across runs and catch config-override duplicates
+e23030cb30 fix(web): show an install's removal runs in its dialog
+07589e1c32 feat(web): render each pnpm run of an install as a terminal
+eb2ee55f83 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+cbd835f13e Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+6605c4de48 feat(plugin-manager): name the profile directory on install-log chunks
+26abe2c82e Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+d56ba7b995 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+5953d2920c docs(plugin-manager): give the README installer example its colour option
+fc20624b69 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+0b2690004e Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+080e22ee03 feat(plugin-manager): keep pnpm's colours and name the command on install-log chunks
+e37f47fc53 fix(web): ask what depends on a row or a pack before any dialog opens
+b327f58108 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+e5892dc40a Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+43ba51d585 docs(graphs): list app-boot among the consumers of internal/status
+24244f3a7e Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+df41c01ab7 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+4d83c2c71f fix(boot): drop a row's recorded wait once its service appears
+107d07614a feat(web): ask before switching a row off that other rows depend on
+6148b6ddba feat(web): read a row's wait for a service as one state
+acbb8e0a06 feat(web): group the plugin list by packs and plugins, and quiet the row states
+ddb15a11a4 fix(web): drop the grid rules the row restyle left behind
+2df9414138 feat(web): style a pack's rows as entries and drop the done notice
+483e6b4920 feat(web): give every plugin package its own page
+4032e87014 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+e023a43ddd Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+8a0aeccccc docs(plugin-manager): make the README examples self-contained
+f4f734964a feat(web): switch a plugin pack's components one by one
+9e9cf88ff7 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+0b2d4886ab Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+e0841bec01 refactor(plugin-manager): split the manager module by responsibility
+0eff068ec4 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+bff6719fca Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+7af9c25737 refactor(app-boot): fold the patch-file parser and writer into app-boot
+3af0c5f7fd Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+2db66f10f4 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+7b713ca83b refactor(plugin-manager): move plugin management out of the Web host
+6a3582fe93 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+89fb3ef083 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+42764971ca refactor(agent-presets): remove the global-tool-mask package nothing composes
+9f8373df2b Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+9037aeba88 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+c22d66ffd8 Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+84006d8d1f Merge remote-tracking branch 'origin/master' into feat/plugin-mgmt-1-boot
+c58b23e44c Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+05187bdc6c Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+870aa6143f Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+66a9d0e7c3 test(inventory): compare listed entries in id order, as a digit-only assigned id reorders the store
+77846832de Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+4bf9dc3bcb Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+aaf58eb5bf fix(boot): own the rows a config override sets, queue recompositions, and let records follow the configuration
+54d5b2ff8b Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+8c257a2c0c Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+59e2afc2e3 Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+6f524b6d8c Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+8357838bc5 fix(include): detach inserted rows so re-applying a patch list mounts the same tree
+613adbb231 docs(boot): describe declared ids, author-facing manifest keys, and refresh the catalogs
+d5613da2cb refactor(boot): read a row failure's stage from the Loader's typed error
+0f95351405 fix(boot): report the package probe over IPC and validate what crosses the boundary
+0caceb2ced fix(boot): commit a recomposition only once the root include accepts it
+0914a152ff fix(boot): compose external bundles in written order with one wrapper per target
+30062f6928 Merge remote-tracking branch 'origin/master' into feat/plugin-mgmt-1-boot
+56bcd0dea7 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+e0c338cf37 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+eb818f9c92 chore(docs): regenerate the Cordis catalog for the manager's add verb
+864d659f01 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+5801c63327 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+67213084d6 chore(docs): regenerate the config catalog and make the patch-file README sketch compile
+fe8c6a365b test(preset): cover the composition inventory's silent patch warning, anonymous inserts, and a layer gone before the read
+4cb2d7abb5 refactor(plugins): name the install verb add, as the CLI does
+4d8e9c222b test(plugins): call the manager's add verb in the unresolvable-bundle case
+060668290c fix(web): drop the duplicated manager stylesheet copy and keep the theme gate's border rules
+148e94501a Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+2e46014b32 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+cc04382160 test(plugins): a staged package may declare a stage the profile refuses
+bc6f425d66 Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+26c4a324a1 test(plugins): cover the removal of a bundle the profile cannot resolve
+f43259f9de refactor(plugins): share the child close settlement with the package probe
+1fd4743154 test(boot): cover the inventory's runtime attribution of rows and recorded failures
+b09a1a311b Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+19c2bcb887 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+cd1de5867c test(plugins): let the bare Loader assign the inventory spec's row ids
+2ab225a108 fix(web): pass the component filter class in the form the Input primitive accepts
+1ea0868fba Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+05a04429bf Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+a27cc229dc Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+bd9b024509 Merge remote-tracking branch 'origin/master' into feat/plugin-mgmt-1-boot
+0af7ca4c10 refactor(web): build the plugin manager on the shared ui-primitives controls
+d3dcaa1b37 Merge remote-tracking branch 'origin/master' into feat/plugin-mgmt-4-web
+ce9337db4e refactor(web): off components of a pack as chips grouped by reason
+e9c5a9d2f1 feat(web): count line and exceptions first for a pack's components
+0c40a810cb fix(web): trash icon for preset row deletion, drop the not-mounted line
+d7d7b301d5 feat(web): move a preset's capabilities and settings onto its detail page
+a53fb1497d feat(web): trim the plugin manager cards to name, one-liner, and switch
+a7302ee69e feat(web): simplify the plugin manager and drop the plugin list tab
+8866b37604 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+53e4d1c0f8 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+b876a499b2 Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+e234dc75fd fix(boot): re-probe records an older probe format wrote
+8a96a7ea6a Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+c75e8bce12 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+db2e34dd02 Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+1ef796fcf9 fix(boot): a plugin is a package that declares itself to dsh
+59a64adde7 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+1b3dee9c46 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+b1a1b1a7ab chore(docs): bring the Chinese event catalog along with the regenerated source links
+6b8ae2b721 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+90d185b785 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+3dd4a9a873 chore(docs): regenerate the module graph and event catalog for the plugin manager's agent dependency
+ac517078ca feat(web): show what an install removed and why the Host refused a change
+368379e870 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+9862f16a40 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+e3386d1105 feat(plugins): judge an install after pnpm, restore the manifest on failure, run one mutation at a time
+f0af64fb50 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+4810cfa071 Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+d926d39a1b chore(docs): regenerate the config catalog after the plugin manager import change
+d4e69cd399 Merge branch 'feat/plugin-mgmt-3-settings' into feat/plugin-mgmt-4-web
+4903d1a6cb Merge branch 'feat/plugin-mgmt-2-manager' into feat/plugin-mgmt-3-settings
+3b0a07e029 Merge branch 'feat/plugin-mgmt-1-boot' into feat/plugin-mgmt-2-manager
+5d742503ea feat(boot): own row ids across the stack instead of prefixing external bundles
+84bed2e744 fix(web): keep an install or confirmation alive across the reads its own changes trigger
+6407ed8a44 fix(plugins): recognize the harness cordis copy by package directory
+1570eeeaee feat(web): manage plugins and per-preset settings from the browser
+80ea5fcdf5 feat(settings): resolve namespaces per named scope
+dc969e2ee8 feat(plugins): plugin manager, preset user layers, and the patch-file writer
+d419e7e553 feat(boot): isolate external bundles and expose the booted profile
+76d5f797a8 docs: refresh module graph
+16654bee72 test(session-controller): cover control stream disposal
+ba51e5483e fix(ui-conversation): dispose Inbox projection subscription
+8c8c5b2680 fix(web): restore pending Inbox after restart
+6bfda7a0e5 fix(session-controller): address review feedback on cold Inbox commands
+6322bb96e8 fix(session-controller): resume cold sessions for Inbox commands
+571736b477 Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+bfaa403b7c docs: refresh Claude SDK notices
+bfb119850b test: cover projection-aware session helpers
+4c9fb910b1 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+e5a5401228 Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+5b9b7c59dd fix(session-controller): derive queues from projections
+fb3f3ff162 fix(agent): validate durable inbox reconstruction
+5a1292b170 Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+6912c41a08 Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+e46a2499df Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+9deabe717f Merge remote-tracking branch 'origin/master' into xtr/durable-inbox-recovery
+015d7e0752 docs(session-projection): keep registry contract unchanged
+71a179a305 Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+0aee112c6f test(session-projection): scope projection assertions
+6b5e8c874c Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+b9d6314853 Merge origin/master into xtr/durable-inbox-recovery
+09fab78863 test: trim unrelated inbox changes
+4d5ccf39ef refactor(agent): remove inbox service
+5609922d27 Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+9b0d77b930 Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-2672
+4b0af96838 refactor(agent): back Inbox with a durable projection
