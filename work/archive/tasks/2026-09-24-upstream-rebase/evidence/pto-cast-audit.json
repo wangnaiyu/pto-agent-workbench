@@ -1,0 +1,246 @@
+{
+  "old": "a11460d434e652fde77d35e7558056a59cb3256f",
+  "proven": [
+    {
+      "file": "packages/client/ui-composer-catalog/tests/loader-composition.client.spec.ts",
+      "line": 38,
+      "fingerprint": "b23edcbf4a507aac268b2213661f9f0fa308061f916d190c1e0c9df9aebc9d88"
+    },
+    {
+      "file": "packages/client/ui-conversation/tests/apply-inject.client.spec.tsx",
+      "line": 169,
+      "fingerprint": "e00b330b5e10c0a3a938e0413ee0f28f5ad89695abd452db90baca823b75f4af"
+    },
+    {
+      "file": "packages/client/ui-permission-presets/tests/browser-plugin.client.spec.ts",
+      "line": 237,
+      "fingerprint": "8e91f051c4028ed2ee4fe903eb569352e581f4e431696711e5d75c38a04603fc"
+    },
+    {
+      "file": "packages/client/ui-permission-presets/tests/permission-select.client.spec.tsx",
+      "line": 56,
+      "fingerprint": "e9cfb1b58b946a3b2cf46456bf98a6dc540cc4e772e799c2b3a730dd65f4fb85"
+    },
+    {
+      "file": "packages/client/ui-pto-experiments/src/client/model.ts",
+      "line": 99,
+      "fingerprint": "d3b6dad64b3538d5889bda2b5951b807880cbe039d6128f64c63afc7971b2a42"
+    },
+    {
+      "file": "packages/client/ui-pto-experiments/src/client/model.ts",
+      "line": 140,
+      "fingerprint": "c70866a95a29e707d480a8d99e108a72853bcac5e84be6a1c4daa1827d8ed6e4"
+    },
+    {
+      "file": "packages/client/ui-pto-experiments/src/client/model.ts",
+      "line": 143,
+      "fingerprint": "c70866a95a29e707d480a8d99e108a72853bcac5e84be6a1c4daa1827d8ed6e4"
+    },
+    {
+      "file": "packages/client/ui-pto-experiments/src/client/model.ts",
+      "line": 242,
+      "fingerprint": "b121cee14635b00f7891217013e4682493cf96f676710be60722fdf8b862aea3"
+    },
+    {
+      "file": "packages/client/ui-pto-experiments/tests/dashboard.client.spec.tsx",
+      "line": 38,
+      "fingerprint": "18fbcdf8ce89cbcfb278d15275f07a66c2b84e89113537f4c4ae3c05add0138a"
+    },
+    {
+      "file": "packages/client/ui-pto-experiments/tests/model.client.spec.ts",
+      "line": 53,
+      "fingerprint": "9f0ed7e56650c0741ed4318e325c77bc411769dd8a842cbf5d730c9aabc3271e"
+    },
+    {
+      "file": "packages/client/ui-pto-experiments/tests/presentation.client.spec.tsx",
+      "line": 38,
+      "fingerprint": "1ecb7b897392b6780e600b8080b3a53ac0a408cc39e33cf200d22dc2114682c8"
+    },
+    {
+      "file": "packages/client/ui-skill/tests/loader-composition.client.spec.ts",
+      "line": 38,
+      "fingerprint": "df17c5913399aa071d9cc8745ae2dbcb947594434925e611d40d9617fd4c5c87"
+    },
+    {
+      "file": "packages/client/ui-workspace/tests/pto-launch-assembly.client.spec.ts",
+      "line": 82,
+      "fingerprint": "df4d178778c12112e7cda66038faf665e8919172f1d26bd4787206c56d360d6d"
+    },
+    {
+      "file": "packages/client/ui-workspace/tests/pto-launch-assembly.client.spec.ts",
+      "line": 83,
+      "fingerprint": "90f86ab65c5ac1b7c0ca2f053c63b211f63718791b4e01c509512ebc1640331b"
+    },
+    {
+      "file": "packages/host/composer-catalog/tests/loader-composition.spec.ts",
+      "line": 72,
+      "fingerprint": "59c63f734e8bba862325f776e3fcbebd78a84cfb4161f8df41c216950d9bf351"
+    },
+    {
+      "file": "packages/host/pto-artifact-inspection/tests/inspection.spec.ts",
+      "line": 170,
+      "fingerprint": "b365db116424e6c239c7f0225e85718a73aca363efbda0e87bcff6394b70c524"
+    },
+    {
+      "file": "packages/host/pto-artifact-inspection/tests/skill-composition.spec.ts",
+      "line": 83,
+      "fingerprint": "ea2506fb2006dabb163d1d3750df97f2f29e6f9ed48bac2402fd22c51fe51a8d"
+    },
+    {
+      "file": "packages/host/pto-experiment-dashboard/tests/dashboard.spec.ts",
+      "line": 29,
+      "fingerprint": "63887ee8072fea49d495c955fc77afa33c2488bb341c7e9daf346a03746c0404"
+    },
+    {
+      "file": "packages/host/pto-experiment-dashboard/tests/dashboard.spec.ts",
+      "line": 45,
+      "fingerprint": "63887ee8072fea49d495c955fc77afa33c2488bb341c7e9daf346a03746c0404"
+    },
+    {
+      "file": "packages/host/pto-experiment-dashboard/tests/dashboard.spec.ts",
+      "line": 222,
+      "fingerprint": "a983ee5aa64ff01f87d6dc726feeb3a007c3887d9930e36c44663580322f0510"
+    },
+    {
+      "file": "packages/pto/pto-experiments/src/index.ts",
+      "line": 430,
+      "fingerprint": "1f7565b1f47189606dbbe7ea20363298bf5e6e44af303467cf03f9e37c276199"
+    },
+    {
+      "file": "packages/pto/pto-experiments/src/index.ts",
+      "line": 444,
+      "fingerprint": "fd046f8170b122c4756e08a46e5c87e11e8a6bbfefac50f8e1a0ac8b77632bca"
+    },
+    {
+      "file": "packages/pto/pto-experiments/src/index.ts",
+      "line": 458,
+      "fingerprint": "85e4e10f7e6a118f680769b708f01dfd3f54de34c52470c4a007883cab872977"
+    },
+    {
+      "file": "packages/pto/pto-experiments/src/index.ts",
+      "line": 473,
+      "fingerprint": "8dcdf2995438357b29f86d2fb927006868497fc136a6f7e6b97f2f155d2f9c07"
+    },
+    {
+      "file": "packages/pto/pto-experiments/src/index.ts",
+      "line": 997,
+      "fingerprint": "f26c83aa6f09d76189a84a6512d41453ce178b8679a1e1191c5667d9906b3d2b"
+    },
+    {
+      "file": "packages/pto/pto-experiments/src/index.ts",
+      "line": 1095,
+      "fingerprint": "ef9afef3df92fc9931fa0c3d497cadf2e91b0526acdf9151a0d6f2dc1562a897"
+    },
+    {
+      "file": "packages/pto/pto-experiments/src/index.ts",
+      "line": 1101,
+      "fingerprint": "bc00009f62bf955b9ccf7c6d6fb91e69140f721619bf8a80e79cb79517b0021e"
+    },
+    {
+      "file": "packages/pto/pto-experiments/tests/executor.spec.ts",
+      "line": 226,
+      "fingerprint": "a870546f84e86fa295b83ce5d60c55f3a558b3d3cae55b4f28bff77b7b36b7f4"
+    },
+    {
+      "file": "packages/pto/pto-experiments/tests/loader-composition.spec.ts",
+      "line": 75,
+      "fingerprint": "59c63f734e8bba862325f776e3fcbebd78a84cfb4161f8df41c216950d9bf351"
+    },
+    {
+      "file": "packages/pto/pto-experiments/tests/loader-composition.spec.ts",
+      "line": 86,
+      "fingerprint": "a7fec2609d5d5dda64d57daa4b77f65441212924e6dc3327e73773062fe25b61"
+    },
+    {
+      "file": "packages/pto/pto-experiments/tests/pto-experiments.spec.ts",
+      "line": 49,
+      "fingerprint": "a7fec2609d5d5dda64d57daa4b77f65441212924e6dc3327e73773062fe25b61"
+    },
+    {
+      "file": "packages/pto/pto-experiments/tests/pto-experiments.spec.ts",
+      "line": 97,
+      "fingerprint": "64ab5463fdb068e88a33f022baff473b7a0da77854c4ecf8e26412763d6dccf6"
+    },
+    {
+      "file": "packages/pto/pto-experiments/tests/pto-experiments.spec.ts",
+      "line": 116,
+      "fingerprint": "7e5e3d605708c6b18f2114bd85d45fa880929d1282ec42c2c298323dba070b28"
+    },
+    {
+      "file": "packages/pto/pto-experiments/tests/pto-experiments.spec.ts",
+      "line": 146,
+      "fingerprint": "9c901e779b39559085e891647eee2213b80f083172f2f7b2401b70382ea99cb4"
+    },
+    {
+      "file": "packages/pto/pto-experiments/tests/pto-experiments.spec.ts",
+      "line": 158,
+      "fingerprint": "d98268f309d9732d36b2f33082953fd08bc0e6861c71c8e4416eaa8bc6b65caf"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/src/index.ts",
+      "line": 116,
+      "fingerprint": "65421a3b4af011c7e817ebce0cc6440e99eb0ef21a5fddae3a8c628e6bbd718f"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/src/index.ts",
+      "line": 140,
+      "fingerprint": "0311422ffc9c766724a844aede6e2bcb77cb52cee8d1bee59bc18634193d354f"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/src/index.ts",
+      "line": 166,
+      "fingerprint": "0311422ffc9c766724a844aede6e2bcb77cb52cee8d1bee59bc18634193d354f"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/tests/load-path.spec.ts",
+      "line": 22,
+      "fingerprint": "d08ec8c86ed7029493c9273fc52d3aa070a46ff0883d45bc386e950a9a531b3b"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/tests/tool-pto-run.spec.ts",
+      "line": 30,
+      "fingerprint": "0a7a6011d0e8023aad230114fa08d8bc671d67717dbe9876976ea2b517d9ee13"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/tests/tool-pto-run.spec.ts",
+      "line": 63,
+      "fingerprint": "64ab5463fdb068e88a33f022baff473b7a0da77854c4ecf8e26412763d6dccf6"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/tests/tool-pto-run.spec.ts",
+      "line": 96,
+      "fingerprint": "64ab5463fdb068e88a33f022baff473b7a0da77854c4ecf8e26412763d6dccf6"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/tests/tool-pto-run.spec.ts",
+      "line": 154,
+      "fingerprint": "64ab5463fdb068e88a33f022baff473b7a0da77854c4ecf8e26412763d6dccf6"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/tests/tool-pto-run.spec.ts",
+      "line": 207,
+      "fingerprint": "64ab5463fdb068e88a33f022baff473b7a0da77854c4ecf8e26412763d6dccf6"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/tests/tool-pto-run.spec.ts",
+      "line": 241,
+      "fingerprint": "0b9f622f5893941036a11bcf7fdc2b5b0af5be2eb1b1c5610c9d1eaa6fc8e6ca"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/tests/tool-pto-run.spec.ts",
+      "line": 244,
+      "fingerprint": "f1b4030e4e0f8d9e2b3324577efb90a91b696ac0079e796656a84e9200921e4d"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/tests/tool-pto-run.spec.ts",
+      "line": 247,
+      "fingerprint": "b000d43e2b785e86cd40438f9a0fa1194b2bc81625dcb58a7401af5c16a5897c"
+    },
+    {
+      "file": "packages/pto/tool-pto-run/tests/tool-pto-run.spec.ts",
+      "line": 262,
+      "fingerprint": "64ab5463fdb068e88a33f022baff473b7a0da77854c4ecf8e26412763d6dccf6"
+    }
+  ],
+  "unproven": []
+}

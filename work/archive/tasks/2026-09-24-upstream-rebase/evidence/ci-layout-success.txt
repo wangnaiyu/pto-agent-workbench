@@ -1,0 +1,14 @@
+Dependency layout	Verify npm install layout	﻿2026-09-24T04:50:01.2071309Z ##[group]Run pnpm run verify-npm-install-layout
+Dependency layout	Verify npm install layout	2026-09-24T04:50:01.2071957Z [36;1mpnpm run verify-npm-install-layout[0m
+Dependency layout	Verify npm install layout	2026-09-24T04:50:01.2130418Z shell: /usr/bin/bash -e {0}
+Dependency layout	Verify npm install layout	2026-09-24T04:50:01.2130870Z env:
+Dependency layout	Verify npm install layout	2026-09-24T04:50:01.2131212Z   PRIMARY_NODE_VERSION: 24
+Dependency layout	Verify npm install layout	2026-09-24T04:50:01.2131615Z   DSH_TELEMETRY_DISABLED: 1
+Dependency layout	Verify npm install layout	2026-09-24T04:50:01.2132140Z   NODE_COMPILE_CACHE: /home/runner/work/_temp/node-compile-cache
+Dependency layout	Verify npm install layout	2026-09-24T04:50:01.2132807Z   npm_config_devdir: /home/runner/work/_temp/node-gyp
+Dependency layout	Verify npm install layout	2026-09-24T04:50:01.2133328Z   TMPDIR: /home/runner/work/_temp
+Dependency layout	Verify npm install layout	2026-09-24T04:50:01.2133984Z   PNPM_HOME: /home/runner/work/_temp/setup-pnpm-35956627780-2-dependencies/node_modules/.bin
+Dependency layout	Verify npm install layout	2026-09-24T04:50:01.2134845Z   PNPM_CONFIG_STORE_DIR: /home/runner/.local/share/pnpm/store
+Dependency layout	Verify npm install layout	2026-09-24T04:50:01.2135381Z ##[endgroup]
+Dependency layout	Verify npm install layout	2026-09-24T04:50:01.7664915Z $ tsx scripts/verify-npm-install-layout.ts
+Dependency layout	Verify npm install layout	2026-09-24T04:54:30.3140280Z verify-npm-install-layout: 276 DSH package(s) per release and 2552 internal edge(s) verified in 267.94 s; both releases share one Cordis installation; 66 unavailable optional package name(s) ignored by npm.

@@ -4,6 +4,7 @@
 - id: session-persistence-jsonl
   config:
     root: !!js dshHomePath('sessions')
+    legacyPtoV4: true
     projectDirectoryAliases:
       - cwd: !!js process.cwd()
         directory: default

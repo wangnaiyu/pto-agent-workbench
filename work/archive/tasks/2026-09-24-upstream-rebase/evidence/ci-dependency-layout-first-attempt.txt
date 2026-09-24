@@ -1,0 +1,16 @@
+Dependency layout	Verify npm install layout	﻿2026-09-24T04:41:06.0731089Z ##[group]Run pnpm run verify-npm-install-layout
+Dependency layout	Verify npm install layout	2026-09-24T04:41:06.0731541Z [36;1mpnpm run verify-npm-install-layout[0m
+Dependency layout	Verify npm install layout	2026-09-24T04:41:06.0778674Z shell: /usr/bin/bash -e {0}
+Dependency layout	Verify npm install layout	2026-09-24T04:41:06.0779170Z env:
+Dependency layout	Verify npm install layout	2026-09-24T04:41:06.0779498Z   PRIMARY_NODE_VERSION: 24
+Dependency layout	Verify npm install layout	2026-09-24T04:41:06.0779945Z   DSH_TELEMETRY_DISABLED: 1
+Dependency layout	Verify npm install layout	2026-09-24T04:41:06.0780502Z   NODE_COMPILE_CACHE: /home/runner/work/_temp/node-compile-cache
+Dependency layout	Verify npm install layout	2026-09-24T04:41:06.0781170Z   npm_config_devdir: /home/runner/work/_temp/node-gyp
+Dependency layout	Verify npm install layout	2026-09-24T04:41:06.0781773Z   TMPDIR: /home/runner/work/_temp
+Dependency layout	Verify npm install layout	2026-09-24T04:41:06.0782426Z   PNPM_HOME: /home/runner/work/_temp/setup-pnpm-35956627780-1-dependencies/node_modules/.bin
+Dependency layout	Verify npm install layout	2026-09-24T04:41:06.0783308Z   PNPM_CONFIG_STORE_DIR: /home/runner/.local/share/pnpm/store
+Dependency layout	Verify npm install layout	2026-09-24T04:41:06.0783916Z ##[endgroup]
+Dependency layout	Verify npm install layout	2026-09-24T04:41:06.6957189Z $ tsx scripts/verify-npm-install-layout.ts
+Dependency layout	Verify npm install layout	2026-09-24T04:46:08.3423419Z verify-npm-install-layout: npm resolution exceeded 300000 ms
+Dependency layout	Verify npm install layout	2026-09-24T04:46:13.2928210Z [ELIFECYCLE] Command failed with exit code 1.
+Dependency layout	Verify npm install layout	2026-09-24T04:46:13.3225990Z ##[error]Process completed with exit code 1.

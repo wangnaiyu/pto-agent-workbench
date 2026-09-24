@@ -1,0 +1,31 @@
+207ff9aa9b feat(client): port PTO brand to the upstream brand-slot mechanism
+ce155f5866 feat(client): refine PTO workbench navigation
+72d55d08ec feat(client): add run records sidebar information architecture
+869534642f ci: scope darwin parity to the upstream repository
+e3fcb4579f feat(session): support project directory aliases
+5de5f8c5ed feat(client): defer session creation until first prompt
+6a42ef7f03 ci: make issue checks fork-friendly
+f74b5feb26 ci: skip larger-runner checks in forks
+6c95508bb9 feat: add draft composer capability catalog
+f3e6247611 feat(client): add draft composer capability menu
+039e63c036 feat(skill): add explicit cross-client invocation gesture
+e2d44e8ef8 feat(composer): validate formal session capabilities
+c4e673b22f feat(pto): add trusted experiment workflow
+f14b4a471b fix(composer): polish draft capability catalog
+83916fadbf fix: align PTO fork with rebased harness contracts
+bb89bb0907 fix(pto): declare Typert zod runtime dependencies
+608bbee4ad fix: adapt PTO workbench to upstream alpha.2
+7a95adde4e fix(web): preserve workbench behavior on alpha.3
+54a48c2059 fix(ui): preserve slash launcher across caret updates
+01e60bfc55 fix(ci): align fork packages with alpha.4 policy
+fbcb0ef817 fix(pto): adapt dashboard tests to session snapshots
+1082728e0f fix(ci): align fork packages with alpha.5 policy
+de110c9aa9 fix(pto): adapt workbench to upstream rc.1
+d94c556e3a feat(pto): preserve artifact inspection and official skill integration baseline
+74f48a2fa4 fix(pto): adapt fork integrations to upstream 0.1.5-alpha.1
+8762d9d080 fix(pto): preserve analysis launch bindings through admission and retry
+07deb18844 wip(pto): save P3 composer references pending browser validation
+7695eab3a9 wip(pto): save P4 layout pending replay validation
+7534bc7186 fix: adapt PTO fork to upstream 0.1.6 contracts
+7965e590f1 fix: complete PTO format v4 and web compatibility upgrade
+a11460d434 fix: reconcile PTO fork with alpha.2 session and fixture contracts

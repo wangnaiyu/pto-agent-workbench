@@ -1,0 +1,1617 @@
+46a7f68b09 Merge pull request #5073 from deepseek-harness/rel/dsh-0.1.7-rc.1
+a60af51e80 release(dsh): 0.1.7-rc.1
+07ad70817f fix(plugins): deny incompatible bundles and clarify compatibility refusals (#5061)
+c76217a356 Merge pull request #5053 from deepseek-harness/feat/tool-preparing-progress
+490f569044 Merge pull request #5067 from deepseek-harness/revert-5062-ihsiang/chat-flow-visual-polish
+7c8a44ac31 Revert "feat(web): restore the process-row polish on the grouped work details"
+b09dd94827 feat(web): restore the process-row polish on the grouped work details
+f64c57dbb2 fix(plugin-manager): drop the agent exemption hint from the incompatibility reason
+51d70c5f5c feat(plugins): report incompatible versions as typed refusals
+96a4607ba2 test(chat): refresh work detail snapshots and preparation progress
+6943f9fee6 fix(chat): satisfy hook documentation and lint contracts
+5a32aae571 docs(chat): align preparing hooks and work detail modes
+1b55f5bea3 fix(chat): retain preparing tools and ordering until step completion
+4987e90b32 fix: static
+ac77cefba7 test(chat): cover work detail modes and preparation subscriptions
+d6fb1351b3 fix(chat): refine verbose headers and file preparation rows
+015a9b202c feat(chat): add four work detail modes and legacy mappings
+b660f72d4e feat(tool): show content preparation progress for file mutations
+fb8bb16345 Merge pull request #5052 from deepseek-harness/fix/zoom-rerender
+312341970c Merge master into fix/zoom-rerender
+9b510d89a5 Merge pull request #5029 from deepseek-harness/feat/chat-image-preview-4941
+896c81d796 Merge pull request #5047 from deepseek-harness/fix/excel-trackpad-dark-mode
+747c98b0db fix(plugins): deny incompatible bundles and clarify compatibility refusals
+5ea77078d6 feat(plugins): enforce DSH peer compatibility with exact exemptions (#4980)
+2c67633990 feat(plugins): enforce DSH peer compatibility with exact exemptions
+19d6df2b2f fix(web): pan read-only spreadsheets on both trackpad axes
+e0e8327992 fix(preview): redraw PDF pages after settled zoom
+7eb9629e0a Merge pull request #5041 from deepseek-harness/fix-gateway-mem
+4aa207c5fe feat(preset): add plugin practices reference to creator skill (#5025)
+e4234651ee fix(web): support spreadsheet tab gestures and readable name box
+c5dc0853d6 Merge pull request #4686 from deepseek-harness/fix/desktop-dev-runtime-target
+bd2a49a2ca fix(chat): use elevated scrollbar colors for image previews
+45f5cd34b0 fix(gateway): pass explicit undefined in retention test
+62aef4c583 Merge branch 'master' into fix/desktop-dev-runtime-target
+4839239954 fix(chat): address image preview review and coverage gaps
+e68fb0bc8d Merge pull request #5022 from deepseek-harness/fix/subagent-zh-terminology
+4cfd292a7b fix(gateway): bound stream cancellation retention
+dc0ae81905 Merge remote-tracking branch 'upstream/master' into fix/subagent-zh-terminology
+a8776afa87 Merge remote-tracking branch 'origin/master' into fix/desktop-dev-runtime-target
+219db5454a Merge pull request #5027 from deepseek-harness/fix/excel-preview-sheet-navigation
+3675e91cf9 fix(i18n): update subagent labels added on master
+5e25475857 fix(office): use bundled LibreOffice Kit 0.1.0 CLI across deployments (#4902)
+f4c6b012aa Merge remote-tracking branch 'upstream/master' into fix/subagent-zh-terminology
+fe4d18fda3 test(desktop): provide the required primary runtime directory in the welcome startup spec
+907a241b61 Merge remote-tracking branch 'origin/master' into feat/chat-image-preview-4941
+e5e9b5b982 Merge pull request #4985 from deepseek-harness/feat/tool-call-preparing
+7fe9c06fa6 feat(chat): preview image links on hover and expand inline images
+c920174964 fix(web): separate spreadsheet tab navigation from zoom controls
+3776169373 test(client): align wait agent row title expectation
+19675fd061 fix(client): align subagent coordination and wait labels
+536764c8b4 test(web): align snapshots with write activity labels
+b66b602c72 fix(chat): address preparing lifecycle review feedback
+913aa2289b fix(chat): unify tool lifecycle titles and activity labels
+701026b5bf test(chat): bind the preparation start spy
+5840898e07 perf(tool): retain unchanged subcall branches
+b2817d77fb perf(chat): batch preparing tool updates
+a60d4df027 test(desktop): await ASAR fixture output completion
+833835d95c test(chat): retire unknown casts from tool row fixtures
+74511b3dcb test(chat): cover live preparation and durable history replay
+d3086e6571 feat(chat): present tools in preparing, start, and result stages
+d550f1c4af feat(conversation): initialize contexts from transient start matches
+ccaa0dc11c fix(plugin-manager): bound pnpm runs so a silent child cannot hold the profile lock (#4982)
+19844ea9ad Merge pull request #5001 from deepseek-harness/fix/diff-review-colors
+a2278b460c fix(i18n): limit subagent terminology changes to requested UI copy
+80e4da0e3d fix(desktop): take the development project target as an explicit input
+f132684c81 fix(i18n): scope subagent terminology to UI and refresh snapshots
+3d6d46b8a6 Merge pull request #4896 from deepseek-harness/fix/preset-ui-20260921
+dd004b4221 fix(web): simplify read-only spreadsheet preview controls (#5006)
+38596d5c70 Merge pull request #4876 from deepseek-harness/fix/windows-open-through-explorer
+8833ef9f63 Merge upstream/master into fix/subagent-zh-terminology
+995caa05ed fix(i18n): translate subagent as 子智能体 in Chinese UI
+10292baeff Merge pull request #4818 from deepseek-harness/ui/agent-team-header-panel-refine
+bbeef5f250 Merge pull request #5020 from deepseek-harness/copy/plugin-experimental-labels
+d52424042c Merge remote-tracking branch 'origin/master' into fix/preset-ui-20260921
+2ea753960c fix(web): align Team card elevation and preset header expectations
+2b44a4b657 fix(web): preserve Team hover pinning and responsive task expansion
+4face54ea7 test(web): align adjacent navigation snapshots with header UI
+0b62921f37 test(web): align Team panel snapshot with pinned projection UI
+86e3e0e448 feat(web): refine the Team header panel interactions and adaptive header
+61936aa113 Merge pull request #4810 from deepseek-harness/feat/agent-team-projection-panel
+3b8be2928f Merge pull request #5017 from deepseek-harness/turtle/fix-tooltip-layering-e1cc527c20d0
+3c20f401d2 fix(web): label beta features as experimental
+a56e82e5dd fix(ui-agent-preset): share reader keyboard focus handling
+a96d45af40 test(web): name the covering element in the tooltip hit test
+63cc821e7e Merge master into feat/agent-team-projection-panel
+df7fa8945c refactor(agent-team): narrow projection fields and task views
+edd0a438bf docs(native-command): state that the Explorer handoff acknowledgement proves no open
+02383832df Merge remote-tracking branch 'origin/master' into fix/preset-ui-20260921
+5082e05f71 fix(web): keep composer-stack tooltips above the input card
+c4955b1900 test(web): strengthen diff review color assertions
+354da32a38 Merge pull request #4979 from deepseek-harness/fix/github-install-connectivity
+f546068553 fix(agent-team): align package metadata with merged release
+3bf6d738f1 fix(agent-team): keep late activation on normal reconnect path
+5124a2a310 fix(web): show model IDs in monospace and names on hover (#5004)
+2aa3a469db fix(agent-team): consume shared projections without panel loads
+3f07e34b5e Merge remote-tracking branch 'origin/master' into codex/pr-4810-review-fixes
+d7b45fb415 Merge remote-tracking branch 'origin/master' into fix/github-install-connectivity
+75d74a055e fix(plugin-manager): preserve authentication fallback during GitHub checks
+f68d4b5aba Merge remote-tracking branch 'origin/master' into fix/preset-ui-20260921
+752953d2b6 Merge pull request #4966 from deepseek-harness/worktree/voice-model-download-mirrors
+2b9923fede fix(native-command): escape both Explorer field separators and keep non-ASCII literal
+c3afd488aa Merge pull request #4962 from deepseek-harness/ux/plugin-install-20260922
+3f0022a8fa Merge remote-tracking branch 'origin/master' into worktree/voice-model-download-mirrors
+040f47a822 Merge pull request #4987 from deepseek-harness/turtle/fix-title-overlap-b5d8f732773e
+c68c6db9ca Merge pull request #4717 from deepseek-harness/fix/webkit-model-picker
+0067efc8ae Merge pull request #4992 from deepseek-harness/worktree/pin-official-deepseek-first
+d40dbef91b feat(voice-input): expose preparation download source selection
+5bc57902d5 Merge pull request #4970 from deepseek-harness/docs/client-ui-ux-skill
+dc374b8879 fix(web): keep official DeepSeek first in model settings
+14a062acb7 docs(ui-settings-account): record the Platform view caption limitation
+ceb997cdef fix(ui-settings-account): clear the Windows caption for the Platform return bar
+60b5800816 Merge origin/master into fix/webkit-model-picker
+0edfe83573 fix(plugin-manager): bound GitHub connection checks before installation
+00102833df Merge pull request #4978 from deepseek-harness/worktree/release-dsh-0.1.7-alpha.2
+10ea83bcc3 release(dsh): 0.1.7-alpha.2
+178ee3a9eb Merge pull request #4975 from deepseek-harness/worktree/release-vendor-4.0.4
+4bf9d2e0c0 Merge master into plugin installation recovery
+d0dca04e22 release(vendor): cordis 4.0.4, cosmokit 1.8.5, group 1.0.4, hmr 1.0.19, include 1.0.9, loader 1.0.5, logger-console 1.0.4, schemastery 3.18.4, timer 1.1.6
+3950647caa Merge pull request #4954 from deepseek-harness/fix/dsh-exact-workspace-dependencies
+3889e97de0 Merge pull request #4947 from deepseek-harness/fix/chat-groups-followup
+08c0e8e71b fix(chat): deduplicate admitted local steering
+43a8a22824 fix(chat): restore turn rail width threshold and clarify scroll gestures
+9095678c8c fix(agent-team): address remaining projection review comments
+9fcb76d9bc Merge remote-tracking branch 'origin/master' into codex/pr-4810-review-fixes
+f6966f8fab test(client): align resize fixtures and restore branch coverage
+fad9e27706 test(web): stabilize resize and scroll fixtures
+838eff14eb fix(chat): preserve reading intent around group scrolling
+4e6028a604 build: use tilde ranges for vendor and native workspaces
+b9b5f7c58e fix: complete exact DSH ranges in application and runtime manifests
+7021420f29 fix: validate dependency ranges across every workspace
+37372101b5 build: pin internal DSH workspace dependencies
+c92d5ebe18 perf(ui): fit tooltips from observed sizes
+820824edd7 fix(chat): stabilize input echo admission and ordering
+50ba2c8bb2 fix(session): align history pagination with turn boundaries
+2251b6189b fix(chat): preserve sticky headers with overflow clipping
+13dfae20c3 fix(chat): settle native scroll following before retargeting
+fb02779a26 fix(chat): restore turn rail container queries
+1f029fc442 docs(chat): record scroll ownership and control geometry
+633cf7394e fix(chat): share independent scroll following with native group animation
+6b4055bf32 fix(chat): keep floating controls outside transcript clipping
+e8d5278c46 docs(skills): fix review findings in dsh-client-ui-ux and add scrollbar rule
+3dcfbf2094 Merge pull request #4964 from deepseek-harness/fix-reconnect
+6a07033145 docs(skills): require designer review for new icons and user-perceivable UI changes
+5925925d20 Merge remote-tracking branch 'origin/master' into fix/desktop-dev-runtime-target
+a6b909c767 docs(native-command): correct the non-interactive Explorer claim
+b73031be9b test(native-command): pin the Explorer target for verbatim and device paths
+fd784e4429 fix(web): refine file diff review colors
+969c3df8c1 Merge origin/master into fix/webkit-model-picker
+1498b01923 feat(voice-input): select responsive model download mirrors
+bf3de68213 Merge remote-tracking branch 'origin/master' into tmp4876
+37e4dc2dee Merge pull request #4961 from deepseek-harness/worktree/model-discovery-display-name
+a44ced5b96 fix(web): gate Remote WebSockets on application readiness
+d4b109f439 Merge pull request #4907 from deepseek-harness/worktree/plugin-install-country-registry
+bef0869d14 test(web): select discovered models by display name
+82a7dd9c3f test(plugin-manager): strengthen GitHub recovery assertions
+84394b818c Merge pull request #4919 from deepseek-harness/fix/fatal-diagnostics-and-crash-reports
+5b600047d2 docs(agents): add dsh-client-ui-ux skill for client UI/UX design and review
+ec852793b5 Merge remote-tracking branch 'origin/master' into fix/fatal-diagnostics-and-crash-reports
+bdbf1fe339 Merge origin/master into registry response selection
+3c50bf6b6c feat(plugin-manager): choose the first responsive public registry
+20e7407ff1 Merge branch 'master' into ux/plugin-install-20260922
+d6e5b7e41a feat(plugin-manager): offer mirror recovery for GitHub install failures
+c22b226b18 fix: address review threads on the fatal-diagnostics PR
+af28c551f3 Merge pull request #4913 from deepseek-harness/fix/windows-installer-extract-diagnostics
+b34b5d33a1 fix(web): show discovered model names in picker
+603a8fc7d3 Merge remote-tracking branch 'origin/master' into fix/fatal-diagnostics-and-crash-reports
+505559b03b Merge pull request #4955 from deepseek-harness/turtle/settings-link-copy-064fa5feb8cd
+30a7f8f787 Merge branch 'master' into fix/windows-installer-extract-diagnostics
+7c296b3f08 Merge pull request #4951 from deepseek-harness/fix/teammate-lead-guidance
+fac0d8d877 docs(native-command): record the interactive-session requirement for Explorer opens
+b2ec54159f docs(client): name the Sidebar Browser in the link-opening row prose
+108f767a89 Merge pull request #4949 from deepseek-harness/worktree/fix-voice-language-settings
+7b2094d04d fix(desktop): keep the Host's original diagnostic in startup crash reports
+03294cb653 test(native-command): pin every Explorer open target through one table
+d8924486ad fix(desktop): declare the cordis peer the packaged application needs
+a79e3a2a5f fix(agent-team): explain teammate discovery and messaging
+c81adc2569 Merge pull request #4948 from deepseek-harness/turtle/agent-experience-skill
+a294fc55d0 Merge pull request #4930 from deepseek-harness/fix/641-unbounded-completion-wakes
+aba3472b1d fix(client): clarify chat link-opening settings copy
+d257fa4af7 fix(agent-team): limit the reminder to the lead identity
+b980fdf5df Merge pull request #4950 from deepseek-harness/worktree/release-dsh-0.1.5-rc.3-history-to-master
+e420c44d60 Merge pull request #4857 from deepseek-harness/ihsiang/unify-code-block-ui
+bada62b50b docs(skills): add the agent-experience skill
+6ec97fa124 fix(agent-team): tell teammates how to message the lead
+9c6c407da2 Merge master into ihsiang/unify-code-block-ui
+7c84d9d790 fix(voice-input): persist recognition language settings
+3ae2f687f1 merge: record dsh 0.1.5-rc.3 history on master
+d3c5f959aa Merge pull request #4921 from deepseek-harness/fix/4918-excel-preview-resize
+58651b8359 fix(web): resize Excel previews with their pane
+2d653be7b0 fix(tool-jobs): address review on the unbounded wake default
+5929af046c Merge master into ihsiang/unify-code-block-ui
+780e07b8ed test(web): align built boot assertions with diff layout
+32ca127565 Merge pull request #4898 from deepseek-harness/fix/contact-form-url
+536b444f36 Merge remote-tracking branch 'origin/master' into fix/641-unbounded-completion-wakes
+f5d7de2a01 Merge pull request #4807 from deepseek-harness/fix/pwsh-prompt-readiness
+4777947b6c fix(client): keep account UID fields out of questionnaire URLs
+930d187e04 Merge remote-tracking branch 'origin/master' into fix/contact-form-url
+ee0048558d test(web): capture terminal recovery readiness with its snapshot
+34a0a8e81d fix(web): preserve Excel previews across OPC paths and XML encodings (#4872)
+700b636508 fix(agent-team): limit baseline loading fix to the panel
+e76a5eba21 Merge pull request #4903 from deepseek-harness/fix/platform-login-theme
+785a92ab03 fix(client): rename the contact menu entry to Feedback
+3b6a5399e8 docs(desktop): clarify login theme ownership
+fd8bed1ad0 Merge master into ihsiang/unify-code-block-ui
+62f816f3a5 feat(web): refine code card spacing and thinking blocks
+bfc772bb47 Merge remote-tracking branch 'origin/master' into codex/pr-4810-review-fixes
+749f05e9fa fix(agent-team): refresh projections when opening the panel
+ab7cdbee75 Merge remote-tracking branch 'origin/master' into worktree/plugin-install-country-registry
+41fd0baf91 Merge remote-tracking branch 'origin/master' into fix/pwsh-prompt-readiness
+f50059e425 fix(desktop): theme workspace sign-in links
+5ca6d34ac6 Merge pull request #4924 from deepseek-harness/turtle/fix-queued-edit-newline-54bfaf4e59d7
+8cf07ea76c fix(plugin-manager): preserve remembered registries during initial lookup
+b6775f6d4f fix(tool-jobs): wake an idle owner for every completion by default
+2c098434b9 Merge remote-tracking branch 'origin/master' into fix/platform-login-theme
+13fe312e15 test(desktop): fix login theme CI fixtures
+753df93b85 test(web): pin the multiline queued edit in the browser lane
+8ae7631861 Merge pull request #4916 from deepseek-harness/worktree/settings-provider-docs
+b1c084e769 Merge pull request #4904 from deepseek-harness/fix/web-account-client-platform
+13d9606675 test(voice-input): synchronize idle cleanup failure observation
+c74e36acfc fix(web): keep line breaks when re-editing a queued message
+e950c8bea4 Merge pull request #4838 from deepseek-harness/fix/4823-message-overflow-review-menu
+a19a48edea Merge pull request #4837 from deepseek-harness/feat/desktop-update-ui-2
+cafb9b93b4 fix: address adversarial review of the fatal-diagnostics branch
+5f1a524f61 docs(credentials): clarify private platform request headers
+db4bfb4c96 docs(agent-team): refresh generated module dependencies
+6a133a02b8 Merge origin/master into fix/web-account-client-platform
+43bd7010d0 test(llm): isolate idle timeout from HTTP setup timing
+1a21e958df Merge remote-tracking branch 'origin/master' into tmp4876
+7befda1147 test(agent-team): release fixtures and respect snapshot types
+bed4a2b565 fix(desktop): address review of the extraction failure report
+dbd34bcc0d Merge remote-tracking branch 'origin/master' into fix/pwsh-prompt-readiness
+c9591d9445 Merge remote-tracking branch 'origin/master' into worktree/plugin-install-country-registry
+d459183f32 docs(settings): correct provider configuration paths and examples
+b7d9c0f6a4 Merge remote-tracking branch 'origin/master' into feat/agent-team-projection-panel
+843e1b97af fix(agent-team): scope projection reads and address review feedback
+ce2ba9b216 Merge master into ihsiang/unify-code-block-ui
+ee4458f6d0 Merge pull request #4802 from deepseek-harness/fix/4775-multimodal-tool-retention
+d407a6ce90 test(credentials): allow either concurrent account request order
+4544874d62 Merge branch 'master' into fix/windows-installer-extract-diagnostics
+a4c74a91e0 Merge pull request #4909 from deepseek-harness/worktree/release-dsh-0.1.5-rc.3
+6530130ffa docs(agent-notes): record fatal diagnostics and crash report decisions
+e38cca76fd feat(desktop): write a crash report before the fatal recovery dialog
+8e7cca22ca release(dsh): 0.1.5-rc.3
+943af81a18 fix(release): pin vendor dependencies for dsh 0.1.5
+5864a6f6f1 fix(desktop): drop connection-level headers and bundle cache headers when forwarding to the Host
+afde35880f feat(client-modules): recover from a failed batch script and record import errors
+9f52c6401e docs(ip-geolocation): refresh the module dependency graph
+22be805026 fix(ip-geolocation): align the package with the current release
+9f9a50e553 feat(app-boot): treat uncaught exceptions as fatal through installFailLoud
+cfa84ed4e3 fix(subprocess-local): contain spill file failures instead of killing the host
+ab62f09c22 fix(desktop): report Windows extraction failures with 7-Zip evidence
+dccf989cd8 feat(plugin-manager): prefer the mainland mirror for CN network exits
+c5ca36387b Merge remote-tracking branch 'origin/master' into fix/4775-multimodal-tool-retention
+95611fbc63 fix(native-command): encode the Explorer target so a comma stays in the path
+c36a83ff6b Merge pull request #4901 from deepseek-harness/rel/dsh-0.1.7-alpha.1
+f5c96b6340 fix(credentials): identify web account requests with client platform header
+670a903237 test: clarify parallel recovery fixture cleanup
+b74bef5d40 test: exercise image recovery and real PTC retention
+817623750a fix(desktop): match Platform login theme
+112ce776ac release(dsh): 0.1.7-alpha.1
+8aff71863b Merge remote-tracking branch 'origin/master' into fix/pwsh-prompt-readiness
+6942625430 Merge pull request #4897 from deepseek-harness/fix/web-ui-hide-account-sign-in
+9d91bb01c9 fix(desktop): read the About copy from the live locale
+3305bb1938 Merge remote-tracking branch 'origin/master' into feat/desktop-update-ui-2
+5ac920e50c chore: merge latest master into message and review fixes
+adbb0e0dc4 fix(client): update the contact form URL and drop its account UID prefill
+75546dc8e9 fix(web): hide DeepSeek account sign-in outside desktop
+2426d398b5 fix(ui-agent-preset): restore the read-only configuration viewer
+1c96299173 Merge pull request #4831 from deepseek-harness/worktree/voice-input-icon
+de45804084 test: refresh tool projection API snapshot
+1e9c7b410a Merge pull request #4891 from deepseek-harness/worktree/release-vendor-4.0.2
+091db6c8c3 Merge remote-tracking branch 'origin/master' into fix/pwsh-prompt-readiness
+94728ebd23 fix: repair multimodal retention CI resolution and coverage
+06923b8868 Merge remote-tracking branch 'origin/master' into fix/4775-multimodal-tool-retention
+efa63a7fc4 release(vendor): cordis 4.0.3, cosmokit 1.8.4, group 1.0.3, hmr 1.0.18, include 1.0.8, loader 1.0.4, logger-console 1.0.3, schemastery 3.18.3, timer 1.1.5
+d20c90a091 Merge remote-tracking branch 'origin/master' into worktree/voice-input-icon
+1d1b033f77 Revert "feat(shortcuts): add configurable Web and desktop shortcuts" (#4886)
+ad83cce36a fix(session): repair missing turn ends during V3 migration (#4689)
+2fb7c881db Merge remote-tracking branch 'origin/master' into worktree/voice-input-icon
+2c95550e87 Revert "feat(shortcuts): add configurable Web and desktop shortcuts"
+577ccabb96 fix(voice-input): match microphone support and capsule stroke widths
+6b227a81a7 docs: sync plugin inventory after master merge
+9799132631 fix(voice-input): outline the capsule without changing microphone proportions
+dc1e6e967b fix(voice-input): use the outline microphone icon
+4137d1d628 Merge remote-tracking branch 'origin/master' into fix/4775-multimodal-tool-retention
+d08aac9db2 fix(agent-team): read current projections through standard hooks
+5ca4fea9b5 Merge master into feat/agent-team-projection-panel
+8c022b8013 fix(voice-input): use waveform artwork and filled microphone
+08b73684d0 feat(shortcuts): add configurable Web and desktop shortcuts (#4847)
+a0d453d3c6 fix(shortcuts): complete CI coverage and browser regressions
+a68c1f6539 Merge pull request #4852 from deepseek-harness/feat/chat-process-groups-product
+c7b9c91497 fix(chat): preserve steering order and limit expanded mode to live turns
+44900be005 docs(native-command): name explorer.exe in the Windows open note
+68e43b173e fix(native-command): open Windows paths through the shell's resolution
+504013def1 refactor(chat): simplify process titles and clarify grouping notes
+5d62f82bc0 fix(chat): preserve cross-client pending input order
+809e0942b9 fix(session): retire confirmed steering echoes on resync
+12d9dd6aa4 test(web): refresh chat process group snapshots
+3bf26d0954 docs(chat): consolidate grouping rationale and review status
+9ad25a6ab6 fix(chat): cover turn triggers and preserve reading anchors
+3b4ecc9d20 fix(chat): retain assistant nodes and steering echoes
+92046a8abc fix: snapshots
+275008d324 fix: static
+b12a72867a fix(chat): keep early turn controls after opening input
+4d4af31d16 fix(chat): retain typed source receivers and paging results
+22cd2cd387 test(chat): align turn presentation and deterministic clock fixtures
+99c0e8dcf6 test(plan): cover scoped card binding and availability failures
+ee3526059e docs(chat): complete grouping and viewport API comments
+a0bf09f629 docs(chat): remove the obsolete work-details migration tracker
+19e5af7ded perf(chat): locate visible turns with outer-row binary search
+97daa6a799 perf(conversation): ignore idle width-handle pointer movement
+5ff9ab8757 perf(plan): subscribe cards to turn-local plan data
+a7fc7d4f56 perf(chat): restore preference focus before publishing updates
+3a046413de perf(locale): avoid unchanged document language writes
+376f68199e perf(chat): narrow group title updates and defer edge measurements
+1bcb633c3f feat(chat): add grouped work details and stable history paging
+e17e1ac801 feat(client): present turn triggers and completed-turn footers
+4b78b6577c feat(client): inject reset-aware disclosure hooks
+b47cef687e Merge pull request #4863 from deepseek-harness/fix-excel
+76ab2a32d1 fix(shortcuts): align settings launcher and browser regressions with master
+d49f2b1bf8 test(client): make rebuild generations independent of clock precision
+5270b7ffa1 test(hmr): wait for filesystem ctime before polling assertions
+7b564f61e7 fix(shortcuts): integrate current desktop guests and client APIs
+069c370987 fix(shortcuts): address review findings and modal focus
+49fc4f0e5b refactor(shortcuts): remove unused state and tighten command context
+f815d6c733 fix(shortcuts): stabilize recording, focus, and desktop dispatch
+365ef73c7c feat(client): prioritize action tooltips over workspace previews
+b7ac0ade10 feat(shortcuts): add fixed stop and approval actions
+f54744e35b feat(shortcuts): add focused panel and page commands
+a532a687a6 feat(shortcuts): add workspace and session commands
+efdf8e5b6d feat(shortcuts): add configurable Web and desktop shortcuts
+2d236df56f test(client): wait for filesystem ctime before revision checks
+6ba92b3f05 fix(web): preview XLSX workbooks with unsupported drawings
+d7c238a98d Merge pull request #4855 from deepseek-harness/fix/client-revisions-server-restart
+099eacf108 Merge pull request #4475 from deepseek-harness/feat/desktop-welcome-and-window-controls
+5b9a33fa61 test(account): align browser flows and diagnose stalled transport
+d1fb051e0f test(web): stamp bootstrap artifacts before rebuild checks
+f114233545 fix(web): cover code-card overflow and refresh browser expectations
+2a1eb24285 fix(account): cover lifecycle failures and restore CI compatibility
+d1255ab1a4 docs(agent-preset): enumerate and verify skill files with Host file tools only (#4856)
+0d985d55a2 merge: sync master into desktop welcome branch
+43ff526d1e fix(ui-settings-account): retry failed embedded Platform pages
+f8175d5989 fix(desktop): synchronize embedded Platform locale
+8d2cd0cf72 feat(web): unify code block styling and icon controls
+9d0b8da486 fix(desktop): use medium weight for welcome brand
+092ae937b7 test(web): cover session recovery across server restarts
+b1921cf56d fix(client): keep artifact revisions stable across server restarts
+b13bbc027c feat(agent-preset): progressive creator skills and profile shell facts (#4836)
+8b993f43e0 Merge pull request #4845 from deepseek-harness/dev/desktop-devtools
+1b87a2a889 fix(ui-agent-preset): restore the Creator entry on the preset settings page (#4850)
+e47e85cce6 test(desktop): remove obsolete overlay DevTools assertion
+fc7c9c2e2f fix(desktop): retain update overlay DevTools availability
+54f6433357 test(desktop): avoid untyped nested overlay matcher
+355e43c1f3 refactor(desktop): use hidden native DevTools menu shortcuts
+8c146d978f feat(tool-cordis): inspect live plugin Config schemas (#4834)
+d52227c135 fix(ui-agent-preset): restore the Creator entry on the preset settings page
+ff16cf535a fix(desktop): suppress DevTools shortcuts behind update overlays
+53abf11bdd fix(desktop): keep the Windows About dialog on the startup locale
+edae410733 feat(desktop): support Command Option I for macOS DevTools
+e8778d413d Merge commit 'e3c84634b4' into HEAD
+3306fac787 merge: include latest master in desktop welcome branch
+e682ad3e5b fix(ui-settings-account): keep sign-in errors in the login dialog
+a2bc1e412c test(account): type browser popup proxy values
+d5db0ff0c4 merge: sync master into desktop welcome branch
+fcd89f691a fix(voice-input): explain model preparation download failures
+982fb17754 feat(desktop): open renderer DevTools with F12 in packaged builds
+f384ee7418 Merge branch 'master' into fix/4823-message-overflow-review-menu
+cbae324bfa feat(workspace): stop a Session's running work before archiving it (#4765)
+44b15a3377 fix(desktop,credentials): address sign-in review regressions
+89251dde83 Merge remote-tracking branch 'origin/master' into feat/desktop-update-ui-2
+7ebbd370cd test(web): preserve quoted file reference coverage
+719cc56276 Merge branch 'master' into fix/4823-message-overflow-review-menu
+1137e86aef fix(desktop,ui-theme): align bundled Montserrat fonts with onboarding
+894f25b91e fix(desktop): source the About product name from the locale
+f65c15a5cf feat(preview): unify document zoom controls (#4785)
+d0ddf939f0 refactor(office): transfer PDFs as multipart bytes (#4830)
+601d6761e4 feat(settings): project volatile Config through profile-backed forms (#4587)
+da7ca4265a fix(voice-input): explain model download network requirements
+c63e174b7b Merge pull request #4798 from deepseek-harness/fix/4670-review-tab-scroll-and-filename
+08653de38a Merge branch 'master' into fix/4670-review-tab-scroll-and-filename
+c82e40d498 Merge pull request #4809 from deepseek-harness/otel/product-telemetry
+bc4e8bafe6 Merge remote-tracking branch 'origin/master' into feat/desktop-update-ui
+5847ff8721 chore: merge master into review tab fixes
+645e4faab2 fix(voice-input): add a dedicated plugin icon
+6d13819fbc docs(telemetry): regenerate module graph after package rename
+3a3aaaf796 Merge pull request #4804 from deepseek-harness/fix/desktop-ripgrep-unpack
+5aa21749b9 fix(web): wrap long file references and track floating menus
+c1edda8a37 fix(desktop): show the Windows About command in the update dialog
+535cb4aae3 fix(telemetry): isolate collector transport and address review
+1566f3f5ad fix(desktop): round the Windows app icon corners further
+481b6b57e5 fix(desktop): simplify the update-available restart notice
+b2ad3bf020 Merge remote-tracking branch 'origin/master' into fix/desktop-ripgrep-unpack
+754733d5d1 test: update shell spill snapshot for the shared token budget
+8b89200324 Merge remote-tracking branch 'origin/master' into otel/product-telemetry
+dcac4c6eac Merge pull request #4792 from deepseek-harness/build/windows-release-scripts
+b2db503913 Merge pull request #4458 from deepseek-harness/feat/plugin-detail-slots
+f3c6d0c0df test: refresh multimodal tool catalog after master update
+68b44d78ba Merge remote-tracking branch 'origin/master' into fix/pwsh-prompt-readiness
+5fdad8d838 Merge branch 'master' into build/windows-release-scripts
+575dc9add0 Merge remote-tracking branch 'origin/master' into fix/4775-multimodal-tool-retention
+4eb26f0e71 feat(cli): export JSON Schema for Cordis configuration (#4705)
+b0be6e79c2 fix: preserve failed PTC image result forwarding semantics
+aba8b3a29f Merge remote-tracking branch 'origin/master' into feat/plugin-detail-slots
+5882efd7ce test(web): re-record the bundle golden for plugin-owned identity
+4b54e59a52 Merge pull request #3127 from deepseek-harness/worktree/job-kill-delivery
+873140cff3 test(web): follow master's slot fixture and cast rules after the merge
+735700c4b5 Merge pull request #4789 from deepseek-harness/feat/windows-clean-uninstall
+14c1fec958 test: record mixed-content retention through the headless profile
+79468e26dd test: stabilize multimodal spill recovery locators
+d54b000bdb fix(desktop): keep the new specs off the built tree and off unknown casts
+f33b604ca2 Merge pull request #4786 from deepseek-harness/fix/4781-dedupe-open-with-apps
+0981cd5924 fix(desktop): harden the Windows uninstall data removal after review
+5b4ca4a29e Merge pull request #4808 from deepseek-harness/fix/pr4346-spreadsheet-review
+36a29b424d test(web): settle the transient running-job control before conversation goldens
+4694540e2a Merge remote-tracking branch 'origin/master' into fix/4775-multimodal-tool-retention
+ecb66a3497 Merge remote-tracking branch 'origin/master' into feat/plugin-detail-slots
+e52209da40 test: share multimodal snapshot composition
+5c1d966c3f test: cover image recovery failures and snapshot registration
+74f4c438de test(pty): pin the pwsh fast path by settle reason
+552235aab6 docs: align the Chinese config catalog with the regenerated source line
+c4c18ef0d4 test: align retention checks and catalogs with token budgets
+38dbb56237 test(agent-team): type Team panel fixtures without unknown casts and regenerate catalogs
+ab102138c8 fix: retain ordered tool text and images within a token budget
+4ae923fe6f fix(desktop): refine welcome typography and copy feedback
+4e5e1f9c7a fix(ui-settings-account): allow retry after active sign-in errors
+131fb841f2 Merge remote-tracking branch 'origin/master' into worktree/job-kill-delivery
+b8050f0251 fix(desktop): finish the review items the first pass missed
+1dc518f217 feat(agent-team): drive the Web Team panel from the agentTeam projection
+3a3422f517 Merge remote-tracking branch 'origin/master' into otel/product-telemetry
+0659ded55b refactor(job-controller): drop the subagent ownership fence from job.kill
+949e875f7c Merge pull request #4732 from deepseek-harness/turtle/favicon-dark-fix-c387d950b8d9
+910d52f717 feat(telemetry): add explicit product event OTLP exporter
+9e87907849 Merge branch 'master' into fix/4670-review-tab-scroll-and-filename
+b900840784 Merge remote-tracking branch 'origin/master' into fix/pwsh-prompt-readiness
+b631804d2b Merge remote-tracking branch 'origin/master' into fix/4781-dedupe-open-with-apps
+c1ad3bb493 test(desktop): align ripgrep packaging checks and fixtures
+4f74f956ec Merge remote-tracking branch 'origin/master' into fix/pwsh-prompt-readiness
+d1e22a7e24 feat(preset): declare Agent compositions in profile YAML (#4569)
+685ed95f17 Merge remote-tracking branch 'origin/master' into feat/windows-clean-uninstall
+933d3bf39e Merge pull request #4784 from deepseek-harness/turtle/chip-model-truncate-4889eecc8358
+6340df605d refactor(client): share file tree path labels and improve review tests
+0b91ce2126 refactor(desktop): drop the uninstall data-removal log line
+b20a383a7a fix(desktop): unpack platform ripgrep executables
+0181baae5b Merge branch 'master' into build/windows-release-scripts
+2bba702a6e Merge remote-tracking branch 'origin/master' into worktree/job-kill-delivery
+a9840f055f fix(web): select static favicons with media-qualified links
+7a29f57199 chore(session-controller): drop the leftover dsh-jobs type import
+3cab7723e4 fix(native-command): validate macOS grouping fields without an unsafe any
+4a2b8486da Merge master to resolve PR #4784 conflicts
+22da693201 Merge pull request #4346 from deepseek-harness/web/excel-frontend-preview
+1b6451a647 fix(desktop): follow the documented release version rules
+4e47ba6c1d chore: start multimodal tool result retention work
+02a0c70662 fix(ui-deliverables): preserve review fixes in shared file diff
+97545d9c8f fix(pty): keep the controlled prompt so persistent pwsh settles fast
+57bcfac402 Merge remote-tracking branch 'origin/master' into web/excel-frontend-preview
+2cbf8df484 Merge pull request #4412 from deepseek-harness/worktree/experimental-voice-input
+ec52049610 docs(desktop): drop the Start menu claim for InstallLocation
+e7287e499e Merge remote-tracking branch 'origin/master' into web/excel-frontend-preview
+1a14166d2b fix(native-command): validate the full handler list and dedupe only for display
+5e0934ebbb Merge pull request #4698 from deepseek-harness/fix/team-task-board-read-only
+080bea0b85 Merge remote-tracking branch 'origin/master' into worktree/experimental-voice-input
+a93aa38876 Merge branch 'master' into fix/team-task-board-read-only
+cbe0d84fc1 Merge remote-tracking branch 'origin/master' into web/excel-frontend-preview
+683625b793 Merge pull request #4780 from deepseek-harness/ihsiang/changed-files-hover-preview
+61a0acc4da fix(preview): satisfy strict spreadsheet lint
+3324157b7f fix(web): address Team panel review feedback
+85f16860f5 Merge pull request #4758 from deepseek-harness/feat/chat-step-groups
+e17f505504 Merge master into ihsiang/changed-files-hover-preview
+4ab8fbfacc fix(desktop): name the commit a build records instead of its provenance
+4c7c7a552f Merge remote-tracking branch 'origin/master' into worktree/job-kill-delivery
+bb20149360 refactor(shell): register foreground commands as jobs at start and drop the promotion protocol
+262ee1bc23 fix(voice-input): address lifecycle and provider review feedback
+c6e38b364f fix(client): resolve review tab conflicts and path label coverage
+eb7d3af91c Merge pull request #4582 from deepseek-harness/fix/windows-acl-delete-escape
+93a65a9a94 feat(desktop): remove Electron data on Windows uninstall without a custom page
+35489c0f5c fix(web): manage Team panel keyboard focus
+59b5a4ac0f chore: prune removed Team test assertion baselines
+253fb5e66d fix(web): make Team tasks read-only and contain the panel
+7717eb39c0 Merge pull request #4553 from deepseek-harness/07akioni/fix-desktop-office-asar
+795e5024bc fix(ui-deliverables): fill diff row backgrounds across scroll width
+d44d899c71 Merge pull request #4783 from deepseek-harness/feat/docs-image-viewer
+cf323fdaac docs(web): clarify model collapse contract and geometry ownership
+a67ad91237 feat(client): expose indexed positions to group definitions
+64094e8991 test(web): match the 36px unpreviewable open control height
+7079376f28 fix(ui-settings): restore settings panel dimensions and radius
+11d36dd102 Merge remote-tracking branch 'origin/master' into fix/windows-acl-delete-escape
+ee0fc82267 fix(desktop): check the bundled runtime against the product version
+60cdd547ae fix(ui-deliverables): preserve filename endings in review headers
+7f382a1e2c Merge pull request #4757 from deepseek-harness/worktree-npmlink
+b1d878b33d fix(website): address shared viewer review feedback
+ad9f77db04 fix(preview): compact spreadsheet formula warning
+950ed3f6df feat(desktop): publish a build version without rewriting the manifests
+dbbecd2461 feat(desktop): opt-in Windows uninstall data removal
+d7d099c7eb Merge pull request #4772 from deepseek-harness/copy/ptc-description-20260920
+69fb366034 test(web): provide font events in built-bundle jsdom fixtures
+f91f461dc6 Merge branch 'master' into fix/4781-dedupe-open-with-apps
+9a485724f6 fix(open-in-app): scale the empty-state opener chevron up and trim its height to 36px
+a95dfea48d Merge branch 'master' into copy/ptc-description-20260920
+b3d54fcef7 Merge pull request #4605 from deepseek-harness/worktree/model-provider-entry-ux-dde717
+7252e5823b fix(boot): keep linked-root removal independent of relinking
+73e9efbbdf docs(boot): define linked-root removal across generations
+cf41c158ba fix(boot): keep host lookups native and fix source smoke fixtures
+c9d4b7561d fix(boot): apply linked peers at each native lookup position
+3e7af9cfbb feat(boot): resolve linked plugin peers from the running installation
+a946008275 docs(boot): document linked plugin peer resolution
+6cb1cd921f fix(native-command): collapse duplicate macOS handler copies to one menu entry
+ed0700ffb5 Merge remote-tracking branch 'origin/master' into worktree/model-provider-entry-ux-dde717
+818c51f969 Merge remote-tracking branch 'origin/master' into 07akioni/fix-desktop-office-asar
+c136d821dd fix(web): collapse model text when composer controls cannot fit
+4aba48ec03 fix(cordis): register Host inspect providers once per process (#4742)
+440070e4f8 fix(web): address diff preview review findings
+4e5aec6a74 Merge remote-tracking branch 'origin/master' into codex/office-package-master
+b6cb6be3da Merge pull request #4767 from deepseek-harness/fix/desktop-minimize-vibrancy
+cb718ce9da feat(website): enlarge screenshots with the shared media viewer
+e0b5ab5ebd Merge master into PR #4553 and resolve runtime helper import
+7dd6d1fc31 docs(client): mark the grouping foundation implemented
+b9252673e9 fix(client): report only changed turn locations
+b3549ee455 fix(client): preserve grouped chat navigation and view lifecycle
+c1c3410cf0 fix(benchmarks): declare grouping runtime dependency
+0076de86fc test(client): cover group injection and conversation fixtures
+a7d457349f docs(client): record the conversation grouping foundation
+1b3b56c8f1 feat(client): render stable conversation group references
+c890269a19 feat(client): add definition-owned conversation groups
+766eee63eb fix(release): run pnpm and tar portably on Windows
+767cb38567 fix(locales): update titles for Office document in Chinese and English
+15415600d1 fix(preview): render spreadsheet values as literal text
+9f6434d24b refactor(web): move Office loading into its injected face
+f51092015f refactor(preview): align spreadsheets with shared file preview structure
+e70fa89400 feat(preview): support xls csv and tsv
+30b6abad5c fix(preview): retain Excel worksheet selections
+087dc65e89 feat(preview): render Excel workbooks in the browser
+90a1b23e4a feat(web): preview changed-file diffs on hover
+eaf0f68bb2 Merge pull request #4401 from deepseek-harness/perf/workspace-file-binary-transfer
+d7318cb7b5 Merge branch 'master' into fix/desktop-minimize-vibrancy
+e4fbb92570 Merge pull request #4770 from deepseek-harness/xtr/normalize-agent-cancel-cause
+8dafa0829b Merge remote-tracking branch 'origin/fix/desktop-minimize-vibrancy' into fix/desktop-minimize-vibrancy
+b4886c7e5b feat(workspace): marquee hovered session titles with fades on both cut edges
+44fe86eaf8 test(desktop): cover the minimize backdrop swap and extract the chrome fallback fill
+63b7a0f7c1 Merge branch 'master' into copy/ptc-description-20260920
+e98b5703c7 refactor(api): move Remote result projection to gateway
+2aac7c8ef5 fix(connection): keep narrowed attachment path type
+285f0a7005 fix(connection): narrow binary transport values
+983b89f9a5 refactor(fs): default unsupported file watching
+ecf6acfb15 feat(api): support binary fields in Remote results
+2e99e6021d Merge remote-tracking branch 'origin/master' into xtr/normalize-agent-cancel-cause
+6fba9d3bfb Merge pull request #4544 from deepseek-harness/worktree/issue-3881-folder-drop
+7520fe94e1 refactor(preset): 精简创造模式的 system prompt (#4745)
+3773c4f85b docs(agent-loop): correct the owning cancellation note
+a43da8740d fix(desktop,ui-settings-account): resolve branch hygiene violations
+b42a93d62f Merge remote-tracking branch 'origin/master' into worktree/job-kill-delivery
+f206efb628 Merge branch 'master' into copy/ptc-description-20260920
+6ac2d741a6 test(llm): retain pending mock listeners through teardown
+6f07deab31 test(llm): preserve coverage timeout budget and drain stalled fixtures
+49ff1f815d Merge origin/master into worktree/issue-3881-folder-drop
+35a02e1658 Merge pull request #3052 from deepseek-harness/worktree/process-plugin-streaming-72f9b3
+dc1f87e890 Merge branch 'master' of github.com:deepseek-harness/deepseek-harness into worktree/process-plugin-streaming-72f9b3
+21d2c8b948 Merge pull request #4768 from deepseek-harness/worktree/input-plugin-extension-hooks
+4df3de2075 fix(desktop): sharpen installer brand art and progress-page scaling
+f0b896aac8 refactor(desktop): render welcome with React and shared assets
+e30f0c7774 test(terminal): check descendant quiescence instead of PID removal
+a0f59aac40 fix(llm-pi-ai): stop re-parsing streamed tool-call arguments on every delta (#4740)
+a2487e34b7 fix(desktop): lock the development runtime target and complete the resolution
+bb7e92c999 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+e649981497 fix(web): describe PTC mode by the tasks it suits
+3f17ab99d4 refactor(chat): restore ui-chat import paths to master
+35f3abf1fa fix(agent-loop): copy the cancel cause before logging turn/end
+20be0ff297 Merge origin/master into worktree/issue-3881-folder-drop
+4625cd376f Merge branch 'worktree/input-plugin-extension-hooks' into worktree/experimental-voice-input
+2ab948a11b Merge remote-tracking branch 'origin/master' into worktree/input-plugin-extension-hooks
+d0ac0afbe2 fix(composer): recognize pasted directories through entry metadata
+c240582109 Merge pull request #4646 from deepseek-harness/feat/4562-file-open-apps
+9746e97260 Merge branch 'worktree/input-plugin-extension-hooks' into worktree/experimental-voice-input
+9df1b6033a fix(web): keep the empty composer dock collapsed
+61719629fc Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+b6594005f7 fix(ui-settings-account): report clipboard failures without failing sign in
+c84c908656 fix(ui-deliverables): prevent split diff edge rebound
+3834da8602 Merge pull request #4754 from deepseek-harness/desktop-browser
+103aee7396 Merge branch 'worktree/input-plugin-extension-hooks' into worktree/experimental-voice-input
+62891ca4fc Merge origin/master into worktree/issue-3881-folder-drop
+0aa6f94749 feat(web): expose input plugin extension hooks
+640e26806b docs(sidebar): describe the final retained browser architecture
+2c5d49645b docs(ui-deliverables): plan review tab fixes for #4670
+31cce49fff fix(desktop): unify welcome material and action placement
+511476782b test(web): complete input action fixture after master merge
+b3ff0f5dc7 Merge remote-tracking branch 'origin/master' into worktree/experimental-voice-input
+2ced4d130b Merge branch 'master' into fix/desktop-minimize-vibrancy
+82692090c8 Merge remote-tracking branch 'origin/master' into feat/4562-file-open-apps
+8e441f7da2 test(browser): complete sidebar retention and navigation coverage
+599f556deb test(sidebar): follow retained DOM layout in browser checks
+7be9188d20 fix(browser): complete preload fixtures and scrollbar bindings
+346b27b037 fix(webworker-packer): skip declaration-only export roots
+d8438ecf06 refactor(browser): isolate Electron code and defer native coverage
+94bc5b25b8 test(desktop): cover webview and sidebar retention lifetimes
+0e652514ea fix(browser): declare workspace client injection
+60ef7b1261 fix(ci): refresh sidebar catalog and complete API docs
+e9a0d5ac77 fix(desktop): address sidebar retention and webview review findings
+5614184902 chore(browser): prune retired unknown-cast baseline
+1489526281 fix(desktop): import updater declarations through package types
+37df1ea375 fix(browser): separate desktop types from client compilation
+c402892c1a feat(browser): add manual page recovery and cwd storage grouping
+ab4bd4c630 feat(desktop): enable lease-scoped sidebar webview guests
+cbd866fa72 refactor(browser): separate navigation and presentation providers
+96b2aca346 feat(sidebar): retain session views across tab presentation changes
+bf712e1404 feat(dockkit): add stable retained tab layout
+37535cf44a Merge pull request #4753 from deepseek-harness/fix/pr-4749-review
+4533be9531 fix(chat): address presentation review findings
+b173fe1c19 Merge pull request #4749 from deepseek-harness/feat/chat-presentation-channel
+3f7016a422 feat(config): add volatile schemas and watcher-driven updates (#4579)
+cbd6562506 docs(web): clarify browser dependency installation
+b79b64f788 Merge origin/master into fix/webkit-model-picker
+c3c3d95608 test(web): align preview and fence checks with chat folding
+b73a71e89c Merge pull request #4751 from deepseek-harness/worktree/preset-error-session-creation-1b1161
+c7e6e36dd1 fix(web): keep a superseded creation notice silent and add its e2e
+f1c035b1e9 test(chat): align presentation coverage and snapshots
+89ee08b781 docs: record completed chat migration and deferred turn-step work
+bcd14d776c perf(ui-chat): memoize tool and command rows
+b6f99fad55 feat(ui-chat): filter system prompts and permission commands
+007241d2a8 feat(ui-chat): add text shimmer to running rows
+e24805a536 feat(ui-chat): refine reasoning previews and disclosure cues
+508329fe57 feat(ui-chat): add presentation policy channel
+c2be3d9a0b test(web): pin the desktop update chrome's shared palette
+93ad804bf1 fix(web): report a refused new session through the Workspace notice
+5015426866 fix(ui): unify desktop update badge colors
+422ded6f7a fix(ui): align desktop update tag styling
+6446944fa6 Merge pull request #4669 from deepseek-harness/build/test-release-path-id
+338eea071e Merge remote-tracking branch 'origin/master' into build/test-release-path-id
+287f879d67 Merge pull request #4738 from deepseek-harness/fix/4728-macos-localizations
+b793dd2df6 Merge remote-tracking branch 'origin/master' into build/test-release-path-id
+db10002cdd test(web): include file items in image drop fixture
+5953ab2913 test(composer): use explicit void paste handler
+444ce0444b fix(composer): type paste regression and refresh slot catalog
+52a4a5bdb3 fix(composer): preserve batches and quoted directory references
+27fa7ed9ff Merge pull request #4681 from deepseek-harness/xtr/default-workspace-first-send
+ea05e57b60 Merge branch 'master' into fix/4728-macos-localizations
+06ef26a80f fix(web): preserve focus when toggling the model picker
+942e496ce7 fix(desktop): declare macOS bundle localizations
+31e6b3f150 fix(client): rotate every ongoing StateDot loader in phase (#4737)
+a4fdaebf52 Merge remote-tracking branch 'origin/master' into xtr/default-workspace-first-send
+5ec3353af2 refactor(workspace): reuse toast for default initialization failures
+d72f85a0ad fix(desktop): paint an opaque base while minimized to cover the vibrancy reattach gap
+1790a09f77 Merge remote-tracking branch 'origin/master' into feat/4562-file-open-apps
+f2a22a3108 test(web): provide favicon environment in desktop boot fixture
+6b9c01996f fix(web): refresh favicon colors with the system scheme
+2411452433 Merge pull request #4707 from deepseek-harness/subagent-catalog
+2c233c64f0 Merge pull request #4716 from deepseek-harness/feat/current-version-display
+42f9a76b77 test(client): align remaining navigation refresh expectations
+a25780c63b Merge pull request #4725 from deepseek-harness/fix/sidebar-excel-default-app
+045e2f9360 test(client): omit absent optional Session fixture fields
+ad2dad1186 test(client): cover auxiliary reads with retained Session fixtures
+d25490d8b4 test(subagent): replace legacy unknown cast with typed fixture
+280048d868 fix(client): align navigation callbacks and projection tests
+d088572e11 fix(session): declare persistence identity for Typert analysis
+be0d63661c perf(client): remove redundant projection reads from navigation
+dfff5056f4 perf(client): defer auxiliary reads until history is ready
+6fef0f0af9 fix(session-query): stabilize persistence cache identity
+e8f3d02da8 fix(web): batch session expansion and keep running sessions visible (#4715)
+068cf03441 Merge pull request #4648 from deepseek-harness/worktree/remote-duplex-stream
+654caa4bbd feat(bundle): accept an ordered patch file list in dsh.bundle.patch (#4722)
+d495b2e5f2 Merge pull request #4718 from deepseek-harness/copy/preset-language-20260920
+21e315a7dd docs(client): record the shell's Current version row in ui-settings-general
+d620c1e4b7 fix(web): soften segmented tab focus styling
+5aa0e3f806 test(web): align developer tools check with preset copy
+112c9e5749 feat(web): cite dropped folders and files as @ references on Desktop
+ffea3c8818 fix(gateway): close the remaining uplink lifecycle gaps
+5a8d3b7498 docs(agents): state the uplink note in English on both sides and cross-link its neighbours
+6872651527 docs: regenerate the module graph
+520c225b87 test(gateway): cover the uplink edge paths
+755f022ef0 docs: regenerate catalogs and document the mock uplink handle
+5fbae69d18 docs(agents): pair the Remote uplink stream note in English
+d07182d3d8 docs(agents): record the Remote uplink stream as implemented
+355df025d4 fix(gateway): harden the Remote uplink lifecycle
+8ce7c27671 refactor(connection): admit every request as the single operator Peer
+e427600e32 test: pin the scope export roster and map dsh-brand for the proxy type program
+35602063d7 refactor(typert): name the client stream handle RemoteStreamHandle everywhere
+77f1a493aa refactor(typert): keep the Remote marker mode as the 'stream' literal
+ebdc1609c6 docs(agents): mark the duplex note's pseudo-code fences as text
+089004c418 test(gateway): cover the Remote uplink and document it
+021bd03b70 feat(gateway): let every Remote stream carry a client uplink
+a1e0ce557d Merge pull request #4460 from deepseek-harness/feat/workspace-dependencies-package
+5ff352b0be test(web): include current version without built-in browser
+a165e82bfc feat(ui-plan): lead the plan chip with the plan glyph and a hover close (#4710)
+5294b15b31 docs(workspace): separate constructor parameter tags
+78d6f7bc1f test(client): mock default workspace initialization during boot
+9d7e5e30ac Merge remote-tracking branch 'origin/master' into feat/current-version-display
+05a229ccc9 feat(web): clarify agent presets and add mode guides
+c1f37fef9d fix(sidebar): open spreadsheets in default app
+6613660223 fix(web): keep model picker focus during mouse selection
+ab9689b2ca fix(web): bind the right Sidebar before same-commit mount effects (#4693)
+fa1065b6b2 Merge remote-tracking branch 'origin/master' into feat/workspace-dependencies-package
+b21fc2c8d1 Merge origin/master into xtr/default-workspace-first-send
+1628c1d030 feat(client): display current version in general settings
+2cd03c9758 refactor(workspace): omit unchanged registry state fields
+3a7f8f9657 test(web): restore ordinary workspace picker readiness
+4d2e420ef8 refactor(workspace): initialize the default workspace on startup
+7d002f7eff test: compare Windows file identity and refresh delivery controls
+e0187ecdf8 Merge remote-tracking branch 'origin/master' into feat/4562-file-open-apps
+8d6245bcc8 Merge pull request #4701 from deepseek-harness/fix/settings-navigation-scroll
+6848f1e118 Merge pull request #4567 from deepseek-harness/fix/windows-mandatory-update-overlay
+3f33c06f40 Merge pull request #4629 from deepseek-harness/worktree/dynamic-conversation/messages-only
+032394fc48 Merge remote-tracking branch 'origin/master' into fix/windows-mandatory-update-overlay
+8f0dd55c2c feat(plugins): render icons from package manifests (#4697)
+3eab1714bc feat(web): add chat link opening preference (#4671)
+086b64103f test: verify transient feedback and single-action file controls
+c7a4fae8e5 fix: complete shared menu types and remove obsolete button styles
+a4148d687f fix: refine file action menus feedback and shared queries
+05b056f18c Merge pull request #4635 from deepseek-harness/fix/lazy-subagent-migration
+393f72e32e Merge pull request #4690 from deepseek-harness/worktree/web-desktop-startup-commands-a97723
+47ee608079 fix(web): allow overflowing settings navigation to scroll
+76427b4c5f Merge remote-tracking branch 'origin/master' into codex/pr-4553
+6b1c9c169d Merge remote-tracking branch 'origin/master' into feat/workspace-dependencies-package
+82ae763772 fix(deepseek-account): rename login source parameter
+dff5506934 Merge pull request #4499 from deepseek-harness/fix/windows-plugin-list-type-size
+7d56ca5cee Merge remote-tracking branch 'origin/master' into worktree/web-desktop-startup-commands-a97723
+44cf9b703d docs(readme): point developers at dev:web and the Make targets
+230d975a04 docs(client): explain the identity tiers and the detailName scope
+40edba6a8d Merge remote-tracking branch 'origin/master' into fix/desktop-dev-runtime-target
+5dc6767d7b Merge pull request #4491 from deepseek-harness/fix/windows-menu-tooltip-overlap
+43372b28ce Merge origin/master into xtr/default-workspace-first-send
+686986fdea Merge remote-tracking branch 'origin/master' into feat/workspace-dependencies-package
+1e20aecef5 Merge remote-tracking branch 'origin/master' into fix/windows-mandatory-update-overlay
+d4d03b7c41 docs(workspace): clarify default directory lookup and cancellation
+8e313eaa30 test(workspace): cover first-use configuration and preset failures
+cfec29eb69 fix(web): show first-use preparation and update browser readiness
+6fa56a0cf7 fix(conversation): preserve first drafts across Session retirement
+91fcd9180a docs(client): name the caption bubble owner and record the badge gap
+dc81ed348c Merge pull request #4684 from deepseek-harness/build/windows-cache-concurrency
+453e8c09ac Merge remote-tracking branch 'origin/master' into worktree/web-desktop-startup-commands-a97723
+78dcbc8587 feat(infra): unify Web and Desktop launch commands
+f3e8021eaa Merge remote-tracking branch 'origin/master' into fix/windows-mandatory-update-overlay
+9e49d7dbcf Merge remote-tracking branch 'origin/master' into feat/workspace-dependencies-package
+e848b6226f Merge remote-tracking branch 'origin/master' into codex/fix-migration
+e44efedeb0 fix(session): isolate corrupt compressed headers during discovery
+8b8f10a8c6 docs(ui-sidebar): scope the Windows caption bubble claim
+466aa2232b Merge remote-tracking branch 'origin/master' into build/windows-cache-concurrency
+3515c48a37 fix(desktop): resolve the development runtime directory from the build target
+d4c5a1723f test(desktop): isolate update UI in directory-picker preload integration
+ecb00a6cd0 Merge remote-tracking branch 'origin/master' into build/windows-cache-concurrency
+1b83e0ff13 Merge pull request #4665 from deepseek-harness/fix/developer-tools-preferences
+c193e0dfee Merge pull request #4683 from deepseek-harness/fix/macos-menu-product-name
+db7ee5f487 build(desktop): parallelize Windows signature cache hits
+bea5bde6cc docs(desktop): clarify localized native menu behavior
+015e60ff40 test(desktop): satisfy strict lint in mandatory update regressions
+04debcbd65 feat(ui-settings-account): link to Platform account information
+69ac149090 fix(desktop): isolate mandatory update actions and handle main-window lifecycle
+35fe8e0966 Merge pull request #4677 from deepseek-harness/fix/4664-atomic-native-addon-extraction
+883311e556 Merge pull request #4349 from deepseek-harness/refactor/client-session-presentation
+21ec132c0e test(preview): expect versioned unknown child catalog entries
+d0f9a5c410 Merge remote-tracking branch 'origin/master' into fix/windows-acl-delete-escape
+a978ad1994 fix(subagent): version unknown catalog payloads locally
+fd75c47ae9 fix(desktop): localize macOS application menu names
+12f0608cad Merge master into fix/windows-mandatory-update-overlay
+b93f55f7ff Merge remote-tracking branch 'origin/master' into xtr/default-workspace-first-send
+3085139699 test(runtime): align fixtures with current type-safety gates
+e71df56b1a feat(workspace): create the default workspace on first send
+5e13010b90 test(web): document suite-level browser setup and bound the reconnect polls
+b882e7fc20 docs(session): record the client-local engagement memory limits
+d8480db9f0 refactor(web): read engagement retention from one identity set
+f25957d442 Merge remote-tracking branch 'origin/master' into feat/workspace-dependencies-package
+065def9d41 docs: use compliant issue references in native extraction note
+f984683956 fix(subagent): store unknown mode in the existing catalog event
+5a53758b03 test: preserve plugin-manager integration after stack rebase
+4f0ee6b105 fix(settings): defer developer features until host preference resolves
+8e5073ee61 docs(desktop): clarify test release ID reuse and qualification
+4bff618b17 docs(web): note the metadata hint applied over the engagement rule
+ae58d210eb docs(web): scope the second projection store to a discarded store
+7aa2d4b5cc docs(web): note the retained subagent catalog on session removal
+e3f0d3fb6e fix(web): preserve session engagement across blank list refreshes
+ddf11a4f0e fix: name Anthropic Messages in DeepSeek endpoint guidance
+0959c5be45 Align provider guides with Messages-only configuration
+9ab5c8e672 Fix Messages real-API package resolution and usage assertions
+385a540d7e Fix Messages-only consumer validation and document recovery
+2b29f31dc6 test(llm): assert native Messages file metadata
+99e22ebbeb refactor(llm): make the official DeepSeek adapter Messages-only
+6f3140d7cf Merge origin/master into fix/lazy-subagent-migration
+5992977f2e fix(pkg): make SEA native addon extraction atomic
+90f0dc8f7d Check terminal descendant quiescence without requiring PID reaping
+17a52a8fe3 fix(subagent): retain unreadable children in migrated catalogs
+8cf9c0eded fix(bash): allow blank justification without escalation (#4662)
+c1ee42cd9c fix: portal file action tooltips outside clipped cards
+c05771d828 build(desktop): isolate test downloads by release ID
+2f4b354253 Fix Office packaging tests for static checks and Windows paths
+c7c900a912 fix(settings): enable developer tools by default
+a026ab1397 fix(onboarding): scope developer tools to trajectory tab visibility
+a4cd2f57a0 fix: keep file action feedback visible while hovering delivery cards
+a6daee84ca test: enable the shared opener in the delivery replay
+6f1857ae1b test: refresh delivery snapshots for shared file controls
+03fde971e2 build: allow browser-safe file association metadata validation
+1f7e491526 docs: describe shared delivery and review file actions
+552bf8a869 Merge master into desktop Office ASAR fix
+28089001a2 fix: complete file action slot contracts and branch coverage
+bc2c9bd11a Merge pull request #4427 from deepseek-harness/session-actions-slot
+59fdc2604d test: provide the file action slot runtime in delivery fixtures
+b80722812b fix: scope shared file actions to their owning views
+56d0534c30 refactor: share native file actions across delivery and review views
+e553344063 test(sandbox): drop new unknown casts after the merge-forward
+33782150cd fix: name the default application in opening tooltips
+6e260998c9 fix: refine shared file controls and native query errors
+ee61acfe7e docs(client): describe session row entries as plain menuitem buttons
+c4949c4d0c fix(client): isolate row action clicks and collapse submenus from the menu list
+27b7fd0e2f fix: preserve Shell reference storage during failed handoff cleanup
+7943fb3917 Merge master into file application controls
+dfcef60d06 Merge pull request #4513 from deepseek-harness/xtr/fix-snapshot-source-ranges
+c6bc1a2fab Merge remote-tracking branch 'origin/master' into worktree/experimental-voice-input
+6493cdac9c fix: retain the Windows Shell host until asynchronous handoff settles
+1491975dba Merge remote-tracking branch 'origin/master' into dshw/pr-deepseek-harness-deepseek-harness-4513
+3821dc58e3 Merge pull request #4639 from deepseek-harness/fix-migration-v4
+39af517961 test: evaluate the Windows fixture output path as a PowerShell expression
+cbc51b5446 test: isolate native application identity and cold-history associations
+7d1afeccb0 test(web): register the live fixture rows in the session menu list
+4517603c28 fix(client): rename the row rename request type off the Host name
+5218958366 test: keep native association expectations strictly typed
+4fb9d34275 fix: use the native test task timeout for fixture readiness
+b689c724d1 docs: describe cross-platform file opening and pin desktop browser fixtures
+b4b0c4e4c8 test: exercise native Linux file handoff and document shared adapters
+21586fe28c feat(client): compose session row actions from slot lists
+aac990d2d4 test: cover desktop lookup fallbacks and cancel native fixture work
+63190fc870 fix(client): unify the plugin identity colour on label-tertiary
+5ca9b77c44 test(client): expect the pin row ahead of the session menu actions
+d849d656a5 fix(client): use baseline menu primitive
+4db234b408 fix(client): align session action slot contract
+fec5c888c4 fix(client): preserve session action slot contract
+cfcd3f3b0e test(client): cover session action focus handoff
+e5a72d73df feat(client): add extensible session menu actions
+a8c5ca85a1 test: cover Linux associations and native Windows Shell handoff
+a1545a9bf5 feat: share file associations across macOS Windows and Linux
+f44b78a622 fix(session): complete parent catalogs while isolating child failures
+219bbe47c7 feat: reuse the opening menu in a larger preview action
+c08ead6900 Merge remote-tracking branch 'origin/master' into fix/lazy-subagent-migration
+71b7bbeb88 fix: wait for file associations before enabling the default action
+6111f879fd test: verify shared opener menu toggling and SSH visibility
+5c409c39bc fix: type shared opening fixtures and document default actions
+e969aaff58 refactor: share compact opening controls for files and directories
+c74c8bc471 Merge origin/master into feat/desktop-welcome-and-window-controls
+f20c3e6a87 fix(desktop): align welcome typography and action sizing
+f0a35eba0d feat(credentials,ui-settings-account): display bonus wallets separately
+0c0789e4df fix(deepseek-account-platform): identify embedded desktop requests
+9b53f0abbb fix(ui-settings-account): center collapsed account avatar
+fb829bfc5c fix(desktop): refine welcome sign-in and workspace entry focus
+2d0f431181 feat(deepseek-account,ui-settings-account): display profile avatars with icon fallback
+adcd85c08a fix(deepseek-account-platform): preserve client type in login completion redirects
+4232634dd7 fix(desktop): keep workspace hidden during startup activation
+575de9ccbd fix(ui-settings-account,deepseek-account): reset copy feedback and retain successful profiles
+52d5ecd7c6 fix(desktop): update welcome copy and remove forced preview
+d952001c8c fix(ui-settings-account,desktop): adopt shared menu styling after master rebase
+68f8d32d83 fix(desktop,deepseek-account): share platform headers for Host API requests
+8cadbe8655 fix(desktop): clean up embedded views and complete packaged startup
+d9456b9464 fix(ui-settings-account): fall back to masked contact in sidebar
+31b9b5cb77 fix(account-controller): declare generated schema dependency
+d58c8cfcde fix(desktop): reconcile welcome startup with current update lifecycle
+fe6702cb20 feat(credentials): configure inference origin and discard mismatched account grants
+b73a2c8d2d fix(desktop,credentials,ui-settings-account): configure embedded deployment and disable label selection
+3402c95291 fix(ui-settings-account): hide account tab while signed out
+5b7195e032 feat(desktop,credentials,client): update sign-in protocol and Platform experience
+048297321a feat(desktop,credentials,client): integrate DeepSeek account sign-in and Platform pages
+753eff67b1 feat(desktop,client): add the native welcome window
+94a2d4af28 Merge remote-tracking branch 'origin/master' into fix/windows-acl-delete-escape
+c6c9da3eba chore: retire the removed path-action unknown-cast baseline
+dd39d56af5 test: remove legacy unknown assertion from path-action fixture
+79798d8c5a fix: satisfy package publication and file-action coverage gates
+4b02d03ed5 test(session): compare the forked cold row's recency with the list formula
+0c3045d488 fix: validate native metadata and refresh generated source references
+5325babc7b test: cover default native command adapter selection
+e435340eff test: exercise application selection through the recorded Web session
+0ae1b2f91c docs: describe native file application selection and platform scope
+0839011204 fix: include native association types in client compilation
+03d44191b3 fix: expose browser-safe file association metadata to Remote generation
+97877bd8b4 test: cover file handler selection and shared path authorization
+d6d9d47c49 fix: constrain application icon pixels before transport
+39bde1a5c9 feat: query file applications for sidebar opening (#4562)
+de055efa9a test(session): list a forked Session's cached title after a Host restart
+fd76c9534f docs(session): sync the client merge-rule prose with cached and sequenced rows
+6ab579b643 fix(web): label the assembled-remote fixture's list projection blocks
+f3310dc746 docs(session): record the list block kind decision and cross-link the client merge rules
+c4d40864fd fix(client): route list projection blocks by kind
+1b51a1ad2d fix(session): label list projection blocks with their sequence space
+2ef33c7f28 docs(session): record the projection cache listing identity decision
+9ff8f26450 fix(client): keep list-cached projection rows below sequenced writes
+86ca9de07e fix(session): read cold seeded rows from the projection cache by header
+bfcfc9ed2f Merge pull request #4603 from deepseek-harness/worktree/session-attachment-carriers-20260919
+85c6e80e0c Merge remote-tracking branch 'origin/master' into worktree/session-attachment-carriers-20260919
+4b49137aa6 Merge pull request #4357 from deepseek-harness/worktree/fix-deepseek-files-json-errors
+2319cbe476 Merge pull request #4623 from deepseek-harness/worktree/simplification-skill-survey-20260919
+3f9567a4c9 Merge pull request #4604 from deepseek-harness/worktree/team-opaque-json-20260919
+00dac23ba0 Merge pull request #4621 from deepseek-harness/worktree-fix0919
+d8c993a622 docs(shell): clarify queued cancellation regression coverage
+54b0aae8e6 docs(web): clarify retained subagent status sources
+cdd082c4ae test(web): preserve terminal liveness evidence after layout loss
+a05f2244cf fix(plugins): remove unknown casts from metadata loading and fixtures
+d67545f367 docs: sync catalogs and contracts for session fixes
+8771607f8b test: cover sidebar fork and persistent shell cancellation regressions
+9d4fa54c2d fix(shell): settle persistent shell cancellation without throwing its reason
+b7b587692d fix(web): disable terminal recovery and cleanup slots
+a7ce695461 fix(web): position new forks before their source
+1e48dae2aa fix(web): keep sidebar forks from switching sessions
+e6e5d95b29 test(session): align migration corpus and CLI expectations with lazy reads
+6362113ef8 Merge master into fix/lazy-subagent-migration
+1c16bc9a0e test(subagent): use branded descriptor sequence in restored identity
+a9985b49ae fix(session): migrate historical subagents only when opened
+88ee6039c6 Merge remote-tracking branch 'origin/master' into fix/windows-plugin-list-type-size
+bb2326f044 fix(client): raise the plugin package name contrast on the detail page
+3863992e67 Merge pull request #4571 from deepseek-harness/worktree-pluginlocale
+128d7d81d0 Merge pull request #4574 from deepseek-harness/fix/4573-browser-use-shared-instances
+4ffc8c7bef docs: clarify survey evidence and proposal cleanup steps
+faa6986b2b docs(browser-use): use the runtime resolution vocabulary in the instance note
+3014457c60 fix(client): share one size for the plugin inventory entry identity
+cf75d1d099 docs: refine simplification discovery and add nine proposals
+3a0d640214 test(llm): show malformed Files payloads in case names
+914bd34ea7 test(session-log-export): type attachment fixtures without unknown bridges
+d4ff95c8e2 docs(llm): distinguish Files JSON decoding from metadata validation
+0c44e5461d fix(session): restrict attachment discovery to declared event content
+4167b60997 Merge remote-tracking branch 'origin/master' into fix/4573-browser-use-shared-instances
+df3f4477ea test(agent-team): type opaque JSON fixtures without unknown assertions
+f56aecb314 test(agent-team): remove an unused store from checkpoint restoration
+50d38688be docs(agent-team): state the local content validation scope precisely
+1e6630a856 fix(agent-team): preserve opaque JSON through mailbox projections
+d6a0e3323e fix(llm): classify malformed Files JSON responses
+b1dbe92356 Merge pull request #4618 from deepseek-harness/worktree/fix-migration-json-typing-20260919
+77bcc35adb fix(test): type migrated JSON without an unknown cast
+76f0422653 Merge remote-tracking branch 'origin/master' into fix/4573-browser-use-shared-instances
+a22ac3284d Merge pull request #4611 from deepseek-harness/worktree/parallel-v4-corpus-migration-20260919
+fafa154a14 Merge pull request #4610 from deepseek-harness/worktree/prohibit-as-unknown
+84659abe3d docs(session): clarify bulk migration cache ownership
+a9f205c584 refactor(plugins): rename PackageMeta to PluginLocalizedMeta
+acec2ba713 docs(plugins): document PluginLocalizedMeta type name
+8ceaa725e0 build(plugins): validate locale resources and refresh catalogs
+0d611ea151 feat(web): display plugin-owned locale metadata
+0b7cb4102b feat(plugins): resolve installed metadata through runtime resource exports
+f8240240fa docs(plugins): define localized display metadata and fallback rules
+0e46c4ed26 docs(session): specify fatal migration job behavior
+0ab7976461 test(session): exercise the source-change retry through the CLI
+33d93ab155 fix(session): accept safe numeric job-count overrides
+0dd9a282b8 test(session): clean migration fixtures without traversing junctions
+e65d349de3 fix(infra): reconcile cast baseline with Session V4 master
+fd0654e96b fix(infra): stabilize cast fingerprints and reject unknown unions
+580bdc7258 refactor: remove redundant unknown casts
+c5d775d437 feat(infra): prohibit new assertions to unknown
+bc45bd821a Merge pull request #4530 from deepseek-harness/fix/compaction-threshold-reserves-completion
+f476a25de3 feat(session): emit structured corpus migration summaries
+ec7030afd3 fix(compaction): default summary output cap to headroom
+9b016b6425 refactor(compaction): require an explicit output reservation
+555b664b08 fix(compaction): reserve configurable 64K pressure headroom
+b02b20d713 fix(compaction): pin output caps and cover proactive reserve replay
+a1cebebd40 refactor(compaction): drop the spec's reservedCompletionTokens field
+0fadb08fbd fix(compaction): gate pressure on the message budget, not the whole window
+e105557046 perf(session): parallelize V4 corpus migration
+0fa88d4875 Merge pull request #4320 from deepseek-harness/release/session-log-v4
+31925760ca Merge remote-tracking branch 'origin/master' into fix/4573-browser-use-shared-instances
+73bf301227 Merge remote-tracking branch 'origin/master' into fix/windows-menu-tooltip-overlap
+8dc1d0e3ed feat(session): add one-time V4 corpus migration command
+b28fca7e87 docs(session): correct incomplete child evidence migration policy
+370e1efcdb test(session-reference): use declared plugin sources in V4 fixtures
+fdff56c293 fix(cli): drop retired link-mode override after master integration
+5da1515286 test(cli): inspect flat V4 results in source launch smoke
+8b0b2dc1d8 Merge master b86916de into release/session-log-v4
+2e061ec93f Merge pull request #4583 from deepseek-harness/worktree/v4-lossless-tool-results-20260919
+56f8c7f51b docs(session): keep migration mappings specific to each edge
+b3961e06a0 Merge pull request #4608 from deepseek-harness/worktree-removelink-rename
+bb81d312ae docs(session): scope extension prefixes to declared mappings
+7528528007 test(session): name the wrapper pass-through assertion precisely
+3e31760bc7 docs(session): explain historical result field ownership
+4ab9101271 docs(session): state the flat result converter failure contract
+45ce6ef21d docs(session): clarify converter fixes leave existing successors intact
+c7923096c7 test(session): bind tool-result parity to retained V3 replay
+e90c55e0ab docs(session): distinguish converter support from target compatibility
+1e7686b2c9 test(session): compare migration with raw native writer output
+0c8180c9b6 fix(session): preserve V3 result extensions in flat tool messages
+869367d5d0 test(session): continue catalog backfill after unavailable evidence
+e838401a9b docs(session): state incomplete catalog evidence limits
+ade7035fd8 fix(session): preserve parents with incomplete child catalog evidence
+c6f6aa3293 fix(session): preserve V3 tool-schema metadata keys
+d5a109c60f fix(session): preserve direct V3 source kinds during wrapper conversion
+cf3505b88e docs: call the package table the runtime resolution everywhere it is named
+f7f22a6b48 refactor(boot): finish the interception vocabulary in code comments and the app-boot README
+b605d114bd docs(boot): finish the runtime resolution terminology in the generation and desktop notes
+c0f34b4bcd docs(boot): name both installation anchor sources
+06b0ff9560 docs(boot): describe the installation closure size without point-in-time counts
+058d1d779b docs(boot): keep the ancestor chain code block language neutral
+9848ac75f2 test(cli): explain the sandbox-unavailable acceptance in the source tool smoke
+048fc3e580 docs(boot): state that the installation anchor is already a real path
+15e07d2721 refactor(boot): rename the profile resolution generation to the runtime resolution
+5f48b2fff6 docs(boot): call the package table the runtime resolution
+bffd317c8c Merge pull request #4570 from deepseek-harness/worktree-removelink
+a30f3a68c8 Merge pull request #4509 from deepseek-harness/feat/macos-sidebar-ui-and-drag-refine
+109efc7942 test(boot): cover the projection removal edge cases
+9c48e74409 test(web): capture sidebar snapshots after the track-easing gate settles
+45d77b0e8e fix(ui-theme): match the scrollbar sheet exclusion against /-separated scan paths
+02fec3209e fix(boot): remove link-backend profile projections on profile load
+0c342a81c4 docs(boot): record the one-time removal of link-backend profile projections
+9e95a7b183 fix(client): keep fullscreen sidebar strips draggable via fine-grained dockkit subtraction
+c6c1df6869 fix(ui-theme): normalize stylesheet-scan paths to forward slashes for Windows
+72d5194ce4 test(settings-models): drop an unnecessary JsonValue assertion in the add-card spec
+f7fe7a1060 test(docs): re-record the translation prompt after the model-provider terminology rows
+7d06fcdc05 fix(settings-models): derive the add panels, lock the switch in flight, pair tabs with panels
+536a94b188 fix(settings-models): exact Models nav locators, scoped vendor term, review nits
+ec2c4f2a42 test(session): isolate vocabulary fixture Git commands from caller paths
+696aa5f97c docs(session): describe retained source kinds by historical admission
+4d9c4e7a12 fix(session): reject retired tool results in V4 Team checkpoints
+88897a16c6 refactor(session): separate Team opaque JSON preservation from migration
+d5302e33f8 refactor(session): separate attachment carrier policy from V4 migration
+11ef33b336 fix(session): reject unknown required V3 events before target interpretation
+fc74dbf4ea fix(session): limit delivery migration checks to the V4 target
+28b209867f fix(session): preserve historical stream-start extension field names
+2833ff566e test(session): expect prefixed V3 opaque event identities on JSONL open
+bf29247fad fix(session): namespace historical V3 extensions with plugin prefixes
+cc970738d8 docs(session): scope checkpoint JSON preservation to domain reads
+df0145271d fix(session): preserve opaque checkpoint keys on domain reopen
+d7e523b8b8 perf(session): traverse stored JSON arrays by index
+1613a10c03 merge: integrate pinned master into session-log-v4
+699d06a7eb feat(client): widen overlay top margins to the frame's top clearance
+45417197c6 refactor(boot): name routes and collectors after the interception layer
+f34f8ef04d docs(boot): name the native lookup after the generation in the generation note
+82337a2e71 test(boot): canonicalize temporary roots with the native realpath
+8a320a276b feat(settings-models): one add entry with third-party and custom-API modes
+6840878bf2 feat(ui-primitives): add SegmentedControl
+03e3a3bca0 refactor(desktop): note the runtime descriptor validation in applyRelease
+1c806e5a16 docs(desktop): record the profile cleanup removal
+fe46abc02f Merge pull request #4594 from deepseek-harness/worktree/guard-ci-bubblewrap-pin-20260919
+71c7f6cc09 refactor(boot): name the interception layer parent and note intentional anchors
+0e2097ac18 docs(boot): describe the interception layer in the generation note and README
+08217140b8 Merge remote-tracking branch 'origin/master' into fix/windows-acl-delete-escape
+81b6934804 docs(boot): add the English lookup-order note and refresh the wrapper note
+7201569aef docs(config-catalog): carry the source-line refresh to the zh pair
+d71b8a2f1c refactor(boot): narrow legacy-links exports and refresh resolution JSDoc
+a80f5186a6 Merge remote-tracking branch 'origin/master' into feat/macos-sidebar-ui-and-drag-refine
+85724fb5b0 docs(config-catalog): refresh the sandbox-local Config source line
+4753e45f95 test(sandbox): probe cmd's own > NUL redirection
+de74a45f60 feat(desktop): raise the main window minimum width to 520
+3f7a209835 revert(ui-primitives): drop the tooltip pointer-focus suppression
+3d5ba3b83f fix(sandbox): scope the delete deny to containers, clearing the review round
+ff3d162401 Merge pull request #4600 from deepseek-harness/worktree/fix-markdown-preview-images
+c8e3cb2b87 test(web): track breadcrumb text crumb and shell.leading seat in e2e and goldens
+938b62c0aa refactor(desktop): drop link-era profile cleanup
+a311386983 test(cli): cover shared-layer packages in real profile launches
+6f57030958 fix(boot): occupy the interception layer instead of hiding it
+db831733da docs(boot): record the profile lookup order and interception layer
+518c7a604b fix(boot): preserve runtime fallback precedence
+fcc6cc8c12 docs(boot): align runtime-only resolution contracts
+0bac274273 test(cli): run source tool smoke after build
+4b79c744ab docs(cli): clarify source smoke build prerequisites
+6d8aac066d fix(boot): resolve profile dependencies from real package directories
+4b9141a89e docs(boot): document runtime-only profile resolution
+9fd0a5ad52 refactor(boot): keep runtime-only profile resolution
+8f2f13bc48 Merge remote-tracking branch 'origin/master' into feat/macos-sidebar-ui-and-drag-refine
+bd2247c510 Merge pull request #4505 from deepseek-harness/feat/session-pin-archive
+7951cee0d5 fix(web): render local images in Markdown previews
+688d7b694b test(sandbox): drop the host-dependent whoami integrity assertion
+7e4045c4c0 test(client): align sidebar interactions and browser snapshots
+7baccf5d85 fix(workspace): unify pin IDs and preserve complete session order
+f1e06a69ef fix(ui-primitives): preserve toast lifetime across rerenders
+842bf71350 perf(workspace): replace auto-animate with scoped row motion
+320e961122 test(jobs): refresh background tool snapshot headers
+766e6f9176 test(ci): reject prunable Ubuntu bubblewrap URLs
+34d78d843d feat(workspace): restore the hover title reveal with an 8px jitter floor
+1d221f9723 fix(workspace): end-aligned action tooltips, slower hover cards, archived-row alignment
+9ca19474ab fix(workspace): tooltip the row hover actions and open the sliders glyph
+94c62ea564 fix(client): draw the sidebar new-chat glyph at the regular weight
+5474efe890 fix(client): lighten the ellipsis glyph and adopt the Toast success tone
+bd0461c894 fix(workspace): give the compact-label row spec the pin/archive props
+3e96ed79a7 fix(workspace): steady hovered session titles and polish the sidebar controls
+33d496951c feat(workspace): session pinning and the sidebar archived filter
+df65ea84ee Merge pinned master 386ed6b6 into session-log-v4
+37b31ba0d4 Merge branch 'worktree/jobs-api-review-3052' into worktree/jobs-api-review-3127
+8eb96113c7 Merge remote-tracking branch 'origin/master' into worktree/jobs-api-review-3052
+c167f6d3e0 Merge pull request #4589 from deepseek-harness/worktree/fix-ci-bubblewrap-012-20260919
+32ec78c79e fix(ci): pin a compatible bubblewrap 0.12.0 build
+91212afc00 Merge pinned master e83fbddc into session-log-v4
+f863b47a48 Merge pull request #4586 from deepseek-harness/worktree/fix-spill-policy-gates-20260919
+3bcac0b878 test(web): expect three startup plugin batches in the keyless smoke
+08c3189c3c Merge branch 'worktree/jobs-api-review-3052' into worktree/jobs-api-review-3127
+9f3ddc1a19 test(web): re-record the bundle golden after the detail-page chrome change
+c4bc8b847a Merge branch 'worktree/jobs-api-review-3052' into worktree/jobs-api-review-3127
+629c53d5a0 test(jobs): refresh snapshots for decorative icon accessibility
+30b882a1b2 fix(jobs): keep client detail tests on the pure renderer
+3135e4d612 Merge remote-tracking branch 'origin/master' into feat/plugin-detail-slots
+70cacfdcaa test(shell): cover cancellation before reading failed launch results
+5c10701df2 Merge remote-tracking branch 'origin/master' into worktree/jobs-api-review-3052
+9f34db2373 test(spill-policy): await observed spill and dispatch stages
+87f0df0550 Merge pinned master 5ec3ffe337 into session-log-v4
+29598c7ce9 Merge pull request #4156 from deepseek-harness/feat/issue-3930-preview-refresh
+7450e1eb24 docs(sandbox): tighten the comments added by the delete-confinement fix
+36e632751e fix(sandbox): deny the ambient parent-delete right inside granted roots
+d5ad3baeb5 fix(sandbox): confine Windows deletes with a Low integrity label
+5c0b43f16e test(web): include connection diagnostics in SVG failures
+072ea695b9 fix(chat): retain bottom follow during stream updates
+a7a8fa3c16 Merge pinned master into session log v4
+29d96fa538 fix(web): simplify Browser guide subtitle (#4561)
+7e09291f15 fix(sidebar): preserve expansion during directory restoration
+bd5b1cd44f test(session): keep persistence fixture inventory keys portable
+e134ba8765 fix(session): format unvalidated row fields explicitly in diagnostics
+5152c097bb docs(session): catalog every V3-to-V4 transformation and refusal
+cbb4df8750 fix(session): refuse retired tool-result content during V4 admission
+a77250603c fix(fs): watch parent before acknowledging missing files
+0112eaf3a8 feat(session): finalize the accepted V4 compatibility baseline
+5b13cba35c test(workspace-files): cover initially missing watch targets
+4f55590aea fix(sidebar): correct automatic refresh and watch lifecycles
+9493ed6f61 test(sidebar): cover automatic refresh and watch lifecycle
+19d1f87492 fix(sidebar): satisfy lint and documentation checks
+cf9213ca5f fix(sidebar): finalize resource auto-refresh behavior and tests
+c71e907490 feat(web): add watched sidebar resource refresh
+b46af4d288 Merge remote-tracking branch 'origin/master' into feat/macos-sidebar-ui-and-drag-refine
+1cfb776604 fix(ci): re-record slots pairing, refresh breadcrumb golden, cover null-panel nudge branch
+498d0e8ecd merge: refresh session-log-v4 from pinned master
+135104fb10 docs(browser-use): record the profile plugin instance-sharing decision
+87cd0d8eb9 fix(skill): validate workspace dependency entry types
+d1e7bd0901 fix(client): keep the drag-gate fixture path outside packages/ so verify-package-paths resolves
+94607e48d6 Merge pull request #4578 from deepseek-harness/revert-4565-ihsiang/work-details-toggle
+50460879db Revert "feat(web): add work details presentation modes"
+60f2b1a2c9 Merge pull request #4429 from deepseek-harness/feat/developer-session-changes
+68a684d9c0 Merge pull request #4565 from deepseek-harness/ihsiang/work-details-toggle
+6f77b92121 docs(notes): reconcile shell.leading note with the sessionless conversation.header.leading seat
+64556a1285 fix(client): restore fullscreen panel drag subtraction, correct seat mount-condition docs
+daa2387546 fix(ui-chat): derive trigger titles from durable sources
+bffd23d3bc Merge remote-tracking branch 'origin/master' into feat/workspace-dependencies-package
+44e4750673 test(sdk): match Office startup wait to conversion deadline
+d94aef5214 Merge remote-tracking branch 'origin/master' into feat/macos-sidebar-ui-and-drag-refine
+50f7bc0bc6 fix(client): declare pointerup/pointercancel on Tooltip AnchorProps
+2708df4a9c Merge pull request #4203 from deepseek-harness/yyc/web-relative-routes-reviewed
+5467209f8e fix(client): settle tooltip pointer flag, harden drag gate, scope shared-curve doc
+de8b10f8ab fix(browser-use): share the installation's scope and MCP client instances
+82c7889b0e Merge pull request #4539 from deepseek-harness/worktree/npm-registry-mirror-config-029a47
+8837c532d1 Merge remote-tracking branch 'origin/master' into feat/macos-sidebar-ui-and-drag-refine
+61b099b77c fix(client): draw the registry popover's hairline as its elevation stroke
+5fe06ee64b Merge remote-tracking branch 'origin/master' into worktree/npm-registry-mirror-config-029a47
+27207bfedb test(plugin-manager): stop an install before its first run deterministically
+4d75946def Merge pull request #4552 from deepseek-harness/worktree/plugin-install-close
+6ad7c991bf test(ui-chat,web): align browser coverage with work details folding
+1dfd026b84 Merge remote-tracking branch 'origin/master' into worktree/npm-registry-mirror-config-029a47
+75b20ea98c fix(web): remove unreachable fallback and pin snapshot scroll
+771ebf4ace fix(web): scan plain src for a dual-face browser package without src/client
+e7094c81e2 Merge origin/master into worktree/plugin-install-close
+50b7dd21a2 fix(ui-chat,web): isolate process updates and restore lifecycle details
+f938ebad64 fix(web): recover lost plugin installation responses
+de2e799b0e Merge pull request #4202 from deepseek-harness/yyc/web-trust-domain-reviewed
+afc62255a5 test(ui-chat): include performance settings in migration fixtures
+93caf245b4 fix(ui-settings): enable developer tools by default
+f7daba8ca7 fix(ui-chat): map legacy normal work details to detailed
+cb561cbe4e fix(ui-chat,web): align work detail labels and Bash snapshot
+6a9febf6fe Merge remote-tracking branch 'origin/master' into fix/pr4565-ci
+8913d033dc refactor(chat): match user messages before developer refusal
+e0bd7e1960 feat(session): add developer changes using historical tool schemas
+b88afa8a72 fix(ptc): name persisted producer attribution ptc-mode
+fb79a944f5 refactor(llm): separate durable producer sources from request inputs
+29f7e7bdf5 fix(session): reserve retired system text in request-header schemas
+f4a32dbd0a refactor(llm): flatten tool results and validate native V4 sessions
+c6e62ff971 fix(persistence): retain explicitly forbidden JSON fields
+a6981c56f6 feat(persistence): add stable catalogs and policy-aware schema review
+bc710ac726 test(web): await the settled branch action in fork snapshots
+925f609092 Merge remote-tracking branch 'origin/master' into fix/windows-mandatory-update-overlay
+761f53223a feat(desktop): align main window default and minimum size with Codex (1280x820, min 480x600)
+d7fd452e96 test(desktop): exercise embedded mandatory update recovery on Windows
+0e23ee6789 Merge branch 'yyc/web-trust-domain-reviewed' into yyc/web-relative-routes-reviewed
+e9b928d993 Merge remote-tracking branch 'origin/master' into feat/macos-sidebar-ui-and-drag-refine
+998d2ce8c9 fix(client): narrow the registry options to their content
+2c6f634771 Merge branch 'master' into yyc/web-trust-domain-reviewed
+78522443f7 fix(client): keep the registry's host to its option
+fdc4887c38 fix(desktop): embed Windows mandatory updates in the main window
+c34e33cbd9 fix(client): title the registries by their hosts and drop the fallback note
+c95d045fdc docs(session): correct fork seed marker ownership
+044cd4fb49 merge: integrate pinned master into session-log-v4 base
+afc27869f7 Merge pull request #4532 from deepseek-harness/feat/plugin-refine
+0ed5151d0b Merge pull request #4448 from deepseek-harness/feat/session-header-feedback
+1b622ae54c Merge master into feat/session-header-feedback
+ae1cf3106b fix(web): polish work detail interactions
+5c263aaaf6 Merge remote-tracking branch 'origin/master' into feat/workspace-dependencies-package
+defb9c3736 fix(sdk): shorten bundled Python resource paths on Windows
+c3226f93e9 Merge remote-tracking branch 'origin/master' into feat/plugin-refine
+e651d00a9f Merge pull request #4354 from deepseek-harness/worktree/present-changes-dedup
+978e39e94e fix(plugin-manager): align plugin-config e2e and README quotes with revised copy
+de3f4c24ea fix: address feedback menu review and Linux process assertion
+5f90ac119e fix(web): refine live work disclosure presentation
+776efdf321 fix(ui-chat): hide infrastructure rows and retain turn triggers
+f2cf7272ef fix(ui-tool,ui-skill): localize Chinese tool step titles
+687ee6e2c7 fix(ui-chat): align work detail modes and disclosure titles
+ad1ddfd0b1 fix(ui-chat): hide settled reasoning previews when collapsed
+4216e778f5 fix(ui-chat): place response actions at the turn bottom
+6453db05ca Merge remote-tracking branch 'origin/master' into worktree/present-changes-dedup
+c85e1d7b72 fix(client): raise the plugin inventory package identity to 12px
+e132da911a fix(ui-chat): hide disclosure arrows for empty turn processes
+0859dca83f fix(ui-chat): show at least one second for completed turns
+55c564f31c feat(ui-chat): show independent notices for non-human turn triggers
+fac2a46c02 fix(ui-chat): reset nested disclosures when collapsing a turn
+a0c71e9f00 feat(ui-chat): add work details modes and keep retry rows separate
+0301a0a062 fix(desktop): place Windows caption tooltips below the titlebar
+0ce6ab6775 feat(ui-chat): reflect turn outcomes in process disclosure titles
+b2296f5916 feat(ui-chat): show expanded turn timer from turn start
+97514daa23 feat(ui-chat): refine process titles and expose retry activity
+fab6622abb feat(ui-chat): fold consecutive process steps and complete paginated turns
+2b168ce1ae fix(client): float the registry options over the install dialog and let its content scroll
+669bc2036f Merge pull request #4545 from deepseek-harness/ihsiang/refine-web-review-subagent-status
+5c8933fbe3 fix(session): acquire blank Session writers before reuse (#4392)
+9d66716e50 Merge remote-tracking branch 'origin/master' into feat/workspace-dependencies-package
+37983d9298 feat(sdk): bundle shared Office authoring resources
+ac0a042f08 Merge remote-tracking branch 'origin/master' into worktree/present-changes-dedup
+ba98bcbf08 test: refresh presentation guidance after review
+223385954d fix: recommend at most four files per presentation
+63c1e04b93 fix: keep file access available across presentation clients
+cb2750019a fix(plugin-manager): read pnpm's own registry, its stdout refusals, and lay failures where they belong
+6d7a5f9cc3 fix(desktop): verify archived descriptors and harden Office resolution
+a0c7299f8b feat(web): refine review and subagent status UI
+1e3afc63ad Merge remote-tracking branch 'origin/master' into feat/workspace-dependencies-package
+f5b0f56ce6 Merge pull request #4528 from deepseek-harness/perf/macos-packaging
+6e456264a9 test(web): wait for sidebar collapse before reopening
+d40f3fb658 test(hooks): synchronize inspection of an unpublished install lock
+870b0099c6 fix(desktop): retain packaging errors and restore unconfigured proxies
+13692e9179 test: refresh selective presentation prompt snapshots
+de662ee010 fix(boot): skip failed profile bundles and retain recovery controls (#4516)
+2e55564e02 fix: specify absolute paths for inline image rendering
+28fbe7433d fix: guide selective file presentation through prompts
+a6267c8d90 fix(plugin-manager): per-instance artwork ids, detail error feedback, coverage
+c19d1f12fb Merge remote-tracking branch 'origin/master' into worktree/present-changes-dedup
+54d46ad4d4 fix(desktop): unpack and verify native Office conversion
+959164f157 test(headless): align catalog diagnostic status with inactive state
+6ed957ec33 Merge origin/master into perf/macos-packaging
+736730c3fd fix(web): allow closing pending plugin installations
+92101e1a5b fix(ui-conversation): render the current crumb as text so the title joins the drag band
+bedcb7b58c Merge pull request #4373 from deepseek-harness/worktree/sidebar-open-in-default-app
+fa6941971a Merge origin/master into perf/macos-packaging
+c3cfe83d2e merge: update the session-log-v4 integration base from master
+e22005ae10 Sync session controller configuration catalog translation
+1902842b6c Merge remote-tracking branch 'origin/master' into worktree/sidebar-open-in-default-app
+bba78f0534 Merge pull request #4514 from deepseek-harness/perf/windows-signature-cache
+4960abd402 Merge pull request #4371 from deepseek-harness/worktree/issue-4370-code-diff-sidebar
+66c1c5fadd fix(client): drop the sync-lag clause from the npmmirror registry line
+545ccdb6f9 test(desktop): load proxy lock fixture from source
+750bf4988e fix(desktop): initialize Windows cache under stage ownership
+1a7308fbaa test(shell): synchronize background process completion
+7754a6fd49 test(desktop): isolate Windows cache path from host platform
+d4ed1d93d8 feat(desktop): share Windows runtime signature cache across worktrees
+363343fb83 Refresh config locations and satisfy typed fixture lint
+e303efe017 fix(client): align an offered registry's line under its title
+3e216c3d64 feat(ui-chat): add performance and usage display preference (#4478)
+dd8c4b817b Keep fixture slot adapters explicitly typed
+ed4d95482b Assert the retained file action path in toolbar coverage
+04d0235673 Verify local file opening and address sidebar review findings
+54b76da126 Merge branch 'master' into feat/plugin-refine
+32524892a3 Merge origin/master into feat/workspace-dependencies-package
+8dca1b7713 Merge master to synchronize desktop update dialogs
+8f2a183514 fix(web): document paired column ref lifetime
+12c0cbb56d Use document preview client config and shorten README summary
+e06c7852ff Merge remote-tracking branch 'origin/master' into worktree/npm-registry-mirror-config-029a47
+2cea45edc6 Remove duplicate guard from custom renderer fixture
+c538c4ec8f Adapt Office renderer fixture to file action slots
+419d7c57c7 fix(web): make scroll frame callback return explicit
+3bd8cfdf20 Merge pull request #4523 from deepseek-harness/fix/modal-backdrop-transition
+9e1635b6b6 Merge master and refresh sidebar file-opening integrations
+398a4247ae feat(client): pick and remember the registry a plugin install asks first
+716e2e2683 feat(plugin-manager): ask configured registries in turn while one is unreachable
+a363f7b5af Merge branch 'master' into feat/plugin-refine
+cc9caed57b fix(web): type browser regression style cleanup as Node
+a051fed540 Merge latest master into perf/macos-packaging
+b5cbcad854 fix(web): preserve split diff scroll offsets across clamped peers
+3e206546fd Merge pull request #4351 from deepseek-harness/worktree/fix-new-session-stale-blank
+7313e8dcc7 Merge master and fix desktop packaging proxy locking and checks
+0c4f554d6e Merge branch 'master' into feat/plugin-refine
+0c38f6fe43 Merge branch 'master' into fix/modal-backdrop-transition
+79677e4824 Merge remote-tracking branch 'origin/master' into worktree/issue-4370-code-diff-sidebar
+e67aca993e docs(notes): align window-chrome notes and sidebar README with shipped drag ownership
+ce4810cacb Merge pull request #4533 from deepseek-harness/worktree/custom-provider-url-placeholders
+b42bb09420 Merge remote-tracking branch 'origin/master' into feat/plugin-refine
+fa009c79e4 Merge master into feat/session-header-feedback
+021a3c6065 Merge branch 'master' into fix/modal-backdrop-transition
+ce09d8a293 Merge origin/master into feat/workspace-dependencies-package
+27eec0a247 Merge remote-tracking branch 'origin/master' into worktree/fix-new-session-stale-blank
+f83800530c fix(web): recolor the plan chip and align it with the control row (#4399)
+c52400ad72 test(ui-primitives): count the new check-circle glyph in the icon set
+98c083bb31 fix(web): match custom provider URL placeholders to protocol
+0c3eb28276 test(desktop): await mandatory overlay fade after policy clearance
+72d93cbcc2 fix(desktop): reset scroll when replacing update prompts
+a666209a59 fix(desktop): fade mandatory update overlays in place
+299101077a fix(desktop): keep update dialog backdrop stationary across prompts
+b51e64d70e refactor(skill): flatten primary runtime version metadata
+3f5b1e283b Merge pull request #4464 from deepseek-harness/07akioni/fix-sessionless-sidebar-controls
+76fa3860c6 fix(plugin-manager): drop guide item background that surfaced in dark mode
+3065e75d08 Merge remote-tracking branch 'origin/master' into feat/plugin-refine
+b1cf410e0c Merge pull request #4520 from deepseek-harness/worktree/windows-observational-reuse
+8fe06cfb24 Merge pull request #3956 from deepseek-harness/xtr/tool-card-details
+b16b116408 Merge origin/master into feat/workspace-dependencies-package
+eb570e306a Merge pull request #4251 from deepseek-harness/fix/4246-agent-targets
+d6002c1018 Merge master and preserve compact conversation header layout
+7bd832675a Merge latest master into xtr/tool-card-details
+91679f8351 Merge remote-tracking branch 'origin/master' into xtr/fix-snapshot-source-ranges
+66846bf8c0 test: refresh agent guidance in sidecars added on master
+cda99db4c0 docs: align remaining agent availability prose with the shipped vocabulary
+563d040d23 test: refresh subagent guidance in plugin manager snapshot
+b9e59cbaee refactor: unify Team availability in the service
+8b6831daa0 test: refresh agent guidance embedded in PTC prompts
+507e0e6dfe fix: expose Team targets and simplify model agent statuses
+e509dd9341 fix(client): pulse an app-region nudge at the right panel's open/close edges
+9ae6f0defa fix(client): mount the shell.leading seat on macOS only and cover the fullscreen relay
+ed50586256 refactor(ci): remove unused Windows observational entry
+21e31ac05e Merge pull request #4494 from deepseek-harness/perf/chat-navigation-history
+5ef7023b6c perf(desktop): cache verified macOS runtime signatures
+462c354792 test(web): await both subagent settings saves
+6f66437de4 fix(ui-chat): prioritize submissions over pending scroll samples
+d53c305224 fix(ui-chat): preserve turn rail follow and preview behavior
+8f62fc8ebd test(web): separate rail wheel input from keyboard preview assertions
+0a8702b216 docs: record chat navigation performance and ownership decisions
+3d360e7fdb perf(session-controller): publish historical jump pages as one batch
+e22b0d75e8 refactor(ui-chat): separate viewport and scroll navigation policies
+f89cd786aa perf(ui-chat): virtualize fixed-pitch turn navigation
+235db2a031 Merge remote-tracking branch 'origin/master' into worktree/windows-observational-reuse
+1dd0ec6ac5 test(web): retain fork snapshot coverage with decorative icons
+965e2c2995 Merge pull request #4512 from deepseek-harness/worktree/messages-input-history-compat
+5459be6656 ci: halve core-seconds in static and Windows observational lanes (#4521)
+bd6447479d refine(plugin-manager): polish install dialog guide, input, and wizard states
+a116bf73c6 Merge master and name combined Windows checks
+b53fda5961 Merge latest master into xtr/tool-card-details
+02bb08ecd9 fix(client): compensate menu fills for the blur the transparent window disables
+8072511aad fix(client): subtract dockkit strip runs and pane bodies from the macOS drag band
+e44345c044 test(desktop): stub syncWindowFullscreen in preload-platform mocks
+51d8c45413 Merge pull request #4477 from deepseek-harness/worktree/unify-agent-team-bundle
+4375f6cd83 test(web): align catalog button snapshot with decorative icons
+9d5fc30632 ci: adapt concurrency to available runner CPUs (#4518)
+46f7ab097f refactor(ci): reuse Windows builds for observational checks
+8306ddaa14 merge: refresh session-log-v4 base from master
+19e6e7b81b test(agent-team): verify browser activation and document bundle composition
+de742f7f45 Prune active Agent Notes and preserve historical archive formatting (#4431)
+9ee0d1257b test(session-snapshot): cover source-reference projection directly
+5daaaea3c0 Merge pull request #4457 from deepseek-harness/worktree/plan-tab-text-icon
+ae180d1d24 test(llm): document Messages input compatibility limits
+fee816628f Merge pull request #4506 from deepseek-harness/fix/office-font-warning
+231798102a Merge remote-tracking branch 'origin/master' into worktree/unify-agent-team-bundle
+732f198cf4 Merge remote-tracking branch 'origin/master' into worktree/plan-tab-text-icon
+3164e3c616 ci: right-size Blacksmith runners by workload (#4489)
+fd04c0c4be feat(client): make the macOS sidebar wordmark a window-drag surface
+1e390797e8 Merge branch 'refactor/desktop-update-domain-config' into perf/mac-packaging-timing
+da37b69fb9 Merge master into fix/office-font-warning
+19736552c0 fix(web): align Office font warning with shared toolbar styles
+b9bc99b675 Merge origin/master (#4451 developer tools setting)
+215226753d Merge pull request #4451 from deepseek-harness/feat/developer-tools-preference
+994e998b7d feat(client): deepen the conversation drag band to the header block
+76a592e3ab refactor(desktop): configure test policy login origins
+e0264148b0 perf(desktop): configure macOS packaging concurrency and retain phase logs
+4d34cd87dd fix(skill): address shared runtime review findings
+449c679892 fix(session-snapshot): expand source references before writing fixtures
+82c6a5e4f4 fix(llm): tolerate assistant blocks in Messages input history
+3ebd70020c Merge origin/master into feat/workspace-dependencies-package
+c8b17dd4d0 refine(plugin-manager): per-plugin artwork, trailing load-failure notice, friendlier copy
+d66b9c81b1 fix(desktop): drop superseded preload.ts after merge
+dd8d39c843 Merge remote-tracking branch 'origin/master' into worktree/unify-agent-team-bundle
+21c347913d fix(client): preserve sessionless header geometry across platforms
+e9def243e2 Merge origin/master into feat/macos-sidebar-ui-and-drag-refine
+e0c8b1dfca Merge remote-tracking branch 'origin/master' into 07akioni/fix-sessionless-sidebar-controls
+8019d37d3f feat(client): frame-owned macOS window chrome with single drag owner
+9b27cc0587 fix(web): move Office font warnings into the document toolbar
+fb2be52104 fix(client): compact conversation headers without view tabs
+4429a672b7 refactor(client): keep developer preference in settings scope
+caaaf89b1e fix(client): separate developer tool policy and harden static previews
+54e6aabf0c test(client): cover developer tools row settings injection
+07e3619ec3 test(web): enable developer tools in trajectory image fixture
+012f993ed4 fix: address developer tools preference review
+cdaafbc456 feat(client): add shared developer tools setting
+831ea36f2c Merge pull request #4461 from deepseek-harness/ihsiang/unify-web-ui-visual-language
+bf34d10e23 Merge pull request #4455 from deepseek-harness/fix/windows-native-dependency-signing
+863ffe83a6 test(desktop): type the application path mock as string
+64c669fc79 fix(plan): open embedded plan previews in the visible sidebar
+13cbe34fc0 docs(subagent): use the registered sidebar chat address
+12e3d45cdc fix(desktop): stop copying the retired management preload
+8ae136f402 fix(desktop): serve shell-owned update assets
+371c804336 test(cli): run the headless profile through source and built launchers
+8b5a78e9ac test(loader-smoke): observe the forwarded source hook in the child
+6205c2be70 test(web): wait for both Subagent settings saves
+6088ac7a85 perf(desktop): cache verified Windows signatures and isolate timestamps
+335c5cbe26 fix(cli): keep source profile imports in one module graph
+7e42e8aa65 fix(release): align V4 migration package with master version
+d66b21894c merge: integrate latest master into session-log-v4
+b6156b90fe Merge pull request #4389 from deepseek-harness/worktree/merge-master-session-v4-20260917-2
+0f7a507fbd test(web): assert stopped summary tone
+aa181c66e5 fix(desktop): preserve unpacked PE files and target runtime descriptors
+702f9e4ff1 Restore desktop shell dialogs and guard destroyed windows on exit
+3d2876f046 Run packaged smoke with production profile resolution
+4d46bff152 Normalize dependency metadata before sealing desktop runtime
+5a409fc771 fix(desktop): sign all Windows native dependencies before packaging
+938436e7bc fix(web): preserve tool-specific stopped summaries
+870388e2c0 test(web): refresh file link snapshot
+be8040d042 test(sdk): align Office checks with runtime profile resolution
+ef4a7efa91 Merge origin/master into feat/workspace-dependencies-package
+8fad9ccd8c feat(skill): complete shared Office runtime builds for SDK carriers
+488e438277 fix(web): address review feedback
+e699b482fe Merge branch 'yyc/web-trust-domain-reviewed' into yyc/web-relative-routes-reviewed
+8256c84630 chore(docs): regenerate the Cordis catalog after merging master
+9f21d7842a fix(agent-team): enable tools and Web UI with one bundle
+8e93da68f3 test(web): pin route-gate violations by line and match feature routes exactly
+d607e185ad Merge branch 'yyc/web-trust-domain-reviewed' into yyc/web-relative-routes-reviewed
+02dbcc3ef3 Merge remote-tracking branch 'origin/master' into feat/plugin-detail-slots
+9ed3d642e1 test(web): tighten the public-mount fence and drop unused fixture branches
+caa0c99be1 docs(web): follow up the review on the companion move and detail slots
+fd01a407b2 test(web): update plan preview snapshots after removing copy button
+b62a9f5c27 Merge branch 'master' into yyc/web-trust-domain-reviewed
+29126c0a32 fix(web): align plan preview copy controls with Markdown files
+1628e911c8 fix(client): keep sidebar navigation available without a session
+4937343a5e feat(web): unify the client visual language
+6e49ccad18 feat(skill): extract the workspace-dependencies tool into a package
+93e67201dd refactor(web): move the official settings pages into companion packages
+a815a7f2a9 feat(web): open action, badge and section slots on plugin detail pages
+0495ad9846 fix(web): use the plain text file icon for plan tabs
+3d345d27bc Merge branch 'worktree/jobs-api-review-3052' into worktree/jobs-api-review-3127
+0d734a8fe7 fix(jobs): adapt desktop update checks to session callers
+de617e2d0b Merge branch 'worktree/jobs-api-review-3052' into worktree/jobs-api-review-3127
+4b299845e0 Merge remote-tracking branch 'origin/master' into worktree/jobs-api-review-3052
+c2fb2bd4e8 Merge branch 'worktree/jobs-api-review-3052' into worktree/jobs-api-review-3127
+9ce43f925c feat(web): add feedback to session header menu
+5ad77a9532 Merge remote-tracking branch 'origin/master' into worktree/jobs-api-review-3052
+d2b277286f refactor(jobs): drop unrelated client refactors
+80c0a5c1e8 test(voice-input): complete waking state fixture
+9644155c4e fix(voice-input): handle capture failures and queued wakeups
+29182514ed fix(web): resolve feature routes from the document directory and gate browser routes
+eeb9b03465 feat(web): serve the shell, API and plugin resources from the document directory
+f3644dcdf3 fix(voice-input): keep waveform below recording controls
+0055d993fc docs(voice-input): clarify setup and cover microphone permissions
+5ccf1c57d2 fix(voice-input): align CI fixtures and source-only coverage
+7e12403d84 fix(voice-input): reduce recording action icon sizes
+018c0e5156 fix(voice-input): align dictation toolbar controls
+8d37a43316 Merge remote-tracking branch 'origin/master' into worktree/experimental-voice-input
+9d0f475a47 fix(voice-input): keep preparation status in plugin details
+23d21e2fde fix(voice-input): restore cached readiness and preserve composer controls
+8d62caf7fa Merge remote-tracking branch 'origin/master' into worktree/experimental-voice-input
+47ae64ee68 feat(voice-input): add optional local SenseVoice dictation
+85022b5c46 merge: sync Office conversion from latest master
+83b2ff7aa1 fix(client): preserve tool detail navigation and layout
+f32c0cc3d9 refactor(client): simplify recorded tool detail models
+490a79c693 fix(client): release replaced sidebar store adoptions
+566be5ae1b Merge latest origin/master into xtr/tool-card-details
+68825ecc57 Merge origin/master into xtr/tool-card-details
+2fb2a5cc65 merge: sync desktop menus and startup diagnostics from master
+b91c96c5ee fix(client): avoid duplicate expanded tool receipt statuses
+cba87e84d5 fix(client): distinguish recorded tool status colors
+27389e0899 fix(client): preserve unmounted settings and composer ownership
+321bce2627 Merge remote-tracking branch 'origin/master' into worktree/jobs-api-review-3052
+c840ac431d fix(client): settle preset selections and isolate generation stores
+fa3e5cbaf6 fix(client): preserve state across Session reference updates
+5c25efba91 merge: integrate Client Session references into session-log-v4
+a23331ba17 Merge pull request #4382 from deepseek-harness/worktree/session-log-v4-master-4304-20260917
+2d94201ef1 merge: integrate subagent capacity settings into session-log-v4
+5872c51d2b Merge pull request #4381 from deepseek-harness/worktree/merge-master-into-session-log-v4-20260916
+038c36b138 merge: update master integration with released fork support
+22b942bb19 Merge pull request #2687 from deepseek-harness/feat/session-fork-arbitrary-seq
+d97a2e858e test(snapshot): align imported MCP fixture with release tool prose
+0a1e2691ab merge: integrate master into session-log-v4
+8696ec6cef feat(session): fork exact event prefixes with synthetic tail results
+88229fac33 Merge pull request #4378 from deepseek-harness/worktree/fix-release-windows-coverage-20260916
+1ccef293fa fix(tests): keep Windows Job fixture cleanup with its owner
+e2107a0394 Merge pull request #4311 from deepseek-harness/feat/parent-catalog-consumers-rebuilt
+3c394440ab Merge remote-tracking branch 'origin/master' into worktree/jobs-api-review-3052
+e55093b47d feat(subagent): migrate direct catalog consumers to parent projections
+1d1ae1a5af fix(session): migrate historical subagent catalogs to V4
+dcf2b67896 feat(web): open Sidebar-previewed files in the default application
+55d57d33b6 fix(session): initialize blankness from retained metadata
+a4493ceb39 fix(deliverables): scroll the split review columns together on both axes
+f65799a236 docs(session): clarify blank-state projection guarantees
+f92f984d3d docs(notes): propose one card per delivered changed file
+fa2abdd6f1 fix(web): reconcile stale blank session hints from projections
+6e41857b2e Merge remote-tracking branch 'origin/master' into worktree/jobs-api-review-3052
+1596097147 Merge remote-tracking branch 'origin/master' into worktree/jobs-api-review-3052
+3bde1a56e3 fix(test): prepare preview generations and preserve embedded stream timing
+8a46149577 fix(test): validate retained V3 layouts and current reference captures
+9c10de50a6 fix(test): compare native Python delivery generations without rewriting goldens
+d3dbcfe710 Merge master into release/session-log-v4
+669b724a78 feat(session): add the V4 integration format and retain V3 replay inputs
+5e4cfe670f chore(session): initialize V4 release integration PR
+2832077b2c test(web): refresh tool details golden
+6744f21a43 test(client): cover invalid detail locales
+27e4529d15 fix(client): guard detail date localization
+bd16c3c89e fix(client): complete compact tool details review
+b59d3605b7 fix(client): address compact tool details review
+10029b995f feat(web): add compact details to recorded tool rows
+72e6329267 Merge branch 'worktree/jobs-api-review-3052' into worktree/jobs-api-review-3127
+1bd194ac17 Merge remote-tracking branch 'origin/master' into worktree/jobs-api-review-3052
+2e0106498e Merge branch 'worktree/jobs-api-review-3052' into worktree/jobs-api-review-3127
+a8fc15ec85 test(jobs): align built codec smoke with remote method names
+4b1db738f5 test(bash): control promotion deadline after output readiness
+dd7ea38578 fix(tests): adapt spill replay to unified shell execution
+ab6dacc80e Merge branch 'worktree/jobs-api-review-3052' into worktree/jobs-api-review-3127
+b211c87150 Merge remote-tracking branch 'origin/master' into worktree/jobs-api-review-3052
+9addbf63e6 merge: adapt job controls to the parent registry API
+3df99217dc refactor(jobs): restore direct calls and align remote names
+29418faf62 fix(shell): settle a live handle's post-termination rejection as its outcome
+9a8ea5eaf1 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+f2f696c358 test(bash-sandbox): expect the merged provider-failure note for a synchronous ENOEXEC
+fe24dddea8 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+f3cf2efc97 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+80fa0bee05 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+1f4d165aa2 test(snapshot): release the ACP diagnostic hold from the caller-bound wait
+1242fdfdef Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+6371bc4a41 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+bf91cd855e Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+51d1df5c4d test(pwsh-local): expect the spawn-failure note on the observed stderr stream
+57d51b3802 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+f3b538cf8f Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+3be4761178 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+4baea3bb83 fix(jobs): spill paths as source metadata, live wait claims, narrower entries
+206e5c6545 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+8bcd6f7519 refactor(jobs): rename visibleTo/VisibleJobs to forCaller/CallerJobs
+e001a9d2e4 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+d3b1f2d1bc Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+a444460ad4 fix(shell): never offer cancelled work from the offer arm
+b0cf8cc1d9 fix(tool-workflow): narrate background runs on the log channel
+58d4050cb6 docs(tool-workflow): state why the background branch has no pre-abort check
+600b780b97 chore(shell): align the pwsh mirror comments and the promotion read JSDoc
+15cbcad1eb docs(notes): rewrite the three delivery notes to the shipped mechanisms
+9fe106693c docs(shell): describe timeout promotion through the job ring, not ctx.activities
+ca3d9af0a7 Merge remote-tracking branch 'origin/worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+7e5627f8e3 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+3d5431a862 Merge remote-tracking branch 'origin/worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+063ef188a6 chore(jobs): regenerate the catalogs after the review fixes
+42858723a6 Merge remote-tracking branch 'origin/worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+3a03d68891 fix(shell): serve a background spawn failure on the observed stderr stream
+1c2d7771aa fix(job-controller): close an observation on the job's removal instead of a failed read
+80bbdba617 fix(jobs): restore the dropped-output notice with its spill files for the model
+c673796496 docs(jobs): record the review follow-ups in the consolidation note
+e680fbc3a0 refactor(jobs): check the announced event protocol in the invariant companion
+5f1d53640b fix(job-controller): show an observation failure that precedes the anchor
+9f0600d11b fix(tool-jobs): count wait claims per call
+0712a4cc68 fix(jobs-local): keep unconsumed settled output for the model and announce registration first
+2c0ca45f76 fix(jobs): carry the projection kind as an open string on the wire
+b76bfbcc1f docs(notes): align the job runtime notes with the consolidated seam
+70a37b6cc1 chore(jobs): drop the formatting-only hunks left by the seam refactor
+424c8457d9 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+b7632168cc test(tool-pwsh): pin the integration suite to the executor's timeout kill
+59b16ed0e3 Merge remote-tracking branch 'origin/worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+14dc38b2fd test(session-controller): cover the cold-session baseline queue
+d81c5048db chore(jobs): regenerate the catalogs and re-record the job goldens after the seam merge
+ae28d2cc6d Merge remote-tracking branch 'origin/worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+cd3a9ac881 Merge remote-tracking branch 'origin/worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+08a51f6d88 fix(tool-jobs): keep the agent registry optional
+fec81b7295 test(web): re-record the job goldens for the ring-backed rows
+9e8f3ce987 fix(tool-jobs): restore the background-job guidance text
+7b607ae6a2 fix(tool-jobs): build the notice status line from the public projection
+cbb0ec0296 docs(jobs): describe the consolidated seam
+84efac2c42 refactor(ui-jobs): read rows and observations from ctx.jobs
+b7ce934b29 refactor(job-controller): own the roster stream and the browser jobs service
+2132b7beeb refactor(session-controller): drop the job roster from the control stream
+10d76fbd03 refactor(producers): subagent and terminal jobs use session owners, results, and pull sources
+053d302210 refactor(shell tools): hand the job registry pull sources and terminal outcomes
+0e35952802 refactor(tool-jobs): render model reads from the ring and own the notice ledger
+6626c74dbc refactor(jobs-local): contain a throwing pull source instead of freezing the job
+f55e9805c7 refactor(jobs-local): one ring, two cursors, and event routing
+1b97207150 refactor(jobs-local): extract the output ring and the registry-owned pump
+07941fe5e2 refactor(jobs): consolidate the seam into JobSpec, VisibleJobs, and one event stream
+1307d66e70 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+09bd6bcf54 chore(http-proxy): align the package version with the 0.1.2-rc.1 bump
+a2b9b8b03b Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+d0b9167dba Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+b48c05d117 refactor(jobs): type the producer face by the record declaration, tidy review residue
+07d9d5b5cd Merge remote-tracking branch 'origin/worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+6a4d7ee242 chore(job-controller): align the package version with the 0.1.2-rc.1 bump
+6d65c12ef2 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+dd3ac9f7bf test(web): re-record the job goldens for the barrier-held scenarios after the merge
+5295b25073 Merge remote-tracking branch 'origin/worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+761282724b fix(jobs): constant pump waits, quiescent client disposal, record flag on the roster
+e8469d6f6c refactor(jobs): move the human kill to the job namespace
+121db081a4 Merge remote-tracking branch 'origin/worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+294c11715e Merge remote-tracking branch 'origin/worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+e42eb13655 test(web): drop the stray slash after the sourceRoot token in three prompt pins
+7ec142a325 refactor(jobs): move job observation into api-job-controller
+4db24c642d Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+d1ec8baaf5 Merge remote-tracking branch 'origin/master' into worktree/job-kill-delivery
+374baa2621 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+c1e6d09305 Merge branch 'master' into worktree/process-plugin-streaming-72f9b3
+a5af861041 fix(ci): finish the background-workflow snapshot fallout
+12957a106e feat(workflow): run_in_background registers the run as an observed job
+d23fdf8ab7 test(ci): port the offer-expiry executor suite to pwsh-local
+e578d07354 Merge remote-tracking branch 'origin/worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+592dfd8854 test(ci): cover the owned promotion paths
+1cec452f09 test(ci): close the observe-job coverage gaps
+da48f65160 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+2540fd8b78 Merge branch 'master' into worktree/process-plugin-streaming-72f9b3
+4ee1e1af25 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+891b45bf7f Merge branch 'master' into worktree/process-plugin-streaming-72f9b3
+b5c29ece22 fix(ci): regenerate catalogs and settle the merged job-list evidence
+a2fb67d06c Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+419a985fc9 fix(api): capture the session namespace for job observation at apply time
+d2e9be4086 test(api): stub session.observeJob on the fake client namespace
+3c79e71cdc docs(i18n): mirror the record refactor across the bilingual pairs
+0dca00b425 refactor(api,client)!: delete the activity plane; one job roster with record observation
+6e8a7a50ea feat(api): serve job-record observation from the session namespace
+8537b8d5bb refactor(shell,workflow): produce into the job record instead of ctx.activities
+e580c0b333 feat(jobs): fold the streaming observation record into the job registry
+b684ae215f Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+48939ba742 test(ci): pin the activity controller in the Host relay roster
+8f031b9a71 fix(ci): declare ui-activity's dsh-session dev dependency under the flattened policy
+f26eb7844e fix(ci): follow the merged kill-detail rendering and pack the refreshed fixtures
+8479c73102 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+8aa2dfa3a5 fix(ci): exempt the activity controller from flattened client-face dependencies
+922c80ce66 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+6b2cc74984 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+74fa4be0a3 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+e47580f604 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+02ef5e408f Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+70311bc517 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+48bbaa3e31 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+d4683d5552 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+72efe7f15a Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+5dcba9f760 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+9f24670323 test(session-controller): follow the two-argument Session constructor in the killJob specs
+df7e779a58 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+e5d5d16dd2 Merge branch 'worktree/process-plugin-streaming-72f9b3' into worktree/job-kill-delivery
+053979cdec test(activity): cover the owner arm and the pwsh outer observation catch
+ab75fe2bb6 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+32e9f33fd2 feat(web): tighten task-list controls, fold the settled tail, merge the live meta line
+4edf279ed6 feat(web): raise the task list's control affordance and row hierarchy
+bb1d472e94 fix(web): make the armed stop press legible without hover
+8f3103b511 fix(jobs): address review — error scoping, subagent fence, pending kill
+d6bebc5783 feat(shell): converge on execute() and promote timed-out commands to jobs
+51f74910ae feat(jobs): human job kill with an unclaimed terminal report
+47ee13dd74 fix(ci): repair the four failures the master merge left behind
+c8c3540f15 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+5ee10b3ebd Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+69d8b6e7ea fix(activity): bind observation cleanup to its generation and settle before mapping the outcome
+f9c3a6c753 fix(activity): banner divider on live output and headings for both task sections
+f10572a85d chore(client): regenerate the slot catalog after the master merge
+5cd435e917 Merge remote-tracking branch 'origin/master' into worktree/process-plugin-streaming-72f9b3
+e200eadd73 fix(activity): acceptance refinements — header band order and panel presentation
+61aadb3abf feat(activity): one session-header task list joining jobs with their activities
+ddd8baa93a fix(activity): mark evicted heads on fresh observation and fit the popover to the viewport
+4a79310339 feat(activity): optional live-output observation seam with a web viewer
+ff5f94d3fb refactor(client): import conversation node types from their declaring package

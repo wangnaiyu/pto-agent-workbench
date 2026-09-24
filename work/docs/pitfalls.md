@@ -46,7 +46,7 @@
 - 上游 `llm-deepseek` 默认使用 Messages 协议。已有 Chat Completions mock/兼容端点应显式配置 `protocol: chat-completions`，不能拿旧响应协议测试新版默认配置。
 - 正式 Skill 目录需保留可选源路径供预览；草稿目录省略路径。规范 `/skill name` 的发送后装饰必须从日志注入确认 Skill 身份，预览指向 name。
 - 不给生成 `/remote` 包导出添加指向 `.d.ts` 的运行时路径别名。正式 build 可能通过，`dev:web` 的源码解析仍会报 missing export；用真实 HMR 验证。
-- 本 fork 当前 Session V4 承接 PTO analysis source 扩展，V3→V4 正文恒等迁移且冻结旧代文件。下次 upstream 也使用整数 V4 时，先比对格式含义和 schema，再设计迁移；不得仅凭相同版本号接收数据。
+- 该轮 fork 的 Session V4 承接 PTO analysis source 扩展，V3→V4 正文恒等迁移且冻结旧代文件。本轮 0.1.7 已通过显式 lineage 与 V5 解决同号异义；不得仅凭相同版本号接收数据。
 - 运行记录以 `dfx_outputs` 为根的 `deps.json` 引用已验证；以其父目录为根、提交 `dfx_outputs/deps.json` 的分析 action 在旧 fork 也受限制。本次不扩大记录根解析范围。
 
 ## 0.1.6-alpha.2 上游适配
@@ -56,3 +56,13 @@
 - 上游 retired dynamic tools 由 plugin_manager / bundle 安装替代；旧 V4 successor 不会自动跟随新的 V3 fixture。用所属转换器更新当前后代，保留历史输入与 corpus 上限。
 - 固定 upstream ddefc45 的 src/tsx 工具回放可复现 prepare 未定义；本 fork 同样受影响。构建产物 DSH_EXAMPLE_MODE=lib 完整回放通过，源码 HMR 也通过；不要把工具src回放和浏览器HMR混为同一结论。见[验证账本](../archive/tasks/2026-09-21-upstream-rebase/evidence/validation.md)。
 - Office/工作流工具需要 Python >=3.10。macOS系统3.9不能作为升级失败证据；测试应选择满足上游约束的解释器。
+
+## 0.1.7-rc.1 上游适配
+
+- 上游 V4 包含 tool-role 结果、直接 source、开发者消息、生命周期及父目录转换；旧 PTO V4 仍是 V3 正文。部署须标记根目录 lineage；拒绝混用/猜测，冻结原件后只发布验证过的 V5。旧 fork acknowledgement 留在独立历史目录，不能接进官方 V4 线性 schema history。
+- 预设变为 AgentPresetRegistry；冷目录查询应在整个 await 生命周期持有 acquireScope lease，再经 serviceForScope 读取隔离服务，不能靠一个裸 scope key 保活或为查询创建 Session。
+- Settings 预设切换保留上游队列语义；仅首发准备等待 pending selection。默认 Workspace 初始化与浏览器草稿可以共存，不需要预建空 Session。
+- Shell 使用 resolve→execute→handle.result；running tool call 的 preparing 分支没有 argsRaw。两者应按当前类型契约消费。
+- rescope-vendor 的通用 token 检查会把新 CordisPreparingRow 的 locale key 误判为包名；与同族组件一样登记精确路径，不改产品 locale namespace。
+- 首次引入上游 unknown-cast ratchet 时仅并入有旧 SHA/token 指纹证明的 fork 历史债务；不得把它当作日后增加例外的授权。本次 0 个新指纹，证据见[审计](../archive/tasks/2026-09-24-upstream-rebase/evidence/replay-audit.md)。
+- 历史 transcript 独立 replay 不等于全部父子 corpus 迁移；当前 persistence 仍拒绝不一致 createdAt/目录事实。真实用户日志迁移需另有明确范围与来源，不以 fixture 成功代替。

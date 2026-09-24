@@ -1,0 +1,5 @@
+import { buildRegistryIndex, resolveNpmPackageLock } from '../scripts/benchmark-npm-resolution.ts'
+import { buildDualDshRegistry, assertDualDshInstallLayout } from '../scripts/verify-npm-install-layout.ts'
+const index = buildDualDshRegistry(buildRegistryIndex(process.cwd(), '46a7f68b0922371ce7144b668b90e377d8e799f4'), '0.1.7-rc.1')
+const result = await resolveNpmPackageLock(index, { '@deepseek-ai/dsh': '0.2.0', 'dsh-previous': 'npm:@deepseek-ai/dsh@0.1.0' }, 300000)
+console.log({durationMs: result.durationMs, ...assertDualDshInstallLayout(result.packageLock)})

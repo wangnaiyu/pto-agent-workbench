@@ -1,0 +1,11 @@
+{
+  "outer": "16bb4c30cac7b8a423ed08fec34d65fa80058fd2",
+  "outer_remote": "16bb4c30cac7b8a423ed08fec34d65fa80058fd2",
+  "fork": "a11460d434e652fde77d35e7558056a59cb3256f",
+  "fork_remote": "a11460d434e652fde77d35e7558056a59cb3256f",
+  "old_upstream": "ddefc45fbc7f8e46dd73185e68295696d1297887",
+  "upstream": "46a7f68b0922371ce7144b668b90e377d8e799f4",
+  "upstream_commits": 1617,
+  "fork_commits": 31,
+  "upstream_package": "0.1.7-rc.1"
+}

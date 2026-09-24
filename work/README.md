@@ -14,6 +14,8 @@
 
 ## 任务入口
 
+- [2026-09-24 harness 0.1.7 升级](archive/tasks/2026-09-24-upstream-rebase/final-report.md)：31项重放、显式V4 lineage与V5迁移、兼容验证、fork master安全更新及两仓配对。
+
 - [2026-09-21 harness alpha.2 升级](archive/tasks/2026-09-21-upstream-rebase/final-report.md)：30项重放、兼容验证、fork master精确lease更新及新两仓配对。
 
 - [2026-09-15 harness 0.1.6 升级](archive/tasks/2026-09-15-upstream-rebase/final-report.md)：28 项重放、V4 迁移、兼容验证、master 安全更新和两仓配对。

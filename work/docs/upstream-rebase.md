@@ -21,10 +21,10 @@
 
 ## 已知版本记录
 
-当前维护基线为 0.1.6-alpha.2，固定 upstream 与 fork 完整 SHA 见[架构](architecture.md)，30 项重放及 1 项兼容收尾、V4 successor 和验证见[2026-09-21 升级报告](../archive/tasks/2026-09-21-upstream-rebase/final-report.md)。正式配对为两仓 `post-upstream-baseline-20260921` annotated tag。旧 master `70e5ab14c8fc0081be6d2b1c8aff6b46682d4ecb` 保存于 fork 远端 `codex/pre-upstream-master-20260921`；候选 `codex/upstream-rebase-20260921` 与此前所有基线 tags 继续保留。
+当前维护基线为 0.1.7-rc.1，固定 upstream 与 fork 完整 SHA 见[架构](architecture.md)，31 项重放及 1 项兼容收尾、两条 V4 lineage→V5 和验证见[2026-09-24 升级报告](../archive/tasks/2026-09-24-upstream-rebase/final-report.md)。正式配对为两仓 `post-upstream-baseline-20260924` annotated tag。旧 master `a11460d434e652fde77d35e7558056a59cb3256f` 保存于 fork 远端 `codex/pre-upstream-master-20260924`；候选 `codex/upstream-rebase-20260924` 与此前所有基线 tags 继续保留。
 
-上一 alpha.1 基线见[2026-09-15 报告](../archive/tasks/2026-09-15-upstream-rebase/final-report.md)及两仓 `post-upstream-baseline-20260915` tag。回退源码可使用保存 ref；不得把源码回退理解成真实会话降级或覆盖旧 generation。
+上轮 alpha.2 基线见[2026-09-21 报告](../archive/tasks/2026-09-21-upstream-rebase/final-report.md)及两仓 `post-upstream-baseline-20260921` tag；alpha.1 见[2026-09-15 报告](../archive/tasks/2026-09-15-upstream-rebase/final-report.md)。回退源码可使用保存 ref；不得把源码回退理解成真实会话降级或覆盖旧 generation。
 
-本 fork 的 Session V4 承载 PTO analysis source 扩展。下次上游使用同一整数版本时必须对照实际 schema，不能仅按版本号合并。旧日志不覆盖，当前版本 successor 由所属 fixture 工具生成。
+本轮已解决 PTO/官方 V4 同号异义：writer 分配 V5，根目录 lineage 必须显式选择，不凭消息形状猜测。外层现有部署采用 `legacyPtoV4: true`；接入官方 V4 根目录需使用默认 false 并分开存储。旧日志不覆盖，当前版本 successor 由所属 fixture 工具生成。正式 profile 写打开才发布 successor；本次未打开真实用户历史。
 
 前次 0.1.5 维护见[2026-09-09 报告](../archive/tasks/2026-09-09-upstream-rebase/final-report.md)，rc.1 过程见[2026-09-04 任务](../archive/tasks/2026-09-04-upstream-rebase/final-report.md)，更早迁移见[旧记录](../archive/legacy-notes/README.md)。旧测试数量只对当次任务成立。两仓 `pre-upstream-baseline-20260909`、`post-upstream-baseline-20260910`、`repair-merged-baseline-20260915` 等恢复记录不删除。

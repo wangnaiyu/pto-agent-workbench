@@ -1,0 +1,383 @@
+[
+  {
+    "log": "pto-20260924-build-final.log",
+    "sha256": "57691fbca6af6c5639a6bda3d7ec41c24de0d2b00a79b9c61b453b2ffb85340a",
+    "tail": [
+      "dist/assets/langs/html-CfGypltT.js                          232.16 kB │ gzip:  28.35 kB │ map:   308.96 kB",
+      "dist/assets/langs/ruby-5eNB0pDK.js                          425.79 kB │ gzip:  41.34 kB │ map:   579.27 kB",
+      "dist/assets/index-Dz4qVHsa.js                               612.80 kB │ gzip: 206.75 kB │ map: 7,002.86 kB",
+      "dist/assets/langs/cpp-DIPi6g--.js                           637.59 kB │ gzip:  47.26 kB │ map:   831.50 kB",
+      "dist/assets/vendor-CCJJTK99.js                              740.58 kB │ gzip: 179.52 kB │ map: 2,509.98 kB",
+      "",
+      "(!) Some chunks are larger than 500 kB after minification. Consider:",
+      "- Using dynamic import() to code-split the application",
+      "- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks",
+      "- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.",
+      "✓ built in 2.39s",
+      "build: recorded 269 client artifact(s) with 3 public value(s)"
+    ]
+  },
+  {
+    "log": "pto-20260924-frozen-install.log",
+    "sha256": "54f457db2363b8d364003a4f68e532c90a890bcab5cabe92a233a5066ba0250e",
+    "tail": [
+      "native/system/packages/darwin-x64        | [WARN] Unsupported platform: wanted: {\"cpu\":[\"x64\"],\"os\":[\"darwin\"],\"libc\":[\"any\"]} (current: {\"os\":\"darwin\",\"cpu\":\"arm64\",\"libc\":\"unknown\"})",
+      "native/system/packages/linux-arm64       | [WARN] Unsupported platform: wanted: {\"cpu\":[\"arm64\"],\"os\":[\"linux\"],\"libc\":[\"any\"]} (current: {\"os\":\"darwin\",\"cpu\":\"arm64\",\"libc\":\"unknown\"})",
+      "native/system/packages/linux-x64         | [WARN] Unsupported platform: wanted: {\"cpu\":[\"x64\"],\"os\":[\"linux\"],\"libc\":[\"any\"]} (current: {\"os\":\"darwin\",\"cpu\":\"arm64\",\"libc\":\"unknown\"})",
+      "Scope: all 339 workspace projects",
+      "Already up to date",
+      "Done in 528ms using pnpm v11.7.0"
+    ]
+  },
+  {
+    "log": "pto-20260924-compat-final.log",
+    "sha256": "f3c0af0352d2d1b9e396027065cb3f578f8b3b529095d597e7fe1a2ec34464ce",
+    "tail": [
+      " ❯ Proxy.provide vendor/cordis/src/reflect.ts:278:27",
+      " ❯ bench packages/client/ui-commands/tests/service.client.spec.ts:150:7",
+      " ❯ packages/client/ui-commands/tests/service.client.spec.ts:1183:35",
+      "",
+      "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[68/70]⎯",
+      "",
+      "",
+      " Test Files  1 failed | 102 passed (103)",
+      "      Tests  69 failed | 1965 passed | 1 skipped (2035)",
+      "   Start at  12:24:28",
+      "   Duration  26.23s (transform 37.74s, setup 10.63s, import 109.26s, tests 117.61s, environment 29.25s)",
+      ""
+    ]
+  },
+  {
+    "log": "pto-20260924-command-final.log",
+    "sha256": "9304c1a92d705b43e187b34df7f40641d7275aef687db4162fe94ddb4d33ef32",
+    "tail": [
+      "    108|       `Session corpus requires a baseline/current majority; baseline=$…",
+      "    109|     )",
+      " ❯ scripts/session-snapshot-corpus-policy.spec.ts:24:12",
+      "",
+      "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯",
+      "",
+      "",
+      " Test Files  1 failed | 1 passed (2)",
+      "      Tests  1 failed | 85 passed (86)",
+      "   Start at  12:27:06",
+      "   Duration  2.42s (transform 1.58s, setup 288ms, import 1.96s, tests 506ms, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "log": "pto-20260924-final-format-tests.log",
+    "sha256": "2f0533bed719844e8d2ee5000e48907c07ca5ae4740fa714782c532b8c9410fb",
+    "tail": [
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "",
+      " RUN  v4.1.8 /private/tmp/pto-harness-upstream-20260924",
+      "",
+      "",
+      " Test Files  28 passed (28)",
+      "      Tests  527 passed (527)",
+      "   Start at  12:33:30",
+      "   Duration  3.63s (transform 12.14s, setup 3.11s, import 16.26s, tests 1.10s, environment 792ms)",
+      ""
+    ]
+  },
+  {
+    "log": "pto-20260924-lineage-final.log",
+    "sha256": "f67f3b52ed85e4abcbe4373a926064a2c6b774fe6fb6c8c4f091399d1740ed1a",
+    "tail": [
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "",
+      " RUN  v4.1.8 /private/tmp/pto-harness-upstream-20260924",
+      "",
+      "",
+      " Test Files  4 passed (4)",
+      "      Tests  20 passed (20)",
+      "   Start at  12:30:19",
+      "   Duration  1.42s (transform 2.24s, setup 580ms, import 2.26s, tests 626ms, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "log": "pto-20260924-corpus-final.log",
+    "sha256": "8afceaf83e957719f07e8578ccbae555add1dd525ec1111955268fdae948a7d9",
+    "tail": [
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "",
+      " RUN  v4.1.8 /private/tmp/pto-harness-upstream-20260924",
+      "",
+      "",
+      " Test Files  1 passed (1)",
+      "      Tests  16 passed (16)",
+      "   Start at  12:28:35",
+      "   Duration  619ms (transform 433ms, setup 214ms, import 293ms, tests 6ms, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "log": "pto-20260924-replay-final.log",
+    "sha256": "a0315585fd26425664b2bd77164b4e652e48c6b95901c2e90d9ccf587dc1ca38",
+    "tail": [
+      "$ vitest run --config vitest.snapshot.config.ts snapshots/sdk/sdk.snapshot.ts snapshots/session/headless.snapshot.ts snapshots/acp/acp.snapshot.ts",
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "",
+      " RUN  v4.1.8 /private/tmp/pto-harness-upstream-20260924",
+      "",
+      "",
+      " Test Files  3 passed (3)",
+      "      Tests  168 passed | 2 skipped (170)",
+      "   Start at  12:22:27",
+      "   Duration  43.40s (transform 1.68s, setup 498ms, import 2.35s, tests 75.70s, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "log": "pto-20260924-browser-replay.log",
+    "sha256": "43811872e950852119eb9ff0460698fb8688664025e072771a01c728564d9c42",
+    "tail": [
+      "$ vitest run --config vitest.web.config.ts apps/web/tests/default-workspace.e2e.ts apps/web/tests/workspace-new-session-folding.e2e.ts apps/web/tests/composer-draft-scroll.e2e.ts",
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "",
+      " RUN  v4.1.8 /private/tmp/pto-harness-upstream-20260924",
+      "",
+      "",
+      " Test Files  3 passed (3)",
+      "      Tests  11 passed (11)",
+      "   Start at  12:27:05",
+      "   Duration  15.47s (transform 650ms, setup 0ms, import 1.80s, tests 13.41s, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "log": "pto-20260924-browser-skill-replay.log",
+    "sha256": "88fe4787b10d6549fe236b4df61d5a302fb687cce396d016cc47b2f694f448fc",
+    "tail": [
+      "$ vitest run --config vitest.web.config.ts apps/web/tests/cordis-tool-round.e2e.ts apps/web/tests/skill-user-invoke.e2e.ts",
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "",
+      " RUN  v4.1.8 /private/tmp/pto-harness-upstream-20260924",
+      "",
+      "",
+      " Test Files  2 passed (2)",
+      "      Tests  4 passed (4)",
+      "   Start at  12:31:03",
+      "   Duration  9.85s (transform 1.03s, setup 0ms, import 2.04s, tests 7.57s, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "log": "pto-20260924-workbench-browser.log",
+    "sha256": "48c81565401f44dcd35154dc70cc2a1b5d0991441ea6274e2515af16dcc3cedd",
+    "tail": [
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "",
+      " RUN  v4.1.8 /private/tmp/pto-harness-upstream-20260924",
+      "",
+      "",
+      " Test Files  1 passed (1)",
+      "      Tests  1 passed (1)",
+      "   Start at  12:36:38",
+      "   Duration  3.11s (transform 587ms, setup 0ms, import 956ms, tests 2.06s, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "log": "pto-20260924-outer-provider.log",
+    "sha256": "928153c57df274df3a9409357ea77dce9e0c6d037acb4637fa1d921dc27ac7c2",
+    "tail": [
+      "{",
+      "  \"provider\": \"pypto-official-af1d7a016ce5\",",
+      "  \"count\": 1,",
+      "  \"skillRoot\": \"process.getBuiltinModule('node:path').resolve(process.env.PTO_WORKBENCH_ROOT ?? process.cwd(), 'skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills')\",",
+      "  \"warnings\": \"\"",
+      "}"
+    ]
+  },
+  {
+    "log": "pto-20260924-doc-sync-5.log",
+    "sha256": "f98d02f1a44a63f13a8cfda13dfd8335abde54a8eefe895df19fb8b3df8f198e",
+    "tail": [
+      "run-gates: PASS translation prompt (0.44s)",
+      "run-gates: start documentation standard tests",
+      "run-gates: PASS doc budgets (0.45s)",
+      "run-gates: start documentation site checks",
+      "run-gates: PASS repository references (5.60s)",
+      "run-gates: start package README limitations",
+      "run-gates: PASS documentation standard tests (1.44s)",
+      "run-gates: PASS package README model experience (5.73s)",
+      "run-gates: PASS package README limitations (5.63s)",
+      "run-gates: PASS documentation site checks (7.81s)",
+      "",
+      "run-gates: 42 passed, 0 failed, 0 skipped in 80.60s."
+    ]
+  },
+  {
+    "log": "pto-20260924-hygiene-3.log",
+    "sha256": "8115e792c1a2231fd694828e546408d86aef6e834477ce681fdc9adfd791afb0",
+    "tail": [
+      "run-gates: PASS client route resolution (2.53s)",
+      "run-gates: start no new unknown casts",
+      "run-gates: PASS proxy-aware dispatchers (1.06s)",
+      "run-gates: start Cordis config",
+      "run-gates: PASS client packages (6.76s)",
+      "run-gates: start runtime closure",
+      "run-gates: PASS Cordis config (1.65s)",
+      "run-gates: PASS runtime closure (0.53s)",
+      "run-gates: PASS optional dependency imports (10.75s)",
+      "run-gates: PASS no new unknown casts (4.85s)",
+      "",
+      "run-gates: 18 passed, 0 failed, 0 skipped in 17.40s."
+    ]
+  },
+  {
+    "log": "pto-20260924-lint-3.log",
+    "sha256": "5ab93e893da8c5f0748aa794bd2eb7d7a9f0b0cd29d66dcb19d907219df202f5",
+    "tail": [
+      "$ tsx scripts/run-oxlint.ts ."
+    ]
+  },
+  {
+    "log": "pto-20260924-outer-tests.log",
+    "sha256": "69e402c6e6926e5832f896e623d4d9eecb773707e8bc1e6d2cf04a9729dc39c3",
+    "tail": [
+      "✔ rejects duplicate provider under a different entry id through actual profile composition (87.555375ms)",
+      "✔ secret checker accepts migrated tracked files and still scans new destinations (165.526125ms)",
+      "✔ secret checker blocks synthetic token in an untracked migration destination without disclosing it (139.511417ms)",
+      "✔ secret checker still fails closed on unreadable non-deleted entries (104.814959ms)",
+      "ℹ tests 17",
+      "ℹ suites 0",
+      "ℹ pass 17",
+      "ℹ fail 0",
+      "ℹ cancelled 0",
+      "ℹ skipped 0",
+      "ℹ todo 0",
+      "ℹ duration_ms 474.482167"
+    ]
+  },
+  {
+    "log": "pto-20260924-outer-structure.log",
+    "sha256": "836937b9e7609794148aaff6daa2c8a22904fd69f6f8bacd88d52899bfcbb4ae",
+    "tail": [
+      "{",
+      "  \"errors\": [],",
+      "  \"checkedMarkdown\": 149,",
+      "  \"originals\": 11,",
+      "  \"sections\": 48",
+      "}"
+    ]
+  },
+  {
+    "log": "pto-20260924-workbench-browser-scoped.log",
+    "sha256": "de1b04e2ef936861aa857e97d1bea0291e1ac4574d27585448d2498f0607d303",
+    "tail": [
+      "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+      "",
+      " RUN  v4.1.8 /private/tmp/pto-harness-upstream-20260924",
+      "",
+      "",
+      " Test Files  1 passed (1)",
+      "      Tests  1 passed (1)",
+      "   Start at  12:45:26",
+      "   Duration  3.27s (transform 666ms, setup 0ms, import 1.06s, tests 2.12s, environment 0ms)",
+      ""
+    ]
+  },
+  {
+    "log": "pto-20260924-main-clean.log",
+    "sha256": "dcea49efafc2072d760bc2a5b1608d91498246a6d5d97e9d41c4ec910717130f",
+    "tail": [
+      "$ tsx scripts/clean.ts",
+      "clean: removed 331 paths"
+    ]
+  },
+  {
+    "log": "pto-20260924-main-build-clean.log",
+    "sha256": "d81acbe96036de24861e6935d25f3544283370f3a69c7fda6c7aa59802bb5664",
+    "tail": [
+      "dist/assets/langs/html-CfGypltT.js                          232.16 kB │ gzip:  28.35 kB │ map:   308.96 kB",
+      "dist/assets/langs/ruby-5eNB0pDK.js                          425.79 kB │ gzip:  41.34 kB │ map:   579.27 kB",
+      "dist/assets/index-Dz4qVHsa.js                               612.80 kB │ gzip: 206.75 kB │ map: 7,002.86 kB",
+      "dist/assets/langs/cpp-DIPi6g--.js                           637.59 kB │ gzip:  47.26 kB │ map:   831.50 kB",
+      "dist/assets/vendor-CCJJTK99.js                              740.58 kB │ gzip: 179.52 kB │ map: 2,509.98 kB",
+      "",
+      "(!) Some chunks are larger than 500 kB after minification. Consider:",
+      "- Using dynamic import() to code-split the application",
+      "- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks",
+      "- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.",
+      "✓ built in 2.48s",
+      "build: recorded 269 client artifact(s) with 2 public value(s)"
+    ]
+  },
+  {
+    "log": "pto-20260924-main-provider.log",
+    "sha256": "928153c57df274df3a9409357ea77dce9e0c6d037acb4637fa1d921dc27ac7c2",
+    "tail": [
+      "{",
+      "  \"provider\": \"pypto-official-af1d7a016ce5\",",
+      "  \"count\": 1,",
+      "  \"skillRoot\": \"process.getBuiltinModule('node:path').resolve(process.env.PTO_WORKBENCH_ROOT ?? process.cwd(), 'skills/official/releases/pypto-skills-af1d7a016ce5/plugins/pypto-user/skills')\",",
+      "  \"warnings\": \"\"",
+      "}"
+    ]
+  },
+  {
+    "log": "pto-20260924-npm-layout-local.log",
+    "sha256": "b075cf474a3c047eedd48c42f8c5a9b011182db1a31e9d9eec6ffa62362fbd8d",
+    "tail": [
+      "$ tsx scripts/verify-npm-install-layout.ts",
+      "verify-npm-install-layout: 276 DSH package(s) per release and 2552 internal edge(s) verified in 224.98 s; both releases share one Cordis installation; 66 unavailable optional package name(s) ignored by npm."
+    ]
+  },
+  {
+    "log": "pto-20260924-npm-layout-upstream.log",
+    "sha256": "e3e88fe916a3f7d28414efa6f4988590729faad5b7d29e0e1f4535a19ae94842",
+    "tail": [
+      "{",
+      "  durationMs: 205849.41825000002,",
+      "  dshPackagesPerVersion: 267,",
+      "  checkedDshEdges: 2442",
+      "}"
+    ]
+  },
+  {
+    "log": "pto-20260924-ci-success.log",
+    "sha256": "79ef31238ee868388366f8b61eedbe1c60c09bc21b34061e766d7bd6f17a2bb8",
+    "tail": [
+      "Pack npm tarballs\tUNKNOWN STEP\t2026-09-24T04:44:53.5404414Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/deepseek-harness/deepseek-harness",
+      "Pack npm tarballs\tUNKNOWN STEP\t2026-09-24T04:44:53.5430853Z Removing SSH command configuration",
+      "Pack npm tarballs\tUNKNOWN STEP\t2026-09-24T04:44:53.5435799Z [command]/usr/bin/git config --local --name-only --get-regexp core\\.sshCommand",
+      "Pack npm tarballs\tUNKNOWN STEP\t2026-09-24T04:44:53.5465065Z [command]/usr/bin/git submodule foreach --recursive sh -c \"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\"",
+      "Pack npm tarballs\tUNKNOWN STEP\t2026-09-24T04:44:53.5672110Z Removing HTTP extra header",
+      "Pack npm tarballs\tUNKNOWN STEP\t2026-09-24T04:44:53.5677701Z [command]/usr/bin/git config --local --name-only --get-regexp http\\.https\\:\\/\\/github\\.com\\/\\.extraheader",
+      "Pack npm tarballs\tUNKNOWN STEP\t2026-09-24T04:44:53.5709023Z [command]/usr/bin/git submodule foreach --recursive sh -c \"git config --local --name-only --get-regexp 'http\\.https\\:\\/\\/github\\.com\\/\\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\"",
+      "Pack npm tarballs\tUNKNOWN STEP\t2026-09-24T04:44:53.5946486Z Removing includeIf entries pointing to credentials config files",
+      "Pack npm tarballs\tUNKNOWN STEP\t2026-09-24T04:44:53.5952928Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\\.gitdir:",
+      "Pack npm tarballs\tUNKNOWN STEP\t2026-09-24T04:44:53.5993698Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url",
+      "Pack npm tarballs\tUNKNOWN STEP\t2026-09-24T04:44:53.6327956Z Cleaning up orphan processes",
+      "Pack npm tarballs\tUNKNOWN STEP\t2026-09-24T04:44:53.6546632Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache/restore@v4, actions/upload-artifact@v4, pnpm/action-setup@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/"
+    ]
+  },
+  {
+    "log": "pto-20260924-outer-final-tests.log",
+    "sha256": "c29d1a312266a60f97abedc4061f3cace3ba31c8a80f557681ac5eef4b23a847",
+    "tail": [
+      "✔ rejects duplicate provider under a different entry id through actual profile composition (91.084459ms)",
+      "✔ secret checker accepts migrated tracked files and still scans new destinations (117.983167ms)",
+      "✔ secret checker blocks synthetic token in an untracked migration destination without disclosing it (110.875416ms)",
+      "✔ secret checker still fails closed on unreadable non-deleted entries (90.965209ms)",
+      "ℹ tests 17",
+      "ℹ suites 0",
+      "ℹ pass 17",
+      "ℹ fail 0",
+      "ℹ cancelled 0",
+      "ℹ skipped 0",
+      "ℹ todo 0",
+      "ℹ duration_ms 425.302667"
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 # 当前工程架构
 
-状态：2026-09-21 upstream rebase。harness fork `a11460d434e652fde77d35e7558056a59cb3256f` 基于 upstream `ddefc45fbc7f8e46dd73185e68295696d1297887`，版本 0.1.6-alpha.2。外层起点为 `6f015cfdce43b992da24a02ac39e7f4efd34cb7b`。正式三元配对以两仓 `post-upstream-baseline-20260921` annotated tag 为准；验证与限制见[升级报告](../archive/tasks/2026-09-21-upstream-rebase/final-report.md)。
+状态：2026-09-24 upstream rebase。harness fork `19c1a836a76824be9a2be8773f419d392de01d4b` 基于 upstream `46a7f68b0922371ce7144b668b90e377d8e799f4`，版本 0.1.7-rc.1。外层起点为 `16bb4c30cac7b8a423ed08fec34d65fa80058fd2`。正式三元配对以两仓 `post-upstream-baseline-20260924` annotated tag 为准；验证与限制见[升级报告](../archive/tasks/2026-09-24-upstream-rebase/final-report.md)。
 
 ## 实现边界
 
@@ -19,13 +19,13 @@ DSH 提供 Cordis 插件、profile、Host 工具、会话与浏览器 UI。外�
 | resource sidebar | upstream 新的文件/资源侧栏；旧 Details 已退役 |
 | 工具比较行内折叠 | 按工具名呈现完整冻结比较证据，保留七维身份；使用原生 details，未恢复退役的 ToolDetails slot |
 
-`ui-pto-experiments` 仍注册“实验”View。2026-09-15 隔离实例1280×720下空实验区域宽992px、无max-width约束；该历史测量不是alpha.2全尺寸验收。本次完整浏览器矩阵覆盖Sidebar与布局交互，未扩大有内容实验视图的产品结论。
+`ui-pto-experiments` 仍注册“实验”View。2026-09-15 隔离实例1280×720下空实验区域宽992px、无max-width约束；该历史测量不是当前版本的全尺寸验收。本轮聚焦浏览器验证覆盖草稿、首发、折叠、滚动和 Skill 展示；未扩大有内容实验视图的产品结论。
 
-Client 以 SessionReference 的 retain/release 管理所有权，SessionBinding 承载组件作用域状态；主界面由 uiWorkspace 保持 mainView 引用。PTO 浏览器草稿不持有 Session，首次发送等待引用就绪并按序准备 preset、目录与附件；异步完成只清理对应 revision。ConversationMainPanel 使用上游 conversation.content factory。
+Client 以 SessionReference 的 retain/release 管理所有权，SessionBinding 承载组件作用域状态；主界面由 uiWorkspace 保持 mainView 引用。冷草稿目录在查询期间持有 AgentPresetRegistry 的 revision lease，通过最小 `serviceForScope` seam 读取隔离服务。PTO 浏览器草稿不持有 Session，首次发送等待引用就绪并按序准备 preset、目录与附件；异步完成只清理对应 revision。ConversationMainPanel 使用上游 conversation.content factory。
 
 Client → Host 通过 typed invoke/host.call；Host → Client 通过事件或会话投影。具体 API 以本地 harness 对应版本代码为准。分析选区回流仍需共享结构化上下文契约；不预设一定要阻塞模型等待选区，可先由用户显式“加入分析草稿”完成。
 
-Session 持久化采用 V4 相邻 generation 迁移（V3 到 V4 保留正文，冻结旧代）与跨进程文件租约；PTO目录别名为新会话选择目录，已发现目录保持不变，前代日志不覆盖。浏览器草稿通用文件在实体化后绑定上传；正式能力准入仍保留既有拒绝/重试语义。
+Session 当前写入 V5，保留跨进程文件租约与不可变历史代。官方 V4 与旧 PTO V4 正文不同，外层 patch 为旧 PTO 根目录显式设置 `legacyPtoV4: true`；旧 V4 经上游正文转换后发布已校验 V5，官方 V4 使用默认路径。两条 V4 根目录不可混用，V5 统一可读。PTO目录别名为新会话选择目录，已发现目录保持不变，前代日志不覆盖。浏览器草稿通用文件在实体化后绑定上传；正式能力准入仍保留既有拒绝/重试语义。
 
 ## 已有业务切片
 

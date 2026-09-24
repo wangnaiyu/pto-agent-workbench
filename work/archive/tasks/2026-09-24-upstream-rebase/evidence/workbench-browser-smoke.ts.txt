@@ -1,0 +1,28 @@
+import { expect, it } from 'vitest'
+import { chromium } from '../apps/web/node_modules/playwright/index.mjs'
+import { launchWebScaffold, watchConsole } from '../apps/web/tests/scaffold.ts'
+import { newEnglishPage } from '../apps/web/tests/support.ts'
+import type {} from '../packages/host/composer-catalog/src/index.ts'
+it('mounts the actual workbench patch with official skills and a cold browser draft', async () => {
+  const scaffold = await launchWebScaffold({ firstUse: true, extraOverlayPath: process.env.PTO_WORKBENCH_ROOT + '/patches/cordis.patch.yml' })
+  const browser = await chromium.launch()
+  try {
+    const page = await newEnglishPage(browser)
+    const tripwire = watchConsole(page)
+    await page.goto(scaffold.authenticatedUrl)
+    await page.getByText('PTO Agent Workbench', { exact: true }).waitFor()
+    await page.locator('[data-composer-input][contenteditable="true"]').first().waitFor()
+    expect(scaffold.ctx.sessions.list()).toHaveLength(0)
+    const catalog = await scaffold.ctx.composerCatalog.listDraft({ workspaceId: scaffold.ctx.workspaceRegistry.list()[0]!.workspaceId })
+    expect(catalog.skills.some(skill => skill.origin.kind === 'pto')).toBe(true)
+    const skills = await scaffold.ctx.skills.list()
+    expect(skills.some(skill => skill.provider === 'pypto-official-af1d7a016ce5')).toBe(true)
+    expect(scaffold.ctx.sessions.list()).toHaveLength(0)
+    await page.screenshot({ path: '/tmp/pto-20260924-workbench-browser.png', fullPage: true })
+    expect(tripwire.pageErrors).toEqual([])
+    expect(tripwire.warnings).toEqual([])
+  } finally {
+    await browser.close()
+    await scaffold.close()
+  }
+})
